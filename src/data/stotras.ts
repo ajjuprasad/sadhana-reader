@@ -1454,6 +1454,41 @@ const vishnuSahasranamam: Stotra = {
       transliteration: 'Akrurah Peshalo Daksho Dakshinah Kshaminam Varah.\nVidvattamo Vitabhayah Punyashravanakirtanah.',
       meaning: 'Free from cruelty, the Graceful, the Dexterous, the Liberal, best among the patient; the most learned, free from fear, whose hearing and singing bring merit.',
     },
+    {
+      id: 101,
+      verseLabel: 'Shloka 99',
+      sanskrit: 'उत्तारणो दुष्कृतिहा पुण्यो दुःस्वप्ननाशनः।\nवीरहा रक्षणः सन्तो जीवनं पर्यवस्थितः॥',
+      transliteration: 'Uttarano Dushkritiha Punyo Duhsvapnanashanah.\nViraha Rakshanah Santo Jivanam Paryavasthitah.',
+      meaning: 'The Rescuer, destroyer of evil deeds, the Holy, remover of bad dreams; slayer of heroic demons, the Protector, of the good, Life itself, the all-pervading.',
+    },
+    {
+      id: 102,
+      verseLabel: 'Shloka 100',
+      sanskrit: 'अनन्तरूपोऽनन्तश्रीर्जितमन्युर्भयापहः।\nचतुरश्रो गभीरात्मा विदिशो व्यादिशो दिशः॥',
+      transliteration: 'Anantarupo\'nantashrir Jitamanyur Bhayapahah.\nChaturashro Gabhiratma Vidisho Vyadisho Dishah.',
+      meaning: 'Of infinite forms, of boundless glory, conqueror of anger, dispeller of fear; perfectly square in justice, of profound Self, the guide, the commander, the revealer of directions.',
+    },
+    {
+      id: 103,
+      verseLabel: 'Shloka 101',
+      sanskrit: 'अनादिर्भूर्भुवो लक्ष्मीः सुवीरो रुचिराङ्गदः।\nजननो जनजन्मादिर्भीमो भीमपराक्रमः॥',
+      transliteration: 'Anadir Bhur Bhuvo Lakshmih Suviro Ruchirangadah.\nJanano Janajanmadir Bhimo Bhimaparakramah.',
+      meaning: 'The Beginningless, the earth, the glory of the worlds, of excellent heroism, of beautiful armlets; the Creator, source of the births of beings, the Terrible, of terrifying prowess.',
+    },
+    {
+      id: 104,
+      verseLabel: 'Shloka 102',
+      sanskrit: 'आधारनिलयोऽधाता पुष्पहासः प्रजागरः।\nऊर्ध्वगः सत्पथाचारः प्राणदः प्रणवः पणः॥',
+      transliteration: 'Adharanilayo\'dhata Pushpahasah Prajagarah.\nUrdhvagah Satpathacharah Pranadah Pranavah Panah.',
+      meaning: 'The abode of all support, supporter of all supporters, smiling like a flower, the Ever-awake; moving upward, treader of the path of the righteous, giver of life, OM, the supreme transaction.',
+    },
+    {
+      id: 105,
+      verseLabel: 'Shloka 103',
+      sanskrit: 'प्रमाणं प्राणनिलयः प्राणभृत् प्राणजीवनः।\nतत्त्वं तत्त्वविदेकात्मा जन्ममृत्युजरातिगः॥',
+      transliteration: 'Pramanam Prananilayah Pranabhrit Pranajivanah.\nTattvam Tattvavid Ekatma Janmamrityujaratigah.',
+      meaning: 'The Authority, abode of the life-breaths, bearer of prana, giver of life to prana; Reality itself, the knower of Reality, the One Self, beyond birth, death, and old age.',
+    },
   ],
 };
 
