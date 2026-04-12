@@ -929,6 +929,41 @@ const vishnuSahasranamam: Stotra = {
       transliteration: 'Gurur Gurutamo Dhama Satyah Satyaparakramah.\nNimisho\'nimishah Sragvi Vachaspatir Udaradhih.',
       meaning: 'The Teacher, the Supreme Teacher, the Abode, Truth itself, of true valor; the winking one in yoga-nidra, the ever-unwinking, the garland-bearer, Lord of speech, of magnanimous intellect.',
     },
+    {
+      id: 26,
+      verseLabel: 'Shloka 24',
+      sanskrit: 'अग्रणीर्ग्रामणीः श्रीमान् न्यायो नेता समीरणः।\nसहस्रमूर्धा विश्वात्मा सहस्राक्षः सहस्रपात्॥',
+      transliteration: 'Agranir Gramanih Shriman Nyayo Neta Samiranah.\nSahasramurdha Vishvatma Sahasrakshah Sahasrapat.',
+      meaning: 'The Leader, the Chief of hosts, the glorious one, Justice itself, the Guide, the Breath of life; thousand-headed, Soul of the universe, thousand-eyed, thousand-footed.',
+    },
+    {
+      id: 27,
+      verseLabel: 'Shloka 25',
+      sanskrit: 'आवर्तनो निवृत्तात्मा संवृतः संप्रमर्दनः।\nअहःसंवर्तको वह्निरनिलो धरणीधरः॥',
+      transliteration: 'Avartano Nivrittatma Samvritah Sampramardanah.\nAhahsamvartako Vahnir Anilo Dharanidharah.',
+      meaning: 'The turning wheel of samsara, the withdrawn Self, the Veiled, the Crusher of adharma; who rolls out the days, Fire, Air, the Supporter of the earth.',
+    },
+    {
+      id: 28,
+      verseLabel: 'Shloka 26',
+      sanskrit: 'सुप्रसादः प्रसन्नात्मा विश्वधृग्विश्वभुग्विभुः।\nसत्कर्ता सत्कृतः साधुर्जह्नुर्नारायणो नरः॥',
+      transliteration: 'Suprasadah Prasannatma Vishvadhrig Vishvabhug Vibhuh.\nSatkarta Satkritah Sadhur Jahnur Narayano Narah.',
+      meaning: 'The well-graced, the serene Self, Upholder of all, Enjoyer of all, the Omnipresent; Honorer of the good, honored by the good, the Virtuous, the Remover (Jahnu), Narayana, the Guide of men.',
+    },
+    {
+      id: 29,
+      verseLabel: 'Shloka 27',
+      sanskrit: 'असङ्ख्येयोऽप्रमेयात्मा विशिष्टः शिष्टकृच्छुचिः।\nसिद्धार्थः सिद्धसङ्कल्पः सिद्धिदः सिद्धिसाधनः॥',
+      transliteration: 'Asankhyeyo\'prameyatma Vishishtah Shishtakrich Chuchih.\nSiddharthah Siddhasankalpah Siddhidah Siddhisadhanah.',
+      meaning: 'The Innumerable, of immeasurable Self, the Distinguished, Maker of the wise, the Pure; whose purpose is ever fulfilled, whose resolve is always accomplished, Giver of siddhi, the very means of accomplishment.',
+    },
+    {
+      id: 30,
+      verseLabel: 'Shloka 28',
+      sanskrit: 'वृषाही वृषभो विष्णुर्वृषपर्वा वृषोदरः।\nवर्धनो वर्धमानश्च विविक्तः श्रुतिसागरः॥',
+      transliteration: 'Vrishahi Vrishabho Vishnur Vrishaparva Vrishodarah.\nVardhano Vardhamanash Cha Viviktah Shrutisagarah.',
+      meaning: 'Whose day is dharma, the Showerer of boons, Vishnu, the ladder of dharma, whose belly bears dharma; the Nourisher, the Ever-Growing, the Distinct, the ocean of the Shrutis.',
+    },
   ],
 };
 
