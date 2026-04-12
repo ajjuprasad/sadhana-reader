@@ -1349,6 +1349,41 @@ const vishnuSahasranamam: Stotra = {
       transliteration: 'Samavarto\'nivrittatma Durjayo Duratikramah.\nDurlabho Durgamo Durgo Duravaso Durariha.',
       meaning: 'The supreme Wheel of samsara, the Self that never turns back, hard to conquer, not to be transgressed; hard to attain, hard to reach, the inaccessible fortress, hard to dwell in, the slayer of invincible foes.',
     },
+    {
+      id: 86,
+      verseLabel: 'Shloka 84',
+      sanskrit: 'शुभाङ्गो लोकसारङ्गः सुतन्तुस्तन्तुवर्धनः।\nइन्द्रकर्मा महाकर्मा कृतकर्मा कृतागमः॥',
+      transliteration: 'Shubhango Lokasarangah Sutantus Tantuvardhanah.\nIndrakarma Mahakarma Kritakarma Kritagamah.',
+      meaning: 'Of auspicious limbs, the essence of the world, of excellent thread, the extender of the thread of existence; of Indra-like deeds, of great deeds, having accomplished all deeds, the revealer of scriptures.',
+    },
+    {
+      id: 87,
+      verseLabel: 'Shloka 85',
+      sanskrit: 'उद्भवः सुन्दरः सुन्दो रत्ननाभः सुलोचनः।\nअर्को वाजसनः शृङ्गी जयन्तः सर्वविज्जयी॥',
+      transliteration: 'Udbhavah Sundarah Sundo Ratnanabhah Sulochanah.\nArko Vajasanah Shringi Jayantah Sarvavijjayi.',
+      meaning: 'The Source, the Beautiful, the Charming, of jeweled navel, of lovely eyes; the Sun, the giver of food, the horned (as Matsya), Victorious, the all-knowing Conqueror.',
+    },
+    {
+      id: 88,
+      verseLabel: 'Shloka 86',
+      sanskrit: 'सुवर्णबिन्दुरक्षोभ्यः सर्ववागीश्वरेश्वरः।\nमहाह्रदो महागर्तो महाभूतो महानिधिः॥',
+      transliteration: 'Suvarnabindur Akshobhyah Sarvavagishvareshvarah.\nMahahrado Mahagarto Mahabhuto Mahanidhih.',
+      meaning: 'The golden-dot, the Unperturbed, the Lord of all masters of speech; the great lake, the great chasm (of maya), the great being, the great treasure.',
+    },
+    {
+      id: 89,
+      verseLabel: 'Shloka 87',
+      sanskrit: 'कुमुदः कुन्दरः कुन्दः पर्जन्यः पावनोऽनिलः।\nअमृताशोऽमृतवपुः सर्वज्ञः सर्वतोमुखः॥',
+      transliteration: 'Kumudah Kundarah Kundah Parjanyah Pavano\'nilah.\nAmritasho\'mritavapuh Sarvajnah Sarvatomukhah.',
+      meaning: 'The delighter in earth, the protector of the earth, pure as jasmine, the rain-cloud, the Purifier, the Wind; whose food is nectar, of nectar-like body, the All-knowing, whose faces are everywhere.',
+    },
+    {
+      id: 90,
+      verseLabel: 'Shloka 88',
+      sanskrit: 'सुलभः सुव्रतः सिद्धः शत्रुजिच्छत्रुतापनः।\nन्यग्रोधोऽदुम्बरोऽश्वत्थश्चाणूरान्ध्रनिषूदनः॥',
+      transliteration: 'Sulabhah Suvratah Siddhah Shatrujich Chhatrutapanah.\nNyagrodho\'dumbaro\'shvatthash Chanurandhranishudanah.',
+      meaning: 'Easily attained, of noble vows, the Perfected, victor over foes, tormentor of foes; the banyan, the udumbara, the ashvattha, slayer of Chanura and the Andhras.',
+    },
   ],
 };
 
