@@ -999,6 +999,41 @@ const vishnuSahasranamam: Stotra = {
       transliteration: 'Yugadikrid Yugavarto Naikamayo Mahashanah.\nAdrishyo\'vyaktarupash Cha Sahasrajid Anantajit.',
       meaning: 'Maker of the beginnings of yugas, the revolver of yugas, of manifold illusions, the great Devourer; invisible, of unmanifest form, conqueror of thousands, the endlessly victorious.',
     },
+    {
+      id: 36,
+      verseLabel: 'Shloka 34',
+      sanskrit: 'इष्टोऽविशिष्टः शिष्टेष्टः शिखण्डी नहुषो वृषः।\nक्रोधहा क्रोधकृत्कर्ता विश्वबाहुर्महीधरः॥',
+      transliteration: 'Ishto\'vishishtah Shishteshtah Shikhandi Nahusho Vrishah.\nKrodhaha Krodhakrit Karta Vishvabahur Mahidharah.',
+      meaning: 'The Beloved, the Undistinguished, beloved of the wise, the crested, the Binder, the Showerer; destroyer of anger, wielder of righteous wrath, the Doer, whose arms are the universe, the Bearer of the earth.',
+    },
+    {
+      id: 37,
+      verseLabel: 'Shloka 35',
+      sanskrit: 'अच्युतः प्रथितः प्राणः प्राणदो वासवानुजः।\nअपां निधिरधिष्ठानमप्रमत्तः प्रतिष्ठितः॥',
+      transliteration: 'Achyutah Prathitah Pranah Pranado Vasavanujah.\nApam Nidhir Adhishthanam Apramattah Pratishthitah.',
+      meaning: 'The Unfallen, the Renowned, the Life-breath, the Giver of life, the younger brother of Indra (as Vamana); repository of the waters, the Support, the Ever-vigilant, the Well-established.',
+    },
+    {
+      id: 38,
+      verseLabel: 'Shloka 36',
+      sanskrit: 'स्कन्दः स्कन्दधरो धुर्यो वरदो वायुवाहनः।\nवासुदेवो बृहद्भानुरादिदेवः पुरन्दरः॥',
+      transliteration: 'Skandah Skandadharo Dhuryo Varado Vayuvahanah.\nVasudevo Brihadbhanur Adidevah Purandarah.',
+      meaning: 'The Swift-mover, upholder of the righteous, supporter of the yoke, Giver of boons, borne by the wind; Vasudeva, the great light, the primal God, the destroyer of strongholds.',
+    },
+    {
+      id: 39,
+      verseLabel: 'Shloka 37',
+      sanskrit: 'अशोकस्तारणस्तारः शूरः शौरिर्जनेश्वरः।\nअनुकूलः शतावर्तः पद्मी पद्मनिभेक्षणः॥',
+      transliteration: 'Ashokas Taranas Tarah Shurah Shaurir Janeshvarah.\nAnukulah Shatavartah Padmi Padmanibhekshanah.',
+      meaning: 'The Sorrowless, the Deliverer, the Savior, the Brave, born in the line of Shura, Lord of beings; the Favorable, of a hundred incarnations, the lotus-bearer, of lotus-petal eyes.',
+    },
+    {
+      id: 40,
+      verseLabel: 'Shloka 38',
+      sanskrit: 'पद्मनाभोऽरविन्दाक्षः पद्मगर्भः शरीरभृत्।\nमहर्द्धिरृद्धो वृद्धात्मा महाक्षो गरुडध्वजः॥',
+      transliteration: 'Padmanabho\'ravindakshah Padmagarbhah Sharirabhrit.\nMaharddhir Riddho Vriddhatma Mahaksho Garudadhvajah.',
+      meaning: 'Lotus-naveled, lotus-eyed, the womb of the lotus, bearer of bodies; of great prosperity, the Prosperous, the ancient Self, of great eyes, whose banner is Garuda.',
+    },
   ],
 };
 
