@@ -750,8 +750,8 @@ const vishnuSahasranamam: Stotra = {
   title: 'Vishnu Sahasranamam',
   subtitle: 'विष्णु सहस्रनाम स्तोत्रम्',
   deity: 'Vishnu',
-  description: 'The thousand names of Lord Vishnu from the Mahabharata — first ten verses with dhyana.',
-  estimatedMinutes: 8,
+  description: 'The thousand names of Lord Vishnu from the Mahabharata — dhyana verses followed by the sahasranama shlokas.',
+  estimatedMinutes: 12,
   icon: 'M16 6 L16 26 M6 16 L26 16 M8.9 8.9 L23.1 23.1 M23.1 8.9 L8.9 23.1',
   verses: [
     {
@@ -823,6 +823,41 @@ const vishnuSahasranamam: Stotra = {
       sanskrit: 'ईशानः प्राणदः प्राणो ज्येष्ठः श्रेष्ठः प्रजापतिः।\nहिरण्यगर्भो भूगर्भो माधवो मधुसूदनः॥',
       transliteration: 'Ishanah Pranadah Prano Jyeshthah Shreshthah Prajapatih.\nHiranyagarbho Bhugarbho Madhavo Madhusudanah.',
       meaning: 'The Ruler, the Giver of life, the vital breath itself, the Eldest, the Most Excellent, Lord of creatures; the Golden Womb, the Womb of the earth, Madhava (Lord of Lakshmi), Slayer of Madhu.',
+    },
+    {
+      id: 11,
+      verseLabel: 'Shloka 9',
+      sanskrit: 'ईश्वरो विक्रमी धन्वी मेधावी विक्रमः क्रमः।\nअनुत्तमो दुराधर्षः कृतज्ञः कृतिरात्मवान्॥',
+      transliteration: 'Ishvaro Vikrami Dhanvi Medhavi Vikramah Kramah.\nAnuttamo Duradharshah Kritajnah Kritir Atmavan.',
+      meaning: 'The Supreme Lord, the Valorous, the Wielder of the Bow, the Wise, the Mighty-Strider, the Ordered Progression; the Incomparable, the Unassailable, the Knower of all deeds, Action itself, the Master of His own Self.',
+    },
+    {
+      id: 12,
+      verseLabel: 'Shloka 10',
+      sanskrit: 'सुरेशः शरणं शर्म विश्वरेताः प्रजाभवः।\nअहः संवत्सरो व्यालः प्रत्ययः सर्वदर्शनः॥',
+      transliteration: 'Sureshah Sharanam Sharma Vishvaretah Prajabhavah.\nAhah Samvatsaro Vyalah Pratyayah Sarvadarshanah.',
+      meaning: 'Lord of the gods, the Refuge, pure Bliss, the Seed of the universe, the Source of beings; the radiant Day, the Year itself, the elusive Serpent, Knowledge itself, the All-Seer.',
+    },
+    {
+      id: 13,
+      verseLabel: 'Shloka 11',
+      sanskrit: 'अजः सर्वेश्वरः सिद्धः सिद्धिः सर्वादिरच्युतः।\nवृषाकपिरमेयात्मा सर्वयोगविनिःसृतः॥',
+      transliteration: 'Ajah Sarveshvarah Siddhah Siddhih Sarvadir Achyutah.\nVrishakapir Ameyatma Sarvayogavinihsritah.',
+      meaning: 'The Unborn, the Lord of all, the Ever-Accomplished, Accomplishment itself, the Origin of all, the Unfallen; the bestower of dharma who lifts the earth, the immeasurable Self, detached from and untouched by all bonds of yoga.',
+    },
+    {
+      id: 14,
+      verseLabel: 'Shloka 12',
+      sanskrit: 'वसुर्वसुमनाः सत्यः समात्मा सम्मितः समः।\nअमोघः पुण्डरीकाक्षो वृषकर्मा वृषाकृतिः॥',
+      transliteration: 'Vasur Vasumanah Satyah Samatma Sammitah Samah.\nAmoghah Pundarikaksho Vrishakarma Vrishakritih.',
+      meaning: 'The Abode of all, of pure and noble mind, Truth itself, the Equal-Souled, the All-Comprehending, the Impartial; the Unfailing, the lotus-eyed, whose every act is righteous, whose very form is Dharma.',
+    },
+    {
+      id: 15,
+      verseLabel: 'Shloka 13',
+      sanskrit: 'रुद्रो बहुशिरा बभ्रुर्विश्वयोनिः शुचिश्रवाः।\nअमृतः शाश्वतः स्थाणुर्वरारोहो महातपाः॥',
+      transliteration: 'Rudro Bahushira Babhrur Vishvayonih Shuchishravah.\nAmritah Shashvatah Sthanur Vararoho Mahatapah.',
+      meaning: 'The Destroyer of sorrow, the many-headed, the Ruler, the Womb of the universe, of sacred glory; the Immortal, the Eternal, the Unchanging Pillar, the auspicious Refuge, of great tapas.',
     },
   ],
 };
