@@ -9,15 +9,27 @@
   "theme_color": "#FF9933",
   "icons": [
     {
-      "src": "/sadhana-reader/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
+      "src": "/sadhana-reader/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/sadhana-reader/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "/sadhana-reader/icon-180.png",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "/sadhana-reader/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
     }
   ]
 }
