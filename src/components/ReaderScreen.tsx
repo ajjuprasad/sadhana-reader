@@ -104,12 +104,12 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
           <AnimatePresence mode="wait">
             <motion.div
               key={verse.id + '-' + stotra.id}
-              initial={{ opacity: 0, x: 60, rotateY: -8, scale: 0.94 }}
+              initial={{ opacity: 0, x: 40, rotateY: -5, scale: 0.96 }}
               animate={{ opacity: 1, x: 0, rotateY: 0, scale: 1 }}
-              exit={{ opacity: 0, x: -60, rotateY: 8, scale: 0.94 }}
+              exit={{ opacity: 0, x: -40, rotateY: 5, scale: 0.96 }}
               transition={{
-                duration: 0.4,
-                ease: sacredEase as unknown as number[],
+                duration: 0.2,
+                ease: [0.25, 0.1, 0.25, 1],
               }}
             >
               <VerseCard

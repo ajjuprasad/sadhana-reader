@@ -87,6 +87,20 @@ const ganeshaPancharatnam: Stotra = {
       transliteration: 'Samasta Loka Shankaram Nirasta Daitya Kunjaram.\nDaretarodaram Varam Varebha Vaktram Aksharam.\nKripakaram Kshamakaram Mudakaram Yashaskaram.\nManaskaram Namaskritam Namaskaromi Bhaskaram.',
       meaning: 'He who brings happiness to all the worlds, who vanquished the elephant demon, whose belly is vast, who has the face of the best of elephants, who is imperishable, who is the source of compassion, forgiveness, joy, and fame — I bow to that radiant one who is worshipped by all.',
     },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit: 'अकिञ्चनार्तिमार्जनं चिरन्तनोक्तिभाजनम्।\nपुरारिपूर्वनन्दनं सुरारिगर्वचर्वणम्॥\nप्रपञ्चनाशभीषणं धनञ्जयादिभूषणम्।\nकपोलदानवारणं भजे पुराणवारणम्॥',
+      transliteration: 'Akinchanarthi Marjanam Chirantanokti Bhajanam.\nPurari Purva Nandanam Surari Garva Charvanam.\nPrapancha Nasha Bhishanam Dhananjayadi Bhushanam.\nKapola Dana Varanam Bhaje Purana Varanam.',
+      meaning: 'He who removes the afflictions of the destitute, who is the recipient of ancient prayers, the first-born son of the destroyer of Tripura, who crushes the pride of the enemies of the gods, who is fearsome as the destroyer of the universe, adorned with the serpent Dhananjaya, whose temples exude ichor like a mighty elephant — I worship that ancient elephant-faced Lord.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit: 'नितान्तकान्तदन्तकान्तिमन्तकान्तकात्मजम्।\nअचिन्त्यरूपमन्तहीनमन्तरायकृन्तनम्॥\nहृदन्तरे निरन्तरं वसन्तमेव योगिनाम्।\nतमेकदन्तमेव तं विचिन्तयामि सन्ततम्॥',
+      transliteration: 'Nitanta Kanta Danta Kanti Mantakanta Katmajam.\nAchintya Rupam Antahinam Antaraya Krintanam.\nHridantare Nirantaram Vasantameva Yoginam.\nTam Ekadantam Eva Tam Vichintayami Santatam.',
+      meaning: 'He whose lustrous tusks are exceedingly beautiful, the son of the destroyer of the god of death, whose form is beyond thought, who is infinite, who removes all obstacles, who dwells forever in the hearts of yogis — I constantly meditate upon that single-tusked Lord.',
+    },
   ],
 };
 
