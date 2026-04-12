@@ -1279,6 +1279,41 @@ const vishnuSahasranamam: Stotra = {
       transliteration: 'Stavyah Stavapriyah Stotram Stutih Stota Ranapriyah.\nPurnah Purayita Punyah Punyakirtir Anamayah.',
       meaning: 'The praiseworthy, the lover of praise, the hymn itself, praise itself, the praiser, the delighter in battle; the Full, the Fulfiller, the Holy, of holy fame, the ever-healthy.',
     },
+    {
+      id: 76,
+      verseLabel: 'Shloka 74',
+      sanskrit: 'मनोजवस्तीर्थकरो वसुरेता वसुप्रदः।\nवसुप्रदो वासुदेवो वसुर्वसुमना हविः॥',
+      transliteration: 'Manojavas Tirthakaro Vasureta Vasupradah.\nVasuprado Vasudevo Vasur Vasumana Havih.',
+      meaning: 'Swift as the mind, founder of sacred fords, of golden seed, bestower of wealth; bestower of the supreme wealth of liberation, Vasudeva, the Abode, of pure mind, the oblation.',
+    },
+    {
+      id: 77,
+      verseLabel: 'Shloka 75',
+      sanskrit: 'सद्गतिः सत्कृतिः सत्ता सद्भूतिः सत्परायणः।\nशूरसेनो यदुश्रेष्ठः सन्निवासः सुयामुनः॥',
+      transliteration: 'Sadgatih Satkritih Satta Sadbhutih Satparayanah.\nShurasenah Yadushreshthah Sannivasah Suyamunah.',
+      meaning: 'The good refuge, good deeds embodied, pure Being, manifest reality, the supreme goal of the good; of a heroic army, best of the Yadus, the abode of the good, surrounded by the gopis of the Yamuna.',
+    },
+    {
+      id: 78,
+      verseLabel: 'Shloka 76',
+      sanskrit: 'भूतावासो वासुदेवः सर्वासुनिलयोऽनलः।\nदर्पहा दर्पदो दृप्तो दुर्धरोऽथापराजितः॥',
+      transliteration: 'Bhutavaso Vasudevah Sarvasunilayo\'nalah.\nDarpaha Darpado Dripto Durdharo\'thaparajitah.',
+      meaning: 'Abode of beings, Vasudeva, the resting-place of all life-breaths, the Fire; destroyer of pride, bestower of pride in the righteous, the exalted, the hard-to-hold, the undefeated.',
+    },
+    {
+      id: 79,
+      verseLabel: 'Shloka 77',
+      sanskrit: 'विश्वमूर्तिर्महामूर्तिर्दीप्तमूर्तिरमूर्तिमान्।\nअनेकमूर्तिरव्यक्तः शतमूर्तिः शताननः॥',
+      transliteration: 'Vishvamurtir Mahamurtir Diptamurtir Amurtiman.\nAnekamurtir Avyaktah Shatamurtih Shatananah.',
+      meaning: 'Of universal form, of great form, of luminous form, the formless; of manifold forms, the Unmanifest, of a hundred forms, of a hundred faces.',
+    },
+    {
+      id: 80,
+      verseLabel: 'Shloka 78',
+      sanskrit: 'एको नैकः सवः कः किं यत्तत्पदमनुत्तमम्।\nलोकबन्धुर्लोकनाथो माधवो भक्तवत्सलः॥',
+      transliteration: 'Eko Naikah Savah Kah Kim Yat Tat Padam Anuttamam.\nLokabandhur Lokanatho Madhavo Bhaktavatsalah.',
+      meaning: 'The One, yet the Many, the Soma-sacrifice, Who?, What?, That which is, the unparalleled supreme state; friend of the world, Lord of the world, Madhava, lover of devotees.',
+    },
   ],
 };
 
