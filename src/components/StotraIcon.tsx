@@ -1,0 +1,86 @@
+const s = { stroke: 'currentColor', fill: 'none', strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const };
+
+export default function StotraIcon({ stotraId }: { stotraId: string }) {
+  switch (stotraId) {
+    case 'hanuman-chalisa':
+      // Gada (mace) — Hanuman's iconic weapon
+      return (
+        <>
+          <circle cx="16" cy="7" r="4.5" {...s} strokeWidth="1.6" />
+          <path d="M12.5 4.5 L19.5 9.5 M19.5 4.5 L12.5 9.5" {...s} strokeWidth="1" />
+          <line x1="16" y1="11.5" x2="16" y2="29" {...s} strokeWidth="2.2" />
+          <path d="M13.5 26 L18.5 26" {...s} strokeWidth="1.4" />
+        </>
+      );
+
+    case 'ganesha-pancharatnam':
+      // Ganesha — refined face with ornamental ears, crown, curved trunk
+      return (
+        <>
+          <path d="M9 16 Q9 4 16 3 Q23 4 23 16" {...s} strokeWidth="1.6" />
+          <path d="M9 10 Q4 6 4 12 Q4 16 9 15" {...s} strokeWidth="1.5" />
+          <path d="M23 10 Q28 6 28 12 Q28 16 23 15" {...s} strokeWidth="1.5" />
+          <path d="M12 4 L14 1.5 L16 3.5 L18 1.5 L20 4" {...s} strokeWidth="1.1" />
+          <path d="M12 10 Q13.5 9 15 10" {...s} strokeWidth="1" />
+          <path d="M17 10 Q18.5 9 20 10" {...s} strokeWidth="1" />
+          <path d="M16 16 C16 19 13 22 11 25 C10 27 9 28 8 29" {...s} strokeWidth="1.8" />
+          <path d="M19 15 C20 17 21 19 22 20" {...s} strokeWidth="1.3" />
+        </>
+      );
+
+    case 'shiva-panchakshara':
+      // Trishul (trident) — Shiva's weapon
+      return (
+        <>
+          <line x1="16" y1="3" x2="16" y2="29" {...s} strokeWidth="2" />
+          <path d="M16 10 Q10 8 8 3" {...s} strokeWidth="1.8" />
+          <path d="M16 10 Q22 8 24 3" {...s} strokeWidth="1.8" />
+          <path d="M14.5 5 L16 2 L17.5 5" {...s} strokeWidth="1.2" />
+          <path d="M12 13 L20 13" {...s} strokeWidth="1.4" />
+        </>
+      );
+
+    case 'mahalakshmi-ashtakam':
+      // Lotus (padma) — side-view blooming lotus
+      return (
+        <>
+          <path d="M16 16 C14 10 14 6 16 2 C18 6 18 10 16 16" {...s} strokeWidth="1.4" />
+          <path d="M16 16 C12 12 8 10 4 10 C8 14 12 15 16 16" {...s} strokeWidth="1.3" />
+          <path d="M16 16 C13 11 10 7 7 5 C9 9 12 13 16 16" {...s} strokeWidth="1.2" />
+          <path d="M16 16 C20 12 24 10 28 10 C24 14 20 15 16 16" {...s} strokeWidth="1.3" />
+          <path d="M16 16 C19 11 22 7 25 5 C23 9 20 13 16 16" {...s} strokeWidth="1.2" />
+          <path d="M6 18 C9 16 13 16 16 17 C19 16 23 16 26 18" {...s} strokeWidth="1.2" />
+          <path d="M16 17 C16 21 15 25 14 29" {...s} strokeWidth="1.4" />
+        </>
+      );
+
+    case 'lingashtakam':
+      // Shiva Lingam on yoni base
+      return (
+        <>
+          <path d="M11 22 Q11 6 16 4 Q21 6 21 22" {...s} strokeWidth="1.8" />
+          <ellipse cx="16" cy="22" rx="10" ry="3" {...s} strokeWidth="1.6" />
+          <path d="M6 25 Q6 28 16 28 Q26 28 26 25" {...s} strokeWidth="1.4" />
+          <path d="M16 4 Q17 2.5 16 1.5" {...s} strokeWidth="1" />
+        </>
+      );
+
+    case 'madhurashtakam':
+      // Krishna's bansuri (flute) with peacock feather
+      return (
+        <>
+          <line x1="5" y1="18" x2="27" y2="14" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+          <circle cx="10" cy="17.1" r="1" stroke="none" fill="currentColor" opacity="0.5" />
+          <circle cx="14" cy="16.4" r="1" stroke="none" fill="currentColor" opacity="0.5" />
+          <circle cx="18" cy="15.6" r="1" stroke="none" fill="currentColor" opacity="0.5" />
+          <circle cx="22" cy="14.9" r="1" stroke="none" fill="currentColor" opacity="0.5" />
+          <path d="M24 13 Q22 7 20 4" {...s} strokeWidth="1.2" />
+          <ellipse cx="20.5" cy="6" rx="2" ry="3" {...s} strokeWidth="1" transform="rotate(-15 20.5 6)" />
+          <circle cx="20.5" cy="6" r="1" stroke="none" fill="currentColor" />
+        </>
+      );
+
+    default:
+      return <circle cx="16" cy="16" r="8" {...s} strokeWidth="1.5" />;
+  }
+}

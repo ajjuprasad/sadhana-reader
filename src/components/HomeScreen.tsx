@@ -90,7 +90,7 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
             key={stotra.id}
             stotra={stotra}
             index={index}
-            onClick={() => navigate(`/read/${stotra.id}`)}
+            onClick={() => navigate(`/stotra/${stotra.id}`)}
           />
         ))}
       </div>
