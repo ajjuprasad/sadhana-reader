@@ -1244,6 +1244,41 @@ const vishnuSahasranamam: Stotra = {
       transliteration: 'Archishman Architah Kumbho Vishuddhatma Vishodhanah.\nAniruddho\'pratirathah Pradyumno\'mitavikramah.',
       meaning: 'The Effulgent, the Worshiped, the Pot that holds all, of pure Self, the Purifier; Aniruddha, the matchless warrior, Pradyumna, of boundless prowess.',
     },
+    {
+      id: 71,
+      verseLabel: 'Shloka 69',
+      sanskrit: 'कालनेमिनिहा वीरः शौरिः शूरजनेश्वरः।\nत्रिलोकात्मा त्रिलोकेशः केशवः केशिहा हरिः॥',
+      transliteration: 'Kalaneminiha Virah Shaurih Shurajaneshvarah.\nTrilokatma Trilokeshah Keshavah Keshiha Harih.',
+      meaning: 'Slayer of Kalanemi, the Hero, the scion of Shura, Lord of the brave; Soul of the three worlds, Lord of the three worlds, Keshava, slayer of Keshi, Hari.',
+    },
+    {
+      id: 72,
+      verseLabel: 'Shloka 70',
+      sanskrit: 'कामदेवः कामपालः कामी कान्तः कृतागमः।\nअनिर्देश्यवपुर्विष्णुर्वीरोऽनन्तो धनञ्जयः॥',
+      transliteration: 'Kamadevah Kamapalah Kami Kantah Kritagamah.\nAnirdeshyavapur Vishnur Viro\'nanto Dhananjayah.',
+      meaning: 'Lord of desire, protector of the desirable, the Desirous, the beloved, revealer of scriptures; of indescribable form, Vishnu, the Hero, the Infinite, the conqueror of wealth (as Arjuna).',
+    },
+    {
+      id: 73,
+      verseLabel: 'Shloka 71',
+      sanskrit: 'ब्रह्मण्यो ब्रह्मकृद् ब्रह्मा ब्रह्म ब्रह्मविवर्धनः।\nब्रह्मविद् ब्राह्मणो ब्रह्मी ब्रह्मज्ञो ब्राह्मणप्रियः॥',
+      transliteration: 'Brahmanyo Brahmakrid Brahma Brahma Brahmavivardhanah.\nBrahmavid Brahmano Brahmi Brahmajno Brahmanapriyah.',
+      meaning: 'Beloved of the brahmanas, maker of Brahma, Brahma himself, Brahman absolute, promoter of Brahman; knower of Brahman, a brahmana, possessor of Brahma, the Brahma-knowing, lover of brahmanas.',
+    },
+    {
+      id: 74,
+      verseLabel: 'Shloka 72',
+      sanskrit: 'महाक्रमो महाकर्मा महातेजा महोरगः।\nमहाक्रतुर्महायज्वा महायज्ञो महाहविः॥',
+      transliteration: 'Mahakramo Mahakarma Mahateja Mahoragah.\nMahakratur Mahayajva Mahayajno Mahahavih.',
+      meaning: 'Of great stride, of great deeds, of great splendor, the great serpent (Shesha); the great sacrifice, the great sacrificer, the great yajna, the great oblation.',
+    },
+    {
+      id: 75,
+      verseLabel: 'Shloka 73',
+      sanskrit: 'स्तव्यः स्तवप्रियः स्तोत्रं स्तुतिः स्तोता रणप्रियः।\nपूर्णः पूरयिता पुण्यः पुण्यकीर्तिरनामयः॥',
+      transliteration: 'Stavyah Stavapriyah Stotram Stutih Stota Ranapriyah.\nPurnah Purayita Punyah Punyakirtir Anamayah.',
+      meaning: 'The praiseworthy, the lover of praise, the hymn itself, praise itself, the praiser, the delighter in battle; the Full, the Fulfiller, the Holy, of holy fame, the ever-healthy.',
+    },
   ],
 };
 
