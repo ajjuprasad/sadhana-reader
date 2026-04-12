@@ -1314,6 +1314,41 @@ const vishnuSahasranamam: Stotra = {
       transliteration: 'Eko Naikah Savah Kah Kim Yat Tat Padam Anuttamam.\nLokabandhur Lokanatho Madhavo Bhaktavatsalah.',
       meaning: 'The One, yet the Many, the Soma-sacrifice, Who?, What?, That which is, the unparalleled supreme state; friend of the world, Lord of the world, Madhava, lover of devotees.',
     },
+    {
+      id: 81,
+      verseLabel: 'Shloka 79',
+      sanskrit: 'सुवर्णवर्णो हेमाङ्गो वराङ्गश्चन्दनाङ्गदी।\nवीरहा विषमः शून्यो घृताशीरचलश्चलः॥',
+      transliteration: 'Suvarnavarno Hemango Varangash Chandanangadi.\nViraha Vishamah Shunyo Ghritashir Achalash Chalah.',
+      meaning: 'Of golden hue, of golden limbs, of graceful form, adorned with sandal-paste armlets; slayer of heroic foes, the unequaled, the Void, whose blessings are pure as ghee, the Steady and the Mover.',
+    },
+    {
+      id: 82,
+      verseLabel: 'Shloka 80',
+      sanskrit: 'अमानी मानदो मान्यो लोकस्वामी त्रिलोकधृक्।\nसुमेधा मेधजो धन्यः सत्यमेधा धराधरः॥',
+      transliteration: 'Amani Manado Manyo Lokasvami Trilokadhrik.\nSumedha Medhajo Dhanyah Satyamedha Dharadharah.',
+      meaning: 'Free of pride, the bestower of honor, the venerable, the Lord of the world, upholder of the three worlds; of noble intellect, born of sacrifice, the blessed, of true wisdom, supporter of the earth.',
+    },
+    {
+      id: 83,
+      verseLabel: 'Shloka 81',
+      sanskrit: 'तेजोवृषो द्युतिधरः सर्वशस्त्रभृतां वरः।\nप्रग्रहो निग्रहो व्यग्रो नैकशृङ्गो गदाग्रजः॥',
+      transliteration: 'Tejovrisho Dyutidharah Sarvashastrabhritam Varah.\nPragraho Nigraho Vyagro Naikashringo Gadagrajah.',
+      meaning: 'The Shower of splendor, bearer of radiance, best among the bearers of weapons; the Acceptor of devotion, the Restrainer, the ever-eager Protector, of many horns, elder brother of Gada (Krishna).',
+    },
+    {
+      id: 84,
+      verseLabel: 'Shloka 82',
+      sanskrit: 'चतुर्मूर्तिश्चतुर्बाहुश्चतुर्व्यूहश्चतुर्गतिः।\nचतुरात्मा चतुर्भावश्चतुर्वेदविदेकपात्॥',
+      transliteration: 'Chaturmurtish Chaturbahush Chaturvyuhash Chaturgatih.\nChaturatma Chaturbhavash Chaturvedavid Ekapat.',
+      meaning: 'Of four forms, of four arms, of four-fold manifestation, of four destinies; of four-fold Self, of four states, knower of the four Vedas, the one-footed (Supreme).',
+    },
+    {
+      id: 85,
+      verseLabel: 'Shloka 83',
+      sanskrit: 'समावर्तोऽनिवृत्तात्मा दुर्जयो दुरतिक्रमः।\nदुर्लभो दुर्गमो दुर्गो दुरावासो दुरारिहा॥',
+      transliteration: 'Samavarto\'nivrittatma Durjayo Duratikramah.\nDurlabho Durgamo Durgo Duravaso Durariha.',
+      meaning: 'The supreme Wheel of samsara, the Self that never turns back, hard to conquer, not to be transgressed; hard to attain, hard to reach, the inaccessible fortress, hard to dwell in, the slayer of invincible foes.',
+    },
   ],
 };
 
