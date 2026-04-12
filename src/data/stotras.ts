@@ -1419,6 +1419,41 @@ const vishnuSahasranamam: Stotra = {
       transliteration: 'Sattvavan Sattvikah Satyah Satyadharmaparayanah.\nAbhiprayah Priyarho\'rhah Priyakrit Pritivardhanah.',
       meaning: 'Full of sattva, of pure sattvic nature, the Truth, devoted to Truth and Dharma; the goal of the aspiring, worthy of love, the worthy, doer of dear deeds, the increaser of love.',
     },
+    {
+      id: 96,
+      verseLabel: 'Shloka 94',
+      sanskrit: 'विहायसगतिर्ज्योतिः सुरुचिर्हुतभुग्विभुः।\nरविर्विरोचनः सूर्यः सविता रविलोचनः॥',
+      transliteration: 'Vihayasagatir Jyotih Suruchir Hutabhug Vibhuh.\nRavir Virochanah Suryah Savita Ravilochanah.',
+      meaning: 'The mover through the heavens, the Light, of fair radiance, consumer of oblations, the all-pervading; the Sun, the Brightly-shining, the Surya, the Inspirer, whose eye is the sun.',
+    },
+    {
+      id: 97,
+      verseLabel: 'Shloka 95',
+      sanskrit: 'अनन्तो हुतभुग्भोक्ता सुखदो नैकजोऽग्रजः।\nअनिर्विण्णः सदामर्षी लोकाधिष्ठानमद्भुतः॥',
+      transliteration: 'Ananto Hutabhug Bhokta Sukhado Naikajo\'grajah.\nAnirvinnah Sadamarshi Lokadhishthanam Adbhutah.',
+      meaning: 'The Infinite, consumer of oblations, the Enjoyer, giver of joy, born many times, the first-born; the Undespondent, the ever-forgiving, the foundation of the worlds, the Wonderful.',
+    },
+    {
+      id: 98,
+      verseLabel: 'Shloka 96',
+      sanskrit: 'सनात्सनातनतमः कपिलः कपिरव्ययः।\nस्वस्तिदः स्वस्तिकृत् स्वस्ति स्वस्तिभुक् स्वस्तिदक्षिणः॥',
+      transliteration: 'Sanat Sanatanatamah Kapilah Kapir Avyayah.\nSvastidah Svastikrit Svasti Svastibhuk Svastidakshinah.',
+      meaning: 'The Ancient, the most Eternal, Kapila, the Boar, the Imperishable; giver of auspiciousness, doer of auspiciousness, Auspiciousness itself, enjoyer of auspiciousness, the bestower of auspicious gifts.',
+    },
+    {
+      id: 99,
+      verseLabel: 'Shloka 97',
+      sanskrit: 'अरौद्रः कुण्डली चक्री विक्रम्यूर्जितशासनः।\nशब्दातिगः शब्दसहः शिशिरः शर्वरीकरः॥',
+      transliteration: 'Araudrah Kundali Chakri Vikramyurjitashasanah.\nShabdatigah Shabdasahah Shishirah Sharvarikarah.',
+      meaning: 'The non-furious, the wearer of earrings, wielder of the discus, the Valorous, whose decree prevails; beyond the reach of words, the bearer of the Vedas, the Cool, the maker of night.',
+    },
+    {
+      id: 100,
+      verseLabel: 'Shloka 98',
+      sanskrit: 'अक्रूरः पेशलो दक्षो दक्षिणः क्षमिणां वरः।\nविद्वत्तमो वीतभयः पुण्यश्रवणकीर्तनः॥',
+      transliteration: 'Akrurah Peshalo Daksho Dakshinah Kshaminam Varah.\nVidvattamo Vitabhayah Punyashravanakirtanah.',
+      meaning: 'Free from cruelty, the Graceful, the Dexterous, the Liberal, best among the patient; the most learned, free from fear, whose hearing and singing bring merit.',
+    },
   ],
 };
 
