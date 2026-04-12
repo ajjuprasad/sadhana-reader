@@ -184,6 +184,37 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
             {stotra.subtitle}
           </p>
 
+          {/* Details row */}
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <span
+              className="font-hind text-xs px-3 py-1 rounded-full"
+              style={{
+                backgroundColor: 'rgba(255,153,51,0.12)',
+                color: 'var(--color-accent-primary)',
+              }}
+            >
+              {stotra.deity}
+            </span>
+            <span
+              className="font-hind text-xs px-3 py-1 rounded-full"
+              style={{
+                backgroundColor: 'rgba(255,153,51,0.12)',
+                color: 'var(--color-accent-primary)',
+              }}
+            >
+              {stotra.verses.length} verses
+            </span>
+            <span
+              className="font-hind text-xs px-3 py-1 rounded-full"
+              style={{
+                backgroundColor: 'rgba(255,153,51,0.12)',
+                color: 'var(--color-accent-primary)',
+              }}
+            >
+              {stotra.estimatedMinutes} min
+            </span>
+          </div>
+
           {/* Description */}
           <p
             className="font-body text-sm leading-relaxed mb-6 max-w-sm mx-auto"
@@ -226,37 +257,6 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
               </ul>
             </div>
           )}
-
-          {/* Details row */}
-          <div className="flex items-center justify-center gap-4 mb-8">
-            <span
-              className="font-hind text-xs px-3 py-1 rounded-full"
-              style={{
-                backgroundColor: 'rgba(255,153,51,0.12)',
-                color: 'var(--color-accent-primary)',
-              }}
-            >
-              {stotra.deity}
-            </span>
-            <span
-              className="font-hind text-xs px-3 py-1 rounded-full"
-              style={{
-                backgroundColor: 'rgba(255,153,51,0.12)',
-                color: 'var(--color-accent-primary)',
-              }}
-            >
-              {stotra.verses.length} verses
-            </span>
-            <span
-              className="font-hind text-xs px-3 py-1 rounded-full"
-              style={{
-                backgroundColor: 'rgba(255,153,51,0.12)',
-                color: 'var(--color-accent-primary)',
-              }}
-            >
-              {stotra.estimatedMinutes} min
-            </span>
-          </div>
 
           {/* Start button */}
           <motion.button
