@@ -145,7 +145,7 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
       </motion.header>
 
       {/* Main content */}
-      <div className="flex-1 flex items-center justify-center px-4 py-8 sm:py-12">
+      <div className="flex-1 flex items-start justify-center px-4 pt-4 pb-8 sm:pt-6 sm:pb-10">
         <motion.div
           className="max-w-md w-full text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -154,12 +154,12 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
         >
           {/* Large icon */}
           <div
-            className="w-20 h-20 mx-auto mb-6 flex items-center justify-center rounded-full"
+            className="w-16 h-16 mx-auto mb-3 flex items-center justify-center rounded-full"
             style={{ backgroundColor: 'rgba(255,153,51,0.1)' }}
           >
             <svg
-              width="44"
-              height="44"
+              width="36"
+              height="36"
               viewBox="0 0 32 32"
               fill="none"
               style={{ color: 'var(--color-accent-gold)' }}
@@ -178,14 +178,14 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
 
           {/* Subtitle in Devanagari */}
           <p
-            className="font-sanskrit text-lg mb-4"
+            className="font-sanskrit text-lg mb-3"
             style={{ color: 'var(--color-accent-primary)', lineHeight: 1.8 }}
           >
             {stotra.subtitle}
           </p>
 
           {/* Details row */}
-          <div className="flex items-center justify-center gap-4 mb-6">
+          <div className="flex items-center justify-center gap-4 mb-5">
             <span
               className="font-hind text-xs px-3 py-1 rounded-full"
               style={{
@@ -217,7 +217,7 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
 
           {/* Description */}
           <p
-            className="font-body text-sm leading-relaxed mb-6 max-w-sm mx-auto"
+            className="font-body text-sm leading-relaxed mb-5 max-w-sm mx-auto"
             style={{ color: 'var(--color-text-secondary)' }}
           >
             {stotra.description}
@@ -225,7 +225,7 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
 
           {/* Benefits */}
           {stotra.benefits && stotra.benefits.length > 0 && (
-            <div className="mb-8 max-w-sm mx-auto text-left">
+            <div className="mb-6 max-w-sm mx-auto text-left">
               <h2
                 className="font-hind font-semibold text-xs uppercase text-center mb-3"
                 style={{
