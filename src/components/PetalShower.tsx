@@ -41,7 +41,7 @@ function generatePetals(count: number): PetalConfig[] {
       rotateEnd: Math.random() * 360 + 360,
       duration,
       delay: Math.random() * 2.5,
-      size: 14 + Math.random() * 12,
+      size: 16 + Math.random() * 14,
       color: PETAL_COLORS[i % PETAL_COLORS.length],
       opacity: 0.55 + Math.random() * 0.35,
     };
@@ -52,7 +52,7 @@ interface PetalShowerProps {
   count?: number;
 }
 
-export default function PetalShower({ count = 22 }: PetalShowerProps) {
+export default function PetalShower({ count = 18 }: PetalShowerProps) {
   const prefersReducedMotion = useReducedMotion();
   const petals = useMemo(() => generatePetals(count), [count]);
 
@@ -68,8 +68,8 @@ export default function PetalShower({ count = 22 }: PetalShowerProps) {
         <motion.svg
           key={p.id}
           width={p.size}
-          height={p.size * 1.4}
-          viewBox="0 0 20 28"
+          height={p.size}
+          viewBox="0 0 24 24"
           className="absolute"
           style={{
             left: `${p.leftPct}%`,
@@ -96,17 +96,41 @@ export default function PetalShower({ count = 22 }: PetalShowerProps) {
             },
           }}
         >
-          {/* Soft teardrop petal shape */}
-          <path
-            d="M10 0 C 15 7, 18 16, 10 28 C 2 16, 5 7, 10 0 Z"
-            fill="currentColor"
-          />
-          {/* Inner highlight for a subtle sense of depth */}
-          <path
-            d="M10 3 C 13 9, 15 16, 10 24 C 5 16, 7 9, 10 3 Z"
-            fill="currentColor"
-            opacity="0.35"
-          />
+          {/* Five-petal bloom (jasmine / mallika style) */}
+          <g fill="currentColor">
+            <ellipse cx="12" cy="5.5" rx="3" ry="5" />
+            <ellipse
+              cx="12"
+              cy="5.5"
+              rx="3"
+              ry="5"
+              transform="rotate(72 12 12)"
+            />
+            <ellipse
+              cx="12"
+              cy="5.5"
+              rx="3"
+              ry="5"
+              transform="rotate(144 12 12)"
+            />
+            <ellipse
+              cx="12"
+              cy="5.5"
+              rx="3"
+              ry="5"
+              transform="rotate(216 12 12)"
+            />
+            <ellipse
+              cx="12"
+              cy="5.5"
+              rx="3"
+              ry="5"
+              transform="rotate(288 12 12)"
+            />
+          </g>
+          {/* Warm gold pollen center */}
+          <circle cx="12" cy="12" r="1.9" fill="#FFD68A" />
+          <circle cx="12" cy="12" r="0.9" fill="#E67E22" opacity="0.7" />
         </motion.svg>
       ))}
     </div>
