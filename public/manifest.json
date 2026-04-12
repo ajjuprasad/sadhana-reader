@@ -2,20 +2,22 @@
   "name": "Sādhanā Reader",
   "short_name": "Sādhanā",
   "description": "A digital sanctum for reading Hindu stotras",
-  "start_url": "./",
+  "start_url": "/sadhana-reader/",
+  "scope": "/sadhana-reader/",
   "display": "standalone",
   "background_color": "#FFF8E1",
   "theme_color": "#FF9933",
   "icons": [
     {
-      "src": "./favicon.svg",
+      "src": "/sadhana-reader/favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml"
     },
     {
-      "src": "./icon-180.png",
+      "src": "/sadhana-reader/icon-180.png",
       "sizes": "180x180",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }
