@@ -144,6 +144,22 @@ export default function VerseCard({
         >
           {verse.meaning}
         </motion.p>
+
+        {/* Tap zones — left half goes to previous, right half goes to next */}
+        <button
+          type="button"
+          aria-label="Previous verse"
+          onClick={onSwipeRight}
+          className="absolute left-0 top-0 bottom-0 w-1/2 z-10 bg-transparent focus:outline-none"
+          style={{ cursor: 'pointer' }}
+        />
+        <button
+          type="button"
+          aria-label="Next verse"
+          onClick={onSwipeLeft}
+          className="absolute right-0 top-0 bottom-0 w-1/2 z-10 bg-transparent focus:outline-none"
+          style={{ cursor: 'pointer' }}
+        />
       </motion.div>
     </motion.div>
   );
