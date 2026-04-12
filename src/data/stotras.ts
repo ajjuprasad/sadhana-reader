@@ -1384,6 +1384,41 @@ const vishnuSahasranamam: Stotra = {
       transliteration: 'Sulabhah Suvratah Siddhah Shatrujich Chhatrutapanah.\nNyagrodho\'dumbaro\'shvatthash Chanurandhranishudanah.',
       meaning: 'Easily attained, of noble vows, the Perfected, victor over foes, tormentor of foes; the banyan, the udumbara, the ashvattha, slayer of Chanura and the Andhras.',
     },
+    {
+      id: 91,
+      verseLabel: 'Shloka 89',
+      sanskrit: 'सहस्रार्चिः सप्तजिह्वः सप्तैधाः सप्तवाहनः।\nअमूर्तिरनघोऽचिन्त्यो भयकृद्भयनाशनः॥',
+      transliteration: 'Sahasrarchih Saptajihvah Saptaidhah Saptavahanah.\nAmurtir Anagho\'chintyo Bhayakrid Bhayanashanah.',
+      meaning: 'Of a thousand rays, of seven tongues of flame, of sevenfold fuel, of seven mounts (the Sun\'s horses); the Formless, the Sinless, the Inconceivable, the Causer of fear to the wicked, the destroyer of fear for devotees.',
+    },
+    {
+      id: 92,
+      verseLabel: 'Shloka 90',
+      sanskrit: 'अणुर्बृहत्कृशः स्थूलो गुणभृन्निर्गुणो महान्।\nअधृतः स्वधृतः स्वास्यः प्राग्वंशो वंशवर्धनः॥',
+      transliteration: 'Anur Brihat Krishah Sthulo Gunabhrin Nirguno Mahan.\nAdhritah Svadhritah Svasyah Pragvamsho Vamshavardhanah.',
+      meaning: 'Subtler than the atom, yet the Vast; the lean, the stout; bearer of qualities, beyond qualities, the great; unsupported, self-sustained, of auspicious face, of ancient lineage, the promoter of the dynasty.',
+    },
+    {
+      id: 93,
+      verseLabel: 'Shloka 91',
+      sanskrit: 'भारभृत्कथितो योगी योगीशः सर्वकामदः।\nआश्रमः श्रमणः क्षामः सुपर्णो वायुवाहनः॥',
+      transliteration: 'Bharabhrit Kathito Yogi Yogishah Sarvakamadah.\nAshramah Shramanah Kshamah Suparno Vayuvahanah.',
+      meaning: 'Bearer of the earth\'s burden, the celebrated, the Yogi, Lord of yogis, bestower of all desires; the shelter, the humbler of pride, the Reducer, the fair-winged, whose mount is the wind.',
+    },
+    {
+      id: 94,
+      verseLabel: 'Shloka 92',
+      sanskrit: 'धनुर्धरो धनुर्वेदो दण्डो दमयिता दमः।\nअपराजितः सर्वसहो नियन्ताऽनियमोऽयमः॥',
+      transliteration: 'Dhanurdharo Dhanurvedo Dando Damayita Damah.\nAparajitah Sarvasaho Niyanta\'niyamo\'yamah.',
+      meaning: 'Wielder of the bow, knower of Dhanur-Veda, the Rod of discipline, the Subduer, Restraint itself; the Undefeated, the all-enduring, the Director, beyond rule, beyond constraint.',
+    },
+    {
+      id: 95,
+      verseLabel: 'Shloka 93',
+      sanskrit: 'सत्त्ववान् सात्त्विकः सत्यः सत्यधर्मपरायणः।\nअभिप्रायः प्रियार्होऽर्हः प्रियकृत् प्रीतिवर्धनः॥',
+      transliteration: 'Sattvavan Sattvikah Satyah Satyadharmaparayanah.\nAbhiprayah Priyarho\'rhah Priyakrit Pritivardhanah.',
+      meaning: 'Full of sattva, of pure sattvic nature, the Truth, devoted to Truth and Dharma; the goal of the aspiring, worthy of love, the worthy, doer of dear deeds, the increaser of love.',
+    },
   ],
 };
 
