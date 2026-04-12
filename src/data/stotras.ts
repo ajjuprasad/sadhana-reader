@@ -186,6 +186,41 @@ const lingashtakam: Stotra = {
       transliteration: 'Sarva Sugandhi Sulepita Lingam Buddhi Vivardhana Karana Lingam.\nSiddha Surasura Vandita Lingam Tat Pranamami Sadashiva Lingam.',
       meaning: 'I bow to that Sadashiva Lingam which is anointed with all fragrances, which is the cause of the growth of wisdom, and which is venerated by the Siddhas, gods, and demons.',
     },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit: 'कनकमहामणिभूषितलिङ्गं फणिपतिवेष्टितशोभितलिङ्गम्।\nदक्षसुयज्ञविनाशनलिङ्गं तत्प्रणमामि सदाशिवलिङ्गम्॥',
+      transliteration: 'Kanaka Mahamani Bhushita Lingam Phanipati Veshtita Shobhita Lingam.\nDaksha Suyajna Vinashana Lingam Tat Pranamami Sadashiva Lingam.',
+      meaning: 'I bow to that Sadashiva Lingam which is adorned with gold and precious jewels, which is beautified by the king of serpents coiled around it, and which destroyed the great sacrifice of Daksha.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit: 'कुङ्कुमचन्दनलेपितलिङ्गं पङ्कजहारसुशोभितलिङ्गम्।\nसञ्चितपापविनाशनलिङ्गं तत्प्रणमामि सदाशिवलिङ्गम्॥',
+      transliteration: 'Kumkuma Chandana Lepita Lingam Pankaja Hara Sushobhita Lingam.\nSanchita Papa Vinashana Lingam Tat Pranamami Sadashiva Lingam.',
+      meaning: 'I bow to that Sadashiva Lingam which is anointed with kumkum and sandalwood paste, which is beautifully adorned with garlands of lotuses, and which destroys accumulated sins.',
+    },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit: 'देवगणार्चितसेवितलिङ्गं भावैर्भक्तिभिरेव च लिङ्गम्।\nदिनकरकोटिप्रभाकरलिङ्गं तत्प्रणमामि सदाशिवलिङ्गम्॥',
+      transliteration: 'Devagana Archita Sevita Lingam Bhavair Bhaktibhireva Cha Lingam.\nDinakara Koti Prabhakara Lingam Tat Pranamami Sadashiva Lingam.',
+      meaning: 'I bow to that Sadashiva Lingam which is worshipped and served by hosts of gods, which is worshipped with devotion and true feeling, and which shines with the radiance of a million suns.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit: 'अष्टदलोपरिवेष्टितलिङ्गं सर्वसमुद्भवकारणलिङ्गम्।\nअष्टदरिद्रविनाशनलिङ्गं तत्प्रणमामि सदाशिवलिङ्गम्॥',
+      transliteration: 'Ashtadalo Pariveshtita Lingam Sarva Samudbhava Karana Lingam.\nAshta Daridra Vinashana Lingam Tat Pranamami Sadashiva Lingam.',
+      meaning: 'I bow to that Sadashiva Lingam which is surrounded by eight-petaled flowers, which is the cause of all creation, and which destroys the eight forms of poverty.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit: 'सुरगुरुसुरवरपूजितलिङ्गं सुरवनपुष्पसदार्चितलिङ्गम्।\nपरात्परं परमात्मकलिङ्गं तत्प्रणमामि सदाशिवलिङ्गम्॥',
+      transliteration: 'Suraguru Suravara Pujita Lingam Suravana Pushpa Sadarchita Lingam.\nParatparam Paramatmaka Lingam Tat Pranamami Sadashiva Lingam.',
+      meaning: 'I bow to that Sadashiva Lingam which is worshipped by the preceptor of gods and the best of gods, which is always worshipped with flowers from the celestial gardens, and which is the Supreme Being, the ultimate soul.',
+    },
   ],
 };
 

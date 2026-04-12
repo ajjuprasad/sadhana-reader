@@ -1,27 +1,22 @@
 import { useNavigate, useParams } from 'react-router-dom';
-import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { stotras } from '../data/stotras';
 import VerseCard from './VerseCard';
 import MalaBead from './MalaBead';
-import SettingsDrawer from './SettingsDrawer';
-import { useSettings } from '../hooks/useSettings';
 import { useReader } from '../hooks/useReader';
+import type { useSettings } from '../hooks/useSettings';
 
 const sacredEase = [0.76, 0, 0.24, 1] as const;
 
-export default function ReaderScreen() {
+interface ReaderScreenProps {
+  settingsState: ReturnType<typeof useSettings>;
+}
+
+export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
   const { stotraId } = useParams<{ stotraId: string }>();
   const navigate = useNavigate();
   const stotra = stotras.find((s) => s.id === stotraId);
-  const [settingsOpen, setSettingsOpen] = useState(false);
-
-  const {
-    settings,
-    updateFontSize,
-    toggleDeepamMode,
-    toggleContemplationMode,
-  } = useSettings();
+  const { settings } = settingsState;
 
   const totalVerses = stotra?.verses.length ?? 0;
   const { currentVerse, nextVerse, prevVerse } = useReader(totalVerses);
@@ -99,26 +94,8 @@ export default function ReaderScreen() {
           </p>
         </div>
 
-        <button
-          onClick={() => setSettingsOpen(true)}
-          className="hover:opacity-70 transition-opacity"
-          style={{ color: 'var(--color-text-primary)' }}
-          aria-label="Open settings"
-        >
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <circle cx="12" cy="12" r="3" />
-            <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
-          </svg>
-        </button>
+        {/* Empty spacer to keep title centered */}
+        <div style={{ width: 20 }} />
       </motion.header>
 
       {/* Main reading area */}
@@ -157,16 +134,6 @@ export default function ReaderScreen() {
       >
         <MalaBead totalVerses={totalVerses} currentVerse={currentVerse} />
       </div>
-
-      {/* Settings Drawer */}
-      <SettingsDrawer
-        isOpen={settingsOpen}
-        onClose={() => setSettingsOpen(false)}
-        settings={settings}
-        onFontSizeChange={updateFontSize}
-        onToggleDeepam={toggleDeepamMode}
-        onToggleContemplation={toggleContemplationMode}
-      />
     </div>
   );
 }
