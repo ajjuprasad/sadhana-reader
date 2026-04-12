@@ -1174,6 +1174,41 @@ const vishnuSahasranamam: Stotra = {
       transliteration: 'Mahavaraho Govindah Sushenah Kanakangadi.\nGuhyo Gabhiro Gahano Guptash Chakragadadharah.',
       meaning: 'The great Boar (Varaha), Govinda, of excellent army, with golden armlets; the Hidden, the Profound, the Unfathomable, the Concealed, wielder of the discus and mace.',
     },
+    {
+      id: 61,
+      verseLabel: 'Shloka 59',
+      sanskrit: 'वेधाः स्वाङ्गोऽजितः कृष्णो दृढः सङ्कर्षणोऽच्युतः।\nवरुणो वारुणो वृक्षः पुष्कराक्षो महामनाः॥',
+      transliteration: 'Vedhah Svango\'jitah Krishno Dridhah Sankarshano\'chyutah.\nVaruno Varuno Vrikshah Pushkaraksho Mahamanah.',
+      meaning: 'The Creator, of graceful limbs, the Invincible, Krishna, the Firm, Sankarshana the Unfallen; Varuna (Lord of waters), the son of Varuna, the Tree, lotus-eyed, the magnanimous.',
+    },
+    {
+      id: 62,
+      verseLabel: 'Shloka 60',
+      sanskrit: 'भगवान् भगहाऽऽनन्दी वनमाली हलायुधः।\nआदित्यो ज्योतिरादित्यः सहिष्णुर्गतिसत्तमः॥',
+      transliteration: 'Bhagavan Bhagaha\'nandi Vanamali Halayudhah.\nAdityo Jyotiradityah Sahishnur Gatisattamah.',
+      meaning: 'The Bhagavan, the Destroyer of evil fortunes, the Blissful, wearer of the forest garland, the plough-armed (as Balarama); son of Aditi, the luminous Sun, the Patient, the supreme Goal.',
+    },
+    {
+      id: 63,
+      verseLabel: 'Shloka 61',
+      sanskrit: 'सुधन्वा खण्डपरशुर्दारुणो द्रविणप्रदः।\nदिविस्पृक् सर्वदृग्व्यासो वाचस्पतिरयोनिजः॥',
+      transliteration: 'Sudhanva Khandaparashur Daruno Dravinapradah.\nDivisprik Sarvadrig Vyaso Vachaspatir Ayonijah.',
+      meaning: 'Of excellent bow, wielder of the terrible axe (as Parashurama), the Fierce, the Giver of wealth; touching the heavens, the All-seeing Vyasa, Lord of speech, the one not born of a womb.',
+    },
+    {
+      id: 64,
+      verseLabel: 'Shloka 62',
+      sanskrit: 'त्रिसामा सामगः साम निर्वाणं भेषजं भिषक्।\nसंन्यासकृच्छमः शान्तो निष्ठा शान्तिः परायणम्॥',
+      transliteration: 'Trisama Samagah Sama Nirvanam Bheshajam Bhishak.\nSannyasakrich Chhamah Shanto Nishtha Shantih Parayanam.',
+      meaning: 'Of the three Samans, the singer of Saman, the Saman itself, Nirvana, the Medicine, the Physician; the establisher of sannyasa, the peaceful, the Serene, Steadfastness, Peace, the supreme Refuge.',
+    },
+    {
+      id: 65,
+      verseLabel: 'Shloka 63',
+      sanskrit: 'शुभाङ्गः शान्तिदः स्रष्टा कुमुदः कुवलेशयः।\nगोहितो गोपतिर्गोप्ता वृषभाक्षो वृषप्रियः॥',
+      transliteration: 'Shubhangah Shantidah Srashta Kumudah Kuvaleshayah.\nGohito Gopatir Gopta Vrishabhaksho Vrishapriyah.',
+      meaning: 'Of auspicious form, giver of peace, the Creator, the rejoicer in the earth, who reposes in the waters; beneficent to dharma, Lord of cows, their protector, whose glance rains blessings, the lover of righteousness.',
+    },
   ],
 };
 
