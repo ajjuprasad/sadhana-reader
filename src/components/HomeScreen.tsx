@@ -73,7 +73,7 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
           className="font-display font-black text-3xl sm:text-4xl tracking-tight mb-2"
           style={{ color: 'var(--color-text-primary)' }}
         >
-          Sadhana Reader
+          Sādhanā Reader
         </h1>
         <p
           className="font-body text-sm mt-2 italic"
