@@ -153,6 +153,48 @@ const mahalakshmiAshtakam: Stotra = {
       transliteration: 'Sarvajne Sarva Varade Sarva Dushta Bhayankari.\nSarva Duhkha Hare Devi Mahalakshmi Namo\'stu Te.',
       meaning: 'O all-knowing one, bestower of all boons, terrifying to the wicked, remover of all sorrows — O Goddess Mahalakshmi, I bow to You.',
     },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit: 'सिद्धिबुद्धिप्रदे देवि भुक्तिमुक्तिप्रदायिनि।\nमन्त्रमूर्ते सदा देवि महालक्ष्मि नमोऽस्तु ते॥',
+      transliteration: 'Siddhi Buddhi Prade Devi Bhukti Mukti Pradayini.\nMantra Murte Sada Devi Mahalakshmi Namo\'stu Te.',
+      meaning: 'O Goddess who bestows success and wisdom, who grants worldly enjoyment and liberation, who is the embodiment of mantras — O Mahalakshmi, I bow to You.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit: 'आद्यन्तरहिते देवि आद्यशक्तिमहेश्वरि।\nयोगजे योगसम्भूते महालक्ष्मि नमोऽस्तु ते॥',
+      transliteration: 'Adyanta Rahite Devi Adya Shakti Maheshwari.\nYogaje Yoga Sambhute Mahalakshmi Namo\'stu Te.',
+      meaning: 'O Goddess without beginning or end, the primal power, the great sovereign, born of yoga and manifested through yoga — O Mahalakshmi, I bow to You.',
+    },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit: 'स्थूलसूक्ष्ममहारौद्रे महाशक्तिमहोदरे।\nमहापापहरे देवि महालक्ष्मि नमोऽस्तु ते॥',
+      transliteration: 'Sthula Sukshma Maha Raudre Maha Shakti Mahodare.\nMaha Papa Hare Devi Mahalakshmi Namo\'stu Te.',
+      meaning: 'O Goddess who is gross, subtle, and most terrifying, who possesses great power and a vast form, who destroys the greatest sins — O Mahalakshmi, I bow to You.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit: 'पद्मासनस्थिते देवि परब्रह्मस्वरूपिणि।\nपरमेशि जगन्मातर्महालक्ष्मि नमोऽस्तु ते॥',
+      transliteration: 'Padmasana Sthite Devi Parabrahma Swarupini.\nParameshi Jagan Matar Mahalakshmi Namo\'stu Te.',
+      meaning: 'O Goddess seated on a lotus, who is the embodiment of the Supreme Brahman, the supreme ruler, mother of the universe — O Mahalakshmi, I bow to You.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit: 'श्वेताम्बरधरे देवि नानालङ्कारभूषिते।\nजगत्स्थिते जगन्मातर्महालक्ष्मि नमोऽस्तु ते॥',
+      transliteration: 'Shvetambara Dhare Devi Nanalankara Bhushite.\nJagat Sthite Jagan Matar Mahalakshmi Namo\'stu Te.',
+      meaning: 'O Goddess clad in white garments, adorned with various ornaments, who pervades the universe, mother of the world — O Mahalakshmi, I bow to You.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Phala Shruti',
+      sanskrit: 'महालक्ष्म्यष्टकं स्तोत्रं यः पठेद्भक्तिमान्नरः।\nसर्वसिद्धिमवाप्नोति राज्यं प्राप्नोति सर्वदा॥',
+      transliteration: 'Mahalakshmyashtakam Stotram Yah Pathed Bhaktiman Narah.\nSarva Siddhim Avapnoti Rajyam Prapnoti Sarvada.',
+      meaning: 'The devoted person who recites this Mahalakshmi Ashtakam hymn attains all accomplishments and gains sovereignty always.',
+    },
   ],
 };
 

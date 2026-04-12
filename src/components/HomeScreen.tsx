@@ -76,13 +76,6 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
           Sadhana Reader
         </h1>
         <p
-          className="font-sanskrit text-lg"
-          lang="sa"
-          style={{ color: 'var(--color-text-secondary)', opacity: 0.8 }}
-        >
-          साधना पाठक
-        </p>
-        <p
           className="font-body text-sm mt-2 italic"
           style={{ color: 'var(--color-text-muted)' }}
         >
@@ -113,7 +106,7 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
           className="font-hind text-xs"
           style={{ color: 'var(--color-text-muted)' }}
         >
-          Crafted with devotion
+          Designed & built by Ajay Prasad
         </p>
       </motion.footer>
 
