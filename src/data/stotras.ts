@@ -1069,6 +1069,41 @@ const vishnuSahasranamam: Stotra = {
       transliteration: 'Ramo Viramo Virajo Margo Neyo Nayo\'nayah.\nVirah Shaktimatam Shreshtho Dharmo Dharmavid Uttamah.',
       meaning: 'Rama (the delight of all), the cessation of all, the stainless, the Path, the Goal, the Leader, the one beyond guidance; the Hero, the best among the powerful, Dharma itself, the supreme knower of Dharma.',
     },
+    {
+      id: 46,
+      verseLabel: 'Shloka 44',
+      sanskrit: 'वैकुण्ठः पुरुषः प्राणः प्राणदः प्रणवः पृथुः।\nहिरण्यगर्भः शत्रुघ्नो व्याप्तो वायुरधोक्षजः॥',
+      transliteration: 'Vaikunthah Purushah Pranah Pranadah Pranavah Prithuh.\nHiranyagarbhah Shatrughno Vyapto Vayur Adhokshajah.',
+      meaning: 'Vaikuntha, the Cosmic Person, the Life-breath, the Giver of life, OM itself, the Vast; the Golden-wombed, slayer of foes, the All-pervading, the Wind, Adhokshaja (who never falls from his own essence).',
+    },
+    {
+      id: 47,
+      verseLabel: 'Shloka 45',
+      sanskrit: 'ऋतुः सुदर्शनः कालः परमेष्ठी परिग्रहः।\nउग्रः संवत्सरो दक्षो विश्रामो विश्वदक्षिणः॥',
+      transliteration: 'Rituh Sudarshanah Kalah Parameshthi Parigrahah.\nUgrah Samvatsaro Dakshah Vishramo Vishvadakshinah.',
+      meaning: 'The seasons themselves, the ever-auspicious-to-behold (wielder of the Sudarshana chakra), Time, dweller in the supreme abode, the Receiver of offerings; the Fierce, the Year, the Skilful, the repose of all, skilful in every direction.',
+    },
+    {
+      id: 48,
+      verseLabel: 'Shloka 46',
+      sanskrit: 'विस्तारः स्थावरस्थाणुः प्रमाणं बीजमव्ययम्।\nअर्थोऽनर्थो महाकोशो महाभोगो महाधनः॥',
+      transliteration: 'Vistarah Sthavarah Sthanuh Pramanam Bijam Avyayam.\nArtho\'nartho Mahakosho Mahabhogo Mahadhanah.',
+      meaning: 'The Expanse, the Immovable, the Pillar, the Standard, the Seed, the Inexhaustible; Wealth, beyond need of wealth, the great Treasury, the great Enjoyment, of great riches.',
+    },
+    {
+      id: 49,
+      verseLabel: 'Shloka 47',
+      sanskrit: 'अनिर्विण्णः स्थविष्ठोऽभूर्धर्मयूपो महामखः।\nनक्षत्रनेमिर्नक्षत्री क्षमः क्षामः समीहनः॥',
+      transliteration: 'Anirvinnah Sthavishtho\'bhur Dharmayupo Mahamakhah.\nNakshatranemir Nakshatri Kshamah Kshamah Samihanah.',
+      meaning: 'The Unwearied, the most solid, the Self-existent, the Pillar of dharma, the great Sacrifice; the nave of the constellations, the Lord of stars, the Patient, the Forbearing, who wishes well for all.',
+    },
+    {
+      id: 50,
+      verseLabel: 'Shloka 48',
+      sanskrit: 'यज्ञ इज्यो महेज्यश्च क्रतुः सत्रं सतां गतिः।\nसर्वदर्शी विमुक्तात्मा सर्वज्ञो ज्ञानमुत्तमम्॥',
+      transliteration: 'Yajna Ijyo Mahejyash Cha Kratuh Satram Satam Gatih.\nSarvadarshi Vimuktatma Sarvajno Jnanam Uttamam.',
+      meaning: 'Sacrifice itself, the Worshiped, worthy of great worship, the Kratu, the Soma-sacrifice, refuge of the virtuous; All-Seer, the liberated Self, the All-Knower, the highest Knowledge.',
+    },
   ],
 };
 
