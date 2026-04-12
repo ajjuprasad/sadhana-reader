@@ -80,6 +80,25 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
         </>
       );
 
+    case 'vishnu-sahasranamam':
+      // Vishnu's Sudarshana Chakra (discus)
+      return (
+        <>
+          <circle cx="16" cy="16" r="10" {...s} strokeWidth="1.6" />
+          <circle cx="16" cy="16" r="6" {...s} strokeWidth="1.2" />
+          <circle cx="16" cy="16" r="2" stroke="none" fill="currentColor" />
+          {/* Spokes */}
+          <line x1="16" y1="6" x2="16" y2="10" {...s} strokeWidth="1.2" />
+          <line x1="16" y1="22" x2="16" y2="26" {...s} strokeWidth="1.2" />
+          <line x1="6" y1="16" x2="10" y2="16" {...s} strokeWidth="1.2" />
+          <line x1="22" y1="16" x2="26" y2="16" {...s} strokeWidth="1.2" />
+          <line x1="8.9" y1="8.9" x2="11.8" y2="11.8" {...s} strokeWidth="1.1" />
+          <line x1="20.2" y1="20.2" x2="23.1" y2="23.1" {...s} strokeWidth="1.1" />
+          <line x1="23.1" y1="8.9" x2="20.2" y2="11.8" {...s} strokeWidth="1.1" />
+          <line x1="8.9" y1="23.1" x2="11.8" y2="20.2" {...s} strokeWidth="1.1" />
+        </>
+      );
+
     default:
       return <circle cx="16" cy="16" r="8" {...s} strokeWidth="1.5" />;
   }

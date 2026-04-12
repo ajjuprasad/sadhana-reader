@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { stotras } from '../data/stotras';
 import StotraCard from './StotraCard';
+import ComingSoonCard from './ComingSoonCard';
 import SettingsDrawer from './SettingsDrawer';
 import type { useSettings } from '../hooks/useSettings';
 
@@ -93,6 +94,12 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
             onClick={() => navigate(`/stotra/${stotra.id}`)}
           />
         ))}
+        <ComingSoonCard
+          title="Vishnu Sahasranamam"
+          deity="Vishnu"
+          stotraId="vishnu-sahasranamam"
+          index={stotras.length}
+        />
       </div>
 
       {/* Footer */}
