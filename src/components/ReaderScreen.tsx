@@ -83,8 +83,8 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
           aria-label="Back to home"
         >
           <svg
-            width="20"
-            height="20"
+            width="22"
+            height="22"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -115,13 +115,13 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
             })()}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-1 hover:opacity-70 transition-opacity"
+            className="p-2 hover:opacity-70 transition-opacity"
             style={{ color: 'var(--color-text-primary)' }}
             aria-label={`Share ${stotra.title}`}
           >
             <svg
-              width="20"
-              height="20"
+              width="22"
+              height="22"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -138,14 +138,14 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
           </a>
 
           <button
-            className="p-1 hover:opacity-70 transition-opacity"
+            className="p-2 hover:opacity-70 transition-opacity"
             style={{ color: 'var(--color-text-primary)' }}
             onClick={() => setSettingsOpen(true)}
             aria-label="Open settings"
           >
             <svg
-              width="20"
-              height="20"
+              width="22"
+              height="22"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
