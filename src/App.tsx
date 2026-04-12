@@ -1,10 +1,18 @@
 import { useEffect } from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import HomeScreen from './components/HomeScreen';
 import StotraDetail from './components/StotraDetail';
 import ReaderScreen from './components/ReaderScreen';
 import MandalaBackground from './components/MandalaBackground';
 import { useSettings } from './hooks/useSettings';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 
 export default function App() {
   const settingsState = useSettings();
@@ -23,6 +31,7 @@ export default function App() {
 
   return (
     <HashRouter>
+      <ScrollToTop />
       <MandalaBackground />
       <div className="relative z-10">
         <Routes>
