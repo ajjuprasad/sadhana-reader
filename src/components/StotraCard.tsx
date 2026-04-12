@@ -55,15 +55,19 @@ export default function StotraCard({ stotra, index, onClick }: StotraCardProps) 
           className="font-display font-bold text-lg mb-1 group-hover:text-saffron transition-colors duration-200 leading-snug"
           style={{ color: 'var(--color-text-primary)' }}
         >
-          {stotra.title.split(' ').length >= 2 ? (
-            <>
-              {stotra.title.split(' ')[0]}
-              <br />
-              {stotra.title.split(' ').slice(1).join(' ')}
-            </>
-          ) : (
-            stotra.title
-          )}
+          {(() => {
+            const words = stotra.title.split(' ');
+            if (words.length < 2) return stotra.title;
+            // Keep honorifics like "Sri" on the same line as the deity name
+            const splitIdx = words[0] === 'Sri' && words.length >= 3 ? 2 : 1;
+            return (
+              <>
+                {words.slice(0, splitIdx).join(' ')}
+                <br />
+                {words.slice(splitIdx).join(' ')}
+              </>
+            );
+          })()}
         </h3>
 
         {/* Deity & duration */}
