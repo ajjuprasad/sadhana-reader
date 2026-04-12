@@ -964,6 +964,41 @@ const vishnuSahasranamam: Stotra = {
       transliteration: 'Vrishahi Vrishabho Vishnur Vrishaparva Vrishodarah.\nVardhano Vardhamanash Cha Viviktah Shrutisagarah.',
       meaning: 'Whose day is dharma, the Showerer of boons, Vishnu, the ladder of dharma, whose belly bears dharma; the Nourisher, the Ever-Growing, the Distinct, the ocean of the Shrutis.',
     },
+    {
+      id: 31,
+      verseLabel: 'Shloka 29',
+      sanskrit: 'सुभुजो दुर्धरो वाग्मी महेन्द्रो वसुदो वसुः।\nनैकरूपो बृहद्रूपः शिपिविष्टः प्रकाशनः॥',
+      transliteration: 'Subhujo Durdharo Vagmi Mahendro Vasudo Vasuh.\nNaikarupo Brihadrupah Shipivishtah Prakashanah.',
+      meaning: 'Of auspicious arms, the Hard-to-hold, the Eloquent, the supreme Indra, the Giver of wealth, Wealth itself; of manifold form, of vast form, who pervades the rays of light, the Illuminator.',
+    },
+    {
+      id: 32,
+      verseLabel: 'Shloka 30',
+      sanskrit: 'ओजस्तेजोद्युतिधरः प्रकाशात्मा प्रतापनः।\nऋद्धः स्पष्टाक्षरो मन्त्रश्चन्द्रांशुर्भास्करद्युतिः॥',
+      transliteration: 'Ojastejodyutidharah Prakashatma Pratapanah.\nRiddhah Spashtaksharo Mantrash Chandramshur Bhaskaradyutih.',
+      meaning: 'Bearer of vitality, brilliance and splendor; the luminous Self, the radiant Burner; the Prosperous, of clear syllables (OM), the Mantra itself, moon-rayed, of sun-like radiance.',
+    },
+    {
+      id: 33,
+      verseLabel: 'Shloka 31',
+      sanskrit: 'अमृतांशूद्भवो भानुः शशबिन्दुः सुरेश्वरः।\nऔषधं जगतः सेतुः सत्यधर्मपराक्रमः॥',
+      transliteration: 'Amritamshudbhavo Bhanuh Shashabinduh Sureshvarah.\nAushadham Jagatah Setuh Satyadharmaparakramah.',
+      meaning: 'Origin of the nectar-rayed moon, the Sun, the hare-marked moon, Lord of the gods; the Medicine, the Bridge of the world, whose valor is truth and dharma.',
+    },
+    {
+      id: 34,
+      verseLabel: 'Shloka 32',
+      sanskrit: 'भूतभव्यभवन्नाथः पवनः पावनोऽनलः।\nकामहा कामकृत्कान्तः कामः कामप्रदः प्रभुः॥',
+      transliteration: 'Bhutabhavyabhavannathah Pavanah Pavano\'nalah.\nKamaha Kamakrit Kantah Kamah Kamapradah Prabhuh.',
+      meaning: 'Lord of the past, future, and present; the Wind, the Purifier, the Fire; destroyer of desires, fulfiller of desires, the Beloved, Desire itself, bestower of desires, the Lord.',
+    },
+    {
+      id: 35,
+      verseLabel: 'Shloka 33',
+      sanskrit: 'युगादिकृद्युगावर्तो नैकमायो महाशनः।\nअदृश्योऽव्यक्तरूपश्च सहस्रजिदनन्तजित्॥',
+      transliteration: 'Yugadikrid Yugavarto Naikamayo Mahashanah.\nAdrishyo\'vyaktarupash Cha Sahasrajid Anantajit.',
+      meaning: 'Maker of the beginnings of yugas, the revolver of yugas, of manifold illusions, the great Devourer; invisible, of unmanifest form, conqueror of thousands, the endlessly victorious.',
+    },
   ],
 };
 
