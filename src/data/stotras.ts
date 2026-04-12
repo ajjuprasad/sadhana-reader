@@ -24,7 +24,7 @@ const hanumanChalisa: Stotra = {
   deity: 'Hanuman',
   description: 'The forty verses in praise of Lord Hanuman, composed by Tulsidas.',
   estimatedMinutes: 15,
-  icon: 'M32 8 L28 20 L20 20 L26 28 L24 40 L32 34 L40 40 L38 28 L44 20 L36 20 Z M30 42 L30 56 M34 42 L34 56 M24 56 L40 56',
+  icon: 'M32 6 L32 18 M26 10 L38 10 M32 18 C26 18 20 26 20 34 C20 42 26 50 32 54 C38 50 44 42 44 34 C44 26 38 18 32 18 M24 54 L24 60 M40 54 L40 60 M20 60 L44 60',
   verses: [
     {
       id: 1,
@@ -64,7 +64,7 @@ const ganeshaPancharatnam: Stotra = {
   deity: 'Ganesha',
   description: 'Five gems in praise of Lord Ganesha, composed by Adi Shankaracharya.',
   estimatedMinutes: 5,
-  icon: 'M32 16 C28 16 24 20 24 26 C24 32 28 36 32 44 M32 26 C36 24 42 26 44 30 C46 34 42 36 38 34 M20 30 Q16 36 20 40 Q24 44 28 42 M36 42 Q40 44 44 40 Q48 36 44 30 M28 20 C28 14 36 14 36 20',
+  icon: 'M32 6 C26 6 22 10 22 16 C22 22 26 26 32 30 C32 30 26 32 22 34 L22 38 C22 42 26 46 32 46 C38 46 42 42 42 38 L42 34 C38 32 32 30 32 30 C38 26 42 22 42 16 C42 10 38 6 32 6 M28 46 L28 58 Q32 62 36 58 L36 46 M22 16 L18 14 M42 16 L46 14',
   verses: [
     {
       id: 1,
@@ -111,7 +111,7 @@ const shivaPanchakshara: Stotra = {
   deity: 'Shiva',
   description: 'Five verses on the five syllables Na-Ma-Shi-Va-Ya, by Adi Shankaracharya.',
   estimatedMinutes: 4,
-  icon: 'M32 8 L32 20 M26 12 L38 12 M32 20 C32 20 24 28 24 36 C24 44 32 52 32 52 C32 52 40 44 40 36 C40 28 32 20 32 20 M22 16 Q18 14 16 18 M42 16 Q46 14 48 18 M28 6 Q32 2 36 6',
+  icon: 'M32 10 C26 10 22 18 22 28 C22 38 26 46 32 50 C38 46 42 38 42 28 C42 18 38 10 32 10 M22 50 L42 50 M20 54 L44 54 M26 50 L26 54 M38 50 L38 54 M28 6 Q32 2 36 6 M26 22 L38 22 M26 28 L38 28 M26 34 L38 34',
   verses: [
     {
       id: 1,
@@ -134,6 +134,20 @@ const shivaPanchakshara: Stotra = {
       transliteration: 'Shivaya Gauri Vadanabja Vrnda Suryaya Dakshadhvara Nashakaya.\nShri Neelakanthaya Vrishadhvajaya Tasmai Shikaraya Namah Shivaya.',
       meaning: 'Salutations to Shiva, who is like the sun to the lotus face of Gauri, who destroyed the sacrifice of Daksha, the blue-throated one, whose banner bears the bull — I bow to the syllable Shi.',
     },
+    {
+      id: 4,
+      verseLabel: 'Verse 4 (Va)',
+      sanskrit: 'वसिष्ठकुम्भोद्भवगौतमार्यमुनीन्द्रदेवार्चितशेखराय।\nचन्द्रार्कवैश्वानरलोचनाय तस्मै वकाराय नमः शिवाय॥',
+      transliteration: 'Vasishtha Kumbhodbhava Gautamarya Muneendra Devarchita Shekharaya.\nChandrarka Vaishvanara Lochanaya Tasmai Vakaraya Namah Shivaya.',
+      meaning: 'Salutations to Shiva, whose head is worshipped by the great sages Vasishtha, Agastya, Gautama, and the best of gods, whose three eyes are the moon, sun, and fire — I bow to the syllable Va.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5 (Ya)',
+      sanskrit: 'यक्षस्वरूपाय जटाधराय पिनाकहस्ताय सनातनाय।\nदिव्याय देवाय दिगम्बराय तस्मै यकाराय नमः शिवाय॥',
+      transliteration: 'Yaksha Swarupaya Jatadharaya Pinaka Hastaya Sanatanaya.\nDivyaya Devaya Digambaraya Tasmai Yakaraya Namah Shivaya.',
+      meaning: 'Salutations to Shiva, who is in the form of Yaksha, who wears matted hair, who holds the Pinaka bow, the eternal one, the divine, the radiant, the sky-clad — I bow to the syllable Ya.',
+    },
   ],
 };
 
@@ -144,7 +158,7 @@ const mahalakshmiAshtakam: Stotra = {
   deity: 'Lakshmi',
   description: 'Eight verses in praise of Goddess Mahalakshmi.',
   estimatedMinutes: 6,
-  icon: 'M32 12 C28 12 24 16 24 22 C24 28 32 36 32 36 C32 36 40 28 40 22 C40 16 36 12 32 12 M32 36 L32 52 M24 40 C20 38 16 40 14 44 M40 40 C44 38 48 40 50 44 M20 28 L12 24 M44 28 L52 24',
+  icon: 'M32 8 C26 8 20 14 20 22 C20 30 26 36 32 40 C38 36 44 30 44 22 C44 14 38 8 32 8 M32 40 L32 48 M24 48 L40 48 M24 48 C22 52 20 56 18 58 M40 48 C42 52 44 56 46 58 M10 22 C8 18 10 14 14 14 L20 18 M54 22 C56 18 54 14 50 14 L44 18',
   verses: [
     {
       id: 1,
@@ -219,7 +233,7 @@ const lingashtakam: Stotra = {
   deity: 'Shiva',
   description: 'Eight verses glorifying the Shiva Lingam.',
   estimatedMinutes: 5,
-  icon: 'M32 8 C24 8 18 16 18 28 C18 40 24 48 32 48 C40 48 46 40 46 28 C46 16 40 8 32 8 M18 48 L46 48 M16 52 L48 52 M22 48 L22 52 M42 48 L42 52',
+  icon: 'M32 8 C24 8 20 16 20 28 C20 40 24 48 32 48 C40 48 44 40 44 28 C44 16 40 8 32 8 M20 48 Q16 52 14 56 L50 56 Q48 52 44 48 M26 4 Q32 0 38 4',
   verses: [
     {
       id: 1,
@@ -287,7 +301,7 @@ const madhurashtakam: Stotra = {
   deity: 'Krishna',
   description: 'Eight sweet verses by Vallabhacharya — everything about Krishna is Madhuram (sweet).',
   estimatedMinutes: 5,
-  icon: 'M16 20 C16 20 20 16 24 20 C28 24 24 32 24 32 M24 32 C24 32 20 40 16 44 M40 20 C40 20 44 24 44 30 C44 36 40 38 38 42 M28 14 C30 10 34 10 36 14 C38 18 36 22 32 22 C28 22 26 18 28 14',
+  icon: 'M14 56 L14 20 Q14 16 18 16 L46 16 Q50 16 50 20 L50 56 M14 20 Q32 8 50 20 M22 16 L22 8 M42 16 L42 8 M22 8 Q32 2 42 8 M26 28 L38 28 M26 36 L38 36 M26 44 L38 44 M32 24 L32 48',
   verses: [
     {
       id: 1,
