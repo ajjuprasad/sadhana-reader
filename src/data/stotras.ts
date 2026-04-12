@@ -1,0 +1,232 @@
+export interface Verse {
+  id: number;
+  sanskrit: string;
+  transliteration: string;
+  meaning: string;
+  verseLabel?: string;
+}
+
+export interface Stotra {
+  id: string;
+  title: string;
+  subtitle: string;
+  deity: string;
+  description: string;
+  estimatedMinutes: number;
+  icon: string;
+  verses: Verse[];
+}
+
+const hanumanChalisa: Stotra = {
+  id: 'hanuman-chalisa',
+  title: 'Hanuman Chalisa',
+  subtitle: 'हनुमान चालीसा',
+  deity: 'Hanuman',
+  description: 'The forty verses in praise of Lord Hanuman, composed by Tulsidas.',
+  estimatedMinutes: 15,
+  icon: 'M32 8 L28 20 L20 20 L26 28 L24 40 L32 34 L40 40 L38 28 L44 20 L36 20 Z M30 42 L30 56 M34 42 L34 56 M24 56 L40 56',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Doha 1',
+      sanskrit: 'श्रीगुरु चरन सरोज रज, निज मनु मुकुरु सुधारि।\nबरनउँ रघुबर बिमल जसु, जो दायकु फल चारि॥',
+      transliteration: 'Shri Guru Charan Saroj Raj, Nij Manu Mukuru Sudhari.\nBaranau Raghubar Bimal Jasu, Jo Dayaku Phal Chari.',
+      meaning: 'Cleansing the mirror of my mind with the dust of the Guru\'s lotus feet, I describe the pure glory of Raghuvara (Lord Rama), who bestows the four fruits of life.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Doha 2',
+      sanskrit: 'बुद्धिहीन तनु जानिके, सुमिरौं पवन-कुमार।\nबल बुद्धि बिद्या देहु मोहिं, हरहु कलेस बिकार॥',
+      transliteration: 'Buddhiheen Tanu Jaanike, Sumirau Pavan Kumar.\nBal Buddhi Vidya Dehu Mohi, Harahu Kalesh Bikaar.',
+      meaning: 'Knowing my body to be devoid of intelligence, I remember Hanuman, the son of the Wind. Grant me strength, wisdom, and knowledge, and remove my afflictions and blemishes.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Chaupai 1',
+      sanskrit: 'जय हनुमान ज्ञान गुन सागर।\nजय कपीस तिहुँ लोक उजागर॥',
+      transliteration: 'Jai Hanuman Gyan Gun Sagar.\nJai Kapees Tihun Lok Ujagar.',
+      meaning: 'Victory to Hanuman, ocean of wisdom and virtue. Victory to the Lord of monkeys, illuminator of the three worlds.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Chaupai 2',
+      sanskrit: 'राम दूत अतुलित बल धामा।\nअंजनि पुत्र पवनसुत नामा॥',
+      transliteration: 'Ram Doot Atulit Bal Dhama.\nAnjani Putra Pavansut Nama.',
+      meaning: 'Messenger of Rama, repository of immeasurable strength. Known as the son of Anjani and the son of the Wind.',
+    },
+  ],
+};
+
+const ganeshaPancharatnam: Stotra = {
+  id: 'ganesha-pancharatnam',
+  title: 'Ganesha Pancharatnam',
+  subtitle: 'गणेश पञ्चरत्नम्',
+  deity: 'Ganesha',
+  description: 'Five gems in praise of Lord Ganesha, composed by Adi Shankaracharya.',
+  estimatedMinutes: 5,
+  icon: 'M32 16 C28 16 24 20 24 26 C24 32 28 36 32 44 M32 26 C36 24 42 26 44 30 C46 34 42 36 38 34 M20 30 Q16 36 20 40 Q24 44 28 42 M36 42 Q40 44 44 40 Q48 36 44 30 M28 20 C28 14 36 14 36 20',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit: 'मुदाकरात्तमोदकं सदा विमुक्तिसाधकम्।\nकलाधरावतंसकं विलासिलोकरक्षकम्॥\nअनायकैकनायकं विनाशितेभदैत्यकम्।\nनताशुभाशुनाशकं नमामि तं विनायकम्॥',
+      transliteration: 'Mudakaraatta Modakam Sada Vimukti Sadhakam.\nKaladharavatamsakam Vilasi Loka Rakshakam.\nAnayakaika Nayakam Vinashitebha Daityakam.\nNatashubhashu Nashakam Namami Tam Vinayakam.',
+      meaning: 'I salute that Vinayaka who joyfully holds modaka in His hand, who is the eternal bestower of liberation, who wears the crescent moon as an ornament, who protects the world with grace, who is the sole leader of the leaderless, who destroyed the demon Gajasura, and who swiftly destroys the inauspiciousness of those who bow to Him.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit: 'नतेतरातिभीकरं नवोदितार्कभास्वरम्।\nनमत्सुरारिनिर्जरं नताधिकापदुद्धरम्॥\nसुरेश्वरं निधीश्वरं गजेश्वरं गणेश्वरम्।\nमहेश्वरं तमाश्रये परात्परं निरन्तरम्॥',
+      transliteration: 'Natetarati Bheekaram Navoditarka Bhaswaram.\nNamat Surari Nirjaram Natadhika Paduddharam.\nSureshwaram Nidhishwaram Gajeshwaram Ganeshwaram.\nMaheshwaram Tamashraye Paratparam Nirantaram.',
+      meaning: 'He who is terrifying to those who do not bow, who shines like the newly risen sun, who makes the enemies of the gods tremble, who uplifts those bowed with burdens — I take refuge in that supreme Lord of lords, Lord of treasures, Lord of elephants, Lord of ganas, the great Lord, supreme and eternal.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit: 'समस्तलोकशंकरं निरस्तदैत्यकुञ्जरम्।\nदरेतरोदरं वरं वरेभवक्त्रमक्षरम्॥\nकृपाकरं क्षमाकरं मुदाकरं यशस्करम्।\nमनस्करं नमस्कृतां नमस्करोमि भास्करम्॥',
+      transliteration: 'Samasta Loka Shankaram Nirasta Daitya Kunjaram.\nDaretarodaram Varam Varebha Vaktram Aksharam.\nKripakaram Kshamakaram Mudakaram Yashaskaram.\nManaskaram Namaskritam Namaskaromi Bhaskaram.',
+      meaning: 'He who brings happiness to all the worlds, who vanquished the elephant demon, whose belly is vast, who has the face of the best of elephants, who is imperishable, who is the source of compassion, forgiveness, joy, and fame — I bow to that radiant one who is worshipped by all.',
+    },
+  ],
+};
+
+const shivaPanchakshara: Stotra = {
+  id: 'shiva-panchakshara',
+  title: 'Shiva Panchakshara Stotram',
+  subtitle: 'शिव पञ्चाक्षर स्तोत्रम्',
+  deity: 'Shiva',
+  description: 'Five verses on the five syllables Na-Ma-Shi-Va-Ya, by Adi Shankaracharya.',
+  estimatedMinutes: 4,
+  icon: 'M32 8 L32 20 M26 12 L38 12 M32 20 C32 20 24 28 24 36 C24 44 32 52 32 52 C32 52 40 44 40 36 C40 28 32 20 32 20 M22 16 Q18 14 16 18 M42 16 Q46 14 48 18 M28 6 Q32 2 36 6',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1 (Na)',
+      sanskrit: 'नागेन्द्रहाराय त्रिलोचनाय भस्माङ्गरागाय महेश्वराय।\nनित्याय शुद्धाय दिगम्बराय तस्मै नकाराय नमः शिवाय॥',
+      transliteration: 'Nagendra Haraya Trilochanaya Bhashmanga Ragaya Maheshwaraya.\nNityaya Shuddhaya Digambaraya Tasmai Nakaraya Namah Shivaya.',
+      meaning: 'Salutations to Shiva, who wears the king of serpents as a garland, who has three eyes, whose body is smeared with sacred ash, the great Lord, eternal, pure, and sky-clad — I bow to the syllable Na.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2 (Ma)',
+      sanskrit: 'मन्दाकिनीसलिलचन्दनचर्चिताय नन्दीश्वरप्रमथनाथमहेश्वराय।\nमन्दारपुष्पबहुपुष्पसुपूजिताय तस्मै मकाराय नमः शिवाय॥',
+      transliteration: 'Mandakini Salila Chandana Charchitaya Nandishwara Pramathanatha Maheshwaraya.\nMandara Pushpa Bahu Pushpa Supujitaya Tasmai Makaraya Namah Shivaya.',
+      meaning: 'Salutations to Shiva, who is anointed with the waters of the Mandakini and sandalwood paste, who is the Lord of Nandi and the Pramatha ganas, the great Lord, worshipped with mandara flowers and many other flowers — I bow to the syllable Ma.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3 (Shi)',
+      sanskrit: 'शिवाय गौरीवदनाब्जबृन्दसूर्याय दक्षाध्वरनाशकाय।\nश्रीनीलकण्ठाय वृषध्वजाय तस्मै शिकाराय नमः शिवाय॥',
+      transliteration: 'Shivaya Gauri Vadanabja Vrnda Suryaya Dakshadhvara Nashakaya.\nShri Neelakanthaya Vrishadhvajaya Tasmai Shikaraya Namah Shivaya.',
+      meaning: 'Salutations to Shiva, who is like the sun to the lotus face of Gauri, who destroyed the sacrifice of Daksha, the blue-throated one, whose banner bears the bull — I bow to the syllable Shi.',
+    },
+  ],
+};
+
+const mahalakshmiAshtakam: Stotra = {
+  id: 'mahalakshmi-ashtakam',
+  title: 'Mahalakshmi Ashtakam',
+  subtitle: 'महालक्ष्मी अष्टकम्',
+  deity: 'Lakshmi',
+  description: 'Eight verses in praise of Goddess Mahalakshmi.',
+  estimatedMinutes: 6,
+  icon: 'M32 12 C28 12 24 16 24 22 C24 28 32 36 32 36 C32 36 40 28 40 22 C40 16 36 12 32 12 M32 36 L32 52 M24 40 C20 38 16 40 14 44 M40 40 C44 38 48 40 50 44 M20 28 L12 24 M44 28 L52 24',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit: 'नमस्तेऽस्तु महामाये श्रीपीठे सुरपूजिते।\nशङ्खचक्रगदाहस्ते महालक्ष्मि नमोऽस्तु ते॥',
+      transliteration: 'Namaste\'stu Mahamaye Shripeethe Surapujite.\nShankha Chakra Gada Haste Mahalakshmi Namo\'stu Te.',
+      meaning: 'Salutations to the great illusion, worshipped by the gods at Sripeetha, who holds the conch, discus, and mace in Her hands — O Mahalakshmi, I bow to You.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit: 'नमस्ते गरुडारूढे कोलासुरभयंकरि।\nसर्वपापहरे देवि महालक्ष्मि नमोऽस्तु ते॥',
+      transliteration: 'Namaste Garudarudhe Kolasura Bhayankari.\nSarva Papa Hare Devi Mahalakshmi Namo\'stu Te.',
+      meaning: 'Salutations to You who ride upon Garuda, who are fearsome to the demon Kolasura, who remove all sins — O Goddess Mahalakshmi, I bow to You.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit: 'सर्वज्ञे सर्ववरदे सर्वदुष्टभयंकरि।\nसर्वदुःखहरे देवि महालक्ष्मि नमोऽस्तु ते॥',
+      transliteration: 'Sarvajne Sarva Varade Sarva Dushta Bhayankari.\nSarva Duhkha Hare Devi Mahalakshmi Namo\'stu Te.',
+      meaning: 'O all-knowing one, bestower of all boons, terrifying to the wicked, remover of all sorrows — O Goddess Mahalakshmi, I bow to You.',
+    },
+  ],
+};
+
+const lingashtakam: Stotra = {
+  id: 'lingashtakam',
+  title: 'Lingashtakam',
+  subtitle: 'लिङ्गाष्टकम्',
+  deity: 'Shiva',
+  description: 'Eight verses glorifying the Shiva Lingam.',
+  estimatedMinutes: 5,
+  icon: 'M32 8 C24 8 18 16 18 28 C18 40 24 48 32 48 C40 48 46 40 46 28 C46 16 40 8 32 8 M18 48 L46 48 M16 52 L48 52 M22 48 L22 52 M42 48 L42 52',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit: 'ब्रह्ममुरारिसुरार्चितलिङ्गं निर्मलभासितशोभितलिङ्गम्।\nजन्मजदुःखविनाशकलिङ्गं तत्प्रणमामि सदाशिवलिङ्गम्॥',
+      transliteration: 'Brahma Murari Surarchita Lingam Nirmala Bhasita Shobhita Lingam.\nJanmaja Duhkha Vinashaka Lingam Tat Pranamami Sadashiva Lingam.',
+      meaning: 'I bow to that Sadashiva Lingam which is worshipped by Brahma, Vishnu, and the gods, which shines with spotless brilliance, and which destroys the sorrows born of worldly existence.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit: 'देवमुनिप्रवरार्चितलिङ्गं कामदहं करुणाकरलिङ्गम्।\nरावणदर्पविनाशनलिङ्गं तत्प्रणमामि सदाशिवलिङ्गम्॥',
+      transliteration: 'Deva Muni Pravararchita Lingam Kamadaham Karunakara Lingam.\nRavana Darpa Vinashana Lingam Tat Pranamami Sadashiva Lingam.',
+      meaning: 'I bow to that Sadashiva Lingam which is worshipped by the best of gods and sages, which burned Kama (desire), which is the abode of compassion, and which destroyed the pride of Ravana.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit: 'सर्वसुगन्धिसुलेपितलिङ्गं बुद्धिविवर्धनकारणलिङ्गम्।\nसिद्धसुरासुरवन्दितलिङ्गं तत्प्रणमामि सदाशिवलिङ्गम्॥',
+      transliteration: 'Sarva Sugandhi Sulepita Lingam Buddhi Vivardhana Karana Lingam.\nSiddha Surasura Vandita Lingam Tat Pranamami Sadashiva Lingam.',
+      meaning: 'I bow to that Sadashiva Lingam which is anointed with all fragrances, which is the cause of the growth of wisdom, and which is venerated by the Siddhas, gods, and demons.',
+    },
+  ],
+};
+
+const madhurashtakam: Stotra = {
+  id: 'madhurashtakam',
+  title: 'Madhurashtakam',
+  subtitle: 'मधुराष्टकम्',
+  deity: 'Krishna',
+  description: 'Eight sweet verses by Vallabhacharya — everything about Krishna is Madhuram (sweet).',
+  estimatedMinutes: 5,
+  icon: 'M16 20 C16 20 20 16 24 20 C28 24 24 32 24 32 M24 32 C24 32 20 40 16 44 M40 20 C40 20 44 24 44 30 C44 36 40 38 38 42 M28 14 C30 10 34 10 36 14 C38 18 36 22 32 22 C28 22 26 18 28 14',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit: 'अधरं मधुरं वदनं मधुरं नयनं मधुरं हसितं मधुरम्।\nहृदयं मधुरं गमनं मधुरं मधुराधिपतेरखिलं मधुरम्॥',
+      transliteration: 'Adharam Madhuram Vadanam Madhuram Nayanam Madhuram Hasitam Madhuram.\nHridayam Madhuram Gamanam Madhuram Madhuradhipater Akhilam Madhuram.',
+      meaning: 'His lips are sweet, His face is sweet, His eyes are sweet, His smile is sweet. His heart is sweet, His gait is sweet — everything about the Lord of sweetness is sweet.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit: 'वचनं मधुरं चरितं मधुरं वसनं मधुरं वलितं मधुरम्।\nचलितं मधुरं भ्रमितं मधुरं मधुराधिपतेरखिलं मधुरम्॥',
+      transliteration: 'Vachanam Madhuram Charitam Madhuram Vasanam Madhuram Valitam Madhuram.\nChalitam Madhuram Bhramitam Madhuram Madhuradhipater Akhilam Madhuram.',
+      meaning: 'His speech is sweet, His character is sweet, His garments are sweet, His posture is sweet. His movements are sweet, His wandering is sweet — everything about the Lord of sweetness is sweet.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit: 'वेणुर्मधुरो रेणुर्मधुरः पाणिर्मधुरः पादौ मधुरौ।\nनृत्यं मधुरं सख्यं मधुरं मधुराधिपतेरखिलं मधुरम्॥',
+      transliteration: 'Venur Madhuro Renur Madhurah Panir Madhurah Padau Madhurau.\nNrityam Madhuram Sakhyam Madhuram Madhuradhipater Akhilam Madhuram.',
+      meaning: 'His flute is sweet, His dust is sweet, His hands are sweet, His feet are sweet. His dance is sweet, His friendship is sweet — everything about the Lord of sweetness is sweet.',
+    },
+  ],
+};
+
+export const stotras: Stotra[] = [
+  hanumanChalisa,
+  ganeshaPancharatnam,
+  shivaPanchakshara,
+  mahalakshmiAshtakam,
+  lingashtakam,
+  madhurashtakam,
+];

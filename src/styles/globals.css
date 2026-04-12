@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:ital,wght@0,400;1,400&family=Tiro+Devanagari+Hindi&family=Tiro+Devanagari+Sanskrit&family=Hind:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #FFF8E1;
+  --color-bg-card: #FFFDF5;
+  --color-accent-primary: #FF9933;
+  --color-accent-secondary: #BF360C;
+  --color-accent-gold: #C8860A;
+  --color-text-primary: #37474F;
+  --color-text-secondary: #6D4C41;
+  --color-text-muted: #90A4AE;
+  --color-deepam-bg: #1A1208;
+  --color-deepam-amber: #FFB300;
+}
+
+[data-theme='deepam'] {
+  --color-bg: #1A1208;
+  --color-bg-card: #221A0E;
+  --color-accent-primary: #FFB300;
+  --color-accent-secondary: #FF8F00;
+  --color-accent-gold: #FFD54F;
+  --color-text-primary: #F5DEB3;
+  --color-text-secondary: #D7CCC8;
+  --color-text-muted: #8D6E63;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lora', serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Sanskrit / Devanagari text */
+.font-sanskrit {
+  font-family: 'Tiro Devanagari Sanskrit', 'Tiro Devanagari Hindi', serif;
+  line-height: 2.2;
+}
+
+/* Transliteration text */
+.font-translit {
+  font-family: 'Hind', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent-primary);
+  border-radius: 3px;
+  opacity: 0.5;
+}
+
+/* Diya flame animation */
+@keyframes flicker {
+  0%, 100% { transform: scaleY(1) scaleX(1); opacity: 1; }
+  25% { transform: scaleY(1.05) scaleX(0.95); opacity: 0.9; }
+  50% { transform: scaleY(0.95) scaleX(1.05); opacity: 0.95; }
+  75% { transform: scaleY(1.08) scaleX(0.92); opacity: 0.85; }
+}
+
+.diya-flame {
+  animation: flicker 1.8s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+/* Pulsing bead animation */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 4px var(--color-accent-primary); transform: scale(1); }
+  50% { box-shadow: 0 0 10px var(--color-accent-primary); transform: scale(1.25); }
+}
+
+.bead-current {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Selection colors */
+::selection {
+  background-color: rgba(255, 153, 51, 0.3);
+  color: var(--color-text-primary);
+}
