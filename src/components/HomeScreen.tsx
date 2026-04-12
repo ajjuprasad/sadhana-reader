@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { stotras } from '../data/stotras';
 import StotraCard from './StotraCard';
-import ComingSoonCard from './ComingSoonCard';
 import SettingsDrawer from './SettingsDrawer';
 import type { useSettings } from '../hooks/useSettings';
 
@@ -94,12 +93,6 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
             onClick={() => navigate(`/stotra/${stotra.id}`)}
           />
         ))}
-        <ComingSoonCard
-          title="Vishnu Sahasranamam"
-          deity="Vishnu"
-          stotraId="vishnu-sahasranamam"
-          index={stotras.length}
-        />
       </div>
 
       {/* Footer */}
@@ -110,7 +103,7 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
         transition={{ delay: 0.8, duration: 0.5 }}
       >
         <p
-          className="font-hind text-xs"
+          className="font-hind text-xs mb-3"
           style={{ color: 'var(--color-text-muted)' }}
         >
           Designed & built by{' '}
@@ -122,6 +115,29 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
             style={{ color: 'var(--color-accent-primary)' }}
           >
             Ajay Prasad
+          </a>
+        </p>
+        <p
+          className="font-hind text-xs"
+          style={{ color: 'var(--color-text-muted)' }}
+        >
+          Send feedback via{' '}
+          <a
+            href="https://wa.me/919513097770?text=Hi%20Ajay%2C%20I%20have%20feedback%20on%20Sadhana%20Reader%3A%20"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:opacity-80 transition-opacity"
+            style={{ color: 'var(--color-accent-primary)' }}
+          >
+            WhatsApp
+          </a>
+          {' · '}
+          <a
+            href="mailto:ajaiprasad@gmail.com?subject=Sadhana%20Reader%20Feedback"
+            className="underline hover:opacity-80 transition-opacity"
+            style={{ color: 'var(--color-accent-primary)' }}
+          >
+            Email
           </a>
         </p>
       </motion.footer>

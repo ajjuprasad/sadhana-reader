@@ -745,6 +745,88 @@ const shivaAshtottara: Stotra = {
   ],
 };
 
+const vishnuSahasranamam: Stotra = {
+  id: 'vishnu-sahasranamam',
+  title: 'Vishnu Sahasranamam',
+  subtitle: 'विष्णु सहस्रनाम स्तोत्रम्',
+  deity: 'Vishnu',
+  description: 'The thousand names of Lord Vishnu from the Mahabharata — first ten verses with dhyana.',
+  estimatedMinutes: 8,
+  icon: 'M16 6 L16 26 M6 16 L26 16 M8.9 8.9 L23.1 23.1 M23.1 8.9 L8.9 23.1',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Dhyana 1',
+      sanskrit: 'शुक्लाम्बरधरं विष्णुं शशिवर्णं चतुर्भुजम्।\nप्रसन्नवदनं ध्यायेत् सर्वविघ्नोपशान्तये॥',
+      transliteration: 'Shuklambaradharam Vishnum Shashivarnam Chaturbhujam.\nPrasannavadanam Dhyayet Sarvavighnopashantaye.',
+      meaning: 'I meditate upon Lord Vishnu, clad in white, moon-hued, four-armed, of a serene countenance — for the stilling of all obstacles.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Dhyana 2',
+      sanskrit: 'शान्ताकारं भुजगशयनं पद्मनाभं सुरेशं\nविश्वाधारं गगनसदृशं मेघवर्णं शुभाङ्गम्।\nलक्ष्मीकान्तं कमलनयनं योगिभिर्ध्यानगम्यं\nवन्दे विष्णुं भवभयहरं सर्वलोकैकनाथम्॥',
+      transliteration: 'Shantakaram Bhujagashayanam Padmanabham Suresham\nVishvadharam Gaganasadrisham Meghavarnam Shubhangam.\nLakshmikantam Kamalanayanam Yogibhir Dhyanagamyam\nVande Vishnum Bhavabhayaharam Sarvalokaikanatham.',
+      meaning: 'I bow to Vishnu — of peaceful form, reclining on the serpent, lotus-naveled, Lord of gods; supporter of the universe, vast as the sky, cloud-hued, of auspicious limbs; beloved of Lakshmi, lotus-eyed, attainable by yogis in meditation; the destroyer of the fear of existence, the one Lord of all worlds.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Shloka 1',
+      sanskrit: 'विश्वं विष्णुर्वषट्कारो भूतभव्यभवत्प्रभुः।\nभूतकृद्भूतभृद्भावो भूतात्मा भूतभावनः॥',
+      transliteration: 'Vishvam Vishnur Vashatkaro Bhutabhavyabhavatprabhuh.\nBhutakrid Bhutabhrid Bhavo Bhutatma Bhutabhavanah.',
+      meaning: 'The Universe, the all-pervading, the sacred syllable Vashat, the Lord of the past, future, and present; the Creator of beings, the Sustainer of beings, pure Existence, the Self of all beings, the Source of all beings.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Shloka 2',
+      sanskrit: 'पूतात्मा परमात्मा च मुक्तानां परमा गतिः।\nअव्ययः पुरुषः साक्षी क्षेत्रज्ञोऽक्षर एव च॥',
+      transliteration: 'Putatma Paramatma Cha Muktanam Parama Gatih.\nAvyayah Purushah Sakshi Kshetrajno\'kshara Eva Cha.',
+      meaning: 'The Pure-Souled, the Supreme Self, the highest goal of the liberated; the Imperishable, the Cosmic Person, the Witness, the Knower of the field, and the Indestructible.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Shloka 3',
+      sanskrit: 'योगो योगविदां नेता प्रधानपुरुषेश्वरः।\nनारसिंहवपुः श्रीमान् केशवः पुरुषोत्तमः॥',
+      transliteration: 'Yogo Yogavidam Neta Pradhanapurusheshvarah.\nNarasimhavapuh Shriman Keshavah Purushottamah.',
+      meaning: 'Yoga itself, the guide of the knowers of Yoga, the Lord of Prakriti and Purusha; of the form of Narasimha, the glorious one, Keshava (of beautiful hair), the Supreme Person.',
+    },
+    {
+      id: 6,
+      verseLabel: 'Shloka 4',
+      sanskrit: 'सर्वः शर्वः शिवः स्थाणुर्भूतादिर्निधिरव्ययः।\nसम्भवो भावनो भर्ता प्रभवः प्रभुरीश्वरः॥',
+      transliteration: 'Sarvah Sharvah Shivah Sthanur Bhutadir Nidhiravyayah.\nSambhavo Bhavano Bharta Prabhavah Prabhurishvarah.',
+      meaning: 'The All, the Destroyer of all, the Auspicious, the Steadfast Pillar, the Origin of beings, the Inexhaustible Treasure; the Self-Born, the Producer, the Supporter, the Source, the mighty Lord.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Shloka 5',
+      sanskrit: 'स्वयम्भूः शम्भुरादित्यः पुष्कराक्षो महास्वनः।\nअनादिनिधनो धाता विधाता धातुरुत्तमः॥',
+      transliteration: 'Svayambhuh Shambhuradityah Pushkaraksho Mahasvanah.\nAnadinidhano Dhata Vidhata Dhaturuttamah.',
+      meaning: 'The Self-Existent, the Giver of joy, the Sun, the lotus-eyed, of great and resonant voice; without beginning or end, the Supporter, the Dispenser, the Supreme among the sustainers.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Shloka 6',
+      sanskrit: 'अप्रमेयो हृषीकेशः पद्मनाभोऽमरप्रभुः।\nविश्वकर्मा मनुस्त्वष्टा स्थविष्ठः स्थविरो ध्रुवः॥',
+      transliteration: 'Aprameyo Hrishikeshah Padmanabho\'maraprabhuh.\nVishvakarma Manustvashta Sthavishthah Sthaviro Dhruvah.',
+      meaning: 'The Immeasurable, Lord of the senses, lotus-naveled, Lord of the immortals; the Universal Maker, the Thinker, the Shaper, the most solid, the ancient, the steadfast.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Shloka 7',
+      sanskrit: 'अग्राह्यः शाश्वतः कृष्णो लोहिताक्षः प्रतर्दनः।\nप्रभूतस्त्रिककुब्धाम पवित्रं मङ्गलं परम्॥',
+      transliteration: 'Agrahyah Shashvatah Krishno Lohitakshah Pratardanah.\nPrabhutastrikakubdhama Pavitram Mangalam Param.',
+      meaning: 'Incomprehensible, Eternal, Krishna (the dark-hued), the red-eyed, the Destroyer; the Abundant, whose abode spans the three directions, the Pure, the Supreme Auspiciousness.',
+    },
+    {
+      id: 10,
+      verseLabel: 'Shloka 8',
+      sanskrit: 'ईशानः प्राणदः प्राणो ज्येष्ठः श्रेष्ठः प्रजापतिः।\nहिरण्यगर्भो भूगर्भो माधवो मधुसूदनः॥',
+      transliteration: 'Ishanah Pranadah Prano Jyeshthah Shreshthah Prajapatih.\nHiranyagarbho Bhugarbho Madhavo Madhusudanah.',
+      meaning: 'The Ruler, the Giver of life, the vital breath itself, the Eldest, the Most Excellent, Lord of creatures; the Golden Womb, the Womb of the earth, Madhava (Lord of Lakshmi), Slayer of Madhu.',
+    },
+  ],
+};
+
 export const stotras: Stotra[] = [
   hanumanChalisa,
   ganeshaPancharatnam,
@@ -753,4 +835,5 @@ export const stotras: Stotra[] = [
   mahalakshmiAshtakam,
   lingashtakam,
   madhurashtakam,
+  vishnuSahasranamam,
 ];
