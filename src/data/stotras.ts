@@ -1209,6 +1209,41 @@ const vishnuSahasranamam: Stotra = {
       transliteration: 'Shubhangah Shantidah Srashta Kumudah Kuvaleshayah.\nGohito Gopatir Gopta Vrishabhaksho Vrishapriyah.',
       meaning: 'Of auspicious form, giver of peace, the Creator, the rejoicer in the earth, who reposes in the waters; beneficent to dharma, Lord of cows, their protector, whose glance rains blessings, the lover of righteousness.',
     },
+    {
+      id: 66,
+      verseLabel: 'Shloka 64',
+      sanskrit: 'अनिवर्ती निवृत्तात्मा संक्षेप्ता क्षेमकृच्छिवः।\nश्रीवत्सवक्षाः श्रीवासः श्रीपतिः श्रीमतां वरः॥',
+      transliteration: 'Anivarti Nivrittatma Samkshepta Kshemakrich Chhivah.\nShrivatsavakshah Shrivasah Shripatih Shrimatam Varah.',
+      meaning: 'Never-turning-back, the withdrawn Self, the Condenser of all, the Benefactor, the Auspicious; whose chest bears the Shrivatsa, the abode of Shri, Lord of Shri, best among the glorious.',
+    },
+    {
+      id: 67,
+      verseLabel: 'Shloka 65',
+      sanskrit: 'श्रीदः श्रीशः श्रीनिवासः श्रीनिधिः श्रीविभावनः।\nश्रीधरः श्रीकरः श्रेयः श्रीमान् लोकत्रयाश्रयः॥',
+      transliteration: 'Shridah Shrishah Shrinivasah Shrinidhih Shrivibhavanah.\nShridharah Shrikarah Shreyah Shriman Lokatrayashrayah.',
+      meaning: 'Giver of Shri, Lord of Shri, abode of Shri, treasury of Shri, manifester of Shri; bearer of Shri, causer of Shri, the Good, the glorious, the refuge of the three worlds.',
+    },
+    {
+      id: 68,
+      verseLabel: 'Shloka 66',
+      sanskrit: 'स्वक्षः स्वङ्गः शतानन्दो नन्दिर्ज्योतिर्गणेश्वरः।\nविजितात्मा विधेयात्मा सत्कीर्तिश्छिन्नसंशयः॥',
+      transliteration: 'Svakshah Svangah Shatanando Nandir Jyotir Ganeshvarah.\nVijitatma Vidheyatma Satkirtish Chhinnasamshayah.',
+      meaning: 'Of beautiful eyes, of beautiful limbs, of a hundred joys, the Joyous, Lord of hosts of lights; self-controlled, the compliant Self, of true renown, the cleaver of doubt.',
+    },
+    {
+      id: 69,
+      verseLabel: 'Shloka 67',
+      sanskrit: 'उदीर्णः सर्वतश्चक्षुरनीशः शाश्वतस्थिरः।\nभूशयो भूषणो भूतिर्विशोकः शोकनाशनः॥',
+      transliteration: 'Udirnah Sarvatash Chakshur Anishah Shashvatasthirah.\nBhushayo Bhushano Bhutir Vishokah Shokanashanah.',
+      meaning: 'The Exalted, whose eyes are on every side, beyond any superior, eternally steady; who rested on the earth (as Rama), the Ornament, Existence itself, the Sorrowless, the destroyer of sorrow.',
+    },
+    {
+      id: 70,
+      verseLabel: 'Shloka 68',
+      sanskrit: 'अर्चिष्मानर्चितः कुम्भो विशुद्धात्मा विशोधनः।\nअनिरुद्धोऽप्रतिरथः प्रद्युम्नोऽमितविक्रमः॥',
+      transliteration: 'Archishman Architah Kumbho Vishuddhatma Vishodhanah.\nAniruddho\'pratirathah Pradyumno\'mitavikramah.',
+      meaning: 'The Effulgent, the Worshiped, the Pot that holds all, of pure Self, the Purifier; Aniruddha, the matchless warrior, Pradyumna, of boundless prowess.',
+    },
   ],
 };
 
