@@ -87,7 +87,10 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
             href={(() => {
               const baseUrl = window.location.href.split('#')[0];
               const stotraUrl = `${baseUrl}#/stotra/${stotra.id}`;
-              const message = `Read ${stotra.title} on Sādhanā Reader — a digital sanctum for contemplation. ${stotraUrl}`;
+              const benefit = stotra.benefits?.[0];
+              const message = benefit
+                ? `Read ${stotra.title} on Sādhanā Reader.\n${benefit}.\n${stotraUrl}`
+                : `Read ${stotra.title} on Sādhanā Reader.\n${stotraUrl}`;
               return `https://wa.me/?text=${encodeURIComponent(message)}`;
             })()}
             target="_blank"
@@ -275,7 +278,10 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
               href={(() => {
                 const baseUrl = window.location.href.split('#')[0];
                 const stotraUrl = `${baseUrl}#/stotra/${stotra.id}`;
-                const message = `Read ${stotra.title} on Sādhanā Reader — a digital sanctum for contemplation. ${stotraUrl}`;
+                const benefit = stotra.benefits?.[0];
+                const message = benefit
+                  ? `Read ${stotra.title} on Sādhanā Reader.\n${benefit}.\n${stotraUrl}`
+                  : `Read ${stotra.title} on Sādhanā Reader.\n${stotraUrl}`;
                 return `https://wa.me/?text=${encodeURIComponent(message)}`;
               })()}
               target="_blank"
