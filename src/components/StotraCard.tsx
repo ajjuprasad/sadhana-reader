@@ -25,17 +25,23 @@ function StotraIcon({ stotraId }: { stotraId: string }) {
       );
 
     case 'ganesha-pancharatnam':
-      // Ganesha — elephant face with ears, trunk, tusk, eyes, tilak
+      // Ganesha — refined face with ornamental ears, crown, elegant trunk
       return (
         <>
-          <ellipse cx="16" cy="12" rx="7" ry="8" {...s} strokeWidth="1.6" />
-          <path d="M9 10 Q4 7 5 3" {...s} strokeWidth="1.6" />
-          <path d="M23 10 Q28 7 27 3" {...s} strokeWidth="1.6" />
-          <path d="M16 20 Q15 24 12 28" {...s} strokeWidth="2" />
-          <path d="M19 17 Q20 20 21 22" {...s} strokeWidth="1.4" />
-          <circle cx="12.5" cy="11" r="1.2" stroke="none" fill="currentColor" />
-          <circle cx="19.5" cy="11" r="1.2" stroke="none" fill="currentColor" />
-          <circle cx="16" cy="7" r="1" stroke="none" fill="currentColor" />
+          {/* Wide dome head */}
+          <path d="M9 16 Q9 4 16 3 Q23 4 23 16" {...s} strokeWidth="1.6" />
+          {/* Ornamental ears */}
+          <path d="M9 10 Q4 6 4 12 Q4 16 9 15" {...s} strokeWidth="1.5" />
+          <path d="M23 10 Q28 6 28 12 Q28 16 23 15" {...s} strokeWidth="1.5" />
+          {/* Crown / mukut */}
+          <path d="M12 4 L14 1.5 L16 3.5 L18 1.5 L20 4" {...s} strokeWidth="1.1" />
+          {/* Almond eyes */}
+          <path d="M12 10 Q13.5 9 15 10" {...s} strokeWidth="1" />
+          <path d="M17 10 Q18.5 9 20 10" {...s} strokeWidth="1" />
+          {/* Trunk — graceful S-curve */}
+          <path d="M16 16 Q14 20 12 24 Q11 26 10 27" {...s} strokeWidth="1.8" />
+          {/* Tusk */}
+          <path d="M19 15 Q20 18 22 20" {...s} strokeWidth="1.3" />
         </>
       );
 
@@ -102,7 +108,7 @@ function StotraIcon({ stotraId }: { stotraId: string }) {
 export default function StotraCard({ stotra, index, onClick }: StotraCardProps) {
   return (
     <motion.button
-      className="relative w-full text-left rounded-2xl overflow-hidden group focus:outline-none focus:ring-2 focus:ring-saffron"
+      className="relative w-full h-full text-left rounded-2xl overflow-hidden group focus:outline-none focus:ring-2 focus:ring-saffron"
       style={{
         backgroundColor: 'var(--color-bg-card)',
         boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
@@ -122,10 +128,10 @@ export default function StotraCard({ stotra, index, onClick }: StotraCardProps) 
       onClick={onClick}
       aria-label={`Read ${stotra.title}`}
     >
-      <div className="p-5 sm:p-6">
-        {/* Icon */}
+      <div className="p-5 sm:p-6 flex flex-col h-full">
+        {/* Icon — anchored to top */}
         <div
-          className="w-12 h-12 mb-3 flex items-center justify-center rounded-full"
+          className="w-12 h-12 mb-3 flex-shrink-0 flex items-center justify-center rounded-full"
           style={{ backgroundColor: 'rgba(255,153,51,0.1)' }}
         >
           <svg
@@ -155,9 +161,12 @@ export default function StotraCard({ stotra, index, onClick }: StotraCardProps) 
           {stotra.deity} &middot; ~{stotra.estimatedMinutes} min
         </p>
 
-        {/* Verse count badge */}
+        {/* Spacer pushes badge to bottom */}
+        <div className="flex-1" />
+
+        {/* Verse count badge — pinned to bottom */}
         <span
-          className="inline-block font-hind text-xs px-2.5 py-0.5 rounded-full"
+          className="inline-block font-hind text-xs px-2.5 py-0.5 rounded-full self-start"
           style={{
             backgroundColor: 'rgba(255,153,51,0.12)',
             color: 'var(--color-accent-primary)',
