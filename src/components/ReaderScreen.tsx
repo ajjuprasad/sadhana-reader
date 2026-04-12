@@ -68,7 +68,7 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
     <div className="min-h-screen flex flex-col">
       {/* Top bar */}
       <motion.header
-        className="sticky top-0 z-30 flex items-center justify-between px-4 py-3"
+        className="sticky top-0 z-30 grid grid-cols-[1fr_auto_1fr] items-center gap-2 px-4 py-3"
         style={{
           backgroundColor: 'var(--color-bg)',
           borderBottom: '1px solid rgba(0,0,0,0.06)',
@@ -79,7 +79,7 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
       >
         <button
           onClick={() => navigate('/')}
-          className="flex items-center gap-2 font-hind text-sm hover:opacity-70 transition-opacity"
+          className="justify-self-start flex items-center gap-2 font-hind text-sm hover:opacity-70 transition-opacity"
           style={{ color: 'var(--color-text-primary)' }}
           aria-label="Back to home"
         >
@@ -99,14 +99,14 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
         </button>
 
         <h2
-          className="font-display font-bold text-sm sm:text-base text-center"
+          className="font-display font-bold text-sm sm:text-base text-center truncate"
           style={{ color: 'var(--color-text-primary)' }}
         >
           {stotra.title}
         </h2>
 
         {/* Share + Settings */}
-        <div className="flex items-center gap-1">
+        <div className="justify-self-end flex items-center gap-1">
           <a
             href={(() => {
               const baseUrl = window.location.href.split('#')[0];
