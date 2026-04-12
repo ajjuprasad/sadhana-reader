@@ -1,8 +1,13 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 
-export function useReader(totalVerses: number) {
+export function useReader(totalVerses: number, onComplete?: () => void) {
   const [currentVerse, setCurrentVerse] = useState(0);
   const [direction, setDirection] = useState<1 | -1>(1);
+
+  // Keep onComplete in a ref so nextVerse stays stable but always calls the
+  // latest handler.
+  const onCompleteRef = useRef(onComplete);
+  onCompleteRef.current = onComplete;
 
   const goToVerse = useCallback(
     (index: number) => {
@@ -17,8 +22,17 @@ export function useReader(totalVerses: number) {
   );
 
   const nextVerse = useCallback(() => {
-    setDirection(1);
-    setCurrentVerse((prev) => Math.min(prev + 1, totalVerses - 1));
+    setCurrentVerse((prev) => {
+      if (prev >= totalVerses - 1) {
+        // Defer so we don't schedule a parent setState during our own update.
+        if (onCompleteRef.current) {
+          setTimeout(() => onCompleteRef.current?.(), 0);
+        }
+        return prev;
+      }
+      setDirection(1);
+      return prev + 1;
+    });
   }, [totalVerses]);
 
   const prevVerse = useCallback(() => {

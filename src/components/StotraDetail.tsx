@@ -82,33 +82,66 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
 
         <div />
 
-        <button
-          className="p-1 hover:opacity-70 transition-opacity"
-          style={{ color: 'var(--color-text-primary)' }}
-          onClick={() => setSettingsOpen(true)}
-          aria-label="Open settings"
-        >
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+        <div className="flex items-center gap-1">
+          <a
+            href={(() => {
+              const baseUrl = window.location.href.split('#')[0];
+              const stotraUrl = `${baseUrl}#/stotra/${stotra.id}`;
+              const message = `Read ${stotra.title} on Sādhanā Reader — a digital sanctum for contemplation. ${stotraUrl}`;
+              return `https://wa.me/?text=${encodeURIComponent(message)}`;
+            })()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-1 hover:opacity-70 transition-opacity"
+            style={{ color: 'var(--color-text-primary)' }}
+            aria-label={`Share ${stotra.title}`}
           >
-            <line x1="4" y1="21" x2="4" y2="14" />
-            <line x1="4" y1="10" x2="4" y2="3" />
-            <line x1="12" y1="21" x2="12" y2="12" />
-            <line x1="12" y1="8" x2="12" y2="3" />
-            <line x1="20" y1="21" x2="20" y2="16" />
-            <line x1="20" y1="12" x2="20" y2="3" />
-            <line x1="1" y1="14" x2="7" y2="14" />
-            <line x1="9" y1="8" x2="15" y2="8" />
-            <line x1="17" y1="16" x2="23" y2="16" />
-          </svg>
-        </button>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <circle cx="18" cy="5" r="3" />
+              <circle cx="6" cy="12" r="3" />
+              <circle cx="18" cy="19" r="3" />
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+            </svg>
+          </a>
+
+          <button
+            className="p-1 hover:opacity-70 transition-opacity"
+            style={{ color: 'var(--color-text-primary)' }}
+            onClick={() => setSettingsOpen(true)}
+            aria-label="Open settings"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <line x1="4" y1="21" x2="4" y2="14" />
+              <line x1="4" y1="10" x2="4" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="12" />
+              <line x1="12" y1="8" x2="12" y2="3" />
+              <line x1="20" y1="21" x2="20" y2="16" />
+              <line x1="20" y1="12" x2="20" y2="3" />
+              <line x1="1" y1="14" x2="7" y2="14" />
+              <line x1="9" y1="8" x2="15" y2="8" />
+              <line x1="17" y1="16" x2="23" y2="16" />
+            </svg>
+          </button>
+        </div>
       </motion.header>
 
       {/* Main content */}
@@ -158,6 +191,41 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
           >
             {stotra.description}
           </p>
+
+          {/* Benefits */}
+          {stotra.benefits && stotra.benefits.length > 0 && (
+            <div className="mb-8 max-w-sm mx-auto text-left">
+              <h2
+                className="font-hind font-semibold text-xs uppercase text-center mb-3"
+                style={{
+                  color: 'var(--color-accent-primary)',
+                  letterSpacing: '0.15em',
+                }}
+              >
+                Benefits
+              </h2>
+              <ul className="space-y-2">
+                {stotra.benefits.map((benefit, i) => (
+                  <li
+                    key={i}
+                    className="font-body text-sm leading-relaxed flex items-start gap-2.5"
+                    style={{ color: 'var(--color-text-secondary)' }}
+                  >
+                    <span
+                      aria-hidden="true"
+                      className="mt-1.5 flex-shrink-0 rounded-full"
+                      style={{
+                        width: '5px',
+                        height: '5px',
+                        backgroundColor: 'var(--color-accent-primary)',
+                      }}
+                    />
+                    <span>{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           {/* Details row */}
           <div className="flex items-center justify-center gap-4 mb-8">

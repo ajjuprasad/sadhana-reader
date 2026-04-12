@@ -12,6 +12,7 @@ export interface Stotra {
   subtitle: string;
   deity: string;
   description: string;
+  benefits: string[];
   estimatedMinutes: number;
   icon: string;
   verses: Verse[];
@@ -23,6 +24,13 @@ const hanumanChalisa: Stotra = {
   subtitle: 'हनुमान चालीसा',
   deity: 'Hanuman',
   description: 'The forty verses in praise of Lord Hanuman, composed by Tulsidas.',
+  benefits: [
+    'Bestows physical strength, courage, and mental fortitude',
+    'Dispels fear, negativity, and malevolent influences',
+    'Removes obstacles and hardships on life\'s path',
+    'Cultivates unwavering devotion and surrender',
+    'Invokes Hanuman\'s protection in times of trouble',
+  ],
   estimatedMinutes: 15,
   icon: 'M16 4 L16 14 M13 8 L19 8 M12 28 L16 18 L20 28 Z M8 28 L24 28',
   verses: [
@@ -336,6 +344,13 @@ const ganeshaPancharatnam: Stotra = {
   subtitle: 'गणेश पञ्चरत्नम्',
   deity: 'Ganesha',
   description: 'Five gems in praise of Lord Ganesha, composed by Adi Shankaracharya.',
+  benefits: [
+    'Removes obstacles from every endeavor',
+    'Blesses new ventures with auspicious beginnings',
+    'Grants clarity of intellect and wisdom',
+    'Invokes prosperity, harmony, and success',
+    'Dispels ignorance and binds the heart to Ganesha',
+  ],
   estimatedMinutes: 5,
   icon: 'M16 4 Q12 4 10 8 Q8 12 10 16 L14 16 L14 28 L18 28 L18 16 L22 16 Q24 12 22 8 Q20 4 16 4 M10 16 Q8 20 6 24 M22 16 Q24 20 26 24',
   verses: [
@@ -383,6 +398,13 @@ const shivaPanchakshara: Stotra = {
   subtitle: 'शिव पञ्चाक्षर स्तोत्रम्',
   deity: 'Shiva',
   description: 'Five verses on the five syllables Na-Ma-Shi-Va-Ya, by Adi Shankaracharya.',
+  benefits: [
+    'Invokes the power of the sacred "Namah Shivāya" mantra',
+    'Purifies the mind and awakens inner stillness',
+    'Dissolves ignorance and the bonds of samsara',
+    'Bestows Shiva\'s grace and ultimate liberation',
+    'Grants fearlessness and unshakable inner strength',
+  ],
   estimatedMinutes: 4,
   icon: 'M16 4 L16 28 M8 4 Q8 12 16 16 M24 4 Q24 12 16 16 M12 28 L20 28',
   verses: [
@@ -430,6 +452,13 @@ const mahalakshmiAshtakam: Stotra = {
   subtitle: 'महालक्ष्मी अष्टकम्',
   deity: 'Lakshmi',
   description: 'Eight verses in praise of Goddess Mahalakshmi.',
+  benefits: [
+    'Invokes Mahalakshmi for prosperity and abundance',
+    'Removes poverty, debt, and financial hardship',
+    'Brings success, auspiciousness, and good fortune',
+    'Grants health, happiness, and fulfillment of desires',
+    'Cultivates generosity and enduring spiritual wealth',
+  ],
   estimatedMinutes: 6,
   icon: 'M16 8 Q12 8 10 12 Q8 16 12 20 Q14 22 16 22 Q18 22 20 20 Q24 16 22 12 Q20 8 16 8 M16 22 L16 28 M10 12 Q6 10 4 12 M22 12 Q26 10 28 12',
   verses: [
@@ -505,6 +534,13 @@ const lingashtakam: Stotra = {
   subtitle: 'लिङ्गाष्टकम्',
   deity: 'Shiva',
   description: 'Eight verses glorifying the Shiva Lingam.',
+  benefits: [
+    'Purifies the heart and mind of accumulated sins',
+    'Bestows Shiva\'s boundless grace and blessings',
+    'Liberates the soul from the cycle of birth and death',
+    'Fosters unwavering devotion to the sacred Lingam',
+    'Grants peace, prosperity, and spiritual upliftment',
+  ],
   estimatedMinutes: 5,
   icon: 'M16 6 C11 6 8 10 8 16 C8 22 11 26 16 26 C21 26 24 22 24 16 C24 10 21 6 16 6 M8 26 L24 26 M6 28 L26 28',
   verses: [
@@ -573,6 +609,13 @@ const madhurashtakam: Stotra = {
   subtitle: 'मधुराष्टकम्',
   deity: 'Krishna',
   description: 'Eight sweet verses by Vallabhacharya — everything about Krishna is Madhuram (sweet).',
+  benefits: [
+    'Cultivates divine love and the mādhurya-bhāva',
+    'Draws the heart intimately towards Bhagavān Krishna',
+    'Fills daily life with sweetness, joy, and inner bliss',
+    'Transforms ordinary perception into divine seeing',
+    'Awakens the rasa of sweetness in every experience',
+  ],
   estimatedMinutes: 5,
   icon: 'M6 16 L26 16 M10 12 L10 20 M16 10 L16 22 M22 12 L22 20 M6 16 Q4 10 8 6 M26 16 Q28 22 24 26',
   verses: [
@@ -641,6 +684,13 @@ const shivaAshtottara: Stotra = {
   subtitle: 'श्री शिव अष्टोत्तर शतनाम स्तोत्रम्',
   deity: 'Shiva',
   description: 'The 108 sacred names of Lord Shiva, arranged in thirteen melodious verses.',
+  benefits: [
+    'Invokes Lord Shiva through his 108 sacred names',
+    'Dissolves sins, sorrows, and inner impurities',
+    'Bestows peace, health, and long life',
+    'Fosters sincere devotion and surrender to Shiva',
+    'Leads the sincere devotee towards moksha',
+  ],
   estimatedMinutes: 10,
   icon: 'M8 5 L24 5 L16 16 Z M8 27 L24 27 L16 16 Z',
   verses: [
@@ -751,6 +801,13 @@ const vishnuSahasranamam: Stotra = {
   subtitle: 'विष्णु सहस्रनाम स्तोत्रम्',
   deity: 'Vishnu',
   description: 'The thousand sacred names of Lord Vishnu from the Mahabharata — dhyana verses followed by the complete sahasranama shlokas and concluding invocation.',
+  benefits: [
+    'Bestows peace of mind, health, and longevity',
+    'Removes fear, disease, and misfortune',
+    'Grants wealth, success, and lasting victory',
+    'Purifies the mind and awakens deep Vishnu-bhakti',
+    'Leads the devotee to ultimate liberation (moksha)',
+  ],
   estimatedMinutes: 40,
   icon: 'M16 6 L16 26 M6 16 L26 16 M8.9 8.9 L23.1 23.1 M23.1 8.9 L8.9 23.1',
   verses: [
