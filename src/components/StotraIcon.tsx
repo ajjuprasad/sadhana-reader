@@ -99,6 +99,18 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
         </>
       );
 
+    case 'shiva-ashtottara':
+      // Damaru (Shiva's drum)
+      return (
+        <>
+          <path d="M8 5 L24 5 L16 16 Z" {...s} strokeWidth="1.5" />
+          <path d="M8 27 L24 27 L16 16 Z" {...s} strokeWidth="1.5" />
+          <ellipse cx="16" cy="16" rx="3" ry="1.5" {...s} strokeWidth="1.2" />
+          <line x1="8" y1="5" x2="24" y2="5" {...s} strokeWidth="1.8" />
+          <line x1="8" y1="27" x2="24" y2="27" {...s} strokeWidth="1.8" />
+        </>
+      );
+
     default:
       return <circle cx="16" cy="16" r="8" {...s} strokeWidth="1.5" />;
   }
