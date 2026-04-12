@@ -1139,6 +1139,41 @@ const vishnuSahasranamam: Stotra = {
       transliteration: 'Uttaro Gopatir Gopta Jnanagamyah Puratanah.\nSharirabhutabhrid Bhokta Kapindro Bhuridakshinah.',
       meaning: 'The Supreme, Lord of the rays (and cows), the Protector, attainable only through wisdom, the Ancient; sustainer of embodied beings, the Enjoyer, Lord of monkeys (as Rama), of abundant gifts.',
     },
+    {
+      id: 56,
+      verseLabel: 'Shloka 54',
+      sanskrit: 'सोमपोऽमृतपः सोमः पुरुजित्पुरुसत्तमः।\nविनयो जयः सत्यसन्धो दाशार्हः सात्वतां पतिः॥',
+      transliteration: 'Somapo\'mritapah Somah Purujit Purusattamah.\nVinayo Jayah Satyasandho Dasharhah Satvatam Patih.',
+      meaning: 'Drinker of Soma, drinker of nectar, Soma itself, conqueror of many, the Supreme among beings; Humility, Victory, true to His pledge, the descendant of Dasharha, Lord of the Satvatas.',
+    },
+    {
+      id: 57,
+      verseLabel: 'Shloka 55',
+      sanskrit: 'जीवो विनयिता साक्षी मुकुन्दोऽमितविक्रमः।\nअम्भोनिधिरनन्तात्मा महोदधिशयोऽन्तकः॥',
+      transliteration: 'Jivo Vinayita Sakshi Mukundo\'mitavikramah.\nAmbhonidhir Anantatma Mahodadhishayo\'ntakah.',
+      meaning: 'The living one, the Humbler of the arrogant, the Witness, Mukunda (the Giver of liberation), of boundless prowess; the repository of waters, of infinite Self, who reposes on the great ocean, the End of all.',
+    },
+    {
+      id: 58,
+      verseLabel: 'Shloka 56',
+      sanskrit: 'अजो महार्हः स्वाभाव्यो जितामित्रः प्रमोदनः।\nआनन्दो नन्दनो नन्दः सत्यधर्मा त्रिविक्रमः॥',
+      transliteration: 'Ajo Maharhah Svabhavyo Jitamitrah Pramodanah.\nAnando Nandano Nandah Satyadharma Trivikramah.',
+      meaning: 'The Unborn, worthy of highest worship, settled in His own nature, conqueror of foes, who makes others rejoice; Bliss, the Bestower of joy, Joy itself, of true dharma, Trivikrama of three strides.',
+    },
+    {
+      id: 59,
+      verseLabel: 'Shloka 57',
+      sanskrit: 'महर्षिः कपिलाचार्यः कृतज्ञो मेदिनीपतिः।\nत्रिपदस्त्रिदशाध्यक्षो महाशृङ्गः कृतान्तकृत्॥',
+      transliteration: 'Maharshih Kapilacharyah Kritajno Medinipatih.\nTripadas Tridashadhyaksho Mahashringah Kritantakrit.',
+      meaning: 'The great sage, the Acharya Kapila, the knower of deeds, Lord of the earth; of three strides, overseer of the thirty gods, of the great horn (as Matsya), the ender of the created order at pralaya.',
+    },
+    {
+      id: 60,
+      verseLabel: 'Shloka 58',
+      sanskrit: 'महावराहो गोविन्दः सुषेणः कनकाङ्गदी।\nगुह्यो गभीरो गहनो गुप्तश्चक्रगदाधरः॥',
+      transliteration: 'Mahavaraho Govindah Sushenah Kanakangadi.\nGuhyo Gabhiro Gahano Guptash Chakragadadharah.',
+      meaning: 'The great Boar (Varaha), Govinda, of excellent army, with golden armlets; the Hidden, the Profound, the Unfathomable, the Concealed, wielder of the discus and mace.',
+    },
   ],
 };
 
