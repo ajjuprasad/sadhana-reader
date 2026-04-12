@@ -106,7 +106,16 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
           className="font-hind text-xs"
           style={{ color: 'var(--color-text-muted)' }}
         >
-          Designed & built by Ajay Prasad
+          Designed & built by{' '}
+          <a
+            href="https://www.linkedin.com/in/ajjuprasad"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:opacity-80 transition-opacity"
+            style={{ color: 'var(--color-accent-primary)' }}
+          >
+            Ajay Prasad
+          </a>
         </p>
       </motion.footer>
 
