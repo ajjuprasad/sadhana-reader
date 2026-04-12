@@ -859,6 +859,41 @@ const vishnuSahasranamam: Stotra = {
       transliteration: 'Rudro Bahushira Babhrur Vishvayonih Shuchishravah.\nAmritah Shashvatah Sthanur Vararoho Mahatapah.',
       meaning: 'The Destroyer of sorrow, the many-headed, the Ruler, the Womb of the universe, of sacred glory; the Immortal, the Eternal, the Unchanging Pillar, the auspicious Refuge, of great tapas.',
     },
+    {
+      id: 16,
+      verseLabel: 'Shloka 14',
+      sanskrit: 'सर्वगः सर्वविद्भानुर्विष्वक्सेनो जनार्दनः।\nवेदो वेदविदव्यङ्गो वेदाङ्गो वेदवित् कविः॥',
+      transliteration: 'Sarvagah Sarvavid Bhanur Vishvakseno Janardanah.\nVedo Vedavid Avyango Vedango Vedavit Kavih.',
+      meaning: 'The All-pervading, the All-knowing, the Radiant One, Leader of hosts across the universe, the Tormentor of the wicked; the Vedas themselves, the Knower of the Vedas, the Flawless, whose limbs are the Vedangas, the Knower of the Veda, the Seer.',
+    },
+    {
+      id: 17,
+      verseLabel: 'Shloka 15',
+      sanskrit: 'लोकाध्यक्षः सुराध्यक्षो धर्माध्यक्षः कृताकृतः।\nचतुरात्मा चतुर्व्यूहश्चतुर्दंष्ट्रश्चतुर्भुजः॥',
+      transliteration: 'Lokadhyakshah Suradhyakshah Dharmadhyakshah Kritakritah.\nChaturatma Chaturvyuhash Chaturdamshtrash Chaturbhujah.',
+      meaning: 'Overseer of the worlds, Overseer of the gods, Overseer of dharma, both the accomplished effect and the action itself; of four-fold Self, of four manifestations (Vasudeva, Sankarshana, Pradyumna, Aniruddha), of four tusks (as Narasimha), of four arms.',
+    },
+    {
+      id: 18,
+      verseLabel: 'Shloka 16',
+      sanskrit: 'भ्राजिष्णुर्भोजनं भोक्ता सहिष्णुर्जगदादिजः।\nअनघो विजयो जेता विश्वयोनिः पुनर्वसुः॥',
+      transliteration: 'Bhrajishnur Bhojanam Bhokta Sahishnur Jagadadijah.\nAnagho Vijayo Jeta Vishvayonih Punarvasuh.',
+      meaning: 'The Ever-Radiant, the Enjoyed, the Enjoyer, the All-forbearing, the first-born of the world; the Sinless, Victory itself, the Conqueror, the Womb of the universe, who dwells again and again.',
+    },
+    {
+      id: 19,
+      verseLabel: 'Shloka 17',
+      sanskrit: 'उपेन्द्रो वामनः प्रांशुरमोघः शुचिरूर्जितः।\nअतीन्द्रः संग्रहः सर्गो धृतात्मा नियमो यमः॥',
+      transliteration: 'Upendro Vamanah Pramshur Amoghah Shuchir Urjitah.\nAtindrah Samgrahah Sargo Dhritatma Niyamo Yamah.',
+      meaning: 'The younger brother of Indra, the Dwarf incarnation, the Tall one, the Unfailing, the Pure, the Ever-Vigorous; beyond Indra and the senses, the Gatherer, Creation itself, the self-poised, Restraint, the Controller.',
+    },
+    {
+      id: 20,
+      verseLabel: 'Shloka 18',
+      sanskrit: 'वेद्यो वैद्यः सदायोगी वीरहा माधवो मधुः।\nअतीन्द्रियो महामायो महोत्साहो महाबलः॥',
+      transliteration: 'Vedyo Vaidyah Sadayogi Viraha Madhavo Madhuh.\nAtindriyo Mahamayo Mahotsaho Mahabalah.',
+      meaning: 'The One to be known, the supreme Physician, the eternal Yogi, slayer of heroic foes, Madhava, Sweetness itself; beyond the senses, the great Illusionist, of great zeal, of great strength.',
+    },
   ],
 };
 
