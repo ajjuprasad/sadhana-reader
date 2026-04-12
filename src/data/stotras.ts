@@ -1104,6 +1104,41 @@ const vishnuSahasranamam: Stotra = {
       transliteration: 'Yajna Ijyo Mahejyash Cha Kratuh Satram Satam Gatih.\nSarvadarshi Vimuktatma Sarvajno Jnanam Uttamam.',
       meaning: 'Sacrifice itself, the Worshiped, worthy of great worship, the Kratu, the Soma-sacrifice, refuge of the virtuous; All-Seer, the liberated Self, the All-Knower, the highest Knowledge.',
     },
+    {
+      id: 51,
+      verseLabel: 'Shloka 49',
+      sanskrit: 'सुव्रतः सुमुखः सूक्ष्मः सुघोषः सुखदः सुहृत्।\nमनोहरो जितक्रोधो वीरबाहुर्विदारणः॥',
+      transliteration: 'Suvratah Sumukhah Sukshmah Sughoshah Sukhadah Suhrit.\nManoharo Jitakrodho Virabahur Vidaranah.',
+      meaning: 'Of good vows, of pleasing face, the Subtle, of auspicious sound, giver of joy, the true friend; stealer of minds, conqueror of anger, of heroic arms, the tearer-asunder of evil.',
+    },
+    {
+      id: 52,
+      verseLabel: 'Shloka 50',
+      sanskrit: 'स्वापनः स्ववशो व्यापी नैकात्मा नैककर्मकृत्।\nवत्सरो वत्सलो वत्सी रत्नगर्भो धनेश्वरः॥',
+      transliteration: 'Svapanah Svavasho Vyapi Naikatma Naikakarmakrit.\nVatsaro Vatsalo Vatsi Ratnagarbho Dhaneshvarah.',
+      meaning: 'The causer of the sleep of maya, the Self-dependent, the Pervader, of manifold forms, doer of manifold deeds; the Dweller-in-all, the Affectionate, the tender father, the womb of jewels, Lord of wealth.',
+    },
+    {
+      id: 53,
+      verseLabel: 'Shloka 51',
+      sanskrit: 'धर्मगुब्धर्मकृद्धर्मी सदसत्क्षरमक्षरम्।\nअविज्ञाता सहस्रांशुर्विधाता कृतलक्षणः॥',
+      transliteration: 'Dharmagub Dharmakrid Dharmi Sadasat Ksharam Aksharam.\nAvijnata Sahasramshur Vidhata Kritalakshanah.',
+      meaning: 'Protector of dharma, doer of dharma, possessor of dharma, Being and Non-being, the perishable and the imperishable; the Unknowable, the thousand-rayed, the Dispenser, of fixed characteristics.',
+    },
+    {
+      id: 54,
+      verseLabel: 'Shloka 52',
+      sanskrit: 'गभस्तिनेमिः सत्त्वस्थः सिंहो भूतमहेश्वरः।\nआदिदेवो महादेवो देवेशो देवभृद्गुरुः॥',
+      transliteration: 'Gabhastinemih Sattvasthah Simho Bhutamaheshvarah.\nAdidevo Mahadevo Devesho Devabhrid Guruh.',
+      meaning: 'The nave of light-rays, seated in sattva, the Lion, the great Lord of beings; the primal God, the great God, Lord of the gods, sustainer of gods, the Teacher.',
+    },
+    {
+      id: 55,
+      verseLabel: 'Shloka 53',
+      sanskrit: 'उत्तरो गोपतिर्गोप्ता ज्ञानगम्यः पुरातनः।\nशरीरभूतभृद्भोक्ता कपीन्द्रो भूरिदक्षिणः॥',
+      transliteration: 'Uttaro Gopatir Gopta Jnanagamyah Puratanah.\nSharirabhutabhrid Bhokta Kapindro Bhuridakshinah.',
+      meaning: 'The Supreme, Lord of the rays (and cows), the Protector, attainable only through wisdom, the Ancient; sustainer of embodied beings, the Enjoyer, Lord of monkeys (as Rama), of abundant gifts.',
+    },
   ],
 };
 
