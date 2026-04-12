@@ -219,6 +219,41 @@ const madhurashtakam: Stotra = {
       transliteration: 'Venur Madhuro Renur Madhurah Panir Madhurah Padau Madhurau.\nNrityam Madhuram Sakhyam Madhuram Madhuradhipater Akhilam Madhuram.',
       meaning: 'His flute is sweet, His dust is sweet, His hands are sweet, His feet are sweet. His dance is sweet, His friendship is sweet — everything about the Lord of sweetness is sweet.',
     },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit: 'गीतं मधुरं पीतं मधुरं भुक्तं मधुरं सुप्तं मधुरम्।\nरूपं मधुरं तिलकं मधुरं मधुराधिपतेरखिलं मधुरम्॥',
+      transliteration: 'Gitam Madhuram Pitam Madhuram Bhuktam Madhuram Suptam Madhuram.\nRupam Madhuram Tilakam Madhuram Madhuradhipater Akhilam Madhuram.',
+      meaning: 'His song is sweet, His drinking is sweet, His eating is sweet, His sleeping is sweet. His form is sweet, His tilak is sweet — everything about the Lord of sweetness is sweet.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit: 'करणं मधुरं तरणं मधुरं हरणं मधुरं रमणं मधुरम्।\nवमितं मधुरं शमितं मधुरं मधुराधिपतेरखिलं मधुरम्॥',
+      transliteration: 'Karanam Madhuram Taranam Madhuram Haranam Madhuram Ramanam Madhuram.\nVamitam Madhuram Shamitam Madhuram Madhuradhipater Akhilam Madhuram.',
+      meaning: 'His deeds are sweet, His liberation is sweet, His stealing (of hearts) is sweet, His love-play is sweet. His giving is sweet, His pacifying is sweet — everything about the Lord of sweetness is sweet.',
+    },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit: 'गुञ्जा मधुरा माला मधुरा यमुना मधुरा वीची मधुरा।\nसलिलं मधुरं कमलं मधुरं मधुराधिपतेरखिलं मधुरम्॥',
+      transliteration: 'Gunja Madhura Mala Madhura Yamuna Madhura Vichi Madhura.\nSalilam Madhuram Kamalam Madhuram Madhuradhipater Akhilam Madhuram.',
+      meaning: 'His gunja berry necklace is sweet, His garland is sweet, the Yamuna is sweet, its waves are sweet. Its water is sweet, the lotus is sweet — everything about the Lord of sweetness is sweet.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit: 'गोपी मधुरा लीला मधुरा युक्तं मधुरं मुक्तं मधुरम्।\nदृष्टं मधुरं शिष्टं मधुरं मधुराधिपतेरखिलं मधुरम्॥',
+      transliteration: 'Gopi Madhura Leela Madhura Yuktam Madhuram Muktam Madhuram.\nDrishtam Madhuram Shishtam Madhuram Madhuradhipater Akhilam Madhuram.',
+      meaning: 'His gopis are sweet, His divine play is sweet, His union is sweet, His liberation is sweet. His glance is sweet, His discipline is sweet — everything about the Lord of sweetness is sweet.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit: 'गोपा मधुरा गावो मधुरा यष्टिर्मधुरा सृष्टिर्मधुरा।\nदलितं मधुरं फलितं मधुरं मधुराधिपतेरखिलं मधुरम्॥',
+      transliteration: 'Gopa Madhura Gavo Madhura Yashtir Madhura Srishtir Madhura.\nDalitam Madhuram Phalitam Madhuram Madhuradhipater Akhilam Madhuram.',
+      meaning: 'His cowherds are sweet, His cows are sweet, His staff is sweet, His creation is sweet. His destruction is sweet, His fruition is sweet — everything about the Lord of sweetness is sweet.',
+    },
   ],
 };
 
