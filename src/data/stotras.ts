@@ -1034,6 +1034,41 @@ const vishnuSahasranamam: Stotra = {
       transliteration: 'Padmanabho\'ravindakshah Padmagarbhah Sharirabhrit.\nMaharddhir Riddho Vriddhatma Mahaksho Garudadhvajah.',
       meaning: 'Lotus-naveled, lotus-eyed, the womb of the lotus, bearer of bodies; of great prosperity, the Prosperous, the ancient Self, of great eyes, whose banner is Garuda.',
     },
+    {
+      id: 41,
+      verseLabel: 'Shloka 39',
+      sanskrit: 'अतुलः शरभो भीमः समयज्ञो हविर्हरिः।\nसर्वलक्षणलक्षण्यो लक्ष्मीवान् समितिञ्जयः॥',
+      transliteration: 'Atulah Sharabho Bhimah Samayajno Havir Harih.\nSarvalakshanalakshanyo Lakshmivan Samitinjayah.',
+      meaning: 'The Unequaled, Sharabha (reprover of pride), the Terrible, the knower of occasions, the Oblation, the Remover of sins; known through all auspicious marks, the consort of Lakshmi, the victor in battles.',
+    },
+    {
+      id: 42,
+      verseLabel: 'Shloka 40',
+      sanskrit: 'विक्षरो रोहितो मार्गो हेतुर्दामोदरः सहः।\nमहीधरो महाभागो वेगवानमिताशनः॥',
+      transliteration: 'Viksharo Rohito Margo Heturdamodarah Sahah.\nMahidharo Mahabhago Vegavan Amitashanah.',
+      meaning: 'The Immovable, the red-hued, the Path, the Cause, Damodara (whose waist was bound), the Forbearing; Bearer of the earth, of great glory, the Swift, the one whose appetite has no limit.',
+    },
+    {
+      id: 43,
+      verseLabel: 'Shloka 41',
+      sanskrit: 'उद्भवः क्षोभणो देवः श्रीगर्भः परमेश्वरः।\nकरणं कारणं कर्ता विकर्ता गहनो गुहः॥',
+      transliteration: 'Udbhavah Kshobhano Devah Shrigarbhah Parameshvarah.\nKaranam Karanam Karta Vikarta Gahano Guhah.',
+      meaning: 'The Source of manifestation, the Agitator, the Shining One, in whose womb lies Shri, the Supreme Lord; the instrument, the cause, the doer, the modifier, the unfathomable, the Hidden.',
+    },
+    {
+      id: 44,
+      verseLabel: 'Shloka 42',
+      sanskrit: 'व्यवसायो व्यवस्थानः संस्थानः स्थानदो ध्रुवः।\nपरर्द्धिः परमस्पष्टस्तुष्टः पुष्टः शुभेक्षणः॥',
+      transliteration: 'Vyavasayo Vyavasthanah Samsthanah Sthanado Dhruvah.\nParardhih Paramaspashtas Tushtah Pushtah Shubhekshanah.',
+      meaning: 'Resolve itself, the Regulator, the final abode, the Giver of station, the Fixed; of supreme opulence, the most clearly manifest, the Content, the Nourished, of auspicious gaze.',
+    },
+    {
+      id: 45,
+      verseLabel: 'Shloka 43',
+      sanskrit: 'रामो विरामो विरजो मार्गो नेयो नयोऽनयः।\nवीरः शक्तिमतां श्रेष्ठो धर्मो धर्मविदुत्तमः॥',
+      transliteration: 'Ramo Viramo Virajo Margo Neyo Nayo\'nayah.\nVirah Shaktimatam Shreshtho Dharmo Dharmavid Uttamah.',
+      meaning: 'Rama (the delight of all), the cessation of all, the stainless, the Path, the Goal, the Leader, the one beyond guidance; the Hero, the best among the powerful, Dharma itself, the supreme knower of Dharma.',
+    },
   ],
 };
 
