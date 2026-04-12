@@ -29,21 +29,11 @@
         font-size: 3.5rem; line-height: 1; color: #FF9933;
         animation: splash-breathe 2.4s ease-in-out infinite;
       ">ॐ</div>
-      <div style="
-        margin-top: 1rem; font-family: 'Playfair Display', Georgia, serif;
-        font-size: 1.1rem; font-weight: 700; letter-spacing: 0.04em;
-        color: #90A4AE;
-        animation: splash-fade-in 1.2s ease forwards;
-        opacity: 0;
-      ">Sadhana Reader</div>
     </div>
     <style>
       @keyframes splash-breathe {
         0%, 100% { transform: scale(1); opacity: 0.85; }
         50% { transform: scale(1.08); opacity: 1; }
-      }
-      @keyframes splash-fade-in {
-        to { opacity: 1; }
       }
       #splash.hide {
         opacity: 0;
@@ -53,7 +43,7 @@
     <script>
       // Respect saved Deepam (dark) mode for splash
       try {
-        var s = JSON.parse(localStorage.getItem('sadhana-settings') || '{}');
+        var s = JSON.parse(localStorage.getItem('sadhana-reader-settings') || '{}');
         if (s.deepamMode) {
           var el = document.getElementById('splash');
           if (el) {

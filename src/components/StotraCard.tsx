@@ -25,7 +25,7 @@ function StotraIcon({ stotraId }: { stotraId: string }) {
       );
 
     case 'ganesha-pancharatnam':
-      // Ganesha — refined face with ornamental ears, crown, elegant trunk
+      // Ganesha — refined face with ornamental ears, crown, curved trunk
       return (
         <>
           {/* Wide dome head */}
@@ -38,10 +38,10 @@ function StotraIcon({ stotraId }: { stotraId: string }) {
           {/* Almond eyes */}
           <path d="M12 10 Q13.5 9 15 10" {...s} strokeWidth="1" />
           <path d="M17 10 Q18.5 9 20 10" {...s} strokeWidth="1" />
-          {/* Trunk — graceful S-curve */}
-          <path d="M16 16 Q14 20 12 24 Q11 26 10 27" {...s} strokeWidth="1.8" />
+          {/* Trunk — smooth S-curve with cubic bezier */}
+          <path d="M16 16 C16 19 13 22 11 25 C10 27 9 28 8 29" {...s} strokeWidth="1.8" />
           {/* Tusk */}
-          <path d="M19 15 Q20 18 22 20" {...s} strokeWidth="1.3" />
+          <path d="M19 15 C20 17 21 19 22 20" {...s} strokeWidth="1.3" />
         </>
       );
 
@@ -158,7 +158,7 @@ export default function StotraCard({ stotra, index, onClick }: StotraCardProps) 
           className="font-hind text-sm mb-2"
           style={{ color: 'var(--color-text-secondary)' }}
         >
-          {stotra.deity} &middot; ~{stotra.estimatedMinutes} min
+          {stotra.deity} &middot; {stotra.estimatedMinutes} min
         </p>
 
         {/* Spacer pushes badge to bottom */}

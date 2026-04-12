@@ -75,7 +75,7 @@ export default function SettingsDrawer({
               <input
                 type="range"
                 min={14}
-                max={22}
+                max={36}
                 step={1}
                 value={settings.fontSize}
                 onChange={(e) => onFontSizeChange(Number(e.target.value))}
