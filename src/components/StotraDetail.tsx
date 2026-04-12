@@ -3,7 +3,6 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { stotras } from '../data/stotras';
 import StotraIcon from './StotraIcon';
-import { haptic } from '../utils/haptics';
 import SettingsDrawer from './SettingsDrawer';
 import type { useSettings } from '../hooks/useSettings';
 
@@ -197,7 +196,7 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
             style={{ backgroundColor: 'var(--color-accent-primary)' }}
             whileHover={{ scale: 1.05, boxShadow: '0 8px 30px rgba(255,153,51,0.3)' }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => { haptic('medium'); navigate(`/read/${stotra.id}`); }}
+            onClick={() => navigate(`/read/${stotra.id}`)}
           >
             Begin Reading
           </motion.button>

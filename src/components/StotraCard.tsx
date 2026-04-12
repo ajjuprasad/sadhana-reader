@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import type { Stotra } from '../data/stotras';
 import StotraIcon from './StotraIcon';
-import { haptic } from '../utils/haptics';
 
 interface StotraCardProps {
   stotra: Stotra;
@@ -31,7 +30,7 @@ export default function StotraCard({ stotra, index, onClick }: StotraCardProps) 
         boxShadow: '0 6px 24px rgba(0,0,0,0.1)',
       }}
       whileTap={{ scale: 0.97 }}
-      onClick={() => { haptic(); onClick(); }}
+      onClick={onClick}
       aria-label={`Read ${stotra.title}`}
     >
       <div className="p-5 sm:p-6 flex flex-col h-full">
