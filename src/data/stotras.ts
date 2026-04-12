@@ -750,8 +750,8 @@ const vishnuSahasranamam: Stotra = {
   title: 'Vishnu Sahasranamam',
   subtitle: 'विष्णु सहस्रनाम स्तोत्रम्',
   deity: 'Vishnu',
-  description: 'The thousand names of Lord Vishnu from the Mahabharata — dhyana verses followed by the sahasranama shlokas.',
-  estimatedMinutes: 12,
+  description: 'The thousand sacred names of Lord Vishnu from the Mahabharata — dhyana verses followed by the complete sahasranama shlokas and concluding invocation.',
+  estimatedMinutes: 40,
   icon: 'M16 6 L16 26 M6 16 L26 16 M8.9 8.9 L23.1 23.1 M23.1 8.9 L8.9 23.1',
   verses: [
     {
@@ -1488,6 +1488,41 @@ const vishnuSahasranamam: Stotra = {
       sanskrit: 'प्रमाणं प्राणनिलयः प्राणभृत् प्राणजीवनः।\nतत्त्वं तत्त्वविदेकात्मा जन्ममृत्युजरातिगः॥',
       transliteration: 'Pramanam Prananilayah Pranabhrit Pranajivanah.\nTattvam Tattvavid Ekatma Janmamrityujaratigah.',
       meaning: 'The Authority, abode of the life-breaths, bearer of prana, giver of life to prana; Reality itself, the knower of Reality, the One Self, beyond birth, death, and old age.',
+    },
+    {
+      id: 106,
+      verseLabel: 'Shloka 104',
+      sanskrit: 'भूर्भुवःस्वस्तरुस्तारः सविता प्रपितामहः।\nयज्ञो यज्ञपतिर्यज्वा यज्ञाङ्गो यज्ञवाहनः॥',
+      transliteration: 'Bhurbhuvahsvastarus Tarah Savita Prapitamahah.\nYajno Yajnapatir Yajva Yajnango Yajnavahanah.',
+      meaning: 'The tree of the three worlds (bhuh, bhuvah, svah), the Deliverer, the Inspirer, the great-grandfather; Sacrifice, Lord of sacrifice, the Sacrificer, of sacrificial limbs, the bearer of sacrifice.',
+    },
+    {
+      id: 107,
+      verseLabel: 'Shloka 105',
+      sanskrit: 'यज्ञभृद् यज्ञकृद् यज्ञी यज्ञभुग् यज्ञसाधनः।\nयज्ञान्तकृद् यज्ञगुह्यमन्नमन्नाद एव च॥',
+      transliteration: 'Yajnabhrid Yajnakrid Yajni Yajnabhug Yajnasadhanah.\nYajnantakrid Yajnaguhyam Annam Annada Eva Cha.',
+      meaning: 'Bearer of sacrifice, doer of sacrifice, the Sacrificial One, enjoyer of sacrifice, the fulfiller of sacrifice; the finisher of sacrifice, the secret of sacrifice, Food itself, and the eater of food.',
+    },
+    {
+      id: 108,
+      verseLabel: 'Shloka 106',
+      sanskrit: 'आत्मयोनिः स्वयञ्जातो वैखानः सामगायनः।\nदेवकीनन्दनः स्रष्टा क्षितीशः पापनाशनः॥',
+      transliteration: 'Atmayonih Svayanjato Vaikhanah Samagayanah.\nDevakinandanah Srashta Kshitishah Papanashanah.',
+      meaning: 'Source of the Self, the self-born, who dug the earth as Varaha, the singer of Saman; delight of Devaki, the Creator, Lord of the earth, destroyer of sins.',
+    },
+    {
+      id: 109,
+      verseLabel: 'Shloka 107',
+      sanskrit: 'शङ्खभृन्नन्दकी चक्री शार्ङ्गधन्वा गदाधरः।\nरथाङ्गपाणिरक्षोभ्यः सर्वप्रहरणायुधः॥',
+      transliteration: 'Shankhabhrin Nandaki Chakri Sharngadhanva Gadadharah.\nRathangapanir Akshobhyah Sarvapraharanayudhah.',
+      meaning: 'Bearer of the Panchajanya conch, holder of the Nandaka sword, wielder of the Sudarshana discus, the Sharnga-bowman, the mace-bearer; whose hand holds the wheel, the Unperturbed, armed with all weapons of every kind.',
+    },
+    {
+      id: 110,
+      verseLabel: 'Concluding Verse',
+      sanskrit: 'वनमाली गदी शार्ङ्गी शङ्खी चक्री च नन्दकी।\nश्रीमान्नारायणो विष्णुर्वासुदेवोऽभिरक्षतु॥',
+      transliteration: 'Vanamali Gadi Sharngi Shankhi Chakri Cha Nandaki.\nShriman Narayano Vishnur Vasudevo\'bhirakshatu.',
+      meaning: 'Wearer of the forest garland, the mace-wielder, the Sharnga-bowman, the conch-bearer, the discus-holder, and wielder of Nandaka — may the glorious Narayana, Vishnu, Vasudeva, protect us all.',
     },
   ],
 };
