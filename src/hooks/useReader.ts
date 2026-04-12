@@ -1,4 +1,5 @@
 import { useState, useCallback, useEffect } from 'react';
+import { haptic } from '../utils/haptics';
 
 export function useReader(totalVerses: number) {
   const [currentVerse, setCurrentVerse] = useState(0);
@@ -13,11 +14,19 @@ export function useReader(totalVerses: number) {
   );
 
   const nextVerse = useCallback(() => {
-    setCurrentVerse((prev) => Math.min(prev + 1, totalVerses - 1));
+    setCurrentVerse((prev) => {
+      const next = Math.min(prev + 1, totalVerses - 1);
+      if (next !== prev) haptic();
+      return next;
+    });
   }, [totalVerses]);
 
   const prevVerse = useCallback(() => {
-    setCurrentVerse((prev) => Math.max(prev - 1, 0));
+    setCurrentVerse((prev) => {
+      const next = Math.max(prev - 1, 0);
+      if (next !== prev) haptic();
+      return next;
+    });
   }, []);
 
   useEffect(() => {

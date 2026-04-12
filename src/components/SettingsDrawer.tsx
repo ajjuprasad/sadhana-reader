@@ -123,7 +123,7 @@ export default function SettingsDrawer({
             {/* Deepam Mode */}
             <div className="flex items-center justify-between mb-6 py-3">
               <div className="flex items-center gap-3">
-                <div className="flex-shrink-0 flex items-center justify-center w-6">
+                <div className="flex-shrink-0 flex items-center justify-center w-6" style={{ paddingTop: 3 }}>
                   <DiyaFlame size={24} />
                 </div>
                 <div>

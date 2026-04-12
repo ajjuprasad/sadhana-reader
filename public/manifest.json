@@ -1,0 +1,16 @@
+{
+  "name": "Sādhanā Reader",
+  "short_name": "Sādhanā",
+  "description": "A digital sanctum for reading Hindu stotras",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#FFF8E1",
+  "theme_color": "#FF9933",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
