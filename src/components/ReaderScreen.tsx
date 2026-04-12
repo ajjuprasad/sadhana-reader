@@ -27,7 +27,7 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
   } = settingsState;
 
   const totalVerses = stotra?.verses.length ?? 0;
-  const { currentVerse, nextVerse, prevVerse } = useReader(totalVerses);
+  const { currentVerse, direction, nextVerse, prevVerse } = useReader(totalVerses);
 
   if (!stotra) {
     return (
@@ -127,12 +127,28 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
       {/* Main reading area */}
       <div className="flex-1 flex items-center justify-center py-6 sm:py-10 relative overflow-hidden">
         <div className="w-full max-w-2xl">
-          <AnimatePresence mode="wait">
+          <AnimatePresence mode="wait" custom={direction}>
             <motion.div
               key={verse.id + '-' + stotra.id}
-              initial={{ opacity: 0, x: 40, rotateY: -5, scale: 0.96 }}
-              animate={{ opacity: 1, x: 0, rotateY: 0, scale: 1 }}
-              exit={{ opacity: 0, x: -40, rotateY: 5, scale: 0.96 }}
+              custom={direction}
+              variants={{
+                enter: (d: number) => ({
+                  opacity: 0,
+                  x: d * 40,
+                  rotateY: d * -5,
+                  scale: 0.96,
+                }),
+                center: { opacity: 1, x: 0, rotateY: 0, scale: 1 },
+                exit: (d: number) => ({
+                  opacity: 0,
+                  x: d * -40,
+                  rotateY: d * 5,
+                  scale: 0.96,
+                }),
+              }}
+              initial="enter"
+              animate="center"
+              exit="exit"
               transition={{
                 duration: 0.2,
                 ease: [0.25, 0.1, 0.25, 1],

@@ -2,21 +2,27 @@ import { useState, useCallback, useEffect } from 'react';
 
 export function useReader(totalVerses: number) {
   const [currentVerse, setCurrentVerse] = useState(0);
+  const [direction, setDirection] = useState<1 | -1>(1);
 
   const goToVerse = useCallback(
     (index: number) => {
       if (index >= 0 && index < totalVerses) {
-        setCurrentVerse(index);
+        setCurrentVerse((prev) => {
+          setDirection(index >= prev ? 1 : -1);
+          return index;
+        });
       }
     },
     [totalVerses]
   );
 
   const nextVerse = useCallback(() => {
+    setDirection(1);
     setCurrentVerse((prev) => Math.min(prev + 1, totalVerses - 1));
   }, [totalVerses]);
 
   const prevVerse = useCallback(() => {
+    setDirection(-1);
     setCurrentVerse((prev) => Math.max(prev - 1, 0));
   }, []);
 
@@ -41,6 +47,7 @@ export function useReader(totalVerses: number) {
 
   return {
     currentVerse,
+    direction,
     goToVerse,
     nextVerse,
     prevVerse,
