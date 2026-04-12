@@ -54,10 +54,13 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
   const verse = stotra.verses[currentVerse];
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div
+      className="flex flex-col overflow-hidden"
+      style={{ height: '100dvh' }}
+    >
       {/* Top bar */}
       <motion.header
-        className="sticky top-0 z-30 flex items-center justify-between px-4 py-3"
+        className="flex-shrink-0 z-30 flex items-center justify-between px-4 py-3"
         style={{
           backgroundColor: 'var(--color-bg)',
           borderBottom: '1px solid rgba(0,0,0,0.06)',
@@ -125,11 +128,12 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
       </motion.header>
 
       {/* Main reading area */}
-      <div className="flex-1 flex items-center justify-center py-6 sm:py-10 relative overflow-hidden">
-        <div className="w-full max-w-2xl">
+      <div className="flex-1 min-h-0 flex items-stretch justify-center px-3 py-4 sm:py-6 relative overflow-hidden">
+        <div className="w-full max-w-2xl flex min-h-0">
           <AnimatePresence mode="wait">
             <motion.div
               key={verse.id + '-' + stotra.id}
+              className="flex-1 min-h-0 flex"
               initial={{ opacity: 0, x: 40, rotateY: -5, scale: 0.96 }}
               animate={{ opacity: 1, x: 0, rotateY: 0, scale: 1 }}
               exit={{ opacity: 0, x: -40, rotateY: 5, scale: 0.96 }}
@@ -152,7 +156,7 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
 
       {/* Mala bead progress */}
       <div
-        className="sticky bottom-0 z-20"
+        className="flex-shrink-0 z-20"
         style={{
           backgroundColor: 'var(--color-bg)',
           borderTop: '1px solid rgba(0,0,0,0.04)',
