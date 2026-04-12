@@ -5,6 +5,7 @@ import { stotras } from '../data/stotras';
 import VerseCard from './VerseCard';
 import MalaBead from './MalaBead';
 import SettingsDrawer from './SettingsDrawer';
+import PetalShower from './PetalShower';
 import { useReader } from '../hooks/useReader';
 import type { useSettings } from '../hooks/useSettings';
 
@@ -172,7 +173,9 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
 
       {/* Main reading area */}
       {completed ? (
-        <div className="flex-1 flex items-center justify-center px-4 py-10 sm:py-16">
+        <div className="flex-1 flex items-center justify-center px-4 py-10 sm:py-16 relative">
+          {/* Pushpāñjali — a shower of flower petals in offering */}
+          <PetalShower />
           <motion.div
             className="max-w-md w-full text-center"
             initial={{ opacity: 0, y: 20 }}
