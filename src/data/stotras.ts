@@ -894,6 +894,41 @@ const vishnuSahasranamam: Stotra = {
       transliteration: 'Vedyo Vaidyah Sadayogi Viraha Madhavo Madhuh.\nAtindriyo Mahamayo Mahotsaho Mahabalah.',
       meaning: 'The One to be known, the supreme Physician, the eternal Yogi, slayer of heroic foes, Madhava, Sweetness itself; beyond the senses, the great Illusionist, of great zeal, of great strength.',
     },
+    {
+      id: 21,
+      verseLabel: 'Shloka 19',
+      sanskrit: 'महाबुद्धिर्महावीर्यो महाशक्तिर्महाद्युतिः।\nअनिर्देश्यवपुः श्रीमानमेयात्मा महाद्रिधृक्॥',
+      transliteration: 'Mahabuddhir Mahaviryo Mahashaktir Mahadyutih.\nAnirdeshyavapuh Shriman Ameyatma Mahadridhrik.',
+      meaning: 'Of great intellect, great valor, great power, great splendor; of indefinable form, the glorious one, the immeasurable Self, the upholder of the great mountain.',
+    },
+    {
+      id: 22,
+      verseLabel: 'Shloka 20',
+      sanskrit: 'महेष्वासो महीभर्ता श्रीनिवासः सतां गतिः।\nअनिरुद्धः सुरानन्दो गोविन्दो गोविदां पतिः॥',
+      transliteration: 'Maheshvaso Mahibharta Shrinivasah Satam Gatih.\nAniruddhah Surananda Govindo Govidam Patih.',
+      meaning: 'Wielder of the great bow, bearer of the earth, abode of Shri, refuge of the virtuous; the Unobstructed, bliss of the gods, Govinda, Lord of the knowers of speech.',
+    },
+    {
+      id: 23,
+      verseLabel: 'Shloka 21',
+      sanskrit: 'मरीचिर्दमनो हंसः सुपर्णो भुजगोत्तमः।\nहिरण्यनाभः सुतपाः पद्मनाभः प्रजापतिः॥',
+      transliteration: 'Marichir Damano Hamsah Suparno Bhujagottamah.\nHiranyanabhah Sutapah Padmanabhah Prajapatih.',
+      meaning: 'The ray of light, the Chastiser, the Swan, the fair-winged Garuda, the supreme of serpents; of golden navel, of pure austerity, lotus-naveled, Lord of creatures.',
+    },
+    {
+      id: 24,
+      verseLabel: 'Shloka 22',
+      sanskrit: 'अमृत्युः सर्वदृक् सिंहः सन्धाता सन्धिमान् स्थिरः।\nअजो दुर्मर्षणः शास्ता विश्रुतात्मा सुरारिहा॥',
+      transliteration: 'Amrityuh Sarvadrik Simhah Sandhata Sandhiman Sthirah.\nAjo Durmarshanah Shasta Vishrutatma Surariha.',
+      meaning: 'The Deathless, the All-Seer, the Lion, the Unifier, the possessor of union, the Steadfast; the Unborn, the Invincible, the Teacher, the renowned Self, slayer of the enemies of the gods.',
+    },
+    {
+      id: 25,
+      verseLabel: 'Shloka 23',
+      sanskrit: 'गुरुर्गुरुतमो धाम सत्यः सत्यपराक्रमः।\nनिमिषोऽनिमिषः स्रग्वी वाचस्पतिरुदारधीः॥',
+      transliteration: 'Gurur Gurutamo Dhama Satyah Satyaparakramah.\nNimisho\'nimishah Sragvi Vachaspatir Udaradhih.',
+      meaning: 'The Teacher, the Supreme Teacher, the Abode, Truth itself, of true valor; the winking one in yoga-nidra, the ever-unwinking, the garland-bearer, Lord of speech, of magnanimous intellect.',
+    },
   ],
 };
 
