@@ -50,19 +50,43 @@ export default function SettingsDrawer({
             aria-label="Settings"
           >
             {/* Handle */}
-            <div className="flex justify-center mb-6">
+            <div className="flex justify-center mb-4">
               <div
                 className="w-10 h-1 rounded-full"
                 style={{ backgroundColor: 'var(--color-text-muted)', opacity: 0.4 }}
               />
             </div>
 
-            <h2
-              className="font-display font-bold text-xl mb-6 text-center"
-              style={{ color: 'var(--color-text-primary)' }}
-            >
-              Settings
-            </h2>
+            {/* Header with close button */}
+            <div className="flex items-center justify-between mb-6">
+              <div style={{ width: 28 }} />
+              <h2
+                className="font-display font-bold text-xl"
+                style={{ color: 'var(--color-text-primary)' }}
+              >
+                Settings
+              </h2>
+              <button
+                onClick={onClose}
+                className="p-1 hover:opacity-70 transition-opacity"
+                style={{ color: 'var(--color-text-muted)' }}
+                aria-label="Close settings"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </button>
+            </div>
 
             {/* Font Size */}
             <div className="mb-8">
@@ -99,7 +123,9 @@ export default function SettingsDrawer({
             {/* Deepam Mode */}
             <div className="flex items-center justify-between mb-6 py-3">
               <div className="flex items-center gap-3">
-                <DiyaFlame size={24} />
+                <div className="flex-shrink-0 flex items-center justify-center w-6">
+                  <DiyaFlame size={24} />
+                </div>
                 <div>
                   <p
                     className="font-hind font-semibold text-sm"

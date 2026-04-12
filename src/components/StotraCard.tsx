@@ -50,12 +50,20 @@ export default function StotraCard({ stotra, index, onClick }: StotraCardProps) 
           </svg>
         </div>
 
-        {/* Title */}
+        {/* Title — split onto two lines */}
         <h3
-          className="font-display font-bold text-lg mb-1 group-hover:text-saffron transition-colors duration-200"
+          className="font-display font-bold text-lg mb-1 group-hover:text-saffron transition-colors duration-200 leading-snug"
           style={{ color: 'var(--color-text-primary)' }}
         >
-          {stotra.title}
+          {stotra.title.split(' ').length >= 2 ? (
+            <>
+              {stotra.title.split(' ')[0]}
+              <br />
+              {stotra.title.split(' ').slice(1).join(' ')}
+            </>
+          ) : (
+            stotra.title
+          )}
         </h3>
 
         {/* Deity & duration */}
