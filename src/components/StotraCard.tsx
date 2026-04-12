@@ -35,16 +35,25 @@ export default function StotraCard({ stotra, index, onClick }: StotraCardProps) 
       <div className="p-5 sm:p-6">
         {/* Icon */}
         <div
-          className="w-12 h-12 mb-3 flex items-center justify-center rounded-full select-none"
+          className="w-12 h-12 mb-3 flex items-center justify-center rounded-full"
           style={{ backgroundColor: 'rgba(255,153,51,0.1)' }}
         >
-          <span
-            className="text-2xl leading-none"
+          <svg
+            width="26"
+            height="26"
+            viewBox="0 0 32 32"
+            fill="none"
             style={{ color: 'var(--color-accent-gold)' }}
-            aria-hidden="true"
           >
-            {stotra.icon}
-          </span>
+            <path
+              d={stotra.icon}
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              fill="none"
+            />
+          </svg>
         </div>
 
         {/* Title */}

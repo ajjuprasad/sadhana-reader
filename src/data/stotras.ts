@@ -24,7 +24,7 @@ const hanumanChalisa: Stotra = {
   deity: 'Hanuman',
   description: 'The forty verses in praise of Lord Hanuman, composed by Tulsidas.',
   estimatedMinutes: 15,
-  icon: '🏔️',
+  icon: 'M16 4 L16 14 M13 8 L19 8 M12 28 L16 18 L20 28 Z M8 28 L24 28',
   verses: [
     {
       id: 1,
@@ -64,7 +64,7 @@ const ganeshaPancharatnam: Stotra = {
   deity: 'Ganesha',
   description: 'Five gems in praise of Lord Ganesha, composed by Adi Shankaracharya.',
   estimatedMinutes: 5,
-  icon: '🙏',
+  icon: 'M16 4 Q12 4 10 8 Q8 12 10 16 L14 16 L14 28 L18 28 L18 16 L22 16 Q24 12 22 8 Q20 4 16 4 M10 16 Q8 20 6 24 M22 16 Q24 20 26 24',
   verses: [
     {
       id: 1,
@@ -111,7 +111,7 @@ const shivaPanchakshara: Stotra = {
   deity: 'Shiva',
   description: 'Five verses on the five syllables Na-Ma-Shi-Va-Ya, by Adi Shankaracharya.',
   estimatedMinutes: 4,
-  icon: '🔱',
+  icon: 'M16 4 L16 28 M8 4 Q8 12 16 16 M24 4 Q24 12 16 16 M12 28 L20 28',
   verses: [
     {
       id: 1,
@@ -158,7 +158,7 @@ const mahalakshmiAshtakam: Stotra = {
   deity: 'Lakshmi',
   description: 'Eight verses in praise of Goddess Mahalakshmi.',
   estimatedMinutes: 6,
-  icon: '🪷',
+  icon: 'M16 8 Q12 8 10 12 Q8 16 12 20 Q14 22 16 22 Q18 22 20 20 Q24 16 22 12 Q20 8 16 8 M16 22 L16 28 M10 12 Q6 10 4 12 M22 12 Q26 10 28 12',
   verses: [
     {
       id: 1,
@@ -233,7 +233,7 @@ const lingashtakam: Stotra = {
   deity: 'Shiva',
   description: 'Eight verses glorifying the Shiva Lingam.',
   estimatedMinutes: 5,
-  icon: '🕉️',
+  icon: 'M16 6 C11 6 8 10 8 16 C8 22 11 26 16 26 C21 26 24 22 24 16 C24 10 21 6 16 6 M8 26 L24 26 M6 28 L26 28',
   verses: [
     {
       id: 1,
@@ -301,7 +301,7 @@ const madhurashtakam: Stotra = {
   deity: 'Krishna',
   description: 'Eight sweet verses by Vallabhacharya — everything about Krishna is Madhuram (sweet).',
   estimatedMinutes: 5,
-  icon: '🎶',
+  icon: 'M6 16 L26 16 M10 12 L10 20 M16 10 L16 22 M22 12 L22 20 M6 16 Q4 10 8 6 M26 16 Q28 22 24 26',
   verses: [
     {
       id: 1,
