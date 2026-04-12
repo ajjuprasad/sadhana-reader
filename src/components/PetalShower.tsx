@@ -40,7 +40,7 @@ function generatePetals(count: number): PetalConfig[] {
       rotateStart: Math.random() * 360,
       rotateEnd: Math.random() * 360 + 360,
       duration,
-      delay: Math.random() * 2.5,
+      delay: Math.random() * 1.2,
       size: 16 + Math.random() * 14,
       color: PETAL_COLORS[i % PETAL_COLORS.length],
       opacity: 0.55 + Math.random() * 0.35,
@@ -91,7 +91,7 @@ export default function PetalShower({ count = 18 }: PetalShowerProps) {
             opacity: {
               duration: p.duration,
               delay: p.delay,
-              times: [0, 0.15, 0.75, 1],
+              times: [0, 0.06, 0.75, 1],
               ease: 'easeOut',
             },
           }}
