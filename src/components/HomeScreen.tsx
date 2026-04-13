@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { stotras } from '../data/stotras';
+import { stotras, comingSoonStotras } from '../data/stotras';
 import StotraCard from './StotraCard';
+import ComingSoonCard from './ComingSoonCard';
 import SettingsDrawer from './SettingsDrawer';
 import type { useSettings } from '../hooks/useSettings';
 
@@ -123,6 +124,47 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
           />
         ))}
       </div>
+
+      {/* Coming soon */}
+      {comingSoonStotras.length > 0 && (
+        <section className="max-w-3xl mx-auto mt-12 sm:mt-16">
+          <motion.div
+            className="flex items-center gap-3 mb-5 sm:mb-6"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-50px' }}
+            transition={{ duration: 0.5, ease: sacredEase as unknown as number[] }}
+          >
+            <div
+              className="flex-1 h-px"
+              style={{ backgroundColor: 'rgba(0,0,0,0.08)' }}
+            />
+            <h2
+              className="font-hind font-semibold text-xs uppercase"
+              style={{
+                color: 'var(--color-accent-primary)',
+                letterSpacing: '0.18em',
+              }}
+            >
+              Coming soon
+            </h2>
+            <div
+              className="flex-1 h-px"
+              style={{ backgroundColor: 'rgba(0,0,0,0.08)' }}
+            />
+          </motion.div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5">
+            {comingSoonStotras.map((stotra, index) => (
+              <ComingSoonCard
+                key={stotra.id}
+                stotra={stotra}
+                index={index}
+              />
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Footer */}
       <motion.footer
