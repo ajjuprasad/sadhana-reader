@@ -99,6 +99,25 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
         </>
       );
 
+    case 'venkateswara-suprabhatam':
+      // Rising sun — the auspicious dawn that opens the suprabhatam
+      return (
+        <>
+          {/* Sun disc */}
+          <circle cx="16" cy="17" r="5" {...s} strokeWidth="1.6" />
+          {/* Eight rays radiating outward */}
+          <line x1="16" y1="5" x2="16" y2="8.5" {...s} strokeWidth="1.4" />
+          <line x1="4" y1="17" x2="7.5" y2="17" {...s} strokeWidth="1.4" />
+          <line x1="24.5" y1="17" x2="28" y2="17" {...s} strokeWidth="1.4" />
+          <line x1="7.5" y1="8.5" x2="10" y2="11" {...s} strokeWidth="1.2" />
+          <line x1="22" y1="11" x2="24.5" y2="8.5" {...s} strokeWidth="1.2" />
+          <line x1="7.5" y1="25.5" x2="10" y2="23" {...s} strokeWidth="1.2" />
+          <line x1="22" y1="23" x2="24.5" y2="25.5" {...s} strokeWidth="1.2" />
+          {/* Horizon line */}
+          <line x1="3" y1="28" x2="29" y2="28" {...s} strokeWidth="1.6" />
+        </>
+      );
+
     case 'shiva-ashtottara':
       // Damaru (Shiva's drum)
       return (

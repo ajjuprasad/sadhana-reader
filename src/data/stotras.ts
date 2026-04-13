@@ -1568,6 +1568,74 @@ const vishnuSahasranamam: Stotra = {
   ],
 };
 
+const venkateswaraSuprabhatam: Stotra = {
+  id: 'venkateswara-suprabhatam',
+  title: 'Venkateswara Suprabhatam',
+  subtitle: 'श्री वेङ्कटेश सुप्रभातम्',
+  deity: 'Venkateswara',
+  description:
+    'The morning awakening hymn to Lord Venkateswara of Tirumala, composed by Sri Prativadi Bhayankaram Annangaracharya. Sung at dawn to gently rouse the Lord and consecrate the day.',
+  benefits: [
+    'Begins the day with the grace of Lord Venkateswara',
+    'Bestows prosperity, peace, and divine protection',
+    'Awakens devotion and sanctifies the home at dawn',
+  ],
+  estimatedMinutes: 4,
+  icon: '',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Shloka 1',
+      sanskrit:
+        'कौसल्या सुप्रजा राम पूर्वा सन्ध्या प्रवर्तते।\nउत्तिष्ठ नरशार्दूल कर्तव्यं दैवमाह्निकम्॥',
+      transliteration:
+        'Kausalyā suprajā Rāma pūrvā sandhyā pravartate.\nUttiṣṭha naraśārdūla kartavyaṁ daivam āhnikam.',
+      meaning:
+        'O Rama, illustrious son of Kausalya! The eastern dawn is breaking. Arise, O lion among men, and perform the daily divine duties (sandhyā).',
+    },
+    {
+      id: 2,
+      verseLabel: 'Shloka 2',
+      sanskrit:
+        'उत्तिष्ठोत्तिष्ठ गोविन्द उत्तिष्ठ गरुडध्वज।\nउत्तिष्ठ कमलाकान्त त्रैलोक्यं मङ्गलं कुरु॥',
+      transliteration:
+        'Uttiṣṭhottiṣṭha Govinda uttiṣṭha garuḍadhvaja.\nUttiṣṭha kamalākānta trailokyaṁ maṅgalaṁ kuru.',
+      meaning:
+        'Arise, arise, O Govinda! Arise, O Lord whose banner bears Garuda. Arise, O beloved of Lakshmi (the lotus-dweller), and bestow auspiciousness upon the three worlds.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Shloka 3',
+      sanskrit:
+        'मातस्समस्तजगतां मधुकैटभारेः वक्षोविहारिणि मनोहरदिव्यमूर्ते।\nश्रीस्वामिनि श्रितजनप्रियदानशीले श्रीवेङ्कटेशदयिते तव सुप्रभातम्॥',
+      transliteration:
+        'Mātassamasta-jagatāṁ Madhukaiṭabhāreḥ vakṣo-vihāriṇi manohara-divya-mūrte.\nŚrī-svāmini śritajana-priya-dāna-śīle Śrī-Veṅkaṭeśa-dayite tava suprabhātam.',
+      meaning:
+        'O Mother of all the worlds, who dwells upon the breast of the slayer of Madhu and Kaitabha (Vishnu), of enchanting and divine form! O Sri Lakshmi, beloved consort of Sri Venkateswara, ever generous to those who take refuge in You — may this dawn be auspicious for You.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Shloka 4',
+      sanskrit:
+        'तव सुप्रभातमरविन्दलोचने भवतु प्रसन्नमुखचन्द्रमण्डले।\nविधिशङ्करेन्द्रवनिताभिरर्चिते वृषशैलनाथदयिते दयानिधे॥',
+      transliteration:
+        'Tava suprabhātam aravinda-locane bhavatu prasanna-mukha-candra-maṇḍale.\nVidhi-śaṅkarendra-vanitābhir arcite vṛṣa-śaila-nātha-dayite dayānidhe.',
+      meaning:
+        'O lotus-eyed One, with face serene as the moon! Worshipped by the consorts of Brahma, Shankara and Indra. Beloved of the Lord of Vrishabhachala (Tirumala), and ocean of compassion — may this dawn be auspicious for You.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Shloka 5',
+      sanskrit:
+        'अत्र्यादि सप्तऋषयस्समुपास्य सन्ध्यां आकाशसिन्धुकमलानि मनोहराणि।\nआदाय पादयुगमर्चयितुं प्रपन्नाः शेषाद्रिशेखरविभो तव सुप्रभातम्॥',
+      transliteration:
+        'Atryādi-saptarṣayas-samupāsya sandhyāṁ ākāśa-sindhu-kamalāni manoharāṇi.\nĀdāya pāda-yugam arcayituṁ prapannāḥ śeṣādri-śekhara-vibho tava suprabhātam.',
+      meaning:
+        'The seven sages led by Atri, having performed their dawn worship, have gathered enchanting lotuses from the celestial Ganga and now stand surrendered, ready to worship Your sacred feet — O resplendent Lord whose abode crowns Sheshachala, may this dawn be auspicious for You.',
+    },
+  ],
+};
+
 export const stotras: Stotra[] = [
   hanumanChalisa,
   ganeshaPancharatnam,
@@ -1576,6 +1644,7 @@ export const stotras: Stotra[] = [
   mahalakshmiAshtakam,
   lingashtakam,
   madhurashtakam,
+  venkateswaraSuprabhatam,
   vishnuSahasranamam,
 ];
 
@@ -1605,11 +1674,6 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'ram-raksha-stotra',
     title: 'Ram Raksha Stotra',
     deity: 'Rama',
-  },
-  {
-    id: 'venkateswara-suprabhatam',
-    title: 'Venkateswara Suprabhatam',
-    deity: 'Venkateswara',
   },
   {
     id: 'kanakadhara-stotram',
