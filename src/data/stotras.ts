@@ -1683,6 +1683,56 @@ const venkateswaraSuprabhatam: Stotra = {
       meaning:
         'From within the lotuses of the nearby pond, swarms of bees — their humming songs infused with the taste of nectar — emerge forth to render their service. O resplendent Lord who crowns Sheshachala, may this dawn be auspicious for You.',
     },
+    {
+      id: 11,
+      verseLabel: 'Shloka 11',
+      sanskrit:
+        'योषागणेन वरदध्नि विमथ्यमाने घोषालयेषु दधिमन्थनतीव्रघोषाः।\nरोषात्कलिं विदधते ककुभश्च कुम्भाः शेषाद्रिशेखरविभो तव सुप्रभातम्॥',
+      transliteration:
+        'Yoṣā-gaṇena vara-dadhni vimathyamāne ghoṣālayeṣu dadhi-manthana-tīvra-ghoṣāḥ.\nRoṣāt kaliṁ vidadhate kakubhaś ca kumbhāḥ śeṣādri-śekhara-vibho tava suprabhātam.',
+      meaning:
+        'In the cowherd settlements, as bands of women churn the finest curd, the loud sounds of churning rise up — the very pots and the eight directions seem to quarrel in mock anger. O resplendent Lord who crowns Sheshachala, may this dawn be auspicious for You.',
+    },
+    {
+      id: 12,
+      verseLabel: 'Shloka 12',
+      sanskrit:
+        'पद्मेशमित्रशतपत्रगतालिवर्गाः हर्तुं श्रियं कुवलयस्य निजाङ्गलक्ष्म्या।\nभेरीनिनादमिव बिभ्रति तीव्रनादं शेषाद्रिशेखरविभो तव सुप्रभातम्॥',
+      transliteration:
+        'Padmeśa-mitra-śatapatra-gatāli-vargāḥ hartuṁ śriyaṁ kuvalayasya nijāṅga-lakṣmyā.\nBherī-ninādam iva bibhrati tīvra-nādaṁ śeṣādri-śekhara-vibho tava suprabhātam.',
+      meaning:
+        'Swarms of bees settled within the hundred-petalled lotuses — friends of the sun, lord of the lotus — vie to outshine the beauty of the blue water-lily by the luster of their own bodies; their humming swells loud like the beat of war-drums. O resplendent Lord who crowns Sheshachala, may this dawn be auspicious for You.',
+    },
+    {
+      id: 13,
+      verseLabel: 'Shloka 13',
+      sanskrit:
+        'श्रीमन्नभीष्टवरदाखिललोकबन्धो श्रीश्रीनिवास जगदेकदयैकसिन्धो।\nश्रीदेवतागृहभुजान्तर दिव्यमूर्ते श्रीवेङ्कटाचलपते तव सुप्रभातम्॥',
+      transliteration:
+        'Śrīmann-abhīṣṭa-varadākhila-loka-bandho Śrī-Śrīnivāsa jagad-eka-dayaika-sindho.\nŚrī-devatā-gṛha-bhujāntara divya-mūrte Śrī-Veṅkaṭācalapate tava suprabhātam.',
+      meaning:
+        'O glorious granter of every desired boon, kinsman of all the worlds! O Sri Srinivasa, sole ocean of compassion for the universe! Whose divine form abides between the arms of the Goddess Sri — O Lord of Venkata Hill, may this dawn be auspicious for You.',
+    },
+    {
+      id: 14,
+      verseLabel: 'Shloka 14',
+      sanskrit:
+        'श्रीस्वामिपुष्करिणिकाऽऽप्लवनिर्मलाङ्गाः श्रेयोऽर्थिनो हरविरिञ्चिसनन्दनाद्याः।\nद्वारे वसन्ति वरवेत्रहतोत्तमाङ्गाः श्रीवेङ्कटाचलपते तव सुप्रभातम्॥',
+      transliteration:
+        "Śrī-svāmi-puṣkariṇikā''plava-nirmalāṅgāḥ śreyo'rthino hara-viriñci-sanandanādyāḥ.\nDvāre vasanti vara-vetra-hatottamāṅgāḥ Śrī-Veṅkaṭācalapate tava suprabhātam.",
+      meaning:
+        "With limbs purified by their dip in the holy Sri Swami Pushkarini, seekers of the highest welfare — Hara (Shiva), Virinchi (Brahma), Sanandana and other great ones — wait at Your gate, their heads gently tapped by the doorkeeper's fine cane. O Lord of Venkata Hill, may this dawn be auspicious for You.",
+    },
+    {
+      id: 15,
+      verseLabel: 'Shloka 15',
+      sanskrit:
+        'श्रीशेषशैलगरुडाचलवेङ्कटाद्रिनारायणाद्रिवृषभाद्रिवृषाद्रिमुख्याम्।\nआख्यां त्वदीयवसतेरनिशं वदन्ति श्रीवेङ्कटाचलपते तव सुप्रभातम्॥',
+      transliteration:
+        'Śrī-Śeṣa-śaila-Garuḍācala-Veṅkaṭādri-Nārāyaṇādri-Vṛṣabhādri-Vṛṣādri-mukhyām.\nĀkhyāṁ tvadīya-vasater aniśaṁ vadanti Śrī-Veṅkaṭācalapate tava suprabhātam.',
+      meaning:
+        'Sri Sheshashaila, Garudachala, Venkatadri, Narayanadri, Vrishabhadri, Vrishadri — by these and the like the seven sacred names of Your abode are unceasingly proclaimed. O Lord of Venkata Hill, may this dawn be auspicious for You.',
+    },
   ],
 };
 
