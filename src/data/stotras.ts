@@ -1633,6 +1633,56 @@ const venkateswaraSuprabhatam: Stotra = {
       meaning:
         'The seven sages led by Atri, having performed their dawn worship, have gathered enchanting lotuses from the celestial Ganga and now stand surrendered, ready to worship Your sacred feet — O resplendent Lord whose abode crowns Sheshachala, may this dawn be auspicious for You.',
     },
+    {
+      id: 6,
+      verseLabel: 'Shloka 6',
+      sanskrit:
+        'पञ्चाननाब्जभवषण्मुखवासवाद्याः त्रैविक्रमादिचरितं विबुधाः स्तुवन्ति।\nभाषापतिः पठति वासरशुद्धिमारात् शेषाद्रिशेखरविभो तव सुप्रभातम्॥',
+      transliteration:
+        'Pañcānana-abja-bhava-ṣaṇmukha-vāsavādyāḥ traivikramādi-caritaṁ vibudhāḥ stuvanti.\nBhāṣāpatiḥ paṭhati vāsara-śuddhim ārāt śeṣādri-śekhara-vibho tava suprabhātam.',
+      meaning:
+        'The devas — five-faced Shiva, lotus-born Brahma, six-faced Skanda, Indra and others — extol Your exploits beginning with Trivikrama. Nearby, Brihaspati (Lord of Speech) reads out the auspiciousness of the day — O resplendent Lord who crowns Sheshachala, may this dawn be auspicious for You.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Shloka 7',
+      sanskrit:
+        'ईषत्प्रफुल्लसरसीरुहनारिकेलपूगद्रुमादि सुमनोहरपालिकानाम्।\nआवाति मन्दमनिलस्सह दिव्यगन्धैः शेषाद्रिशेखरविभो तव सुप्रभातम्॥',
+      transliteration:
+        'Īṣat-praphulla-sarasīruha-nārikela-pūga-drumādi sumanohara-pālikānām.\nĀvāti mandam anilaḥ saha divya-gandhaiḥ śeṣādri-śekhara-vibho tava suprabhātam.',
+      meaning:
+        'A gentle breeze carrying divine fragrances from the groves of half-bloomed lotuses, coconut palms, areca trees, and other enchanting rows of flowering plants softly wafts towards You — O resplendent Lord who crowns Sheshachala, may this dawn be auspicious for You.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Shloka 8',
+      sanskrit:
+        'उन्मील्य नेत्रयुगमुत्तमपञ्जरस्थाः पात्रावशिष्टकदलीफलपायसानि।\nभुक्त्वा सलीलमथ केलिशुकाः पठन्ति शेषाद्रिशेखरविभो तव सुप्रभातम्॥',
+      transliteration:
+        'Unmīlya netra-yugam uttama-pañjara-sthāḥ pātrāvaśiṣṭa-kadalī-phala-pāyasāni.\nBhuktvā salīlam atha keli-śukāḥ paṭhanti śeṣādri-śekhara-vibho tava suprabhātam.',
+      meaning:
+        'The playful parrots perched in fine cages open their pair of eyes; having eaten the bananas and payasam left in their bowls, they now playfully begin to recite — O resplendent Lord who crowns Sheshachala, may this dawn be auspicious for You.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Shloka 9',
+      sanskrit:
+        'तन्त्रीप्रहर्षमधुरस्वनया विपञ्च्या गायत्यनन्तचरितं तव नारदोऽपि।\nभाषासमग्रमसकृत्करचाररम्यं शेषाद्रिशेखरविभो तव सुप्रभातम्॥',
+      transliteration:
+        "Tantrī-praharṣa-madhura-svanayā vipañcyā gāyaty ananta-caritaṁ tava nārado'pi.\nBhāṣā-samagram asakṛt-kara-cāra-ramyaṁ śeṣādri-śekhara-vibho tava suprabhātam.",
+      meaning:
+        'Even Narada sings of Your infinite exploits upon his vipanchi vina, its strings yielding the richest, most joyful sweetness of tone — eloquent in every language, graceful with the constant play of his fingers. O resplendent Lord who crowns Sheshachala, may this dawn be auspicious for You.',
+    },
+    {
+      id: 10,
+      verseLabel: 'Shloka 10',
+      sanskrit:
+        'भृङ्गावली च मकरन्दरसानुविद्धझङ्कारगीतनिनदैः सह सेवनाय।\nनिर्यात्युपान्तसरसीकमलोदरेभ्यः शेषाद्रिशेखरविभो तव सुप्रभातम्॥',
+      transliteration:
+        'Bhṛṅgāvalī ca makaranda-rasānuviddha-jhaṅkāra-gīta-ninadaiḥ saha sevanāya.\nNiryāty upānta-sarasī-kamalodarebhyaḥ śeṣādri-śekhara-vibho tava suprabhātam.',
+      meaning:
+        'From within the lotuses of the nearby pond, swarms of bees — their humming songs infused with the taste of nectar — emerge forth to render their service. O resplendent Lord who crowns Sheshachala, may this dawn be auspicious for You.',
+    },
   ],
 };
 
