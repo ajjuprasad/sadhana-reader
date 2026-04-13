@@ -1578,3 +1578,62 @@ export const stotras: Stotra[] = [
   madhurashtakam,
   vishnuSahasranamam,
 ];
+
+export interface ComingSoonStotra {
+  id: string;
+  title: string;
+  deity: string;
+}
+
+export const comingSoonStotras: ComingSoonStotra[] = [
+  {
+    id: 'lalitha-sahasranamam',
+    title: 'Lalitha Sahasranamam',
+    deity: 'Lalita Tripurasundari',
+  },
+  {
+    id: 'aditya-hridaya-stotram',
+    title: 'Aditya Hridaya Stotram',
+    deity: 'Surya',
+  },
+  {
+    id: 'mahishasura-mardini-stotram',
+    title: 'Mahishasura Mardini Stotram',
+    deity: 'Durga',
+  },
+  {
+    id: 'ram-raksha-stotra',
+    title: 'Ram Raksha Stotra',
+    deity: 'Rama',
+  },
+  {
+    id: 'venkateswara-suprabhatam',
+    title: 'Venkateswara Suprabhatam',
+    deity: 'Venkateswara',
+  },
+  {
+    id: 'kanakadhara-stotram',
+    title: 'Kanakadhara Stotram',
+    deity: 'Lakshmi',
+  },
+  {
+    id: 'saraswati-stotram',
+    title: 'Saraswati Stotram',
+    deity: 'Saraswati',
+  },
+  {
+    id: 'subrahmanya-bhujangam',
+    title: 'Subrahmanya Bhujangam',
+    deity: 'Subrahmanya',
+  },
+  {
+    id: 'bhaja-govindam',
+    title: 'Bhaja Govindam',
+    deity: 'Govinda',
+  },
+  {
+    id: 'ashtalakshmi-stotram',
+    title: 'Ashtalakshmi Stotram',
+    deity: 'Ashtalakshmi',
+  },
+];
