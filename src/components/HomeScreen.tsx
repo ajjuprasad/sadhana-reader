@@ -125,6 +125,77 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
         ))}
       </div>
 
+      {/* Recently added */}
+      <section className="max-w-3xl mx-auto mt-12 sm:mt-16">
+        <motion.div
+          className="flex items-center gap-3 mb-5 sm:mb-6"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-50px' }}
+          transition={{ duration: 0.5, ease: sacredEase as unknown as number[] }}
+        >
+          <div
+            className="flex-1 h-px"
+            style={{ backgroundColor: 'rgba(0,0,0,0.08)' }}
+          />
+          <h2
+            className="font-hind font-semibold text-xs uppercase"
+            style={{
+              color: 'var(--color-accent-primary)',
+              letterSpacing: '0.18em',
+            }}
+          >
+            Recently Added
+          </h2>
+          <div
+            className="flex-1 h-px"
+            style={{ backgroundColor: 'rgba(0,0,0,0.08)' }}
+          />
+        </motion.div>
+
+        <div className="space-y-3">
+          {[
+            { title: 'Aditya Hridaya Stotram', date: 'Apr 17, 2026', description: '31 verses — the hymn to the Sun from Valmiki Ramayana' },
+            { title: 'Venkateswara Suprabhatam', date: 'Apr 13, 2026', description: '29 verses — the complete morning awakening hymn to Lord Venkateswara' },
+          ].map((item) => (
+            <motion.div
+              key={item.title}
+              className="flex items-start gap-3 rounded-xl px-4 py-3"
+              style={{ backgroundColor: 'var(--color-bg-card)' }}
+              initial={{ opacity: 0, y: 8 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-30px' }}
+              transition={{ duration: 0.4, ease: sacredEase as unknown as number[] }}
+            >
+              <span
+                className="mt-0.5 flex-shrink-0 rounded-full"
+                style={{
+                  width: '6px',
+                  height: '6px',
+                  backgroundColor: 'var(--color-accent-primary)',
+                  marginTop: '7px',
+                }}
+                aria-hidden="true"
+              />
+              <div>
+                <p
+                  className="font-hind font-semibold text-sm"
+                  style={{ color: 'var(--color-text-primary)' }}
+                >
+                  {item.title}
+                </p>
+                <p
+                  className="font-body text-xs mt-0.5"
+                  style={{ color: 'var(--color-text-muted)' }}
+                >
+                  {item.date} — {item.description}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
       {/* Coming soon */}
       {comingSoonStotras.length > 0 && (
         <section className="max-w-3xl mx-auto mt-12 sm:mt-16">

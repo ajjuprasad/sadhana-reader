@@ -5,7 +5,7 @@ import { stotras } from '../data/stotras';
 import StotraIcon from './StotraIcon';
 import SettingsDrawer from './SettingsDrawer';
 import type { useSettings } from '../hooks/useSettings';
-import { useReadCounts } from '../hooks/useReadCounts';
+import { useReadCount } from '../hooks/useReadCounts';
 
 const sacredEase = [0.76, 0, 0.24, 1] as const;
 
@@ -17,7 +17,7 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
   const { stotraId } = useParams<{ stotraId: string }>();
   const navigate = useNavigate();
   const stotra = stotras.find((s) => s.id === stotraId);
-  const readCount = useReadCounts(stotraId);
+  const readCount = useReadCount(stotraId);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const {
     settings,

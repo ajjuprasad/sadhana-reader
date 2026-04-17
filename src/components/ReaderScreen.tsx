@@ -8,6 +8,7 @@ import SettingsDrawer from './SettingsDrawer';
 import PetalShower from './PetalShower';
 import { useReader } from '../hooks/useReader';
 import type { useSettings } from '../hooks/useSettings';
+import { useReadCount } from '../hooks/useReadCounts';
 
 const sacredEase = [0.76, 0, 0.24, 1] as const;
 
@@ -19,6 +20,7 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
   const { stotraId } = useParams<{ stotraId: string }>();
   const navigate = useNavigate();
   const stotra = stotras.find((s) => s.id === stotraId);
+  useReadCount(stotraId, true);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [completed, setCompleted] = useState(false);
   const {
