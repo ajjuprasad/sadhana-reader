@@ -1991,6 +1991,56 @@ const adityaHridayaStotram: Stotra = {
       meaning:
         'He is Aditya, Savita, Surya, Khaga, Pusha, and Gabhastiman. He is golden-hued Bhanu, Hiranyareta (of golden seed), and Divakara (maker of day).',
     },
+    {
+      id: 11,
+      verseLabel: 'Shloka 11',
+      sanskrit:
+        'हरिदश्वः सहस्रार्चिः सप्तसप्तिर्मरीचिमान्।\nतिमिरोन्मथनः शम्भुस्त्वष्टा मार्ताण्ड अंशुमान्॥',
+      transliteration:
+        'Haridaśvaḥ Sahasrārciḥ Saptasaptir Marīcimān.\nTimironmathanaḥ Śambhus Tvaṣṭā Mārtāṇḍa Aṁśumān.',
+      meaning:
+        'He is Haridashva (of green horses), Sahasrarchi (of a thousand rays), Saptasapti (of seven horses), and Marichiman. He is the destroyer of darkness, Shambhu, Tvashta, Martanda, and Amshuman.',
+    },
+    {
+      id: 12,
+      verseLabel: 'Shloka 12',
+      sanskrit:
+        'हिरण्यगर्भः शिशिरस्तपनो भास्करो रविः।\nअग्निगर्भोऽदितेः पुत्रः शङ्खः शिशिरनाशनः॥',
+      transliteration:
+        "Hiraṇyagarbhaḥ Śiśiras Tapano Bhāskaro Raviḥ.\nAgnigarbho'diteḥ putraḥ Śaṅkhaḥ Śiśira-nāśanaḥ.",
+      meaning:
+        'He is Hiranyagarbha, Shishira (cool), Tapana (scorching), Bhaskara (light-maker), and Ravi. He is Agnigarbha (womb of fire), son of Aditi, Shankha, and the destroyer of cold.',
+    },
+    {
+      id: 13,
+      verseLabel: 'Shloka 13',
+      sanskrit:
+        'व्योमनाथस्तमोभेदी ऋग्यजुस्सामपारगः।\nघनवृष्टिरपां मित्रो विन्ध्यवीथीप्लवङ्गमः॥',
+      transliteration:
+        'Vyomanāthas tamobhedī Ṛgyajussāma-pāragaḥ.\nGhanavṛṣṭir apāṁ mitro Vindhyavīthī-plavaṅgamaḥ.',
+      meaning:
+        'He is the lord of the sky, the dispeller of darkness, and the master of the Rig, Yajur, and Sama Vedas. He is the bringer of heavy rains, the friend of waters, and he who courses swiftly over the Vindhya ranges.',
+    },
+    {
+      id: 14,
+      verseLabel: 'Shloka 14',
+      sanskrit:
+        'आतपी मण्डली मृत्युः पिङ्गलः सर्वतापनः।\nकविर्विश्वो महातेजाः रक्तः सर्वभवोद्भवः॥',
+      transliteration:
+        'Ātapī Maṇḍalī Mṛtyuḥ Piṅgalaḥ Sarvatāpanaḥ.\nKavir Viśvo Mahātejāḥ Raktaḥ Sarvabhavodbhavaḥ.',
+      meaning:
+        'He is the source of heat, the orbed one, death, the tawny one, and the scorcher of all. He is the seer, the all-pervading, of immense splendor, the red one, and the origin of all that exists.',
+    },
+    {
+      id: 15,
+      verseLabel: 'Shloka 15',
+      sanskrit:
+        'नक्षत्रग्रहताराणामधिपो विश्वभावनः।\nतेजसामपि तेजस्वी द्वादशात्मन् नमोऽस्तु ते॥',
+      transliteration:
+        "Nakṣatra-graha-tārāṇām adhipo viśvabhāvanaḥ.\nTejasām api tejasvī dvādaśātman namo'stu te.",
+      meaning:
+        'Lord of the stars, planets, and constellations, sustainer of the universe! O most radiant among all that is radiant, O twelve-formed one — salutations to you!',
+    },
   ],
 };
 
