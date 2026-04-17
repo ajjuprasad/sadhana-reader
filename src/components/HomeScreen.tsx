@@ -113,16 +113,28 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
       {/* Recently added */}
       <section className="max-w-3xl mx-auto mb-10 sm:mb-14">
         <motion.div
-          className="flex items-center gap-3 mb-5 sm:mb-6"
+          className="flex flex-col items-center gap-2 mb-5 sm:mb-6"
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-50px' }}
           transition={{ duration: 0.5, ease: sacredEase as unknown as number[] }}
         >
-          <div
-            className="flex-1 h-px"
-            style={{ backgroundColor: 'rgba(0,0,0,0.08)' }}
-          />
+          <div className="flex items-center justify-center gap-2">
+            <div
+              className="h-px w-12"
+              style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
+            />
+            <span
+              className="text-sm"
+              style={{ color: 'var(--color-accent-primary)', opacity: 0.4 }}
+            >
+              ॐ
+            </span>
+            <div
+              className="h-px w-12"
+              style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
+            />
+          </div>
           <h2
             className="font-hind font-semibold text-xs uppercase"
             style={{
@@ -132,10 +144,6 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
           >
             {t('home.recentlyAdded')}
           </h2>
-          <div
-            className="flex-1 h-px"
-            style={{ backgroundColor: 'rgba(0,0,0,0.08)' }}
-          />
         </motion.div>
 
         <div className="space-y-3">
@@ -197,16 +205,28 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
       {comingSoonStotras.length > 0 && (
         <section className="max-w-3xl mx-auto mt-12 sm:mt-16">
           <motion.div
-            className="flex items-center gap-3 mb-5 sm:mb-6"
+            className="flex flex-col items-center gap-2 mb-5 sm:mb-6"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.5, ease: sacredEase as unknown as number[] }}
           >
-            <div
-              className="flex-1 h-px"
-              style={{ backgroundColor: 'rgba(0,0,0,0.08)' }}
-            />
+            <div className="flex items-center justify-center gap-2">
+              <div
+                className="h-px w-12"
+                style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
+              />
+              <span
+                className="text-sm"
+                style={{ color: 'var(--color-accent-primary)', opacity: 0.4 }}
+              >
+                ॐ
+              </span>
+              <div
+                className="h-px w-12"
+                style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
+              />
+            </div>
             <h2
               className="font-hind font-semibold text-xs uppercase"
               style={{
@@ -216,10 +236,6 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
             >
               {t('home.comingSoon')}
             </h2>
-            <div
-              className="flex-1 h-px"
-              style={{ backgroundColor: 'rgba(0,0,0,0.08)' }}
-            />
           </motion.div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5">
