@@ -5,6 +5,7 @@ import { stotras } from '../data/stotras';
 import StotraIcon from './StotraIcon';
 import SettingsDrawer from './SettingsDrawer';
 import type { useSettings } from '../hooks/useSettings';
+import { useReadCounts } from '../hooks/useReadCounts';
 
 const sacredEase = [0.76, 0, 0.24, 1] as const;
 
@@ -16,6 +17,7 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
   const { stotraId } = useParams<{ stotraId: string }>();
   const navigate = useNavigate();
   const stotra = stotras.find((s) => s.id === stotraId);
+  const readCount = useReadCounts(stotraId);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const {
     settings,
@@ -217,6 +219,16 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
               {stotra.estimatedMinutes} min
             </span>
           </div>
+
+          {/* Read count */}
+          {readCount > 0 && (
+            <p
+              className="font-hind text-xs mb-4"
+              style={{ color: 'var(--color-text-muted)' }}
+            >
+              Read {readCount} {readCount === 1 ? 'time' : 'times'}
+            </p>
+          )}
 
           {/* Description */}
           <p
