@@ -21,13 +21,7 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
   const readCount = useReadCount(stotraId);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const { t } = useTranslation();
-  const {
-    settings,
-    updateFontSize,
-    toggleDeepamMode,
-    toggleHideSanskrit,
-    setLanguage,
-  } = settingsState;
+  const { settings, applySettings } = settingsState;
 
   if (!stotra) {
     return (
@@ -329,10 +323,7 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
         isOpen={settingsOpen}
         onClose={() => setSettingsOpen(false)}
         settings={settings}
-        onFontSizeChange={updateFontSize}
-        onToggleDeepam={toggleDeepamMode}
-        onToggleHideSanskrit={toggleHideSanskrit}
-        onLanguageChange={setLanguage}
+        onSave={applySettings}
       />
     </div>
   );

@@ -18,13 +18,7 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
   const navigate = useNavigate();
   const [settingsOpen, setSettingsOpen] = useState(false);
   const { t } = useTranslation();
-  const {
-    settings,
-    updateFontSize,
-    toggleDeepamMode,
-    toggleHideSanskrit,
-    setLanguage,
-  } = settingsState;
+  const { settings, applySettings } = settingsState;
 
   return (
     <div className="relative min-h-screen px-4 py-8 sm:py-12">
@@ -292,10 +286,7 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
         isOpen={settingsOpen}
         onClose={() => setSettingsOpen(false)}
         settings={settings}
-        onFontSizeChange={updateFontSize}
-        onToggleDeepam={toggleDeepamMode}
-        onToggleHideSanskrit={toggleHideSanskrit}
-        onLanguageChange={setLanguage}
+        onSave={applySettings}
       />
     </div>
   );

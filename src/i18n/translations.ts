@@ -40,6 +40,7 @@ const en: TranslationDict = {
   'settings.hideSanskrit': 'Hide Sanskrit Verses',
   'settings.hideSanskritDesc': 'Shows only transliteration and meaning',
   'settings.language': 'Language',
+  'settings.save': 'Save',
 };
 
 const hi: TranslationDict = {
@@ -80,6 +81,7 @@ const hi: TranslationDict = {
   'settings.hideSanskrit': 'संस्कृत श्लोक छुपाएं',
   'settings.hideSanskritDesc': 'केवल लिप्यंतरण और अर्थ दिखाता है',
   'settings.language': 'भाषा',
+  'settings.save': 'सहेजें',
 };
 
 const te: TranslationDict = {
@@ -120,6 +122,7 @@ const te: TranslationDict = {
   'settings.hideSanskrit': 'సంస్కృత శ్లోకాలు దాచు',
   'settings.hideSanskritDesc': 'లిప్యంతరీకరణ మరియు అర్థం మాత్రమే చూపిస్తుంది',
   'settings.language': 'భాష',
+  'settings.save': 'సేవ్ చేయండి',
 };
 
 const ta: TranslationDict = {
@@ -160,6 +163,7 @@ const ta: TranslationDict = {
   'settings.hideSanskrit': 'சமஸ்கிருத ஸ்லோகங்களை மறை',
   'settings.hideSanskritDesc': 'ஒலிபெயர்ப்பு மற்றும் பொருள் மட்டும் காட்டும்',
   'settings.language': 'மொழி',
+  'settings.save': 'சேமி',
 };
 
 const ml: TranslationDict = {
@@ -200,6 +204,7 @@ const ml: TranslationDict = {
   'settings.hideSanskrit': 'സംസ്കൃത ശ്ലോകങ്ങൾ മറയ്ക്കുക',
   'settings.hideSanskritDesc': 'ലിപ്യന്തരണവും അർത്ഥവും മാത്രം കാണിക്കുന്നു',
   'settings.language': 'ഭാഷ',
+  'settings.save': 'സേവ് ചെയ്യുക',
 };
 
 export const translations: Record<Language, TranslationDict> = {

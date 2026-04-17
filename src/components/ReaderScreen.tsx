@@ -25,13 +25,7 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [completed, setCompleted] = useState(false);
   const { t } = useTranslation();
-  const {
-    settings,
-    updateFontSize,
-    toggleDeepamMode,
-    toggleHideSanskrit,
-    setLanguage,
-  } = settingsState;
+  const { settings, applySettings } = settingsState;
 
   const totalVerses = stotra?.verses.length ?? 0;
   const handleComplete = useCallback(() => setCompleted(true), []);
@@ -356,10 +350,7 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
         isOpen={settingsOpen}
         onClose={() => setSettingsOpen(false)}
         settings={settings}
-        onFontSizeChange={updateFontSize}
-        onToggleDeepam={toggleDeepamMode}
-        onToggleHideSanskrit={toggleHideSanskrit}
-        onLanguageChange={setLanguage}
+        onSave={applySettings}
       />
     </div>
   );
