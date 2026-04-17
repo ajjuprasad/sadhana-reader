@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { Settings } from '../hooks/useSettings';
 import type { Language } from '../hooks/useSettings';
@@ -15,24 +16,40 @@ interface SettingsDrawerProps {
   isOpen: boolean;
   onClose: () => void;
   settings: Settings;
-  onFontSizeChange: (size: number) => void;
-  onToggleDeepam: () => void;
-  onToggleHideSanskrit: () => void;
-  onLanguageChange: (lang: Language) => void;
+  onSave: (next: Settings) => void;
 }
 
 const sacredEase = [0.76, 0, 0.24, 1] as const;
+
+function settingsEqual(a: Settings, b: Settings): boolean {
+  return (
+    a.fontSize === b.fontSize &&
+    a.deepamMode === b.deepamMode &&
+    a.hideSanskrit === b.hideSanskrit &&
+    a.language === b.language
+  );
+}
 
 export default function SettingsDrawer({
   isOpen,
   onClose,
   settings,
-  onFontSizeChange,
-  onToggleDeepam,
-  onToggleHideSanskrit,
-  onLanguageChange,
+  onSave,
 }: SettingsDrawerProps) {
   const { t } = useTranslation();
+  const [draft, setDraft] = useState<Settings>(settings);
+
+  useEffect(() => {
+    if (isOpen) setDraft(settings);
+  }, [isOpen, settings]);
+
+  const hasChanges = !settingsEqual(draft, settings);
+
+  const handleSave = () => {
+    onSave(draft);
+    onClose();
+  };
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -106,15 +123,15 @@ export default function SettingsDrawer({
                 className="block font-hind font-semibold text-sm mb-3"
                 style={{ color: 'var(--color-text-secondary)' }}
               >
-                {t('settings.fontSize', { size: settings.fontSize })}
+                {t('settings.fontSize', { size: draft.fontSize })}
               </label>
               <input
                 type="range"
                 min={14}
                 max={36}
                 step={1}
-                value={settings.fontSize}
-                onChange={(e) => onFontSizeChange(Number(e.target.value))}
+                value={draft.fontSize}
+                onChange={(e) => setDraft((d) => ({ ...d, fontSize: Number(e.target.value) }))}
                 className="w-full accent-saffron"
                 aria-label="Adjust font size"
               />
@@ -123,7 +140,7 @@ export default function SettingsDrawer({
                 className="font-sanskrit text-center mt-3"
                 lang="sa"
                 style={{
-                  fontSize: `${settings.fontSize}px`,
+                  fontSize: `${draft.fontSize}px`,
                   color: 'var(--color-text-primary)',
                   lineHeight: 2.2,
                 }}
@@ -159,24 +176,24 @@ export default function SettingsDrawer({
                 </div>
               </div>
               <button
-                onClick={onToggleDeepam}
+                onClick={() => setDraft((d) => ({ ...d, deepamMode: !d.deepamMode }))}
                 className={`relative w-12 h-7 rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-saffron ${
-                  settings.deepamMode ? 'bg-saffron' : ''
+                  draft.deepamMode ? 'bg-saffron' : ''
                 }`}
                 style={{
-                  backgroundColor: settings.deepamMode
+                  backgroundColor: draft.deepamMode
                     ? 'var(--color-accent-primary)'
                     : 'var(--color-text-muted)',
-                  opacity: settings.deepamMode ? 1 : 0.4,
+                  opacity: draft.deepamMode ? 1 : 0.4,
                 }}
                 role="switch"
-                aria-checked={settings.deepamMode}
+                aria-checked={draft.deepamMode}
                 aria-label="Toggle Deepam Mode"
               >
                 <span
                   className="absolute top-0.5 left-0.5 w-6 h-6 rounded-full bg-white shadow-md transition-transform duration-300"
                   style={{
-                    transform: settings.deepamMode
+                    transform: draft.deepamMode
                       ? 'translateX(20px)'
                       : 'translateX(0)',
                   }}
@@ -201,22 +218,22 @@ export default function SettingsDrawer({
                 </p>
               </div>
               <button
-                onClick={onToggleHideSanskrit}
+                onClick={() => setDraft((d) => ({ ...d, hideSanskrit: !d.hideSanskrit }))}
                 className="relative w-12 h-7 rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-saffron"
                 style={{
-                  backgroundColor: settings.hideSanskrit
+                  backgroundColor: draft.hideSanskrit
                     ? 'var(--color-accent-primary)'
                     : 'var(--color-text-muted)',
-                  opacity: settings.hideSanskrit ? 1 : 0.4,
+                  opacity: draft.hideSanskrit ? 1 : 0.4,
                 }}
                 role="switch"
-                aria-checked={settings.hideSanskrit}
+                aria-checked={draft.hideSanskrit}
                 aria-label="Toggle Hide Sanskrit Verses"
               >
                 <span
                   className="absolute top-0.5 left-0.5 w-6 h-6 rounded-full bg-white shadow-md transition-transform duration-300"
                   style={{
-                    transform: settings.hideSanskrit
+                    transform: draft.hideSanskrit
                       ? 'translateX(20px)'
                       : 'translateX(0)',
                   }}
@@ -236,22 +253,22 @@ export default function SettingsDrawer({
                 {LANGUAGES.map((lang) => (
                   <button
                     key={lang.code}
-                    onClick={() => onLanguageChange(lang.code)}
+                    onClick={() => setDraft((d) => ({ ...d, language: lang.code }))}
                     className="px-4 py-2 rounded-full font-hind text-sm transition-all duration-200"
                     style={{
                       backgroundColor:
-                        settings.language === lang.code
+                        draft.language === lang.code
                           ? 'var(--color-accent-primary)'
                           : 'transparent',
                       color:
-                        settings.language === lang.code
+                        draft.language === lang.code
                           ? '#fff'
                           : 'var(--color-text-secondary)',
                       border:
-                        settings.language === lang.code
+                        draft.language === lang.code
                           ? '1px solid var(--color-accent-primary)'
                           : '1px solid var(--color-text-muted)',
-                      opacity: settings.language === lang.code ? 1 : 0.7,
+                      opacity: draft.language === lang.code ? 1 : 0.7,
                     }}
                   >
                     {lang.label}
@@ -259,6 +276,29 @@ export default function SettingsDrawer({
                 ))}
               </div>
             </div>
+
+            {/* Save button */}
+            <AnimatePresence>
+              {hasChanges && (
+                <motion.div
+                  className="mt-8 flex justify-center"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 10 }}
+                  transition={{ duration: 0.25 }}
+                >
+                  <motion.button
+                    onClick={handleSave}
+                    className="font-hind font-semibold text-base px-10 py-3 rounded-full text-white shadow-lg"
+                    style={{ backgroundColor: 'var(--color-accent-primary)' }}
+                    whileHover={{ scale: 1.05, boxShadow: '0 8px 30px rgba(255,153,51,0.3)' }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    {t('settings.save')}
+                  </motion.button>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </motion.div>
         </>
       )}

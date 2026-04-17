@@ -52,27 +52,12 @@ export function useSettings() {
     if (meta) meta.setAttribute('content', isDark ? '#1A1208' : '#FFF8E1');
   }, [settings.deepamMode]);
 
-  const updateFontSize = useCallback((size: number) => {
-    setSettings((s) => ({ ...s, fontSize: size }));
-  }, []);
-
-  const toggleDeepamMode = useCallback(() => {
-    setSettings((s) => ({ ...s, deepamMode: !s.deepamMode }));
-  }, []);
-
-  const toggleHideSanskrit = useCallback(() => {
-    setSettings((s) => ({ ...s, hideSanskrit: !s.hideSanskrit }));
-  }, []);
-
-  const setLanguage = useCallback((language: Language) => {
-    setSettings((s) => ({ ...s, language }));
+  const applySettings = useCallback((next: Settings) => {
+    setSettings(next);
   }, []);
 
   return {
     settings,
-    updateFontSize,
-    toggleDeepamMode,
-    toggleHideSanskrit,
-    setLanguage,
+    applySettings,
   };
 }
