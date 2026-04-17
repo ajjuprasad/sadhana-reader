@@ -2041,6 +2041,56 @@ const adityaHridayaStotram: Stotra = {
       meaning:
         'Lord of the stars, planets, and constellations, sustainer of the universe! O most radiant among all that is radiant, O twelve-formed one — salutations to you!',
     },
+    {
+      id: 16,
+      verseLabel: 'Shloka 16',
+      sanskrit:
+        'नमः पूर्वाय गिरये पश्चिमायाद्रये नमः।\nज्योतिर्गणानां पतये दिनाधिपतये नमः॥',
+      transliteration:
+        'Namaḥ pūrvāya giraye paścimāyādraye namaḥ.\nJyotir-gaṇānāṁ pataye dinādhipataye namaḥ.',
+      meaning:
+        'Salutations to the eastern mountain (of sunrise) and to the western mountain (of sunset). Salutations to the lord of all luminaries and the lord of the day.',
+    },
+    {
+      id: 17,
+      verseLabel: 'Shloka 17',
+      sanskrit:
+        'जयाय जयभद्राय हर्यश्वाय नमो नमः।\nनमो नमः सहस्रांशो आदित्याय नमो नमः॥',
+      transliteration:
+        'Jayāya jayabhadrāya haryaśvāya namo namaḥ.\nNamo namaḥ sahasrāṁśo Ādityāya namo namaḥ.',
+      meaning:
+        'Salutations again and again to the victorious one, the bestower of auspicious victory, and the one with green horses. Salutations to the thousand-rayed one, salutations to Aditya!',
+    },
+    {
+      id: 18,
+      verseLabel: 'Shloka 18',
+      sanskrit:
+        'नम उग्राय वीराय सारङ्गाय नमो नमः।\nनमः पद्मप्रबोधाय मार्ताण्डाय नमो नमः॥',
+      transliteration:
+        'Nama ugrāya vīrāya sāraṅgāya namo namaḥ.\nNamaḥ padma-prabodhāya Mārtāṇḍāya namo namaḥ.',
+      meaning:
+        'Salutations to the fierce and heroic one, to the one who moves swiftly. Salutations to the awakener of lotuses, to Martanda!',
+    },
+    {
+      id: 19,
+      verseLabel: 'Shloka 19',
+      sanskrit:
+        'ब्रह्मेशानाच्युतेशाय सूर्यायादित्यवर्चसे।\nभास्वते सर्वभक्षाय रौद्राय वपुषे नमः॥',
+      transliteration:
+        'Brahmeśānācyuteśāya Sūryāyāditya-varcase.\nBhāsvate sarva-bhakṣāya raudrāya vapuṣe namaḥ.',
+      meaning:
+        'Salutations to the lord of Brahma, Ishana, and Achyuta, to Surya of the splendor of the Adityas. Salutations to the shining one, the all-consuming, the fierce-formed one.',
+    },
+    {
+      id: 20,
+      verseLabel: 'Shloka 20',
+      sanskrit:
+        'तमोघ्नाय हिमघ्नाय शत्रुघ्नायामितात्मने।\nकृतघ्नघ्नाय देवाय ज्योतिषां पतये नमः॥',
+      transliteration:
+        'Tamoghnāya himaghnāya śatrughnāyāmitātmane.\nKṛtaghna-ghnāya devāya jyotiṣāṁ pataye namaḥ.',
+      meaning:
+        'Salutations to the destroyer of darkness, the destroyer of cold, the destroyer of enemies, and the one of immeasurable nature. Salutations to the slayer of the ungrateful, the god who is the lord of all luminaries.',
+    },
   ],
 };
 
