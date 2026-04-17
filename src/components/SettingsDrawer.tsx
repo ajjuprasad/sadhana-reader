@@ -151,29 +151,19 @@ export default function SettingsDrawer({
 
             {/* Deepam Mode */}
             <div className="flex items-center justify-between mb-6 py-3">
-              <div className="flex items-center gap-3">
-                <svg width="22" height="22" viewBox="0 0 32 32" fill="none" className="flex-shrink-0" style={{ color: 'var(--color-accent-gold)' }}>
-                  {/* Flame */}
-                  <path d="M16 4 C13 10 11 14 11 18 C11 22 13 24 16 24 C19 24 21 22 21 18 C21 14 19 10 16 4Z" fill="currentColor" opacity="0.9" />
-                  <path d="M16 8 C14.5 12 13.5 15 13.5 18 C13.5 20.5 14.5 22 16 22 C17.5 22 18.5 20.5 18.5 18 C18.5 15 17.5 12 16 8Z" fill="#FFECB3" />
-                  {/* Lamp base */}
-                  <ellipse cx="16" cy="25" rx="8" ry="2.5" fill="currentColor" />
-                  <path d="M10 25 Q10 28 16 28 Q22 28 22 25" fill="currentColor" opacity="0.7" />
-                </svg>
-                <div>
-                  <p
-                    className="font-hind font-semibold text-sm"
-                    style={{ color: 'var(--color-text-primary)' }}
-                  >
-                    {t('settings.deepamMode')}
-                  </p>
-                  <p
-                    className="font-hind text-xs"
-                    style={{ color: 'var(--color-text-muted)' }}
-                  >
-                    {t('settings.deepamDesc')}
-                  </p>
-                </div>
+              <div>
+                <p
+                  className="font-hind font-semibold text-sm"
+                  style={{ color: 'var(--color-text-primary)' }}
+                >
+                  {t('settings.deepamMode')}
+                </p>
+                <p
+                  className="font-hind text-xs"
+                  style={{ color: 'var(--color-text-muted)' }}
+                >
+                  {t('settings.deepamDesc')}
+                </p>
               </div>
               <button
                 onClick={() => setDraft((d) => ({ ...d, deepamMode: !d.deepamMode }))}
