@@ -118,6 +118,22 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
         </>
       );
 
+    case 'aditya-hridaya-stotram':
+      // Radiant sun — Surya with twelve rays for the twelve Adityas
+      return (
+        <>
+          <circle cx="16" cy="16" r="5.5" {...s} strokeWidth="1.8" />
+          {[...Array(12)].map((_, i) => {
+            const angle = (i * 30 * Math.PI) / 180;
+            const x1 = 16 + 8 * Math.cos(angle);
+            const y1 = 16 - 8 * Math.sin(angle);
+            const x2 = 16 + 12 * Math.cos(angle);
+            const y2 = 16 - 12 * Math.sin(angle);
+            return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} {...s} strokeWidth="1.3" />;
+          })}
+        </>
+      );
+
     case 'shiva-ashtottara':
       // Damaru (Shiva's drum)
       return (

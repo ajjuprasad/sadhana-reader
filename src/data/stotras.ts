@@ -1876,6 +1876,74 @@ const venkateswaraSuprabhatam: Stotra = {
   ],
 };
 
+const adityaHridayaStotram: Stotra = {
+  id: 'aditya-hridaya-stotram',
+  title: 'Aditya Hridaya Stotram',
+  subtitle: 'आदित्यहृदयम्',
+  deity: 'Surya',
+  description:
+    'The hymn to the heart of the Sun, taught by Sage Agastya to Lord Rama on the battlefield before his final confrontation with Ravana. From the Yuddha Kanda of Valmiki Ramayana.',
+  benefits: [
+    'Grants victory over adversaries and removal of obstacles',
+    'Bestows radiant health, vitality, and long life',
+    'Dispels fear, worry, and grief',
+  ],
+  estimatedMinutes: 10,
+  icon: '',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Shloka 1',
+      sanskrit:
+        'ततो युद्धपरिश्रान्तं समरे चिन्तया स्थितम्।\nरावणं चाग्रतो दृष्ट्वा युद्धाय समुपस्थितम्॥',
+      transliteration:
+        'Tato yuddha-pariśrāntaṁ samare cintayā sthitam.\nRāvaṇaṁ cāgrato dṛṣṭvā yuddhāya samupasthitam.',
+      meaning:
+        'Then, seeing Rama standing exhausted and anxious on the battlefield, and Ravana arriving before him ready for combat...',
+    },
+    {
+      id: 2,
+      verseLabel: 'Shloka 2',
+      sanskrit:
+        'दैवतैश्च समागम्य द्रष्टुमभ्यागतो रणम्।\nउपागम्याब्रवीद्रामं अगस्त्यो भगवान्ऋषिः॥',
+      transliteration:
+        'Daivataiś ca samāgamya draṣṭum abhyāgato raṇam.\nUpāgamyābravīd Rāmaṁ Agastyo bhagavān ṛṣiḥ.',
+      meaning:
+        'The venerable sage Agastya, who had come with the gods to witness the battle, approached Rama and spoke thus.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Shloka 3',
+      sanskrit:
+        'राम राम महाबाहो शृणु गुह्यं सनातनम्।\nयेन सर्वानरीन् वत्स समरे विजयिष्यसि॥',
+      transliteration:
+        'Rāma Rāma mahābāho śṛṇu guhyaṁ sanātanam.\nYena sarvān arīn vatsa samare vijayiṣyasi.',
+      meaning:
+        'O Rama, O mighty-armed one, hear this eternal secret by which, dear child, you shall conquer all enemies in battle.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Shloka 4',
+      sanskrit:
+        'आदित्यहृदयं पुण्यं सर्वशत्रुविनाशनम्।\nजयावहं जपेन्नित्यम् अक्षय्यं परमं शिवम्॥',
+      transliteration:
+        'Āditya-hṛdayaṁ puṇyaṁ sarva-śatru-vināśanam.\nJayāvahaṁ japen nityam akṣayyaṁ paramaṁ śivam.',
+      meaning:
+        'This is the Aditya Hridayam — sacred, destroyer of all enemies, bestower of victory. One should recite it daily; it is imperishable and supremely auspicious.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Shloka 5',
+      sanskrit:
+        'सर्वमङ्गलमाङ्गल्यं सर्वपापप्रणाशनम्।\nचिन्ताशोकप्रशमनम् आयुर्वर्धनमुत्तमम्॥',
+      transliteration:
+        'Sarva-maṅgala-māṅgalyaṁ sarva-pāpa-praṇāśanam.\nCintā-śoka-praśamanam āyur-vardhanam uttamam.',
+      meaning:
+        'It is the most auspicious of all auspicious things, the destroyer of all sins, the dispeller of all worry and grief, and the supreme bestower of long life.',
+    },
+  ],
+};
+
 export const stotras: Stotra[] = [
   hanumanChalisa,
   ganeshaPancharatnam,
@@ -1885,6 +1953,7 @@ export const stotras: Stotra[] = [
   lingashtakam,
   madhurashtakam,
   venkateswaraSuprabhatam,
+  adityaHridayaStotram,
   vishnuSahasranamam,
 ];
 
@@ -1899,11 +1968,6 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'lalitha-sahasranamam',
     title: 'Lalitha Sahasranamam',
     deity: 'Lalita Tripurasundari',
-  },
-  {
-    id: 'aditya-hridaya-stotram',
-    title: 'Aditya Hridaya Stotram',
-    deity: 'Surya',
   },
   {
     id: 'mahishasura-mardini-stotram',
