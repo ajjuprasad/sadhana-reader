@@ -1733,6 +1733,56 @@ const venkateswaraSuprabhatam: Stotra = {
       meaning:
         'Sri Sheshashaila, Garudachala, Venkatadri, Narayanadri, Vrishabhadri, Vrishadri — by these and the like the seven sacred names of Your abode are unceasingly proclaimed. O Lord of Venkata Hill, may this dawn be auspicious for You.',
     },
+    {
+      id: 16,
+      verseLabel: 'Shloka 16',
+      sanskrit:
+        'सेवापराः शिवसुरेशकृशानुधर्मरक्षोऽम्बुनाथपवमानधनाधिनाथाः।\nबद्धाञ्जलिप्रविलसन्निजशीर्षदेशाः श्रीवेङ्कटाचलपते तव सुप्रभातम्॥',
+      transliteration:
+        "Sevā-parāḥ śiva-sureśa-kṛśānu-dharma-rakṣo'mbu-nātha-pavamāna-dhanādhi-nāthāḥ.\nBaddhāñjali-pravilasan-nija-śīrṣa-deśāḥ Śrī-Veṅkaṭācalapate tava suprabhātam.",
+      meaning:
+        'Intent on Your service, the eight guardians of the quarters — Shiva (Ishana), Indra (Sureśa), Agni (Kṛśānu), Yama (Dharma), Nirriti (Rakṣo-nātha), Varuna (Ambu-nātha), Vayu (Pavamāna), and Kubera (Dhanādhi-nātha) — stand with hands folded in añjali shining above their crowned heads. O Lord of Venkata Hill, may this dawn be auspicious for You.',
+    },
+    {
+      id: 17,
+      verseLabel: 'Shloka 17',
+      sanskrit:
+        'धाटीषु ते विहगराजमृगाधिराजनागाधिराजगजराजहयाधिराजाः।\nस्वस्वाधिकारमहिमाधिकमर्थयन्ते श्रीवेङ्कटाचलपते तव सुप्रभातम्॥',
+      transliteration:
+        'Dhāṭīṣu te vihaga-rāja-mṛgādhirāja-nāgādhirāja-gaja-rāja-hayādhirājāḥ.\nSvasvādhikāra-mahimādhikam arthayante Śrī-Veṅkaṭācalapate tava suprabhātam.',
+      meaning:
+        'In Your processions, the king of birds (Garuda), the king of beasts (the lion), the king of serpents (Adishesha), the king of elephants (Airavata), and the king of horses (Uchchaihshravas) each entreat that Your service be granted to them as an honor surpassing their own sovereignty. O Lord of Venkata Hill, may this dawn be auspicious for You.',
+    },
+    {
+      id: 18,
+      verseLabel: 'Shloka 18',
+      sanskrit:
+        'सूर्येन्दुभौमबुधवाक्पतिकाव्यसौरिस्वर्भानुकेतुदिविषत्परिषत्प्रधानाः।\nत्वद्दासदासचरमावधिदासदासाः श्रीवेङ्कटाचलपते तव सुप्रभातम्॥',
+      transliteration:
+        'Sūryendu-bhauma-budha-vākpati-kāvya-sauri-svarbhānu-ketu-diviṣat-pariṣat-pradhānāḥ.\nTvad-dāsa-dāsa-caramāvadhi-dāsa-dāsāḥ Śrī-Veṅkaṭācalapate tava suprabhātam.',
+      meaning:
+        'The Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu and Ketu — chiefs of the celestial assembly — count themselves servants of the servants down to the very last of Your servants. O Lord of Venkata Hill, may this dawn be auspicious for You.',
+    },
+    {
+      id: 19,
+      verseLabel: 'Shloka 19',
+      sanskrit:
+        'त्वत्पादधूलिभरितस्फुरितोत्तमाङ्गाः स्वर्गापवर्गनिरपेक्षनिजान्तरङ्गाः।\nकल्पागमाकलनयाऽऽकुलतां लभन्ते श्रीवेङ्कटाचलपते तव सुप्रभातम्॥',
+      transliteration:
+        "Tvat-pāda-dhūli-bharita-sphuritottamāṅgāḥ svargāpavarga-nirapekṣa-nijāntaraṅgāḥ.\nKalpāgamākalanayā''kulatāṁ labhante Śrī-Veṅkaṭācalapate tava suprabhātam.",
+      meaning:
+        'With heads gloriously bedecked with the dust of Your feet, with hearts wholly indifferent to both heaven and liberation — Your devotees grow anxious at the mere thought of the aeon drawing to a close. O Lord of Venkata Hill, may this dawn be auspicious for You.',
+    },
+    {
+      id: 20,
+      verseLabel: 'Shloka 20',
+      sanskrit:
+        'त्वद्गोपुराग्रशिखराणि निरीक्षमाणाः स्वर्गापवर्गपदवीं परमां श्रयन्तः।\nमर्त्या मनुष्यभुवने मतिमाश्रयन्ते श्रीवेङ्कटाचलपते तव सुप्रभातम्॥',
+      transliteration:
+        'Tvad-gopurāgra-śikharāṇi nirīkṣamāṇāḥ svargāpavarga-padavīṁ paramāṁ śrayantaḥ.\nMartyā manuṣya-bhuvane matim āśrayante Śrī-Veṅkaṭācalapate tava suprabhātam.',
+      meaning:
+        'Gazing upon the crowning peaks of Your gopuras, and thereby attaining the supreme path of heaven and liberation, mortals — even while dwelling in this human world — take refuge in the highest wisdom. O Lord of Venkata Hill, may this dawn be auspicious for You.',
+    },
   ],
 };
 
