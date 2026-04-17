@@ -1,9 +1,12 @@
 import { useState, useEffect, useCallback } from 'react';
 
+export type Language = 'en' | 'hi' | 'te' | 'ta' | 'ml';
+
 export interface Settings {
   fontSize: number;
   deepamMode: boolean;
-  contemplationMode: boolean;
+  hideSanskrit: boolean;
+  language: Language;
 }
 
 const STORAGE_KEY = 'sadhana-reader-settings';
@@ -11,14 +14,20 @@ const STORAGE_KEY = 'sadhana-reader-settings';
 const defaultSettings: Settings = {
   fontSize: 18,
   deepamMode: false,
-  contemplationMode: false,
+  hideSanskrit: false,
+  language: 'en',
 };
 
 function loadSettings(): Settings {
   try {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored) {
-      return { ...defaultSettings, ...JSON.parse(stored) };
+      const parsed = JSON.parse(stored);
+      if ('contemplationMode' in parsed && !('hideSanskrit' in parsed)) {
+        parsed.hideSanskrit = parsed.contemplationMode;
+        delete parsed.contemplationMode;
+      }
+      return { ...defaultSettings, ...parsed };
     }
   } catch {
     // ignore
@@ -51,14 +60,19 @@ export function useSettings() {
     setSettings((s) => ({ ...s, deepamMode: !s.deepamMode }));
   }, []);
 
-  const toggleContemplationMode = useCallback(() => {
-    setSettings((s) => ({ ...s, contemplationMode: !s.contemplationMode }));
+  const toggleHideSanskrit = useCallback(() => {
+    setSettings((s) => ({ ...s, hideSanskrit: !s.hideSanskrit }));
+  }, []);
+
+  const setLanguage = useCallback((language: Language) => {
+    setSettings((s) => ({ ...s, language }));
   }, []);
 
   return {
     settings,
     updateFontSize,
     toggleDeepamMode,
-    toggleContemplationMode,
+    toggleHideSanskrit,
+    setLanguage,
   };
 }
