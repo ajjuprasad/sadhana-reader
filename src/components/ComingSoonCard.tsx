@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import type { ComingSoonStotra } from '../data/stotras';
+import { useTranslation } from '../i18n/useTranslation';
 
 interface ComingSoonCardProps {
   stotra: ComingSoonStotra;
@@ -12,6 +13,7 @@ export default function ComingSoonCard({
   stotra,
   index,
 }: ComingSoonCardProps) {
+  const { t } = useTranslation();
   return (
     <motion.div
       className="relative w-full h-full text-left rounded-2xl overflow-hidden"
@@ -27,7 +29,7 @@ export default function ComingSoonCard({
         delay: index * 0.06,
         ease: sacredEase as unknown as number[],
       }}
-      aria-label={`${stotra.title} — coming soon`}
+      aria-label={`${stotra.title} — ${t('common.comingSoon')}`}
     >
       <div className="p-5 sm:p-6 flex flex-col h-full">
         {/* Lotus-bud icon — closed flower hinting at "yet to bloom" */}
@@ -98,7 +100,7 @@ export default function ComingSoonCard({
             color: 'var(--color-text-muted)',
           }}
         >
-          Coming soon
+          {t('common.comingSoon')}
         </span>
       </div>
     </motion.div>

@@ -5,6 +5,7 @@ import StotraDetail from './components/StotraDetail';
 import ReaderScreen from './components/ReaderScreen';
 import MandalaBackground from './components/MandalaBackground';
 import { useSettings } from './hooks/useSettings';
+import { LanguageProvider } from './i18n/LanguageContext';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -30,16 +31,18 @@ export default function App() {
   }, []);
 
   return (
-    <HashRouter>
-      <ScrollToTop />
-      <MandalaBackground />
-      <div className="relative z-10">
-        <Routes>
-          <Route path="/" element={<HomeScreen settingsState={settingsState} />} />
-          <Route path="/stotra/:stotraId" element={<StotraDetail settingsState={settingsState} />} />
-          <Route path="/read/:stotraId" element={<ReaderScreen settingsState={settingsState} />} />
-        </Routes>
-      </div>
-    </HashRouter>
+    <LanguageProvider value={settingsState.settings.language}>
+      <HashRouter>
+        <ScrollToTop />
+        <MandalaBackground />
+        <div className="relative z-10">
+          <Routes>
+            <Route path="/" element={<HomeScreen settingsState={settingsState} />} />
+            <Route path="/stotra/:stotraId" element={<StotraDetail settingsState={settingsState} />} />
+            <Route path="/read/:stotraId" element={<ReaderScreen settingsState={settingsState} />} />
+          </Routes>
+        </div>
+      </HashRouter>
+    </LanguageProvider>
   );
 }

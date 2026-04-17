@@ -1,0 +1,211 @@
+import type { Language } from '../hooks/useSettings';
+
+export type TranslationDict = Record<string, string>;
+
+const en: TranslationDict = {
+  'home.title': 'Sādhanā Reader',
+  'home.subtitle': 'A digital sanctum for contemplation',
+  'home.recentlyAdded': 'Recently Added',
+  'home.comingSoon': 'Coming soon',
+  'home.designedBy': 'Designed & built by',
+  'home.feedbackVia': 'Send feedback via',
+  'home.shareMessage': 'Discover Sādhanā Reader — a digital sanctum for reading Hindu stotras with devotion. {url}',
+
+  'common.back': 'Back',
+  'common.share': 'Share',
+  'common.returnHome': 'Return home',
+  'common.stotraNotFound': 'Stotra not found',
+  'common.verses': '{count} verses',
+  'common.min': '{count} min',
+  'common.comingSoon': 'Coming soon',
+  'common.verseOf': '{current} of {total}',
+  'common.whatsapp': 'WhatsApp',
+  'common.email': 'Email',
+
+  'detail.readTimes': 'Read {count} times',
+  'detail.readOnce': 'Read {count} time',
+  'detail.benefits': 'Benefits',
+  'detail.beginReading': 'Begin Reading',
+  'detail.shareMessage': 'Read {title} on Sādhanā Reader.\n{url}',
+  'detail.shareMessageBenefit': 'Read {title} on Sādhanā Reader.\n{benefit}.\n{url}',
+
+  'reader.readingComplete': 'Reading complete',
+  'reader.thankYou': 'Thank you for reading {title} on Sādhanā Reader. May this practice bring peace, devotion, and grace into your day.',
+  'reader.readAgain': 'Read again',
+
+  'settings.title': 'Settings',
+  'settings.fontSize': 'Font Size: {size}px',
+  'settings.deepamMode': 'Deepam Mode',
+  'settings.deepamDesc': 'Warm, lamp-lit dark theme',
+  'settings.hideSanskrit': 'Hide Sanskrit Verses',
+  'settings.hideSanskritDesc': 'Shows only transliteration and meaning',
+  'settings.language': 'Language',
+};
+
+const hi: TranslationDict = {
+  'home.title': 'साधना रीडर',
+  'home.subtitle': 'चिंतन के लिए एक डिजिटल पवित्र स्थान',
+  'home.recentlyAdded': 'हाल ही में जोड़ा गया',
+  'home.comingSoon': 'जल्द आ रहा है',
+  'home.designedBy': 'डिज़ाइन और निर्मित',
+  'home.feedbackVia': 'प्रतिक्रिया भेजें',
+  'home.shareMessage': 'साधना रीडर — भक्ति के साथ हिंदू स्तोत्र पढ़ने का डिजिटल पवित्र स्थान। {url}',
+
+  'common.back': 'वापस',
+  'common.share': 'साझा करें',
+  'common.returnHome': 'होम पर जाएं',
+  'common.stotraNotFound': 'स्तोत्र नहीं मिला',
+  'common.verses': '{count} श्लोक',
+  'common.min': '{count} मिनट',
+  'common.comingSoon': 'जल्द आ रहा है',
+  'common.verseOf': '{current} / {total}',
+  'common.whatsapp': 'WhatsApp',
+  'common.email': 'ईमेल',
+
+  'detail.readTimes': '{count} बार पढ़ा गया',
+  'detail.readOnce': '{count} बार पढ़ा गया',
+  'detail.benefits': 'लाभ',
+  'detail.beginReading': 'पढ़ना शुरू करें',
+  'detail.shareMessage': 'साधना रीडर पर {title} पढ़ें।\n{url}',
+  'detail.shareMessageBenefit': 'साधना रीडर पर {title} पढ़ें।\n{benefit}।\n{url}',
+
+  'reader.readingComplete': 'पठन पूर्ण',
+  'reader.thankYou': 'साधना रीडर पर {title} पढ़ने के लिए धन्यवाद। यह साधना आपके दिन में शांति, भक्ति और कृपा लाए।',
+  'reader.readAgain': 'फिर से पढ़ें',
+
+  'settings.title': 'सेटिंग्स',
+  'settings.fontSize': 'अक्षर आकार: {size}px',
+  'settings.deepamMode': 'दीपम मोड',
+  'settings.deepamDesc': 'गर्म, दीपक जैसी अंधेरी थीम',
+  'settings.hideSanskrit': 'संस्कृत श्लोक छुपाएं',
+  'settings.hideSanskritDesc': 'केवल लिप्यंतरण और अर्थ दिखाता है',
+  'settings.language': 'भाषा',
+};
+
+const te: TranslationDict = {
+  'home.title': 'సాధనా రీడర్',
+  'home.subtitle': 'ధ్యానం కోసం ఒక డిజిటల్ పవిత్ర స్థలం',
+  'home.recentlyAdded': 'ఇటీవల జోడించబడినవి',
+  'home.comingSoon': 'త్వరలో వస్తుంది',
+  'home.designedBy': 'రూపొందించి నిర్మించినది',
+  'home.feedbackVia': 'అభిప్రాయం పంపండి',
+  'home.shareMessage': 'సాధనా రీడర్ — భక్తితో హిందూ స్తోత్రాలు చదవడానికి డిజిటల్ పవిత్ర స్థలం। {url}',
+
+  'common.back': 'వెనుకకు',
+  'common.share': 'షేర్ చేయండి',
+  'common.returnHome': 'హోమ్‌కి వెళ్ళండి',
+  'common.stotraNotFound': 'స్తోత్రం కనుగొనబడలేదు',
+  'common.verses': '{count} శ్లోకాలు',
+  'common.min': '{count} నిమి',
+  'common.comingSoon': 'త్వరలో వస్తుంది',
+  'common.verseOf': '{current} / {total}',
+  'common.whatsapp': 'WhatsApp',
+  'common.email': 'ఇమెయిల్',
+
+  'detail.readTimes': '{count} సార్లు చదవబడింది',
+  'detail.readOnce': '{count} సారి చదవబడింది',
+  'detail.benefits': 'ప్రయోజనాలు',
+  'detail.beginReading': 'చదవడం ప్రారంభించండి',
+  'detail.shareMessage': 'సాధనా రీడర్‌లో {title} చదవండి।\n{url}',
+  'detail.shareMessageBenefit': 'సాధనా రీడర్‌లో {title} చదవండి।\n{benefit}।\n{url}',
+
+  'reader.readingComplete': 'పఠనం పూర్తయింది',
+  'reader.thankYou': 'సాధనా రీడర్‌లో {title} చదివినందుకు ధన్యవాదాలు. ఈ సాధన మీ రోజులో శాంతి, భక్తి మరియు కృపను తీసుకురావాలి.',
+  'reader.readAgain': 'మళ్ళీ చదవండి',
+
+  'settings.title': 'సెట్టింగ్‌లు',
+  'settings.fontSize': 'అక్షర పరిమాణం: {size}px',
+  'settings.deepamMode': 'దీపం మోడ్',
+  'settings.deepamDesc': 'వెచ్చని, దీపకాంతి డార్క్ థీమ్',
+  'settings.hideSanskrit': 'సంస్కృత శ్లోకాలు దాచు',
+  'settings.hideSanskritDesc': 'లిప్యంతరీకరణ మరియు అర్థం మాత్రమే చూపిస్తుంది',
+  'settings.language': 'భాష',
+};
+
+const ta: TranslationDict = {
+  'home.title': 'சாதனா ரீடர்',
+  'home.subtitle': 'தியானத்திற்கான ஒரு டிஜிட்டல் புனித இடம்',
+  'home.recentlyAdded': 'சமீபத்தில் சேர்க்கப்பட்டது',
+  'home.comingSoon': 'விரைவில் வரும்',
+  'home.designedBy': 'வடிவமைத்து உருவாக்கியவர்',
+  'home.feedbackVia': 'கருத்தை அனுப்புங்கள்',
+  'home.shareMessage': 'சாதனா ரீடர் — பக்தியுடன் இந்து ஸ்தோத்திரங்களைப் படிக்க ஒரு டிஜிட்டல் புனித இடம்। {url}',
+
+  'common.back': 'பின்',
+  'common.share': 'பகிர்',
+  'common.returnHome': 'முகப்புக்குச் செல்',
+  'common.stotraNotFound': 'ஸ்தோத்திரம் கிடைக்கவில்லை',
+  'common.verses': '{count} ஸ்லோகங்கள்',
+  'common.min': '{count} நிமி',
+  'common.comingSoon': 'விரைவில் வரும்',
+  'common.verseOf': '{current} / {total}',
+  'common.whatsapp': 'WhatsApp',
+  'common.email': 'மின்னஞ்சல்',
+
+  'detail.readTimes': '{count} முறை படிக்கப்பட்டது',
+  'detail.readOnce': '{count} முறை படிக்கப்பட்டது',
+  'detail.benefits': 'பலன்கள்',
+  'detail.beginReading': 'படிக்கத் தொடங்குங்கள்',
+  'detail.shareMessage': 'சாதனா ரீடரில் {title} படியுங்கள்।\n{url}',
+  'detail.shareMessageBenefit': 'சாதனா ரீடரில் {title} படியுங்கள்।\n{benefit}।\n{url}',
+
+  'reader.readingComplete': 'படிப்பு முடிந்தது',
+  'reader.thankYou': 'சாதனா ரீடரில் {title} படித்ததற்கு நன்றி. இந்த சாதனை உங்கள் நாளில் அமைதி, பக்தி மற்றும் அருளைக் கொண்டு வரட்டும்.',
+  'reader.readAgain': 'மீண்டும் படிக்கவும்',
+
+  'settings.title': 'அமைப்புகள்',
+  'settings.fontSize': 'எழுத்து அளவு: {size}px',
+  'settings.deepamMode': 'தீபம் பயன்முறை',
+  'settings.deepamDesc': 'சூடான, விளக்கொளி இருண்ட தீம்',
+  'settings.hideSanskrit': 'சமஸ்கிருத ஸ்லோகங்களை மறை',
+  'settings.hideSanskritDesc': 'ஒலிபெயர்ப்பு மற்றும் பொருள் மட்டும் காட்டும்',
+  'settings.language': 'மொழி',
+};
+
+const ml: TranslationDict = {
+  'home.title': 'സാധനാ റീഡർ',
+  'home.subtitle': 'ധ്യാനത്തിനായുള്ള ഒരു ഡിജിറ്റൽ പുണ്യസ്ഥലം',
+  'home.recentlyAdded': 'അടുത്തിടെ ചേർത്തവ',
+  'home.comingSoon': 'ഉടൻ വരുന്നു',
+  'home.designedBy': 'രൂപകൽപ്പന ചെയ്ത് നിർമ്മിച്ചത്',
+  'home.feedbackVia': 'പ്രതികരണം അയയ്ക്കുക',
+  'home.shareMessage': 'സാധനാ റീഡർ — ഭക്തിയോടെ ഹിന്ദു സ്തോത്രങ്ങൾ വായിക്കാനുള്ള ഡിജിറ്റൽ പുണ്യസ്ഥലം। {url}',
+
+  'common.back': 'പിന്നോട്ട്',
+  'common.share': 'പങ്കിടുക',
+  'common.returnHome': 'ഹോമിലേക്ക് മടങ്ങുക',
+  'common.stotraNotFound': 'സ്തോത്രം കണ്ടെത്തിയില്ല',
+  'common.verses': '{count} ശ്ലോകങ്ങൾ',
+  'common.min': '{count} മിനി',
+  'common.comingSoon': 'ഉടൻ വരുന്നു',
+  'common.verseOf': '{current} / {total}',
+  'common.whatsapp': 'WhatsApp',
+  'common.email': 'ഇമെയിൽ',
+
+  'detail.readTimes': '{count} തവണ വായിച്ചു',
+  'detail.readOnce': '{count} തവണ വായിച്ചു',
+  'detail.benefits': 'ഗുണങ്ങൾ',
+  'detail.beginReading': 'വായന ആരംഭിക്കുക',
+  'detail.shareMessage': 'സാധനാ റീഡറിൽ {title} വായിക്കുക।\n{url}',
+  'detail.shareMessageBenefit': 'സാധനാ റീഡറിൽ {title} വായിക്കുക।\n{benefit}।\n{url}',
+
+  'reader.readingComplete': 'വായന പൂർത്തിയായി',
+  'reader.thankYou': 'സാധനാ റീഡറിൽ {title} വായിച്ചതിന് നന്ദി. ഈ സാധന നിങ്ങളുടെ ദിവസത്തിൽ സമാധാനവും ഭക്തിയും കൃപയും നൽകട്ടെ.',
+  'reader.readAgain': 'വീണ്ടും വായിക്കുക',
+
+  'settings.title': 'ക്രമീകരണങ്ങൾ',
+  'settings.fontSize': 'അക്ഷര വലുപ്പം: {size}px',
+  'settings.deepamMode': 'ദീപം മോഡ്',
+  'settings.deepamDesc': 'ചൂടുള്ള, വിളക്കൊളി ഇരുണ്ട തീം',
+  'settings.hideSanskrit': 'സംസ്കൃത ശ്ലോകങ്ങൾ മറയ്ക്കുക',
+  'settings.hideSanskritDesc': 'ലിപ്യന്തരണവും അർത്ഥവും മാത്രം കാണിക്കുന്നു',
+  'settings.language': 'ഭാഷ',
+};
+
+export const translations: Record<Language, TranslationDict> = {
+  en,
+  hi,
+  te,
+  ta,
+  ml,
+};

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import type { Stotra } from '../data/stotras';
 import StotraIcon from './StotraIcon';
+import { useTranslation } from '../i18n/useTranslation';
 
 interface StotraCardProps {
   stotra: Stotra;
@@ -11,6 +12,7 @@ interface StotraCardProps {
 const sacredEase = [0.76, 0, 0.24, 1] as const;
 
 export default function StotraCard({ stotra, index, onClick }: StotraCardProps) {
+  const { t } = useTranslation();
   return (
     <motion.button
       className="relative w-full h-full text-left rounded-2xl overflow-hidden group focus:outline-none focus:ring-2 focus:ring-saffron"
@@ -75,7 +77,7 @@ export default function StotraCard({ stotra, index, onClick }: StotraCardProps) 
           className="font-hind text-sm mb-2"
           style={{ color: 'var(--color-text-secondary)' }}
         >
-          {stotra.deity} &middot; {stotra.estimatedMinutes} min
+          {stotra.deity} &middot; {t('common.min', { count: stotra.estimatedMinutes })}
         </p>
 
         {/* Spacer pushes badge to bottom */}
@@ -89,7 +91,7 @@ export default function StotraCard({ stotra, index, onClick }: StotraCardProps) 
             color: 'var(--color-accent-primary)',
           }}
         >
-          {stotra.verses.length} verses
+          {t('common.verses', { count: stotra.verses.length })}
         </span>
       </div>
 
