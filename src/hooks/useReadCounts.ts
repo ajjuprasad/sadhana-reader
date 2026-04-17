@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { db } from '../lib/firebase';
 import { ref, runTransaction, onValue } from 'firebase/database';
 
-const DB_PATH = 'readings';
+const DB_PATH = 'readCounts';
 
 export function useReadCount(stotraId: string | undefined, shouldIncrement = false) {
   const [count, setCount] = useState(0);
