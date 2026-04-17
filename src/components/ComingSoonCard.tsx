@@ -84,8 +84,8 @@ export default function ComingSoonCard({
 
         {/* Deity */}
         <p
-          className="font-label font-medium text-xs uppercase mb-2"
-          style={{ color: 'var(--color-text-secondary)', letterSpacing: '0.12em' }}
+          className="font-label font-medium uppercase mb-2"
+          style={{ fontSize: '0.6rem', color: 'var(--color-text-secondary)', letterSpacing: '0.12em' }}
         >
           {stotra.deity}
         </p>
@@ -94,8 +94,9 @@ export default function ComingSoonCard({
 
         {/* Coming soon badge */}
         <span
-          className="inline-block font-label font-medium text-xs uppercase px-2.5 py-0.5 rounded-full self-start"
+          className="inline-block font-label font-medium uppercase px-2.5 py-0.5 rounded-full self-start"
           style={{
+            fontSize: '0.6rem',
             backgroundColor: 'rgba(0,0,0,0.05)',
             color: 'var(--color-text-muted)',
           }}

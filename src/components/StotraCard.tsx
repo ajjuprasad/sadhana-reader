@@ -74,8 +74,8 @@ export default function StotraCard({ stotra, index, onClick }: StotraCardProps) 
 
         {/* Deity & duration */}
         <p
-          className="font-label font-medium text-xs uppercase mb-2"
-          style={{ color: 'var(--color-text-secondary)', letterSpacing: '0.12em' }}
+          className="font-label font-medium uppercase mb-2"
+          style={{ fontSize: '0.6rem', color: 'var(--color-text-secondary)', letterSpacing: '0.12em' }}
         >
           {stotra.deity} &middot; {t('common.min', { count: stotra.estimatedMinutes })}
         </p>
@@ -85,8 +85,9 @@ export default function StotraCard({ stotra, index, onClick }: StotraCardProps) 
 
         {/* Verse count badge — pinned to bottom */}
         <span
-          className="inline-block font-label font-medium text-xs uppercase px-2.5 py-0.5 rounded-full self-start"
+          className="inline-block font-label font-medium uppercase px-2.5 py-0.5 rounded-full self-start"
           style={{
+            fontSize: '0.6rem',
             letterSpacing: '0.08em',
             backgroundColor: 'rgba(255,153,51,0.12)',
             color: 'var(--color-accent-primary)',
