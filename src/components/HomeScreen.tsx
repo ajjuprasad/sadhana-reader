@@ -6,6 +6,7 @@ import StotraCard from './StotraCard';
 import ComingSoonCard from './ComingSoonCard';
 import SettingsDrawer from './SettingsDrawer';
 import type { useSettings } from '../hooks/useSettings';
+import { useTranslation } from '../i18n/useTranslation';
 
 const sacredEase = [0.76, 0, 0.24, 1] as const;
 
@@ -16,6 +17,7 @@ interface HomeScreenProps {
 export default function HomeScreen({ settingsState }: HomeScreenProps) {
   const navigate = useNavigate();
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const { t } = useTranslation();
   const {
     settings,
     updateFontSize,
@@ -31,7 +33,7 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
         <a
           href={(() => {
             const baseUrl = window.location.href.split('#')[0];
-            const message = `Discover Sādhanā Reader — a digital sanctum for reading Hindu stotras with devotion. ${baseUrl}`;
+            const message = t('home.shareMessage', { url: baseUrl });
             return `https://wa.me/?text=${encodeURIComponent(message)}`;
           })()}
           target="_blank"
@@ -104,13 +106,13 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
           className="font-display font-black text-3xl sm:text-4xl tracking-tight mb-2"
           style={{ color: 'var(--color-text-primary)' }}
         >
-          Sādhanā Reader
+          {t('home.title')}
         </h1>
         <p
           className="font-body text-sm mt-2 italic"
           style={{ color: 'var(--color-text-muted)' }}
         >
-          A digital sanctum for contemplation
+          {t('home.subtitle')}
         </p>
       </motion.header>
 
@@ -146,7 +148,7 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
               letterSpacing: '0.18em',
             }}
           >
-            Recently Added
+            {t('home.recentlyAdded')}
           </h2>
           <div
             className="flex-1 h-px"
@@ -218,7 +220,7 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
                 letterSpacing: '0.18em',
               }}
             >
-              Coming soon
+              {t('home.comingSoon')}
             </h2>
             <div
               className="flex-1 h-px"
@@ -249,7 +251,7 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
           className="font-hind text-xs mb-3"
           style={{ color: 'var(--color-text-muted)' }}
         >
-          Designed & built by{' '}
+          {t('home.designedBy')}{' '}
           <a
             href="https://www.linkedin.com/in/ajjuprasad"
             target="_blank"
@@ -264,7 +266,7 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
           className="font-hind text-xs"
           style={{ color: 'var(--color-text-muted)' }}
         >
-          Send feedback via{' '}
+          {t('home.feedbackVia')}{' '}
           <a
             href="https://wa.me/919513097770?text=Hi%20Ajay%2C%20I%20have%20feedback%20on%20Sadhana%20Reader%3A%20"
             target="_blank"
@@ -272,7 +274,7 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
             className="underline hover:opacity-80 transition-opacity"
             style={{ color: 'var(--color-accent-primary)' }}
           >
-            WhatsApp
+            {t('common.whatsapp')}
           </a>
           {' · '}
           <a
@@ -280,7 +282,7 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
             className="underline hover:opacity-80 transition-opacity"
             style={{ color: 'var(--color-accent-primary)' }}
           >
-            Email
+            {t('common.email')}
           </a>
         </p>
       </motion.footer>

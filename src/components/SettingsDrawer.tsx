@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import type { Settings } from '../hooks/useSettings';
 import type { Language } from '../hooks/useSettings';
+import { useTranslation } from '../i18n/useTranslation';
 
 const LANGUAGES: { code: Language; label: string }[] = [
   { code: 'en', label: 'English' },
@@ -31,6 +32,7 @@ export default function SettingsDrawer({
   onToggleHideSanskrit,
   onLanguageChange,
 }: SettingsDrawerProps) {
+  const { t } = useTranslation();
   return (
     <AnimatePresence>
       {isOpen && (
@@ -74,7 +76,7 @@ export default function SettingsDrawer({
                 className="font-display font-bold text-xl"
                 style={{ color: 'var(--color-text-primary)' }}
               >
-                Settings
+                {t('settings.title')}
               </h2>
               <button
                 onClick={onClose}
@@ -104,7 +106,7 @@ export default function SettingsDrawer({
                 className="block font-hind font-semibold text-sm mb-3"
                 style={{ color: 'var(--color-text-secondary)' }}
               >
-                Font Size: {settings.fontSize}px
+                {t('settings.fontSize', { size: settings.fontSize })}
               </label>
               <input
                 type="range"
@@ -146,13 +148,13 @@ export default function SettingsDrawer({
                     className="font-hind font-semibold text-sm"
                     style={{ color: 'var(--color-text-primary)' }}
                   >
-                    Deepam Mode
+                    {t('settings.deepamMode')}
                   </p>
                   <p
                     className="font-hind text-xs"
                     style={{ color: 'var(--color-text-muted)' }}
                   >
-                    Warm, lamp-lit dark theme
+                    {t('settings.deepamDesc')}
                   </p>
                 </div>
               </div>
@@ -189,13 +191,13 @@ export default function SettingsDrawer({
                   className="font-hind font-semibold text-sm"
                   style={{ color: 'var(--color-text-primary)' }}
                 >
-                  Hide Sanskrit Verses
+                  {t('settings.hideSanskrit')}
                 </p>
                 <p
                   className="font-hind text-xs"
                   style={{ color: 'var(--color-text-muted)' }}
                 >
-                  Shows only transliteration and meaning
+                  {t('settings.hideSanskritDesc')}
                 </p>
               </div>
               <button
@@ -228,7 +230,7 @@ export default function SettingsDrawer({
                 className="block font-hind font-semibold text-sm mb-3"
                 style={{ color: 'var(--color-text-secondary)' }}
               >
-                Language
+                {t('settings.language')}
               </label>
               <div className="flex flex-wrap gap-2">
                 {LANGUAGES.map((lang) => (

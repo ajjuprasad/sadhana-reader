@@ -1,9 +1,12 @@
+import { useTranslation } from '../i18n/useTranslation';
+
 interface MalaBeadProps {
   totalVerses: number;
   currentVerse: number;
 }
 
 export default function MalaBead({ totalVerses, currentVerse }: MalaBeadProps) {
+  const { t } = useTranslation();
   const maxBeads = 21;
 
   // Map verse indices to bead indices proportionally if more than maxBeads
@@ -67,7 +70,7 @@ export default function MalaBead({ totalVerses, currentVerse }: MalaBeadProps) {
         className="text-xs font-hind"
         style={{ color: 'var(--color-text-muted)' }}
       >
-        {currentVerse + 1} of {totalVerses}
+        {t('common.verseOf', { current: currentVerse + 1, total: totalVerses })}
       </span>
     </div>
   );
