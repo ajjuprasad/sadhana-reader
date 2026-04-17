@@ -34,10 +34,13 @@ export function useSettings() {
   }, [settings]);
 
   useEffect(() => {
+    const isDark = settings.deepamMode;
     document.documentElement.setAttribute(
       'data-theme',
-      settings.deepamMode ? 'deepam' : 'light'
+      isDark ? 'deepam' : 'light'
     );
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', isDark ? '#1A1208' : '#FFF8E1');
   }, [settings.deepamMode]);
 
   const updateFontSize = useCallback((size: number) => {
