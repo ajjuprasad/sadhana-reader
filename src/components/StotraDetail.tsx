@@ -23,7 +23,8 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
     settings,
     updateFontSize,
     toggleDeepamMode,
-    toggleContemplationMode,
+    toggleHideSanskrit,
+    setLanguage,
   } = settingsState;
 
   if (!stotra) {
@@ -328,7 +329,8 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
         settings={settings}
         onFontSizeChange={updateFontSize}
         onToggleDeepam={toggleDeepamMode}
-        onToggleContemplation={toggleContemplationMode}
+        onToggleHideSanskrit={toggleHideSanskrit}
+        onLanguageChange={setLanguage}
       />
     </div>
   );

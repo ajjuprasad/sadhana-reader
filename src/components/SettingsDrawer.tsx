@@ -1,5 +1,14 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import type { Settings } from '../hooks/useSettings';
+import type { Language } from '../hooks/useSettings';
+
+const LANGUAGES: { code: Language; label: string }[] = [
+  { code: 'en', label: 'English' },
+  { code: 'hi', label: 'हिन्दी' },
+  { code: 'te', label: 'తెలుగు' },
+  { code: 'ta', label: 'தமிழ்' },
+  { code: 'ml', label: 'മലയാളം' },
+];
 
 interface SettingsDrawerProps {
   isOpen: boolean;
@@ -7,7 +16,8 @@ interface SettingsDrawerProps {
   settings: Settings;
   onFontSizeChange: (size: number) => void;
   onToggleDeepam: () => void;
-  onToggleContemplation: () => void;
+  onToggleHideSanskrit: () => void;
+  onLanguageChange: (lang: Language) => void;
 }
 
 const sacredEase = [0.76, 0, 0.24, 1] as const;
@@ -18,7 +28,8 @@ export default function SettingsDrawer({
   settings,
   onFontSizeChange,
   onToggleDeepam,
-  onToggleContemplation,
+  onToggleHideSanskrit,
+  onLanguageChange,
 }: SettingsDrawerProps) {
   return (
     <AnimatePresence>
@@ -171,44 +182,80 @@ export default function SettingsDrawer({
               </button>
             </div>
 
-            {/* Contemplation Mode */}
-            <div className="flex items-center justify-between py-3">
+            {/* Hide Sanskrit Verses */}
+            <div className="flex items-center justify-between py-3 mb-6">
               <div>
                 <p
                   className="font-hind font-semibold text-sm"
                   style={{ color: 'var(--color-text-primary)' }}
                 >
-                  Contemplation Mode
+                  Hide Sanskrit Verses
                 </p>
                 <p
                   className="font-hind text-xs"
                   style={{ color: 'var(--color-text-muted)' }}
                 >
-                  Shows only Sanskrit and meaning
+                  Shows only transliteration and meaning
                 </p>
               </div>
               <button
-                onClick={onToggleContemplation}
+                onClick={onToggleHideSanskrit}
                 className="relative w-12 h-7 rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-saffron"
                 style={{
-                  backgroundColor: settings.contemplationMode
+                  backgroundColor: settings.hideSanskrit
                     ? 'var(--color-accent-primary)'
                     : 'var(--color-text-muted)',
-                  opacity: settings.contemplationMode ? 1 : 0.4,
+                  opacity: settings.hideSanskrit ? 1 : 0.4,
                 }}
                 role="switch"
-                aria-checked={settings.contemplationMode}
-                aria-label="Toggle Contemplation Mode"
+                aria-checked={settings.hideSanskrit}
+                aria-label="Toggle Hide Sanskrit Verses"
               >
                 <span
                   className="absolute top-0.5 left-0.5 w-6 h-6 rounded-full bg-white shadow-md transition-transform duration-300"
                   style={{
-                    transform: settings.contemplationMode
+                    transform: settings.hideSanskrit
                       ? 'translateX(20px)'
                       : 'translateX(0)',
                   }}
                 />
               </button>
+            </div>
+
+            {/* Language */}
+            <div className="py-3">
+              <label
+                className="block font-hind font-semibold text-sm mb-3"
+                style={{ color: 'var(--color-text-secondary)' }}
+              >
+                Language
+              </label>
+              <div className="flex flex-wrap gap-2">
+                {LANGUAGES.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => onLanguageChange(lang.code)}
+                    className="px-4 py-2 rounded-full font-hind text-sm transition-all duration-200"
+                    style={{
+                      backgroundColor:
+                        settings.language === lang.code
+                          ? 'var(--color-accent-primary)'
+                          : 'transparent',
+                      color:
+                        settings.language === lang.code
+                          ? '#fff'
+                          : 'var(--color-text-secondary)',
+                      border:
+                        settings.language === lang.code
+                          ? '1px solid var(--color-accent-primary)'
+                          : '1px solid var(--color-text-muted)',
+                      opacity: settings.language === lang.code ? 1 : 0.7,
+                    }}
+                  >
+                    {lang.label}
+                  </button>
+                ))}
+              </div>
             </div>
           </motion.div>
         </>

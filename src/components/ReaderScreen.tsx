@@ -27,7 +27,8 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
     settings,
     updateFontSize,
     toggleDeepamMode,
-    toggleContemplationMode,
+    toggleHideSanskrit,
+    setLanguage,
   } = settingsState;
 
   const totalVerses = stotra?.verses.length ?? 0;
@@ -326,7 +327,7 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
                 <VerseCard
                   verse={verse}
                   fontSize={settings.fontSize}
-                  contemplationMode={settings.contemplationMode}
+                  hideSanskrit={settings.hideSanskrit}
                   onSwipeLeft={nextVerse}
                   onSwipeRight={prevVerse}
                 />
@@ -356,7 +357,8 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
         settings={settings}
         onFontSizeChange={updateFontSize}
         onToggleDeepam={toggleDeepamMode}
-        onToggleContemplation={toggleContemplationMode}
+        onToggleHideSanskrit={toggleHideSanskrit}
+        onLanguageChange={setLanguage}
       />
     </div>
   );

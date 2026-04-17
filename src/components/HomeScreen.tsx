@@ -20,7 +20,8 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
     settings,
     updateFontSize,
     toggleDeepamMode,
-    toggleContemplationMode,
+    toggleHideSanskrit,
+    setLanguage,
   } = settingsState;
 
   return (
@@ -291,7 +292,8 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
         settings={settings}
         onFontSizeChange={updateFontSize}
         onToggleDeepam={toggleDeepamMode}
-        onToggleContemplation={toggleContemplationMode}
+        onToggleHideSanskrit={toggleHideSanskrit}
+        onLanguageChange={setLanguage}
       />
     </div>
   );

@@ -4,7 +4,7 @@ import type { Verse } from '../data/stotras';
 interface VerseCardProps {
   verse: Verse;
   fontSize: number;
-  contemplationMode: boolean;
+  hideSanskrit: boolean;
   onSwipeLeft: () => void;
   onSwipeRight: () => void;
 }
@@ -14,7 +14,7 @@ const sacredEase = [0.76, 0, 0.24, 1] as const;
 export default function VerseCard({
   verse,
   fontSize,
-  contemplationMode,
+  hideSanskrit,
   onSwipeLeft,
   onSwipeRight,
 }: VerseCardProps) {
@@ -66,68 +66,68 @@ export default function VerseCard({
         )}
 
         {/* Sanskrit text */}
-        <div
-          className="font-sanskrit text-center mb-4 leading-relaxed"
-          lang="sa"
-          style={{
-            fontSize: `${fontSize * 0.08}rem`,
-            lineHeight: 2.2,
-            color: 'var(--color-text-primary)',
-          }}
-        >
-          {verse.sanskrit}
-        </div>
-
-        {/* Decorative divider 1 */}
-        <div className="flex items-center justify-center gap-2 my-4">
+        {!hideSanskrit && (
           <div
-            className="h-px w-12"
-            style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
-          />
-          <span
-            className="text-sm"
-            style={{ color: 'var(--color-accent-primary)', opacity: 0.4 }}
-          >
-            ॐ
-          </span>
-          <div
-            className="h-px w-12"
-            style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
-          />
-        </div>
-
-        {/* Transliteration */}
-        {!contemplationMode && (
-          <motion.p
-            className="font-translit text-center mb-4"
+            className="font-sanskrit text-center mb-4 leading-relaxed"
+            lang="sa"
             style={{
-              fontSize: `${fontSize * 0.053}rem`,
-              color: 'var(--color-text-secondary)',
-              lineHeight: 1.8,
+              fontSize: `${fontSize * 0.08}rem`,
+              lineHeight: 2.2,
+              color: 'var(--color-text-primary)',
             }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.3 }}
           >
-            {verse.transliteration}
-          </motion.p>
-        )}
-
-        {/* Decorative divider 2 */}
-        {!contemplationMode && (
-          <div className="flex items-center justify-center gap-1.5 my-4">
-            {[0, 1, 2].map((i) => (
-              <div
-                key={i}
-                className="w-1 h-1 rounded-full"
-                style={{
-                  backgroundColor: 'var(--color-accent-gold)',
-                  opacity: 0.4,
-                }}
-              />
-            ))}
+            {verse.sanskrit}
           </div>
         )}
+
+        {/* Decorative divider 1 */}
+        {!hideSanskrit && (
+          <div className="flex items-center justify-center gap-2 my-4">
+            <div
+              className="h-px w-12"
+              style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
+            />
+            <span
+              className="text-sm"
+              style={{ color: 'var(--color-accent-primary)', opacity: 0.4 }}
+            >
+              ॐ
+            </span>
+            <div
+              className="h-px w-12"
+              style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
+            />
+          </div>
+        )}
+
+        {/* Transliteration */}
+        <motion.p
+          className="font-translit text-center mb-4"
+          style={{
+            fontSize: `${fontSize * 0.053}rem`,
+            color: 'var(--color-text-secondary)',
+            lineHeight: 1.8,
+          }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        >
+          {verse.transliteration}
+        </motion.p>
+
+        {/* Decorative divider 2 */}
+        <div className="flex items-center justify-center gap-1.5 my-4">
+          {[0, 1, 2].map((i) => (
+            <div
+              key={i}
+              className="w-1 h-1 rounded-full"
+              style={{
+                backgroundColor: 'var(--color-accent-gold)',
+                opacity: 0.4,
+              }}
+            />
+          ))}
+        </div>
 
         {/* English meaning */}
         <motion.p
