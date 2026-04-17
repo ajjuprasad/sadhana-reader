@@ -52,7 +52,6 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
         className="sticky top-0 z-30 flex items-center justify-between px-4 py-3"
         style={{
           backgroundColor: 'var(--color-bg)',
-          borderBottom: '1px solid rgba(0,0,0,0.06)',
         }}
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
