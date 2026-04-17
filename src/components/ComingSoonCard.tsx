@@ -91,18 +91,6 @@ export default function ComingSoonCard({
         </p>
 
         <div className="flex-1" />
-
-        {/* Coming soon badge */}
-        <span
-          className="inline-block font-label font-medium uppercase px-2.5 py-0.5 rounded-full self-start"
-          style={{
-            fontSize: '0.6rem',
-            backgroundColor: 'rgba(0,0,0,0.05)',
-            color: 'var(--color-text-muted)',
-          }}
-        >
-          {t('common.comingSoon')}
-        </span>
       </div>
     </motion.div>
   );
