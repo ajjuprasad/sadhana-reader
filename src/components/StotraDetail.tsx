@@ -221,14 +221,12 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
           </div>
 
           {/* Read count */}
-          {readCount > 0 && (
-            <p
-              className="font-hind text-xs mb-4"
-              style={{ color: 'var(--color-text-muted)' }}
-            >
-              Read {readCount} {readCount === 1 ? 'time' : 'times'}
-            </p>
-          )}
+          <p
+            className="font-hind text-xs mb-4"
+            style={{ color: 'var(--color-text-muted)' }}
+          >
+            Read {readCount} {readCount === 1 ? 'time' : 'times'}
+          </p>
 
           {/* Description */}
           <p
