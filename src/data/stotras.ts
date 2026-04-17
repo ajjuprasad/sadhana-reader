@@ -1941,6 +1941,56 @@ const adityaHridayaStotram: Stotra = {
       meaning:
         'It is the most auspicious of all auspicious things, the destroyer of all sins, the dispeller of all worry and grief, and the supreme bestower of long life.',
     },
+    {
+      id: 6,
+      verseLabel: 'Shloka 6',
+      sanskrit:
+        'रश्मिमन्तं समुद्यन्तं देवासुरनमस्कृतम्।\nपूजयस्व विवस्वन्तं भास्करं भुवनेश्वरम्॥',
+      transliteration:
+        'Raśmimantaṁ samudyantaṁ devāsura-namaskṛtam.\nPūjayasva vivasvantaṁ bhāskaraṁ bhuvaneśvaram.',
+      meaning:
+        'Worship the radiant one who rises with splendor, saluted by gods and demons alike — Vivasvan, the light-maker, the lord of all worlds.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Shloka 7',
+      sanskrit:
+        'सर्वदेवात्मको ह्येष तेजस्वी रश्मिभावनः।\nएष देवासुरगणान् लोकान् पाति गभस्तिभिः॥',
+      transliteration:
+        'Sarva-devātmako hy eṣa tejasvī raśmi-bhāvanaḥ.\nEṣa devāsura-gaṇān lokān pāti gabhastibhiḥ.',
+      meaning:
+        'He is the self of all the gods, resplendent, the source of all rays. He protects the hosts of gods and demons and all the worlds with his beams.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Shloka 8',
+      sanskrit:
+        'एष ब्रह्मा च विष्णुश्च शिवः स्कन्दः प्रजापतिः।\nमहेन्द्रो धनदः कालो यमः सोमो ह्यपां पतिः॥',
+      transliteration:
+        'Eṣa Brahmā ca Viṣṇuś ca Śivaḥ Skandaḥ Prajāpatiḥ.\nMahendro Dhanadaḥ Kālo Yamaḥ Somo hy apāṁ patiḥ.',
+      meaning:
+        'He is Brahma, Vishnu, Shiva, Skanda, and Prajapati. He is Mahendra, Kubera, Kala (Time), Yama, Soma, and the lord of the waters.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Shloka 9',
+      sanskrit:
+        'पितरो वसवः साध्या ह्यश्विनौ मरुतो मनुः।\nवायुर्वह्निः प्रजाप्राणा ऋतुकर्ता प्रभाकरः॥',
+      transliteration:
+        'Pitaro Vasavaḥ Sādhyā hy Aśvinau Maruto Manuḥ.\nVāyur Vahniḥ prajā-prāṇā ṛtu-kartā prabhākaraḥ.',
+      meaning:
+        'He is the Pitris, the Vasus, the Sadhyas, the Ashvins, the Maruts, and Manu. He is Vayu, Agni, the life-breath of all beings, the maker of seasons, and the source of light.',
+    },
+    {
+      id: 10,
+      verseLabel: 'Shloka 10',
+      sanskrit:
+        'आदित्यः सविता सूर्यः खगः पूषा गभस्तिमान्।\nसुवर्णसदृशो भानुर्हिरण्यरेता दिवाकरः॥',
+      transliteration:
+        'Ādityaḥ Savitā Sūryaḥ Khagaḥ Pūṣā Gabhastimān.\nSuvarṇa-sadṛśo Bhānur Hiraṇya-retā Divākaraḥ.',
+      meaning:
+        'He is Aditya, Savita, Surya, Khaga, Pusha, and Gabhastiman. He is golden-hued Bhanu, Hiranyareta (of golden seed), and Divakara (maker of day).',
+    },
   ],
 };
 
