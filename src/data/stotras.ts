@@ -1580,7 +1580,7 @@ const venkateswaraSuprabhatam: Stotra = {
     'Bestows prosperity, peace, and divine protection',
     'Awakens devotion and sanctifies the home at dawn',
   ],
-  estimatedMinutes: 4,
+  estimatedMinutes: 8,
   icon: '',
   verses: [
     {
@@ -1832,6 +1832,46 @@ const venkateswaraSuprabhatam: Stotra = {
         "Elā-lavaṅga-ghanasāra-sugandhi-tīrthaṁ divyaṁ viyat-sariti hema-ghaṭeṣu pūrṇam.\nDhṛtvā''dya vaidika-śikhāmaṇayaḥ prahṛṣṭāḥ tiṣṭhanti Veṅkaṭapate tava suprabhātam.",
       meaning:
         'Having filled golden vessels with the divine, fragrant water of the celestial river — perfumed with cardamom, clove, and camphor — the foremost of Vedic scholars stand rejoicing. O Lord of Venkata, may this dawn be auspicious for You.',
+    },
+    {
+      id: 26,
+      verseLabel: 'Shloka 26',
+      sanskrit:
+        'भास्वानुदेति विकचानि सरोरुहाणि सम्पूरयन्ति निनदैः ककुभो विहङ्गाः।\nश्रीवैष्णवास्सततमर्थितमङ्गलास्ते धामाश्रयन्ति तव वेङ्कट सुप्रभातम्॥',
+      transliteration:
+        'Bhāsvān udeti vikacāni saroruhāṇi sampūrayanti ninadaiḥ kakubho vihaṅgāḥ.\nŚrī-vaiṣṇavās satataṁ arthita-maṅgalās te dhāmāśrayanti tava Veṅkaṭa suprabhātam.',
+      meaning:
+        'The sun rises and the lotuses bloom; birds fill the quarters with their songs. The Srivaishnavas, ever seeking auspiciousness, throng to Your abode. O Venkata, may this dawn be auspicious for You.',
+    },
+    {
+      id: 27,
+      verseLabel: 'Shloka 27',
+      sanskrit:
+        'ब्रह्मादयस्सुरवरास्समहर्षयस्ते सन्तस्सनन्दनमुखास्त्वथ योगिवर्याः।\nधामान्तिके तव हि मङ्गलवस्तुहस्ताः श्रीवेङ्कटाचलपते तव सुप्रभातम्॥',
+      transliteration:
+        'Brahmādayas sura-varās samaharṣayas te santas sanandana-mukhās tvatha yogivaryāḥ.\nDhāmāntike tava hi maṅgala-vastu-hastāḥ Śrī-Veṅkaṭācalapate tava suprabhātam.',
+      meaning:
+        'Brahma and the chief gods, the great sages, the saints led by Sanandana, and the foremost yogis — all stand near Your abode with auspicious offerings in hand. O Lord of Venkata Hill, may this dawn be auspicious for You.',
+    },
+    {
+      id: 28,
+      verseLabel: 'Shloka 28',
+      sanskrit:
+        'लक्ष्मीनिवास निरवद्यगुणैकसिन्धो संसारसागरसमुत्तरणैकसेतो।\nवेदान्तवेद्य निजवैभव भक्तभोग्य श्रीवेङ्कटाचलपते तव सुप्रभातम्॥',
+      transliteration:
+        'Lakṣmī-nivāsa niravadya-guṇaika-sindho saṁsāra-sāgara-samuttaraṇaika-seto.\nVedānta-vedya nija-vaibhava bhakta-bhogya Śrī-Veṅkaṭācalapate tava suprabhātam.',
+      meaning:
+        'O abode of Lakshmi, sole ocean of flawless virtues, sole bridge for crossing the ocean of worldly existence! Knowable through Vedanta, whose own glory is enjoyed by devotees — O Lord of Venkata Hill, may this dawn be auspicious for You.',
+    },
+    {
+      id: 29,
+      verseLabel: 'Shloka 29',
+      sanskrit:
+        'इत्थं वृषाचलपतेरिह सुप्रभातम् ये मानवाः प्रतिदिनं पठितुं प्रवृत्ताः।\nतेषां प्रभातसमये स्मृतिरङ्गभाजां प्रज्ञां परार्थसुलभां परमां प्रसूते॥',
+      transliteration:
+        'Itthaṁ vṛṣācalapateriha suprabhātam ye mānavāḥ pratidinaṁ paṭhituṁ pravṛttāḥ.\nTeṣāṁ prabhāta-samaye smṛtir aṅga-bhājāṁ prajñāṁ parārtha-sulabhāṁ paramāṁ prasūte.',
+      meaning:
+        'Those who daily recite this Suprabhatam of the Lord of Vrishachala — in them, at the break of dawn, memory gives birth to the supreme wisdom that easily bestows the highest goal.',
     },
   ],
 };
