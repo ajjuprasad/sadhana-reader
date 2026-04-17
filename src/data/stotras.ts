@@ -2091,6 +2091,56 @@ const adityaHridayaStotram: Stotra = {
       meaning:
         'Salutations to the destroyer of darkness, the destroyer of cold, the destroyer of enemies, and the one of immeasurable nature. Salutations to the slayer of the ungrateful, the god who is the lord of all luminaries.',
     },
+    {
+      id: 21,
+      verseLabel: 'Shloka 21',
+      sanskrit:
+        'तप्तचामीकराभाय वह्नये विश्वकर्मणे।\nनमस्तमोऽभिनिघ्नाय रुचये लोकसाक्षिणे॥',
+      transliteration:
+        "Tapta-cāmīkarābhāya vahnaye viśvakarmaṇe.\nNamas tamo'bhinighnāya rucaye loka-sākṣiṇe.",
+      meaning:
+        'Salutations to the one who shines like molten gold, the fire, the cosmic architect. Salutations to the vanquisher of darkness, the radiant one, the witness of the world.',
+    },
+    {
+      id: 22,
+      verseLabel: 'Shloka 22',
+      sanskrit:
+        'नाशयत्येष वै भूतं तदेव सृजति प्रभुः।\nपायत्येष तपत्येष वर्षत्येष गभस्तिभिः॥',
+      transliteration:
+        'Nāśayaty eṣa vai bhūtaṁ tad eva sṛjati prabhuḥ.\nPāyaty eṣa tapaty eṣa varṣaty eṣa gabhastibhiḥ.',
+      meaning:
+        'This Lord destroys all beings and creates them again. He nourishes, he scorches, and he sends forth rain through his rays.',
+    },
+    {
+      id: 23,
+      verseLabel: 'Shloka 23',
+      sanskrit:
+        'एष सुप्तेषु जागर्ति भूतेषु परिनिष्ठितः।\nएष एवाग्निहोत्रं च फलं चैवाग्निहोत्रिणाम्॥',
+      transliteration:
+        'Eṣa supteṣu jāgarti bhūteṣu pariniṣṭhitaḥ.\nEṣa evāgnihotraṁ ca phalaṁ caivāgnihotriṇām.',
+      meaning:
+        'He remains awake when all beings sleep, abiding in all creatures. He himself is the Agnihotra sacrifice and the fruit of those who perform the Agnihotra.',
+    },
+    {
+      id: 24,
+      verseLabel: 'Shloka 24',
+      sanskrit:
+        'वेदाश्च क्रतवश्चैव क्रतूनां फलमेव च।\nयानि कृत्यानि लोकेषु सर्वेषु परमप्रभुः॥',
+      transliteration:
+        'Vedāś ca kratavaś caiva kratūnāṁ phalam eva ca.\nYāni kṛtyāni lokeṣu sarveṣu paramaprabhūḥ.',
+      meaning:
+        'He is the Vedas, the sacrifices, and the fruit of all sacrifices. He is the supreme lord of all activities performed in all the worlds.',
+    },
+    {
+      id: 25,
+      verseLabel: 'Shloka 25',
+      sanskrit:
+        'एनमापत्सु कृच्छ्रेषु कान्तारेषु भयेषु च।\nकीर्तयन् पुरुषः कश्चिन्नावसीदति राघव॥',
+      transliteration:
+        'Enam āpatsu kṛcchreṣu kāntāreṣu bhayeṣu ca.\nKīrtayan puruṣaḥ kaścin nāvasīdati Rāghava.',
+      meaning:
+        'O Raghava, whoever glorifies this Sun god in times of danger, hardship, in wilderness, and in fear — that person never comes to grief.',
+    },
   ],
 };
 
