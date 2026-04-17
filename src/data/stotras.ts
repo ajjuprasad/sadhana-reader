@@ -2141,6 +2141,66 @@ const adityaHridayaStotram: Stotra = {
       meaning:
         'O Raghava, whoever glorifies this Sun god in times of danger, hardship, in wilderness, and in fear — that person never comes to grief.',
     },
+    {
+      id: 26,
+      verseLabel: 'Shloka 26',
+      sanskrit:
+        'पूजयस्वैनमेकाग्रो देवदेवं जगत्पतिम्।\nएतत् त्रिगुणितं जप्त्वा युद्धेषु विजयिष्यसि॥',
+      transliteration:
+        'Pūjayasvainam ekāgro devadevaṁ jagatpatim.\nEtat triguṇitaṁ japtvā yuddheṣu vijayiṣyasi.',
+      meaning:
+        'Worship this god of gods, the lord of the universe, with single-minded devotion. By reciting this hymn thrice, you shall be victorious in battle.',
+    },
+    {
+      id: 27,
+      verseLabel: 'Shloka 27',
+      sanskrit:
+        'अस्मिन् क्षणे महाबाहो रावणं त्वं वधिष्यसि।\nएवमुक्त्वा तदाऽगस्त्यो जगाम च यथागतम्॥',
+      transliteration:
+        "Asmin kṣaṇe mahābāho Rāvaṇaṁ tvaṁ vadhiṣyasi.\nEvam uktvā tadā'gastyo jagāma ca yathāgatam.",
+      meaning:
+        'At this very moment, O mighty-armed one, you shall slay Ravana. Having spoken thus, Sage Agastya departed the way he had come.',
+    },
+    {
+      id: 28,
+      verseLabel: 'Shloka 28',
+      sanskrit:
+        'एतच्छ्रुत्वा महातेजाः नष्टशोकोऽभवत्तदा।\nधारयामास सुप्रीतो राघवः प्रयतात्मवान्॥',
+      transliteration:
+        "Etac chrutvā mahātejāḥ naṣṭa-śoko'bhavat tadā.\nDhārayām āsa suprīto Rāghavaḥ prayatātmavān.",
+      meaning:
+        'Hearing this, the resplendent Rama was freed from sorrow. With a purified and joyful heart, Raghava absorbed the hymn within himself.',
+    },
+    {
+      id: 29,
+      verseLabel: 'Shloka 29',
+      sanskrit:
+        'आदित्यं प्रेक्ष्य जप्त्वा तु परं हर्षमवाप्तवान्।\nत्रिराचम्य शुचिर्भूत्वा धनुरादाय वीर्यवान्॥',
+      transliteration:
+        'Ādityaṁ prekṣya japtvā tu paraṁ harṣam avāptavān.\nTrirācamya śucir bhūtvā dhanur ādāya vīryavān.',
+      meaning:
+        'Gazing upon the Sun and reciting the hymn, he was filled with supreme joy. Having sipped water thrice for purification, the valiant one took up his bow.',
+    },
+    {
+      id: 30,
+      verseLabel: 'Shloka 30',
+      sanskrit:
+        'रावणं प्रेक्ष्य हृष्टात्मा युद्धाय समुपागमत्।\nसर्वयत्नेन महता वधे तस्य धृतोऽभवत्॥',
+      transliteration:
+        "Rāvaṇaṁ prekṣya hṛṣṭātmā yuddhāya samupāgamat.\nSarva-yatnena mahatā vadhe tasya dhṛto'bhavat.",
+      meaning:
+        'With an exultant heart, he faced Ravana and advanced to battle. With supreme effort and resolve, he became determined to slay him.',
+    },
+    {
+      id: 31,
+      verseLabel: 'Shloka 31',
+      sanskrit:
+        'अथ रविरवदन्निरीक्ष्य रामं मुदितमनाः परमं प्रहृष्यमाणः।\nनिशिचरपतिसंक्षयं विदित्वा सुरगणमध्यगतो वचस्त्वरेति॥',
+      transliteration:
+        'Atha ravir avadan nirīkṣya Rāmaṁ mudita-manāḥ paramaṁ prahṛṣyamāṇaḥ.\nNiśicara-pati-saṁkṣayaṁ viditvā sura-gaṇa-madhyagato vacas tvareti.',
+      meaning:
+        'Then the Sun god, gazing upon Rama with a delighted mind and supremely joyful, knowing that the destruction of the lord of the night-wanderers was at hand, spoke from amidst the gods: "Make haste!"',
+    },
   ],
 };
 
