@@ -140,29 +140,30 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
 
         <div className="space-y-3">
           {[
-            { title: 'Aditya Hridaya Stotram', date: 'Apr 17, 2026', description: '31 verses — the hymn to the Sun from Valmiki Ramayana' },
-            { title: 'Venkateswara Suprabhatam', date: 'Apr 13, 2026', description: '29 verses — the complete morning awakening hymn to Lord Venkateswara' },
+            { id: 'aditya-hridaya-stotram', title: 'Aditya Hridaya Stotram', date: 'Apr 17, 2026', description: '31 verses — the hymn to the Sun from Valmiki Ramayana' },
+            { id: 'venkateswara-suprabhatam', title: 'Venkateswara Suprabhatam', date: 'Apr 13, 2026', description: '29 verses — the complete morning awakening hymn to Lord Venkateswara' },
           ].map((item) => (
-            <motion.div
+            <motion.button
               key={item.title}
-              className="flex items-start gap-3 rounded-xl px-4 py-3"
+              onClick={() => navigate(`/stotra/${item.id}`)}
+              className="w-full flex items-center gap-3 rounded-xl px-4 py-3 text-left"
               style={{ backgroundColor: 'var(--color-bg-card)' }}
               initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-30px' }}
               transition={{ duration: 0.4, ease: sacredEase as unknown as number[] }}
+              whileTap={{ scale: 0.98 }}
             >
               <span
-                className="mt-0.5 flex-shrink-0 rounded-full"
+                className="flex-shrink-0 rounded-full"
                 style={{
                   width: '6px',
                   height: '6px',
                   backgroundColor: 'var(--color-accent-primary)',
-                  marginTop: '7px',
                 }}
                 aria-hidden="true"
               />
-              <div>
+              <div className="flex-1 min-w-0">
                 <p
                   className="font-hind font-semibold text-sm"
                   style={{ color: 'var(--color-text-primary)' }}
@@ -176,7 +177,21 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
                   {item.date} — {item.description}
                 </p>
               </div>
-            </motion.div>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="flex-shrink-0"
+                style={{ color: 'var(--color-text-muted)' }}
+              >
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </motion.button>
           ))}
         </div>
       </section>
