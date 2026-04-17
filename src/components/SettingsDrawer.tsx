@@ -278,27 +278,22 @@ export default function SettingsDrawer({
             </div>
 
             {/* Save button */}
-            <AnimatePresence>
-              {hasChanges && (
-                <motion.div
-                  className="mt-8 flex justify-center"
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 10 }}
-                  transition={{ duration: 0.25 }}
-                >
-                  <motion.button
-                    onClick={handleSave}
-                    className="font-hind font-semibold text-base px-10 py-3 rounded-full text-white shadow-lg"
-                    style={{ backgroundColor: 'var(--color-accent-primary)' }}
-                    whileHover={{ scale: 1.05, boxShadow: '0 8px 30px rgba(255,153,51,0.3)' }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    {t('settings.save')}
-                  </motion.button>
-                </motion.div>
-              )}
-            </AnimatePresence>
+            <div className="mt-8 flex justify-center">
+              <motion.button
+                onClick={handleSave}
+                disabled={!hasChanges}
+                className="font-hind font-semibold text-base px-10 py-3 rounded-full text-white shadow-lg transition-opacity duration-200"
+                style={{
+                  backgroundColor: 'var(--color-accent-primary)',
+                  opacity: hasChanges ? 1 : 0.4,
+                  cursor: hasChanges ? 'pointer' : 'not-allowed',
+                }}
+                whileHover={hasChanges ? { scale: 1.05, boxShadow: '0 8px 30px rgba(255,153,51,0.3)' } : {}}
+                whileTap={hasChanges ? { scale: 0.95 } : {}}
+              >
+                {t('settings.save')}
+              </motion.button>
+            </div>
           </motion.div>
         </>
       )}
