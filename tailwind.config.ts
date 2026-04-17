@@ -21,6 +21,7 @@ const config: Config = {
         body: ['Lora', 'serif'],
         devanagari: ['"Tiro Devanagari Sanskrit"', '"Tiro Devanagari Hindi"', 'serif'],
         hind: ['Hind', 'sans-serif'],
+        label: ['Inter', 'sans-serif'],
       },
       transitionTimingFunction: {
         sacred: 'cubic-bezier(0.76, 0, 0.24, 1)',

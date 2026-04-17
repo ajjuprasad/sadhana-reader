@@ -188,8 +188,9 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
           {/* Details row */}
           <div className="flex items-center justify-center gap-4 mb-5">
             <span
-              className="font-hind text-xs px-3 py-1 rounded-full"
+              className="font-label font-medium text-xs uppercase px-3 py-1 rounded-full"
               style={{
+                letterSpacing: '0.1em',
                 backgroundColor: 'rgba(255,153,51,0.12)',
                 color: 'var(--color-accent-primary)',
               }}
@@ -197,8 +198,9 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
               {stotra.deity}
             </span>
             <span
-              className="font-hind text-xs px-3 py-1 rounded-full"
+              className="font-label font-medium text-xs uppercase px-3 py-1 rounded-full"
               style={{
+                letterSpacing: '0.1em',
                 backgroundColor: 'rgba(255,153,51,0.12)',
                 color: 'var(--color-accent-primary)',
               }}
@@ -206,8 +208,9 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
               {t('common.verses', { count: stotra.verses.length })}
             </span>
             <span
-              className="font-hind text-xs px-3 py-1 rounded-full"
+              className="font-label font-medium text-xs uppercase px-3 py-1 rounded-full"
               style={{
+                letterSpacing: '0.1em',
                 backgroundColor: 'rgba(255,153,51,0.12)',
                 color: 'var(--color-accent-primary)',
               }}
