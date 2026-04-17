@@ -155,15 +155,6 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
               transition={{ duration: 0.4, ease: sacredEase as unknown as number[] }}
               whileTap={{ scale: 0.98 }}
             >
-              <span
-                className="flex-shrink-0 rounded-full"
-                style={{
-                  width: '6px',
-                  height: '6px',
-                  backgroundColor: 'var(--color-accent-primary)',
-                }}
-                aria-hidden="true"
-              />
               <div className="flex-1 min-w-0">
                 <p
                   className="font-hind font-semibold text-sm"
