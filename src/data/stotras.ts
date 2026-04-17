@@ -1783,6 +1783,56 @@ const venkateswaraSuprabhatam: Stotra = {
       meaning:
         'Gazing upon the crowning peaks of Your gopuras, and thereby attaining the supreme path of heaven and liberation, mortals — even while dwelling in this human world — take refuge in the highest wisdom. O Lord of Venkata Hill, may this dawn be auspicious for You.',
     },
+    {
+      id: 21,
+      verseLabel: 'Shloka 21',
+      sanskrit:
+        'श्रीभूमिनायक दयादिगुणामृताब्धे देवाधिदेव जगदेकशरण्यमूर्ते।\nश्रीमन्ननन्तगरुडादिभिरर्चिताङ्घ्रे श्रीवेङ्कटाचलपते तव सुप्रभातम्॥',
+      transliteration:
+        'Śrī-bhūmi-nāyaka dayādi-guṇāmṛtābdhe devādhideva jagad-eka-śaraṇya-mūrte.\nŚrīmann-ananta-garuḍādibhir arcitāṅghre Śrī-Veṅkaṭācalapate tava suprabhātam.',
+      meaning:
+        'O Lord of Sri and Bhumi, ocean of nectar-like virtues beginning with compassion! O God of gods, sole refuge of the universe! Whose feet are worshipped by Ananta, Garuda, and other divine attendants — O Lord of Venkata Hill, may this dawn be auspicious for You.',
+    },
+    {
+      id: 22,
+      verseLabel: 'Shloka 22',
+      sanskrit:
+        'श्रीपद्मनाभ पुरुषोत्तम वासुदेव वैकुण्ठ माधव जनार्दन चक्रपाणे।\nश्रीवत्सचिह्न शरणागतपारिजात श्रीवेङ्कटाचलपते तव सुप्रभातम्॥',
+      transliteration:
+        'Śrī-padmanābha puruṣottama vāsudeva vaikuṇṭha mādhava janārdana cakrapāṇe.\nŚrīvatsa-cihna śaraṇāgata-pārijāta Śrī-Veṅkaṭācalapate tava suprabhātam.',
+      meaning:
+        'O Padmanabha, Purushottama, Vasudeva, Vaikuntha, Madhava, Janardana, wielder of the discus! O You who bear the Srivatsa mark, wish-fulfilling tree to those who seek refuge — O Lord of Venkata Hill, may this dawn be auspicious for You.',
+    },
+    {
+      id: 23,
+      verseLabel: 'Shloka 23',
+      sanskrit:
+        'कन्दर्पदर्पहरसुन्दरदिव्यमूर्ते कान्ताकुचाम्बुरुहकुड्मललोलदृष्टे।\nकल्याणनिर्मलगुणाकरदिव्यकीर्ते श्रीवेङ्कटाचलपते तव सुप्रभातम्॥',
+      transliteration:
+        'Kandarpa-darpa-hara-sundara-divya-mūrte kāntā-kucāmburuha-kuḍmala-lola-dṛṣṭe.\nKalyāṇa-nirmala-guṇākara-divya-kīrte Śrī-Veṅkaṭācalapate tava suprabhātam.',
+      meaning:
+        'O divine form whose beauty humbles the pride of Manmatha! Whose playful glance lingers upon the lotus-bud bosom of Your consort! Repository of auspicious, spotless virtues and divine fame — O Lord of Venkata Hill, may this dawn be auspicious for You.',
+    },
+    {
+      id: 24,
+      verseLabel: 'Shloka 24',
+      sanskrit:
+        'मीनाकृते कमठकोलनृसिंहवर्णिन् स्वामिन् परश्वधतपोधन रामचन्द्र।\nशेषांशराम यदुनन्दन कल्किरूप श्रीवेङ्कटाचलपते तव सुप्रभातम्॥',
+      transliteration:
+        'Mīnākṛte kamaṭha-kola-nṛsiṁha-varṇin svāmin paraśvadha-tapodhana rāmacandra.\nŚeṣāṁśa-rāma yadu-nandana kalki-rūpa Śrī-Veṅkaṭācalapate tava suprabhātam.',
+      meaning:
+        'O You who assumed the forms of the Fish, Tortoise, Boar, and Man-Lion! O Lord, Parashurama, Sage-Warrior, Ramachandra! Balarama (portion of Shesha), delight of the Yadus, and Kalki yet to come — O Lord of Venkata Hill, may this dawn be auspicious for You.',
+    },
+    {
+      id: 25,
+      verseLabel: 'Shloka 25',
+      sanskrit:
+        'एलालवङ्गघनसारसुगन्धितीर्थं दिव्यं वियत्सरिति हेमघटेषु पूर्णम्।\nधृत्वाऽऽद्य वैदिकशिखामणयः प्रहृष्टाः तिष्ठन्ति वेङ्कटपते तव सुप्रभातम्॥',
+      transliteration:
+        "Elā-lavaṅga-ghanasāra-sugandhi-tīrthaṁ divyaṁ viyat-sariti hema-ghaṭeṣu pūrṇam.\nDhṛtvā''dya vaidika-śikhāmaṇayaḥ prahṛṣṭāḥ tiṣṭhanti Veṅkaṭapate tava suprabhātam.",
+      meaning:
+        'Having filled golden vessels with the divine, fragrant water of the celestial river — perfumed with cardamom, clove, and camphor — the foremost of Vedic scholars stand rejoicing. O Lord of Venkata, may this dawn be auspicious for You.',
+    },
   ],
 };
 
