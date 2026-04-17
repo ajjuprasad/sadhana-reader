@@ -124,8 +124,9 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
             style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
           />
           <h2
-            className="font-hind font-semibold text-xs uppercase"
+            className="font-hind font-semibold uppercase"
             style={{
+              fontSize: '0.625rem',
               color: 'var(--color-accent-primary)',
               letterSpacing: '0.18em',
             }}
@@ -223,8 +224,9 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
               style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
             />
             <h2
-              className="font-hind font-semibold text-xs uppercase"
+              className="font-hind font-semibold uppercase"
               style={{
+                fontSize: '0.625rem',
                 color: 'var(--color-accent-primary)',
                 letterSpacing: '0.18em',
               }}
