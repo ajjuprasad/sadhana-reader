@@ -2205,15 +2205,15 @@ const adityaHridayaStotram: Stotra = {
 };
 
 export const stotras: Stotra[] = [
-  hanumanChalisa,
+  adityaHridayaStotram,
   ganeshaPancharatnam,
-  shivaPanchakshara,
-  shivaAshtottara,
-  mahalakshmiAshtakam,
+  hanumanChalisa,
   lingashtakam,
   madhurashtakam,
+  mahalakshmiAshtakam,
+  shivaPanchakshara,
+  shivaAshtottara,
   venkateswaraSuprabhatam,
-  adityaHridayaStotram,
   vishnuSahasranamam,
 ];
 
