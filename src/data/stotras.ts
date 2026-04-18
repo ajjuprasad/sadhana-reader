@@ -3742,6 +3742,74 @@ const ramRakshaStotra: Stotra = {
   ],
 };
 
+const mahishasuraMardiniStotram: Stotra = {
+  id: 'mahishasura-mardini-stotram',
+  title: 'Mahishasura Mardini Stotram',
+  subtitle: 'महिषासुरमर्दिनिस्तोत्रम्',
+  deity: 'Durga',
+  description:
+    'The 21 thunderous verses by Adi Shankaracharya praising Goddess Durga as the slayer of the buffalo demon Mahishasura. Known as Aigiri Nandini, each verse builds to the triumphant refrain.',
+  benefits: [
+    'Invokes the fierce protective power of the Divine Mother',
+    'Destroys fear, negativity, and obstacles in the devotee\'s life',
+    'Bestows courage, victory, and spiritual strength',
+  ],
+  estimatedMinutes: 12,
+  icon: 'trishul',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'अयि गिरिनन्दिनि नन्दितमेदिनि विश्वविनोदिनि नन्दनुते\nगिरिवरविन्ध्यशिरोऽधिनिवासिनि विष्णुविलासिनि जिष्णुनुते।\nभगवति हे शितिकण्ठकुटुम्बिनि भूरिकुटुम्बिनि भूरिकृते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Ayi giri-nandini nandita-medini viśva-vinodini nandanute\ngiri-vara-vindhya-śiro\'dhi-nivāsini viṣṇu-vilāsini jiṣṇunute |\nbhagavati he śiti-kaṇṭha-kuṭumbini bhūri-kuṭumbini bhūri-kṛte\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'O daughter of the mountain, who delights the earth, who entertains the universe, praised by Nandana! O dweller on the peak of the great Vindhya, O playful consort of Vishnu, praised by the victorious! O Bhagavati, O family of Shiva, O one of vast kinship and vast deeds — victory, victory to you, O slayer of Mahishasura, O one with beautiful braided hair, O daughter of the mountain!',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'सुरवरवर्षिणि दुर्धरधर्षिणि दुर्मुखमर्षिणि हर्षरते\nत्रिभुवनपोषिणि शङ्करतोषिणि किल्बिषमोषिणि घोषरते।\nदनुजनिरोषिणि दितिसुतरोषिणि दुर्मदशोषिणि सिन्धुसुते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Sura-vara-varṣiṇi durdhara-dharṣiṇi durmukha-marṣiṇi harṣa-rate\ntri-bhuvana-poṣiṇi śaṅkara-toṣiṇi kilbiṣa-moṣiṇi ghoṣa-rate |\ndanuja-niroṣiṇi diti-suta-roṣiṇi durmada-śoṣiṇi sindhu-sute\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'O bestower of boons upon the gods, O subduer of the irrepressible, O one who tolerates the wicked, delighting in joy! O nourisher of the three worlds, O one who pleases Shankara, O remover of sins, delighting in celebration! O one furious at demons, wrathful toward the sons of Diti, who dries up evil pride, O daughter of the ocean — victory to you, O slayer of Mahishasura!',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'अयि जगदम्ब मदम्ब कदम्बवनप्रियवासिनि हासरते\nशिखरिशिरोमणि तुङ्गहिमालयशृङ्गनिजालयमध्यगते।\nमधुमधुरे मधुकैटभगञ्जिनि कैटभभञ्जिनि रासरते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Ayi jagadamba madamba kadamba-vana-priya-vāsini hāsa-rate\nśikhari-śiromaṇi tuṅga-himālaya-śṛṅga-nijālaya-madhya-gate |\nmadhu-madhure madhu-kaiṭabha-gañjini kaiṭabha-bhañjini rāsa-rate\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'O Mother of the world, my own Mother, who loves to dwell in the kadamba forest, delighting in laughter! O crest-jewel of mountains, residing amidst the lofty peaks of the Himalayas! O one sweet as honey, vanquisher of Madhu and Kaitabha, destroyer of Kaitabha, delighting in the divine dance — victory to you, O slayer of Mahishasura!',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'अयि शतखण्ड विखण्डितरुण्ड वितुण्डितशुण्ड गजाधिपते\nरिपुगजगण्ड विदारणचण्ड पराक्रमशुण्ड मृगाधिपते।\nनिजभुजदण्ड निपातितखण्ड विपातितमुण्ड भटाधिपते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Ayi śata-khaṇḍa vikhaṇḍita-ruṇḍa vituṇḍita-śuṇḍa gajādhipate\nripu-gaja-gaṇḍa vidāraṇa-caṇḍa parākrama-śuṇḍa mṛgādhipate |\nnija-bhuja-daṇḍa nipātita-khaṇḍa vipātita-muṇḍa bhaṭādhipate\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'O one who shattered heads into a hundred pieces, who crushed the trunks of the lord of elephants! O one whose fierce valor tore the temples of enemy elephants like a lion! O one by whose mighty arms the commanders of warriors were felled and their heads severed — victory to you, O slayer of Mahishasura!',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'अयि रणदुर्मदशत्रुवधोदित दुर्धरनिर्जरशक्तिभृते\nचतुरविचारधुरीणमहाशिव दूतकृतप्रमथाधिपते।\nदुरितदुरीहदुराशयदुर्मति दानवदूतकृतान्तमते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Ayi raṇa-durmada-śatru-vadhodita durdhara-nirjara-śakti-bhṛte\ncatura-vicāra-dhurīṇa-mahāśiva dūta-kṛta-pramathādhipate |\ndurita-durīha-durāśaya-durmati dānava-dūta-kṛtānta-mate\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'O wielder of irresistible divine power, aroused by the slaying of battle-maddened foes! O one who made the lord of Pramatha ganas a messenger, whose wisdom even great Shiva esteems! O one who brings death to the envoys of demons of evil deeds, wicked desires, and corrupt minds — victory to you, O slayer of Mahishasura!',
+    },
+  ],
+};
+
 export const stotras: Stotra[] = [
   adityaHridayaStotram,
   bhajaGovindam,
@@ -3750,6 +3818,7 @@ export const stotras: Stotra[] = [
   kanikadharaStotram,
   lingashtakam,
   madhurashtakam,
+  mahishasuraMardiniStotram,
   ramRakshaStotra,
   mahalakshmiAshtakam,
   shivaPanchakshara,
@@ -3771,11 +3840,6 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'lalitha-sahasranamam',
     title: 'Lalitha Sahasranamam',
     deity: 'Lalita Tripurasundari',
-  },
-  {
-    id: 'mahishasura-mardini-stotram',
-    title: 'Mahishasura Mardini Stotram',
-    deity: 'Durga',
   },
 {
     id: 'ashtalakshmi-stotram',
