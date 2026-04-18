@@ -141,8 +141,8 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
 
         <div className="space-y-3">
           {[
+            { id: 'bhaja-govindam', title: 'Bhaja Govindam', date: 'Apr 18, 2026', description: '31 verses — Adi Shankaracharya\'s hymn on renunciation and devotion' },
             { id: 'aditya-hridaya-stotram', title: 'Aditya Hridaya Stotram', date: 'Apr 17, 2026', description: '31 verses — the hymn to the Sun from Valmiki Ramayana' },
-            { id: 'venkateswara-suprabhatam', title: 'Venkateswara Suprabhatam', date: 'Apr 13, 2026', description: '29 verses — the complete morning awakening hymn to Lord Venkateswara' },
           ].map((item) => (
             <motion.button
               key={item.title}
