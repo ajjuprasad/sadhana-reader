@@ -4231,6 +4231,56 @@ const narasimhaKaravalambaStotram: Stotra = {
       meaning:
         'I have fallen into the terrifying, bottomless well of worldly existence, surrounded by hundreds of serpents of sorrow. O Lord, I am wretched and have come to your feet seeking mercy — O Lakshmi Narasimha, extend your hand to me!',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'संसारभीकरकरीन्द्रकराभिघात निष्पीड्यमानवपुषः सकलार्तिनाश।\nप्राणप्रयाणभवभीतिसमाकुलस्य लक्ष्मीनृसिंह मम देहि करावलम्बम्॥',
+      transliteration:
+        'Saṁsāra-bhīkara-karīndra-karābhighāta niṣpīḍyamāna-vapuṣaḥ sakalārti-nāśa |\nprāṇa-prayāṇa-bhava-bhīti-samākulasya lakṣmī-nṛsiṁha mama dehi karāvalambam ||',
+      meaning:
+        'My body is crushed by the blows of the terrible elephant of worldly existence. O destroyer of all afflictions! I am overwhelmed by the fear of death and rebirth — O Lakshmi Narasimha, extend your hand to me!',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'संसारवृक्षमघबीजमनन्तकर्म शाखायुतं करणपत्रमनङ्गपुष्पम्।\nआरुह्य दुःखफलितं पततो दयालो लक्ष्मीनृसिंह मम देहि करावलम्बम्॥',
+      transliteration:
+        'Saṁsāra-vṛkṣam-agha-bījam-ananta-karma śākhāyutaṁ karaṇa-patram-anaṅga-puṣpam |\nāruhya duḥkha-phalitaṁ patato dayālo lakṣmī-nṛsiṁha mama dehi karāvalambam ||',
+      meaning:
+        'I have climbed the tree of worldly existence — its seed is sin, its endless branches are karma, its leaves the senses, its flowers desire — and now I fall from its fruit of sorrow. O compassionate one — O Lakshmi Narasimha, extend your hand to me!',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'संसारसागरविशालकरालकाल नक्रग्रहग्रसितनिग्रहविग्रहस्य।\nव्यग्रस्य रागरसनोर्मिनिपीडितस्य लक्ष्मीनृसिंह मम देहि करावलम्बम्॥',
+      transliteration:
+        'Saṁsāra-sāgara-viśāla-karāla-kāla nakra-graha-grasita-nigraha-vigrahasya |\nvyagrasya rāga-rasanormi-nipīḍitasya lakṣmī-nṛsiṁha mama dehi karāvalambam ||',
+      meaning:
+        'In the vast ocean of worldly existence, I am seized by the terrible crocodile of time, my body overwhelmed and restrained. I am agitated, tormented by waves of passion and desire — O Lakshmi Narasimha, extend your hand to me!',
+    },
+    {
+      id: 9,
+      verseLabel: 'Verse 9',
+      sanskrit:
+        'संसारसागरनिमज्जनमुह्यमानं दीनं विलोकय विभो करुणानिधे माम्।\nप्रह्लादखेदपरिहारपरावतार लक्ष्मीनृसिंह मम देहि करावलम्बम्॥',
+      transliteration:
+        'Saṁsāra-sāgara-nimajjana-muhyamānaṁ dīnaṁ vilokaya vibho karuṇā-nidhe mām |\nprahlāda-kheda-parihāra-parāvatāra lakṣmī-nṛsiṁha mama dehi karāvalambam ||',
+      meaning:
+        'O all-pervading one, O treasure of compassion — look upon me, wretched and bewildered, drowning in the ocean of worldly existence! O one who incarnated to relieve the suffering of Prahlada — O Lakshmi Narasimha, extend your hand to me!',
+    },
+    {
+      id: 10,
+      verseLabel: 'Verse 10',
+      sanskrit:
+        'बद्ध्वा गले यमभटा बहु तर्जयन्तः कर्षन्ति यत्र भवपाशशतैर्युतं माम्।\nएकाकिनं परवशं बतदीनबन्धो लक्ष्मीनृसिंह मम देहि करावलम्बम्॥',
+      transliteration:
+        'Baddhvā gale yama-bhaṭā bahu tarjayantaḥ karṣanti yatra bhava-pāśa-śatair-yutaṁ mām |\nekākinaṁ paravaśaṁ bata-dīna-bandho lakṣmī-nṛsiṁha mama dehi karāvalambam ||',
+      meaning:
+        'The soldiers of Yama bind my neck and drag me away, threatening me violently, bound by hundreds of nooses of worldly existence. I am alone, helpless — O friend of the wretched — O Lakshmi Narasimha, extend your hand to me!',
+    },
   ],
 };
 
