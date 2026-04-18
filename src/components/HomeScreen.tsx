@@ -218,7 +218,7 @@ export default function HomeScreen() {
                 letterSpacing: '0.18em',
               }}
             >
-              {t('home.favorites')} · {favoriteStotras.length}
+              {t('home.favorites')} ({favoriteStotras.length})
             </h2>
             <div
               className="h-px w-12"
@@ -260,7 +260,7 @@ export default function HomeScreen() {
               letterSpacing: '0.18em',
             }}
           >
-            {t('home.allStotras')} · {stotras.length}
+            {t('home.allStotras')} ({stotras.length})
           </h2>
           <div
             className="h-px w-12"
@@ -334,7 +334,7 @@ export default function HomeScreen() {
                 letterSpacing: '0.18em',
               }}
             >
-              {t('home.comingSoon')} · {comingSoonStotras.length}
+              {t('home.comingSoon')} ({comingSoonStotras.length})
             </h2>
             <div
               className="h-px w-12"
