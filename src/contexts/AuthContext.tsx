@@ -1,6 +1,17 @@
 import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from 'react';
-import { onAuthStateChanged, signInWithPopup, signOut as firebaseSignOut, type User } from 'firebase/auth';
+import {
+  onAuthStateChanged,
+  signInWithPopup,
+  signInWithRedirect,
+  getRedirectResult,
+  signOut as firebaseSignOut,
+  type User,
+} from 'firebase/auth';
 import { auth, googleProvider } from '../lib/firebase';
+
+function isMobile() {
+  return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
 
 interface AuthContextType {
   user: User | null;
@@ -21,6 +32,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    getRedirectResult(auth).catch(() => {});
     const unsubscribe = onAuthStateChanged(auth, (u) => {
       setUser(u);
       setLoading(false);
@@ -29,7 +41,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const signIn = useCallback(async () => {
-    await signInWithPopup(auth, googleProvider);
+    if (isMobile()) {
+      await signInWithRedirect(auth, googleProvider);
+    } else {
+      await signInWithPopup(auth, googleProvider);
+    }
   }, []);
 
   const signOut = useCallback(async () => {
