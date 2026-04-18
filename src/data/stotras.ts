@@ -2747,6 +2747,56 @@ const subrahmanyaBhujangam: Stotra = {
       meaning:
         'I have no learning, no yoga, no wealth, no goodness, no friend, no son, no kinsman, no lineage. I see no refuge anywhere other than You. O Guha, I pray to You — grant me the fulfillment of my desires.',
     },
+    {
+      id: 21,
+      verseLabel: 'Verse 21',
+      sanskrit:
+        'न जानामि धर्मं न चैवात्मविद्यां\nन भक्तिं न मुक्तिं न चान्यत्प्रमाणम्।\nसदा दीनवत्सत्स्वभावं भवन्तं\nगुहं भावयन्मां सदा पालय त्वम्॥',
+      transliteration:
+        'Na Janami Dharmam Na Chaivatmavidyam\nNa Bhaktim Na Muktim Na Chanyatpramanam.\nSada Deenavatsatsvabhavam Bhavantam\nGuham Bhavayan Mam Sada Palaya Tvam.',
+      meaning:
+        'I know not dharma, nor Self-knowledge, nor devotion, nor liberation, nor any other means. You whose nature is always to cherish the meek — O Guha, meditating on You, always protect me.',
+    },
+    {
+      id: 22,
+      verseLabel: 'Verse 22',
+      sanskrit:
+        'पुनर्जन्मदुःखं सदा भोगसक्तं\nकदा मोक्षलाभं भवत्सन्निधानात्।\nत्वदेकं शरण्यं सदा देवदेव\nकृपालुं गुहं नौमि सन्तापहारम्॥',
+      transliteration:
+        'Punarjanma Duhkham Sada Bhogasaktam\nKada Mokshalabham Bhavatsannidhanat.\nTvadekam Sharanyam Sada Devadeva\nKripalum Guham Naumi Santapaharam.',
+      meaning:
+        'Always mired in the suffering of repeated birth and attached to sense pleasures — when will I attain liberation through Your presence? You alone are my refuge, O God of gods. I bow to the compassionate Guha, the remover of anguish.',
+    },
+    {
+      id: 23,
+      verseLabel: 'Verse 23',
+      sanskrit:
+        'विनाथं विपन्नं सदा दुःखसक्तं\nविमोचय भक्तं कृपालो दयालो।\nकृपाम्भोनिधिं शक्तिपाणिं गुहं तं\nनमस्यामि भक्त्या सदा मामुधर त्वम्॥',
+      transliteration:
+        'Vinatham Vipannam Sada Duhkhasaktam\nVimochaya Bhaktam Kripalo Dayalo.\nKripambhonidhim Shaktipaanim Guham Tam\nNamasyami Bhaktya Sada Mamuddhara Tvam.',
+      meaning:
+        'I am without a protector, fallen, ever gripped by suffering. O compassionate one, O merciful one, liberate this devotee. I bow with devotion to that Guha, the ocean of mercy who holds the Vel — always uplift me.',
+    },
+    {
+      id: 24,
+      verseLabel: 'Verse 24',
+      sanskrit:
+        'ददस्वैव बुद्धिं मनश्शुद्धिमात्मं\nभवन्मन्दिरे सन्ततं भक्तिमूर्तिम्।\nविभो शैलवास प्रसीद प्रसीद\nगुहप्राणनाथ प्रभो रक्ष भक्तम्॥',
+      transliteration:
+        'Dadasvaiva Buddhim Manah Shuddhim Atmam\nBhavan Mandire Santatam Bhaktimoortim.\nVibho Shailavasa Praseeda Praseeda\nGuha Prananatha Prabho Raksha Bhaktam.',
+      meaning:
+        'Grant me wisdom, purity of mind, and Self-knowledge. May I be an embodiment of devotion forever in Your temple. O all-pervading one, O mountain-dweller, be pleased, be pleased! O Guha, lord of my life-breath, O Lord, protect this devotee.',
+    },
+    {
+      id: 25,
+      verseLabel: 'Verse 25',
+      sanskrit:
+        'कदा वा त्वदीयं पदाम्भोजमूलं\nनमस्कृत्य दैन्यं त्यजित्वा भवन्तम्।\nसमालोक्य लोकान्समस्तान्विहाय\nभवत्सन्निधौ मे मनो लीनमस्तु॥',
+      transliteration:
+        'Kada Va Tvadeeyam Padambhojamoolam\nNamaskritya Dainyam Tyajitva Bhavantam.\nSamalokya Lokan Samastan Vihaya\nBhavatsannidhau Me Mano Leenamastu.',
+      meaning:
+        'When will I, having bowed at the root of Your lotus feet and cast off wretchedness, behold You, renounce all the worlds, and let my mind be absorbed in Your presence?',
+    },
   ],
 };
 
