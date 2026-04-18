@@ -3171,6 +3171,56 @@ const kanikadharaStotram: Stotra = {
       meaning:
         'Upon the broad chest of the slayer of Kaitabha — beautiful as a bank of dark rain clouds — she flashes like a streak of lightning. May the glorious form of the Mother of all worlds, the daughter of Bhrigu, grant me well-being.',
     },
+    {
+      id: 6,
+      verseLabel: 'Shloka 6',
+      sanskrit:
+        'प्राप्तं पदं प्रथमतः खलु यत्प्रभावात्\nमाङ्गल्यभाजि मधुमाथिनि मन्मथेन।\nमय्यापतेत्तदिह मन्थरमीक्षणार्धं\nमन्दालसं च मकरालयकन्यकायाः॥',
+      transliteration:
+        'Prāptaṁ padaṁ prathamataḥ khalu yat-prabhāvāt\nmāṅgalya-bhāji madhu-māthini manmathena |\nmayy-āpatet-tad-iha mantharam-īkṣaṇārdhaṁ\nmandālasaṁ ca makarālaya-kanyakāyāḥ ||',
+      meaning:
+        'It was by the power of her glance that Manmatha (the god of love) first attained his exalted position with the auspicious Madhusudana. May that slow, languid half-glance of the daughter of the ocean fall upon me.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Shloka 7',
+      sanskrit:
+        'विश्वामरेन्द्रपदवीभ्रमदानदक्षम्\nआनन्दहेतुरधिकं मुरविद्विषोऽपि।\nईषन्निषीदतु मयि क्षणमीक्षणार्द्धम्\nइन्दीवरोदरसहोदरमिन्दिरायाः॥',
+      transliteration:
+        'Viśvāmarendra-padavī-bhrama-dāna-dakṣam\nānanda-hetur-adhikaṁ mura-vidviṣo-\'pi |\nīṣan-niṣīdatu mayi kṣaṇam-īkṣaṇārddham\nindīvarodara-sahodaram-indirāyāḥ ||',
+      meaning:
+        'Capable of conferring the position of Indra of the universe, and the source of supreme delight even to the slayer of Mura — may that half-glance of Indirā, akin to the inner petal of a blue lotus, rest upon me for just a moment.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Shloka 8',
+      sanskrit:
+        'इष्टा विशिष्टमतयोऽपि यया दयार्द्र-\nदृष्ट्या त्रिविष्टपपदं सुलभं लभन्ते।\nदृष्टिः प्रहृष्टकमलोदरदीप्तिरिष्टां\nपुष्टिं कृषीष्ट मम पुष्करविष्टरायाः॥',
+      transliteration:
+        'Iṣṭā viśiṣṭa-matayo-\'pi yayā dayārdra-\ndṛṣṭyā triviṣṭapa-padaṁ sulabhaṁ labhante |\ndṛṣṭiḥ prahṛṣṭa-kamalodara-dīptir-iṣṭāṁ\npuṣṭiṁ kṛṣīṣṭa mama puṣkara-viṣṭarāyāḥ ||',
+      meaning:
+        'Even the most distinguished seekers easily attain heaven through her compassion-moistened glance. May the gaze of the lotus-seated Goddess — radiant as the heart of a blooming lotus — draw unto me the nourishment I desire.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Shloka 9',
+      sanskrit:
+        'दद्याद्दयानुपवनो द्रविणाम्बुधाराम्\nअस्मिन्नकिञ्चनविहङ्गशिशौ विषण्णे।\nदुष्कर्मघर्ममपनीय चिराय दूरं\nनारायणप्रणयिनीनयनाम्बुवाहः॥',
+      transliteration:
+        'Dadyād-dayānu-pavano draviṇāmbu-dhārām\nasmin-nakiñcana-vihaṅga-śiśau viṣaṇṇe |\nduṣkarma-gharmam-apanīya cirāya dūraṁ\nnārāyaṇa-praṇayinī-nayanāmbu-vāhaḥ ||',
+      meaning:
+        'May the rain-cloud of the beloved of Nārāyaṇa\'s glance, driven by the wind of compassion, pour a shower of wealth upon this desolate, penniless fledgling — dispelling the heat of past misdeeds far away forever.',
+    },
+    {
+      id: 10,
+      verseLabel: 'Shloka 10',
+      sanskrit:
+        'गीर्देवतेति गरुडध्वजसुन्दरीति\nशाकम्भरीति शशिशेखरवल्लभेति।\nसृष्टिस्थितिप्रलयकेलिषु संस्थितायै\nतस्यै नमस्त्रिभुवनैकगुरोस्तरुण्यै॥',
+      transliteration:
+        'Gīr-devateti garuḍa-dhvaja-sundarīti\nśākambharīti śaśi-śekhara-vallabheti |\nsṛṣṭi-sthiti-pralaya-keliṣu saṁsthitāyai\ntasyai namas-tribhuvanaikaguros-taruṇyai ||',
+      meaning:
+        'She is Saraswati the Goddess of Speech, the beauty of Vishnu, Shakambhari the sustainer, and the beloved of Shiva. To her who presides over creation, preservation, and dissolution — to that youthful consort of the sole Guru of the three worlds — I bow.',
+    },
   ],
 };
 
