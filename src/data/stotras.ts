@@ -3321,6 +3321,26 @@ const kanikadharaStotram: Stotra = {
       meaning:
         'O Kamala, O beloved of the lotus-eyed Lord — with your sidelong glances rippling with waves of compassion — look upon me, the foremost and most genuine vessel of your mercy among the destitute.',
     },
+    {
+      id: 21,
+      verseLabel: 'Shloka 21',
+      sanskrit:
+        'स्तुवन्ति ये स्तुतिभिरमीभिरन्वहं\nत्रयीमयीं त्रिभुवनमातरं रमाम्।\nगुणाधिका गुरुतरभाग्यभागिनो\nभवन्ति ते भुवि बुधभाविताशयाः॥',
+      transliteration:
+        'Stuvanti ye stutibhir-amībhir-anvahaṁ\ntrayīmayīṁ tribhuvana-mātaraṁ ramām |\nguṇādhikā gurutara-bhāgya-bhāgino\nbhavanti te bhuvi budha-bhāvitāśayāḥ ||',
+      meaning:
+        'Those who daily praise Ramā — the Mother of the three worlds, the embodiment of the Vedas — with hymns such as these, become endowed with superior virtues and the greatest fortune, their minds illumined by the wise.',
+    },
+    {
+      id: 22,
+      verseLabel: 'Shloka 22',
+      sanskrit:
+        'देवि प्रसीद जगदीश्वरि लोकमातः\nकल्याणगात्रि कमलेक्षणजीवनाथे।\nदारिद्र्यभीतिहृदयं शरणागतं माम्\nआलोकय प्रतिदिनं सदयैरपाङ्गैः॥',
+      transliteration:
+        'Devi prasīda jagadīśvari loka-mātaḥ\nkalyāṇa-gātri kamalekṣaṇa-jīva-nāthe |\ndāridrya-bhīti-hṛdayaṁ śaraṇāgataṁ mām\nālokaya pratidinaṁ sadayair-apāṅgaiḥ ||',
+      meaning:
+        'Be gracious, O Goddess, O sovereign of the world, O Mother of all beings, O one of auspicious form, O life-partner of the lotus-eyed Lord. Look upon me each day with your compassionate glance — I who have taken refuge in you, my heart trembling with the fear of poverty.',
+    },
   ],
 };
 
