@@ -37,6 +37,7 @@ const en: TranslationDict = {
 
   'auth.signIn': 'Sign in with Google',
   'auth.signOut': 'Sign out',
+  'profile.memberSince': 'Member since {date}',
 
   'settings.title': 'Settings',
   'settings.fontSize': 'Font Size: {size}px',
@@ -83,6 +84,7 @@ const hi: TranslationDict = {
 
   'auth.signIn': 'Google से साइन इन करें',
   'auth.signOut': 'साइन आउट',
+  'profile.memberSince': '{date} से सदस्य',
 
   'settings.title': 'सेटिंग्स',
   'settings.fontSize': 'अक्षर आकार: {size}px',
@@ -129,6 +131,7 @@ const te: TranslationDict = {
 
   'auth.signIn': 'Google తో సైన్ ఇన్ చేయండి',
   'auth.signOut': 'సైన్ అవుట్',
+  'profile.memberSince': '{date} నుండి సభ్యుడు',
 
   'settings.title': 'సెట్టింగ్‌లు',
   'settings.fontSize': 'అక్షర పరిమాణం: {size}px',
@@ -175,6 +178,7 @@ const ta: TranslationDict = {
 
   'auth.signIn': 'Google மூலம் உள்நுழையவும்',
   'auth.signOut': 'வெளியேறு',
+  'profile.memberSince': '{date} முதல் உறுப்பினர்',
 
   'settings.title': 'அமைப்புகள்',
   'settings.fontSize': 'எழுத்து அளவு: {size}px',
@@ -221,6 +225,7 @@ const ml: TranslationDict = {
 
   'auth.signIn': 'Google ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്യുക',
   'auth.signOut': 'സൈൻ ഔട്ട്',
+  'profile.memberSince': '{date} മുതൽ അംഗം',
 
   'settings.title': 'ക്രമീകരണങ്ങൾ',
   'settings.fontSize': 'അക്ഷര വലുപ്പം: {size}px',
