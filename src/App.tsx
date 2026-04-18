@@ -3,6 +3,7 @@ import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import HomeScreen from './components/HomeScreen';
 import StotraDetail from './components/StotraDetail';
 import ReaderScreen from './components/ReaderScreen';
+import ProfileScreen from './components/ProfileScreen';
 import MandalaBackground from './components/MandalaBackground';
 import { useSettings } from './hooks/useSettings';
 import { LanguageProvider } from './i18n/LanguageContext';
@@ -39,9 +40,10 @@ export default function App() {
         <MandalaBackground />
         <div className="relative z-10">
           <Routes>
-            <Route path="/" element={<HomeScreen settingsState={settingsState} />} />
-            <Route path="/stotra/:stotraId" element={<StotraDetail settingsState={settingsState} />} />
+            <Route path="/" element={<HomeScreen />} />
+            <Route path="/stotra/:stotraId" element={<StotraDetail />} />
             <Route path="/read/:stotraId" element={<ReaderScreen settingsState={settingsState} />} />
+            <Route path="/profile" element={<ProfileScreen settingsState={settingsState} />} />
           </Routes>
         </div>
       </HashRouter>
