@@ -207,6 +207,18 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
         </>
       );
 
+    case 'mahishasura-mardini-stotram':
+      // Trishul with crescent — Durga's weapon
+      return (
+        <>
+          <line x1="16" y1="5" x2="16" y2="29" {...s} strokeWidth="2" />
+          <path d="M16 12 Q9 9 7 4" {...s} strokeWidth="1.7" />
+          <path d="M16 12 Q23 9 25 4" {...s} strokeWidth="1.7" />
+          <path d="M14.5 7 L16 3.5 L17.5 7" {...s} strokeWidth="1.2" />
+          <path d="M11 14 Q13.5 16 16 14 Q18.5 16 21 14" {...s} strokeWidth="1.2" />
+        </>
+      );
+
     default:
       return <circle cx="16" cy="16" r="8" {...s} strokeWidth="1.5" />;
   }
