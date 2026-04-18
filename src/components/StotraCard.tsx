@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import type { Stotra } from '../data/stotras';
 import StotraIcon from './StotraIcon';
+import FavoriteButton from './FavoriteButton';
 import { useTranslation } from '../i18n/useTranslation';
 
 interface StotraCardProps {
@@ -35,6 +36,12 @@ export default function StotraCard({ stotra, index, onClick }: StotraCardProps) 
       onClick={onClick}
       aria-label={`Read ${stotra.title}`}
     >
+      <FavoriteButton
+        stotraId={stotra.id}
+        size={18}
+        className="absolute top-1 right-1 z-10"
+      />
+
       <div className="p-5 sm:p-6 flex flex-col h-full">
         {/* Icon — anchored to top */}
         <div

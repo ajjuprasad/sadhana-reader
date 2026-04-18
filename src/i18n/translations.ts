@@ -33,6 +33,9 @@ const en: TranslationDict = {
   'reader.thankYou': 'Thank you for reading {title} on Sādhanā Reader. May this practice bring peace, devotion, and grace into your day.',
   'reader.readAgain': 'Read again',
 
+  'auth.signIn': 'Sign in with Google',
+  'auth.signOut': 'Sign out',
+
   'settings.title': 'Settings',
   'settings.fontSize': 'Font Size: {size}px',
   'settings.deepamMode': 'Deepam Mode',
@@ -73,6 +76,9 @@ const hi: TranslationDict = {
   'reader.readingComplete': 'पठन पूर्ण',
   'reader.thankYou': 'साधना रीडर पर {title} पढ़ने के लिए धन्यवाद। यह साधना आपके दिन में शांति, भक्ति और कृपा लाए।',
   'reader.readAgain': 'फिर से पढ़ें',
+
+  'auth.signIn': 'Google से साइन इन करें',
+  'auth.signOut': 'साइन आउट',
 
   'settings.title': 'सेटिंग्स',
   'settings.fontSize': 'अक्षर आकार: {size}px',
@@ -115,6 +121,9 @@ const te: TranslationDict = {
   'reader.thankYou': 'సాధనా రీడర్‌లో {title} చదివినందుకు ధన్యవాదాలు. ఈ సాధన మీ రోజులో శాంతి, భక్తి మరియు కృపను తీసుకురావాలి.',
   'reader.readAgain': 'మళ్ళీ చదవండి',
 
+  'auth.signIn': 'Google తో సైన్ ఇన్ చేయండి',
+  'auth.signOut': 'సైన్ అవుట్',
+
   'settings.title': 'సెట్టింగ్‌లు',
   'settings.fontSize': 'అక్షర పరిమాణం: {size}px',
   'settings.deepamMode': 'దీపం మోడ్',
@@ -156,6 +165,9 @@ const ta: TranslationDict = {
   'reader.thankYou': 'சாதனா ரீடரில் {title} படித்ததற்கு நன்றி. இந்த சாதனை உங்கள் நாளில் அமைதி, பக்தி மற்றும் அருளைக் கொண்டு வரட்டும்.',
   'reader.readAgain': 'மீண்டும் படிக்கவும்',
 
+  'auth.signIn': 'Google மூலம் உள்நுழையவும்',
+  'auth.signOut': 'வெளியேறு',
+
   'settings.title': 'அமைப்புகள்',
   'settings.fontSize': 'எழுத்து அளவு: {size}px',
   'settings.deepamMode': 'தீபம் பயன்முறை',
@@ -196,6 +208,9 @@ const ml: TranslationDict = {
   'reader.readingComplete': 'വായന പൂർത്തിയായി',
   'reader.thankYou': 'സാധനാ റീഡറിൽ {title} വായിച്ചതിന് നന്ദി. ഈ സാധന നിങ്ങളുടെ ദിവസത്തിൽ സമാധാനവും ഭക്തിയും കൃപയും നൽകട്ടെ.',
   'reader.readAgain': 'വീണ്ടും വായിക്കുക',
+
+  'auth.signIn': 'Google ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്യുക',
+  'auth.signOut': 'സൈൻ ഔട്ട്',
 
   'settings.title': 'ക്രമീകരണങ്ങൾ',
   'settings.fontSize': 'അക്ഷര വലുപ്പം: {size}px',

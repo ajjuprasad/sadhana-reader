@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { stotras } from '../data/stotras';
 import StotraIcon from './StotraIcon';
 import SettingsDrawer from './SettingsDrawer';
+import UserMenu from './UserMenu';
+import FavoriteButton from './FavoriteButton';
 import type { useSettings } from '../hooks/useSettings';
 import { useReadCount } from '../hooks/useReadCounts';
 import { useTranslation } from '../i18n/useTranslation';
@@ -81,6 +83,8 @@ export default function StotraDetail({ settingsState }: StotraDetailProps) {
         <div />
 
         <div className="flex items-center gap-1">
+          <UserMenu />
+          <FavoriteButton stotraId={stotra.id} />
           <a
             href={(() => {
               const baseUrl = window.location.href.split('#')[0];
