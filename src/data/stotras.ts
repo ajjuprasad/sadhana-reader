@@ -3957,6 +3957,16 @@ const mahishasuraMardiniStotram: Stotra = {
       meaning:
         'Your spotless moon-like face puts to shame the entire moon dynasty. Are the beautiful moon-faced women of Indra\'s city turned away before you? My conviction is this, O one whose wealth is the name of Shiva — what cannot be achieved by your grace? — victory to you, O slayer of Mahishasura!',
     },
+    {
+      id: 21,
+      verseLabel: 'Verse 21',
+      sanskrit:
+        'अयि मयि दीनदयालुतया कृपयैव त्वया भवितव्यमुमे\nअयि जगतो जननी कृपयासि यथासि तथानुमितासिरते।\nयदुचितमत्र भवत्युररीकुरुतादुरुतापमपाकुरुते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Ayi mayi dīna-dayālutayā kṛpayaiva tvayā bhavitavyam-ume\nayi jagato jananī kṛpayāsi yathāsi tathānumitāsi-rate |\nyad-ucitam-atra bhavaty-urarikurutād-urutāpam-apākurute\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'O Uma, you must be compassionate to me with your kindness for the helpless! O Mother of the world, you are known to be as merciful as you truly are! Do what is fitting here — accept this prayer and remove the great affliction — victory, victory to you, O slayer of Mahishasura, O one with beautiful braided hair, O daughter of the mountain!',
+    },
   ],
 };
 
