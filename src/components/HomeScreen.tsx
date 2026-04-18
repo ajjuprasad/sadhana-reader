@@ -91,44 +91,70 @@ export default function HomeScreen() {
   const favoriteStotras = user ? stotras.filter((s) => favoriteIds.includes(s.id)) : [];
 
   return (
-    <div className="relative min-h-screen px-4 py-8 sm:py-12">
-      {/* Top bar with share + profile */}
-      <div className="flex justify-end items-center gap-1 mb-2">
-        <a
-          href={(() => {
-            const baseUrl = window.location.href.split('#')[0];
-            const message = t('home.shareMessage', { url: baseUrl });
-            return `https://wa.me/?text=${encodeURIComponent(message)}`;
-          })()}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-2 hover:opacity-70 transition-opacity"
-          style={{ color: 'var(--color-text-primary)' }}
-          aria-label="Share Sādhanā Reader on WhatsApp"
+    <div className="relative min-h-screen">
+      {/* Sticky app bar */}
+      <div
+        className="sticky top-0 z-30 flex items-center justify-between px-4 py-2"
+        style={{ backgroundColor: 'var(--color-bg)' }}
+      >
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="flex items-center gap-1.5"
         >
-          <svg
-            width="22"
-            height="22"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+          <span
+            className="text-xl select-none"
+            style={{ color: 'var(--color-accent-primary)' }}
+            aria-hidden="true"
           >
-            <circle cx="18" cy="5" r="3" />
-            <circle cx="6" cy="12" r="3" />
-            <circle cx="18" cy="19" r="3" />
-            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
-            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
-          </svg>
-        </a>
-        <ProfileButton />
+            ॐ
+          </span>
+          <span
+            className="font-display font-bold text-base"
+            style={{ color: 'var(--color-text-primary)' }}
+          >
+            {t('home.title')}
+          </span>
+        </button>
+
+        <div className="flex items-center gap-1">
+          <a
+            href={(() => {
+              const baseUrl = window.location.href.split('#')[0];
+              const message = t('home.shareMessage', { url: baseUrl });
+              return `https://wa.me/?text=${encodeURIComponent(message)}`;
+            })()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 hover:opacity-70 transition-opacity"
+            style={{ color: 'var(--color-text-primary)' }}
+            aria-label="Share Sādhanā Reader on WhatsApp"
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <circle cx="18" cy="5" r="3" />
+              <circle cx="6" cy="12" r="3" />
+              <circle cx="18" cy="19" r="3" />
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+            </svg>
+          </a>
+          <ProfileButton />
+        </div>
       </div>
+
+    <div className="px-4 pb-8 sm:pb-12">
 
       {/* Header */}
       <motion.header
-        className="text-center mb-10 sm:mb-14"
+        className="text-center mb-10 sm:mb-14 mt-6 sm:mt-8"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: sacredEase as unknown as number[] }}
@@ -359,6 +385,7 @@ export default function HomeScreen() {
         </p>
       </motion.footer>
 
+    </div>
     </div>
   );
 }
