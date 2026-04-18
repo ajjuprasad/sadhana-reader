@@ -170,6 +170,18 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
         </>
       );
 
+    case 'saraswati-stotram':
+      // Veena — Saraswati's iconic instrument
+      return (
+        <>
+          <ellipse cx="9" cy="24" rx="5" ry="4" {...s} strokeWidth="1.5" />
+          <ellipse cx="23" cy="8" rx="3.5" ry="2.5" {...s} strokeWidth="1.3" />
+          <line x1="13.5" y1="21.5" x2="26" y2="6.5" {...s} strokeWidth="2" />
+          <line x1="11" y1="20" x2="24" y2="5" {...s} strokeWidth="1" />
+          <path d="M14 18 L15 16 M17 15 L18 13 M20 12 L21 10" {...s} strokeWidth="1" />
+        </>
+      );
+
     default:
       return <circle cx="16" cy="16" r="8" {...s} strokeWidth="1.5" />;
   }

@@ -11,9 +11,9 @@ import { useTranslation } from '../i18n/useTranslation';
 const sacredEase = [0.76, 0, 0.24, 1] as const;
 
 const recentItems = [
+  { id: 'saraswati-stotram', title: 'Saraswati Stotram', date: 'Apr 18', desc: '21 verses · Sage Agastya' },
   { id: 'subrahmanya-bhujangam', title: 'Subrahmanya Bhujangam', date: 'Apr 18', desc: '33 verses · Adi Shankaracharya' },
   { id: 'bhaja-govindam', title: 'Bhaja Govindam', date: 'Apr 18', desc: '31 verses · Adi Shankaracharya' },
-  { id: 'aditya-hridaya-stotram', title: 'Aditya Hridaya Stotram', date: 'Apr 17', desc: '31 verses · Valmiki Ramayana' },
 ];
 
 function RecentCarousel({ navigate }: { navigate: (path: string) => void }) {
