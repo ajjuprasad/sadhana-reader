@@ -3807,6 +3807,56 @@ const mahishasuraMardiniStotram: Stotra = {
       meaning:
         'O wielder of irresistible divine power, aroused by the slaying of battle-maddened foes! O one who made the lord of Pramatha ganas a messenger, whose wisdom even great Shiva esteems! O one who brings death to the envoys of demons of evil deeds, wicked desires, and corrupt minds — victory to you, O slayer of Mahishasura!',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'अयि शरणागतवैरिवधूवर वीरवराभयदायकरे\nत्रिभुवनमस्तकशूलविरोधिशिरोऽधिकृतामलशूलकरे।\nदुमिदुमितामरदुन्दुभिनादमहोमुखरीकृतदिग्म्बरे\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Ayi śaraṇāgata-vairi-vadhū-vara vīra-varābhaya-dāya-kare\ntri-bhuvana-mastaka-śūla-virodhi-śiro\'dhi-kṛtāmala-śūla-kare |\ndumi-dumitāmara-dundubhi-nāda-maho-mukharī-kṛta-digmbare\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'O one who grants fearlessness to the heroic husbands of the wives of enemies who seek refuge! O one who holds the spotless trident planted in the head of the foe who opposes the three worlds! O one by the thunder of whose divine drums the directions resound — victory to you, O slayer of Mahishasura!',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'अयि निजहुङ्कृतिमात्रनिराकृतधूम्रविलोचनधूम्रशते\nसमरविशोषितशोणितबीजसमुद्भवशोणितबीजलते।\nशिवशिवशुम्भनिशुम्भमहाहवतर्पितभूतपिशाचरते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Ayi nija-huṅkṛti-mātra-nirākṛta-dhūmra-vilocana-dhūmra-śate\nsamara-viśoṣita-śoṇita-bīja-samudbhava-śoṇita-bīja-late |\nśiva-śiva-śumbha-niśumbha-mahāhava-tarpita-bhūta-piśāca-rate\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'O one who vanquished the smoke-eyed demon Dhumralocana with a mere roar! O one who dried up the blood-seeds sprouting from the battlefield of Raktabija! O one whose great battle with Shumbha and Nishumbha gratified the ghouls and spirits — victory to you, O slayer of Mahishasura!',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'धनुरनुषङ्गरणक्षणसङ्गपरिस्फुरदङ्गनटत्कटके\nकनकपिशङ्गपृषत्कनिषङ्गरसद्भटशृङ्गहतावटुके।\nकृतचतुरङ्गबलक्षितिरङ्गघटद्बहुरङ्गरटद्बटुके\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Dhanur-anuṣaṅga-raṇa-kṣaṇa-saṅga-parisphurat-aṅga-naṭat-kaṭake\nkanaka-piśaṅga-pṛṣatka-niṣaṅga-rasad-bhaṭa-śṛṅga-hatāvaṭuke |\nkṛta-caturaṅga-bala-kṣiti-raṅga-ghaṭad-bahu-raṅga-raṭad-baṭuke\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'O one whose bracelets dance on limbs that flash in the instant of bow-strung battle! O one whose golden-hued arrows from the quiver struck the horned warriors! O one on whose battlefield the fourfold army clashed in many formations with roaring warriors — victory to you, O slayer of Mahishasura!',
+    },
+    {
+      id: 9,
+      verseLabel: 'Verse 9',
+      sanskrit:
+        'सुरललनातततथेयितथाभिनयोत्तरनृत्यरते\nजितकनकाहलमोरजमुद्घुमगुङ्गुमविद्यमते।\nधिमिकिटधिक्कटधिक्कटधिक्कटधिध्वनिघोरमृदङ्गनिनादते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Sura-lalanā-tata-theyi-tathā-abhinayottara-nṛtya-rate\njita-kanakāhala-mora-ja-mudghuma-guṅguma-vidyamate |\ndhimikiṭa-dhikkaṭa-dhikkaṭa-dhikkaṭa-dhidhvani-ghora-mṛdaṅga-ninādate\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'O one who delights in the expressive dance of the celestial maidens moving to the rhythm! O one whose knowledge surpasses the sound of golden kettledrums and peacock cries! O one accompanied by the thunderous "dhimikita-dhikkata" beats of the fierce mridanga — victory to you, O slayer of Mahishasura!',
+    },
+    {
+      id: 10,
+      verseLabel: 'Verse 10',
+      sanskrit:
+        'जय जय जप्यजये जयशब्दपरस्तुतितत्परविश्वनुते\nझणझणझिञ्झिमिझिङ्कृतनूपुरसिञ्जितमोहितभूतपते।\nनटितनटार्धनटीनटनायकनाटितनाट्यसुगानरते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Jaya jaya japya-jaye jaya-śabda-parastuti-tatpara-viśvanute\njhaṇa-jhaṇa-jhiñjhimi-jhiṅkṛta-nūpura-siñjita-mohita-bhūtapate |\nnaṭita-naṭārdha-naṭī-naṭa-nāyaka-nāṭita-nāṭya-sugāna-rate\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'O one victorious in the chant of victory, praised by the universe devoted to singing your glory! O one whose jingling anklets enchant even the Lord of beings with their jhana-jhana melody! O one who delights in the beautiful song of the cosmic dance, where Nataraja himself dances as the half-female — victory to you, O slayer of Mahishasura!',
+    },
   ],
 };
 
