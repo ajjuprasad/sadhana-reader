@@ -2419,6 +2419,56 @@ const bhajaGovindam: Stotra = {
       meaning:
         'Whether one delights in yoga or in enjoyment, whether in company or in solitude — he whose mind revels in Brahman, he alone rejoices, rejoices, truly rejoices.',
     },
+    {
+      id: 21,
+      verseLabel: 'Verse 21',
+      sanskrit:
+        'भगवद्गीता किञ्चिदधीता गङ्गाजललवकणिका पीता।\nसकृदपि येन मुरारिसमर्चा क्रियते तस्य यमेन न चर्चा॥',
+      transliteration:
+        'Bhagavad Geeta Kinchid Adheeta Gangajala Lavakanika Peeta.\nSakridapi Yena Murari Samarcha Kriyate Tasya Yamena Na Charcha.',
+      meaning:
+        'For one who has studied even a little of the Bhagavad Gita, who has drunk even a drop of Ganga water, and who has worshipped Lord Murari even once — Yama, the god of death, has no hold over him.',
+    },
+    {
+      id: 22,
+      verseLabel: 'Verse 22',
+      sanskrit:
+        'पुनरपि जननं पुनरपि मरणं पुनरपि जननीजठरे शयनम्।\nइह संसारे बहुदुस्तारे कृपयापारे पाहि मुरारे॥',
+      transliteration:
+        'Punarapi Jananam Punarapi Maranam Punarapi Janani Jathare Shayanam.\nIha Samsare Bahudustare Kripayapare Pahi Murare.',
+      meaning:
+        'Again birth, again death, again lying in a mother\'s womb — this worldly existence is exceedingly difficult to cross. O Lord Murari, save me through Your boundless compassion.',
+    },
+    {
+      id: 23,
+      verseLabel: 'Verse 23',
+      sanskrit:
+        'रथ्याचर्पटविरचितकन्थः पुण्यापुण्यविवर्जितपन्थः।\nयोगी योगनियोजितचित्तो रमते बालोन्मत्तवदेव॥',
+      transliteration:
+        'Rathyacharpata Virachita Kanthah Punyapunya Vivarjita Panthah.\nYogi Yoganiyojita Chitto Ramate Balonmattavadeva.',
+      meaning:
+        'Wearing a garment patched from rags found on the road, treading a path beyond merit and demerit, the yogi whose mind is yoked in yoga revels like a child or a madman.',
+    },
+    {
+      id: 24,
+      verseLabel: 'Verse 24',
+      sanskrit:
+        'कस्त्वं कोऽहं कुत आयातः का मे जननी को मे तातः।\nइति परिभावय सर्वमसारं विश्वं त्यक्त्वा स्वप्नविचारम्॥',
+      transliteration:
+        'Kastvam Koham Kuta Ayatah Ka Me Janani Ko Me Tatah.\nIti Paribhavaya Sarvamasaram Vishvam Tyaktva Svapna Vicharam.',
+      meaning:
+        'Who are you? Who am I? Where have I come from? Who is my mother? Who is my father? Thus reflect, and see that the entire world is without substance — abandon it as a dream.',
+    },
+    {
+      id: 25,
+      verseLabel: 'Verse 25',
+      sanskrit:
+        'त्वयि मयि चान्यत्रैको विष्णुः व्यर्थं कुप्यसि मय्यसहिष्णुः।\nभव समचित्तः सर्वत्र त्वं वाञ्छस्यचिराद्यदि विष्णुत्वम्॥',
+      transliteration:
+        'Tvayi Mayi Chanyatraiko Vishnuh Vyartham Kupyasi Mayyasahishnuh.\nBhava Samachittah Sarvatra Tvam Vanchasyachirad Yadi Vishnutvam.',
+      meaning:
+        'In you, in me, and everywhere else there is but one Vishnu. In vain do you get angry with me, being impatient. See yourself in all beings and abandon all sense of difference — if you wish to attain Vishnu-hood soon.',
+    },
   ],
 };
 
