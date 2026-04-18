@@ -12,9 +12,9 @@ import { useTranslation } from '../i18n/useTranslation';
 const sacredEase = [0.76, 0, 0.24, 1] as const;
 
 const recentItems = [
+  { id: 'ram-raksha-stotra', title: 'Ram Raksha Stotra', timestamp: '2026-04-18T08:30:00Z', desc: '38 verses by Sage Budha Kaushika — the divine armor of Lord Rama revealed by Shiva.' },
   { id: 'kanakadhara-stotram', title: 'Kanakadhara Stotram', timestamp: '2026-04-18T07:00:00Z', desc: '21 verses by Adi Shankaracharya invoking Goddess Lakshmi for a shower of gold.' },
   { id: 'saraswati-stotram', title: 'Saraswati Stotram', timestamp: '2026-04-18T05:40:00Z', desc: '21 verses by Sage Agastya praising the Goddess of knowledge, wisdom, and speech.' },
-  { id: 'subrahmanya-bhujangam', title: 'Subrahmanya Bhujangam', timestamp: '2026-04-18T04:10:00Z', desc: '33 serpentine verses by Adi Shankaracharya in devotion to Lord Subrahmanya.' },
 ];
 
 function formatLocalTime(iso: string): string {
