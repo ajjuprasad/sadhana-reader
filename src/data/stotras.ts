@@ -2532,6 +2532,74 @@ const bhajaGovindam: Stotra = {
   ],
 };
 
+const subrahmanyaBhujangam: Stotra = {
+  id: 'subrahmanya-bhujangam',
+  title: 'Subrahmanya Bhujangam',
+  subtitle: 'सुब्रह्मण्यभुजङ्गम्',
+  deity: 'Subrahmanya',
+  description:
+    'Thirty-three verses in the serpentine (bhujanga) metre, composed by Adi Shankaracharya at Tiruchendur. A deeply personal hymn of devotion to Lord Subrahmanya.',
+  benefits: [
+    'Bestows divine protection and freedom from fear',
+    'Grants healing from illness and removal of afflictions',
+    'Awakens deep devotion and inner peace',
+  ],
+  estimatedMinutes: 12,
+  icon: '',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'सदा बालरूपाऽपि विघ्नाद्रिहन्त्री\nमहादन्तिवक्त्राऽपि पञ्चास्यमान्या।\nविधीन्द्रादिमृग्या गणेशाभिधा मे\nविधत्तां श्रियं कापि कल्याणमूर्तिः॥',
+      transliteration:
+        'Sada Balarupaapi Vighnadrihanstree\nMahadantivaktraapi Panchasyamanya.\nVidheendradimrigya Ganeshaabhidha Me\nVidhattam Shriyam Kapi Kalyanamoortih.',
+      meaning:
+        'May that auspicious form called Ganesha — though ever child-like, yet the destroyer of the mountain of obstacles; though elephant-faced, yet honored by the five-faced Shiva; sought by Brahma, Indra, and others — bestow prosperity upon me.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'न जानामि शब्दं न जानामि चार्थं\nन जानामि पद्यं न जानामि गद्यम्।\nचिदेका षडास्या हृदि द्योतते मे\nमुखान्निःसरन्ते गिरश्चापि चित्रम्॥',
+      transliteration:
+        'Na Janami Shabdam Na Janami Chartham\nNa Janami Padyam Na Janami Gadyam.\nChideka Shadasya Hridi Dyotate Me\nMukhannirsarante Girashchapi Chitram.',
+      meaning:
+        'I know not words, I know not meanings, I know not poetry, I know not prose. Yet the one consciousness of the six-faced Lord shines in my heart, and wondrous words flow from my mouth.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'मयूराधिरूढं महावाक्यगूढं\nमनोहारिदेहं महच्चित्तगेहम्।\nमहीदेवदेवं महावेदभावं\nमहादेवबालं भजे लोकपालम्॥',
+      transliteration:
+        'Mayuradhiroodham Mahavakyagoodham\nManoharideham Mahachchittageham.\nMaheedevadevan Mahavedabhavam\nMahadevabalam Bhaje Lokapalam.',
+      meaning:
+        'I worship the protector of the worlds — who rides the peacock, who embodies the secret of the great Vedic utterances, whose form captivates the mind, who dwells in great hearts, who is the God of gods on earth, the essence of the great Vedas, the son of Mahadeva.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'यदा सन्निधानं गता मानवा मे\nभवाम्भोधिपारं गतास्ते तदैव।\nइति व्यञ्जयन्सिन्धुतीरे य आस्ते\nतमीडे पवित्रं पराशक्तिपुत्रम्॥',
+      transliteration:
+        'Yada Sannidhanam Gata Manava Me\nBhavambhodhiparam Gataste Tadaiva.\nIti Vyanjayan Sindhutere Ya Aste\nTameede Pavitram Parashaktiputram.',
+      meaning:
+        '"When people come to my presence, they have at that very moment crossed the ocean of worldly existence" — thus proclaiming, He who sits on the seashore, that pure son of Parashakti, Him I praise.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'यथाब्धेस्तरङ्गा लयं यान्ति तुङ्गाः\nतथैवापदः सन्निधौ सेवतां मे।\nइतीवोर्मिपङ्क्तीर्नृणां दर्शयन्तं\nसदा भावये हृत्सरोजे गुहं तम्॥',
+      transliteration:
+        'Yathabdhestaranga Layam Yanti Tungah\nTathaivapadah Sannidhau Sevatam Me.\nIteevormipankteernrinam Darshayantam\nSada Bhavaye Hritsaroje Guham Tam.',
+      meaning:
+        '"Just as the mighty waves of the ocean subside, so too do the calamities of those who serve in my presence" — thus showing through the rows of waves, I always meditate on that Guha in the lotus of my heart.',
+    },
+  ],
+};
+
 export const stotras: Stotra[] = [
   adityaHridayaStotram,
   bhajaGovindam,
@@ -2542,6 +2610,7 @@ export const stotras: Stotra[] = [
   mahalakshmiAshtakam,
   shivaPanchakshara,
   shivaAshtottara,
+  subrahmanyaBhujangam,
   venkateswaraSuprabhatam,
   vishnuSahasranamam,
 ];
@@ -2577,11 +2646,6 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'saraswati-stotram',
     title: 'Saraswati Stotram',
     deity: 'Saraswati',
-  },
-  {
-    id: 'subrahmanya-bhujangam',
-    title: 'Subrahmanya Bhujangam',
-    deity: 'Subrahmanya',
   },
   {
     id: 'ashtalakshmi-stotram',
