@@ -4166,6 +4166,74 @@ const achyutashtakam: Stotra = {
   ],
 };
 
+const narasimhaKaravalambaStotram: Stotra = {
+  id: 'narasimha-karavalamba-stotram',
+  title: 'Narasimha Karavalamba Stotram',
+  subtitle: 'लक्ष्मीनृसिंहकरावलम्बस्तोत्रम्',
+  deity: 'Narasimha',
+  description:
+    'Ten soul-stirring verses by Adi Shankaracharya pleading for the protective hand of Lord Lakshmi Narasimha. Each verse ends with the desperate cry: "O Lakshmi Narasimha, extend your hand to me!"',
+  benefits: [
+    'Invokes the fierce protective grace of Lord Narasimha against all dangers',
+    'Grants refuge from the ocean of worldly existence and the fear of death',
+    'Bestows courage, faith, and liberation through surrender to the Lord',
+  ],
+  estimatedMinutes: 6,
+  icon: 'pillar',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'श्रीमत्पयोनिधिनिकेतनचक्रपाणे भोगीन्द्रभोगमणिराजितपुण्यमूर्ते।\nयोगीश शाश्वत शरण्य भवाब्धिपोत लक्ष्मीनृसिंह मम देहि करावलम्बम्॥',
+      transliteration:
+        'Śrīmat-payonidhi-niketana-cakra-pāṇe bhogīndra-bhoga-maṇi-rājita-puṇya-mūrte |\nyogīśa śāśvata śaraṇya bhavābdhi-pota lakṣmī-nṛsiṁha mama dehi karāvalambam ||',
+      meaning:
+        'O wielder of the discus who dwells in the glorious milky ocean, O sacred form illumined by the jewel on the hood of the serpent king! O lord of yogis, eternal one, refuge of all, boat across the ocean of existence — O Lakshmi Narasimha, extend your hand to me!',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'ब्रह्मेन्द्ररुद्रमरुदर्ककिरीटकोटिसङ्घट्टिताङ्घ्रिकमलामलकान्तिकान्त।\nलक्ष्मीलसत्कुचसरोरुहराजहंस लक्ष्मीनृसिंह मम देहि करावलम्बम्॥',
+      transliteration:
+        'Brahmendra-rudra-marud-arka-kirīṭa-koṭi-saṅghaṭṭitāṅghri-kamalāmala-kānti-kānta |\nlakṣmī-lasat-kuca-saroruha-rāja-haṁsa lakṣmī-nṛsiṁha mama dehi karāvalambam ||',
+      meaning:
+        'O one whose spotless, radiant lotus feet are touched by the crests of millions of crowns of Brahma, Indra, Rudra, the Maruts, and the Sun! O royal swan sporting on the lotus-lake of Lakshmi\'s resplendent bosom — O Lakshmi Narasimha, extend your hand to me!',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'संसारदावदहनाकरभीकरोरुज्वालावलीभिरतिदग्धतनूरुहस्य।\nत्वत्पादपद्मसरसीरुहमागतस्य लक्ष्मीनृसिंह मम देहि करावलम्बम्॥',
+      transliteration:
+        'Saṁsāra-dāva-dahanākara-bhīkarorujvālāvalībhir-atidagdha-tanūruhasya |\ntvat-pāda-padma-sarasīruham-āgatasya lakṣmī-nṛsiṁha mama dehi karāvalambam ||',
+      meaning:
+        'My body is scorched by the terrible, fierce flames of the forest fire of worldly existence. I have come to the cool lotus-lake of your lotus feet — O Lakshmi Narasimha, extend your hand to me!',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'संसारजालपतितस्य जगन्निवास सर्वेन्द्रियार्थबडिशाग्रझषोपमस्य।\nप्रोत्कम्पितप्रचुरतालुकमस्तकस्य लक्ष्मीनृसिंह मम देहि करावलम्बम्॥',
+      transliteration:
+        'Saṁsāra-jāla-patitasya jagan-nivāsa sarvendriyārtha-baḍiśāgra-jhaṣopamaysa |\nprotkampita-pracura-tāluka-mastakasya lakṣmī-nṛsiṁha mama dehi karāvalambam ||',
+      meaning:
+        'O abode of the universe! I have fallen into the net of worldly existence, like a fish caught on the hook of sense objects, my head and palate violently thrashing — O Lakshmi Narasimha, extend your hand to me!',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'संसारकूपमतिघोरमगाधमूलं सम्प्राप्य दुःखशतसर्पसमाकुलस्य।\nदीनस्य देव कृपया पदमागतस्य लक्ष्मीनृसिंह मम देहि करावलम्बम्॥',
+      transliteration:
+        'Saṁsāra-kūpam-atighorem-agādha-mūlaṁ samprāpya duḥkha-śata-sarpa-samākulasya |\ndīnasya deva kṛpayā padam-āgatasya lakṣmī-nṛsiṁha mama dehi karāvalambam ||',
+      meaning:
+        'I have fallen into the terrifying, bottomless well of worldly existence, surrounded by hundreds of serpents of sorrow. O Lord, I am wretched and have come to your feet seeking mercy — O Lakshmi Narasimha, extend your hand to me!',
+    },
+  ],
+};
+
 export const stotras: Stotra[] = [
   achyutashtakam,
   ashtalakshmiStotram,
@@ -4177,6 +4245,7 @@ export const stotras: Stotra[] = [
   lingashtakam,
   madhurashtakam,
   mahishasuraMardiniStotram,
+  narasimhaKaravalambaStotram,
   ramRakshaStotra,
   mahalakshmiAshtakam,
   shivaPanchakshara,
@@ -4234,12 +4303,7 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     title: 'Bilvashtakam',
     deity: 'Shiva',
   },
-  {
-    id: 'narasimha-karavalamba-stotram',
-    title: 'Narasimha Karavalamba Stotram',
-    deity: 'Narasimha',
-  },
-  {
+{
     id: 'sankata-nashana-ganesha-stotram',
     title: 'Sankata Nashana Ganesha Stotram',
     deity: 'Ganesha',

@@ -12,9 +12,9 @@ import { useTranslation } from '../i18n/useTranslation';
 const sacredEase = [0.76, 0, 0.24, 1] as const;
 
 const recentItems = [
+  { id: 'narasimha-karavalamba-stotram', title: 'Narasimha Karavalamba Stotram', timestamp: '2026-04-18T15:00:00Z', desc: '10 soul-stirring verses by Adi Shankaracharya pleading for Lord Narasimha\'s protective hand.' },
   { id: 'achyutashtakam', title: 'Achyutashtakam', timestamp: '2026-04-18T14:00:00Z', desc: '8 verses by Adi Shankaracharya invoking the infallible Lord through his many divine names.' },
   { id: 'ashtalakshmi-stotram', title: 'Ashtalakshmi Stotram', timestamp: '2026-04-18T12:00:00Z', desc: '8 melodious verses celebrating the eight forms of Goddess Lakshmi — from abundance to wisdom.' },
-  { id: 'mahishasura-mardini-stotram', title: 'Mahishasura Mardini Stotram', timestamp: '2026-04-18T10:00:00Z', desc: '21 thunderous verses by Adi Shankaracharya praising Goddess Durga as the slayer of Mahishasura.' },
 ];
 
 function formatLocalTime(iso: string): string {
