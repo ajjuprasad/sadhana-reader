@@ -4133,6 +4133,36 @@ const achyutashtakam: Stotra = {
       meaning:
         'May Raghava protect me — he who troubled the demons, who was adorned by Sita, who sanctified the land of Dandakaranya, who was accompanied by Lakshmana, served by the monkeys, and worshipped by Sage Agastya.',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'धेनुकारिष्टकोऽनिष्टकृद्द्वेषिणां केशिहा कंसहृद्वंशिकावादकः।\nपूतनाकोपकः सूरजाखेलनो बालगोपालकः पातु मां सर्वदा॥',
+      transliteration:
+        'Dhenukāriṣṭako\'niṣṭa-kṛd-dveṣiṇāṁ keśi-hā kaṁsa-hṛd-vaṁśikā-vādakaḥ |\npūtanā-kopakaḥ sūrajā-khelano bāla-gopālakaḥ pātu māṁ sarvadā ||',
+      meaning:
+        'May the child cowherd protect me always — the slayer of Dhenuka and Arishtaka, the destroyer of all who harbored malice, the killer of Keshi, the slayer of Kamsa, the flute player, the enrager of Putana, the one who played by the river Yamuna.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'विद्युदुद्योतवान्प्रस्फुरद्वाससं प्रावृडम्भोदवत्प्रोल्लसद्विग्रहम्।\nवन्यया मालया शोभितोरस्थलं लोहिताङ्घ्रिद्वयं वारिजाक्षं भजे॥',
+      transliteration:
+        'Vidyud-udyotavān-prasphurad-vāsasaṁ prāvṛḍ-ambhodavat-prollasad-vigraham |\nvanyayā mālayā śobhitorasthalaṁ lohitāṅghri-dvayaṁ vārijākṣaṁ bhaje ||',
+      meaning:
+        'I worship the lotus-eyed Lord whose garment flashes like lightning, whose form gleams like a monsoon cloud, whose chest is adorned with a garland of wild flowers, and whose two feet are red.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'कुञ्चितैः कुन्तलैर्भ्राजमानाननं रत्नमौलिं लसत्कुण्डलं गण्डयोः।\nहारकेयूरकं कङ्कणप्रोज्ज्वलं किङ्किणीमञ्जुलं श्यामलं तं भजे॥',
+      transliteration:
+        'Kuñcitaiḥ kuntalair-bhrājamānānanaṁ ratna-mauliṁ lasat-kuṇḍalaṁ gaṇḍayoḥ |\nhāra-keyūrakaṁ kaṅkaṇa-projjvalaṁ kiṅkiṇī-mañjulaṁ śyāmalaṁ taṁ bhaje ||',
+      meaning:
+        'I worship that dark-complexioned Lord whose face shines with curly locks, who wears a jeweled crown, whose cheeks are lit by sparkling earrings, who is adorned with necklaces, armlets, and blazing bracelets, and whose anklet bells chime sweetly.',
+    },
   ],
 };
 
