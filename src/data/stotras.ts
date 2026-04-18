@@ -3509,6 +3509,56 @@ const ramRakshaStotra: Stotra = {
       meaning:
         'As Lord Shiva instructed this Rama Raksha in a dream, so did Sage Budha Kaushika write it down upon waking at dawn.',
     },
+    {
+      id: 16,
+      verseLabel: 'Shloka 16',
+      sanskrit:
+        'आरामः कल्पवृक्षाणां विरामः सकलापदाम्।\nअभिरामस्त्रिलोकानां रामः श्रीमान्स नः प्रभुः॥',
+      transliteration:
+        'Ārāmaḥ kalpa-vṛkṣāṇāṁ virāmaḥ sakalāpadām |\nabhirāmas-trilokānāṁ rāmaḥ śrīmān-sa naḥ prabhuḥ ||',
+      meaning:
+        'He is the garden of wish-fulfilling trees, the cessation of all calamities, the delight of the three worlds — that glorious Rama is our Lord.',
+    },
+    {
+      id: 17,
+      verseLabel: 'Shloka 17',
+      sanskrit:
+        'तरुणौ रूपसम्पन्नौ सुकुमारौ महाबलौ।\nपुण्डरीकविशालाक्षौ चीरकृष्णाजिनाम्बरौ॥',
+      transliteration:
+        'Taruṇau rūpa-sampannau sukumārau mahābalau |\npuṇḍarīka-viśālākṣau cīra-kṛṣṇājināmbarau ||',
+      meaning:
+        'The two brothers are youthful, endowed with beauty, delicate yet mighty, with eyes wide as lotuses, wearing bark garments and black deerskin.',
+    },
+    {
+      id: 18,
+      verseLabel: 'Shloka 18',
+      sanskrit:
+        'फलमूलाशनौ दान्तौ तापसौ ब्रह्मचारिणौ।\nपुत्रौ दशरथस्यैतौ भ्रातरौ रामलक्ष्मणौ॥',
+      transliteration:
+        'Phala-mūlāśanau dāntau tāpasau brahmacāriṇau |\nputrau daśarathasyaitau bhrātarau rāma-lakṣmaṇau ||',
+      meaning:
+        'Living on fruits and roots, self-controlled, ascetic, and celibate — these two sons of Dasharatha, the brothers Rama and Lakshmana.',
+    },
+    {
+      id: 19,
+      verseLabel: 'Shloka 19',
+      sanskrit:
+        'शरण्यौ सर्वसत्त्वानां श्रेष्ठौ सर्वधनुष्मताम्।\nरक्षःकुलनिहन्तारौ त्रायेतां नो रघूत्तमौ॥',
+      transliteration:
+        'Śaraṇyau sarva-sattvānāṁ śreṣṭhau sarva-dhanuṣmatām |\nrakṣaḥ-kula-nihantārau trāyetāṁ no raghūttamau ||',
+      meaning:
+        'The refuge of all beings, the foremost among all archers, the destroyers of the demon race — may the best of the Raghus protect us.',
+    },
+    {
+      id: 20,
+      verseLabel: 'Shloka 20',
+      sanskrit:
+        'आत्तसज्जधनुषाविषुस्पृशाव् अक्षयाशुगनिषङ्गसङ्गिनौ।\nरक्षणाय मम रामलक्ष्मणाव् अग्रतः पथि सदैव गच्छताम्॥',
+      transliteration:
+        'Ātta-sajja-dhanuṣāv-iṣu-spṛśāv akṣayāśuga-niṣaṅga-saṅginau |\nrakṣaṇāya mama rāma-lakṣmaṇāv agrataḥ pathi sadaiva gacchatām ||',
+      meaning:
+        'With bows strung and ready, fingers touching their arrows, bearing inexhaustible quivers — may Rama and Lakshmana always walk ahead of me on my path for my protection.',
+    },
   ],
 };
 
