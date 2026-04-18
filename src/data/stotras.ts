@@ -3907,6 +3907,56 @@ const mahishasuraMardiniStotram: Stotra = {
       meaning:
         'O one of sweet wisdom whose flute in hand puts the cuckoo to shame with its melody! O one who dwells in the mountain groves colored by the charming songs of the Pulinda tribes! O one whose playgrounds are filled with the virtuous deeds of the great Shabari women of her retinue — victory to you, O slayer of Mahishasura!',
     },
+    {
+      id: 16,
+      verseLabel: 'Verse 16',
+      sanskrit:
+        'कटितटपीतदुकूलविचित्रमयूखतिरस्कृतचन्द्ररुचे\nप्रणतसुरासुरमौलिमणिस्फुरदंशुलसन्नखचन्द्ररुचे।\nजितकनकाचलमौलिपदोर्जितनिर्भरकुञ्जरकुम्भकुचे\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Kaṭi-taṭa-pīta-dukūla-vicitra-mayūkha-tiraskṛta-candra-ruce\npraṇata-surāsura-mauli-maṇi-sphurat-aṁśu-lasan-nakha-candra-ruce |\njita-kanakācala-mauli-padorjita-nirbhara-kuñjara-kumbha-kuce\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'O one whose yellow silken garment at the waist outshines the moon with its wonderful radiance! O one whose toenails gleam like moons with the sparkle from the crest-gems of prostrating gods and demons! O one whose bosom surpasses the frontal globes of elephants and the peaks of golden Mount Meru — victory to you, O slayer of Mahishasura!',
+    },
+    {
+      id: 17,
+      verseLabel: 'Verse 17',
+      sanskrit:
+        'विजितसहस्रकरैकसहस्रकरैकसहस्रकरैकनुते\nकृतसुरतारकसङ्गरतारकसङ्गरतारकसूनुसुते।\nसुरथसमाधिसमानसमाधिसमाधिसमाधिसुजातरते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Vijita-sahasra-karaika-sahasra-karaika-sahasra-karaika-nute\nkṛta-sura-tāraka-saṅgara-tāraka-saṅgara-tāraka-sūnu-sute |\nsuratha-samādhi-samāna-samādhi-samādhi-samādhi-sujāta-rate\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'O one praised by the thousand-rayed sun who outshines a thousand suns! O daughter of the one who battled Tarakasura in the war of the gods! O one who delights in the deep meditation like that of King Suratha — victory to you, O slayer of Mahishasura!',
+    },
+    {
+      id: 18,
+      verseLabel: 'Verse 18',
+      sanskrit:
+        'पदकमलं करुणानिलये वरिवस्यति योऽनुदिनं सुशिवे\nअयि कमले कमलानिलये कमलानिलयः स कथं न भवेत्।\nतव पदमेव परम्पदमित्यनुशीलयतो मम किं न शिवे\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Pada-kamalaṁ karuṇā-nilaye varivasyati yo\'nudinaṁ su-śive\nayi kamale kamalā-nilaye kamalā-nilayaḥ sa kathaṁ na bhavet |\ntava padam-eva param-padam-ity-anuśīlayato mama kiṁ na śive\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'O auspicious one, abode of compassion — one who daily worships your lotus feet, O lotus-dwelling one, how can they not become the abode of Lakshmi? For one who contemplates that your feet alone are the supreme abode, what is not attained, O Shive? — victory to you, O slayer of Mahishasura!',
+    },
+    {
+      id: 19,
+      verseLabel: 'Verse 19',
+      sanskrit:
+        'कनकलसत्कलसिन्धुजलैरनुसिञ्चिनुतेगुणरङ्गभुवम्\nभजति स किं न शचीकुचकुम्भतटीपरिरम्भसुखानुभवम्।\nतव चरणं शरणं करवाणि नतामरवाणिनिवासिशिवम्\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Kanaka-lasat-kala-sindhu-jalair-anusiñcinute-guṇa-raṅga-bhuvam\nbhajati sa kiṁ na śacī-kuca-kumbha-taṭī-parirambha-sukhānubhavam |\ntava caraṇaṁ śaraṇaṁ karavāṇi natāmara-vāṇi-nivāsi-śivam\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'One who sprinkles the arena of virtues with golden waters from the ocean — does he not attain the bliss of Indra embracing Shachi? I make your feet my refuge, O auspicious one in whom Saraswati and all the gods find their home — victory to you, O slayer of Mahishasura!',
+    },
+    {
+      id: 20,
+      verseLabel: 'Verse 20',
+      sanskrit:
+        'तव विमलेन्दुकुलं वदनेन्दुमलं सकलं ननु कूलयते\nकिमु पुरुहूतपुरीन्दुमुखीसुमुखीभिरसौ विमुखीक्रियते।\nमम तु मतं शिवनामधने भवती कृपया किमुत क्रियते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Tava vimalendu-kulaṁ vadanendu-malaṁ sakalaṁ nanu kūlayate\nkimu puruhūta-purīndu-mukhī-sumukhī-bhir-asau vimukhī-kriyate |\nmama tu mataṁ śiva-nāma-dhane bhavatī kṛpayā kim-uta kriyate\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'Your spotless moon-like face puts to shame the entire moon dynasty. Are the beautiful moon-faced women of Indra\'s city turned away before you? My conviction is this, O one whose wealth is the name of Shiva — what cannot be achieved by your grace? — victory to you, O slayer of Mahishasura!',
+    },
   ],
 };
 
