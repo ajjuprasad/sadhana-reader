@@ -2269,6 +2269,56 @@ const bhajaGovindam: Stotra = {
       meaning:
         'As long as you are able to earn wealth, so long will your family be attached to you. After you grow old and your body becomes infirm, no one at home even asks how you are.',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'यावत्पवनो निवसति देहे तावत्पृच्छति कुशलं गेहे।\nगतवति वायौ देहापाये भार्या बिभ्यति तस्मिन्काये॥',
+      transliteration:
+        'Yavat Pavano Nivasati Dehe Tavat Prichchhati Kushalam Gehe.\nGatavati Vayau Dehapaye Bharya Bibhyati Tasmin Kaye.',
+      meaning:
+        'As long as the breath dwells in the body, so long do people at home inquire about your welfare. Once the breath leaves and the body decays, even your wife fears that very body.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'बालस्तावत्क्रीडासक्तः तरुणस्तावत्तरुणीसक्तः।\nवृद्धस्तावच्चिन्तासक्तः परमे ब्रह्मणि कोऽपि न सक्तः॥',
+      transliteration:
+        'Balastavat Kreedasaktah Tarunastavat Taruneesaktah.\nVriddhastavach Chintasaktah Parame Brahmani Kopi Na Saktah.',
+      meaning:
+        'The child is attached to play, the youth is attached to a young woman, the old man is attached to anxiety — yet no one is attached to the Supreme Brahman.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'का ते कान्ता कस्ते पुत्रः संसारोऽयमतीव विचित्रः।\nकस्य त्वं कः कुत आयातः तत्त्वं चिन्तय तदिह भ्रातः॥',
+      transliteration:
+        'Ka Te Kanta Kaste Putrah Samsaroyam Ateeva Vichitrah.\nKasya Tvam Kah Kuta Ayatah Tattvam Chintaya Tadiha Bhratah.',
+      meaning:
+        'Who is your wife? Who is your son? This worldly existence is exceedingly strange. Whose are you? Who are you? Where have you come from? Ponder over that truth here, O brother.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Verse 9',
+      sanskrit:
+        'सत्सङ्गत्वे निस्सङ्गत्वं निस्सङ्गत्वे निर्मोहत्वम्।\nनिर्मोहत्वे निश्चलतत्त्वं निश्चलतत्त्वे जीवन्मुक्तिः॥',
+      transliteration:
+        'Satsangatve Nissangatvam Nissangatve Nirmohatvam.\nNirmohatve Nischalatattvam Nischalatat tve Jeevanmuktih.',
+      meaning:
+        'Through the company of the good arises non-attachment; through non-attachment arises freedom from delusion; through freedom from delusion arises steadfastness in truth; through steadfastness in truth arises liberation while living.',
+    },
+    {
+      id: 10,
+      verseLabel: 'Verse 10',
+      sanskrit:
+        'वयसि गते कः कामविकारः शुष्के नीरे कः कासारः।\nक्षीणे वित्ते कः परिवारः ज्ञाते तत्त्वे कः संसारः॥',
+      transliteration:
+        'Vayasi Gate Kah Kamavikarah Shushke Neere Kah Kasarah.\nKsheene Vitte Kah Parivarah Jnate Tattve Kah Samsarah.',
+      meaning:
+        'When youth has passed, where is lust? When water has dried up, where is the lake? When wealth is depleted, where is the retinue? When the truth is known, where is worldly bondage?',
+    },
   ],
 };
 
