@@ -6,12 +6,9 @@ import {
   getRedirectResult,
   signOut as firebaseSignOut,
   type User,
+  type AuthError,
 } from 'firebase/auth';
 import { auth, googleProvider } from '../lib/firebase';
-
-function isMobile() {
-  return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-}
 
 interface AuthContextType {
   user: User | null;
@@ -41,10 +38,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const signIn = useCallback(async () => {
-    if (isMobile()) {
-      await signInWithRedirect(auth, googleProvider);
-    } else {
+    try {
       await signInWithPopup(auth, googleProvider);
+    } catch (err) {
+      const code = (err as AuthError).code;
+      if (code === 'auth/popup-blocked' || code === 'auth/popup-closed-by-browser') {
+        await signInWithRedirect(auth, googleProvider);
+      } else {
+        console.error('Sign-in error:', code, (err as AuthError).message);
+        alert(`Sign-in failed: ${code}`);
+      }
     }
   }, []);
 
