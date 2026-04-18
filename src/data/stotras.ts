@@ -2469,6 +2469,66 @@ const bhajaGovindam: Stotra = {
       meaning:
         'In you, in me, and everywhere else there is but one Vishnu. In vain do you get angry with me, being impatient. See yourself in all beings and abandon all sense of difference — if you wish to attain Vishnu-hood soon.',
     },
+    {
+      id: 26,
+      verseLabel: 'Verse 26',
+      sanskrit:
+        'शत्रौ मित्रे पुत्रे बन्धौ मा कुरु यत्नं विग्रहसन्धौ।\nसर्वस्मिन्नपि पश्यात्मानं सर्वत्रोत्सृज भेदाज्ञानम्॥',
+      transliteration:
+        'Shatrau Mitre Putre Bandhau Ma Kuru Yatnam Vigraha Sandhau.\nSarvasminapi Pashyatmanam Sarvatrotsrija Bhedajnanam.',
+      meaning:
+        'Do not waste your effort in strife or reconciliation with enemy, friend, son, or kinsman. See the Self in all beings and abandon everywhere the sense of difference born of ignorance.',
+    },
+    {
+      id: 27,
+      verseLabel: 'Verse 27',
+      sanskrit:
+        'कामं क्रोधं लोभं मोहं त्यक्त्वाऽत्मानं भावय कोऽहम्।\nआत्मज्ञानविहीना मूढाः ते पच्यन्ते नरकनिगूढाः॥',
+      transliteration:
+        'Kamam Krodham Lobham Moham Tyaktvatmanam Bhavaya Koham.\nAtmajnana Vihina Mudhah Te Pachyante Naraka Nigudhah.',
+      meaning:
+        'Giving up desire, anger, greed, and delusion, contemplate "Who am I?" Those fools who are devoid of Self-knowledge are tormented, bound in the unseen prison of hell.',
+    },
+    {
+      id: 28,
+      verseLabel: 'Verse 28',
+      sanskrit:
+        'गेयं गीतानामसहस्रं ध्येयं श्रीपतिरूपमजस्रम्।\nनेयं सज्जनसङ्गे चित्तं देयं दीनजनाय च वित्तम्॥',
+      transliteration:
+        'Geyam Geetanama Sahasram Dhyeyam Shripatiroopam Ajasram.\nNeyam Sajjana Sange Chittam Deyam Deenajanaya Cha Vittam.',
+      meaning:
+        'Sing the Bhagavad Gita and the thousand names of Vishnu, meditate ceaselessly on the form of the Lord of Lakshmi, lead the mind to the company of the good, and give your wealth to the poor and needy.',
+    },
+    {
+      id: 29,
+      verseLabel: 'Verse 29',
+      sanskrit:
+        'सुखतः क्रियते रामाभोगः पश्चाद्धन्त शरीरे रोगः।\nयद्यपि लोके मरणं शरणं तदपि न मुञ्चति पापाचरणम्॥',
+      transliteration:
+        'Sukhatah Kriyate Ramabhogah Pashchaddhanta Shareere Rogah.\nYadyapi Loke Maranam Sharanam Tadapi Na Munchati Papacharanam.',
+      meaning:
+        'Pleasures are enjoyed with ease, but afterwards disease afflicts the body. Though death is the certain refuge of all in this world, even so one does not give up sinful conduct.',
+    },
+    {
+      id: 30,
+      verseLabel: 'Verse 30',
+      sanskrit:
+        'अर्थमनर्थं भावय नित्यं नास्तिततः सुखलेशः सत्यम्।\nपुत्रादपि धनभाजां भीतिः सर्वत्रैषा विहिता रीतिः॥',
+      transliteration:
+        'Artham Anartham Bhavaya Nityam Nasti Tatah Sukhaleshah Satyam.\nPutradapi Dhanabhajam Bheetih Sarvatraisha Vihita Reetih.',
+      meaning:
+        'Reflect always that wealth is calamitous — truly there is not the least happiness from it. The wealthy fear even their own sons. This is the established way everywhere.',
+    },
+    {
+      id: 31,
+      verseLabel: 'Verse 31',
+      sanskrit:
+        'प्राणायामं प्रत्याहारं नित्यानित्यविवेकविचारम्।\nजाप्यसमेतसमाधिविधानं कुर्ववधानं महदवधानम्॥',
+      transliteration:
+        'Pranayamam Pratyaharam Nityanitya Viveka Vicharam.\nJapyasameta Samadhi Vidhanam Kurvavathanam Mahadavadhanam.',
+      meaning:
+        'Practice breath control, sense withdrawal, discrimination between the eternal and the transient, and the discipline of samadhi accompanied by japa. Do this with great care and attention.',
+    },
   ],
 };
 
