@@ -2847,6 +2847,36 @@ const subrahmanyaBhujangam: Stotra = {
       meaning:
         'When will I behold the infinite state of Skanda, the Lord? When will my body be free from disease and grief? When will I see the pure effulgence that has no beginning or end? When will my mind attain yogic realization?',
     },
+    {
+      id: 31,
+      verseLabel: 'Verse 31',
+      sanskrit:
+        'अपस्मारकुष्ठक्षयार्शःप्रमेह-\nज्वरोन्मादगुल्मादिरोगा महान्तः।\nपिशाचाश्च सर्वे भवत्पत्रभूतिं\nविलोक्य क्षणात्तारकारे द्रवन्ते॥',
+      transliteration:
+        'Apasmara Kushtha Kshayarshah Prameha\nJvaronmada Gulmadi Roga Mahantah.\nPishachascha Sarve Bhavatpatrabhutin\nVilokya Kshanat Tarakare Dravante.',
+      meaning:
+        'Epilepsy, leprosy, consumption, piles, diabetes, fever, madness, tumors, and all great diseases — and all evil spirits — upon beholding the sacred ash blessed by You, O slayer of Taraka, they flee in an instant.',
+    },
+    {
+      id: 32,
+      verseLabel: 'Verse 32',
+      sanskrit:
+        'दृशि स्कन्दमूर्तिः श्रुतौ स्कन्दकीर्तिः\nमुखे मे पवित्रं सदा तच्चरित्रम्।\nकरे तस्य कृत्यं वपुस्तस्य भृत्यं\nगुहे सन्तु लीना ममाशेषभावाः॥',
+      transliteration:
+        'Drishi Skandamoortih Shrutau Skandakeertih\nMukhe Me Pavitram Sada Tachchhritram.\nKare Tasya Krityam Vapustasya Bhrityam\nGuhe Santu Leena Mamasheshabhavah.',
+      meaning:
+        'In my eyes, the form of Skanda; in my ears, the glory of Skanda; on my lips, His sacred story always; in my hands, His work; my body, His servant. May all my faculties be absorbed in Guha.',
+    },
+    {
+      id: 33,
+      verseLabel: 'Verse 33',
+      sanskrit:
+        'मुनीनामुताहो नृणां भक्तिभाजाम्-\nअभीष्टप्रदाः सन्ति सर्वत्र देवाः।\nनृणामन्त्यजानामपि स्वार्थदाने\nगुहाद्देवमन्यं न जाने न जाने॥',
+      transliteration:
+        'Muninaam Utaho Nrinam Bhaktibhajam\nAbhishtapradah Santi Sarvatra Devah.\nNrinam Antyajaanam Api Svarthadane\nGuhad Devam Anyam Na Jane Na Jane.',
+      meaning:
+        'For sages, and indeed for all devotees, there are gods everywhere who grant their wishes. But for the lowliest of people too, in granting their heart\'s desire — I know of no god other than Guha, I know of no god other than Guha.',
+    },
   ],
 };
 
