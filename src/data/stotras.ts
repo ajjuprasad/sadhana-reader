@@ -3609,6 +3609,56 @@ const ramRakshaStotra: Stotra = {
       meaning:
         'Those who praise Rama — dark as durva grass, lotus-eyed, clad in yellow garments — with divine names, they are no longer bound to the cycle of worldly existence.',
     },
+    {
+      id: 26,
+      verseLabel: 'Shloka 26',
+      sanskrit:
+        'रामं लक्ष्मणपूर्वजं रघुवरं सीतापतिं सुन्दरं\nकाकुत्स्थं करुणार्णवं गुणनिधिं विप्रप्रियं धार्मिकम्।\nराजेन्द्रं सत्यसन्धं दशरथतनयं श्यामलं शान्तमूर्तिं\nवन्दे लोकाभिरामं रघुकुलतिलकं राघवं रावणारिम्॥',
+      transliteration:
+        'Rāmaṁ lakṣmaṇa-pūrvajaṁ raghu-varaṁ sītā-patiṁ sundaraṁ\nkākutsthaṁ karuṇārṇavaṁ guṇa-nidhiṁ vipra-priyaṁ dhārmikam |\nrājendraṁ satya-sandhaṁ daśaratha-tanayaṁ śyāmalaṁ śānta-mūrtiṁ\nvande lokābhirāmaṁ raghu-kula-tilakaṁ rāghavaṁ rāvaṇārim ||',
+      meaning:
+        'I salute Rama — elder brother of Lakshmana, best of the Raghus, husband of Sita, beautiful, descendant of Kakutstha, ocean of compassion, treasure of virtues, beloved of the learned, righteous, king of kings, true to his word, son of Dasharatha, dark-complexioned, of peaceful form, the delight of the world, the jewel of the Raghu dynasty, the enemy of Ravana.',
+    },
+    {
+      id: 27,
+      verseLabel: 'Shloka 27',
+      sanskrit:
+        'रामाय रामभद्राय रामचन्द्राय वेधसे।\nरघुनाथाय नाथाय सीतायाः पतये नमः॥',
+      transliteration:
+        'Rāmāya rāma-bhadrāya rāma-candrāya vedhase |\nraghunāthāya nāthāya sītāyāḥ pataye namaḥ ||',
+      meaning:
+        'Salutations to Rama, to Ramabhadra, to Ramachandra the creator, to Raghunatha the Lord, to the husband of Sita.',
+    },
+    {
+      id: 28,
+      verseLabel: 'Shloka 28',
+      sanskrit:
+        'श्रीराम राम रघुनन्दन राम राम\nश्रीराम राम भरताग्रज राम राम।\nश्रीराम राम रणकर्कश राम राम\nश्रीराम राम शरणं भव राम राम॥',
+      transliteration:
+        'Śrīrāma rāma raghunandana rāma rāma\nśrīrāma rāma bharatāgraja rāma rāma |\nśrīrāma rāma raṇa-karkaśa rāma rāma\nśrīrāma rāma śaraṇaṁ bhava rāma rāma ||',
+      meaning:
+        'O Sri Rama, O joy of the Raghu dynasty! O Sri Rama, O elder brother of Bharata! O Sri Rama, O fierce one in battle! O Sri Rama, be my refuge, O Rama!',
+    },
+    {
+      id: 29,
+      verseLabel: 'Shloka 29',
+      sanskrit:
+        'श्रीरामचन्द्रचरणौ मनसा स्मरामि\nश्रीरामचन्द्रचरणौ वचसा गृणामि।\nश्रीरामचन्द्रचरणौ शिरसा नमामि\nश्रीरामचन्द्रचरणौ शरणं प्रपद्ये॥',
+      transliteration:
+        'Śrīrāmacandra-caraṇau manasā smarāmi\nśrīrāmacandra-caraṇau vacasā gṛṇāmi |\nśrīrāmacandra-caraṇau śirasā namāmi\nśrīrāmacandra-caraṇau śaraṇaṁ prapadye ||',
+      meaning:
+        'I remember the feet of Sri Ramachandra in my mind. I praise the feet of Sri Ramachandra with my words. I bow to the feet of Sri Ramachandra with my head. I take refuge at the feet of Sri Ramachandra.',
+    },
+    {
+      id: 30,
+      verseLabel: 'Shloka 30',
+      sanskrit:
+        'माता रामो मत्पिता रामचन्द्रः\nस्वामी रामो मत्सखा रामचन्द्रः।\nसर्वस्वं मे रामचन्द्रो दयालुः\nनान्यं जाने नैव जाने न जाने॥',
+      transliteration:
+        'Mātā rāmo mat-pitā rāmacandraḥ\nsvāmī rāmo mat-sakhā rāmacandraḥ |\nsarvasvaṁ me rāmacandro dayāluḥ\nnānyaṁ jāne naiva jāne na jāne ||',
+      meaning:
+        'Rama is my mother, Ramachandra is my father. Rama is my master, Ramachandra is my friend. The compassionate Ramachandra is my everything — I know no other, I know no other, I know no other.',
+    },
   ],
 };
 
