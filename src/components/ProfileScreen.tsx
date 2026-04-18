@@ -154,6 +154,19 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
                       })}
                     </p>
                   )}
+                  <button
+                    onClick={async () => {
+                      await signOut();
+                      navigate('/');
+                    }}
+                    className="flex items-center justify-center gap-3 py-3 px-6 rounded-xl font-hind font-semibold text-sm mt-5"
+                    style={{
+                      backgroundColor: 'rgba(255,153,51,0.12)',
+                      color: 'var(--color-accent-primary)',
+                    }}
+                  >
+                    {t('auth.signOut')}
+                  </button>
                 </div>
               ) : (
                 <div className="flex flex-col items-center py-4">
@@ -347,29 +360,6 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
             </div>
           </div>
 
-          {/* Sign out */}
-          {user && (
-            <>
-              <div
-                className="h-px mb-6"
-                style={{ backgroundColor: 'var(--color-text-muted)', opacity: 0.15 }}
-              />
-              <button
-                onClick={async () => {
-                  await signOut();
-                  navigate('/');
-                }}
-                className="w-full font-hind text-sm font-medium uppercase py-3 px-4 rounded-xl hover:opacity-80 transition-opacity"
-                style={{
-                  backgroundColor: 'rgba(255,153,51,0.12)',
-                  color: 'var(--color-accent-primary)',
-                  letterSpacing: '0.08em',
-                }}
-              >
-                {t('auth.signOut')}
-              </button>
-            </>
-          )}
         </motion.div>
       </div>
     </div>
