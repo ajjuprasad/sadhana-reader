@@ -3344,6 +3344,74 @@ const kanikadharaStotram: Stotra = {
   ],
 };
 
+const ramRakshaStotra: Stotra = {
+  id: 'ram-raksha-stotra',
+  title: 'Ram Raksha Stotra',
+  subtitle: 'रामरक्षास्तोत्रम्',
+  deity: 'Rama',
+  description:
+    'The divine armor of Lord Rama, revealed by Lord Shiva in a dream to Sage Budha Kaushika. Known as Vajrapanjara (diamond cage), it invokes Rama\'s protection over every part of the body.',
+  benefits: [
+    'Creates an impenetrable shield of divine protection around the devotee',
+    'Destroys all sins and fulfills desires through the power of Rama\'s name',
+    'Bestows long life, happiness, victory, and humility',
+  ],
+  estimatedMinutes: 15,
+  icon: 'bow',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Dhyana Shloka',
+      sanskrit:
+        'ध्यायेदाजानुबाहुं धृतशरधनुषं बद्धपद्मासनस्थं\nपीतं वासो वसानं नवकमलदलस्पर्धिनेत्रं प्रसन्नम्।\nवामाङ्कारूढसीतामुखकमलमिलल्लोचनं नीरदाभं\nनानालङ्कारदीप्तं दधतमुरुजटामण्डनं रामचन्द्रम्॥',
+      transliteration:
+        'Dhyāyed-ājānubāhuṁ dhṛta-śara-dhanuṣaṁ baddha-padmāsana-sthaṁ\npītaṁ vāso vasānaṁ nava-kamala-dala-spardhhi-netraṁ prasannam |\nvāmāṅkārūḍha-sītā-mukha-kamala-milal-locanaṁ nīradābhaṁ\nnānālaṅkāra-dīptaṁ dadhatam-uru-jaṭā-maṇḍanaṁ rāmacandram ||',
+      meaning:
+        'Meditate upon Ramachandra — whose arms reach his knees, who holds an arrow and bow, seated in lotus posture, wearing yellow garments, with eyes rivalling fresh lotus petals, serene, gazing at Sita seated on his left lap, dark as a rain cloud, resplendent with many ornaments, wearing a great crown of matted locks.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Shloka 2',
+      sanskrit:
+        'चरितं रघुनाथस्य शतकोटिप्रविस्तरम्।\nएकैकमक्षरं पुंसां महापातकनाशनम्॥',
+      transliteration:
+        'Caritaṁ raghunāthasya śata-koṭi-pravistaram |\nekaikam-akṣaraṁ puṁsāṁ mahā-pātaka-nāśanam ||',
+      meaning:
+        'The story of Lord Raghunatha extends over a hundred crore verses. Each single syllable of it destroys the greatest sins of mankind.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Shloka 3',
+      sanskrit:
+        'ध्यात्वा नीलोत्पलश्यामं रामं राजीवलोचनम्।\nजानकीलक्ष्मणोपेतं जटामुकुटमण्डितम्॥\nसासितूणधनुर्बाणपाणिं नक्तञ्चरान्तकम्।\nस्वलीलया जगत्त्रातुमाविर्भूतमजं विभुम्॥',
+      transliteration:
+        'Dhyātvā nīlotpala-śyāmaṁ rāmaṁ rājīva-locanam |\njānakī-lakṣmaṇopetaṁ jaṭā-mukuṭa-maṇḍitam ||\nsāsi-tūṇa-dhanur-bāṇa-pāṇiṁ naktañcarāntakam |\nsvalīlayā jagat-trātum-āvirbhūtam-ajaṁ vibhum ||',
+      meaning:
+        'Having meditated upon Rama — dark as a blue lotus, lotus-eyed, accompanied by Janaki and Lakshmana, adorned with a crown of matted hair, holding sword, quiver, bow, and arrow, the destroyer of demons — the unborn, all-pervading Lord who manifested by his own play to protect the world.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Shloka 4',
+      sanskrit:
+        'रामरक्षां पठेत्प्राज्ञः पापघ्नीं सर्वकामदाम्।\nशिरो मे राघवः पातु भालं दशरथात्मजः॥',
+      transliteration:
+        'Rāma-rakṣāṁ paṭhet-prājñaḥ pāpa-ghnīṁ sarva-kāma-dām |\nśiro me rāghavaḥ pātu bhālaṁ daśarathātmajaḥ ||',
+      meaning:
+        'The wise one should recite this Rama Raksha, which destroys sins and fulfills all desires. May Raghava protect my head; may the son of Dasharatha protect my forehead.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Shloka 5',
+      sanskrit:
+        'कौसल्येयो दृशौ पातु विश्वामित्रप्रियः श्रुती।\nघ्राणं पातु मखत्राता मुखं सौमित्रिवत्सलः॥',
+      transliteration:
+        'Kausalyeyo dṛśau pātu viśvāmitra-priyaḥ śrutī |\nghrāṇaṁ pātu makha-trātā mukhaṁ saumitri-vatsalaḥ ||',
+      meaning:
+        'May the son of Kausalya protect my eyes; may the beloved of Vishvamitra protect my ears. May the protector of sacrifices protect my nose; may the one affectionate to Lakshmana protect my mouth.',
+    },
+  ],
+};
+
 export const stotras: Stotra[] = [
   adityaHridayaStotram,
   bhajaGovindam,
@@ -3352,6 +3420,7 @@ export const stotras: Stotra[] = [
   kanikadharaStotram,
   lingashtakam,
   madhurashtakam,
+  ramRakshaStotra,
   mahalakshmiAshtakam,
   shivaPanchakshara,
   saraswatiStotram,
@@ -3378,12 +3447,7 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     title: 'Mahishasura Mardini Stotram',
     deity: 'Durga',
   },
-  {
-    id: 'ram-raksha-stotra',
-    title: 'Ram Raksha Stotra',
-    deity: 'Rama',
-  },
-  {
+{
     id: 'ashtalakshmi-stotram',
     title: 'Ashtalakshmi Stotram',
     deity: 'Ashtalakshmi',

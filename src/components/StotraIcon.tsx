@@ -196,6 +196,17 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
         </>
       );
 
+    case 'ram-raksha-stotra':
+      // Kodanda (bow) — Rama's iconic weapon
+      return (
+        <>
+          <path d="M8 27 Q4 16 8 5" {...s} strokeWidth="2" />
+          <line x1="8" y1="5" x2="8" y2="27" {...s} strokeWidth="1" />
+          <line x1="8" y1="16" x2="26" y2="6" {...s} strokeWidth="1.4" />
+          <path d="M24 6 L27 5 L25 8" {...s} strokeWidth="1.2" />
+        </>
+      );
+
     default:
       return <circle cx="16" cy="16" r="8" {...s} strokeWidth="1.5" />;
   }
