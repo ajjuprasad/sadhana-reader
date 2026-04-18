@@ -54,6 +54,20 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
         </>
       );
 
+    case 'kanakadhara-stotram':
+      // Golden coins — Kanakadhara (shower of gold)
+      return (
+        <>
+          <ellipse cx="16" cy="22" rx="8" ry="3" {...s} strokeWidth="1.5" />
+          <ellipse cx="16" cy="19" rx="8" ry="3" {...s} strokeWidth="1.3" />
+          <path d="M8 19 L8 22 M24 19 L24 22" {...s} strokeWidth="1.3" />
+          <circle cx="10" cy="10" r="2.5" {...s} strokeWidth="1.2" />
+          <circle cx="16" cy="7" r="2.5" {...s} strokeWidth="1.2" />
+          <circle cx="22" cy="11" r="2.5" {...s} strokeWidth="1.2" />
+          <path d="M10 13 L12 16 M16 10 L16 16 M22 14 L20 16" {...s} strokeWidth="1" />
+        </>
+      );
+
     case 'lingashtakam':
       // Shiva Lingam on yoni base
       return (

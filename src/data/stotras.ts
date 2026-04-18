@@ -3107,11 +3107,79 @@ const saraswatiStotram: Stotra = {
   ],
 };
 
+const kanikadharaStotram: Stotra = {
+  id: 'kanakadhara-stotram',
+  title: 'Kanakadhara Stotram',
+  subtitle: 'कनकधारास्तवः',
+  deity: 'Lakshmi',
+  description: 'Twenty-two verses by Adi Shankaracharya invoking Goddess Lakshmi, composed to bring a shower of golden gooseberries upon a poor woman.',
+  benefits: [
+    'Invokes the grace and prosperity of Goddess Mahalakshmi',
+    'Removes poverty, misfortune, and financial difficulties',
+    'Bestows wealth, abundance, and auspiciousness',
+  ],
+  estimatedMinutes: 8,
+  icon: 'M8 19 L8 22 M24 19 L24 22 M16 22 Q8 22 8 19 Q8 16 16 16 Q24 16 24 19 Q24 22 16 22 M10 10 Q10 7.5 12.5 7.5 M16 7 Q16 4.5 18.5 4.5 M22 11 Q22 8.5 24.5 8.5',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Shloka 1',
+      sanskrit:
+        'अङ्गं हरेः पुलकभूषणमाश्रयन्ती\nभृङ्गाङ्गनेव मुकुलाभरणं तमालम्।\nअङ्गीकृताखिलविभूतिरपाङ्गलीला\nमाङ्गल्यदास्तु मम मङ्गलदेवतायाः॥',
+      transliteration:
+        'Aṅgaṁ hareḥ pulaka-bhūṣaṇam-āśrayantī\nbhṛṅgāṅganeva mukulābharaṇaṁ tamālam |\naṅgīkṛtākhila-vibhūtir-apāṅga-līlā\nmāṅgalya-dāstu mama maṅgala-devatāyāḥ ||',
+      meaning:
+        'Like a female bee seeking the buds of a tamāla tree, she clings to the body of Lord Hari adorned with goosebumps. May the playful sidelong glance of that Goddess of Auspiciousness — who has embraced all divine glory — bestow blessings upon me.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Shloka 2',
+      sanskrit:
+        'मुग्धा मुहुर्विदधती वदने मुरारेः\nप्रेमत्रपाप्रणिहितानि गतागतानि।\nमाला दृशोर्मधुकरीव महोत्पले या\nसा मे श्रियं दिशतु सागरसम्भवायाः॥',
+      transliteration:
+        'Mugdhā muhur-vidadhatī vadane murāreḥ\nprema-trapā-praṇihitāni gatāgatāni |\nmālā dṛśor-madhukarīva mahotpale yā\nsā me śriyaṁ diśatu sāgara-sambhavāyāḥ ||',
+      meaning:
+        'Enchanting, she repeatedly casts upon the face of Murāri her glances that come and go — set in motion by love and modesty — like a garland of bees upon a great lotus. May she, the ocean-born, grant me prosperity.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Shloka 3',
+      sanskrit:
+        'आमीलिताक्षमधिगम्य मुदा मुकुन्दम्\nआनन्दकन्दमनिमेषमनङ्गतन्त्रम्।\nआकेकरस्थितकनीनिकपक्ष्मनेत्रं\nभूत्यै भवेन्मम भुजङ्गशयाङ्गनायाः॥',
+      transliteration:
+        'Āmīlitākṣam-adhigamya mudā mukundam\nānanda-kandam-animesam-anaṅga-tantram |\nākekara-sthita-kanīnika-pakṣma-netraṁ\nbhūtyai bhaven-mama bhujaṅga-śayāṅganāyāḥ ||',
+      meaning:
+        'Approaching the blissful Mukunda — whose eyes are half-closed, unblinking, and governed by the ways of love — may the sidelong glance of the consort of the serpent-reclining Lord bring me prosperity.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Shloka 4',
+      sanskrit:
+        'बाह्वन्तरे मधुजितः श्रितकौस्तुभे या\nहारावलीव हरिनीलमयी विभाति।\nकामप्रदा भगवतोऽपि कटाक्षमाला\nकल्याणमावहतु मे कमलालयायाः॥',
+      transliteration:
+        'Bāhvantare madhu-jitaḥ śrita-kaustubhe yā\nhārāvalīva harinīlamayī vibhāti |\nkāma-pradā bhagavato-\'pi kaṭākṣa-mālā\nkalyāṇam-āvahatu me kamalālayāyāḥ ||',
+      meaning:
+        'Between the arms of the slayer of Madhu, near the Kaustubha gem, she shines like a sapphire necklace. May the garland of sidelong glances of the lotus-dwelling Goddess — which fulfils even the desires of the Lord — bring me auspiciousness.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Shloka 5',
+      sanskrit:
+        'कालाम्बुदालिललितोरसि कैटभारेः\nधाराधरे स्फुरति या तडिदङ्गनेव।\nमातुः समस्तजगतां महनीयमूर्तिः\nभद्राणि मे दिशतु भार्गवनन्दनायाः॥',
+      transliteration:
+        'Kālāmbudāli-lalitorasi kaiṭabhāreḥ\ndhārādhare sphurati yā taḍid-aṅganeva |\nmātuḥ samasta-jagatāṁ mahanīya-mūrtiḥ\nbhadrāṇi me diśatu bhārgava-nandanāyāḥ ||',
+      meaning:
+        'Upon the broad chest of the slayer of Kaitabha — beautiful as a bank of dark rain clouds — she flashes like a streak of lightning. May the glorious form of the Mother of all worlds, the daughter of Bhrigu, grant me well-being.',
+    },
+  ],
+};
+
 export const stotras: Stotra[] = [
   adityaHridayaStotram,
   bhajaGovindam,
   ganeshaPancharatnam,
   hanumanChalisa,
+  kanikadharaStotram,
   lingashtakam,
   madhurashtakam,
   mahalakshmiAshtakam,
@@ -3144,11 +3212,6 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'ram-raksha-stotra',
     title: 'Ram Raksha Stotra',
     deity: 'Rama',
-  },
-  {
-    id: 'kanakadhara-stotram',
-    title: 'Kanakadhara Stotram',
-    deity: 'Lakshmi',
   },
   {
     id: 'ashtalakshmi-stotram',
