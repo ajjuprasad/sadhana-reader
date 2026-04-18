@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { stotras, comingSoonStotras } from '../data/stotras';
@@ -9,6 +9,114 @@ import type { useSettings } from '../hooks/useSettings';
 import { useTranslation } from '../i18n/useTranslation';
 
 const sacredEase = [0.76, 0, 0.24, 1] as const;
+
+const recentItems = [
+  { id: 'subrahmanya-bhujangam', title: 'Subrahmanya Bhujangam', date: 'Apr 18', desc: '33 verses · Adi Shankaracharya' },
+  { id: 'bhaja-govindam', title: 'Bhaja Govindam', date: 'Apr 18', desc: '31 verses · Adi Shankaracharya' },
+  { id: 'aditya-hridaya-stotram', title: 'Aditya Hridaya Stotram', date: 'Apr 17', desc: '31 verses · Valmiki Ramayana' },
+];
+
+function RecentCarousel({ navigate }: { navigate: (path: string) => void }) {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(0);
+
+  const onScroll = useCallback(() => {
+    const el = scrollRef.current;
+    if (!el || !el.children.length) return;
+    const card = el.children[0] as HTMLElement;
+    const gap = 12;
+    const step = card.offsetWidth + gap;
+    const idx = Math.round(el.scrollLeft / step);
+    setActive(Math.min(Math.max(idx, 0), recentItems.length - 1));
+  }, []);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    el.addEventListener('scroll', onScroll, { passive: true });
+    return () => el.removeEventListener('scroll', onScroll);
+  }, [onScroll]);
+
+  return (
+    <>
+      <div
+        ref={scrollRef}
+        className="recent-carousel flex gap-3 overflow-x-auto pb-3"
+        style={{
+          scrollSnapType: 'x mandatory',
+          WebkitOverflowScrolling: 'touch',
+          scrollbarWidth: 'none',
+          msOverflowStyle: 'none',
+        }}
+      >
+        <style>{`.recent-carousel::-webkit-scrollbar { display: none; }`}</style>
+        {recentItems.map((item, i) => (
+          <motion.button
+            key={item.id}
+            onClick={() => navigate(`/stotra/${item.id}`)}
+            className="flex-shrink-0 flex items-center gap-3 rounded-xl px-4 py-3 text-left"
+            style={{
+              backgroundColor: 'var(--color-bg-card)',
+              width: 'min(85%, 280px)',
+              scrollSnapAlign: 'start',
+            }}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{
+              duration: 0.4,
+              delay: i * 0.08,
+              ease: sacredEase as unknown as number[],
+            }}
+            whileTap={{ scale: 0.97 }}
+          >
+            <div className="flex-1 min-w-0">
+              <p
+                className="font-hind font-semibold text-sm truncate"
+                style={{ color: 'var(--color-text-primary)' }}
+              >
+                {item.title}
+              </p>
+              <p
+                className="font-body text-xs mt-0.5 truncate"
+                style={{ color: 'var(--color-text-muted)' }}
+              >
+                {item.date} — {item.desc}
+              </p>
+            </div>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="flex-shrink-0"
+              style={{ color: 'var(--color-text-muted)' }}
+            >
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </motion.button>
+        ))}
+      </div>
+      <div className="flex justify-center gap-1.5 mt-2">
+        {recentItems.map((_, i) => (
+          <div
+            key={i}
+            className="rounded-full transition-all duration-300"
+            style={{
+              width: active === i ? 16 : 5,
+              height: 5,
+              backgroundColor: 'var(--color-accent-primary)',
+              opacity: active === i ? 0.7 : 0.2,
+            }}
+          />
+        ))}
+      </div>
+    </>
+  );
+}
 
 interface HomeScreenProps {
   settingsState: ReturnType<typeof useSettings>;
@@ -139,53 +247,7 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
           />
         </motion.div>
 
-        <div className="space-y-3">
-          {[
-            { id: 'subrahmanya-bhujangam', title: 'Subrahmanya Bhujangam', date: 'Apr 18, 2026', description: '33 verses — Adi Shankaracharya\'s serpentine hymn to Lord Subrahmanya' },
-            { id: 'bhaja-govindam', title: 'Bhaja Govindam', date: 'Apr 18, 2026', description: '31 verses — Adi Shankaracharya\'s hymn on renunciation and devotion' },
-          ].map((item) => (
-            <motion.button
-              key={item.title}
-              onClick={() => navigate(`/stotra/${item.id}`)}
-              className="w-full flex items-center gap-3 rounded-xl px-4 py-3 text-left"
-              style={{ backgroundColor: 'var(--color-bg-card)' }}
-              initial={{ opacity: 0, y: 8 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-30px' }}
-              transition={{ duration: 0.4, ease: sacredEase as unknown as number[] }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <div className="flex-1 min-w-0">
-                <p
-                  className="font-hind font-semibold text-sm"
-                  style={{ color: 'var(--color-text-primary)' }}
-                >
-                  {item.title}
-                </p>
-                <p
-                  className="font-body text-xs mt-0.5"
-                  style={{ color: 'var(--color-text-muted)' }}
-                >
-                  {item.date} — {item.description}
-                </p>
-              </div>
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="flex-shrink-0"
-                style={{ color: 'var(--color-text-muted)' }}
-              >
-                <path d="M9 18l6-6-6-6" />
-              </svg>
-            </motion.button>
-          ))}
-        </div>
+        <RecentCarousel navigate={navigate} />
       </section>
 
       {/* Grid */}
