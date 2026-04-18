@@ -1,3 +1,4 @@
+import { useRef, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { stotras, comingSoonStotras } from '../data/stotras';
@@ -89,6 +90,19 @@ export default function HomeScreen() {
   const { user } = useAuth();
   const { favoriteIds } = useFavorites();
   const favoriteStotras = user ? stotras.filter((s) => favoriteIds.includes(s.id)) : [];
+  const headerRef = useRef<HTMLDivElement>(null);
+  const [headerHidden, setHeaderHidden] = useState(false);
+
+  useEffect(() => {
+    const el = headerRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setHeaderHidden(!entry.isIntersecting),
+      { threshold: 0 },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div className="relative min-h-screen">
@@ -99,7 +113,8 @@ export default function HomeScreen() {
       >
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="flex items-center gap-1.5"
+          className="flex items-center gap-1.5 transition-opacity duration-300"
+          style={{ opacity: headerHidden ? 1 : 0, pointerEvents: headerHidden ? 'auto' : 'none' }}
         >
           <span
             className="text-xl select-none"
@@ -154,6 +169,7 @@ export default function HomeScreen() {
 
       {/* Header */}
       <motion.header
+        ref={headerRef}
         className="text-center mb-10 sm:mb-14 mt-6 sm:mt-8"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
