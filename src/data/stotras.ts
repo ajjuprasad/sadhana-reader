@@ -2944,6 +2944,56 @@ const saraswatiStotram: Stotra = {
       meaning:
         'O Saraswati, I bow to you, O bestower of boons, O fulfiller of desires. I am about to begin my studies — may success always be mine.',
     },
+    {
+      id: 6,
+      verseLabel: 'Shloka 6',
+      sanskrit:
+        'सरस्वति नमस्तुभ्यं सर्वदेवि नमो नमः।\nशान्तरूपे शशिधरे सर्वयोगे नमो नमः॥',
+      transliteration:
+        'Sarasvati namastubhyaṁ sarva-devi namo namaḥ |\nśānta-rūpe śaśi-dhare sarva-yoge namo namaḥ ||',
+      meaning:
+        'O Saraswati, salutations to you, O Goddess of all, obeisance again and again. O peaceful one, bearer of the moon, embodiment of all yoga — salutations to you.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Shloka 7',
+      sanskrit:
+        'नित्यानन्दे निराधारे निष्कलायै नमो नमः।\nविद्याधरे विशालाक्षि शुद्धज्ञाने नमो नमः॥',
+      transliteration:
+        'Nityānande nirādhāre niṣkalāyai namo namaḥ |\nvidyā-dhare viśālākṣi śuddha-jñāne namo namaḥ ||',
+      meaning:
+        'O eternal bliss, O self-sustained one, O partless one — salutations. O bearer of knowledge, O large-eyed one, O pure wisdom — salutations.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Shloka 8',
+      sanskrit:
+        'शुद्धस्फटिकरूपायै सूक्ष्मरूपे नमो नमः।\nशब्दब्रह्मि चतुर्हस्ते सर्वसिद्ध्यै नमो नमः॥',
+      transliteration:
+        'Śuddha-sphaṭika-rūpāyai sūkṣma-rūpe namo namaḥ |\nśabda-brahmi catur-haste sarva-siddhyai namo namaḥ ||',
+      meaning:
+        'O one whose form is pure crystal, O subtle one — salutations. O embodiment of the Word-Brahman, O four-armed one, O granter of all accomplishments — salutations.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Shloka 9',
+      sanskrit:
+        'मुक्तालङ्कृतसर्वाङ्ग्यै मूलाधारे नमो नमः।\nमूलमन्त्रस्वरूपायै मूलशक्त्यै नमो नमः॥',
+      transliteration:
+        'Muktālaṅkṛta-sarvāṅgyai mūlādhāre namo namaḥ |\nmūla-mantra-svarūpāyai mūla-śaktyai namo namaḥ ||',
+      meaning:
+        'O one whose entire body is adorned with pearls, O foundation of all existence — salutations. O one whose nature is the root-mantra, O primordial power — salutations.',
+    },
+    {
+      id: 10,
+      verseLabel: 'Shloka 10',
+      sanskrit:
+        'मनो मणिमहायोगे वागीश्वरि नमो नमः।\nवाग्भ्यै वरदहस्तायै वरदायै नमो नमः॥',
+      transliteration:
+        'Mano maṇi-mahā-yoge vāgīśvari namo namaḥ |\nvāgbhyai varada-hastāyai varadāyai namo namaḥ ||',
+      meaning:
+        'O jewel of the mind, O great yogini, O mistress of speech — salutations. O embodiment of speech, O one with boon-granting hands, O bestower of boons — salutations.',
+    },
   ],
 };
 
