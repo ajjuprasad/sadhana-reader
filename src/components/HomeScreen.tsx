@@ -226,8 +226,20 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
         </p>
       </motion.header>
 
+      {/* Grid */}
+      <div className="max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5">
+        {stotras.map((stotra, index) => (
+          <StotraCard
+            key={stotra.id}
+            stotra={stotra}
+            index={index}
+            onClick={() => navigate(`/stotra/${stotra.id}`)}
+          />
+        ))}
+      </div>
+
       {/* Recently added */}
-      <section className="max-w-3xl mx-auto mb-10 sm:mb-14">
+      <section className="max-w-3xl mx-auto mt-12 sm:mt-16">
         <motion.div
           className="flex items-center justify-center gap-2 mb-5 sm:mb-6"
           initial={{ opacity: 0, y: 10 }}
@@ -257,18 +269,6 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
 
         <RecentCarousel navigate={navigate} />
       </section>
-
-      {/* Grid */}
-      <div className="max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5">
-        {stotras.map((stotra, index) => (
-          <StotraCard
-            key={stotra.id}
-            stotra={stotra}
-            index={index}
-            onClick={() => navigate(`/stotra/${stotra.id}`)}
-          />
-        ))}
-      </div>
 
       {/* Coming soon */}
       {comingSoonStotras.length > 0 && (
