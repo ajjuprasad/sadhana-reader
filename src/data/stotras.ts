@@ -3271,6 +3271,56 @@ const kanikadharaStotram: Stotra = {
       meaning:
         'Salutations to her as Radiance, the lotus-eyed one; as Prosperity, the mother of the universe; who is worshipped by the gods and all beings; and who is the beloved of the son of Nanda.',
     },
+    {
+      id: 16,
+      verseLabel: 'Shloka 16',
+      sanskrit:
+        'सम्पत्कराणि सकलेन्द्रियनन्दनानि\nसाम्राज्यदानविभवानि सरोरुहाक्षि।\nत्वद्वन्दनानि दुरिताहरणोद्यतानि\nमामेव मातरनिशं कलयन्तु मान्ये॥',
+      transliteration:
+        'Sampat-karāṇi sakalendriya-nandanāni\nsāmrājya-dāna-vibhavāni saroruhākṣi |\ntvad-vandanāni duritāharaṇodyatāni\nmām-eva mātar-aniśaṁ kalayantu mānye ||',
+      meaning:
+        'O lotus-eyed Mother, may my salutations to you — which bring wealth, delight all the senses, confer the splendour of sovereignty, and are ever ready to destroy sins — ceaselessly bear fruit for me, O revered one.',
+    },
+    {
+      id: 17,
+      verseLabel: 'Shloka 17',
+      sanskrit:
+        'यत्कटाक्षसमुपासनाविधिः\nसेवकस्य सकलार्थसम्पदः।\nसन्तनोति वचनाङ्गमानसैः\nत्वां मुरारिहृदयेश्वरीं भजे॥',
+      transliteration:
+        'Yat-kaṭākṣa-samupāsanā-vidhiḥ\nsevakasya sakalārtha-sampadaḥ |\nsantanoti vacanāṅga-mānasaiḥ\ntvāṁ murāri-hṛdayeśvarīṁ bhaje ||',
+      meaning:
+        'The mere practice of worshipping your sidelong glance bestows upon the devotee all manner of wealth and prosperity. With my words, body, and mind, I worship you, O sovereign of Murāri\'s heart.',
+    },
+    {
+      id: 18,
+      verseLabel: 'Shloka 18',
+      sanskrit:
+        'सरसिजनिलये सरोजहस्ते\nधवलतमांशुकगन्धमाल्यशोभे।\nभगवति हरिवल्लभे मनोज्ञे\nत्रिभुवनभूतिकरि प्रसीद मह्यम्॥',
+      transliteration:
+        'Sarasija-nilaye saroja-haste\ndhavalatamāṁśuka-gandha-mālya-śobhe |\nbhagavati hari-vallabhe manojñe\ntribhuvana-bhūti-kari prasīda mahyam ||',
+      meaning:
+        'O Goddess dwelling in the lotus, holding a lotus, resplendent in pure white garments, fragrant garlands, and perfumes — O captivating beloved of Hari, who bestows prosperity upon the three worlds — be gracious unto me.',
+    },
+    {
+      id: 19,
+      verseLabel: 'Shloka 19',
+      sanskrit:
+        'दिग्घस्तिभिः कनककुम्भमुखावसृष्ट-\nस्वर्वाहिनी विमलचारुजलाप्लुताङ्गीम्।\nप्रातर्नमामि जगतां जननीमशेष-\nलोकाधिनाथगृहिणीम् अमृताब्धिपुत्रीम्॥',
+      transliteration:
+        'Dig-ghastibiḥ kanaka-kumbha-mukhāvasṛṣṭa-\nsvarvāhinī vimala-cāru-jalāplutāṅgīm |\nprātar-namāmi jagatāṁ jananīm-aśeṣa-\nlokādhi-nātha-gṛhiṇīm amṛtābdhi-putrīm ||',
+      meaning:
+        'I bow each morning to the Mother of the worlds — bathed in the pure, beautiful waters of the celestial river poured from golden pots by the elephants of the directions — the consort of the Lord of all realms, the daughter of the ocean of nectar.',
+    },
+    {
+      id: 20,
+      verseLabel: 'Shloka 20',
+      sanskrit:
+        'कमले कमलाक्षवल्लभे त्वं\nकरुणापूरतरङ्गितैरपाङ्गैः।\nअवलोकय मामकिञ्चनानां\nप्रथमं पात्रमकृत्रिमं दयायाः॥',
+      transliteration:
+        'Kamale kamalākṣa-vallabhe tvaṁ\nkaruṇā-pūra-taraṅgitair-apāṅgaiḥ |\navalokaya mām-akiñcanānāṁ\nprathamaṁ pātram-akṛtrimaṁ dayāyāḥ ||',
+      meaning:
+        'O Kamala, O beloved of the lotus-eyed Lord — with your sidelong glances rippling with waves of compassion — look upon me, the foremost and most genuine vessel of your mercy among the destitute.',
+    },
   ],
 };
 
