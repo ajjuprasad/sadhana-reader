@@ -3221,6 +3221,56 @@ const kanikadharaStotram: Stotra = {
       meaning:
         'She is Saraswati the Goddess of Speech, the beauty of Vishnu, Shakambhari the sustainer, and the beloved of Shiva. To her who presides over creation, preservation, and dissolution — to that youthful consort of the sole Guru of the three worlds — I bow.',
     },
+    {
+      id: 11,
+      verseLabel: 'Shloka 11',
+      sanskrit:
+        'श्रुत्यै नमोऽस्तु शुभकर्मफलप्रसूत्यै\nरत्यै नमोऽस्तु रमणीयगुणार्णवायै।\nशक्त्यै नमोऽस्तु शतपत्रनिकेतनायै\nपुष्ट्यै नमोऽस्तु पुरुषोत्तमवल्लभायै॥',
+      transliteration:
+        'Śrutyai namo-\'stu śubha-karma-phala-prasūtyai\nratyai namo-\'stu ramaṇīya-guṇārṇavāyai |\nśaktyai namo-\'stu śata-patra-niketanāyai\npuṣṭyai namo-\'stu puruṣottama-vallabhāyai ||',
+      meaning:
+        'Salutations to her as Shruti, the bestower of fruits of good deeds; as Rati, the ocean of delightful virtues; as Shakti, who dwells in the hundred-petalled lotus; and as Pushti, the beloved of Purushottama.',
+    },
+    {
+      id: 12,
+      verseLabel: 'Shloka 12',
+      sanskrit:
+        'नमोऽस्तु नालीकनिभाननायै\nनमोऽस्तु दुग्धोदधिजन्मभूम्यै।\nनमोऽस्तु सोमामृतसोदरायै\nनमोऽस्तु नारायणवल्लभायै॥',
+      transliteration:
+        'Namo-\'stu nālīka-nibhānanāyai\nnamo-\'stu dugdhodadhi-janma-bhūmyai |\nnamo-\'stu somāmṛta-sodarāyai\nnamo-\'stu nārāyaṇa-vallabhāyai ||',
+      meaning:
+        'Salutations to her whose face resembles a lotus; who was born from the ocean of milk; who is the sister of the moon and ambrosia; and who is the beloved of Nārāyaṇa.',
+    },
+    {
+      id: 13,
+      verseLabel: 'Shloka 13',
+      sanskrit:
+        'नमोऽस्तु हेमाम्बुजपीठिकायै\nनमोऽस्तु भूमण्डलनायिकायै।\nनमोऽस्तु देवादिदयापरायै\nनमोऽस्तु शार्ङ्गायुधवल्लभायै॥',
+      transliteration:
+        'Namo-\'stu hemāmbuja-pīṭhikāyai\nnamo-\'stu bhū-maṇḍala-nāyikāyai |\nnamo-\'stu devādi-dayāparāyai\nnamo-\'stu śārṅgāyudha-vallabhāyai ||',
+      meaning:
+        'Salutations to her who is seated on a golden lotus throne; who is the sovereign of the earth; who is compassionate towards the gods and all beings; and who is the beloved of the wielder of the Shārṅga bow.',
+    },
+    {
+      id: 14,
+      verseLabel: 'Shloka 14',
+      sanskrit:
+        'नमोऽस्तु देव्यै भृगुनन्दनायै\nनमोऽस्तु विष्णोरुरसि स्थितायै।\nनमोऽस्तु लक्ष्म्यै कमलालयायै\nनमोऽस्तु दामोदरवल्लभायै॥',
+      transliteration:
+        'Namo-\'stu devyai bhṛgu-nandanāyai\nnamo-\'stu viṣṇor-urasi sthitāyai |\nnamo-\'stu lakṣmyai kamalālayāyai\nnamo-\'stu dāmodara-vallabhāyai ||',
+      meaning:
+        'Salutations to the Goddess, the daughter of Bhrigu; who resides upon the chest of Vishnu; who is Lakshmi dwelling in the lotus; and who is the beloved of Dāmodara.',
+    },
+    {
+      id: 15,
+      verseLabel: 'Shloka 15',
+      sanskrit:
+        'नमोऽस्तु कान्त्यै कमलेक्षणायै\nनमोऽस्तु भूत्यै भुवनप्रसूत्यै।\nनमोऽस्तु देवादिभिरर्चितायै\nनमोऽस्तु नन्दात्मजवल्लभायै॥',
+      transliteration:
+        'Namo-\'stu kāntyai kamalekṣaṇāyai\nnamo-\'stu bhūtyai bhuvana-prasūtyai |\nnamo-\'stu devādibhir-arcitāyai\nnamo-\'stu nandātmaja-vallabhāyai ||',
+      meaning:
+        'Salutations to her as Radiance, the lotus-eyed one; as Prosperity, the mother of the universe; who is worshipped by the gods and all beings; and who is the beloved of the son of Nanda.',
+    },
   ],
 };
 
