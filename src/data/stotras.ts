@@ -3709,6 +3709,36 @@ const ramRakshaStotra: Stotra = {
       meaning:
         'I bow again and again to Sri Rama — the remover of calamities, the bestower of all prosperity, the delight of the world.',
     },
+    {
+      id: 36,
+      verseLabel: 'Shloka 36',
+      sanskrit:
+        'भर्जनं भवबीजानामर्जनं सुखसम्पदाम्।\nतर्जनं यमदूतानां रामरामेति गर्जनम्॥',
+      transliteration:
+        'Bharjanaṁ bhava-bījānām-arjanaṁ sukha-sampadām |\ntarjanaṁ yama-dūtānāṁ rāma-rāmeti garjanam ||',
+      meaning:
+        'The roar of "Rama! Rama!" burns the seeds of worldly existence, earns the wealth of happiness, and threatens the messengers of Yama (death).',
+    },
+    {
+      id: 37,
+      verseLabel: 'Shloka 37',
+      sanskrit:
+        'रामो राजमणिः सदा विजयते रामं रमेशं भजे\nरामेणाभिहता निशाचरचमू रामाय तस्मै नमः।\nरामान्नास्ति परायणं परतरं रामस्य दासोऽस्म्यहं\nरामे चित्तलयः सदा भवतु मे भो राम मामुद्धर॥',
+      transliteration:
+        'Rāmo rāja-maṇiḥ sadā vijayate rāmaṁ rameśaṁ bhaje\nrāmeṇābhihatā niśācara-camū rāmāya tasmai namaḥ |\nrāmān-nāsti parāyaṇaṁ parataraṁ rāmasya dāso\'smy-ahaṁ\nrāme citta-layaḥ sadā bhavatu me bho rāma mām-uddhara ||',
+      meaning:
+        'Rama the jewel among kings is ever victorious — I worship Rama, the Lord of Lakshmi. By Rama the demon army was slain — I bow to that Rama. There is no higher refuge than Rama — I am the servant of Rama. May my mind always dissolve in Rama — O Rama, uplift me!',
+    },
+    {
+      id: 38,
+      verseLabel: 'Mangala Shloka',
+      sanskrit:
+        'मङ्गलं कोसलेन्द्राय महनीयगुणाब्धये।\nचक्रवर्तितनूजाय सार्वभौमाय मङ्गलम्॥',
+      transliteration:
+        'Maṅgalaṁ kosalendarāya mahanīya-guṇābdhaye |\ncakravarti-tanūjāya sārvabhaumāya maṅgalam ||',
+      meaning:
+        'Auspiciousness to the Lord of Kosala, the ocean of magnificent virtues! Auspiciousness to the son of the emperor, the sovereign of all!',
+    },
   ],
 };
 
