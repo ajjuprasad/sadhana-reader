@@ -134,6 +134,19 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
         </>
       );
 
+    case 'bhaja-govindam':
+      // Shankha (conch) — symbol of Govinda / Vishnu
+      return (
+        <>
+          <path d="M18 4 Q24 6 24 14 Q24 20 20 24 Q18 26 16 28" {...s} strokeWidth="1.6" />
+          <path d="M18 4 Q12 6 10 12 Q9 18 12 22 Q14 25 16 28" {...s} strokeWidth="1.6" />
+          <path d="M11 14 Q13 12 15 14" {...s} strokeWidth="1" />
+          <path d="M15 14 Q17 12 19 14" {...s} strokeWidth="1" />
+          <path d="M11 18 Q14 16 17 18" {...s} strokeWidth="1" />
+          <ellipse cx="17" cy="4" rx="2" ry="1.5" {...s} strokeWidth="1.2" />
+        </>
+      );
+
     case 'shiva-ashtottara':
       // Damaru (Shiva's drum)
       return (

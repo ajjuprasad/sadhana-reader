@@ -2204,8 +2204,77 @@ const adityaHridayaStotram: Stotra = {
   ],
 };
 
+const bhajaGovindam: Stotra = {
+  id: 'bhaja-govindam',
+  title: 'Bhaja Govindam',
+  subtitle: 'भज गोविन्दम्',
+  deity: 'Govinda',
+  description:
+    'Thirty-one verses on renunciation and devotion, composed by Adi Shankaracharya. Also known as Moha Mudgara — the hammer that shatters delusion.',
+  benefits: [
+    'Awakens viveka (discrimination) between the real and the unreal',
+    'Cultivates vairagya (dispassion) and freedom from worldly attachment',
+    'Inspires single-pointed devotion to the Lord',
+  ],
+  estimatedMinutes: 10,
+  icon: '',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'भज गोविन्दं भज गोविन्दं गोविन्दं भज मूढमते।\nसम्प्राप्ते सन्निहिते काले नहि नहि रक्षति डुकृञ्करणे॥',
+      transliteration:
+        'Bhaja Govindam Bhaja Govindam Govindam Bhaja Moodhamate.\nSamprapte Sannihite Kale Nahi Nahi Rakshati Dukrinkarane.',
+      meaning:
+        'Worship Govinda, worship Govinda, worship Govinda, O fool! When the appointed time of death arrives, the rules of grammar will not save you.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'मूढ जहीहि धनागमतृष्णां कुरु सद्बुद्धिं मनसि वितृष्णाम्।\nयल्लभसे निजकर्मोपात्तं वित्तं तेन विनोदय चित्तम्॥',
+      transliteration:
+        'Moodha Jaheehi Dhanagama Trishnam Kuru Sadbuddhim Manasi Vitrishnam.\nYallabhase Nijakarmopattam Vittam Tena Vinodaya Chittam.',
+      meaning:
+        'O fool, give up the thirst for accumulating wealth. Create in your mind thoughts free of desire. Be content with what comes through your own righteous deeds.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'नारीस्तनभरनाभीदेशं दृष्ट्वा मा गा मोहावेशम्।\nएतन्मांसवसादिविकारं मनसि विचिन्तय वारं वारम्॥',
+      transliteration:
+        'Naree Stanabhara Nabheedesham Drishtva Ma Ga Mohavesham.\nEtan Mamsavasadi Vikaram Manasi Vichintaya Varam Varam.',
+      meaning:
+        'Seeing the body of a woman, do not fall into delusion. It is but a modification of flesh and fat. Reflect upon this again and again in your mind.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'नलिनीदलगतजलमतितरलं तद्वज्जीवितमतिशयचपलम्।\nविद्धि व्याध्यभिमानग्रस्तं लोकं शोकहतं च समस्तम्॥',
+      transliteration:
+        'Nalineedala Gata Jalam Atitaralam Tadvaj Jeevitam Atishaya Chapalam.\nViddhi Vyadhyabhimana Grastam Lokam Shokahatam Cha Samastam.',
+      meaning:
+        'The water drop on a lotus petal is extremely unsteady; so too is life exceedingly unstable. Know that the entire world is consumed by disease, ego, and grief.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'यावद्वित्तोपार्जनसक्तः स्तावन्निजपरिवारो रक्तः।\nपश्चाज्जीवति जर्जरदेहे वार्तां कोऽपि न पृच्छति गेहे॥',
+      transliteration:
+        'Yavad Vittopaarjana Saktah Taavan Nija Parivaro Raktah.\nPashchaj Jeevati Jarjara Dehe Vartam Kopi Na Prichchhati Gehe.',
+      meaning:
+        'As long as you are able to earn wealth, so long will your family be attached to you. After you grow old and your body becomes infirm, no one at home even asks how you are.',
+    },
+  ],
+};
+
 export const stotras: Stotra[] = [
   adityaHridayaStotram,
+  bhajaGovindam,
   ganeshaPancharatnam,
   hanumanChalisa,
   lingashtakam,
@@ -2253,11 +2322,6 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'subrahmanya-bhujangam',
     title: 'Subrahmanya Bhujangam',
     deity: 'Subrahmanya',
-  },
-  {
-    id: 'bhaja-govindam',
-    title: 'Bhaja Govindam',
-    deity: 'Govinda',
   },
   {
     id: 'ashtalakshmi-stotram',
