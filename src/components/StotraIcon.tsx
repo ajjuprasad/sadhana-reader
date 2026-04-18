@@ -219,6 +219,18 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
         </>
       );
 
+    case 'ashtalakshmi-stotram':
+      // Kalasha (sacred pot) — symbol of abundance and Lakshmi
+      return (
+        <>
+          <path d="M10 14 Q10 24 16 27 Q22 24 22 14" {...s} strokeWidth="1.6" />
+          <ellipse cx="16" cy="14" rx="6" ry="2" {...s} strokeWidth="1.4" />
+          <path d="M12 14 Q12 10 16 8 Q20 10 20 14" {...s} strokeWidth="1.3" />
+          <path d="M16 8 C16 5 14 3 16 2 C18 3 16 5 16 8" {...s} strokeWidth="1" />
+          <path d="M13 5 Q16 7 19 5" {...s} strokeWidth="1" />
+        </>
+      );
+
     default:
       return <circle cx="16" cy="16" r="8" {...s} strokeWidth="1.5" />;
   }
