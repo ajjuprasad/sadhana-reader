@@ -197,8 +197,36 @@ export default function HomeScreen() {
         </section>
       )}
 
-      {/* Grid */}
-      <div className="max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5">
+      {/* All Stotras */}
+      <section className="max-w-3xl mx-auto">
+        <motion.div
+          className="flex items-center justify-center gap-2 mb-5 sm:mb-6"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-50px' }}
+          transition={{ duration: 0.5, ease: sacredEase as unknown as number[] }}
+        >
+          <div
+            className="h-px w-12"
+            style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
+          />
+          <h2
+            className="font-hind font-semibold uppercase"
+            style={{
+              fontSize: '0.625rem',
+              color: 'var(--color-accent-primary)',
+              letterSpacing: '0.18em',
+            }}
+          >
+            {t('home.allStotras')}
+          </h2>
+          <div
+            className="h-px w-12"
+            style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
+          />
+        </motion.div>
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5">
         {stotras.map((stotra, index) => (
           <StotraCard
             key={stotra.id}
@@ -208,6 +236,7 @@ export default function HomeScreen() {
           />
         ))}
       </div>
+      </section>
 
       {/* Recently added */}
       <section className="max-w-3xl mx-auto mt-12 sm:mt-16">
