@@ -3409,6 +3409,56 @@ const ramRakshaStotra: Stotra = {
       meaning:
         'May the son of Kausalya protect my eyes; may the beloved of Vishvamitra protect my ears. May the protector of sacrifices protect my nose; may the one affectionate to Lakshmana protect my mouth.',
     },
+    {
+      id: 6,
+      verseLabel: 'Shloka 6',
+      sanskrit:
+        'जिह्वां विद्यानिधिः पातु कण्ठं भरतवन्दितः।\nस्कन्धौ दिव्यायुधः पातु भुजौ भग्नेशकार्मुकः॥',
+      transliteration:
+        'Jihvāṁ vidyā-nidhiḥ pātu kaṇṭhaṁ bharata-vanditaḥ |\nskandhau divyāyudhaḥ pātu bhujau bhagneśa-kārmukaḥ ||',
+      meaning:
+        'May the treasury of knowledge protect my tongue; may the one worshipped by Bharata protect my throat. May the wielder of divine weapons protect my shoulders; may the breaker of Shiva\'s bow protect my arms.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Shloka 7',
+      sanskrit:
+        'करौ सीतापतिः पातु हृदयं जामदग्न्यजित्।\nमध्यं पातु खरध्वंसी नाभिं जाम्बवदाश्रयः॥',
+      transliteration:
+        'Karau sītā-patiḥ pātu hṛdayaṁ jāmadagnya-jit |\nmadhyaṁ pātu khara-dhvaṁsī nābhiṁ jāmbavad-āśrayaḥ ||',
+      meaning:
+        'May the husband of Sita protect my hands; may the conqueror of Parashurama protect my heart. May the destroyer of Khara protect my waist; may the refuge of Jambavan protect my navel.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Shloka 8',
+      sanskrit:
+        'सुग्रीवेशः कटी पातु सक्थिनी हनुमत्प्रभुः।\nऊरू रघूत्तमः पातु रक्षःकुलविनाशकृत्॥',
+      transliteration:
+        'Sugrīveśaḥ kaṭī pātu sakthinī hanumat-prabhuḥ |\nūrū raghūttamaḥ pātu rakṣaḥ-kula-vināśa-kṛt ||',
+      meaning:
+        'May the lord of Sugriva protect my hips; may the master of Hanuman protect my thighs. May the best of the Raghus, the destroyer of the demon race, protect my knees.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Shloka 9',
+      sanskrit:
+        'जानुनी सेतुकृत्पातु जङ्घे दशमुखान्तकः।\nपादौ विभीषणश्रीदः पातु रामोऽखिलं वपुः॥',
+      transliteration:
+        'Jānunī setu-kṛt-pātu jaṅghe daśa-mukhāntakaḥ |\npādau vibhīṣaṇa-śrīdaḥ pātu rāmo\'khilaṁ vapuḥ ||',
+      meaning:
+        'May the builder of the bridge protect my knees; may the slayer of the ten-headed one protect my shins. May the bestower of glory upon Vibhishana protect my feet; may Rama protect my entire body.',
+    },
+    {
+      id: 10,
+      verseLabel: 'Shloka 10',
+      sanskrit:
+        'एतां रामबलोपेतां रक्षां यः सुकृती पठेत्।\nस चिरायुः सुखी पुत्री विजयी विनयी भवेत्॥',
+      transliteration:
+        'Etāṁ rāma-balopetāṁ rakṣāṁ yaḥ sukṛtī paṭhet |\nsa cirāyuḥ sukhī putrī vijayī vinayī bhavet ||',
+      meaning:
+        'The virtuous one who recites this protective hymn empowered by Rama shall be blessed with long life, happiness, progeny, victory, and humility.',
+    },
   ],
 };
 
