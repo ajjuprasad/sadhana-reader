@@ -2994,6 +2994,56 @@ const saraswatiStotram: Stotra = {
       meaning:
         'O jewel of the mind, O great yogini, O mistress of speech — salutations. O embodiment of speech, O one with boon-granting hands, O bestower of boons — salutations.',
     },
+    {
+      id: 11,
+      verseLabel: 'Shloka 11',
+      sanskrit:
+        'वेदायै वेदरूपायै वेदान्तायै नमो नमः।\nगुणदोषविवर्जिन्यै गुणदीप्त्यै नमो नमः॥',
+      transliteration:
+        'Vedāyai veda-rūpāyai vedāntāyai namo namaḥ |\nguṇa-doṣa-vivarjinyai guṇa-dīptyai namo namaḥ ||',
+      meaning:
+        'O embodiment of the Vedas, O form of the Vedas, O essence of Vedanta — salutations. O one free from virtues and faults, O radiance of all qualities — salutations.',
+    },
+    {
+      id: 12,
+      verseLabel: 'Shloka 12',
+      sanskrit:
+        'सर्वज्ञाने सदानन्दे सर्वरूपे नमो नमः।\nसम्पन्नायै कुमार्यै च सर्वज्ञे ते नमो नमः॥',
+      transliteration:
+        'Sarva-jñāne sadānande sarva-rūpe namo namaḥ |\nsampannāyai kumāryai ca sarvajñe te namo namaḥ ||',
+      meaning:
+        'O all-knowledge, O eternal bliss, O all-form — salutations. O accomplished one, O ever-youthful maiden, O omniscient one — salutations to you.',
+    },
+    {
+      id: 13,
+      verseLabel: 'Shloka 13',
+      sanskrit:
+        'योगानार्य उमादेव्यै योगानन्दे नमो नमः।\nदिव्यज्ञान त्रिनेत्रायै दिव्यमूर्त्यै नमो नमः॥',
+      transliteration:
+        'Yogānārya umādevyai yogānande namo namaḥ |\ndivya-jñāna trinetrayai divya-mūrtyai namo namaḥ ||',
+      meaning:
+        'O noble yogini, O Goddess Uma, O bliss of yoga — salutations. O divine knowledge, O three-eyed one, O divine form — salutations.',
+    },
+    {
+      id: 14,
+      verseLabel: 'Shloka 14',
+      sanskrit:
+        'अर्धचन्द्रजटाधारि चन्द्रबिम्बे नमो नमः।\nचन्द्रादित्यजटाधारि चन्द्रबिम्बे नमो नमः॥',
+      transliteration:
+        'Ardha-candra-jaṭā-dhāri candra-bimbe namo namaḥ |\ncandrāditya-jaṭā-dhāri candra-bimbe namo namaḥ ||',
+      meaning:
+        'O wearer of the crescent moon in matted locks, O moon-orbed one — salutations. O bearer of the sun and moon in matted locks, O resplendent as the moon — salutations.',
+    },
+    {
+      id: 15,
+      verseLabel: 'Shloka 15',
+      sanskrit:
+        'अणुरूपे महारूपे विश्वरूपे नमो नमः।\nअणिमाद्यष्टसिद्धायै आनन्दायै नमो नमः॥',
+      transliteration:
+        'Aṇu-rūpe mahā-rūpe viśva-rūpe namo namaḥ |\naṇimādy-aṣṭa-siddhāyai ānandāyai namo namaḥ ||',
+      meaning:
+        'O atomic form, O great form, O universal form — salutations. O one endowed with the eight siddhis beginning with Anima, O bliss incarnate — salutations.',
+    },
   ],
 };
 
