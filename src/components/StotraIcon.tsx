@@ -147,6 +147,17 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
         </>
       );
 
+    case 'subrahmanya-bhujangam':
+      // Vel (divine lance) — Lord Murugan's iconic weapon
+      return (
+        <>
+          <path d="M16 3 L12 10 L16 8 L20 10 Z" {...s} strokeWidth="1.5" fill="currentColor" opacity="0.3" />
+          <path d="M16 3 L12 10 L16 8 L20 10 Z" {...s} strokeWidth="1.5" />
+          <line x1="16" y1="8" x2="16" y2="29" {...s} strokeWidth="2" />
+          <path d="M14.5 27 L17.5 27" {...s} strokeWidth="1.4" />
+        </>
+      );
+
     case 'shiva-ashtottara':
       // Damaru (Shiva's drum)
       return (
