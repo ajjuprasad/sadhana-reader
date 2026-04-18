@@ -2697,6 +2697,56 @@ const subrahmanyaBhujangam: Stotra = {
       meaning:
         'I bow to the commander of the divine army, revered by the noble — who set forth fiercely to slay all the demons, who grants the gods the fulfillment of their desires, who holds the lance and spear, whose nature is to protect the world.',
     },
+    {
+      id: 16,
+      verseLabel: 'Verse 16',
+      sanskrit:
+        'लसद्देवसेनाभुजालिङ्गिताङ्गं\nवलल्लीकराम्भोजसम्प्रीतवक्त्रम्।\nउमापुत्रमार्तस्य रक्षापरं तं\nशरण्यं गुहं वायुवेगं प्रपद्ये॥',
+      transliteration:
+        'Lasad Devasena Bhujalingitangam\nValalleekarambhoja Sampreetavaktram.\nUmaputram Artasya Rakshaparam Tam\nSharanyam Guham Vayuvegam Prapadye.',
+      meaning:
+        'I take refuge in that Guha, swift as the wind — whose body is embraced by the radiant arms of Devasena, whose face beams with joy at Valli\'s lotus hands, the son of Uma, devoted to protecting the afflicted, the worthy refuge.',
+    },
+    {
+      id: 17,
+      verseLabel: 'Verse 17',
+      sanskrit:
+        'गुरुत्वं निजं दर्शयन्ब्रह्मणस्तं\nचतुर्वक्त्रदेवं स्वयं शिक्षयन्तम्।\nप्रणम्यास्मि देवं सनातार्थदं तं\nकुमारं षडास्यं गुहं भावयामि॥',
+      transliteration:
+        'Gurutvam Nijam Darshayan Brahmanastam\nChaturvaktra Devam Svayam Shikshayantam.\nPranamyasmi Devam Sanatarthadam Tam\nKumaram Shadasyam Guham Bhavayami.',
+      meaning:
+        'I prostrate before that God who demonstrated His own guru-hood by teaching Brahma himself, the four-faced lord. I meditate on that Kumara, the six-faced Guha, the bestower of eternal truth.',
+    },
+    {
+      id: 18,
+      verseLabel: 'Verse 18',
+      sanskrit:
+        'उमाशम्भुपुत्रं शिवं श्रीनिवासं\nसुराराध्यपादं सुधाधारभासम्।\nजनार्तिप्रणाशं जगत्कल्पवृक्षं\nनमस्यामि देवं सुरेशं सदैव॥',
+      transliteration:
+        'Umashambhu Putram Shivam Shreeneevasam\nSuraradhyapadam Sudhadharabhasm.\nJanartipranasham Jagatkalpavriksham\nNamasyami Devam Suresham Sadaiva.',
+      meaning:
+        'I bow always to the lord of the gods — the son of Uma and Shambhu, the auspicious one, the abode of Shri, whose feet are worshipped by the gods, who shines like a stream of nectar, who destroys the sorrows of people, the wish-fulfilling tree of the world.',
+    },
+    {
+      id: 19,
+      verseLabel: 'Verse 19',
+      sanskrit:
+        'महाम्भोनिधेस्तीरसंस्थं विभान्तं\nप्रभापूरितं रत्नसिंहासनस्थम्।\nमुनीन्द्रस्तुतं वेदवाक्यप्रतीतं\nसदा भावयेऽहं गुहं शैलवासम्॥',
+      transliteration:
+        'Mahambhonidhes Teerasamsttham Vibhantam\nPrabhapuritam Ratnasinhasanastham.\nMuneendrastutam Vedavakyaprateeram\nSada Bhavayeham Guham Shailvasam.',
+      meaning:
+        'I always meditate on Guha, the mountain-dweller — resplendent on the shore of the great ocean, radiant on a jeweled throne, praised by the greatest sages, known through Vedic declarations.',
+    },
+    {
+      id: 20,
+      verseLabel: 'Verse 20',
+      sanskrit:
+        'न विद्या न योगो न भोगो न सत्त्वं\nन मित्रं न पुत्रं न बन्धुर्न गोत्रम्।\nत्वदन्यत्र कृत्ये गतिं नैव पश्ये\nगुहं प्रार्थयेऽहं ददस्वेष्टसिद्धिम्॥',
+      transliteration:
+        'Na Vidya Na Yogo Na Bhogo Na Sattvam\nNa Mitram Na Putram Na Bandhurna Gotram.\nTvadanyatra Kritye Gatim Naiva Pashye\nGuham Prarthayeham Dadasveshta Siddhim.',
+      meaning:
+        'I have no learning, no yoga, no wealth, no goodness, no friend, no son, no kinsman, no lineage. I see no refuge anywhere other than You. O Guha, I pray to You — grant me the fulfillment of my desires.',
+    },
   ],
 };
 
