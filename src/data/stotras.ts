@@ -3970,7 +3970,76 @@ const mahishasuraMardiniStotram: Stotra = {
   ],
 };
 
+const ashtalakshmiStotram: Stotra = {
+  id: 'ashtalakshmi-stotram',
+  title: 'Ashtalakshmi Stotram',
+  subtitle: 'अष्टलक्ष्मीस्तोत्रम्',
+  deity: 'Ashtalakshmi',
+  description:
+    'Eight melodious verses celebrating the eight forms of Goddess Lakshmi — from primeval abundance to wealth, grain, courage, elephants, progeny, victory, and knowledge.',
+  benefits: [
+    'Invokes the blessings of all eight forms of Lakshmi for complete prosperity',
+    'Bestows material and spiritual wealth, courage, and wisdom',
+    'Grants progeny, victory, and protection from misfortune',
+  ],
+  estimatedMinutes: 8,
+  icon: 'kalasha',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Adi Lakshmi',
+      sanskrit:
+        'सुमनसवन्दित सुन्दरि माधवि चन्द्रसहोदरि हेममये\nमुनिगणमण्डित मोक्षप्रदायिनि मञ्जुलभाषिणि वेदनुते।\nपङ्कजवासिनि देवसुपूजित सद्गुणवर्षिणि शान्तियुते\nजय जय हे मधुसूदनकामिनि आदिलक्ष्मि सदा पालय माम्॥',
+      transliteration:
+        'Sumanasa-vandita sundari mādhavi candra-sahodari hema-maye\nmuni-gaṇa-maṇḍita mokṣa-pradāyini mañjula-bhāṣiṇi vedanute |\npaṅkaja-vāsini deva-supūjita sad-guṇa-varṣiṇi śānti-yute\njaya jaya he madhusūdana-kāmini ādi-lakṣmi sadā pālaya mām ||',
+      meaning:
+        'O beautiful one praised by the wise, O Madhavi, sister of the moon, golden one! O one adorned by sages, granter of liberation, sweet-spoken, praised by the Vedas! O lotus-dweller, worshipped by gods, showering noble virtues, endowed with peace — victory to you, O beloved of Madhusudana, O Adi Lakshmi, protect me always!',
+    },
+    {
+      id: 2,
+      verseLabel: 'Dhanya Lakshmi',
+      sanskrit:
+        'अयिकलिकल्मषनाशिनि कामिनि वैदिकरूपिणि वेदमये\nक्षीरसमुद्भवमङ्गलरूपिणि मन्त्रनिवासिनि मन्त्रनुते।\nमङ्गलदायिनि अम्बुजवासिनि देवगणाश्रितपादयुते\nजय जय हे मधुसूदनकामिनि धान्यलक्ष्मि सदा पालय माम्॥',
+      transliteration:
+        'Ayi-kali-kalmaṣa-nāśini kāmini vaidika-rūpiṇi veda-maye\nkṣīra-samudbhava-maṅgala-rūpiṇi mantra-nivāsini mantranute |\nmaṅgala-dāyini ambuja-vāsini deva-gaṇāśrita-pāda-yute\njaya jaya he madhusūdana-kāmini dhānya-lakṣmi sadā pālaya mām ||',
+      meaning:
+        'O destroyer of the sins of Kali Yuga, O beautiful one of Vedic form, embodiment of the Vedas! O auspicious one born of the milky ocean, dwelling in mantras, praised by mantras! O bestower of auspiciousness, lotus-dweller, whose feet are sought by the gods — victory to you, O beloved of Madhusudana, O Dhanya Lakshmi, protect me always!',
+    },
+    {
+      id: 3,
+      verseLabel: 'Dhairya Lakshmi',
+      sanskrit:
+        'जयवरवर्णिनि वैष्णवि भार्गवि मन्त्रस्वरूपिणि मन्त्रमये\nसुरगणपूजित शीघ्रफलप्रद ज्ञानविकासिनि शास्त्रनुते।\nभवभयहारिणि पापविमोचनि साधुजनाश्रितपादयुते\nजय जय हे मधुसूदनकामिनि धैर्यलक्ष्मि सदा पालय माम्॥',
+      transliteration:
+        'Jaya-vara-varṇini vaiṣṇavī bhārgavī mantra-svarūpiṇi mantra-maye\nsura-gaṇa-pūjita śīghra-phala-prada jñāna-vikāsini śāstranute |\nbhava-bhaya-hāriṇi pāpa-vimocani sādhu-janāśrita-pāda-yute\njaya jaya he madhusūdana-kāmini dhairya-lakṣmi sadā pālaya mām ||',
+      meaning:
+        'O one who describes victory, O Vaishnavi, O Bhargavi, embodiment of mantras! O one worshipped by gods, granting swift results, expanding knowledge, praised by scriptures! O remover of the fear of existence, liberator from sin, whose feet are the refuge of the virtuous — victory to you, O beloved of Madhusudana, O Dhairya Lakshmi, protect me always!',
+    },
+    {
+      id: 4,
+      verseLabel: 'Gaja Lakshmi',
+      sanskrit:
+        'जय जय दुर्गतिनाशिनि कामिनि सर्वफलप्रदशास्त्रमये\nरथगजतुरगपदातिसमावृत परिजनमण्डितलोकनुते।\nहरिहरब्रह्मसुपूजितसेवित तापनिवारिणि पादयुते\nजय जय हे मधुसूदनकामिनि गजलक्ष्मि सदा पालय माम्॥',
+      transliteration:
+        'Jaya jaya durgati-nāśini kāmini sarva-phala-prada-śāstra-maye\nratha-gaja-turaga-padāti-samāvṛta parijana-maṇḍita-lokanute |\nhari-hara-brahma-supūjita-sevita tāpa-nivāriṇi pāda-yute\njaya jaya he madhusūdana-kāmini gaja-lakṣmi sadā pālaya mām ||',
+      meaning:
+        'Victory, victory! O destroyer of misfortune, O beautiful one, embodiment of all fruit-granting scriptures! O one surrounded by chariots, elephants, horses, and infantry, attended by retinues, praised by the world! O one worshipped by Hari, Hara, and Brahma, whose feet remove afflictions — victory to you, O beloved of Madhusudana, O Gaja Lakshmi, protect me always!',
+    },
+    {
+      id: 5,
+      verseLabel: 'Santana Lakshmi',
+      sanskrit:
+        'अयिखगवाहिनि मोहिनि चक्रिणि रागविवर्धिनि ज्ञानमये\nगुणगणवारिधि लोकहितैषिणि सप्तस्वरभूषितगाननुते।\nसकलसुरासुरदेवमुनीश्वर मानसवन्दितपादयुते\nजय जय हे मधुसूदनकामिनि सन्तानलक्ष्मि सदा पालय माम्॥',
+      transliteration:
+        'Ayi-khaga-vāhini mohini cakriṇi rāga-vivardhinī jñāna-maye\nguṇa-gaṇa-vāridhi loka-hitaiṣiṇi sapta-svara-bhūṣita-gāna-nute |\nsakala-surāsura-deva-munīśvara mānasa-vandita-pāda-yute\njaya jaya he madhusūdana-kāmini santāna-lakṣmi sadā pālaya mām ||',
+      meaning:
+        'O one who rides the bird Garuda, enchanting one, wielder of the discus, increaser of love, embodiment of knowledge! O ocean of virtues, well-wisher of the world, praised by song adorned with seven notes! O one whose feet are worshipped in the minds of all gods, demons, and great sages — victory to you, O beloved of Madhusudana, O Santana Lakshmi, protect me always!',
+    },
+  ],
+};
+
 export const stotras: Stotra[] = [
+  ashtalakshmiStotram,
   adityaHridayaStotram,
   bhajaGovindam,
   ganeshaPancharatnam,
@@ -4000,10 +4069,5 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'lalitha-sahasranamam',
     title: 'Lalitha Sahasranamam',
     deity: 'Lalita Tripurasundari',
-  },
-{
-    id: 'ashtalakshmi-stotram',
-    title: 'Ashtalakshmi Stotram',
-    deity: 'Ashtalakshmi',
   },
 ];
