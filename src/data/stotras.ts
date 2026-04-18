@@ -2369,6 +2369,56 @@ const bhajaGovindam: Stotra = {
       meaning:
         'One wears matted locks, another shaves his head, another plucks his hair out, another dons ochre robes — various disguises. The fool, seeing, does not see; all these outward shows are but for the sake of the belly.',
     },
+    {
+      id: 16,
+      verseLabel: 'Verse 16',
+      sanskrit:
+        'अङ्गं गलितं पलितं मुण्डं दशनविहीनं जातं तुण्डम्।\nवृद्धो याति गृहीत्वा दण्डं तदपि न मुञ्चत्याशापिण्डम्॥',
+      transliteration:
+        'Angam Galitam Palitam Mundam Dashanavihinam Jatam Tundam.\nVriddho Yati Grihitva Dandam Tadapi Na Munchatyashapindam.',
+      meaning:
+        'The body has become decrepit, the head has turned grey, the mouth has become toothless. The old man walks leaning on a staff, yet the bundle of desires does not leave him.',
+    },
+    {
+      id: 17,
+      verseLabel: 'Verse 17',
+      sanskrit:
+        'अग्रे वह्निः पृष्ठे भानुः रात्रौ चुबुकसमर्पितजानुः।\nकरतलभिक्षस्तरुतलवासः तदपि न मुञ्चत्याशापाशः॥',
+      transliteration:
+        'Agre Vahnih Prishthe Bhanuh Ratrau Chubuka Samarpita Januh.\nKaratala Bhikshas Tarutala Vasah Tadapi Na Munchaty Ashapaashah.',
+      meaning:
+        'Before him is fire, behind him is the sun, at night he sits with knees held to his chin. He receives alms in his palms and lives under a tree, yet the noose of desire does not release him.',
+    },
+    {
+      id: 18,
+      verseLabel: 'Verse 18',
+      sanskrit:
+        'कुरुते गङ्गासागरगमनं व्रतपरिपालनमथवा दानम्।\nज्ञानविहीनः सर्वमतेन मुक्तिं न भजति जन्मशतेन॥',
+      transliteration:
+        'Kurute Gangasagara Gamanam Vrataparipalanam Athava Danam.\nJnanavihinah Sarvamatena Muktim Na Bhajati Janmashatena.',
+      meaning:
+        'One may go on pilgrimage to where the Ganga meets the ocean, observe vows, or give charity. Yet without knowledge, by the consensus of all teachings, one does not attain liberation even in a hundred births.',
+    },
+    {
+      id: 19,
+      verseLabel: 'Verse 19',
+      sanskrit:
+        'सुरमन्दिरतरुमूलनिवासः शय्या भूतलमजिनं वासः।\nसर्वपरिग्रहभोगत्यागः कस्य सुखं न करोति विरागः॥',
+      transliteration:
+        'Sura Mandira Taru Moola Nivasah Shayya Bhutalam Ajinam Vasah.\nSarva Parigraha Bhoga Tyagah Kasya Sukham Na Karoti Viragah.',
+      meaning:
+        'Dwelling at the foot of a temple or a tree, sleeping on the bare ground, wearing a deerskin, renouncing all possessions and pleasures — to whom does such dispassion not bring happiness?',
+    },
+    {
+      id: 20,
+      verseLabel: 'Verse 20',
+      sanskrit:
+        'योगरतो वा भोगरतो वा सङ्गरतो वा सङ्गविहीनः।\nयस्य ब्रह्मणि रमते चित्तं नन्दति नन्दति नन्दत्येव॥',
+      transliteration:
+        'Yogarato Va Bhogarato Va Sangarato Va Sangaviheenah.\nYasya Brahmani Ramate Chittam Nandati Nandati Nandatyeva.',
+      meaning:
+        'Whether one delights in yoga or in enjoyment, whether in company or in solitude — he whose mind revels in Brahman, he alone rejoices, rejoices, truly rejoices.',
+    },
   ],
 };
 
