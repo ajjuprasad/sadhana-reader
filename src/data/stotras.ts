@@ -3459,6 +3459,56 @@ const ramRakshaStotra: Stotra = {
       meaning:
         'The virtuous one who recites this protective hymn empowered by Rama shall be blessed with long life, happiness, progeny, victory, and humility.',
     },
+    {
+      id: 11,
+      verseLabel: 'Shloka 11',
+      sanskrit:
+        'पातालभूतलव्योमचारिणश्छद्मचारिणः।\nन द्रष्टुमपि शक्तास्ते रक्षितं रामनामभिः॥',
+      transliteration:
+        'Pātāla-bhūtala-vyoma-cāriṇaś-chadma-cāriṇaḥ |\nna draṣṭum-api śaktās-te rakṣitaṁ rāma-nāmabhiḥ ||',
+      meaning:
+        'Those who roam the netherworld, the earth, or the sky in disguise — even they cannot so much as see the one who is protected by the names of Rama.',
+    },
+    {
+      id: 12,
+      verseLabel: 'Shloka 12',
+      sanskrit:
+        'रामेति रामभद्रेति रामचन्द्रेति वा स्मरन्।\nनरो न लिप्यते पापैर्भुक्तिं मुक्तिं च विन्दति॥',
+      transliteration:
+        'Rāmeti rāma-bhadreti rāma-candreti vā smaran |\nnaro na lipyate pāpair-bhuktiṁ muktiṁ ca vindati ||',
+      meaning:
+        'The person who remembers "Rama", "Ramabhadra", or "Ramachandra" is not tainted by sins and attains both worldly enjoyment and liberation.',
+    },
+    {
+      id: 13,
+      verseLabel: 'Shloka 13',
+      sanskrit:
+        'जगज्जैत्रैकमन्त्रेण रामनाम्नाभिरक्षितम्।\nयः कण्ठे धारयेत्तस्य करस्थाः सर्वसिद्धयः॥',
+      transliteration:
+        'Jagaj-jaitraika-mantreṇa rāma-nāmnābhirakṣitam |\nyaḥ kaṇṭhe dhārayet-tasya kara-sthāḥ sarva-siddhayaḥ ||',
+      meaning:
+        'One who wears on their neck this hymn protected by the name of Rama — the sole mantra that conquers the world — all spiritual powers rest in the palm of their hand.',
+    },
+    {
+      id: 14,
+      verseLabel: 'Shloka 14',
+      sanskrit:
+        'वज्रपञ्जरनामेदं यो रामकवचं स्मरेत्।\nअव्याहताज्ञः सर्वत्र लभते जयमङ्गलम्॥',
+      transliteration:
+        'Vajra-pañjara-nāmedaṁ yo rāma-kavacaṁ smaret |\navyāhatājñaḥ sarvatra labhate jaya-maṅgalam ||',
+      meaning:
+        'One who remembers this armor of Rama named Vajrapanjara (diamond cage) — their command is never thwarted and they attain victory and auspiciousness everywhere.',
+    },
+    {
+      id: 15,
+      verseLabel: 'Shloka 15',
+      sanskrit:
+        'आदिष्टवान्यथा स्वप्ने रामरक्षामिमां हरः।\nतथा लिखितवान्प्रातः प्रबुद्धो बुधकौशिकः॥',
+      transliteration:
+        'Ādiṣṭavān-yathā svapne rāma-rakṣām-imāṁ haraḥ |\ntathā likhitavān-prātaḥ prabuddho budha-kauśikaḥ ||',
+      meaning:
+        'As Lord Shiva instructed this Rama Raksha in a dream, so did Sage Budha Kaushika write it down upon waking at dawn.',
+    },
   ],
 };
 
