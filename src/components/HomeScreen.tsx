@@ -4,6 +4,8 @@ import { stotras, comingSoonStotras } from '../data/stotras';
 import StotraCard from './StotraCard';
 import ComingSoonCard from './ComingSoonCard';
 import ProfileButton from './ProfileButton';
+import { useAuth } from '../contexts/AuthContext';
+import { useFavorites } from '../hooks/useFavorites';
 import { useTranslation } from '../i18n/useTranslation';
 
 const sacredEase = [0.76, 0, 0.24, 1] as const;
@@ -84,6 +86,9 @@ function RecentList({ navigate }: { navigate: (path: string) => void }) {
 export default function HomeScreen() {
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const { user } = useAuth();
+  const { favoriteIds } = useFavorites();
+  const favoriteStotras = user ? stotras.filter((s) => favoriteIds.includes(s.id)) : [];
 
   return (
     <div className="relative min-h-screen px-4 py-8 sm:py-12">
@@ -160,6 +165,49 @@ export default function HomeScreen() {
           />
         ))}
       </div>
+
+      {/* Favorites */}
+      {favoriteStotras.length > 0 && (
+        <section className="max-w-3xl mx-auto mt-12 sm:mt-16">
+          <motion.div
+            className="flex items-center justify-center gap-2 mb-5 sm:mb-6"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-50px' }}
+            transition={{ duration: 0.5, ease: sacredEase as unknown as number[] }}
+          >
+            <div
+              className="h-px w-12"
+              style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
+            />
+            <h2
+              className="font-hind font-semibold uppercase"
+              style={{
+                fontSize: '0.625rem',
+                color: 'var(--color-accent-primary)',
+                letterSpacing: '0.18em',
+              }}
+            >
+              {t('home.favorites')}
+            </h2>
+            <div
+              className="h-px w-12"
+              style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
+            />
+          </motion.div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5">
+            {favoriteStotras.map((stotra, index) => (
+              <StotraCard
+                key={stotra.id}
+                stotra={stotra}
+                index={index}
+                onClick={() => navigate(`/stotra/${stotra.id}`)}
+              />
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Recently added */}
       <section className="max-w-3xl mx-auto mt-12 sm:mt-16">
