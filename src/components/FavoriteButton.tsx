@@ -1,4 +1,6 @@
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useAuth } from '../contexts/AuthContext';
 import { useFavorites } from '../hooks/useFavorites';
 
 interface FavoriteButtonProps {
@@ -8,7 +10,9 @@ interface FavoriteButtonProps {
 }
 
 export default function FavoriteButton({ stotraId, size = 22, className = '' }: FavoriteButtonProps) {
+  const { user } = useAuth();
   const { isFavorite, toggleFavorite } = useFavorites();
+  const navigate = useNavigate();
   const active = isFavorite(stotraId);
 
   return (
@@ -16,6 +20,10 @@ export default function FavoriteButton({ stotraId, size = 22, className = '' }: 
       className={`p-2 hover:opacity-70 transition-opacity ${className}`}
       onClick={(e) => {
         e.stopPropagation();
+        if (!user) {
+          navigate('/profile');
+          return;
+        }
         toggleFavorite(stotraId);
       }}
       whileTap={{ scale: 0.8 }}
