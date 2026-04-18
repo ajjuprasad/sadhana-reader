@@ -79,13 +79,13 @@ function RecentCarousel({ navigate }: { navigate: (path: string) => void }) {
           >
             <div className="flex-1 min-w-0">
               <p
-                className="font-body text-xs"
-                style={{ color: 'var(--color-text-muted)' }}
+                className="font-hind font-medium uppercase"
+                style={{ color: 'var(--color-text-muted)', fontSize: '0.6rem', letterSpacing: '0.08em' }}
               >
                 {formatLocalTime(item.timestamp)}
               </p>
               <p
-                className="font-hind font-semibold text-sm mt-0.5 truncate"
+                className="font-display font-semibold text-sm mt-0.5 truncate"
                 style={{ color: 'var(--color-text-primary)' }}
               >
                 {item.title}
