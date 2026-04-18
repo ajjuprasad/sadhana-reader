@@ -2647,6 +2647,56 @@ const subrahmanyaBhujangam: Stotra = {
       meaning:
         'O Skanda, I meditate on Your radiant waist, which shines with golden divine garments, is adorned with a girdle of tinkling bells, and blazes with a brilliant golden belt.',
     },
+    {
+      id: 11,
+      verseLabel: 'Verse 11',
+      sanskrit:
+        'पुलिन्देशकन्याघनाभोगतुङ्ग-\nस्तनालिङ्गनासक्तकाश्मीररागम्।\nनमस्यामहं कार्तिकेयस्य कान्तम्-\nउरश्शोभमानं महाभूषणाढ्यम्॥',
+      transliteration:
+        'Pulindeshakanya Ghanabhoga Tunga\nStanalingana Asakta Kashmeera Ragam.\nNamasyamaham Kartikeyasya Kantam\nUrah Shobhamanam Mahabhushanadhyam.',
+      meaning:
+        'I adore the beautiful chest of Kartikeya, reddened with saffron marks from the embrace of the full-breasted daughter of the Pulinda chief (Valli), shining with magnificent ornaments.',
+    },
+    {
+      id: 12,
+      verseLabel: 'Verse 12',
+      sanskrit:
+        'विधौ क्लृप्तदण्डान् स्वलीलाधृतण्डान्\nनिरस्तेभशुण्डान् द्विषत्कालदण्डान्।\nहतेन्द्रारिषण्डान् जगत्त्राणशौण्डान्\nसदा ते प्रचण्डान् श्रये बाहुदण्डान्॥',
+      transliteration:
+        'Vidhau Klriptadandan Svaleeladhritandan\nNirastebhashundan Dvishatkaladandan.\nHatendrarisandan JagattranaShaundan\nSada Te Prachandan Shraye Bahudandan.',
+      meaning:
+        'I take refuge in Your mighty arms — which punished Brahma, playfully hold the lance, severed the elephant demon\'s trunk, are the rod of death for enemies, destroyed the hordes of Indra\'s foes, and are bold in protecting the world.',
+    },
+    {
+      id: 13,
+      verseLabel: 'Verse 13',
+      sanskrit:
+        'सदा शारदाम्भोजपत्रायताक्षं\nस्फुरन्मन्दहासं कृपापूर्णदृष्टिम्।\nमहामुक्तिदं देवसेनाधिनाथं\nसदा भावयेऽहं महासेनदेवम्॥',
+      transliteration:
+        'Sada Sharadambhoja Patrayataksham\nSphuran Mandahasam Kripapurnadrishtim.\nMahamuktidan Devasenaadhinatham\nSada Bhavayeham Mahasenadevam.',
+      meaning:
+        'I always meditate on Lord Mahasena — whose eyes are wide like autumn lotus petals, whose gentle smile radiates, whose glance is full of compassion, who grants great liberation, the lord of Devasena.',
+    },
+    {
+      id: 14,
+      verseLabel: 'Verse 14',
+      sanskrit:
+        'ज्वलच्छक्तिहस्तं त्रिलोकैकनाथं\nप्रवालप्रभाशोणकान्तिप्रपूर्णम्।\nशरत्कालचन्द्रप्रभावक्त्ररम्यं\nनमस्यामि देवं सदा कार्तिकेयम्॥',
+      transliteration:
+        'Jvalachchhakti Hastam Trilokaiknatham\nPravalaprabha Shona Kanti Prapurnam.\nSharatkala Chandra Prabha Vaktram Ramyam\nNamasyami Devam Sada Kartikeyam.',
+      meaning:
+        'I bow always to Lord Kartikeya — who holds the blazing Vel in His hand, the sole lord of the three worlds, filled with a radiance red as coral, whose face is lovely as the autumn moon.',
+    },
+    {
+      id: 15,
+      verseLabel: 'Verse 15',
+      sanskrit:
+        'समस्तासुरान्हन्तुमुग्रं प्रयातं\nसुराणामभीष्टार्थसिद्धिप्रदान्तम्।\nधृतं शक्तिशूलं जगत्त्राणशीलं\nनमस्यामि सेनान्यमार्याभिवन्द्यम्॥',
+      transliteration:
+        'Samastasuraan Hantum Ugram Prayatam\nSuranam Abhishtartha Siddhipradantam.\nDhritam Shakti Shulam Jagatrana Sheelam\nNamasyami Senanyam Aryabhivandyam.',
+      meaning:
+        'I bow to the commander of the divine army, revered by the noble — who set forth fiercely to slay all the demons, who grants the gods the fulfillment of their desires, who holds the lance and spear, whose nature is to protect the world.',
+    },
   ],
 };
 
