@@ -11,10 +11,18 @@ import { useTranslation } from '../i18n/useTranslation';
 const sacredEase = [0.76, 0, 0.24, 1] as const;
 
 const recentItems = [
-  { id: 'saraswati-stotram', title: 'Saraswati Stotram', date: 'Apr 18', desc: '21 verses · Sage Agastya' },
-  { id: 'subrahmanya-bhujangam', title: 'Subrahmanya Bhujangam', date: 'Apr 18', desc: '33 verses · Adi Shankaracharya' },
-  { id: 'bhaja-govindam', title: 'Bhaja Govindam', date: 'Apr 18', desc: '31 verses · Adi Shankaracharya' },
+  { id: 'saraswati-stotram', title: 'Saraswati Stotram', timestamp: '2026-04-18T05:40:00Z' },
+  { id: 'subrahmanya-bhujangam', title: 'Subrahmanya Bhujangam', timestamp: '2026-04-18T04:10:00Z' },
+  { id: 'bhaja-govindam', title: 'Bhaja Govindam', timestamp: '2026-04-18T02:30:00Z' },
 ];
+
+function formatLocalTime(iso: string): string {
+  const d = new Date(iso);
+  const date = d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+  const time = d.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' });
+  const tz = d.toLocaleTimeString(undefined, { timeZoneName: 'short' }).split(' ').pop() || '';
+  return `${date}, ${time} ${tz}`;
+}
 
 function RecentCarousel({ navigate }: { navigate: (path: string) => void }) {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -71,16 +79,16 @@ function RecentCarousel({ navigate }: { navigate: (path: string) => void }) {
           >
             <div className="flex-1 min-w-0">
               <p
-                className="font-hind font-semibold text-sm truncate"
+                className="font-body text-xs"
+                style={{ color: 'var(--color-text-muted)' }}
+              >
+                {formatLocalTime(item.timestamp)}
+              </p>
+              <p
+                className="font-hind font-semibold text-sm mt-0.5 truncate"
                 style={{ color: 'var(--color-text-primary)' }}
               >
                 {item.title}
-              </p>
-              <p
-                className="font-body text-xs mt-0.5 truncate"
-                style={{ color: 'var(--color-text-muted)' }}
-              >
-                {item.date} — {item.desc}
               </p>
             </div>
             <svg
