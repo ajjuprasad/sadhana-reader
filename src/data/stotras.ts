@@ -2597,6 +2597,56 @@ const subrahmanyaBhujangam: Stotra = {
       meaning:
         '"Just as the mighty waves of the ocean subside, so too do the calamities of those who serve in my presence" — thus showing through the rows of waves, I always meditate on that Guha in the lotus of my heart.',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'गिरौ मन्निवासे नरा येऽधिरूढाः\nतदा पर्वतं नौमि गौरीसमेतम्।\nइतीव ब्रुवन्गन्धशैलाधिरूढः\nस देवो मुदा मे ददात्विष्टसिद्धिम्॥',
+      transliteration:
+        'Girau Mannivase Nara Yedhiroohah\nTada Parvatam Naumi Gaurisameetam.\nIteeva Bruvan Gandhashailadhiroohah\nSa Devo Muda Me Dadatvishta Siddhim.',
+      meaning:
+        '"Those who ascend the mountain where I dwell — them I consider equal to Parvata (Shiva) accompanied by Gauri" — thus speaking, may that God who sits atop the fragrant hill joyfully grant me the fulfillment of my desires.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'महाम्भोधितीरे महापापचोरे\nमुनीन्द्रानुकूले सुगन्धाख्यशैले।\nगुहायां वसन्तं स्वभासा लसन्तं\nजनार्तिं हरन्तं श्रयामो गुहं तम्॥',
+      transliteration:
+        'Mahambhodhitere Mahapapachore\nMuneendranukule Sugandhakhyashaile.\nGuhayam Vasantam Svabhasa Lasantam\nJanartim Harantam Shrayamo Guham Tam.',
+      meaning:
+        'On the shore of the great ocean, at the mountain called Sugandha, favorable to the great sages, the stealer of great sins — we take refuge in that Guha who dwells in the cave, who shines with His own radiance, who removes the afflictions of people.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'लसत्स्वर्णगेहे नृणां कामदोहे\nसुमस्तोमसञ्छन्नमाणिक्यमञ्चे।\nसमुद्यत्सहस्रार्कतुल्यप्रकाशं\nसदा भावये कार्तिकेयं सुरेशम्॥',
+      transliteration:
+        'Lasat Svarnagehe Nrinam Kamadohe\nSumastoma Sanchhannamanikya Manche.\nSamudyat Sahasrarka Tulya Prakasham\nSada Bhavaye Kartikeyam Suresham.',
+      meaning:
+        'In a resplendent golden temple that fulfills the desires of people, on a jeweled throne covered with heaps of flowers, I always meditate on Kartikeya, the lord of the gods, whose radiance equals a thousand rising suns.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Verse 9',
+      sanskrit:
+        'रणद्धंसके मञ्जुलेऽत्यन्तशोणे\nमनोहारिलावण्यपीयूषपूर्णे।\nमनःषट्पदो मे भवक्लेशतप्तः\nसदा मोदतां स्कन्द ते पादपद्मे॥',
+      transliteration:
+        'Ranaddhamske Manjuletyanta Shone\nManohari Lavanya Peeyusha Purne.\nManah Shatpado Me Bhavakleshataptah\nSada Modatam Skanda Te Padapadme.',
+      meaning:
+        'O Skanda, may my mind — like a bee scorched by the afflictions of worldly existence — always delight in Your lotus feet, which are beautiful, exceedingly red with tinkling anklets, and filled with the nectar of enchanting grace.',
+    },
+    {
+      id: 10,
+      verseLabel: 'Verse 10',
+      sanskrit:
+        'सुवर्णाभदिव्याम्बरैर्भासमानां\nक्वणत्किङ्किणीमेखलाशोभमानाम्।\nलसद्धेमपट्टेन विद्योतमानां\nकटिं भावये स्कन्द ते दीप्यमानाम्॥',
+      transliteration:
+        'Suvarnabha Divyambarair Bhasamanam\nKvanat Kinkini Mekhala Shobhamanam.\nLasad Hema Pattena Vidyotamanam\nKatim Bhavaye Skanda Te Deepyamanam.',
+      meaning:
+        'O Skanda, I meditate on Your radiant waist, which shines with golden divine garments, is adorned with a girdle of tinkling bells, and blazes with a brilliant golden belt.',
+    },
   ],
 };
 
