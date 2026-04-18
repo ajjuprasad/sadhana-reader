@@ -6,6 +6,7 @@ import ReaderScreen from './components/ReaderScreen';
 import MandalaBackground from './components/MandalaBackground';
 import { useSettings } from './hooks/useSettings';
 import { LanguageProvider } from './i18n/LanguageContext';
+import { AuthProvider } from './contexts/AuthContext';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -32,6 +33,7 @@ export default function App() {
 
   return (
     <LanguageProvider value={settingsState.settings.language}>
+      <AuthProvider>
       <HashRouter>
         <ScrollToTop />
         <MandalaBackground />
@@ -43,6 +45,7 @@ export default function App() {
           </Routes>
         </div>
       </HashRouter>
+      </AuthProvider>
     </LanguageProvider>
   );
 }

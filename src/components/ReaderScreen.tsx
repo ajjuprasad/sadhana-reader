@@ -6,6 +6,8 @@ import VerseCard from './VerseCard';
 import MalaBead from './MalaBead';
 import SettingsDrawer from './SettingsDrawer';
 import PetalShower from './PetalShower';
+import UserMenu from './UserMenu';
+import FavoriteButton from './FavoriteButton';
 import { useReader } from '../hooks/useReader';
 import type { useSettings } from '../hooks/useSettings';
 import { useReadCount } from '../hooks/useReadCounts';
@@ -103,8 +105,10 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
           {stotra.title}
         </h2>
 
-        {/* Share + Settings */}
+        {/* User + Favorite + Share + Settings */}
         <div className="justify-self-end flex items-center gap-1">
+          <UserMenu />
+          <FavoriteButton stotraId={stotra.id} size={20} />
           <a
             href={(() => {
               const baseUrl = window.location.href.split('#')[0];

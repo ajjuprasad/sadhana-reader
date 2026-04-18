@@ -5,6 +5,7 @@ import { stotras, comingSoonStotras } from '../data/stotras';
 import StotraCard from './StotraCard';
 import ComingSoonCard from './ComingSoonCard';
 import SettingsDrawer from './SettingsDrawer';
+import UserMenu from './UserMenu';
 import type { useSettings } from '../hooks/useSettings';
 import { useTranslation } from '../i18n/useTranslation';
 
@@ -95,8 +96,9 @@ export default function HomeScreen({ settingsState }: HomeScreenProps) {
 
   return (
     <div className="relative min-h-screen px-4 py-8 sm:py-12">
-      {/* Top bar with share + settings */}
+      {/* Top bar with user + share + settings */}
       <div className="flex justify-end items-center gap-1 mb-2">
+        <UserMenu />
         <a
           href={(() => {
             const baseUrl = window.location.href.split('#')[0];
