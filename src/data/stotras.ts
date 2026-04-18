@@ -3559,6 +3559,56 @@ const ramRakshaStotra: Stotra = {
       meaning:
         'With bows strung and ready, fingers touching their arrows, bearing inexhaustible quivers — may Rama and Lakshmana always walk ahead of me on my path for my protection.',
     },
+    {
+      id: 21,
+      verseLabel: 'Shloka 21',
+      sanskrit:
+        'सन्नद्धः कवची खड्गी चापबाणधरो युवा।\nगच्छन्मनोरथोऽस्माकं रामः पातु सलक्ष्मणः॥',
+      transliteration:
+        'Sannaddhaḥ kavacī khaḍgī cāpa-bāṇa-dharo yuvā |\ngacchan-manoratho\'smākaṁ rāmaḥ pātu sa-lakṣmaṇaḥ ||',
+      meaning:
+        'Armored, wearing a cuirass, bearing sword, bow and arrow — that youthful Rama, who fulfills our heart\'s desires, may he protect us along with Lakshmana.',
+    },
+    {
+      id: 22,
+      verseLabel: 'Shloka 22',
+      sanskrit:
+        'रामो दाशरथिः शूरो लक्ष्मणानुचरो बली।\nकाकुत्स्थः पुरुषः पूर्णः कौसल्येयो रघूत्तमः॥',
+      transliteration:
+        'Rāmo dāśarathiḥ śūro lakṣmaṇānucaro balī |\nkākutsthaḥ puruṣaḥ pūrṇaḥ kausalyeyo raghūttamaḥ ||',
+      meaning:
+        'Rama, son of Dasharatha, valiant hero, accompanied by Lakshmana, mighty one, descendant of Kakutstha, the complete Supreme Being, son of Kausalya, the best of the Raghus.',
+    },
+    {
+      id: 23,
+      verseLabel: 'Shloka 23',
+      sanskrit:
+        'वेदान्तवेद्यो यज्ञेशः पुराणपुरुषोत्तमः।\nजानकीवल्लभः श्रीमानप्रमेयपराक्रमः॥',
+      transliteration:
+        'Vedānta-vedyo yajñeśaḥ purāṇa-puruṣottamaḥ |\njānakī-vallabhaḥ śrīmān-aprameya-parākramaḥ ||',
+      meaning:
+        'He who is known through Vedanta, the Lord of sacrifices, the Supreme Being praised in the Puranas, the beloved of Janaki, the glorious one of immeasurable valor.',
+    },
+    {
+      id: 24,
+      verseLabel: 'Shloka 24',
+      sanskrit:
+        'इत्येतानि जपन्नित्यं मद्भक्तः श्रद्धयान्वितः।\nअश्वमेधाधिकं पुण्यं सम्प्राप्नोति न संशयः॥',
+      transliteration:
+        'Ityetāni japan-nityaṁ mad-bhaktaḥ śraddhayānvitaḥ |\naśvamedh-ādhikaṁ puṇyaṁ samprāpnoti na saṁśayaḥ ||',
+      meaning:
+        'One who daily recites these names with devotion and faith attains merit greater than the Ashvamedha sacrifice — of this there is no doubt.',
+    },
+    {
+      id: 25,
+      verseLabel: 'Shloka 25',
+      sanskrit:
+        'रामं दूर्वादलश्यामं पद्माक्षं पीतवाससम्।\nस्तुवन्ति नामभिर्दिव्यैर्न ते संसारिणो नरः॥',
+      transliteration:
+        'Rāmaṁ dūrvā-dala-śyāmaṁ padmākṣaṁ pīta-vāsasam |\nstuvanti nāmabhir-divyair-na te saṁsāriṇo naraḥ ||',
+      meaning:
+        'Those who praise Rama — dark as durva grass, lotus-eyed, clad in yellow garments — with divine names, they are no longer bound to the cycle of worldly existence.',
+    },
   ],
 };
 
