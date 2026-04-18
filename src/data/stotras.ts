@@ -4100,4 +4100,54 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     title: 'Lalitha Sahasranamam',
     deity: 'Lalita Tripurasundari',
   },
+  {
+    id: 'shiva-tandava-stotram',
+    title: 'Shiva Tandava Stotram',
+    deity: 'Shiva',
+  },
+  {
+    id: 'nirvana-shatakam',
+    title: 'Nirvana Shatakam',
+    deity: 'Shiva',
+  },
+  {
+    id: 'kalabhairava-ashtakam',
+    title: 'Kalabhairava Ashtakam',
+    deity: 'Kalabhairava',
+  },
+  {
+    id: 'shiva-mahimna-stotram',
+    title: 'Shiva Mahimna Stotram',
+    deity: 'Shiva',
+  },
+  {
+    id: 'achyutashtakam',
+    title: 'Achyutashtakam',
+    deity: 'Krishna',
+  },
+  {
+    id: 'annapoorna-ashtakam',
+    title: 'Annapoorna Ashtakam',
+    deity: 'Annapurna',
+  },
+  {
+    id: 'argala-stotram',
+    title: 'Argala Stotram',
+    deity: 'Durga',
+  },
+  {
+    id: 'bilvashtakam',
+    title: 'Bilvashtakam',
+    deity: 'Shiva',
+  },
+  {
+    id: 'narasimha-karavalamba-stotram',
+    title: 'Narasimha Karavalamba Stotram',
+    deity: 'Narasimha',
+  },
+  {
+    id: 'sankata-nashana-ganesha-stotram',
+    title: 'Sankata Nashana Ganesha Stotram',
+    deity: 'Ganesha',
+  },
 ];
