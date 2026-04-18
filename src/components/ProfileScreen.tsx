@@ -205,6 +205,12 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
                     </svg>
                     {t('auth.signIn')}
                   </button>
+                  <p
+                    className="font-body text-xs text-center mt-3 max-w-[15rem] leading-relaxed"
+                    style={{ color: 'var(--color-text-muted)' }}
+                  >
+                    {t('auth.signInReason')}
+                  </p>
                 </div>
               )}
             </section>

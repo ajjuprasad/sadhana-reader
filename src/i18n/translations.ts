@@ -36,6 +36,7 @@ const en: TranslationDict = {
   'reader.readAgain': 'Read again',
 
   'auth.signIn': 'Sign in with Google',
+  'auth.signInReason': 'Sign in for a personalised experience — manage favorites and more.',
   'auth.signOut': 'Sign out',
   'profile.memberSince': 'Member since {date}',
 
@@ -83,6 +84,7 @@ const hi: TranslationDict = {
   'reader.readAgain': 'फिर से पढ़ें',
 
   'auth.signIn': 'Google से साइन इन करें',
+  'auth.signInReason': 'व्यक्तिगत अनुभव के लिए साइन इन करें — पसंदीदा प्रबंधित करें और बहुत कुछ।',
   'auth.signOut': 'साइन आउट',
   'profile.memberSince': '{date} से सदस्य',
 
@@ -130,6 +132,7 @@ const te: TranslationDict = {
   'reader.readAgain': 'మళ్ళీ చదవండి',
 
   'auth.signIn': 'Google తో సైన్ ఇన్ చేయండి',
+  'auth.signInReason': 'వ్యక్తిగత అనుభవం కోసం సైన్ ఇన్ చేయండి — ఇష్టమైనవి నిర్వహించండి మరియు మరిన్ని.',
   'auth.signOut': 'సైన్ అవుట్',
   'profile.memberSince': '{date} నుండి సభ్యుడు',
 
@@ -177,6 +180,7 @@ const ta: TranslationDict = {
   'reader.readAgain': 'மீண்டும் படிக்கவும்',
 
   'auth.signIn': 'Google மூலம் உள்நுழையவும்',
+  'auth.signInReason': 'தனிப்பயன் அனுபவத்திற்கு உள்நுழையவும் — பிடித்தவை நிர்வகிக்கவும் மற்றும் பல.',
   'auth.signOut': 'வெளியேறு',
   'profile.memberSince': '{date} முதல் உறுப்பினர்',
 
@@ -224,6 +228,7 @@ const ml: TranslationDict = {
   'reader.readAgain': 'വീണ്ടും വായിക്കുക',
 
   'auth.signIn': 'Google ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്യുക',
+  'auth.signInReason': 'വ്യക്തിഗത അനുഭവത്തിനായി സൈൻ ഇൻ ചെയ്യുക — പ്രിയപ്പെട്ടവ നിയന്ത്രിക്കുക, കൂടുതൽ.',
   'auth.signOut': 'സൈൻ ഔട്ട്',
   'profile.memberSince': '{date} മുതൽ അംഗം',
 
