@@ -4035,6 +4035,36 @@ const ashtalakshmiStotram: Stotra = {
       meaning:
         'O one who rides the bird Garuda, enchanting one, wielder of the discus, increaser of love, embodiment of knowledge! O ocean of virtues, well-wisher of the world, praised by song adorned with seven notes! O one whose feet are worshipped in the minds of all gods, demons, and great sages — victory to you, O beloved of Madhusudana, O Santana Lakshmi, protect me always!',
     },
+    {
+      id: 6,
+      verseLabel: 'Vijaya Lakshmi',
+      sanskrit:
+        'जय कमलासनि सद्गतिदायिनि ज्ञानविकासिनि गानमये\nअनुदिनमर्चित कुङ्कुमधूसरभूषितवासितवाद्यनुते।\nकनकधरास्तुतिवैभववन्दित शङ्करदेशिकमान्यपदे\nजय जय हे मधुसूदनकामिनि विजयलक्ष्मि सदा पालय माम्॥',
+      transliteration:
+        'Jaya kamalāsani sad-gati-dāyini jñāna-vikāsini gāna-maye\nanudinam-arcita kuṅkuma-dhūsara-bhūṣita-vāsita-vādya-nute |\nkanakadhārā-stuti-vaibhava-vandita śaṅkara-deśika-mānya-pade\njaya jaya he madhusūdana-kāmini vijaya-lakṣmi sadā pālaya mām ||',
+      meaning:
+        'Victory to the lotus-seated one, granter of noble destiny, expander of knowledge, embodiment of music! O one worshipped daily with saffron-dusted ornaments, fragrant offerings, and instruments! O one whose glory is praised in the Kanakadhara hymn, whose feet are honored by Shankaracharya — victory to you, O beloved of Madhusudana, O Vijaya Lakshmi, protect me always!',
+    },
+    {
+      id: 7,
+      verseLabel: 'Vidya Lakshmi',
+      sanskrit:
+        'प्रणत सुरेश्वरि भारति भार्गवि शोकविनाशिनि रत्नमये\nमणिमयभूषित कर्णविभूषण शान्तिसमावृतहासमुखे।\nनवनिधिदायिनि कलिमलहारिणि कामितफलप्रदहस्तयुते\nजय जय हे मधुसूदनकामिनि विद्यालक्ष्मि सदा पालय माम्॥',
+      transliteration:
+        'Praṇata sureśvari bhāratī bhārgavī śoka-vināśini ratna-maye\nmaṇi-maya-bhūṣita karṇa-vibhūṣaṇa śānti-samāvṛta-hāsa-mukhe |\nnava-nidhi-dāyini kali-mala-hāriṇi kāmita-phala-prada-hasta-yute\njaya jaya he madhusūdana-kāmini vidyā-lakṣmi sadā pālaya mām ||',
+      meaning:
+        'O one bowed to by the lord of gods, O Bharati, O Bhargavi, destroyer of sorrow, jewel-adorned! O one with gem-studded ear ornaments, whose smiling face is surrounded by peace! O bestower of the nine treasures, remover of the impurities of Kali Yuga, whose hands grant desired fruits — victory to you, O beloved of Madhusudana, O Vidya Lakshmi, protect me always!',
+    },
+    {
+      id: 8,
+      verseLabel: 'Dhana Lakshmi',
+      sanskrit:
+        'धिमिधिमि धिन्धिमि धिन्धिमि धिन्धिमि दुन्दुभिनादसुपूर्णमये\nघुमघुम घुङ्घुम घुङ्घुम घुङ्घुम शङ्खनिनादसुवाद्यनुते।\nवेदपुराणेतिहाससुपूजित वैदिकमार्गप्रदर्शयुते\nजय जय हे मधुसूदनकामिनि धनलक्ष्मि सदा पालय माम्॥',
+      transliteration:
+        'Dhimi-dhimi dhindhimi dhindhimi dhindhimi dundubhi-nāda-supūrṇa-maye\nghuma-ghuma ghuṅghuma ghuṅghuma ghuṅghuma śaṅkha-nināda-suvādya-nute |\nveda-purāṇetihāsa-supūjita vaidika-mārga-pradarśa-yute\njaya jaya he madhusūdana-kāmini dhana-lakṣmi sadā pālaya mām ||',
+      meaning:
+        'O one filled with the resounding beats of "dhimi-dhimi-dhindhimi" of the kettledrum! O one praised by the melodious "ghuma-ghuma" of conch shells and fine instruments! O one worshipped in the Vedas, Puranas, and epics, who shows the Vedic path — victory to you, O beloved of Madhusudana, O Dhana Lakshmi, protect me always!',
+    },
   ],
 };
 
