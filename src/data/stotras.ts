@@ -2880,6 +2880,73 @@ const subrahmanyaBhujangam: Stotra = {
   ],
 };
 
+const saraswatiStotram: Stotra = {
+  id: 'saraswati-stotram',
+  title: 'Saraswati Stotram',
+  subtitle: 'सरस्वतीस्तोत्रम्',
+  deity: 'Saraswati',
+  description: 'Twenty-one verses by Sage Agastya in praise of Goddess Saraswati, the divine bestower of knowledge, wisdom, and speech.',
+  benefits: [
+    'Sharpens intellect, memory, and power of speech',
+    'Removes ignorance and the darkness of delusion',
+    'Bestows mastery in learning, arts, and all vidyās',
+  ],
+  estimatedMinutes: 8,
+  icon: 'M9 24 Q4 24 4 20 Q4 16 9 16 Q14 16 14 20 Q14 24 9 24 M13.5 21.5 L26 6.5 M11 20 L24 5',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Shloka 1',
+      sanskrit:
+        'या कुन्देन्दुतुषारहारधवला या शुभ्रवस्त्रावृता\nया वीणावरदण्डमण्डितकरा या श्वेतपद्मासना।\nया ब्रह्माच्युतशङ्करप्रभृतिभिर्देवैः सदा पूजिता\nसा मां पातु सरस्वती भगवती निःशेषजाड्यापहा॥',
+      transliteration:
+        'Yā kundendu-tuṣāra-hāra-dhavalā yā śubhra-vastrāvṛtā\nyā vīṇā-vara-daṇḍa-maṇḍita-karā yā śveta-padmāsanā |\nyā brahmācyuta-śaṅkara-prabhṛtibhir-devaiḥ sadā pūjitā\nsā māṁ pātu sarasvatī bhagavatī niḥśeṣa-jāḍyāpahā ||',
+      meaning:
+        'May Goddess Saraswati protect me — she who is as radiant as the jasmine, the moon, and a garland of snow; who is draped in pure white garments; whose hands are adorned with the veena; who is seated on a white lotus; and who is ever worshipped by Brahma, Vishnu, Shankara, and all the gods — the remover of all ignorance.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Shloka 2',
+      sanskrit:
+        'दोर्भिर्युक्ता चतुर्भिः स्फटिकमणिनिभैरक्षमालां दधाना\nहस्तेनैकेन पद्मं सितमपि च शुकं पुस्तकं चापरेण।\nभासा कुन्देन्दुशङ्खस्फटिकमणिनिभा भासमानाऽसमाना\nसा मे वाग्देवतेयं निवसतु वदने सर्वदा सुप्रसन्ना॥',
+      transliteration:
+        'Dorbhir-yuktā caturbhiḥ sphaṭika-maṇi-nibhair-akṣamālāṁ dadhānā\nhastenaikena padmaṁ sitam-api ca śukaṁ pustakaṁ cāpareṇa |\nbhāsā kundendu-śaṅkha-sphaṭika-maṇi-nibhā bhāsamānā-samānā\nsā me vāg-devateyaṁ nivasatu vadane sarvadā suprasannā ||',
+      meaning:
+        'With four crystal-bright arms — holding a rosary, a white lotus, a parrot, and a book — shining with the lustre of jasmine, moon, conch, and crystal, beyond compare — may that ever-gracious Goddess of Speech dwell upon my tongue.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Shloka 3',
+      sanskrit:
+        'सुरासुरसेवितपादपङ्कजा\nकरे विराजत्कमनीयपुस्तका।\nविरिञ्चिपत्नी कमलासनस्थिता\nसरस्वती नृत्यतु वाचि मे सदा॥',
+      transliteration:
+        'Surāsura-sevita-pāda-paṅkajā\nkare virājat-kamanīya-pustakā |\nviriñci-patnī kamalāsana-sthitā\nsarasvatī nṛtyatu vāci me sadā ||',
+      meaning:
+        'She whose lotus feet are served by gods and demons, who holds a beautiful book in her hand, the consort of Brahma, seated on a lotus — may Saraswati dance forever upon my speech.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Shloka 4',
+      sanskrit:
+        'सरस्वती सरसिजकेसरप्रभा\nतपस्विनी सितकमलासनप्रिया।\nघनस्तनी कमलविलोललोचना\nमनस्विनी भवतु वरप्रसादिनी॥',
+      transliteration:
+        'Sarasvatī sarasija-kesara-prabhā\ntapasvinī sita-kamalāsana-priyā |\nghanastanī kamala-vilola-locanā\nmanasvinī bhavatu vara-prasādinī ||',
+      meaning:
+        'Saraswati, radiant as the filament of a lotus, devoted to austerity, fond of the white lotus seat, full-bosomed, with eyes playful as lotuses, noble-minded — may she bestow her choicest blessings.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Shloka 5',
+      sanskrit:
+        'सरस्वति नमस्तुभ्यं वरदे कामरूपिणि।\nविद्यारम्भं करिष्यामि सिद्धिर्भवतु मे सदा॥',
+      transliteration:
+        'Sarasvati namastubhyaṁ varade kāma-rūpiṇi |\nvidyārambhaṁ kariṣyāmi siddhir-bhavatu me sadā ||',
+      meaning:
+        'O Saraswati, I bow to you, O bestower of boons, O fulfiller of desires. I am about to begin my studies — may success always be mine.',
+    },
+  ],
+};
+
 export const stotras: Stotra[] = [
   adityaHridayaStotram,
   bhajaGovindam,
@@ -2889,6 +2956,7 @@ export const stotras: Stotra[] = [
   madhurashtakam,
   mahalakshmiAshtakam,
   shivaPanchakshara,
+  saraswatiStotram,
   shivaAshtottara,
   subrahmanyaBhujangam,
   venkateswaraSuprabhatam,
@@ -2921,11 +2989,6 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'kanakadhara-stotram',
     title: 'Kanakadhara Stotram',
     deity: 'Lakshmi',
-  },
-  {
-    id: 'saraswati-stotram',
-    title: 'Saraswati Stotram',
-    deity: 'Saraswati',
   },
   {
     id: 'ashtalakshmi-stotram',
