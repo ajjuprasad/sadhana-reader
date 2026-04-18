@@ -3044,6 +3044,66 @@ const saraswatiStotram: Stotra = {
       meaning:
         'O atomic form, O great form, O universal form — salutations. O one endowed with the eight siddhis beginning with Anima, O bliss incarnate — salutations.',
     },
+    {
+      id: 16,
+      verseLabel: 'Shloka 16',
+      sanskrit:
+        'ज्ञानविज्ञानरूपायै ज्ञानमूर्ते नमो नमः।\nनानाशास्त्रस्वरूपायै नानारूपे नमो नमः॥',
+      transliteration:
+        'Jñāna-vijñāna-rūpāyai jñāna-mūrte namo namaḥ |\nnānā-śāstra-svarūpāyai nānā-rūpe namo namaḥ ||',
+      meaning:
+        'O form of knowledge and wisdom, O embodiment of knowledge — salutations. O essence of all scriptures, O one of manifold forms — salutations.',
+    },
+    {
+      id: 17,
+      verseLabel: 'Shloka 17',
+      sanskrit:
+        'पद्मदा पद्मवंशा च पद्मरूपे नमो नमः।\nपरमेष्ठ्यै परामूर्त्यै नमस्ते पापनाशिनि॥',
+      transliteration:
+        'Padma-dā padma-vaṁśā ca padma-rūpe namo namaḥ |\nparameṣṭhyai parā-mūrtyai namaste pāpa-nāśini ||',
+      meaning:
+        'O lotus-giver, O one of the lotus lineage, O lotus-formed — salutations. O supreme one, O transcendent form — salutations to you, O destroyer of sins.',
+    },
+    {
+      id: 18,
+      verseLabel: 'Shloka 18',
+      sanskrit:
+        'महादेव्यै महाकाल्यै महालक्ष्म्यै नमो नमः।\nब्रह्मविष्णुशिवायै च ब्रह्मनार्यै नमो नमः॥',
+      transliteration:
+        'Mahā-devyai mahā-kālyai mahā-lakṣmyai namo namaḥ |\nbrahma-viṣṇu-śivāyai ca brahma-nāryai namo namaḥ ||',
+      meaning:
+        'O great Goddess, O Mahakali, O Mahalakshmi — salutations. O one who is Brahma, Vishnu, and Shiva, O consort of Brahma — salutations.',
+    },
+    {
+      id: 19,
+      verseLabel: 'Shloka 19',
+      sanskrit:
+        'कमलाकरपुष्पा च कामरूपे नमो नमः।\nकपालि कर्मदीप्तायै कर्मदायै नमो नमः॥',
+      transliteration:
+        'Kamalākara-puṣpā ca kāma-rūpe namo namaḥ |\nkapāli karma-dīptāyai karma-dāyai namo namaḥ ||',
+      meaning:
+        'O one adorned with lotus blossoms, O one of enchanting form — salutations. O skull-bearing one, O one blazing with sacred action, O bestower of righteous deeds — salutations.',
+    },
+    {
+      id: 20,
+      verseLabel: 'Phala Shruti',
+      sanskrit:
+        'सायं प्रातः पठेन्नित्यं षण्मासात् सिद्धिरुच्यते।\nचोरव्याघ्रभयं नास्ति पठतां शृण्वतामपि॥',
+      transliteration:
+        'Sāyaṁ prātaḥ paṭhen-nityaṁ ṣaṇ-māsāt siddhir-ucyate |\ncora-vyāghra-bhayaṁ nāsti paṭhatāṁ śṛṇvatām-api ||',
+      meaning:
+        'One who recites this daily, morning and evening, attains perfection within six months. For those who read or hear it, there is no fear from thieves or tigers.',
+    },
+    {
+      id: 21,
+      verseLabel: 'Shloka 21',
+      sanskrit:
+        'इत्थं सरस्वतीस्तोत्रमगस्त्यमुनिवाचकम्।\nसर्वसिद्धिकरं नॄणां सर्वपापप्रणाशनम्॥',
+      transliteration:
+        'Itthaṁ sarasvatī-stotram-agastya-muni-vācakam |\nsarva-siddhi-karaṁ nṝṇāṁ sarva-pāpa-praṇāśanam ||',
+      meaning:
+        'Thus ends this Saraswati Stotram composed by Sage Agastya, which grants all accomplishments to humankind and destroys all sins.',
+    },
   ],
 };
 
