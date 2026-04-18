@@ -4068,7 +4068,76 @@ const ashtalakshmiStotram: Stotra = {
   ],
 };
 
+const achyutashtakam: Stotra = {
+  id: 'achyutashtakam',
+  title: 'Achyutashtakam',
+  subtitle: 'अच्युताष्टकम्',
+  deity: 'Krishna',
+  description:
+    'Eight verses by Adi Shankaracharya invoking the infallible Lord through his many divine names — Achyuta, Keshava, Rama, Narayana, Govinda — celebrating both his Krishna and Rama avatars.',
+  benefits: [
+    'Invokes the protection and grace of Lord Vishnu through his many names',
+    'Purifies the mind through the remembrance of divine forms and incarnations',
+    'Bestows devotion, peace, and liberation from the cycle of worldly existence',
+  ],
+  estimatedMinutes: 5,
+  icon: 'crown',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'अच्युतं केशवं रामनारायणं कृष्णदामोदरं वासुदेवं हरिम्।\nश्रीधरं माधवं गोपिकावल्लभं जानकीनायकं रामचन्द्रं भजे॥',
+      transliteration:
+        'Acyutaṁ keśavaṁ rāma-nārāyaṇaṁ kṛṣṇa-dāmodaraṁ vāsudevaṁ harim |\nśrīdharaṁ mādhavaṁ gopikā-vallabhaṁ jānakī-nāyakaṁ rāmacandraṁ bhaje ||',
+      meaning:
+        'I worship Achyuta, Keshava, Rama, Narayana, Krishna, Damodara, Vasudeva, Hari, Shridhara, Madhava, the beloved of the gopis, the lord of Janaki — Ramachandra.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'अच्युतं केशवं सत्यभामाधवं माधवं श्रीधरं राधिकाराधितम्।\nइन्दिरामन्दिरं चेतसा सुन्दरं देवकीनन्दनं नन्दनं सन्दधे॥',
+      transliteration:
+        'Acyutaṁ keśavaṁ satyabhāmā-dhavaṁ mādhavaṁ śrīdharaṁ rādhikā-rādhitam |\nindirā-mandiraṁ cetasā sundaraṁ devakī-nandanaṁ nandanaṁ sandadhe ||',
+      meaning:
+        'I hold in my heart Achyuta, Keshava, the lord of Satyabhama, Madhava, Shridhara, the one worshipped by Radhika — the temple of Indira (Lakshmi), beautiful in consciousness, the joy of Devaki, the son of Nanda.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'विष्णवे जिष्णवे शङ्खिने चक्रिणे रुक्मिणीरागिणे जानकीजानये।\nवल्लवीवल्लभायाऽर्चितायात्मने कंसविध्वंसिने वंशिने ते नमः॥',
+      transliteration:
+        'Viṣṇave jiṣṇave śaṅkhine cakriṇe rukmiṇī-rāgiṇe jānakī-jānaye |\nvallavī-vallabhāyārcitāyātmane kaṁsa-vidhvaṁsine vaṁśine te namaḥ ||',
+      meaning:
+        'Salutations to you, Vishnu, the victorious one, bearer of the conch and discus, the beloved of Rukmini, the consort of Janaki, the beloved of the gopis, the worshipped Self, the destroyer of Kamsa, the flute-player.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'कृष्ण गोविन्द हे राम नारायण श्रीपते वासुदेवाजित श्रीनिधे।\nअच्युतानन्त हे माधवाधोक्षज द्वारकानायक द्रौपदीरक्षक॥',
+      transliteration:
+        'Kṛṣṇa govinda he rāma nārāyaṇa śrīpate vāsudevājita śrī-nidhe |\nacyutānanta he mādhavādhokṣaja dvārakā-nāyaka draupadī-rakṣaka ||',
+      meaning:
+        'O Krishna, Govinda, O Rama, Narayana, Lord of Shri, Vasudeva, the unconquered, treasure of glory! O Achyuta, Ananta, O Madhava, Adhokshaja, Lord of Dvaraka, protector of Draupadi!',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'राक्षसक्षोभितः सीतया शोभितो दण्डकारण्यभूपुण्यताकारणः।\nलक्ष्मणेनान्वितो वानरैः सेवितोऽगस्त्यसम्पूजितो राघवः पातु माम्॥',
+      transliteration:
+        'Rākṣasa-kṣobhitaḥ sītayā śobhito daṇḍakāraṇya-bhū-puṇyatā-kāraṇaḥ |\nlakṣmaṇenānvito vānaraiḥ sevito\'gastyasampūjito rāghavaḥ pātu mām ||',
+      meaning:
+        'May Raghava protect me — he who troubled the demons, who was adorned by Sita, who sanctified the land of Dandakaranya, who was accompanied by Lakshmana, served by the monkeys, and worshipped by Sage Agastya.',
+    },
+  ],
+};
+
 export const stotras: Stotra[] = [
+  achyutashtakam,
   ashtalakshmiStotram,
   adityaHridayaStotram,
   bhajaGovindam,
@@ -4120,12 +4189,7 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     title: 'Shiva Mahimna Stotram',
     deity: 'Shiva',
   },
-  {
-    id: 'achyutashtakam',
-    title: 'Achyutashtakam',
-    deity: 'Krishna',
-  },
-  {
+{
     id: 'annapoorna-ashtakam',
     title: 'Annapoorna Ashtakam',
     deity: 'Annapurna',
