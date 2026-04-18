@@ -4,9 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { stotras } from '../data/stotras';
 import VerseCard from './VerseCard';
 import MalaBead from './MalaBead';
-import SettingsDrawer from './SettingsDrawer';
 import PetalShower from './PetalShower';
-import UserMenu from './UserMenu';
+import ProfileButton from './ProfileButton';
 import FavoriteButton from './FavoriteButton';
 import { useReader } from '../hooks/useReader';
 import type { useSettings } from '../hooks/useSettings';
@@ -24,10 +23,9 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
   const navigate = useNavigate();
   const stotra = stotras.find((s) => s.id === stotraId);
   useReadCount(stotraId, true);
-  const [settingsOpen, setSettingsOpen] = useState(false);
   const [completed, setCompleted] = useState(false);
   const { t } = useTranslation();
-  const { settings, applySettings } = settingsState;
+  const { settings } = settingsState;
 
   const totalVerses = stotra?.verses.length ?? 0;
   const handleComplete = useCallback(() => setCompleted(true), []);
@@ -105,9 +103,8 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
           {stotra.title}
         </h2>
 
-        {/* User + Favorite + Share + Settings */}
+        {/* Favorite + Share + Profile */}
         <div className="justify-self-end flex items-center gap-1">
-          <UserMenu />
           <FavoriteButton stotraId={stotra.id} size={20} />
           <a
             href={(() => {
@@ -142,34 +139,7 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
               <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
             </svg>
           </a>
-
-          <button
-            className="p-2 hover:opacity-70 transition-opacity"
-            style={{ color: 'var(--color-text-primary)' }}
-            onClick={() => setSettingsOpen(true)}
-            aria-label="Open settings"
-          >
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <line x1="4" y1="21" x2="4" y2="14" />
-              <line x1="4" y1="10" x2="4" y2="3" />
-              <line x1="12" y1="21" x2="12" y2="12" />
-              <line x1="12" y1="8" x2="12" y2="3" />
-              <line x1="20" y1="21" x2="20" y2="16" />
-              <line x1="20" y1="12" x2="20" y2="3" />
-              <line x1="1" y1="14" x2="7" y2="14" />
-              <line x1="9" y1="8" x2="15" y2="8" />
-              <line x1="17" y1="16" x2="23" y2="16" />
-            </svg>
-          </button>
+          <ProfileButton />
         </div>
       </motion.header>
 
@@ -348,13 +318,6 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
         </div>
       )}
 
-      {/* Settings Drawer */}
-      <SettingsDrawer
-        isOpen={settingsOpen}
-        onClose={() => setSettingsOpen(false)}
-        settings={settings}
-        onSave={applySettings}
-      />
     </div>
   );
 }
