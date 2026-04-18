@@ -231,6 +231,33 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
         </>
       );
 
+    case 'achyutashtakam':
+      // Jeweled crown (Ratnamauli) — Krishna's divine ornament
+      return (
+        <>
+          <path d="M8 20 Q8 12 12 8 L16 4 L20 8 Q24 12 24 20" {...s} strokeWidth="1.6" />
+          <line x1="8" y1="20" x2="24" y2="20" {...s} strokeWidth="1.8" />
+          <path d="M16 4 L14 8 M16 4 L18 8" {...s} strokeWidth="1" />
+          <circle cx="16" cy="10" r="1.5" {...s} strokeWidth="1" />
+          <circle cx="12" cy="14" r="1" {...s} strokeWidth="0.8" />
+          <circle cx="20" cy="14" r="1" {...s} strokeWidth="0.8" />
+          <path d="M6 22 Q16 26 26 22" {...s} strokeWidth="1.4" />
+        </>
+      );
+
+    case 'narasimha-karavalamba-stotram':
+      // Pillar splitting — Narasimha emerging from the pillar
+      return (
+        <>
+          <path d="M12 4 L12 28" {...s} strokeWidth="2.2" />
+          <path d="M20 4 L20 28" {...s} strokeWidth="2.2" />
+          <path d="M12 16 Q14 13 16 16 Q18 13 20 16" {...s} strokeWidth="1.4" />
+          <path d="M12 10 L20 10" {...s} strokeWidth="1.2" />
+          <path d="M12 22 L20 22" {...s} strokeWidth="1.2" />
+          <circle cx="16" cy="16" r="2" {...s} strokeWidth="1.2" />
+        </>
+      );
+
     default:
       return <circle cx="16" cy="16" r="8" {...s} strokeWidth="1.5" />;
   }
