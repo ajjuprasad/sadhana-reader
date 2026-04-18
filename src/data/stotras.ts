@@ -3857,6 +3857,56 @@ const mahishasuraMardiniStotram: Stotra = {
       meaning:
         'O one victorious in the chant of victory, praised by the universe devoted to singing your glory! O one whose jingling anklets enchant even the Lord of beings with their jhana-jhana melody! O one who delights in the beautiful song of the cosmic dance, where Nataraja himself dances as the half-female — victory to you, O slayer of Mahishasura!',
     },
+    {
+      id: 11,
+      verseLabel: 'Verse 11',
+      sanskrit:
+        'अयि सुमनःसुमनःसुमनः सुमनःसुमनोहरकान्तियुते\nश्रितरजनीरजनीरजनीरजनीरजनीकरवक्त्रवृते।\nसुनयनविभ्रमरभ्रमरभ्रमरभ्रमरभ्रमराधिपते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Ayi sumanaḥ-sumanaḥ-sumanaḥ-sumanaḥ-sumanohara-kānti-yute\nśrita-rajanī-rajanī-rajanī-rajanī-rajanī-kara-vaktra-vṛte |\nsunayanaṃ-vibhramara-bhramara-bhramara-bhramara-bhramarādhipate\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'O one endowed with the captivating radiance of the finest flowers! O one whose face is surrounded by the glow of the moonlit night! O one whose beautiful eyes are like the lord of the bees hovering among blossoms — victory to you, O slayer of Mahishasura!',
+    },
+    {
+      id: 12,
+      verseLabel: 'Verse 12',
+      sanskrit:
+        'सहितमहाहवमल्लमतल्लिकमल्लितरल्लकमल्लरते\nविरचितवल्लिकपल्लिकमल्लिकझिल्लिकभिल्लिकवर्गवृते।\nसितकृतफुल्लसमुल्लसितारुणतल्लजपल्लवसल्ललिते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Sahita-mahāhava-malla-matallika-mallita-rallaka-malla-rate\nviracita-vallika-pallika-mallika-jhillika-bhillika-varga-vṛte |\nsita-kṛta-phulla-samullasitāruṇa-tallaja-pallava-sallalite\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'O one who delights in the great wrestling match of battle with mighty warriors! O one surrounded by groups of tribal women wearing jasmine creepers! O one who plays gracefully amidst fresh reddish sprouts in full bloom — victory to you, O slayer of Mahishasura!',
+    },
+    {
+      id: 13,
+      verseLabel: 'Verse 13',
+      sanskrit:
+        'अविरलगण्डगलन्मदमेदुरमत्तमतङ्गजराजपते\nत्रिभुवनभूषणभूतकलानिधिरूपपयोनिधिराजसुते।\nअयि सुदतीजनलालसमानसमोहनमन्मथराजसुते\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Avirala-gaṇḍa-galan-mada-medura-matta-mataṅgaja-rāja-pate\ntri-bhuvana-bhūṣaṇa-bhūta-kalā-nidhi-rūpa-payo-nidhi-rāja-sute |\nayi sudatī-jana-lālasa-mānasa-mohana-manmatha-rāja-sute\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'O one who commands the lordly elephants intoxicated with must flowing profusely from their temples! O daughter of the ocean — the ornament of the three worlds, beautiful as the moon! O daughter of the king of love who enchants the hearts of beautiful women — victory to you, O slayer of Mahishasura!',
+    },
+    {
+      id: 14,
+      verseLabel: 'Verse 14',
+      sanskrit:
+        'कमलदलामलकोमलकान्तिकलाकलितामलभालतले\nसकलविलासकलानिलयक्रमकेलिचलत्कलहंसकुले।\nअलिकुलसङ्कुलकुवलयमण्डलमौलिमिलद्बकुलालिकुले\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Kamala-dalāmala-komala-kānti-kalā-kalitāmala-bhāla-tale\nsakala-vilāsa-kalā-nilaya-krama-keli-calat-kala-haṁsa-kule |\nali-kula-saṅkula-kuvalaya-maṇḍala-mauli-milad-bakulāli-kule\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'O one whose spotless forehead shines with the soft radiance of lotus petals! O one around whom graceful swans move playfully as the abode of all arts! O one whose hair is adorned with bakula flowers amidst clusters of bees hovering over blue lotuses — victory to you, O slayer of Mahishasura!',
+    },
+    {
+      id: 15,
+      verseLabel: 'Verse 15',
+      sanskrit:
+        'करमुरलीरवमीजितकूजितलज्जितकोकिलमञ्जुमते\nमिलितपुलिन्दमनोहरगुञ्जितरञ्जितशैलनिकुञ्जगते।\nनिजगणभूतमहाशबरीगणसद्गुणसम्भृतकेलितले\nजय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते॥',
+      transliteration:
+        'Kara-muralī-rava-vījita-kūjita-lajjita-kokila-mañju-mate\nmilita-pulinda-manohara-guñjita-rañjita-śaila-nikuñja-gate |\nnija-gaṇa-bhūta-mahā-śabarī-gaṇa-sad-guṇa-sambhṛta-keli-tale\njaya jaya he mahiṣāsura-mardini ramya-kapardini śailasute ||',
+      meaning:
+        'O one of sweet wisdom whose flute in hand puts the cuckoo to shame with its melody! O one who dwells in the mountain groves colored by the charming songs of the Pulinda tribes! O one whose playgrounds are filled with the virtuous deeds of the great Shabari women of her retinue — victory to you, O slayer of Mahishasura!',
+    },
   ],
 };
 
