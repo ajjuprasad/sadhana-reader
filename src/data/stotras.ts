@@ -2797,6 +2797,56 @@ const subrahmanyaBhujangam: Stotra = {
       meaning:
         'When will I, having bowed at the root of Your lotus feet and cast off wretchedness, behold You, renounce all the worlds, and let my mind be absorbed in Your presence?',
     },
+    {
+      id: 26,
+      verseLabel: 'Verse 26',
+      sanskrit:
+        'इदं विश्वमायाविलासं विचित्रं\nविधित्सामि मुक्तिं परेशात्कृपां ते।\nकदा स्कन्दमूर्तिं हृदि स्थापयित्वा\nभवाम्भोनिधिं तारयेमं प्रभो माम्॥',
+      transliteration:
+        'Idam Vishvamaya Vilasam Vichitram\nVidhitsami Muktim Pareshat Kripam Te.\nKada Skandamoortim Hridi Sthapayitva\nBhavambhonidhim Taraye Mam Prabho Mam.',
+      meaning:
+        'This world is a wondrous play of cosmic illusion. I seek liberation and Your grace, O supreme Lord. When will I, having installed the form of Skanda in my heart, be ferried across the ocean of worldly existence? O Lord, save me.',
+    },
+    {
+      id: 27,
+      verseLabel: 'Verse 27',
+      sanskrit:
+        'न कश्चिन्मयि स्नेहमीशे करोति\nन बन्धुर्न मित्रं न माता पिता वा।\nत्वमेकं शरण्यं भवाब्धिप्रवीणं\nगुहे रक्ष रक्ष प्रभो मां दयालो॥',
+      transliteration:
+        'Na Kashchinmayi Sneham Eeshe Karoti\nNa Bandhurna Mitram Na Mata Pita Va.\nTvamekam Sharanyam Bhavabdhipraveenam\nGuhe Raksha Raksha Prabho Mam Dayalo.',
+      meaning:
+        'No one in this world shows me affection — no kinsman, no friend, no mother, no father. You alone are my refuge, skilled in crossing the ocean of existence. O Guha, protect me, protect me, O compassionate Lord.',
+    },
+    {
+      id: 28,
+      verseLabel: 'Verse 28',
+      sanskrit:
+        'नमस्ते नमस्ते सदा शैलवास\nनमस्ते नमस्ते कृपापूर्णदृष्टे।\nनमस्ते नमस्ते गुहे दीनबन्धो\nनमस्ते नमस्ते सुब्रह्मण्यदेव॥',
+      transliteration:
+        'Namaste Namaste Sada Shailavasa\nNamaste Namaste Kripapurnadrishte.\nNamaste Namaste Guhe Deenabandho\nNamaste Namaste Subrahmanya Deva.',
+      meaning:
+        'Salutations, salutations to You, O eternal mountain-dweller. Salutations, salutations to You whose glance is full of compassion. Salutations, salutations to You, O Guha, friend of the meek. Salutations, salutations to You, O Lord Subrahmanya.',
+    },
+    {
+      id: 29,
+      verseLabel: 'Verse 29',
+      sanskrit:
+        'कदा योगसिद्धिं करोमीश भक्त्या\nकदा ते कटाक्षं लभेयं दयालो।\nकदा वीतशोकं पदं मे भवित्री\nकदा भक्तवात्सल्यमीशे कृपां ते॥',
+      transliteration:
+        'Kada Yogasiddhim Karomeesh Bhaktya\nKada Te Kataksham Labheyam Dayalo.\nKada Veetashokam Padam Me Bhavitree\nKada Bhaktavatsalyam Eeshe Kripam Te.',
+      meaning:
+        'When will I attain yogic perfection through devotion, O Lord? When will I receive Your side-glance, O merciful one? When will a state free of sorrow be mine? When will I know Your parental tenderness and grace?',
+    },
+    {
+      id: 30,
+      verseLabel: 'Verse 30',
+      sanskrit:
+        'कदा पश्यनन्तं पदं स्कन्दमीशं\nकदा रोगशोकादिनिर्मुक्तदेहम्।\nकदा शुद्धमाभासमाद्यन्तहीनं\nकदा मे मनो योगसिद्धिं लभेत॥',
+      transliteration:
+        'Kada Pashyanantam Padam Skanda Meesham\nKada Rogashokadi Nirmuktadeham.\nKada Shuddham Abhasam Adyantaheenam\nKada Me Mano Yogasiddhim Labhet.',
+      meaning:
+        'When will I behold the infinite state of Skanda, the Lord? When will my body be free from disease and grief? When will I see the pure effulgence that has no beginning or end? When will my mind attain yogic realization?',
+    },
   ],
 };
 
