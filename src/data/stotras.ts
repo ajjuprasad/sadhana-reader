@@ -3659,6 +3659,56 @@ const ramRakshaStotra: Stotra = {
       meaning:
         'Rama is my mother, Ramachandra is my father. Rama is my master, Ramachandra is my friend. The compassionate Ramachandra is my everything — I know no other, I know no other, I know no other.',
     },
+    {
+      id: 31,
+      verseLabel: 'Shloka 31',
+      sanskrit:
+        'दक्षिणे लक्ष्मणो यस्य वामे तु जनकात्मजा।\nपुरतो मारुतिर्यस्य तं वन्दे रघुनन्दनम्॥',
+      transliteration:
+        'Dakṣiṇe lakṣmaṇo yasya vāme tu janakātmajā |\npurato mārutir-yasya taṁ vande raghunandanam ||',
+      meaning:
+        'I salute that joy of the Raghu dynasty — Lakshmana on his right, the daughter of Janaka on his left, and Maruti (Hanuman) before him.',
+    },
+    {
+      id: 32,
+      verseLabel: 'Shloka 32',
+      sanskrit:
+        'लोकाभिरामं रणरङ्गधीरं राजीवनेत्रं रघुवंशनाथम्।\nकारुण्यरूपं करुणाकरं तं श्रीरामचन्द्रं शरणं प्रपद्ये॥',
+      transliteration:
+        'Lokābhirāmaṁ raṇa-raṅga-dhīraṁ rājīva-netraṁ raghu-vaṁśa-nātham |\nkāruṇya-rūpaṁ karuṇākaraṁ taṁ śrīrāmacandraṁ śaraṇaṁ prapadye ||',
+      meaning:
+        'I take refuge in Sri Ramachandra — the delight of the world, steadfast on the battlefield, lotus-eyed, lord of the Raghu dynasty, the embodiment of compassion, the mine of mercy.',
+    },
+    {
+      id: 33,
+      verseLabel: 'Shloka 33',
+      sanskrit:
+        'मनोजवं मारुततुल्यवेगं जितेन्द्रियं बुद्धिमतां वरिष्ठम्।\nवातात्मजं वानरयूथमुख्यं श्रीरामदूतं शरणं प्रपद्ये॥',
+      transliteration:
+        'Manojavaṁ māruta-tulya-vegaṁ jitendriyaṁ buddhimatāṁ variṣṭham |\nvātātmajaṁ vānara-yūtha-mukhyaṁ śrīrāma-dūtaṁ śaraṇaṁ prapadye ||',
+      meaning:
+        'I take refuge in the messenger of Sri Rama — swift as thought, fast as the wind, master of the senses, foremost among the wise, son of the Wind God, chief of the monkey host.',
+    },
+    {
+      id: 34,
+      verseLabel: 'Shloka 34',
+      sanskrit:
+        'कूजन्तं रामरामेति मधुरं मधुराक्षरम्।\nआरुह्य कविताशाखां वन्दे वाल्मीकिकोकिलम्॥',
+      transliteration:
+        'Kūjantaṁ rāma-rāmeti madhuraṁ madhurākṣaram |\nāruhya kavitā-śākhāṁ vande vālmīki-kokilam ||',
+      meaning:
+        'I salute Valmiki, the cuckoo bird who, perched upon the branch of poetry, sweetly sings the sweet syllables "Rama, Rama."',
+    },
+    {
+      id: 35,
+      verseLabel: 'Shloka 35',
+      sanskrit:
+        'आपदामपहर्तारं दातारं सर्वसम्पदाम्।\nलोकाभिरामं श्रीरामं भूयो भूयो नमाम्यहम्॥',
+      transliteration:
+        'Āpadām-apahartāraṁ dātāraṁ sarva-sampadām |\nlokābhirāmaṁ śrīrāmaṁ bhūyo bhūyo namāmy-aham ||',
+      meaning:
+        'I bow again and again to Sri Rama — the remover of calamities, the bestower of all prosperity, the delight of the world.',
+    },
   ],
 };
 
