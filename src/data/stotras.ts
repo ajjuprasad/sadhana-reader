@@ -2319,6 +2319,56 @@ const bhajaGovindam: Stotra = {
       meaning:
         'When youth has passed, where is lust? When water has dried up, where is the lake? When wealth is depleted, where is the retinue? When the truth is known, where is worldly bondage?',
     },
+    {
+      id: 11,
+      verseLabel: 'Verse 11',
+      sanskrit:
+        'मा कुरु धनजनयौवनगर्वं हरति निमेषात्कालः सर्वम्।\nमायामयमिदमखिलं हित्वा ब्रह्मपदं त्वं प्रविश विदित्वा॥',
+      transliteration:
+        'Ma Kuru Dhana Jana Yauvana Garvam Harati Nimeshat Kalah Sarvam.\nMayamayam Idam Akhilam Hitva Brahmapadam Tvam Pravisha Viditva.',
+      meaning:
+        'Do not be proud of wealth, people, or youth — time takes away all these in a moment. Knowing this entire world to be an illusion wrought by maya, enter the state of Brahman.',
+    },
+    {
+      id: 12,
+      verseLabel: 'Verse 12',
+      sanskrit:
+        'दिनयामिन्यौ सायं प्रातः शिशिरवसन्तौ पुनरायातः।\nकालः क्रीडति गच्छत्यायुः तदपि न मुञ्चत्याशावायुः॥',
+      transliteration:
+        'Dinayaminyau Sayam Pratah Shishiravasantau Punarayatah.\nKalah Kreedati Gachchhatyayuh Tadapi Na Munchaty Ashavayuh.',
+      meaning:
+        'Day and night, evening and morning, winter and spring come and go again and again. Time plays, life ebbs away — yet the wind of desire does not leave.',
+    },
+    {
+      id: 13,
+      verseLabel: 'Verse 13',
+      sanskrit:
+        'द्वादशमञ्जरिकाभिरशेषः कथितो वैयाकरणस्यैषः।\nउपदेशो भूद्विद्यानिपुणैः श्रीमच्छन्करभगवच्छरणैः॥',
+      transliteration:
+        'Dvadashamanjarikabhir Asheshah Kathito Vaiyakaranasyaishah.\nUpadesho Bhud Vidyanipunaih Shrimachchhankara Bhagavachchharanaih.',
+      meaning:
+        'Thus through twelve verse-bouquets was this complete teaching told by the master grammarian. This instruction was given by the blessed Shankaracharya, at whose feet the learned take refuge.',
+    },
+    {
+      id: 14,
+      verseLabel: 'Verse 14',
+      sanskrit:
+        'काते कान्ता धनगतचिन्ता वातुल किं तव नास्ति नियन्ता।\nत्रिजगति सज्जनसङ्गतिरेका भवति भवार्णवतरणे नौका॥',
+      transliteration:
+        'Kate Kanta Dhana Gata Chinta Vatula Kim Tava Nasti Niyanta.\nTrijagati Sajjana Sangatireka Bhavati Bhavarnava Tarane Nauka.',
+      meaning:
+        'O distracted one, why this worry about wealth and wife? Is there no one to guide you? In all three worlds, the company of the virtuous alone is the boat to cross the ocean of worldly existence.',
+    },
+    {
+      id: 15,
+      verseLabel: 'Verse 15',
+      sanskrit:
+        'जटिलो मुण्डी लुञ्छितकेशः काषायाम्बरबहुकृतवेषः।\nपश्यन्नपि चन पश्यति मूढः उदरनिमित्तं बहुकृतवेषः॥',
+      transliteration:
+        'Jatilo Mundee Lunchhitakeshah Kashayambara Bahukritaveshah.\nPashyannapi Cha Na Pashyati Moodhah Udaranimitam Bahukritaveshah.',
+      meaning:
+        'One wears matted locks, another shaves his head, another plucks his hair out, another dons ochre robes — various disguises. The fool, seeing, does not see; all these outward shows are but for the sake of the belly.',
+    },
   ],
 };
 
