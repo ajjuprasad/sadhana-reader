@@ -171,85 +171,95 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
               ) : (
                 <div className="flex flex-col items-center py-4">
                   {/* Deepam illustration */}
-                  <div className="w-20 h-20 rounded-full mb-3 flex items-center justify-center"
-                    style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.9 }}
+                  <div className="w-20 h-20 rounded-full mb-3 flex items-center justify-center overflow-hidden"
+                    style={{ backgroundColor: 'var(--color-bg-card)' }}
                   >
                     <svg
-                      width="48"
-                      height="48"
-                      viewBox="0 0 48 48"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      {/* Outer glow rings */}
-                      <circle cx="24" cy="14" r="10" fill="#FFF3E0" opacity="0.10" />
-                      <circle cx="24" cy="14" r="7" fill="#FFF3E0" opacity="0.15" />
-                      {/* Flame — outer teardrop */}
+                      {/* Radiating glow layers from flame center */}
+                      <circle cx="40" cy="28" r="36" fill="var(--color-accent-primary)" opacity="0.04" />
+                      <circle cx="40" cy="28" r="28" fill="var(--color-accent-primary)" opacity="0.06" />
+                      <circle cx="40" cy="28" r="21" fill="var(--color-accent-primary)" opacity="0.08" />
+                      <circle cx="40" cy="28" r="15" fill="var(--color-accent-primary)" opacity="0.10" />
+                      <circle cx="40" cy="28" r="10" fill="var(--color-accent-primary)" opacity="0.12" />
+                      {/* Flame — soft outer teardrop */}
                       <path
-                        d="M24 4 C21.5 9 19 13.5 19 16.5 C19 19.8 21.2 22 24 22 C26.8 22 29 19.8 29 16.5 C29 13.5 26.5 9 24 4Z"
-                        fill="#FFF3E0"
-                        opacity="0.9"
+                        d="M40 10 C37 17 34 23 34 27 C34 31.5 36.7 34 40 34 C43.3 34 46 31.5 46 27 C46 23 43 17 40 10Z"
+                        fill="var(--color-accent-primary)"
+                        opacity="0.45"
                       />
-                      {/* Flame — inner bright core */}
+                      {/* Flame — mid layer */}
                       <path
-                        d="M24 9 C22.8 12 21.5 14.5 21.5 16.5 C21.5 18.5 22.6 20 24 20 C25.4 20 26.5 18.5 26.5 16.5 C26.5 14.5 25.2 12 24 9Z"
-                        fill="white"
-                        opacity="0.95"
+                        d="M40 14 C38 19 36 23.5 36 27 C36 30 37.8 32 40 32 C42.2 32 44 30 44 27 C44 23.5 42 19 40 14Z"
+                        fill="var(--color-accent-primary)"
+                        opacity="0.6"
+                      />
+                      {/* Flame — warm inner core */}
+                      <path
+                        d="M40 19 C39 22 38 24.5 38 27 C38 29 38.9 30.5 40 30.5 C41.1 30.5 42 29 42 27 C42 24.5 41 22 40 19Z"
+                        fill="var(--color-accent-primary)"
+                        opacity="0.35"
                       />
                       {/* Wick */}
-                      <line x1="24" y1="22" x2="24" y2="24.5" stroke="#FFF3E0" strokeWidth="1" opacity="0.6" />
-                      {/* Lamp rim — ornate top edge */}
-                      <ellipse cx="24" cy="25" rx="11" ry="2.5" fill="#FFF3E0" opacity="0.85" />
-                      <ellipse cx="24" cy="25" rx="9" ry="1.8" fill="var(--color-accent-primary)" opacity="0.7" />
-                      {/* Decorative dots on rim */}
-                      <circle cx="15" cy="25" r="0.8" fill="white" opacity="0.7" />
-                      <circle cx="18" cy="24" r="0.6" fill="white" opacity="0.5" />
-                      <circle cx="21" cy="23.5" r="0.6" fill="white" opacity="0.5" />
-                      <circle cx="27" cy="23.5" r="0.6" fill="white" opacity="0.5" />
-                      <circle cx="30" cy="24" r="0.6" fill="white" opacity="0.5" />
-                      <circle cx="33" cy="25" r="0.8" fill="white" opacity="0.7" />
-                      {/* Bowl — elegant curved body */}
+                      <line x1="40" y1="34" x2="40" y2="37" stroke="var(--color-accent-primary)" strokeWidth="0.8" opacity="0.3" />
+                      {/* Lamp rim */}
+                      <ellipse cx="40" cy="37.5" rx="13" ry="2.8" fill="var(--color-accent-primary)" opacity="0.35" />
+                      <ellipse cx="40" cy="37.5" rx="10.5" ry="2" fill="var(--color-accent-primary)" opacity="0.15" />
+                      {/* Rim accent dots */}
+                      <circle cx="29" cy="37.5" r="0.7" fill="var(--color-accent-primary)" opacity="0.3" />
+                      <circle cx="33" cy="36.5" r="0.5" fill="var(--color-accent-primary)" opacity="0.25" />
+                      <circle cx="37" cy="36" r="0.5" fill="var(--color-accent-primary)" opacity="0.2" />
+                      <circle cx="43" cy="36" r="0.5" fill="var(--color-accent-primary)" opacity="0.2" />
+                      <circle cx="47" cy="36.5" r="0.5" fill="var(--color-accent-primary)" opacity="0.25" />
+                      <circle cx="51" cy="37.5" r="0.7" fill="var(--color-accent-primary)" opacity="0.3" />
+                      {/* Bowl body */}
                       <path
-                        d="M13 25 Q13 27 14.5 30 Q17 35 24 37 Q31 35 33.5 30 Q35 27 35 25"
-                        fill="#FFF3E0"
-                        opacity="0.7"
+                        d="M27 37.5 Q27 40 29 44 Q33 50 40 52 Q47 50 51 44 Q53 40 53 37.5"
+                        fill="var(--color-accent-primary)"
+                        opacity="0.25"
                       />
-                      {/* Bowl decorative band */}
+                      {/* Bowl decorative bands */}
                       <path
-                        d="M15 28 Q19.5 30 24 30 Q28.5 30 33 28"
-                        stroke="var(--color-accent-primary)"
-                        strokeWidth="0.6"
-                        fill="none"
-                        opacity="0.5"
-                      />
-                      <path
-                        d="M16.5 31 Q20 33 24 33 Q28 33 31.5 31"
+                        d="M29.5 41 Q34.5 43 40 43 Q45.5 43 50.5 41"
                         stroke="var(--color-accent-primary)"
                         strokeWidth="0.5"
                         fill="none"
-                        opacity="0.4"
+                        opacity="0.2"
                       />
-                      {/* Decorative petals on bowl */}
-                      <circle cx="19" cy="29" r="0.5" fill="white" opacity="0.4" />
-                      <circle cx="24" cy="30.5" r="0.5" fill="white" opacity="0.4" />
-                      <circle cx="29" cy="29" r="0.5" fill="white" opacity="0.4" />
+                      <path
+                        d="M31.5 45 Q35.5 47 40 47 Q44.5 47 48.5 45"
+                        stroke="var(--color-accent-primary)"
+                        strokeWidth="0.5"
+                        fill="none"
+                        opacity="0.15"
+                      />
+                      {/* Bowl accent dots */}
+                      <circle cx="35" cy="42" r="0.5" fill="var(--color-accent-primary)" opacity="0.2" />
+                      <circle cx="40" cy="43.5" r="0.5" fill="var(--color-accent-primary)" opacity="0.2" />
+                      <circle cx="45" cy="42" r="0.5" fill="var(--color-accent-primary)" opacity="0.2" />
                       {/* Stem */}
                       <path
-                        d="M21 37 Q24 38.5 27 37 L26 41 Q24 42 22 41Z"
-                        fill="#FFF3E0"
-                        opacity="0.65"
+                        d="M37 52 Q40 53.5 43 52 L42 57 Q40 58 38 57Z"
+                        fill="var(--color-accent-primary)"
+                        opacity="0.22"
                       />
-                      {/* Base — lotus-petal pedestal */}
-                      <ellipse cx="24" cy="42" rx="5.5" ry="1.5" fill="#FFF3E0" opacity="0.6" />
-                      <path d="M18.5 42 Q20 40 21.5 42" stroke="#FFF3E0" strokeWidth="0.5" fill="none" opacity="0.4" />
-                      <path d="M21.5 42 Q23 40.5 24 42" stroke="#FFF3E0" strokeWidth="0.5" fill="none" opacity="0.4" />
-                      <path d="M24 42 Q25 40.5 26.5 42" stroke="#FFF3E0" strokeWidth="0.5" fill="none" opacity="0.4" />
-                      <path d="M26.5 42 Q28 40 29.5 42" stroke="#FFF3E0" strokeWidth="0.5" fill="none" opacity="0.4" />
-                      {/* Spout — traditional diya nozzle */}
+                      {/* Pedestal */}
+                      <ellipse cx="40" cy="58" rx="6" ry="1.8" fill="var(--color-accent-primary)" opacity="0.2" />
+                      {/* Lotus petals on pedestal */}
+                      <path d="M34 58 Q35.5 56 37 58" stroke="var(--color-accent-primary)" strokeWidth="0.5" fill="none" opacity="0.18" />
+                      <path d="M37 58 Q38.5 56.5 40 58" stroke="var(--color-accent-primary)" strokeWidth="0.5" fill="none" opacity="0.18" />
+                      <path d="M40 58 Q41.5 56.5 43 58" stroke="var(--color-accent-primary)" strokeWidth="0.5" fill="none" opacity="0.18" />
+                      <path d="M43 58 Q44.5 56 46 58" stroke="var(--color-accent-primary)" strokeWidth="0.5" fill="none" opacity="0.18" />
+                      {/* Spout */}
                       <path
-                        d="M13 25 Q10 25.5 9 27 Q10 28 13 27"
-                        fill="#FFF3E0"
-                        opacity="0.6"
+                        d="M27 37.5 Q24 38 23 40 Q24 41 27 40"
+                        fill="var(--color-accent-primary)"
+                        opacity="0.25"
                       />
                     </svg>
                   </div>
