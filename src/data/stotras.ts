@@ -4570,6 +4570,74 @@ const annapoornaAshtakam: Stotra = {
   ],
 };
 
+const kalabhairavaAshtakam: Stotra = {
+  id: 'kalabhairava-ashtakam',
+  title: 'Kalabhairava Ashtakam',
+  subtitle: 'कालभैरवाष्टकम्',
+  deity: 'Kalabhairava',
+  description:
+    'Eight verses by Adi Shankaracharya praising Lord Kalabhairava, the fierce manifestation of Shiva who is the lord of time and the presiding deity of Kashi.',
+  benefits: [
+    'Invokes the protection of Lord Kalabhairava, destroyer of fear',
+    'Bestows liberation and freedom from the cycle of time',
+    'Brings courage, discipline, and spiritual awakening',
+  ],
+  estimatedMinutes: 3,
+  icon: 'kalabhairava-ashtakam',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'देवराजसेव्यमानपावनाङ्घ्रिपङ्कजं\nव्यालयज्ञसूत्रमिन्दुशेखरं कृपाकरम् ।\nनारदादियोगिवृन्दवन्दितं दिगम्बरं\nकाशिकापुराधिनाथकालभैरवं भजे ॥',
+      transliteration:
+        'devarāja-sevyamāna-pāvanāṅghri-paṅkajaṁ\nvyāla-yajña-sūtram-indu-śekharaṁ kṛpākaram |\nnāradādi-yogi-vṛnda-vanditaṁ digambaraṁ\nkāśikā-purādhi-nātha-kālabhairavaṁ bhaje ||',
+      meaning:
+        'I worship Kalabhairava, the lord of Kashi, whose sacred lotus feet are served by Indra, who wears serpents as his sacred thread and the moon on his head, who is compassionate, venerated by Narada and hosts of yogis, and who is sky-clad.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'भानुकोटिभास्वरं भवाब्धितारकं परं\nनीलकण्ठमीप्सितार्थदायकं त्रिलोचनम् ।\nकालकालमम्बुजाक्षमक्षशूलमक्षरं\nकाशिकापुराधिनाथकालभैरवं भजे ॥',
+      transliteration:
+        'bhānu-koṭi-bhāsvaraṁ bhavābdhi-tārakaṁ paraṁ\nnīlakaṇṭham-īpsitārtha-dāyakaṁ trilocanam |\nkāla-kālam-ambujākṣam-akṣa-śūlam-akṣaraṁ\nkāśikā-purādhi-nātha-kālabhairavaṁ bhaje ||',
+      meaning:
+        'I worship Kalabhairava, the lord of Kashi, who shines like a million suns, who liberates from the ocean of worldly existence, the supreme one, blue-throated, fulfiller of desires, three-eyed, the death of death itself, lotus-eyed, bearing a rosary and trident, imperishable.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'शूलटङ्कपाशदण्डपाणिमादिकारणं\nश्यामकायमादिदेवमक्षरं निरामयम् ।\nभीमविक्रमं प्रभुं विचित्रताण्डवप्रियं\nकाशिकापुराधिनाथकालभैरवं भजे ॥',
+      transliteration:
+        'śūla-ṭaṅka-pāśa-daṇḍa-pāṇim-ādi-kāraṇaṁ\nśyāma-kāyam-ādi-devam-akṣaraṁ nirāmayam |\nbhīma-vikramaṁ prabhuṁ vicitra-tāṇḍava-priyaṁ\nkāśikā-purādhi-nātha-kālabhairavaṁ bhaje ||',
+      meaning:
+        'I worship Kalabhairava, the lord of Kashi, who holds the trident, axe, noose, and staff in his hands, the primordial cause, dark-bodied, the first deity, imperishable, free from disease, of fearsome valour, the lord who delights in the wondrous Tandava dance.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'भुक्तिमुक्तिदायकं प्रशस्तचारुविग्रहं\nभक्तवत्सलं स्थिरं समस्तलोकविग्रहम् ।\nविनिक्वणन्मनोज्ञहेमकिङ्किणीलसत्कटिं\nकाशिकापुराधिनाथकालभैरवं भजे ॥',
+      transliteration:
+        'bhukti-mukti-dāyakaṁ praśasta-cāru-vigrahaṁ\nbhakta-vatsalaṁ sthiraṁ samasta-loka-vigraham |\nvinikvanan-manojña-hema-kiṅkiṇī-lasat-kaṭiṁ\nkāśikā-purādhi-nātha-kālabhairavaṁ bhaje ||',
+      meaning:
+        'I worship Kalabhairava, the lord of Kashi, bestower of worldly enjoyment and liberation, of glorious and beautiful form, tender towards devotees, steady, the embodiment of all worlds, whose waist shines with tinkling golden bells that produce enchanting sounds.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'धर्मसेतुपालकं त्वधर्ममार्गनाशकं\nकर्मपाशमोचकं सुशर्मदायकं विभुम् ।\nस्वर्णवर्णशेषपाशशोभिताङ्गमण्डलं\nकाशिकापुराधिनाथकालभैरवं भजे ॥',
+      transliteration:
+        'dharma-setu-pālakaṁ tvadharma-mārga-nāśakaṁ\nkarma-pāśa-mocakaṁ suśarma-dāyakaṁ vibhum |\nsvarṇa-varṇa-śeṣa-pāśa-śobhitāṅga-maṇḍalaṁ\nkāśikā-purādhi-nātha-kālabhairavaṁ bhaje ||',
+      meaning:
+        'I worship Kalabhairava, the lord of Kashi, the guardian of the bridge of dharma, destroyer of the path of adharma, liberator from the noose of karma, bestower of great happiness, the all-pervading one whose body is adorned with a golden serpent-noose.',
+    },
+  ],
+};
+
 export const stotras: Stotra[] = [
   achyutashtakam,
   annapoornaAshtakam,
@@ -4578,6 +4646,7 @@ export const stotras: Stotra[] = [
   bhajaGovindam,
   ganeshaPancharatnam,
   hanumanChalisa,
+  kalabhairavaAshtakam,
   kanikadharaStotram,
   lingashtakam,
   madhurashtakam,
@@ -4610,11 +4679,6 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'nirvana-shatakam',
     title: 'Nirvana Shatakam',
     deity: 'Shiva',
-  },
-  {
-    id: 'kalabhairava-ashtakam',
-    title: 'Kalabhairava Ashtakam',
-    deity: 'Kalabhairava',
   },
   {
     id: 'shiva-mahimna-stotram',
