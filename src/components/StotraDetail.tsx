@@ -263,8 +263,7 @@ export default function StotraDetail() {
           <div className="mt-4 flex justify-center">
             <motion.a
               href={(() => {
-                const baseUrl = window.location.href.split('#')[0];
-                const stotraUrl = `${baseUrl}#/stotra/${stotra.id}`;
+                const stotraUrl = `${window.location.origin}/stotra/${stotra.id}`;
                 const benefit = stotra.benefits?.[0];
                 const message = benefit
                   ? t('detail.shareMessageBenefit', { title: stotra.title, benefit, url: stotraUrl })
