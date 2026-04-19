@@ -4296,7 +4296,7 @@ const shivaTandavaStotram: Stotra = {
     'Develops deep devotion to Mahadeva through magnificent poetry',
     'Brings spiritual strength and fearlessness',
   ],
-  estimatedMinutes: 5,
+  estimatedMinutes: 6,
   icon: 'shiva-tandava-stotram',
   verses: [
     {
@@ -4448,6 +4448,16 @@ const shivaTandavaStotram: Stotra = {
         'imaṁ hi nityam-evam-uktam-uttamōttamaṁ stavaṁ\npaṭhan-smaran-bruvan-narō viśuddhim-eti-santatam |\nhare gurau subhaktim-āśu yāti nānyathā gatiṁ\nvimōhanaṁ hi dehināṁ su-śaṅkarasya cintanam ||',
       meaning:
         'One who reads, remembers, or recites this supreme hymn daily attains ever-lasting purity. They quickly develop deep devotion to Lord Shiva, the guru — there is no other path. Indeed, the contemplation of the auspicious Shankara is the enchantment of all embodied beings.',
+    },
+    {
+      id: 16,
+      verseLabel: 'Verse 16',
+      sanskrit:
+        'पूजावसानसमये दशवक्त्रगीतं\nयः शम्भुपूजनपरं पठति प्रदोषे ।\nतस्य स्थिरां रथगजेन्द्रतुरङ्गयुक्तां\nलक्ष्मीं सदैव सुमुखीं प्रददाति शम्भुः ॥',
+      transliteration:
+        'pūjāvasāna-samaye daśavaktra-gītaṁ\nyaḥ śambhu-pūjana-paraṁ paṭhati pradōṣe |\ntasya sthirāṁ ratha-gajendra-turaṅga-yuktāṁ\nlakṣmīṁ sadaiva sumukhīṁ pradadāti śambhuḥ ||',
+      meaning:
+        'Whoever recites this hymn sung by the ten-headed Ravana at the end of worship during the Pradosha hour, to him Lord Shambhu bestows enduring wealth complete with chariots, mighty elephants, and horses — and the ever-gracious Goddess Lakshmi.',
     },
   ],
 };
