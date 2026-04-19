@@ -258,6 +258,30 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
         </>
       );
 
+    case 'shiva-tandava-stotram':
+      return (
+        <>
+          <path d="M16 4 L16 12" {...s} strokeWidth="1.8" />
+          <circle cx="16" cy="16" r="6" {...s} strokeWidth="1.4" />
+          <path d="M10 16 Q13 10 16 16 Q19 22 22 16" {...s} strokeWidth="1.2" />
+          <path d="M10 10 L10 22" {...s} strokeWidth="1" />
+          <path d="M22 10 L22 22" {...s} strokeWidth="1" />
+          <path d="M13 26 L19 26" {...s} strokeWidth="1.2" />
+        </>
+      );
+
+    case 'annapoorna-ashtakam':
+      return (
+        <>
+          <path d="M10 20 Q10 12 16 10 Q22 12 22 20" {...s} strokeWidth="1.4" />
+          <path d="M8 20 L24 20" {...s} strokeWidth="1.6" />
+          <path d="M16 10 L16 6" {...s} strokeWidth="1.2" />
+          <path d="M13 7 Q16 4 19 7" {...s} strokeWidth="1.2" />
+          <path d="M12 24 L20 24" {...s} strokeWidth="1.2" />
+          <circle cx="16" cy="16" r="1.5" {...s} strokeWidth="1" />
+        </>
+      );
+
     default:
       return <circle cx="16" cy="16" r="8" {...s} strokeWidth="1.5" />;
   }
