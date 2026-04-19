@@ -5067,6 +5067,56 @@ const argalaStotram: Stotra = {
       meaning:
         'O Chandika, destroyer of disease, to those who praise You with devotion! Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
     },
+    {
+      id: 11,
+      verseLabel: 'Verse 11',
+      sanskrit:
+        'चण्डिके सततं ये त्वामर्चयन्तीह भक्तितः ।\nरूपं देहि जयं देहि यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'caṇḍike satataṁ ye tvām-arcayantīha bhaktitaḥ |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'O Chandika, for those who constantly worship You with devotion in this world! Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
+    {
+      id: 12,
+      verseLabel: 'Verse 12',
+      sanskrit:
+        'देहि सौभाग्यमारोग्यं देहि मे परमं सुखम् ।\nरूपं देहि जयं देहi यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'dehi saubhāgyam-ārogyaṁ dehi me paramaṁ sukham |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'Grant me good fortune and health, grant me supreme happiness. Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
+    {
+      id: 13,
+      verseLabel: 'Verse 13',
+      sanskrit:
+        'विधेहि द्विषतां नाशं विधेहि बलमुच्चकैः ।\nरूपं देहि जयं देहि यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'vidhehi dviṣatāṁ nāśaṁ vidhehi balam-uccakaiḥ |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'Bring about the destruction of my foes and bestow upon me abundant strength. Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
+    {
+      id: 14,
+      verseLabel: 'Verse 14',
+      sanskrit:
+        'विधेहि देवि कल्याणं विधेहि परमां श्रियम् ।\nरूपं देहि जयं देहि यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'vidhehi devi kalyāṇaṁ vidhehi paramāṁ śriyam |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'Bestow auspiciousness, O Goddess, and grant me supreme prosperity. Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
+    {
+      id: 15,
+      verseLabel: 'Verse 15',
+      sanskrit:
+        'सुरासुरशिरोरत्ननिघृष्टचरणेऽम्बिके ।\nरूपं देहि जयं देहि यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'surāsura-śiro-ratna-nighṛṣṭa-caraṇe\'mbike |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'O Mother, whose feet are polished by the crest jewels of gods and demons alike! Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
   ],
 };
 
