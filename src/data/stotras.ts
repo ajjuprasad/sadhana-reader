@@ -4462,8 +4462,77 @@ const shivaTandavaStotram: Stotra = {
   ],
 };
 
+const annapoornaAshtakam: Stotra = {
+  id: 'annapoorna-ashtakam',
+  title: 'Annapoorna Ashtakam',
+  subtitle: 'अन्नपूर्णाष्टकम्',
+  deity: 'Annapurna',
+  description:
+    'Eight verses by Adi Shankaracharya praising Goddess Annapurna, the divine mother of nourishment who presides over the sacred city of Kashi, seeking her grace for both sustenance and spiritual wisdom.',
+  benefits: [
+    'Invokes the blessings of Goddess Annapurna for sustenance and abundance',
+    'Cultivates gratitude and devotion to the divine mother',
+    'Seeks knowledge and detachment through divine grace',
+  ],
+  estimatedMinutes: 3,
+  icon: 'annapoorna-ashtakam',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'नित्यानन्दकरी वराभयकरी सौन्दर्यरत्नाकरी\nनिर्धूताखिलघोरपावनकरी प्रत्यक्षमाहेश्वरी ।\nप्रालेयाचलवंशपावनकरी काशीपुराधीश्वरी\nभिक्षां देहि कृपावलम्बनकरी मातान्नपूर्णेश्वरी ॥',
+      transliteration:
+        'nityānandakarī varābhayakarī saundaryaratnākarī\nnirdhūtākhilaghorapāvanakarī pratyakṣamāheśvarī |\nprāleyācalavaṁśapāvanakarī kāśīpurādhīśvarī\nbhikṣāṁ dehi kṛpāvalambanakari mātānnapūrṇeśvarī ||',
+      meaning:
+        'O Mother Annapurna, giver of eternal bliss, bestower of boons and fearlessness, ocean of beauty, purifier of all that is terrible, the visible Maheshvari, sanctifier of the Himalayan dynasty, sovereign of the city of Kashi — grant me alms, O compassionate mother!',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'नानारत्नविचित्रभूषणकरी हेमाम्बराडम्बरी\nमुक्ताहारविलम्बमानविलसद्वक्षोजकुम्भान्तरी ।\nकाश्मीरागरुवासिताङ्गरुचिरे काशीपुराधीश्वरी\nभिक्षां देहि कृपावलम्बनकरी मातान्नपूर्णेश्वरी ॥',
+      transliteration:
+        'nānāratnavicitrabhūṣaṇakarī hemāmbarāḍambarī\nmuktāhāravilambamānavilasadvakṣojakumbhāntarī |\nkāśmīrāgaruvāsitāṅgarucire kāśīpurādhīśvarī\nbhikṣāṁ dehi kṛpāvalambanakari mātānnapūrṇeśvarī ||',
+      meaning:
+        'Adorned with wondrous ornaments of various gems, resplendent in golden garments, her bosom graced by a swaying pearl necklace, her body fragrant with saffron and agaru — O sovereign of Kashi, grant me alms, O compassionate Mother Annapurna!',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'योगानन्दकरी रिपुक्षयकरी धर्मार्थनिष्ठाकरी\nचन्द्रार्कानलभासमानलहरी त्रैलोक्यरक्षाकरी ।\nसर्वैश्वर्यसमस्तवाञ्छितकरी काशीपुराधीश्वरी\nभिक्षां देहि कृपावलम्बनकरी मातान्नपूर्णेश्वरी ॥',
+      transliteration:
+        'yogānandakarī ripukṣayakarī dharmārthaniṣṭhākarī\ncandrārkānalabhāsamānalaharī trailokyarakṣākarī |\nsarvaiśvaryasamastavāñchitakarī kāśīpurādhīśvarī\nbhikṣāṁ dehi kṛpāvalambanakari mātānnapūrṇeśvarī ||',
+      meaning:
+        'Bestower of yogic bliss, destroyer of enemies, establisher of righteous purpose, radiant as waves of moonlight, sunlight, and fire, protector of the three worlds, fulfiller of all desires and wealth — O sovereign of Kashi, grant me alms, O compassionate Mother Annapurna!',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'कैलासाचलकन्दरालयकरी गौरी उमा शङ्करी\nकौमारी निगमार्थगोचरकरी ओङ्कारबीजाक्षरी ।\nमोक्षद्वारकपाटपाटनकरी काशीपुराधीश्वरी\nभिक्षां देहि कृपावलम्बनकरी मातान्नपूर्णेश्वरी ॥',
+      transliteration:
+        'kailāsācalakandarālayakarī gaurī umā śaṅkarī\nkaumārī nigamārthagōcarakarī oṅkārabījākṣarī |\nmōkṣadvārakapāṭapāṭanakarī kāśīpurādhīśvarī\nbhikṣāṁ dehi kṛpāvalambanakari mātānnapūrṇeśvarī ||',
+      meaning:
+        'She who dwells in the caves of Mount Kailasa — Gauri, Uma, Shankari, Kumari — revealer of the meaning of the Vedas, the seed-syllable Om, opener of the doors of liberation — O sovereign of Kashi, grant me alms, O compassionate Mother Annapurna!',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'दृश्यादृश्यविभूतिवाहनकरी ब्रह्माण्डभाण्डोदरी\nलीलानाटकसूत्रभेदनकरी विज्ञानदीपाङ्कुरी ।\nश्रीविश्वेशमनःप्रसादनकरी काशीपुराधीश्वरी\nभिक्षां देहि कृपावलम्बनकरी मातान्नपूर्णेश्वरी ॥',
+      transliteration:
+        'dṛśyādṛśyavibhūtivāhanakarī brahmāṇḍabhāṇḍōdarī\nlīlānāṭakasūtrabhedanakarī vijñānadīpāṅkurī |\nśrīviśveśamanaḥprasādanakarī kāśīpurādhīśvarī\nbhikṣāṁ dehi kṛpāvalambanakari mātānnapūrṇeśvarī ||',
+      meaning:
+        'Bearer of all visible and invisible glories, containing the entire universe within her being, director of the play of cosmic drama, the sprouting lamp of supreme knowledge, the delight of Lord Vishweshwara\'s heart — O sovereign of Kashi, grant me alms, O compassionate Mother Annapurna!',
+    },
+  ],
+};
+
 export const stotras: Stotra[] = [
   achyutashtakam,
+  annapoornaAshtakam,
   ashtalakshmiStotram,
   adityaHridayaStotram,
   bhajaGovindam,
@@ -4511,11 +4580,6 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'shiva-mahimna-stotram',
     title: 'Shiva Mahimna Stotram',
     deity: 'Shiva',
-  },
-{
-    id: 'annapoorna-ashtakam',
-    title: 'Annapoorna Ashtakam',
-    deity: 'Annapurna',
   },
   {
     id: 'argala-stotram',
