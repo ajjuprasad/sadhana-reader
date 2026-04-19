@@ -4635,6 +4635,36 @@ const kalabhairavaAshtakam: Stotra = {
       meaning:
         'I worship Kalabhairava, the lord of Kashi, the guardian of the bridge of dharma, destroyer of the path of adharma, liberator from the noose of karma, bestower of great happiness, the all-pervading one whose body is adorned with a golden serpent-noose.',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'रत्नपादुकाप्रभाभिरामपादयुग्मकं\nनित्यमद्वितीयमिष्टदैवतं निरञ्जनम् ।\nमृत्युदर्पनाशनं करालदंष्ट्रभूषणं\nकाशिकापुराधिनाथकालभैरवं भजे ॥',
+      transliteration:
+        'ratna-pādukā-prabhābhirāma-pāda-yugmakaṁ\nnityam-advitīyam-iṣṭa-daivataṁ nirañjanam |\nmṛtyu-darpa-nāśanaṁ karāla-daṁṣṭra-bhūṣaṇaṁ\nkāśikā-purādhi-nātha-kālabhairavaṁ bhaje ||',
+      meaning:
+        'I worship Kalabhairava, the lord of Kashi, whose pair of feet shine beautifully with jeweled sandals, the eternal one without a second, the chosen deity, the stainless one, the destroyer of the pride of death, adorned with terrible fangs.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'अट्टहासभिन्नपद्मजाण्डकोशसन्ततिं\nदृष्टिपातनष्टपापजालमुग्रशासनम् ।\nअष्टसिद्धिदायकं कपालमालिकाधरं\nकाशिकापुराधिनाथकालभैरवं भजे ॥',
+      transliteration:
+        'aṭṭahāsa-bhinna-padmajāṇḍa-kośa-santatiṁ\ndṛṣṭi-pāta-naṣṭa-pāpa-jālam-ugra-śāsanam |\naṣṭa-siddhi-dāyakaṁ kapāla-mālikā-dharaṁ\nkāśikā-purādhi-nātha-kālabhairavaṁ bhaje ||',
+      meaning:
+        'I worship Kalabhairava, the lord of Kashi, whose thunderous laughter shatters the cosmic egg of Brahma, whose mere glance destroys the web of sins, who enforces fierce discipline, bestower of the eight supernatural powers, wearer of a garland of skulls.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'भूतसङ्घनायकं विशालकीर्तिदायकं\nकाशिवासलोकपुण्यपापशोधकं विभुम् ।\nनीतिमार्गकोविदं पुरातनं जगत्पतिं\nकाशिकापुराधिनाथकालभैरवं भजे ॥',
+      transliteration:
+        'bhūta-saṅgha-nāyakaṁ viśāla-kīrti-dāyakaṁ\nkāśi-vāsa-loka-puṇya-pāpa-śodhakaṁ vibhum |\nnīti-mārga-kovidaṁ purātanaṁ jagat-patiṁ\nkāśikā-purādhi-nātha-kālabhairavaṁ bhaje ||',
+      meaning:
+        'I worship Kalabhairava, the lord of Kashi, the leader of the host of spirits, bestower of wide fame, purifier of the merits and sins of those dwelling in Kashi, the all-pervading one, expert in the path of righteousness, the ancient lord of the universe.',
+    },
   ],
 };
 
