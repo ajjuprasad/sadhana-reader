@@ -4844,9 +4844,78 @@ const sudarshanaAshtakam: Stotra = {
   ],
 };
 
+const bilvashtakam: Stotra = {
+  id: 'bilvashtakam',
+  title: 'Bilvashtakam',
+  subtitle: 'बिल्वाष्टकम्',
+  deity: 'Shiva',
+  description:
+    'Nine verses (eight plus phala shruti) by Adi Shankaracharya extolling the supreme merit of offering bilva (bael) leaves to Lord Shiva. Each verse culminates in the refrain "Eka Bilvam Shivārpaṇam."',
+  benefits: [
+    'Bestows the merit of offering bilva leaves to Lord Shiva',
+    'Destroys sins accumulated over many lifetimes',
+    'Leads to liberation and attainment of Shiva Loka',
+  ],
+  estimatedMinutes: 3,
+  icon: 'bilvashtakam',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'त्रिदलं त्रिगुणाकारं त्रिनेत्रं च त्रियायुधम् ।\nत्रिजन्मपापसंहारं एकबिल्वं शिवार्पणम् ॥',
+      transliteration:
+        'tridalaṁ triguṇākāraṁ trinetraṁ ca triyāyudham |\ntrijanna-pāpa-saṁhāraṁ eka-bilvaṁ śivārpaṇam ||',
+      meaning:
+        'The bilva leaf has three leaves representing the three gunas, the three eyes of Shiva, and his three weapons. Offering one bilva leaf to Shiva destroys the sins of three lifetimes.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'त्रिशाखैर्बिल्वपत्रैश्च अच्छिद्रैः कोमलैः शुभैः ।\nतवपूजां करिष्यामि एकबिल्वं शिवार्पणम् ॥',
+      transliteration:
+        'triśākhair-bilva-patraiśca acchidraiḥ komalaiḥ śubhaiḥ |\ntava-pūjāṁ kariṣyāmi eka-bilvaṁ śivārpaṇam ||',
+      meaning:
+        'With three-branched bilva leaves that are unbroken, tender, and auspicious, I shall worship You. One bilva leaf offered to Shiva.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'कोटिकन्यामहादानं तिलपर्वतकोटिदम् ।\nकाञ्चनं क्षीरदानेन एकबिल्वं शिवार्पणम् ॥',
+      transliteration:
+        'koṭi-kanyā-mahā-dānaṁ tila-parvata-koṭidam |\nkāñcanaṁ kṣīra-dānena eka-bilvaṁ śivārpaṇam ||',
+      meaning:
+        'The merit of giving away millions of maidens in charity, mountains of sesame seeds, gold, and milk — all this equals the offering of one bilva leaf to Shiva.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'काशीक्षेत्रनिवासं च कालभैरवदर्शनम् ।\nप्रयागे माधवं दृष्ट्वा एकबिल्वं शिवार्पणम् ॥',
+      transliteration:
+        'kāśī-kṣetra-nivāsaṁ ca kāla-bhairava-darśanam |\nprayāge mādhavaṁ dṛṣṭvā eka-bilvaṁ śivārpaṇam ||',
+      meaning:
+        'Living in Kashi, beholding Kala Bhairava, and seeing Lord Madhava at Prayag — the merit of all this equals offering one bilva leaf to Shiva.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'इन्दुवारे व्रतं स्थित्वा निराहारो महेश्वरः ।\nनक्तं हौष्यामि देवेश एकबिल्वं शिवार्पणम् ॥',
+      transliteration:
+        'indu-vāre vrataṁ sthitvā nirāhāro maheśvaraḥ |\nnaktaṁ hauṣyāmi deveśa eka-bilvaṁ śivārpaṇam ||',
+      meaning:
+        'Observing a fast on Monday, remaining without food for Lord Maheshwara, and performing offerings at night — all this equals the offering of one bilva leaf to Shiva.',
+    },
+  ],
+};
+
 export const stotras: Stotra[] = [
   achyutashtakam,
   annapoornaAshtakam,
+  bilvashtakam,
   ashtalakshmiStotram,
   adityaHridayaStotram,
   bhajaGovindam,
