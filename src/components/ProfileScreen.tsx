@@ -61,6 +61,7 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
   const { settings, applySettings } = settingsState;
   const [draft, setDraft] = useState<Settings>(settings);
   const [signingIn, setSigningIn] = useState(false);
+  const [signingOut, setSigningOut] = useState(false);
 
   const handleSignIn = async () => {
     setSigningIn(true);
@@ -69,6 +70,14 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
     } finally {
       setSigningIn(false);
     }
+  };
+
+  const handleSignOut = () => {
+    setSigningOut(true);
+    setTimeout(async () => {
+      await signOut();
+      navigate('/');
+    }, 600);
   };
 
   const update = (partial: Partial<Settings>) => {
@@ -131,7 +140,9 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
                 >
                   <motion.div
                     initial={{ opacity: 0, scale: 0.85 }}
-                    animate={{ opacity: 1, scale: 1 }}
+                    animate={signingOut
+                      ? { opacity: 0, scale: 0.85, transition: { duration: 0.35, delay: 0.2, ease: sacredEase as unknown as number[] } }
+                      : { opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.05, ease: sacredEase as unknown as number[] }}
                   >
                     {user.photoURL ? (
@@ -157,7 +168,9 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
                     className="font-display font-bold text-xl"
                     style={{ color: 'var(--color-text-primary)' }}
                     initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    animate={signingOut
+                      ? { opacity: 0, y: -6, transition: { duration: 0.3, delay: 0.14, ease: sacredEase as unknown as number[] } }
+                      : { opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.15, ease: sacredEase as unknown as number[] }}
                   >
                     {user.displayName}
@@ -166,7 +179,9 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
                     className="font-body text-sm mt-0.5"
                     style={{ color: 'var(--color-text-muted)' }}
                     initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    animate={signingOut
+                      ? { opacity: 0, y: -6, transition: { duration: 0.3, delay: 0.08, ease: sacredEase as unknown as number[] } }
+                      : { opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.22, ease: sacredEase as unknown as number[] }}
                   >
                     {user.email}
@@ -176,7 +191,9 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
                       className="font-hind text-xs mt-2"
                       style={{ color: 'var(--color-text-muted)' }}
                       initial={{ opacity: 0, y: 8 }}
-                      animate={{ opacity: 1, y: 0 }}
+                      animate={signingOut
+                        ? { opacity: 0, y: -6, transition: { duration: 0.3, delay: 0.04, ease: sacredEase as unknown as number[] } }
+                        : { opacity: 1, y: 0 }}
                       transition={{ duration: 0.4, delay: 0.28, ease: sacredEase as unknown as number[] }}
                     >
                       {t('profile.memberSince', {
@@ -188,17 +205,17 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
                     </motion.p>
                   )}
                   <motion.button
-                    onClick={async () => {
-                      await signOut();
-                      navigate('/');
-                    }}
+                    onClick={handleSignOut}
+                    disabled={signingOut}
                     className="flex items-center justify-center gap-3 py-3 px-6 rounded-xl font-hind font-semibold text-sm mt-5"
                     style={{
                       backgroundColor: 'rgba(255,153,51,0.12)',
                       color: 'var(--color-accent-primary)',
                     }}
                     initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    animate={signingOut
+                      ? { opacity: 0, y: -6, transition: { duration: 0.3, delay: 0, ease: sacredEase as unknown as number[] } }
+                      : { opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.35, ease: sacredEase as unknown as number[] }}
                   >
                     {t('auth.signOut')}
@@ -226,26 +243,56 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
+                      <defs>
+                        <style>{`
+                          @keyframes deepam-outer {
+                            0%, 100% { opacity: 0.55; transform: scaleY(1) translateX(0); }
+                            28% { opacity: 0.47; transform: scaleY(0.97) translateX(-0.4px); }
+                            56% { opacity: 0.58; transform: scaleY(1.02) translateX(0.3px); }
+                            79% { opacity: 0.50; transform: scaleY(0.99) translateX(-0.2px); }
+                          }
+                          @keyframes deepam-mid {
+                            0%, 100% { opacity: 0.7; transform: scaleY(1) translateX(0); }
+                            22% { opacity: 0.60; transform: scaleY(0.96) translateX(0.3px); }
+                            48% { opacity: 0.73; transform: scaleY(1.03) translateX(-0.2px); }
+                            72% { opacity: 0.64; transform: scaleY(0.98) translateX(0.15px); }
+                          }
+                          @keyframes deepam-core {
+                            0%, 100% { opacity: 0.45; transform: scaleY(1) translateX(0); }
+                            18% { opacity: 0.38; transform: scaleY(0.95) translateX(-0.3px); }
+                            42% { opacity: 0.50; transform: scaleY(1.04) translateX(0.2px); }
+                            68% { opacity: 0.40; transform: scaleY(0.97) translateX(-0.15px); }
+                          }
+                          @keyframes deepam-glow {
+                            0%, 100% { opacity: 1; }
+                            35% { opacity: 0.88; }
+                            65% { opacity: 0.96; }
+                            85% { opacity: 0.90; }
+                          }
+                        `}</style>
+                      </defs>
                       <circle cx="40" cy="40" r="40" fill="var(--color-accent-primary)" opacity="0.12" />
-                      <circle cx="40" cy="28" r="36" fill="var(--color-accent-primary)" opacity="0.06" />
-                      <circle cx="40" cy="28" r="28" fill="var(--color-accent-primary)" opacity="0.08" />
-                      <circle cx="40" cy="28" r="21" fill="var(--color-accent-primary)" opacity="0.10" />
-                      <circle cx="40" cy="28" r="15" fill="var(--color-accent-primary)" opacity="0.12" />
-                      <circle cx="40" cy="28" r="10" fill="var(--color-accent-primary)" opacity="0.15" />
+                      <g style={{ animation: 'deepam-glow 3.2s ease-in-out infinite' }}>
+                        <circle cx="40" cy="28" r="36" fill="var(--color-accent-primary)" opacity="0.06" />
+                        <circle cx="40" cy="28" r="28" fill="var(--color-accent-primary)" opacity="0.08" />
+                        <circle cx="40" cy="28" r="21" fill="var(--color-accent-primary)" opacity="0.10" />
+                        <circle cx="40" cy="28" r="15" fill="var(--color-accent-primary)" opacity="0.12" />
+                        <circle cx="40" cy="28" r="10" fill="var(--color-accent-primary)" opacity="0.15" />
+                      </g>
                       <path
                         d="M40 10 C37 17 34 23 34 27 C34 31.5 36.7 34 40 34 C43.3 34 46 31.5 46 27 C46 23 43 17 40 10Z"
                         fill="var(--color-accent-primary)"
-                        opacity="0.55"
+                        style={{ animation: 'deepam-outer 3s ease-in-out infinite', transformOrigin: '40px 28px' }}
                       />
                       <path
                         d="M40 14 C38 19 36 23.5 36 27 C36 30 37.8 32 40 32 C42.2 32 44 30 44 27 C44 23.5 42 19 40 14Z"
                         fill="var(--color-accent-primary)"
-                        opacity="0.7"
+                        style={{ animation: 'deepam-mid 2.6s ease-in-out infinite', transformOrigin: '40px 26px' }}
                       />
                       <path
                         d="M40 19 C39 22 38 24.5 38 27 C38 29 38.9 30.5 40 30.5 C41.1 30.5 42 29 42 27 C42 24.5 41 22 40 19Z"
                         fill="var(--color-accent-primary)"
-                        opacity="0.45"
+                        style={{ animation: 'deepam-core 2.1s ease-in-out infinite', transformOrigin: '40px 25px' }}
                       />
                       <line x1="40" y1="34" x2="40" y2="37" stroke="var(--color-accent-primary)" strokeWidth="0.8" opacity="0.4" />
                       <ellipse cx="40" cy="37.5" rx="13" ry="2.8" fill="var(--color-accent-primary)" opacity="0.45" />
