@@ -5285,6 +5285,74 @@ const damodarashtakam: Stotra = {
       meaning:
         'This lotus face of Yours, framed by deep blue curls, kissed again and again by the gopi (Yashoda) on its bimba-red lips — may it manifest in my heart. Enough with millions of other gains!',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'नमो देव दामोदरानन्त विष्णो\nप्रसीद प्रभो दुःखजालाब्धिमग्नम्।\nकृपादृष्टिवृष्ट्यातिदीनं बतानु-\nगृहाणेश मामज्ञमेधि प्रकाशम्॥',
+      transliteration:
+        'namo deva dāmodarānanta viṣṇo\nprasīda prabho duḥkha-jālābdhi-magnam |\nkṛpā-dṛṣṭi-vṛṣṭyāti-dīnaṁ batānu-\ngṛhāṇeśa mām-ajñam-edhi prakāśam ||',
+      meaning:
+        'O Lord Damodara, O infinite Vishnu, be pleased! O Master, I am drowning in an ocean of sorrow. Shower the rain of Your merciful glance upon this utterly wretched soul. O Lord, accept me, this ignorant one — become manifest before me!',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'कुवेरात्मजौ बद्धमूर्त्यैव यद्वत्\nत्वया मोचितौ भक्तिभाजौ कृतौ च।\nतथा प्रेमभक्तिं स्वकां मे प्रयच्छ\nन मोक्षे ग्रहो मे ऽस्ति दामोदरेह॥',
+      transliteration:
+        'kuverātmajau baddha-mūrtyaiva yadvat\ntvayā mocitau bhakti-bhājau kṛtau ca |\ntathā prema-bhaktiṁ svakāṁ me prayaccha\nna mokṣe graho me \'sti dāmodareha ||',
+      meaning:
+        'Just as You, in Your bound form, liberated the two sons of Kubera and made them recipients of devotion, in the same way, bestow upon me Your own loving devotion. O Damodara, I have no desire for liberation!',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'नमस्ते ऽस्तु दाम्ने स्फुरद्दीप्तिधाम्ने\nत्वदीयोदरायाथ विश्वस्य धाम्ने।\nनमो राधिकायै त्वदीयप्रियायै\nनमो ऽनन्तलीलाय देवाय तुभ्यम्॥',
+      transliteration:
+        'namas te \'stu dāmne sphurad-dīpti-dhāmne\ntvadīyodarāyātha viśvasya dhāmne |\nnamo rādhikāyai tvadīya-priyāyai\nnamo \'nanta-līlāya devāya tubhyam ||',
+      meaning:
+        'I bow to the rope that binds You, which shines with brilliant splendor. I bow to Your belly, which is the abode of the entire universe. I bow to Radhika, Your most beloved. I bow to You, the Lord of infinite pastimes!',
+    },
+  ],
+};
+
+const guruAshtakam: Stotra = {
+  id: 'guru-ashtakam',
+  title: 'Guru Ashtakam',
+  subtitle: 'गुर्वष्टकम्',
+  deity: 'Guru',
+  description:
+    'Eight verses by Adi Shankaracharya extolling the supreme importance of the Guru. Each verse describes worldly accomplishments and spiritual attainments, concluding with the refrain: "If the mind is not attached to the lotus feet of the Guru, then what? What? What? What?"',
+  benefits: [
+    'Deepens devotion and surrender to the spiritual teacher',
+    'Cultivates humility and the recognition that all attainments are meaningless without the Guru\'s grace',
+    'Inspires detachment from worldly pride and attachment to spiritual guidance',
+  ],
+  estimatedMinutes: 4,
+  icon: 'M16 4 L16 14 M13 8 L19 8',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'शरीरं सुरूपं तथा वा कलत्रं\nयशश्चारु चित्रं धनं मेरुतुल्यम्।\nमनश्चेन्न लग्नं गुरोरङ्घ्रिपद्मे\nततः किं ततः किं ततः किं ततः किम्॥',
+      transliteration:
+        'śarīraṁ surūpaṁ tathā vā kalatraṁ\nyaśaś-cāru citraṁ dhanaṁ meru-tulyam |\nmanaś-cen-na lagnaṁ guror-aṅghri-padme\ntataḥ kiṁ tataḥ kiṁ tataḥ kiṁ tataḥ kim ||',
+      meaning:
+        'One may have a beautiful body and a lovely spouse, fame that is wonderful and picturesque, wealth as vast as Mount Meru — but if the mind is not attached to the lotus feet of the Guru, then what? What? What? What?',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'कलत्रं धनं पुत्रपौत्रादि सर्वं\nगृहं बान्धवाः सर्वमेतद्धि जातम्।\nमनश्चेन्न लग्नं गुरोरङ्घ्रिपद्मे\nततः किं ततः किं ततः किं ततः किम्॥',
+      transliteration:
+        'kalatraṁ dhanaṁ putra-pautrādi sarvaṁ\ngṛhaṁ bāndhavāḥ sarvam-etaddhi jātam |\nmanaś-cen-na lagnaṁ guror-aṅghri-padme\ntataḥ kiṁ tataḥ kiṁ tataḥ kiṁ tataḥ kim ||',
+      meaning:
+        'One may have a spouse, wealth, sons, grandsons, and all else — home, relatives, everything that is born of this world — but if the mind is not attached to the lotus feet of the Guru, then what? What? What? What?',
+    },
   ],
 };
 
@@ -5298,6 +5366,7 @@ export const stotras: Stotra[] = [
   adityaHridayaStotram,
   bhajaGovindam,
   ganeshaPancharatnam,
+  guruAshtakam,
   hanumanChalisa,
   kalabhairavaAshtakam,
   kanikadharaStotram,
