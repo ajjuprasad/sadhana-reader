@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../contexts/AuthContext';
 import type { useSettings } from '../hooks/useSettings';
 import type { Settings, Language } from '../hooks/useSettings';
@@ -60,6 +60,16 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
   const { t } = useTranslation();
   const { settings, applySettings } = settingsState;
   const [draft, setDraft] = useState<Settings>(settings);
+  const [signingIn, setSigningIn] = useState(false);
+
+  const handleSignIn = async () => {
+    setSigningIn(true);
+    try {
+      await signIn();
+    } finally {
+      setSigningIn(false);
+    }
+  };
 
   const update = (partial: Partial<Settings>) => {
     const next = { ...draft, ...partial };
@@ -108,44 +118,66 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
           transition={{ duration: 0.5, ease: sacredEase as unknown as number[] }}
         >
           {/* Account section */}
-          {!loading && (
-            <section className="mb-8">
-              {user ? (
-                <div className="flex flex-col items-center py-4">
-                  {user.photoURL ? (
-                    <img
-                      src={user.photoURL}
-                      alt=""
-                      className="w-20 h-20 rounded-full mb-3"
-                      referrerPolicy="no-referrer"
-                    />
-                  ) : (
-                    <div
-                      className="w-20 h-20 rounded-full flex items-center justify-center font-hind font-bold text-2xl mb-3"
-                      style={{
-                        backgroundColor: 'var(--color-accent-primary)',
-                        color: 'white',
-                      }}
-                    >
-                      {(user.displayName || user.email || '?')[0].toUpperCase()}
-                    </div>
-                  )}
-                  <p
+          <section className="mb-8" style={{ minHeight: 160 }}>
+            <AnimatePresence mode="wait">
+              {!loading && (user ? (
+                <motion.div
+                  key="signed-in"
+                  className="flex flex-col items-center py-4"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.3, ease: sacredEase as unknown as number[] }}
+                >
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.85 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5, delay: 0.05, ease: sacredEase as unknown as number[] }}
+                  >
+                    {user.photoURL ? (
+                      <img
+                        src={user.photoURL}
+                        alt=""
+                        className="w-20 h-20 rounded-full mb-3"
+                        referrerPolicy="no-referrer"
+                      />
+                    ) : (
+                      <div
+                        className="w-20 h-20 rounded-full flex items-center justify-center font-hind font-bold text-2xl mb-3"
+                        style={{
+                          backgroundColor: 'var(--color-accent-primary)',
+                          color: 'white',
+                        }}
+                      >
+                        {(user.displayName || user.email || '?')[0].toUpperCase()}
+                      </div>
+                    )}
+                  </motion.div>
+                  <motion.p
                     className="font-display font-bold text-xl"
                     style={{ color: 'var(--color-text-primary)' }}
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.15, ease: sacredEase as unknown as number[] }}
                   >
                     {user.displayName}
-                  </p>
-                  <p
+                  </motion.p>
+                  <motion.p
                     className="font-body text-sm mt-0.5"
                     style={{ color: 'var(--color-text-muted)' }}
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.22, ease: sacredEase as unknown as number[] }}
                   >
                     {user.email}
-                  </p>
+                  </motion.p>
                   {user.metadata.creationTime && (
-                    <p
+                    <motion.p
                       className="font-hind text-xs mt-2"
                       style={{ color: 'var(--color-text-muted)' }}
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.4, delay: 0.28, ease: sacredEase as unknown as number[] }}
                     >
                       {t('profile.memberSince', {
                         date: new Date(user.metadata.creationTime).toLocaleDateString(undefined, {
@@ -153,9 +185,9 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
                           year: 'numeric',
                         }),
                       })}
-                    </p>
+                    </motion.p>
                   )}
-                  <button
+                  <motion.button
                     onClick={async () => {
                       await signOut();
                       navigate('/');
@@ -165,15 +197,27 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
                       backgroundColor: 'rgba(255,153,51,0.12)',
                       color: 'var(--color-accent-primary)',
                     }}
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.35, ease: sacredEase as unknown as number[] }}
                   >
                     {t('auth.signOut')}
-                  </button>
-                </div>
+                  </motion.button>
+                </motion.div>
               ) : (
-                <div className="flex flex-col items-center py-4">
-                  {/* Deepam illustration */}
-                  <div className="w-20 h-20 rounded-full mb-3 flex items-center justify-center overflow-hidden"
+                <motion.div
+                  key="guest"
+                  className="flex flex-col items-center py-4"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0, y: -10, transition: { duration: 0.3, ease: sacredEase as unknown as number[] } }}
+                  transition={{ duration: 0.4, ease: sacredEase as unknown as number[] }}
+                >
+                  <motion.div
+                    className="w-20 h-20 rounded-full mb-3 flex items-center justify-center overflow-hidden"
                     style={{ backgroundColor: 'var(--color-bg-card)' }}
+                    animate={signingIn ? { scale: [1, 1.05, 1] } : { scale: 1 }}
+                    transition={signingIn ? { duration: 2.4, repeat: Infinity, ease: 'easeInOut' } : {}}
                   >
                     <svg
                       width="80"
@@ -182,51 +226,41 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      {/* Warm background wash */}
                       <circle cx="40" cy="40" r="40" fill="var(--color-accent-primary)" opacity="0.12" />
-                      {/* Radiating glow layers from flame center */}
                       <circle cx="40" cy="28" r="36" fill="var(--color-accent-primary)" opacity="0.06" />
                       <circle cx="40" cy="28" r="28" fill="var(--color-accent-primary)" opacity="0.08" />
                       <circle cx="40" cy="28" r="21" fill="var(--color-accent-primary)" opacity="0.10" />
                       <circle cx="40" cy="28" r="15" fill="var(--color-accent-primary)" opacity="0.12" />
                       <circle cx="40" cy="28" r="10" fill="var(--color-accent-primary)" opacity="0.15" />
-                      {/* Flame — soft outer teardrop */}
                       <path
                         d="M40 10 C37 17 34 23 34 27 C34 31.5 36.7 34 40 34 C43.3 34 46 31.5 46 27 C46 23 43 17 40 10Z"
                         fill="var(--color-accent-primary)"
                         opacity="0.55"
                       />
-                      {/* Flame — mid layer */}
                       <path
                         d="M40 14 C38 19 36 23.5 36 27 C36 30 37.8 32 40 32 C42.2 32 44 30 44 27 C44 23.5 42 19 40 14Z"
                         fill="var(--color-accent-primary)"
                         opacity="0.7"
                       />
-                      {/* Flame — warm inner core */}
                       <path
                         d="M40 19 C39 22 38 24.5 38 27 C38 29 38.9 30.5 40 30.5 C41.1 30.5 42 29 42 27 C42 24.5 41 22 40 19Z"
                         fill="var(--color-accent-primary)"
                         opacity="0.45"
                       />
-                      {/* Wick */}
                       <line x1="40" y1="34" x2="40" y2="37" stroke="var(--color-accent-primary)" strokeWidth="0.8" opacity="0.4" />
-                      {/* Lamp rim */}
                       <ellipse cx="40" cy="37.5" rx="13" ry="2.8" fill="var(--color-accent-primary)" opacity="0.45" />
                       <ellipse cx="40" cy="37.5" rx="10.5" ry="2" fill="var(--color-bg-card)" opacity="0.3" />
-                      {/* Rim accent dots */}
                       <circle cx="29" cy="37.5" r="0.7" fill="var(--color-accent-primary)" opacity="0.4" />
                       <circle cx="33" cy="36.5" r="0.5" fill="var(--color-accent-primary)" opacity="0.35" />
                       <circle cx="37" cy="36" r="0.5" fill="var(--color-accent-primary)" opacity="0.3" />
                       <circle cx="43" cy="36" r="0.5" fill="var(--color-accent-primary)" opacity="0.3" />
                       <circle cx="47" cy="36.5" r="0.5" fill="var(--color-accent-primary)" opacity="0.35" />
                       <circle cx="51" cy="37.5" r="0.7" fill="var(--color-accent-primary)" opacity="0.4" />
-                      {/* Bowl body */}
                       <path
                         d="M27 37.5 Q27 40 29 44 Q33 50 40 52 Q47 50 51 44 Q53 40 53 37.5"
                         fill="var(--color-accent-primary)"
                         opacity="0.35"
                       />
-                      {/* Bowl decorative bands */}
                       <path
                         d="M29.5 41 Q34.5 43 40 43 Q45.5 43 50.5 41"
                         stroke="var(--color-accent-primary)"
@@ -241,31 +275,26 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
                         fill="none"
                         opacity="0.25"
                       />
-                      {/* Bowl accent dots */}
                       <circle cx="35" cy="42" r="0.5" fill="var(--color-accent-primary)" opacity="0.3" />
                       <circle cx="40" cy="43.5" r="0.5" fill="var(--color-accent-primary)" opacity="0.3" />
                       <circle cx="45" cy="42" r="0.5" fill="var(--color-accent-primary)" opacity="0.3" />
-                      {/* Stem */}
                       <path
                         d="M37 52 Q40 53.5 43 52 L42 57 Q40 58 38 57Z"
                         fill="var(--color-accent-primary)"
                         opacity="0.3"
                       />
-                      {/* Pedestal */}
                       <ellipse cx="40" cy="58" rx="6" ry="1.8" fill="var(--color-accent-primary)" opacity="0.28" />
-                      {/* Lotus petals on pedestal */}
                       <path d="M34 58 Q35.5 56 37 58" stroke="var(--color-accent-primary)" strokeWidth="0.5" fill="none" opacity="0.25" />
                       <path d="M37 58 Q38.5 56.5 40 58" stroke="var(--color-accent-primary)" strokeWidth="0.5" fill="none" opacity="0.25" />
                       <path d="M40 58 Q41.5 56.5 43 58" stroke="var(--color-accent-primary)" strokeWidth="0.5" fill="none" opacity="0.25" />
                       <path d="M43 58 Q44.5 56 46 58" stroke="var(--color-accent-primary)" strokeWidth="0.5" fill="none" opacity="0.25" />
-                      {/* Spout */}
                       <path
                         d="M27 37.5 Q24 38 23 40 Q24 41 27 40"
                         fill="var(--color-accent-primary)"
                         opacity="0.35"
                       />
                     </svg>
-                  </div>
+                  </motion.div>
                   <p
                     className="font-display font-bold text-xl"
                     style={{ color: 'var(--color-text-primary)' }}
@@ -278,28 +307,48 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
                   >
                     {t('auth.signInReason')}
                   </p>
-                  {/* Sign in button */}
-                  <button
-                    onClick={signIn}
-                    className="flex items-center justify-center gap-3 py-3 px-6 rounded-xl font-hind font-semibold text-sm"
-                    style={{
-                      backgroundColor: 'var(--color-bg-card)',
-                      color: 'var(--color-text-primary)',
-                      boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
-                    }}
-                  >
-                    <svg width="20" height="20" viewBox="0 0 48 48">
-                      <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
-                      <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
-                      <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
-                      <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
-                    </svg>
-                    {t('auth.signIn')}
-                  </button>
-                </div>
-              )}
-            </section>
-          )}
+                  <AnimatePresence mode="wait">
+                    {signingIn ? (
+                      <motion.p
+                        key="signing-in-indicator"
+                        className="font-hind text-sm py-3"
+                        style={{ color: 'var(--color-text-muted)' }}
+                        initial={{ opacity: 0, y: 4 }}
+                        animate={{ opacity: [0.4, 0.7, 0.4] }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
+                      >
+                        {t('auth.signingIn')}
+                      </motion.p>
+                    ) : (
+                      <motion.button
+                        key="sign-in-btn"
+                        onClick={handleSignIn}
+                        className="flex items-center justify-center gap-3 py-3 px-6 rounded-xl font-hind font-semibold text-sm"
+                        style={{
+                          backgroundColor: 'var(--color-bg-card)',
+                          color: 'var(--color-text-primary)',
+                          boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
+                        }}
+                        initial={{ opacity: 0, y: 4 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -4 }}
+                        transition={{ duration: 0.25, ease: sacredEase as unknown as number[] }}
+                      >
+                        <svg width="20" height="20" viewBox="0 0 48 48">
+                          <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+                          <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+                          <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+                          <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+                        </svg>
+                        {t('auth.signIn')}
+                      </motion.button>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+              ))}
+            </AnimatePresence>
+          </section>
 
           {/* Divider */}
           <div
