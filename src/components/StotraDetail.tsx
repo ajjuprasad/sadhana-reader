@@ -48,6 +48,7 @@ export default function StotraDetail() {
         <meta property="og:title" content={`${stotra.title} — Sadhana Reader`} />
         <meta property="og:description" content={stotra.description} />
         <meta property="og:url" content={`https://sadhanareader.org/stotra/${stotra.id}`} />
+        <meta property="og:image" content="https://sadhanareader.org/og-image.png" />
       </Helmet>
       {/* Top bar */}
       <motion.header
