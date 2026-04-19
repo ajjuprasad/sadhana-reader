@@ -5117,6 +5117,56 @@ const argalaStotram: Stotra = {
       meaning:
         'O Mother, whose feet are polished by the crest jewels of gods and demons alike! Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
     },
+    {
+      id: 16,
+      verseLabel: 'Verse 16',
+      sanskrit:
+        'विद्यावन्तं यशस्वन्तं लक्ष्मीवन्तं च मां कुरु ।\nरूपं देहि जयं देहि यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'vidyāvantaṁ yaśasvantaṁ lakṣmīvantaṁ ca māṁ kuru |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'Make me learned, make me famous, and make me prosperous. Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
+    {
+      id: 17,
+      verseLabel: 'Verse 17',
+      sanskrit:
+        'प्रचण्डदैत्यदर्पघ्ने चण्डिके प्रणताय मे ।\nरूपं देहि जयं देहि यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'pracaṇḍa-daitya-darpa-ghne caṇḍike praṇatāya me |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'O Chandika, destroyer of the pride of fierce demons, I bow before You! Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
+    {
+      id: 18,
+      verseLabel: 'Verse 18',
+      sanskrit:
+        'चतुर्भुजे चतुर्वक्त्रसंस्तुते परमेश्वरि ।\nरूपं देहि जयं देहि यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'caturbhuje catur-vaktra-saṁstute parameśvari |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'O Supreme Goddess with four arms, praised by the four-faced Brahma! Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
+    {
+      id: 19,
+      verseLabel: 'Verse 19',
+      sanskrit:
+        'कृष्णेन संस्तुते देवि शश्वद्भक्त्या सदाम्बिके ।\nरूपं देहि जयं देहि यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'kṛṣṇena saṁstute devi śaśvad-bhaktyā sadāmbike |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'O Goddess praised by Lord Krishna with eternal devotion, O ever-present Mother! Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
+    {
+      id: 20,
+      verseLabel: 'Verse 20',
+      sanskrit:
+        'हिमाचलसुतानाथसंस्तुते परमेश्वरि ।\nरूपं देहि जयं देहि यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'himācala-sutā-nātha-saṁstute parameśvari |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'O Supreme Goddess praised by the Lord of Himachala\'s daughter (Shiva)! Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
   ],
 };
 
