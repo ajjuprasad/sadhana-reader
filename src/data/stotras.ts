@@ -4284,6 +4284,74 @@ const narasimhaKaravalambaStotram: Stotra = {
   ],
 };
 
+const shivaTandavaStotram: Stotra = {
+  id: 'shiva-tandava-stotram',
+  title: 'Shiva Tandava Stotram',
+  subtitle: 'शिवताण्डवस्तोत्रम्',
+  deity: 'Shiva',
+  description:
+    'Composed by the demon king Ravana, this powerful hymn describes Lord Shiva\'s cosmic dance (Tandava) with vivid imagery of his matted locks, serpent ornaments, and thundering damaru.',
+  benefits: [
+    'Invokes the raw power and grace of Lord Shiva\'s cosmic dance',
+    'Develops deep devotion to Mahadeva through magnificent poetry',
+    'Brings spiritual strength and fearlessness',
+  ],
+  estimatedMinutes: 5,
+  icon: 'shiva-tandava-stotram',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'जटाटवीगलज्जलप्रवाहपावितस्थले\nगलेऽवलम्ब्य लम्बितां भुजङ्गतुङ्गमालिकाम् ।\nडमड्डमड्डमड्डमन्निनादवड्डमर्वयं\nचकार चण्डताण्डवं तनोतु नः शिवः शिवम् ॥',
+      transliteration:
+        'jaṭāṭavī-galaj-jala-pravāha-pāvita-sthale\ngale\'valambya lambitāṁ bhujaṅga-tuṅga-mālikām |\nḍamaḍ-ḍamaḍ-ḍamaḍ-ḍaman-nināda-vaḍḍamarvayaṁ\ncakāra caṇḍa-tāṇḍavaṁ tanotu naḥ śivaḥ śivam ||',
+      meaning:
+        'On the sacred ground purified by the streams flowing from the dense forest of his matted locks, wearing a magnificent garland of serpents swinging on his neck, producing the thundering sound of the damaru — Shiva performed his fierce Tandava dance. May he bestow prosperity upon us.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'जटाकटाहसम्भ्रमभ्रमन्निलिम्पनिर्झरी-\nविलोलवीचिवल्लरीविराजमानमूर्धनि ।\nधगद्धगद्धगज्ज्वलल्ललाटपट्टपावके\nकिशोरचन्द्रशेखरे रतिः प्रतिक्षणं मम ॥',
+      transliteration:
+        'jaṭā-kaṭāha-sambhrama-bhraman-nilimpa-nirjharī-\nvilola-vīci-vallarī-virājamāna-mūrdhani |\ndhagad-dhagad-dhagaj-jvalal-lalāṭa-paṭṭa-pāvake\nkiśora-candra-śekhare ratiḥ pratikṣaṇaṁ mama ||',
+      meaning:
+        'On his head shines the celestial river Ganga, her restless, creeper-like waves whirling within the basin of his matted locks. His forehead blazes with the fire that flickers ceaselessly. My love grows every moment for the one crowned with the crescent moon.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'धराधरेन्द्रनन्दिनीविलासबन्धुबन्धुर-\nस्फुरद्दिगन्तसन्ततिप्रमोदमानमानसे ।\nकृपाकटाक्षधोरणीनिरुद्धदुर्धरापदि\nक्वचिद्दिगम्बरे मनो विनोदमेतु वस्तुनि ॥',
+      transliteration:
+        'dharādharendra-nandinī-vilāsa-bandhu-bandhura-\nsphurad-diganta-santati-pramoda-māna-mānase |\nkṛpā-kaṭākṣa-dhoraṇī-niruddha-durdharāpadi\nkvacid-digambare mano vinodametu vastuni ||',
+      meaning:
+        'His heart rejoices, delighted by the playful beauty of Parvati, daughter of the mountain king, which illuminates all directions. His compassionate glance arrests even the most insurmountable calamities. May my mind find joy in this sky-clad being.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'जटाभुजङ्गपिङ्गलस्फुरत्फणामणिप्रभा-\nकदम्बकुङ्कुमद्रवप्रलिप्तदिग्वधूमुखे ।\nमदान्धसिन्धुरस्फुरत्त्वगुत्तरीयमेदुरे\nमनो विनोदमद्भुतं बिभर्तु भूतभर्तरि ॥',
+      transliteration:
+        'jaṭā-bhujaṅga-piṅgala-sphurat-phaṇā-maṇi-prabhā-\nkadamba-kuṅkuma-drava-pralipta-dig-vadhū-mukhe |\nmadāndha-sindhura-sphurat-tvag-uttarīya-medure\nmano vinodam-adbhutaṁ bibhartu bhūta-bhartari ||',
+      meaning:
+        'The tawny glow of the gems on the hoods of the serpents in his matted locks anoints the faces of the directions like saffron paste. He wears the hide of a maddened elephant as his upper garment. May my mind find wondrous delight in the lord of all beings.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'सहस्रलोचनप्रभृत्यशेषलेखशेखर-\nप्रसूनधूलिधोरणी विधूसराङ्घ्रिपीठभूः ।\nभुजङ्गराजमालया निबद्धजाटजूटक\nश्रियै चिराय जायतां चकोरबन्धुशेखरः ॥',
+      transliteration:
+        'sahasra-locana-prabhṛty-aśeṣa-lekha-śekhara-\nprasūna-dhūli-dhoraṇī vidhūsarāṅghri-pīṭha-bhūḥ |\nbhujaṅga-rāja-mālayā nibaddha-jāṭa-jūṭaka\nśriyai cirāya jāyatāṁ cakora-bandhu-śekharaḥ ||',
+      meaning:
+        'The dust of the flowers from the crowns of Indra and all the gods renders his footstool grey. His matted hair is bound by the king of serpents as a garland. May he who wears the moon — friend of the chakora bird — as his crest-jewel, bring lasting glory.',
+    },
+  ],
+};
+
 export const stotras: Stotra[] = [
   achyutashtakam,
   ashtalakshmiStotram,
@@ -4297,6 +4365,7 @@ export const stotras: Stotra[] = [
   mahishasuraMardiniStotram,
   narasimhaKaravalambaStotram,
   ramRakshaStotra,
+  shivaTandavaStotram,
   mahalakshmiAshtakam,
   shivaPanchakshara,
   saraswatiStotram,
@@ -4317,11 +4386,6 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'lalitha-sahasranamam',
     title: 'Lalitha Sahasranamam',
     deity: 'Lalita Tripurasundari',
-  },
-  {
-    id: 'shiva-tandava-stotram',
-    title: 'Shiva Tandava Stotram',
-    deity: 'Shiva',
   },
   {
     id: 'nirvana-shatakam',
