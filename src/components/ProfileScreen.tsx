@@ -11,6 +11,7 @@ const sacredEase = [0.76, 0, 0.24, 1] as const;
 const LANGUAGES: { code: Language; label: string }[] = [
   { code: 'en', label: 'English' },
   { code: 'hi', label: 'हिन्दी' },
+  { code: 'kn', label: 'ಕನ್ನಡ' },
   { code: 'te', label: 'తెలుగు' },
   { code: 'ta', label: 'தமிழ்' },
   { code: 'ml', label: 'മലയാളം' },

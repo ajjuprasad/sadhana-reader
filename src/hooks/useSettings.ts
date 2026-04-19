@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 
-export type Language = 'en' | 'hi' | 'te' | 'ta' | 'ml';
+export type Language = 'en' | 'hi' | 'kn' | 'te' | 'ta' | 'ml';
 
 export interface Settings {
   fontSize: number;
