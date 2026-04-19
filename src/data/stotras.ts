@@ -5167,6 +5167,56 @@ const argalaStotram: Stotra = {
       meaning:
         'O Supreme Goddess praised by the Lord of Himachala\'s daughter (Shiva)! Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
     },
+    {
+      id: 21,
+      verseLabel: 'Verse 21',
+      sanskrit:
+        'इन्द्राणीपतिसद्भावपूजिते परमेश्वरि ।\nरूपं देहि जयं देहि यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'indrāṇī-pati-sadbhāva-pūjite parameśvari |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'O Supreme Goddess, worshipped with devotion by Indra, the lord of Indrani! Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
+    {
+      id: 22,
+      verseLabel: 'Verse 22',
+      sanskrit:
+        'देवि प्रचण्डदोर्दण्डदैत्यदर्पविनाशिनि ।\nरूपं देहि जयं देहि यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'devi pracaṇḍa-dor-daṇḍa-daitya-darpa-vināśini |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'O Goddess who destroys the pride of demons with Your mighty arms! Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
+    {
+      id: 23,
+      verseLabel: 'Verse 23',
+      sanskrit:
+        'देवि भक्तजनोद्दामदत्तानन्दोदयेऽम्बिके ।\nरूपं देहि जयं देहि यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'devi bhakta-janod-dāma-dattānandodaye\'mbike |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'O Mother Goddess, who causes the rise of unbounded bliss in Your devotees! Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
+    {
+      id: 24,
+      verseLabel: 'Verse 24',
+      sanskrit:
+        'पत्नीं मनोरमां देहि मनोवृत्तानुसारिणीम् ।\nतारिणीं दुर्गसंसारसागरस्य कुलोद्भवाम् ॥',
+      transliteration:
+        'patnīṁ manoramāṁ dehi mano-vṛttānusāriṇīm |\ntāriṇīṁ durga-saṁsāra-sāgarasya kulodbhavām ||',
+      meaning:
+        'Grant me a charming spouse who follows the inclinations of my heart, one born of a noble family who can help me cross the difficult ocean of worldly existence.',
+    },
+    {
+      id: 25,
+      verseLabel: 'Phala Shruti',
+      sanskrit:
+        'इदं स्तोत्रं पठित्वा तु महास्तोत्रं पठेन्नरः ।\nसप्तशतीं समाराध्य वरमाप्नोति दुर्लभम् ॥',
+      transliteration:
+        'idaṁ stotraṁ paṭhitvā tu mahā-stotraṁ paṭhen-naraḥ |\nsaptaśatīṁ samārādhya varam-āpnoti durlabham ||',
+      meaning:
+        'Having recited this stotra, one should then recite the great Saptashati hymn. By worshipping through the seven hundred verses, one obtains rare and precious boons.',
+    },
   ],
 };
 
@@ -5214,16 +5264,6 @@ export const comingSoonStotras: ComingSoonStotra[] = [
   {
     id: 'shiva-mahimna-stotram',
     title: 'Shiva Mahimna Stotram',
-    deity: 'Shiva',
-  },
-  {
-    id: 'argala-stotram',
-    title: 'Argala Stotram',
-    deity: 'Durga',
-  },
-  {
-    id: 'bilvashtakam',
-    title: 'Bilvashtakam',
     deity: 'Shiva',
   },
 {
