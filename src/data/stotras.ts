@@ -4527,6 +4527,46 @@ const annapoornaAshtakam: Stotra = {
       meaning:
         'Bearer of all visible and invisible glories, containing the entire universe within her being, director of the play of cosmic drama, the sprouting lamp of supreme knowledge, the delight of Lord Vishweshwara\'s heart — O sovereign of Kashi, grant me alms, O compassionate Mother Annapurna!',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'उर्वीसर्वजनेश्वरी भगवती मातान्नपूर्णेश्वरी\nवेणीनीलसमानकुन्तलधरी नित्यान्नदानेश्वरी ।\nसर्वानन्दकरी सदा शुभकरी काशीपुराधीश्वरी\nभिक्षां देहि कृपावलम्बनकरी मातान्नपूर्णेश्वरी ॥',
+      transliteration:
+        'urvīsarvajaneśvarī bhagavatī mātānnapūrṇeśvarī\nveṇīnīlasamānakuntaladhārī nityānnadāneśvarī |\nsarvānandakarī sadā śubhakarī kāśīpurādhīśvarī\nbhikṣāṁ dehi kṛpāvalambanakari mātānnapūrṇeśvarī ||',
+      meaning:
+        'Sovereign of all beings on earth, the blessed Mother Annapurna, she whose dark braided hair is like a blue serpent, eternal goddess of food-giving, bestower of all bliss, ever-auspicious — O sovereign of Kashi, grant me alms, O compassionate Mother Annapurna!',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'आदिक्षान्तसमस्तवर्णनकरी शम्भोस्त्रिभावाकरी\nकाश्मीरा त्रिपुरेश्वरी त्रिलहरी नित्याङ्कुरा शर्वरी ।\nकामाकाङ्क्षकरी जनोदयकरी काशीपुराधीश्वरी\nभिक्षां देहि कृपावलम्बनकरी मातान्नपूर्णेश्वरी ॥',
+      transliteration:
+        'ādikṣāntasamastavarṇanakarī śambhōstribhāvākarī\nkāśmīrā tripureśvarī trilaharī nityāṅkurā śarvarī |\nkāmākāṅkṣakarī janōdayakarī kāśīpurādhīśvarī\nbhikṣāṁ dehi kṛpāvalambanakari mātānnapūrṇeśvarī ||',
+      meaning:
+        'She who encompasses all letters from A to Ksha, who manifests the three aspects of Shambhu, who is saffron-hued Tripureshvari, the triple wave, the eternal sprout of the night — fulfiller of desires, uplifter of beings — O sovereign of Kashi, grant me alms, O compassionate Mother Annapurna!',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'देवी सर्वविचित्ररत्नरचिता दाक्षायणी सुन्दरी\nवामे स्वादुपयोधरा प्रियकरी सौभाग्यमाहेश्वरी ।\nभक्ताभीष्टकरी सदा शुभकरी काशीपुराधीश्वरी\nभिक्षां देहि कृपावलम्बनकरी मातान्नपूर्णेश्वरी ॥',
+      transliteration:
+        'devī sarvavicitraratnaracitā dākṣāyaṇī sundarī\nvāme svādupayōdharā priyakarī saubhāgyamāheśvarī |\nbhaktābhīṣṭakarī sadā śubhakarī kāśīpurādhīśvarī\nbhikṣāṁ dehi kṛpāvalambanakari mātānnapūrṇeśvarī ||',
+      meaning:
+        'The Goddess adorned with wondrous gems of every kind, the beautiful Dakshayani, at whose left side flows sweet nourishment, bestower of love, the auspicious Maheshvari, fulfiller of devotees\' wishes, ever-auspicious — O sovereign of Kashi, grant me alms, O compassionate Mother Annapurna!',
+    },
+    {
+      id: 9,
+      verseLabel: 'Verse 9',
+      sanskrit:
+        'अन्नपूर्णे सदापूर्णे शङ्करप्राणवल्लभे ।\nज्ञानवैराग्यसिद्ध्यर्थं भिक्षां देहि च पार्वति ॥\nमाता च पार्वती देवी पिता देवो महेश्वरः ।\nबान्धवाः शिवभक्ताश्च स्वदेशो भुवनत्रयम् ॥',
+      transliteration:
+        'annapūrṇe sadāpūrṇe śaṅkaraprāṇavallabhe |\njñānavairāgyasiddhyarthaṁ bhikṣāṁ dehi ca pārvati ||\nmātā ca pārvatī devī pitā devō maheśvaraḥ |\nbāndhavāḥ śivabhaktāśca svadeśō bhuvanatrayam ||',
+      meaning:
+        'O Annapurna, ever-complete, beloved of Shankara\'s life-breath — grant me the alms of knowledge and detachment, O Parvati! My mother is Goddess Parvati, my father is Lord Maheshvara, my kinsmen are the devotees of Shiva, and my homeland is the three worlds.',
+    },
   ],
 };
 
