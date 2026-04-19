@@ -5471,6 +5471,56 @@ const dakshinamurthyStotram: Stotra = {
       meaning:
         'Like the radiance of a great lamp placed inside a pot with many holes, His consciousness shines outward through the doors of the senses — eyes and other organs. "I know" — by His light alone this entire universe shines after Him — to that Sri Dakshinamurthy, I bow.',
     },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'देहं प्राणमपीन्द्रियाण्यपि चलां बुद्धिं च शून्यं विदुः\nस्त्रीबालान्धजडोपमास्त्वहमिति भ्रान्ता भृशं वादिनः।\nमायाशक्तिविलासकल्पितमहाव्यामोहसंहारिणे\nतस्मै श्रीगुरुमूर्तये नम इदं श्रीदक्षिणामूर्तये॥',
+      transliteration:
+        'dehaṁ prāṇam-apīndriyāṇy-api calāṁ buddhiṁ ca śūnyaṁ viduḥ\nstrī-bālāndha-jaḍopamās-tv-aham-iti bhrāntā bhṛśaṁ vādinaḥ |\nmāyā-śakti-vilāsa-kalpita-mahā-vyāmoha-saṁhāriṇe\ntasmai śrī-guru-mūrtaye nama idaṁ śrī-dakṣiṇā-mūrtaye ||',
+      meaning:
+        'Those who, like women, children, the blind, and the dull, confusedly identify the Self with the body, vital airs, senses, fickle intellect, or the void — to Him who destroys the great delusion conjured by the play of Maya\'s power — to that Sri Dakshinamurthy, I bow.',
+    },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'राहुग्रस्तदिवाकरेन्दुसदृशो मायासमाच्छादनात्\nसन्मात्रः करणोपसंहरणतो योऽभूत्सुषुप्तः पुमान्।\nप्रागस्वाप्समिति प्रबोधसमये यः प्रत्यभिज्ञायते\nतस्मै श्रीगुरुमूर्तये नम इदं श्रीदक्षिणामूर्तये॥',
+      transliteration:
+        'rāhu-grasta-divākara-indu-sadṛśo māyā-samācchādanāt\nsan-mātraḥ karaṇopa-saṁharaṇato yo \'bhūt-suṣuptaḥ pumān |\nprāg-asvāpsam-iti prabodha-samaye yaḥ pratyabhijñāyate\ntasmai śrī-guru-mūrtaye nama idaṁ śrī-dakṣiṇā-mūrtaye ||',
+      meaning:
+        'Like the sun or moon eclipsed by Rahu, when veiled by Maya and with senses withdrawn, the Self in deep sleep remains as pure existence. Upon waking, one recognizes "I slept before" — to Him who is that Self recognized upon awakening — to that Sri Dakshinamurthy, I bow.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'बाल्यादिष्वपि जाग्रदादिषु तथा सर्वास्ववस्थासु अपि\nव्यावृत्तास्वनुवर्तमानमहमित्यन्तःस्फुरन्तं सदा।\nस्वात्मानं प्रकटीकरोति भजतां यो मुद्रया भद्रया\nतस्मै श्रीगुरुमूर्तये नम इदं श्रीदक्षिणामूर्तये॥',
+      transliteration:
+        'bālyādiṣv-api jāgrad-ādiṣu tathā sarvāsv-avasthāsu api\nvyāvṛttāsv-anuvartamānam-aham-ity-antaḥ-sphurantaṁ sadā |\nsvātmānaṁ prakaṭī-karoti bhajatāṁ yo mudrayā bhadrayā\ntasmai śrī-guru-mūrtaye nama idaṁ śrī-dakṣiṇā-mūrtaye ||',
+      meaning:
+        'Through childhood and other stages of life, through waking and other states, across all changing conditions, the sense of "I" persists and shines within. He who reveals this Self to seekers through the auspicious chin-mudra — to that Sri Dakshinamurthy, I bow.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'विश्वं पश्यति कार्यकारणतया स्वस्वामिसम्बन्धतः\nशिष्याचार्यतया तथैव पितृपुत्राद्यात्मना भेदतः।\nस्वप्ने जाग्रति वा य एष पुरुषो मायापरिभ्रामितः\nतस्मै श्रीगुरुमूर्तये नम इदं श्रीदक्षिणामूर्तये॥',
+      transliteration:
+        'viśvaṁ paśyati kārya-kāraṇatayā sva-svāmi-sambandha-taḥ\nśiṣyācāryatayā tathaiva pitṛ-putrādyātmanā bhedataḥ |\nsvapne jāgrati vā ya eṣa puruṣo māyā-paribhrāmitaḥ\ntasmai śrī-guru-mūrtaye nama idaṁ śrī-dakṣiṇā-mūrtaye ||',
+      meaning:
+        'He who sees the universe through relations of cause and effect, master and servant, teacher and student, father and son — perceiving difference and distinction whether in dream or waking, deluded by Maya — to that Sri Dakshinamurthy who reveals the truth beyond, I bow.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Verse 9',
+      sanskrit:
+        'भूरम्भांस्यनलोऽनिलोऽम्बरमहर्नाथो हिमांशुः पुमान्\nइत्याभाति चराचरात्मकमिदं यस्यैव मूर्त्यष्टकम्।\nनान्यत्किञ्चन विद्यते विमृशतां यस्मात्परस्माद्विभोः\nतस्मै श्रीगुरुमूर्तये नम इदं श्रीदक्षिणामूर्तये॥',
+      transliteration:
+        'bhūr-ambhāṁsy-analo \'nilo \'mbaram-ahar-nātho himāṁśuḥ pumān\nity-ābhāti carācara-ātmakam-idaṁ yasyaiva mūrty-aṣṭakam |\nnānyat-kiñcana vidyate vimṛśatāṁ yasmāt-parasmād-vibhoḥ\ntasmai śrī-guru-mūrtaye nama idaṁ śrī-dakṣiṇā-mūrtaye ||',
+      meaning:
+        'Earth, water, fire, air, sky, the sun, the moon, and the individual soul — this eightfold manifest form constituting all moving and unmoving beings is His alone. Upon inquiry, nothing exists apart from that Supreme, all-pervading Lord — to that Sri Dakshinamurthy, I bow.',
+    },
   ],
 };
 
