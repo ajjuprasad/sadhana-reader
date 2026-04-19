@@ -13,9 +13,9 @@ import { useTranslation } from '../i18n/useTranslation';
 const sacredEase = [0.76, 0, 0.24, 1] as const;
 
 const recentItems = [
-  { id: 'argala-stotram', title: 'Argala Stotram', timestamp: '2026-04-19T22:00:00Z', desc: '25 verses from the Durga Saptashati invoking Goddess Chandika\'s grace for victory, beauty, and fame.' },
-  { id: 'bilvashtakam', title: 'Bilvashtakam', timestamp: '2026-04-19T21:00:00Z', desc: '9 verses by Adi Shankaracharya extolling the supreme merit of offering bilva leaves to Lord Shiva.' },
-  { id: 'sudarshana-ashtakam', title: 'Sudarshana Ashtakam', timestamp: '2026-04-19T20:00:00Z', desc: '8 verses by Vedanta Desika glorifying Lord Sudarshana, the divine discus of Lord Vishnu.' },
+  { id: 'dakshinamurthy-stotram', title: 'Dakshinamurthy Stotram', timestamp: '2026-04-19T23:00:00Z', desc: '10 verses by Adi Shankaracharya revealing the Advaita truth through the south-facing form of Shiva, the supreme Guru.' },
+  { id: 'guru-ashtakam', title: 'Guru Ashtakam', timestamp: '2026-04-19T22:30:00Z', desc: '8 verses by Adi Shankaracharya on the supreme importance of the Guru — all attainments are in vain without devotion to the Guru\'s lotus feet.' },
+  { id: 'damodarashtakam', title: 'Damodarashtakam', timestamp: '2026-04-19T22:00:00Z', desc: '8 verses by Satyavrata Muni from the Padma Purana, celebrating baby Krishna bound by Mother Yashoda\'s love.' },
 ];
 
 function formatLocalTime(iso: string): string {
