@@ -5403,6 +5403,74 @@ const guruAshtakam: Stotra = {
       meaning:
         'The mind finds no delight in pleasures, nor in yoga, nor in horses and royal steeds, nor in the face of the beloved, nor in wealth — but if the mind is not attached to the lotus feet of the Guru, then what? What? What? What?',
     },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'अरण्ये न वा स्वस्य गेहे न कार्ये\nन देहे मनो वर्तते मे त्वनर्घ्ये।\nमनश्चेन्न लग्नं गुरोरङ्घ्रिपद्मे\nततः किं ततः किं ततः किं ततः किम्॥',
+      transliteration:
+        'araṇye na vā svasya gehe na kārye\nna dehe mano vartate me tvanarghye |\nmanaś-cen-na lagnaṁ guror-aṅghri-padme\ntataḥ kiṁ tataḥ kiṁ tataḥ kiṁ tataḥ kim ||',
+      meaning:
+        'The mind dwells neither in the forest, nor in one\'s own home, nor in duties, nor in this priceless body — but if the mind is not attached to the lotus feet of the Guru, then what? What? What? What?',
+    },
+  ],
+};
+
+const dakshinamurthyStotram: Stotra = {
+  id: 'dakshinamurthy-stotram',
+  title: 'Dakshinamurthy Stotram',
+  subtitle: 'दक्षिणामूर्तिस्तोत्रम्',
+  deity: 'Shiva',
+  description:
+    'Ten verses by Adi Shankaracharya in praise of Lord Dakshinamurthy, the south-facing form of Shiva who is the supreme Guru. The hymn presents the Advaita Vedanta philosophy — that the entire universe is a projection of consciousness, like a city seen in a mirror or a dream.',
+  benefits: [
+    'Bestows clarity of philosophical understanding and self-knowledge (Atma-jnana)',
+    'Invokes the grace of Dakshinamurthy, the primordial Guru who teaches through silence',
+    'Dispels the veil of Maya and reveals the non-dual nature of reality',
+  ],
+  estimatedMinutes: 5,
+  icon: 'M16 4 L16 14 M13 8 L19 8',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'विश्वं दर्पणदृश्यमाननगरीतुल्यं निजान्तर्गतं\nपश्यन्नात्मनि मायया बहिरिवोद्भूतं यथा निद्रया।\nयः साक्षात्कुरुते प्रबोधसमये स्वात्मानमेवाद्वयं\nतस्मै श्रीगुरुमूर्तये नम इदं श्रीदक्षिणामूर्तये॥',
+      transliteration:
+        'viśvaṁ darpaṇa-dṛśyamāna-nagarī-tulyaṁ nijāntar-gataṁ\npaśyann-ātmani māyayā bahir-ivodbhūtaṁ yathā nidrayā |\nyaḥ sākṣāt-kurute prabodha-samaye svātmānam-evādvayaṁ\ntasmai śrī-guru-mūrtaye nama idaṁ śrī-dakṣiṇā-mūrtaye ||',
+      meaning:
+        'The universe, like a city reflected in a mirror, appears to exist outside though it is within one\'s own self, projected by Maya as if in a dream. He who, at the time of awakening, realizes the non-dual Self — to that embodiment of the Guru, Sri Dakshinamurthy, I offer this salutation.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'बीजस्यान्तरिवाङ्कुरो जगदिदं प्राङ्निर्विकल्पं पुनर्-\nमायाकल्पितदेशकालकलनावैचित्र्यचित्रीकृतम्।\nमायावीव विजृम्भयत्यपि महायोगीव यः स्वेच्छया\nतस्मै श्रीगुरुमूर्तये नम इदं श्रीदक्षिणामूर्तये॥',
+      transliteration:
+        'bījasyāntar-ivāṅkuro jagad-idaṁ prāṅ-nirvikalpaṁ punar-\nmāyā-kalpita-deśa-kāla-kalanā-vaicitrya-citrī-kṛtam |\nmāyāvīva vijṛmbhayaty-api mahā-yogīva yaḥ svecchayā\ntasmai śrī-guru-mūrtaye nama idaṁ śrī-dakṣiṇā-mūrtaye ||',
+      meaning:
+        'Like a sprout latent within a seed, this universe existed in an undifferentiated state, then was made variegated through Maya\'s conjuring of space, time, and diverse forms. He who, like a great magician or supreme yogi, manifests all this by His own will — to that Sri Dakshinamurthy, I bow.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'यस्यैव स्फुरणं सदात्मकमसत्कल्पार्थकं भासते\nसाक्षात्तत्त्वमसीति वेदवचसा यो बोधयत्याश्रितान्।\nयत्साक्षात्करणाद्भवेन्न पुनरावृत्तिर्भवाम्भोनिधौ\nतस्मै श्रीगुरुमूर्तये नम इदं श्रीदक्षिणामूर्तये॥',
+      transliteration:
+        'yasyaiva sphuraṇaṁ sadātmakam-asat-kalpārtha-kaṁ bhāsate\nsākṣāt-tattvam-asīti veda-vacasā yo bodhayaty-āśritān |\nyat-sākṣāt-karaṇād-bhaven-na punar-āvṛttir-bhavāmbho-nidhau\ntasmai śrī-guru-mūrtaye nama idaṁ śrī-dakṣiṇā-mūrtaye ||',
+      meaning:
+        'He whose luminous presence alone, being of the nature of existence, makes the unreal appear as real, and who instructs seekers through the Vedic declaration "Thou art That" — by directly realizing whom, there is no return to the ocean of worldly existence — to that Sri Dakshinamurthy, I bow.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'नानाच्छिद्रघटोदरस्थितमहादीपप्रभाभास्वरं\nज्ञानं यस्य तु चक्षुरादिकरणद्वारा बहिः स्पन्दते।\nजानामीति तमेव भान्तमनुभात्येतत्समस्तं जगत्\nतस्मै श्रीगुरुमूर्तये नम इदं श्रीदक्षिणामूर्तये॥',
+      transliteration:
+        'nānā-cchidra-ghaṭodara-sthita-mahā-dīpa-prabhā-bhāsvaraṁ\njñānaṁ yasya tu cakṣur-ādi-karaṇa-dvārā bahiḥ spandate |\njānāmīti tam-eva bhāntam-anubhāty-etat-samastaṁ jagat\ntasmai śrī-guru-mūrtaye nama idaṁ śrī-dakṣiṇā-mūrtaye ||',
+      meaning:
+        'Like the radiance of a great lamp placed inside a pot with many holes, His consciousness shines outward through the doors of the senses — eyes and other organs. "I know" — by His light alone this entire universe shines after Him — to that Sri Dakshinamurthy, I bow.',
+    },
   ],
 };
 
@@ -5412,6 +5480,7 @@ export const stotras: Stotra[] = [
   argalaStotram,
   bilvashtakam,
   damodarashtakam,
+  dakshinamurthyStotram,
   ashtalakshmiStotram,
   adityaHridayaStotram,
   bhajaGovindam,
