@@ -114,7 +114,7 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
           <FavoriteButton stotraId={stotra.id} size={20} />
           <a
             href={(() => {
-              const stotraUrl = `${window.location.origin}/stotra/${stotra.id}`;
+              const stotraUrl = `${window.location.origin}/?/stotra/${stotra.id}`;
               const benefit = stotra.benefits?.[0];
               const message = benefit
                 ? t('detail.shareMessageBenefit', { title: stotra.title, benefit, url: stotraUrl })
@@ -203,7 +203,7 @@ export default function ReaderScreen({ settingsState }: ReaderScreenProps) {
             {/* Primary CTA: Share */}
             <motion.a
               href={(() => {
-                const stotraUrl = `${window.location.origin}/stotra/${stotra.id}`;
+                const stotraUrl = `${window.location.origin}/?/stotra/${stotra.id}`;
                 const benefit = stotra.benefits?.[0];
                 const message = benefit
                   ? t('detail.shareMessageBenefit', { title: stotra.title, benefit, url: stotraUrl })
