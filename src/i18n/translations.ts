@@ -36,6 +36,7 @@ const en: TranslationDict = {
   'reader.readAgain': 'Read again',
 
   'auth.signIn': 'Sign in with Google',
+  'auth.signingIn': 'Signing in…',
   'auth.signInReason': 'Sign in for a personalised experience',
   'auth.signOut': 'Sign out',
   'profile.welcome': 'Namaste',
@@ -85,6 +86,7 @@ const hi: TranslationDict = {
   'reader.readAgain': 'फिर से पढ़ें',
 
   'auth.signIn': 'Google से साइन इन करें',
+  'auth.signingIn': 'साइन इन हो रहा है…',
   'auth.signInReason': 'व्यक्तिगत अनुभव के लिए साइन इन करें',
   'auth.signOut': 'साइन आउट',
   'profile.welcome': 'नमस्ते',
@@ -134,6 +136,7 @@ const kn: TranslationDict = {
   'reader.readAgain': 'ಮತ್ತೆ ಓದಿ',
 
   'auth.signIn': 'Google ಮೂಲಕ ಸೈನ್ ಇನ್ ಮಾಡಿ',
+  'auth.signingIn': 'ಸೈನ್ ಇನ್ ಆಗುತ್ತಿದೆ…',
   'auth.signInReason': 'ವೈಯಕ್ತಿಕ ಅನುಭವಕ್ಕಾಗಿ ಸೈನ್ ಇನ್ ಮಾಡಿ',
   'auth.signOut': 'ಸೈನ್ ಔಟ್',
   'profile.welcome': 'ನಮಸ್ತೆ',
@@ -183,6 +186,7 @@ const te: TranslationDict = {
   'reader.readAgain': 'మళ్ళీ చదవండి',
 
   'auth.signIn': 'Google తో సైన్ ఇన్ చేయండి',
+  'auth.signingIn': 'సైన్ ఇన్ అవుతోంది…',
   'auth.signInReason': 'వ్యక్తిగత అనుభవం కోసం సైన్ ఇన్ చేయండి',
   'auth.signOut': 'సైన్ అవుట్',
   'profile.welcome': 'నమస్తే',
@@ -232,6 +236,7 @@ const ta: TranslationDict = {
   'reader.readAgain': 'மீண்டும் படிக்கவும்',
 
   'auth.signIn': 'Google மூலம் உள்நுழையவும்',
+  'auth.signingIn': 'உள்நுழைகிறது…',
   'auth.signInReason': 'தனிப்பயன் அனுபவத்திற்கு உள்நுழையவும்',
   'auth.signOut': 'வெளியேறு',
   'profile.welcome': 'நமஸ்தே',
@@ -281,6 +286,7 @@ const ml: TranslationDict = {
   'reader.readAgain': 'വീണ്ടും വായിക്കുക',
 
   'auth.signIn': 'Google ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്യുക',
+  'auth.signingIn': 'സൈൻ ഇൻ ചെയ്യുന്നു…',
   'auth.signInReason': 'വ്യക്തിഗത അനുഭവത്തിനായി സൈൻ ഇൻ ചെയ്യുക',
   'auth.signOut': 'സൈൻ ഔട്ട്',
   'profile.welcome': 'നമസ്തേ',
