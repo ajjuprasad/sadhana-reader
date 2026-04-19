@@ -2037,7 +2037,7 @@ const adityaHridayaStotram: Stotra = {
       sanskrit:
         'नक्षत्रग्रहताराणामधिपो विश्वभावनः।\nतेजसामपि तेजस्वी द्वादशात्मन् नमोऽस्तु ते॥',
       transliteration:
-        "Nakṣatra-graha-tārāṇām adhipo viśvabhāvanaḥ.\nTejasām api tejasvī dvādaśātman namo'stu te.",
+        "Nakṣatra-graha-tārāṇām adhipo viśvabhāvanaḥ.\nTejasām api tejasvī dvādaśātman namo\'stu te.",
       meaning:
         'Lord of the stars, planets, and constellations, sustainer of the universe! O most radiant among all that is radiant, O twelve-formed one — salutations to you!',
     },
@@ -4952,9 +4952,78 @@ const bilvashtakam: Stotra = {
   ],
 };
 
+const argalaStotram: Stotra = {
+  id: 'argala-stotram',
+  title: 'Argala Stotram',
+  subtitle: 'अर्गलास्तोत्रम्',
+  deity: 'Durga',
+  description:
+    'A powerful hymn from the Durga Saptashati (Devi Mahatmyam), recited as a preliminary prayer to unlock the full grace of Goddess Chandika. Most verses end with the refrain "Rūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi."',
+  benefits: [
+    'Removes obstacles and unlocks the full power of Devi worship',
+    'Grants beauty, victory, fame, and destroys enemies',
+    'Bestows health, prosperity, and liberation from worldly suffering',
+  ],
+  estimatedMinutes: 7,
+  icon: 'argala-stotram',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'जय त्वं देवि चामुण्डे जय भूतापहारिणि ।\nजय सर्वगते देवि कालरात्रि नमोऽस्तु ते ॥',
+      transliteration:
+        'jaya tvaṁ devi cāmuṇḍe jaya bhūtāpahāriṇi |\njaya sarvagate devi kālarātri namo\'stu te ||',
+      meaning:
+        'Victory to You, O Goddess Chamunda! Victory to You who removes all evil beings. Victory to the all-pervading Goddess. O Kalaratri, salutations to You.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'जयन्ती मङ्गला काली भद्रकाली कपालिनी ।\nदुर्गा क्षमा शिवा धात्री स्वाहा स्वधा नमोऽस्तु ते ॥',
+      transliteration:
+        'jayantī maṅgalā kālī bhadrakālī kapālinī |\ndurgā kṣamā śivā dhātrī svāhā svadhā namo\'stu te ||',
+      meaning:
+        'O Jayanti, Mangala, Kali, Bhadrakali, Kapalini, Durga, Kshama, Shiva, Dhatri, Svaha, and Svadha — salutations to You.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'मधुकैटभविद्राविविधातृवरदे नमः ।\nरूपं देहि जयं देहि यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'madhu-kaiṭabha-vidrāvi-vidhātṛ-varade namaḥ |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'Salutations to You who drove away Madhu and Kaitabha and granted a boon to Brahma. Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'महिषासुरनिर्णाशविधातृवरदे नमः ।\nरूपं देहि जयं देहि यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'mahiṣāsura-nirṇāśa-vidhātṛ-varade namaḥ |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'Salutations to You who annihilated Mahishasura and granted boons to the creator. Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'रक्तबीजवधे देवि चण्डमुण्डविनाशिनि ।\nरूपं देहि जयं देहि यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'raktabīja-vadhe devi caṇḍa-muṇḍa-vināśini |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'O Goddess who slew Raktabija and destroyed Chanda and Munda! Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
+  ],
+};
+
 export const stotras: Stotra[] = [
   achyutashtakam,
   annapoornaAshtakam,
+  argalaStotram,
   bilvashtakam,
   ashtalakshmiStotram,
   adityaHridayaStotram,
