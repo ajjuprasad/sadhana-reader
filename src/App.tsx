@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import HomeScreen from './components/HomeScreen';
 import StotraDetail from './components/StotraDetail';
 import ReaderScreen from './components/ReaderScreen';
@@ -34,8 +35,9 @@ export default function App() {
 
   return (
     <LanguageProvider value={settingsState.settings.language}>
+      <HelmetProvider>
       <AuthProvider>
-      <HashRouter>
+      <BrowserRouter>
         <ScrollToTop />
         <MandalaBackground />
         <div className="relative z-10">
@@ -46,8 +48,9 @@ export default function App() {
             <Route path="/profile" element={<ProfileScreen settingsState={settingsState} />} />
           </Routes>
         </div>
-      </HashRouter>
+      </BrowserRouter>
       </AuthProvider>
+      </HelmetProvider>
     </LanguageProvider>
   );
 }

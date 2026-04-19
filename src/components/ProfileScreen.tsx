@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../contexts/AuthContext';
 import type { useSettings } from '../hooks/useSettings';
@@ -88,6 +89,9 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <Helmet>
+        <title>Profile & Settings — Sadhana Reader</title>
+      </Helmet>
       {/* Top bar */}
       <motion.header
         className="sticky top-0 z-30 flex items-center px-4 py-3"

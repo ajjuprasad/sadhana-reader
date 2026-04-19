@@ -1,4 +1,5 @@
 import { useNavigate, useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { stotras } from '../data/stotras';
 import StotraIcon from './StotraIcon';
@@ -40,6 +41,14 @@ export default function StotraDetail() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <Helmet>
+        <title>{stotra.title} — Sadhana Reader</title>
+        <meta name="description" content={stotra.description} />
+        <link rel="canonical" href={`https://sadhanareader.org/stotra/${stotra.id}`} />
+        <meta property="og:title" content={`${stotra.title} — Sadhana Reader`} />
+        <meta property="og:description" content={stotra.description} />
+        <meta property="og:url" content={`https://sadhanareader.org/stotra/${stotra.id}`} />
+      </Helmet>
       {/* Top bar */}
       <motion.header
         className="sticky top-0 z-30 flex items-center justify-between px-4 py-3"
@@ -77,8 +86,7 @@ export default function StotraDetail() {
           <FavoriteButton stotraId={stotra.id} />
           <a
             href={(() => {
-              const baseUrl = window.location.href.split('#')[0];
-              const stotraUrl = `${baseUrl}#/stotra/${stotra.id}`;
+              const stotraUrl = `${window.location.origin}/stotra/${stotra.id}`;
               const benefit = stotra.benefits?.[0];
               const message = benefit
                 ? t('detail.shareMessageBenefit', { title: stotra.title, benefit, url: stotraUrl })

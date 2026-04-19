@@ -1,5 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { stotras, comingSoonStotras } from '../data/stotras';
 import StotraCard from './StotraCard';
@@ -106,6 +107,11 @@ export default function HomeScreen() {
 
   return (
     <div className="relative min-h-screen">
+      <Helmet>
+        <title>Sadhana Reader — A Digital Sanctum for Hindu Stotras</title>
+        <meta name="description" content="Read and contemplate Hindu stotras including Hanuman Chalisa, Bhaja Govindam, Vishnu Sahasranamam, and more. A beautiful, ad-free digital sanctum for daily practice." />
+        <link rel="canonical" href="https://sadhanareader.org/" />
+      </Helmet>
       {/* Sticky app bar */}
       <div
         className="sticky top-0 z-30 flex items-center justify-between px-4 py-2"
@@ -134,8 +140,7 @@ export default function HomeScreen() {
         <div className="flex items-center gap-1">
           <a
             href={(() => {
-              const baseUrl = window.location.href.split('#')[0];
-              const message = t('home.shareMessage', { url: baseUrl });
+              const message = t('home.shareMessage', { url: window.location.origin });
               return `https://wa.me/?text=${encodeURIComponent(message)}`;
             })()}
             target="_blank"
