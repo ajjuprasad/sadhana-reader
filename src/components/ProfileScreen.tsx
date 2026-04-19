@@ -170,36 +170,62 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
                 </div>
               ) : (
                 <div className="flex flex-col items-center py-4">
-                  {/* Placeholder avatar */}
-                  <div
-                    className="w-20 h-20 rounded-full mb-3 flex items-center justify-center"
-                    style={{ backgroundColor: 'var(--color-text-muted)', opacity: 0.15 }}
-                  >
+                  {/* Deepam illustration */}
+                  <div className="mb-4">
                     <svg
-                      width="36"
-                      height="36"
-                      viewBox="0 0 24 24"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
                       fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      style={{ color: 'var(--color-text-muted)' }}
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                      <circle cx="12" cy="7" r="4" />
+                      {/* Glow */}
+                      <circle cx="40" cy="30" r="20" fill="var(--color-accent-primary)" opacity="0.08" />
+                      <circle cx="40" cy="30" r="14" fill="var(--color-accent-primary)" opacity="0.12" />
+                      {/* Flame outer */}
+                      <path
+                        d="M40 14 C36 22 33 28 33 32 C33 36 36.1 38 40 38 C43.9 38 47 36 47 32 C47 28 44 22 40 14Z"
+                        fill="var(--color-accent-primary)"
+                        opacity="0.85"
+                      />
+                      {/* Flame inner */}
+                      <path
+                        d="M40 20 C38 25 36.5 29 36.5 32 C36.5 34.5 38 36 40 36 C42 36 43.5 34.5 43.5 32 C43.5 29 42 25 40 20Z"
+                        fill="#FFF3E0"
+                      />
+                      {/* Lamp bowl */}
+                      <path
+                        d="M28 42 Q28 38 33 38 L47 38 Q52 38 52 42 Q52 48 40 50 Q28 48 28 42Z"
+                        fill="var(--color-accent-primary)"
+                        opacity="0.7"
+                      />
+                      {/* Lamp rim */}
+                      <ellipse cx="40" cy="38.5" rx="12" ry="2.5" fill="var(--color-accent-primary)" opacity="0.9" />
+                      {/* Lamp base */}
+                      <path
+                        d="M35 50 Q40 52 45 50 L44 56 Q40 58 36 56Z"
+                        fill="var(--color-accent-primary)"
+                        opacity="0.6"
+                      />
+                      <ellipse cx="40" cy="56.5" rx="5" ry="1.5" fill="var(--color-accent-primary)" opacity="0.5" />
+                      {/* Small decorative dots */}
+                      <circle cx="34" cy="43" r="1" fill="#FFF3E0" opacity="0.5" />
+                      <circle cx="40" cy="44" r="1" fill="#FFF3E0" opacity="0.5" />
+                      <circle cx="46" cy="43" r="1" fill="#FFF3E0" opacity="0.5" />
                     </svg>
                   </div>
-                  {/* Placeholder name */}
-                  <div
-                    className="h-5 w-36 rounded-full mb-2"
-                    style={{ backgroundColor: 'var(--color-text-muted)', opacity: 0.12 }}
-                  />
-                  {/* Placeholder member since */}
-                  <div
-                    className="h-3.5 w-28 rounded-full mb-5"
-                    style={{ backgroundColor: 'var(--color-text-muted)', opacity: 0.08 }}
-                  />
+                  <p
+                    className="font-display font-bold text-xl"
+                    style={{ color: 'var(--color-text-primary)' }}
+                  >
+                    {t('profile.welcome')}
+                  </p>
+                  <p
+                    className="font-body text-xs text-center mt-1.5 max-w-[15rem] leading-relaxed mb-5"
+                    style={{ color: 'var(--color-text-muted)' }}
+                  >
+                    {t('auth.signInReason')}
+                  </p>
                   {/* Sign in button */}
                   <button
                     onClick={signIn}
@@ -218,12 +244,6 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
                     </svg>
                     {t('auth.signIn')}
                   </button>
-                  <p
-                    className="font-body text-xs text-center mt-3 max-w-[15rem] leading-relaxed"
-                    style={{ color: 'var(--color-text-muted)' }}
-                  >
-                    {t('auth.signInReason')}
-                  </p>
                 </div>
               )}
             </section>
