@@ -181,47 +181,49 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
+                      {/* Warm background wash */}
+                      <circle cx="40" cy="40" r="40" fill="var(--color-accent-primary)" opacity="0.12" />
                       {/* Radiating glow layers from flame center */}
-                      <circle cx="40" cy="28" r="36" fill="var(--color-accent-primary)" opacity="0.04" />
-                      <circle cx="40" cy="28" r="28" fill="var(--color-accent-primary)" opacity="0.06" />
-                      <circle cx="40" cy="28" r="21" fill="var(--color-accent-primary)" opacity="0.08" />
-                      <circle cx="40" cy="28" r="15" fill="var(--color-accent-primary)" opacity="0.10" />
-                      <circle cx="40" cy="28" r="10" fill="var(--color-accent-primary)" opacity="0.12" />
+                      <circle cx="40" cy="28" r="36" fill="var(--color-accent-primary)" opacity="0.06" />
+                      <circle cx="40" cy="28" r="28" fill="var(--color-accent-primary)" opacity="0.08" />
+                      <circle cx="40" cy="28" r="21" fill="var(--color-accent-primary)" opacity="0.10" />
+                      <circle cx="40" cy="28" r="15" fill="var(--color-accent-primary)" opacity="0.12" />
+                      <circle cx="40" cy="28" r="10" fill="var(--color-accent-primary)" opacity="0.15" />
                       {/* Flame — soft outer teardrop */}
                       <path
                         d="M40 10 C37 17 34 23 34 27 C34 31.5 36.7 34 40 34 C43.3 34 46 31.5 46 27 C46 23 43 17 40 10Z"
                         fill="var(--color-accent-primary)"
-                        opacity="0.45"
+                        opacity="0.55"
                       />
                       {/* Flame — mid layer */}
                       <path
                         d="M40 14 C38 19 36 23.5 36 27 C36 30 37.8 32 40 32 C42.2 32 44 30 44 27 C44 23.5 42 19 40 14Z"
                         fill="var(--color-accent-primary)"
-                        opacity="0.6"
+                        opacity="0.7"
                       />
                       {/* Flame — warm inner core */}
                       <path
                         d="M40 19 C39 22 38 24.5 38 27 C38 29 38.9 30.5 40 30.5 C41.1 30.5 42 29 42 27 C42 24.5 41 22 40 19Z"
                         fill="var(--color-accent-primary)"
-                        opacity="0.35"
+                        opacity="0.45"
                       />
                       {/* Wick */}
-                      <line x1="40" y1="34" x2="40" y2="37" stroke="var(--color-accent-primary)" strokeWidth="0.8" opacity="0.3" />
+                      <line x1="40" y1="34" x2="40" y2="37" stroke="var(--color-accent-primary)" strokeWidth="0.8" opacity="0.4" />
                       {/* Lamp rim */}
-                      <ellipse cx="40" cy="37.5" rx="13" ry="2.8" fill="var(--color-accent-primary)" opacity="0.35" />
-                      <ellipse cx="40" cy="37.5" rx="10.5" ry="2" fill="var(--color-accent-primary)" opacity="0.15" />
+                      <ellipse cx="40" cy="37.5" rx="13" ry="2.8" fill="var(--color-accent-primary)" opacity="0.45" />
+                      <ellipse cx="40" cy="37.5" rx="10.5" ry="2" fill="var(--color-bg-card)" opacity="0.3" />
                       {/* Rim accent dots */}
-                      <circle cx="29" cy="37.5" r="0.7" fill="var(--color-accent-primary)" opacity="0.3" />
-                      <circle cx="33" cy="36.5" r="0.5" fill="var(--color-accent-primary)" opacity="0.25" />
-                      <circle cx="37" cy="36" r="0.5" fill="var(--color-accent-primary)" opacity="0.2" />
-                      <circle cx="43" cy="36" r="0.5" fill="var(--color-accent-primary)" opacity="0.2" />
-                      <circle cx="47" cy="36.5" r="0.5" fill="var(--color-accent-primary)" opacity="0.25" />
-                      <circle cx="51" cy="37.5" r="0.7" fill="var(--color-accent-primary)" opacity="0.3" />
+                      <circle cx="29" cy="37.5" r="0.7" fill="var(--color-accent-primary)" opacity="0.4" />
+                      <circle cx="33" cy="36.5" r="0.5" fill="var(--color-accent-primary)" opacity="0.35" />
+                      <circle cx="37" cy="36" r="0.5" fill="var(--color-accent-primary)" opacity="0.3" />
+                      <circle cx="43" cy="36" r="0.5" fill="var(--color-accent-primary)" opacity="0.3" />
+                      <circle cx="47" cy="36.5" r="0.5" fill="var(--color-accent-primary)" opacity="0.35" />
+                      <circle cx="51" cy="37.5" r="0.7" fill="var(--color-accent-primary)" opacity="0.4" />
                       {/* Bowl body */}
                       <path
                         d="M27 37.5 Q27 40 29 44 Q33 50 40 52 Q47 50 51 44 Q53 40 53 37.5"
                         fill="var(--color-accent-primary)"
-                        opacity="0.25"
+                        opacity="0.35"
                       />
                       {/* Bowl decorative bands */}
                       <path
@@ -229,37 +231,37 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
                         stroke="var(--color-accent-primary)"
                         strokeWidth="0.5"
                         fill="none"
-                        opacity="0.2"
+                        opacity="0.3"
                       />
                       <path
                         d="M31.5 45 Q35.5 47 40 47 Q44.5 47 48.5 45"
                         stroke="var(--color-accent-primary)"
                         strokeWidth="0.5"
                         fill="none"
-                        opacity="0.15"
+                        opacity="0.25"
                       />
                       {/* Bowl accent dots */}
-                      <circle cx="35" cy="42" r="0.5" fill="var(--color-accent-primary)" opacity="0.2" />
-                      <circle cx="40" cy="43.5" r="0.5" fill="var(--color-accent-primary)" opacity="0.2" />
-                      <circle cx="45" cy="42" r="0.5" fill="var(--color-accent-primary)" opacity="0.2" />
+                      <circle cx="35" cy="42" r="0.5" fill="var(--color-accent-primary)" opacity="0.3" />
+                      <circle cx="40" cy="43.5" r="0.5" fill="var(--color-accent-primary)" opacity="0.3" />
+                      <circle cx="45" cy="42" r="0.5" fill="var(--color-accent-primary)" opacity="0.3" />
                       {/* Stem */}
                       <path
                         d="M37 52 Q40 53.5 43 52 L42 57 Q40 58 38 57Z"
                         fill="var(--color-accent-primary)"
-                        opacity="0.22"
+                        opacity="0.3"
                       />
                       {/* Pedestal */}
-                      <ellipse cx="40" cy="58" rx="6" ry="1.8" fill="var(--color-accent-primary)" opacity="0.2" />
+                      <ellipse cx="40" cy="58" rx="6" ry="1.8" fill="var(--color-accent-primary)" opacity="0.28" />
                       {/* Lotus petals on pedestal */}
-                      <path d="M34 58 Q35.5 56 37 58" stroke="var(--color-accent-primary)" strokeWidth="0.5" fill="none" opacity="0.18" />
-                      <path d="M37 58 Q38.5 56.5 40 58" stroke="var(--color-accent-primary)" strokeWidth="0.5" fill="none" opacity="0.18" />
-                      <path d="M40 58 Q41.5 56.5 43 58" stroke="var(--color-accent-primary)" strokeWidth="0.5" fill="none" opacity="0.18" />
-                      <path d="M43 58 Q44.5 56 46 58" stroke="var(--color-accent-primary)" strokeWidth="0.5" fill="none" opacity="0.18" />
+                      <path d="M34 58 Q35.5 56 37 58" stroke="var(--color-accent-primary)" strokeWidth="0.5" fill="none" opacity="0.25" />
+                      <path d="M37 58 Q38.5 56.5 40 58" stroke="var(--color-accent-primary)" strokeWidth="0.5" fill="none" opacity="0.25" />
+                      <path d="M40 58 Q41.5 56.5 43 58" stroke="var(--color-accent-primary)" strokeWidth="0.5" fill="none" opacity="0.25" />
+                      <path d="M43 58 Q44.5 56 46 58" stroke="var(--color-accent-primary)" strokeWidth="0.5" fill="none" opacity="0.25" />
                       {/* Spout */}
                       <path
                         d="M27 37.5 Q24 38 23 40 Q24 41 27 40"
                         fill="var(--color-accent-primary)"
-                        opacity="0.25"
+                        opacity="0.35"
                       />
                     </svg>
                   </div>
