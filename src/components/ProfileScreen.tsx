@@ -246,28 +246,31 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
                       <defs>
                         <style>{`
                           @keyframes deepam-outer {
-                            0%, 100% { opacity: 0.55; transform: scaleY(1) translateX(0); }
-                            28% { opacity: 0.47; transform: scaleY(0.97) translateX(-0.4px); }
-                            56% { opacity: 0.58; transform: scaleY(1.02) translateX(0.3px); }
-                            79% { opacity: 0.50; transform: scaleY(0.99) translateX(-0.2px); }
+                            0%, 100% { opacity: 0.55; transform: scaleY(1) scaleX(1) translateX(0); }
+                            20% { opacity: 0.38; transform: scaleY(0.92) scaleX(0.97) translateX(-0.8px); }
+                            45% { opacity: 0.62; transform: scaleY(1.06) scaleX(1.02) translateX(0.6px); }
+                            70% { opacity: 0.42; transform: scaleY(0.95) scaleX(0.98) translateX(-0.5px); }
+                            90% { opacity: 0.58; transform: scaleY(1.02) scaleX(1.01) translateX(0.3px); }
                           }
                           @keyframes deepam-mid {
-                            0%, 100% { opacity: 0.7; transform: scaleY(1) translateX(0); }
-                            22% { opacity: 0.60; transform: scaleY(0.96) translateX(0.3px); }
-                            48% { opacity: 0.73; transform: scaleY(1.03) translateX(-0.2px); }
-                            72% { opacity: 0.64; transform: scaleY(0.98) translateX(0.15px); }
+                            0%, 100% { opacity: 0.7; transform: scaleY(1) scaleX(1) translateX(0); }
+                            18% { opacity: 0.50; transform: scaleY(0.90) scaleX(0.96) translateX(0.7px); }
+                            40% { opacity: 0.75; transform: scaleY(1.08) scaleX(1.03) translateX(-0.5px); }
+                            62% { opacity: 0.52; transform: scaleY(0.93) scaleX(0.97) translateX(0.4px); }
+                            85% { opacity: 0.68; transform: scaleY(1.03) scaleX(1.01) translateX(-0.3px); }
                           }
                           @keyframes deepam-core {
-                            0%, 100% { opacity: 0.45; transform: scaleY(1) translateX(0); }
-                            18% { opacity: 0.38; transform: scaleY(0.95) translateX(-0.3px); }
-                            42% { opacity: 0.50; transform: scaleY(1.04) translateX(0.2px); }
-                            68% { opacity: 0.40; transform: scaleY(0.97) translateX(-0.15px); }
+                            0%, 100% { opacity: 0.45; transform: scaleY(1) scaleX(1) translateX(0); }
+                            15% { opacity: 0.28; transform: scaleY(0.88) scaleX(0.95) translateX(-0.6px); }
+                            35% { opacity: 0.55; transform: scaleY(1.10) scaleX(1.04) translateX(0.5px); }
+                            55% { opacity: 0.32; transform: scaleY(0.91) scaleX(0.96) translateX(-0.4px); }
+                            80% { opacity: 0.50; transform: scaleY(1.05) scaleX(1.02) translateX(0.3px); }
                           }
                           @keyframes deepam-glow {
                             0%, 100% { opacity: 1; }
-                            35% { opacity: 0.88; }
-                            65% { opacity: 0.96; }
-                            85% { opacity: 0.90; }
+                            25% { opacity: 0.75; }
+                            50% { opacity: 0.92; }
+                            75% { opacity: 0.78; }
                           }
                         `}</style>
                       </defs>
