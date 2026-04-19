@@ -5266,9 +5266,59 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     title: 'Shiva Mahimna Stotram',
     deity: 'Shiva',
   },
-{
+  {
     id: 'sankata-nashana-ganesha-stotram',
     title: 'Sankata Nashana Ganesha Stotram',
     deity: 'Ganesha',
+  },
+  {
+    id: 'siddha-kunjika-stotram',
+    title: 'Siddha Kunjika Stotram',
+    deity: 'Durga',
+  },
+  {
+    id: 'damodarashtakam',
+    title: 'Damodarashtakam',
+    deity: 'Krishna',
+  },
+  {
+    id: 'guru-ashtakam',
+    title: 'Guru Ashtakam',
+    deity: 'Guru',
+  },
+  {
+    id: 'shri-rudram-namakam',
+    title: 'Shri Rudram (Namakam)',
+    deity: 'Shiva',
+  },
+  {
+    id: 'narayana-kavacham',
+    title: 'Narayana Kavacham',
+    deity: 'Vishnu',
+  },
+  {
+    id: 'subramanya-ashtakam',
+    title: 'Subramanya Ashtakam',
+    deity: 'Subramanya',
+  },
+  {
+    id: 'dasharatha-shani-stotram',
+    title: 'Dasharatha Shani Stotram',
+    deity: 'Shani',
+  },
+  {
+    id: 'pandurangashtakam',
+    title: 'Pandurangashtakam',
+    deity: 'Vishnu',
+  },
+  {
+    id: 'dakshinamurthy-stotram',
+    title: 'Dakshinamurthy Stotram',
+    deity: 'Shiva',
+  },
+  {
+    id: 'indrakshi-stotram',
+    title: 'Indrakshi Stotram',
+    deity: 'Durga',
   },
 ];
