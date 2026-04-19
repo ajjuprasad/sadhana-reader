@@ -5521,6 +5521,16 @@ const dakshinamurthyStotram: Stotra = {
       meaning:
         'Earth, water, fire, air, sky, the sun, the moon, and the individual soul — this eightfold manifest form constituting all moving and unmoving beings is His alone. Upon inquiry, nothing exists apart from that Supreme, all-pervading Lord — to that Sri Dakshinamurthy, I bow.',
     },
+    {
+      id: 10,
+      verseLabel: 'Verse 10',
+      sanskrit:
+        'सर्वात्मत्वमिति स्फुटीकृतमिदं यस्मादमुष्मिन् स्तवे\nतेनास्य श्रवणात्तदर्थमननाद्ध्यानाच्च सङ्कीर्तनात्।\nसर्वात्मत्वमहाविभूतिसहितं स्यादीश्वरत्वं स्वतः\nसिद्ध्येत्तत्पुनरष्टधा परिणतं चैश्वर्यमव्याहतम्॥',
+      transliteration:
+        'sarvātmatvam-iti sphuṭī-kṛtam-idaṁ yasmād-amuṣmin stave\ntenāsya śravaṇāt-tad-artha-mananād-dhyānāc-ca saṅkīrtanāt |\nsarvātmatva-mahā-vibhūti-sahitaṁ syād-īśvaratvaṁ svataḥ\nsiddhyet-tat-punar-aṣṭadhā pariṇataṁ caiśvaryam-avyāhatam ||',
+      meaning:
+        'Since the truth of the Self being all has been made clear in this hymn, by hearing it, reflecting on its meaning, meditating upon it, and chanting it, one naturally attains the sovereignty of the Self with its great glory — the eightfold unobstructed divine powers arise of their own accord.',
+    },
   ],
 };
 
@@ -5584,16 +5594,6 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     deity: 'Durga',
   },
   {
-    id: 'damodarashtakam',
-    title: 'Damodarashtakam',
-    deity: 'Krishna',
-  },
-  {
-    id: 'guru-ashtakam',
-    title: 'Guru Ashtakam',
-    deity: 'Guru',
-  },
-  {
     id: 'shri-rudram-namakam',
     title: 'Shri Rudram (Namakam)',
     deity: 'Shiva',
@@ -5617,11 +5617,6 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'pandurangashtakam',
     title: 'Pandurangashtakam',
     deity: 'Vishnu',
-  },
-  {
-    id: 'dakshinamurthy-stotram',
-    title: 'Dakshinamurthy Stotram',
-    deity: 'Shiva',
   },
   {
     id: 'indrakshi-stotram',

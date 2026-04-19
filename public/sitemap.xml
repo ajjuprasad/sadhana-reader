@@ -41,7 +41,22 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sadhanareader.org/stotra/damodarashtakam</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sadhanareader.org/stotra/dakshinamurthy-stotram</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://sadhanareader.org/stotra/ganesha-pancharatnam</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sadhanareader.org/stotra/guru-ashtakam</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
