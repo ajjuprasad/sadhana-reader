@@ -4733,6 +4733,16 @@ const nirvanaShatakam: Stotra = {
       meaning:
         'I have no fear of death, no distinction of caste. I have no father, no mother, no birth. I have no relative, no friend, no guru, no disciple. I am the form of consciousness-bliss — I am Shiva, I am Shiva.',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'अहं निर्विकल्पो निराकाररूपो\nविभुत्वाच्च सर्वत्र सर्वेन्द्रियाणाम् ।\nन चासङ्गतं नैव मुक्तिर्न मेयः\nचिदानन्दरूपः शिवोऽहं शिवोऽहम् ॥',
+      transliteration:
+        'ahaṁ nirvikalpo nirākāra-rūpo\nvibhutvācca sarvatra sarvendriyāṇām |\nna cāsaṅgataṁ naiva muktir-na meyaḥ\ncidānanda-rūpaḥ śivo\'haṁ śivo\'ham ||',
+      meaning:
+        'I am without thought-constructs, without form. Through my all-pervading nature, I am everywhere and in all senses. I am neither attached nor liberated, nor can I be measured. I am the form of consciousness-bliss — I am Shiva, I am Shiva.',
+    },
   ],
 };
 
