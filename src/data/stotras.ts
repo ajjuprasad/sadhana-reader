@@ -4349,6 +4349,56 @@ const shivaTandavaStotram: Stotra = {
       meaning:
         'The dust of the flowers from the crowns of Indra and all the gods renders his footstool grey. His matted hair is bound by the king of serpents as a garland. May he who wears the moon — friend of the chakora bird — as his crest-jewel, bring lasting glory.',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'ललाटचत्वरज्वलद्धनञ्जयस्फुलिङ्गभा-\nनिपीतपञ्चसायकं नमन्निलिम्पनायकम् ।\nसुधामयूखलेखया विराजमानशेखरं\nमहाकपालिसम्पदेशिरोजटालमस्तु नः ॥',
+      transliteration:
+        'lalāṭa-catvara-jvalad-dhanañjaya-sphuliṅga-bhā-\nnipīta-pañca-sāyakaṁ naman-nilimpa-nāyakam |\nsudhā-mayūkha-lekhayā virājamāna-śekharaṁ\nmahā-kapāli-sampadē-śiro-jaṭālam-astu naḥ ||',
+      meaning:
+        'The sparks of the fire blazing on the courtyard of his forehead consumed the five arrows of Kamadeva. Before him bows the lord of the gods. His crest shines with the streak of the nectar-rayed moon. May his matted locks, the wealth of the great skull-bearer, bless us.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'करालभालपट्टिकाधगद्धगद्धगज्ज्वल-\nद्धनञ्जयाहुतीकृतप्रचण्डपञ्चसायके ।\nधराधरेन्द्रनन्दिनीकुचाग्रचित्रपत्रक-\nप्रकल्पनैकशिल्पिनि त्रिलोचने रतिर्मम ॥',
+      transliteration:
+        'karāla-bhāla-paṭṭikā-dhagad-dhagad-dhagaj-jvala-\nddhanañjayāhutī-kṛta-pracaṇḍa-pañca-sāyake |\ndharādharendra-nandinī-kucāgra-citra-patraka-\nprakalpanaika-śilpini trilocane ratir-mama ||',
+      meaning:
+        'In the three-eyed Lord whose terrible forehead-fire blazes and consumes the mighty five arrows of Kama as oblation, and who is the sole artist painting decorative patterns on the bosom of Parvati — in him is my delight.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'नवीनमेघमण्डलीनिरुद्धदुर्धरस्फुरत्-\nकुहूनिशीथिनीतमः प्रबन्धबद्धकन्धरः ।\nनिलिम्पनिर्झरीधरस्तनोतु कृत्तिसिन्धुरः\nकलानिधानबन्धुरः श्रियं जगद्धुरन्धरः ॥',
+      transliteration:
+        'navīna-megha-maṇḍalī-niruddha-durdhara-sphurat-\nkuhū-niśīthinī-tamaḥ prabandha-baddha-kandharaḥ |\nnilimpa-nirjharī-dharas-tanotu kṛtti-sindhuraḥ\nkalā-nidhāna-bandhuraḥ śriyaṁ jagad-dhurandharaḥ ||',
+      meaning:
+        'His neck is dark as the dense darkness of a new-moon night veiled by fresh rain clouds. He bears the celestial river, wears the elephant hide, and is adorned by the crescent moon. May this upholder of the universe bestow prosperity.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Verse 9',
+      sanskrit:
+        'प्रफुल्लनीलपङ्कजप्रपञ्चकालिमप्रभा-\nवलम्बिकण्ठकन्दलीरुचिप्रबद्धकन्धरम् ।\nस्मरच्छिदं पुरच्छिदं भवच्छिदं मखच्छिदं\nगजच्छिदान्धकच्छिदं तमन्तकच्छिदं भजे ॥',
+      transliteration:
+        'praphulla-nīla-paṅkaja-prapañca-kālima-prabhā-\nvalambi-kaṇṭha-kandalī-ruci-prabaddha-kandharam |\nsmarac-chidaṁ purac-chidaṁ bhavac-chidaṁ makhac-chidaṁ\ngajac-chidāndhakac-chidaṁ tam-antakac-chidaṁ bhaje ||',
+      meaning:
+        'I worship him whose throat shines with the dark lustre of a fully bloomed blue lotus — the destroyer of Kama, the destroyer of Tripura, the destroyer of worldly bonds, the destroyer of sacrifice, the slayer of the elephant-demon, the slayer of Andhaka, and the destroyer of Death itself.',
+    },
+    {
+      id: 10,
+      verseLabel: 'Verse 10',
+      sanskrit:
+        'अखर्वसर्वमङ्गलाकलाकदम्बमञ्जरी-\nरसप्रवाहमाधुरीविजृम्भणामधुव्रतम् ।\nस्मरान्तकं पुरान्तकं भवान्तकं मखान्तकं\nगजान्तकान्धकान्तकं तमन्तकान्तकं भजे ॥',
+      transliteration:
+        'akharva-sarva-maṅgalā-kalā-kadamba-mañjarī-\nrasa-pravāha-mādhurī-vijṛmbhaṇā-madhuvratam |\nsmarāntakaṁ purāntakaṁ bhavāntakaṁ makhāntakaṁ\ngajāntakāndhakāntakaṁ tam-antakāntakaṁ bhaje ||',
+      meaning:
+        'I worship him who is like a bee reveling in the sweet nectar flowing from the cluster of buds of the great, all-auspicious art — the ender of Kama, the ender of Tripura, the ender of worldly existence, the ender of sacrifice, the ender of the elephant-demon and Andhaka, the ender of Death.',
+    },
   ],
 };
 
