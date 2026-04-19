@@ -4399,6 +4399,56 @@ const shivaTandavaStotram: Stotra = {
       meaning:
         'I worship him who is like a bee reveling in the sweet nectar flowing from the cluster of buds of the great, all-auspicious art — the ender of Kama, the ender of Tripura, the ender of worldly existence, the ender of sacrifice, the ender of the elephant-demon and Andhaka, the ender of Death.',
     },
+    {
+      id: 11,
+      verseLabel: 'Verse 11',
+      sanskrit:
+        'जयत्वदभ्रविभ्रमभ्रमद्भुजङ्गमश्वस-\nद्विनिर्गमत्क्रमस्फुरत्करालभालहव्यवाट् ।\nधिमिद्धिमिद्धिमिध्वनन्मृदङ्गतुङ्गमङ्गल-\nध्वनिक्रमप्रवर्तितप्रचण्डताण्डवः शिवः ॥',
+      transliteration:
+        'jayatvadabhra-vibhrama-bhramad-bhujaṅgam-aśvasa-\ndvinirgamat-krama-sphurat-karāla-bhāla-havyavāṭ |\ndhimid-dhimid-dhimi-dhvanan-mṛdaṅga-tuṅga-maṅgala-\ndhvani-krama-pravartita-pracaṇḍa-tāṇḍavaḥ śivaḥ ||',
+      meaning:
+        'Victory to Shiva! The serpents whirl in confusion, their hissing breath fans the terrible fire on his forehead. To the auspicious, thundering rhythm of the mridanga — "dhimid dhimid dhimi" — he performs his fierce Tandava dance.',
+    },
+    {
+      id: 12,
+      verseLabel: 'Verse 12',
+      sanskrit:
+        'दृषद्विचित्रतल्पयोर्भुजङ्गमौक्तिकस्रजो-\nर्गरिष्ठरत्नलोष्ठयोः सुहृद्विपक्षपक्षयोः ।\nतृणारविन्दचक्षुषोः प्रजामहीमहेन्द्रयोः\nसमप्रवृत्तिकः कदा सदाशिवं भजाम्यहम् ॥',
+      transliteration:
+        'dṛṣad-vicitra-talpayōr-bhujaṅga-mauktika-srajō-\nrgariṣṭha-ratna-lōṣṭhayōḥ suhṛd-vipakṣa-pakṣayōḥ |\ntṛṇāravinda-cakṣuṣōḥ prajā-mahī-mahendrayōḥ\nsama-pravṛttikaḥ kadā sadāśivaṁ bhajāmyaham ||',
+      meaning:
+        'When shall I worship Sadashiva with equal vision — seeing no difference between a bed of stone and a decorated couch, between a serpent and a pearl necklace, between a precious gem and a clod of earth, between a friend and a foe, between a blade of grass and a lotus-eyed beauty, between a common man and a great king?',
+    },
+    {
+      id: 13,
+      verseLabel: 'Verse 13',
+      sanskrit:
+        'कदा निलिम्पनिर्झरीनिकुञ्जकोटरे वसन्\nविमुक्तदुर्मतिः सदा शिरःस्थमञ्जलिं वहन् ।\nविमुक्तलोललोचनो ललामभाललग्नकः\nशिवेति मन्त्रमुच्चरन् कदा सुखी भवाम्यहम् ॥',
+      transliteration:
+        'kadā nilimpa-nirjharī-nikuñja-kōṭare vasan\nvimukta-durmatiḥ sadā śiraḥ-stham-añjaliṁ vahan |\nvimukta-lōla-lōcanō lalāma-bhāla-lagnakaḥ\nśiveti mantram-uccaran kadā sukhī bhavāmyaham ||',
+      meaning:
+        'When shall I live in a cave near the banks of the Ganga, free from all evil thoughts, with folded hands always held above my head, eyes closed in meditation, the sacred mark on my forehead — chanting the mantra "Shiva" — when shall I be truly happy?',
+    },
+    {
+      id: 14,
+      verseLabel: 'Verse 14',
+      sanskrit:
+        'निलिम्पनाथनागरीकदम्बमौलिमल्लिका-\nनिगुम्फनिर्भरक्षरन्मधूष्णिकामनोहरः ।\nतनोतु नो मनोमुदं विनोदिनीमहर्निशं\nपरिश्रियं परं पदं तदङ्गजत्विषां चयः ॥',
+      transliteration:
+        'nilimpa-nātha-nāgarī-kadamba-mauli-mallikā-\nnigumpha-nirbhara-kṣaran-madhūṣṇikā-manōharaḥ |\ntanōtu nō manō-mudaṁ vinōdinī-maharniśaṁ\npariśriyaṁ paraṁ padaṁ tadaṅgaja-tviṣāṁ cayaḥ ||',
+      meaning:
+        'The jasmine flowers woven in the braids of the celestial women overflow with enchanting fragrance of honey. May that radiance of Shiva, the source of supreme glory and the highest state, grant us joy and delight day and night.',
+    },
+    {
+      id: 15,
+      verseLabel: 'Verse 15',
+      sanskrit:
+        'इमं हि नित्यमेवमुक्तमुत्तमोत्तमं स्तवं\nपठन्स्मरन्ब्रुवन्नरो विशुद्धिमेतिसन्ततम् ।\nहरे गुरौ सुभक्तिमाशु याति नान्यथा गतिं\nविमोहनं हि देहिनां सुशङ्करस्य चिन्तनम् ॥',
+      transliteration:
+        'imaṁ hi nityam-evam-uktam-uttamōttamaṁ stavaṁ\npaṭhan-smaran-bruvan-narō viśuddhim-eti-santatam |\nhare gurau subhaktim-āśu yāti nānyathā gatiṁ\nvimōhanaṁ hi dehināṁ su-śaṅkarasya cintanam ||',
+      meaning:
+        'One who reads, remembers, or recites this supreme hymn daily attains ever-lasting purity. They quickly develop deep devotion to Lord Shiva, the guru — there is no other path. Indeed, the contemplation of the auspicious Shankara is the enchantment of all embodied beings.',
+    },
   ],
 };
 
