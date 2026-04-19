@@ -100,6 +100,55 @@ const hi: TranslationDict = {
   'settings.save': 'सहेजें',
 };
 
+const kn: TranslationDict = {
+  'home.title': 'ಸಾಧನಾ ರೀಡರ್',
+  'home.subtitle': 'ಧ್ಯಾನಕ್ಕಾಗಿ ಒಂದು ಡಿಜಿಟಲ್ ಪವಿತ್ರ ಸ್ಥಳ',
+  'home.recentlyAdded': 'ಇತ್ತೀಚೆಗೆ ಸೇರಿಸಲಾಗಿದೆ',
+  'home.favorites': 'ಮೆಚ್ಚಿನವು',
+  'home.allStotras': 'ಎಲ್ಲಾ ಸ್ತೋತ್ರಗಳು',
+  'home.comingSoon': 'ಶೀಘ್ರದಲ್ಲಿ ಬರಲಿದೆ',
+  'home.designedBy': 'ವಿನ್ಯಾಸ ಮತ್ತು ನಿರ್ಮಾಣ',
+  'home.feedbackVia': 'ಪ್ರತಿಕ್ರಿಯೆ ಕಳುಹಿಸಿ',
+  'home.shareMessage': 'ಸಾಧನಾ ರೀಡರ್ — ಭಕ್ತಿಯಿಂದ ಹಿಂದೂ ಸ್ತೋತ್ರಗಳನ್ನು ಓದಲು ಒಂದು ಡಿಜಿಟಲ್ ಪವಿತ್ರ ಸ್ಥಳ. {url}',
+
+  'common.back': 'ಹಿಂದೆ',
+  'common.share': 'ಹಂಚಿಕೊಳ್ಳಿ',
+  'common.returnHome': 'ಮುಖಪುಟಕ್ಕೆ ಹೋಗಿ',
+  'common.stotraNotFound': 'ಸ್ತೋತ್ರ ಕಂಡುಬಂದಿಲ್ಲ',
+  'common.verses': '{count} ಶ್ಲೋಕಗಳು',
+  'common.min': '{count} ನಿಮಿ',
+  'common.comingSoon': 'ಶೀಘ್ರದಲ್ಲಿ ಬರಲಿದೆ',
+  'common.verseOf': '{current} / {total}',
+  'common.whatsapp': 'WhatsApp',
+  'common.email': 'ಇಮೇಲ್',
+
+  'detail.readTimes': '{count} ಬಾರಿ ಓದಲಾಗಿದೆ',
+  'detail.readOnce': '{count} ಬಾರಿ ಓದಲಾಗಿದೆ',
+  'detail.benefits': 'ಪ್ರಯೋಜನಗಳು',
+  'detail.beginReading': 'ಓದಲು ಪ್ರಾರಂಭಿಸಿ',
+  'detail.shareMessage': 'ಸಾಧನಾ ರೀಡರ್‌ನಲ್ಲಿ {title} ಓದಿ.\n{url}',
+  'detail.shareMessageBenefit': 'ಸಾಧನಾ ರೀಡರ್‌ನಲ್ಲಿ {title} ಓದಿ.\n{benefit}.\n{url}',
+
+  'reader.readingComplete': 'ಓದುವಿಕೆ ಪೂರ್ಣವಾಯಿತು',
+  'reader.thankYou': 'ಸಾಧನಾ ರೀಡರ್‌ನಲ್ಲಿ {title} ಓದಿದ್ದಕ್ಕೆ ಧನ್ಯವಾದಗಳು. ಈ ಸಾಧನೆ ನಿಮ್ಮ ದಿನದಲ್ಲಿ ಶಾಂತಿ, ಭಕ್ತಿ ಮತ್ತು ಕೃಪೆಯನ್ನು ತರಲಿ.',
+  'reader.readAgain': 'ಮತ್ತೆ ಓದಿ',
+
+  'auth.signIn': 'Google ಮೂಲಕ ಸೈನ್ ಇನ್ ಮಾಡಿ',
+  'auth.signInReason': 'ವೈಯಕ್ತಿಕ ಅನುಭವಕ್ಕಾಗಿ ಸೈನ್ ಇನ್ ಮಾಡಿ',
+  'auth.signOut': 'ಸೈನ್ ಔಟ್',
+  'profile.welcome': 'ನಮಸ್ತೆ',
+  'profile.memberSince': '{date} ರಿಂದ ಸದಸ್ಯ',
+
+  'settings.title': 'ಸೆಟ್ಟಿಂಗ್‌ಗಳು',
+  'settings.fontSize': 'ಅಕ್ಷರ ಗಾತ್ರ: {size}px',
+  'settings.deepamMode': 'ದೀಪಂ ಮೋಡ್',
+  'settings.deepamDesc': 'ಬೆಚ್ಚಗಿನ, ದೀಪದ ಬೆಳಕಿನ ಡಾರ್ಕ್ ಥೀಮ್',
+  'settings.hideSanskrit': 'ಸಂಸ್ಕೃತ ಶ್ಲೋಕಗಳನ್ನು ಮರೆಮಾಡಿ',
+  'settings.hideSanskritDesc': 'ಲಿಪ್ಯಂತರಣ ಮತ್ತು ಅರ್ಥ ಮಾತ್ರ ತೋರಿಸುತ್ತದೆ',
+  'settings.language': 'ಭಾಷೆ',
+  'settings.save': 'ಉಳಿಸಿ',
+};
+
 const te: TranslationDict = {
   'home.title': 'సాధనా రీడర్',
   'home.subtitle': 'ధ్యానం కోసం ఒక డిజిటల్ పవిత్ర స్థలం',
@@ -250,6 +299,7 @@ const ml: TranslationDict = {
 export const translations: Record<Language, TranslationDict> = {
   en,
   hi,
+  kn,
   te,
   ta,
   ml,
