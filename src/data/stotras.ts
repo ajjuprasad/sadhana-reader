@@ -5220,11 +5220,80 @@ const argalaStotram: Stotra = {
   ],
 };
 
+const damodarashtakam: Stotra = {
+  id: 'damodarashtakam',
+  title: 'Damodarashtakam',
+  subtitle: 'दामोदराष्टकम्',
+  deity: 'Krishna',
+  description:
+    'Eight verses by Satyavrata Muni from the Padma Purana, sung during the month of Kartik. They describe the childhood pastimes of Lord Krishna — especially Mother Yashoda binding Him with a rope around His waist (Damodara) — evoking deep parental love and devotion.',
+  benefits: [
+    'Invokes the grace of Lord Damodara during the sacred month of Kartik',
+    'Cultivates intimate, loving devotion (vatsalya rasa) toward the Supreme Lord',
+    'Bestows liberation and eternal service at the lotus feet of Krishna',
+  ],
+  estimatedMinutes: 4,
+  icon: 'M16 4 L16 14 M13 8 L19 8',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'नमामीश्वरं सच्चिदानन्दरूपं\nललाटस्थकौस्तुभवह्निप्रभम्।\nयशोदाभियोलूखलाद्धावमानं\nपरामृष्टपृष्ठं नताम्यं परं वे॥',
+      transliteration:
+        'namāmīśvaraṁ sac-cid-ānanda-rūpaṁ\nlalāṭa-stha-kaustubha-vahni-prabham |\nyaśodā-bhiyolūkhalād-dhāvamānaṁ\nparāmṛṣṭa-pṛṣṭhaṁ natāmyaṁ paraṁ ve ||',
+      meaning:
+        'I bow to the Supreme Lord, whose form is eternal bliss and consciousness, whose forehead glows with the radiance of the Kaustubha gem. Fleeing in fear of Mother Yashoda, running from the wooden mortar, His back touched by her hand — I bow to that transcendent Lord.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'रुदन्तं मुहुर्नेत्रयुग्मं मृजन्तं\nकराम्भोजयुग्मेन सातङ्कनेत्रम्।\nमुहुः श्वासकम्पत्रिरेखाङ्ककण्ठ-\nस्थितग्रैवदामोदरं भक्तिबद्धम्॥',
+      transliteration:
+        'rudantaṁ muhur-netra-yugmaṁ mṛjantaṁ\nkarāmbhoja-yugmena sātaṅka-netram |\nmuhuḥ śvāsa-kampa-tri-rekhāṅka-kaṇṭha-\nsthita-graiva-dāmodaraṁ bhakti-baddham ||',
+      meaning:
+        'Crying again and again, rubbing both His eyes with His lotus hands, His eyes full of fear, His throat marked with three lines trembling with every breath, the necklace resting there — I worship Damodara, bound by the ropes of devotion.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'इतीदृक्स्वलीलाभिरानन्दकुण्डे\nस्वघोषं निमज्जन्तमाख्यापयन्तम्।\nतदीयेशितज्ञेषु भक्तैर्जितत्वं\nपुनः प्रेमतस्तं शताबृत्ति वन्दे॥',
+      transliteration:
+        'itīdṛk sva-līlābhir-ānanda-kuṇḍe\nsva-ghoṣaṁ nimajjantam-ākhyāpayantam |\ntadīyeśita-jñeṣu bhaktair-jitatvaṁ\npunaḥ prematas-taṁ śatāvṛtti vande ||',
+      meaning:
+        'Thus, by such childhood pastimes, He immerses His own Vraja community in a pool of bliss, proclaiming that He is conquered by the love of His devotees who know His supreme lordship. Again and again, with love, I offer a hundred salutations to Him.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'वरं देव मोक्षं न मोक्षावधिं वा\nन चान्यं वृणे ऽहं वरेशादपीह।\nइदं ते वपुर्नाथ गोपालबालं\nसदा मे मनस्यावि-रास्तां किमन्यैः॥',
+      transliteration:
+        'varaṁ deva mokṣaṁ na mokṣāvadhiṁ vā\nna cānyaṁ vṛṇe \'haṁ vareśād-apīha |\nidaṁ te vapur-nātha gopāla-bālaṁ\nsadā me manasy-āvirāstāṁ kim-anyaiḥ ||',
+      meaning:
+        'O Lord, I do not seek liberation, nor anything up to liberation, nor any other boon from the Lord of boons. O Master, may this form of Yours as the cowherd child forever manifest in my heart — what need have I of anything else?',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'इदं ते मुखाम्भोजमत्यन्तनीलै-\nर्वृतं कुन्तलैः स्निग्धरक्तैश्च गोप्या।\nमुहुश्चुम्बितं बिम्बरक्ताधरं मे\nमनस्यावि-रास्तामलं लक्षलाभैः॥',
+      transliteration:
+        'idaṁ te mukhāmbhojam-atyanta-nīlair-\nvṛtaṁ kuntalaiḥ snigdha-raktaiś-ca gopyā |\nmuhuś-cumbitaṁ bimba-raktādharaṁ me\nmanasy-āvirāstām-alaṁ lakṣa-lābhaiḥ ||',
+      meaning:
+        'This lotus face of Yours, framed by deep blue curls, kissed again and again by the gopi (Yashoda) on its bimba-red lips — may it manifest in my heart. Enough with millions of other gains!',
+    },
+  ],
+};
+
 export const stotras: Stotra[] = [
   achyutashtakam,
   annapoornaAshtakam,
   argalaStotram,
   bilvashtakam,
+  damodarashtakam,
   ashtalakshmiStotram,
   adityaHridayaStotram,
   bhajaGovindam,
