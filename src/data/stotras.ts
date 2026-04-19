@@ -4811,6 +4811,36 @@ const sudarshanaAshtakam: Stotra = {
       meaning:
         'You are the eye of the world, embodiment of the three Vedas, and radiant with sacrificial splendor. You are limitless, sweet consciousness itself, all-powerful and pervading the universe. You are the infinite cosmic activity and the pacifier of all worldly fears. Victory, victory to You, O Sri Sudarshana!',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'महितसम्पत्सदक्षर विहितसम्पत्षडक्षर\nषडरचक्रप्रतिष्ठित सकलतत्त्वप्रतिष्ठित ।\nविविधसङ्कल्पकल्पक विबुधसङ्कल्पकल्पक\nजय जय श्रीसुदर्शन जय जय श्रीसुदर्शन ॥',
+      transliteration:
+        'mahita-sampat-sad-akṣara vihita-sampat-ṣaḍ-akṣara\nṣaḍ-ara-cakra-pratiṣṭhita sakala-tattva-pratiṣṭhita |\nvividha-saṅkalpa-kalpaka vibudha-saṅkalpa-kalpaka\njaya jaya śrī-sudarśana jaya jaya śrī-sudarśana ||',
+      meaning:
+        'You are the imperishable glory of great splendor, expressed in the sacred six-syllabled mantra. You are established in the six-spoked wheel and grounded in all cosmic principles. You fulfill diverse intentions and grant the wishes of the wise. Victory, victory to You, O Sri Sudarshana!',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'प्रतिमुखालीढबन्धुर प्रथुमहाहेतिदन्तुर\nविकटमायाबहिष्कृत विविधमालापरिष्कृत ।\nस्थिरमहायन्त्रतन्त्रित दृढदयातन्त्रयन्त्रित\nजय जय श्रीसुदर्शन जय जय श्रीसुदर्शन ॥',
+      transliteration:
+        'pratimukha-ālīḍha-bandhura prathu-mahā-heti-dantura\nvikaṭa-māyā-bahiṣkṛta vividha-mālā-pariṣkṛta |\nsthira-mahā-yantra-tantrita dṛḍha-dayā-tantra-yantrita\njaya jaya śrī-sudarśana jaya jaya śrī-sudarśana ||',
+      meaning:
+        'You stand graceful in the warrior stance, fearsome with a mighty array of great weapons. You banish terrible illusions and are adorned with diverse garlands. You preside over the great steadfast yantra and are governed by the firm mechanism of compassion. Victory, victory to You, O Sri Sudarshana!',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'दनुजविस्तारकर्तन जनितमिस्राविकर्तन\nदनुजविद्यानिकर्तन भजदविद्यानिवर्तन ।\nअमरदृष्टस्वविक्रम समरजुष्टभ्रमिक्रम\nजय जय श्रीसुदर्शन जय जय श्रीसुदर्शन ॥',
+      transliteration:
+        'danuja-vistāra-kartana janita-misrā-vikartana\ndanuja-vidyā-nikartana bhajad-avidyā-nivartana |\namara-dṛṣṭa-sva-vikrama samara-juṣṭa-bhrami-krama\njaya jaya śrī-sudarśana jaya jaya śrī-sudarśana ||',
+      meaning:
+        'You cut down the expanding ranks of demons and dispel the darkness they create. You destroy the sorcery of the Asuras and remove the ignorance of Your devotees. The gods behold Your valour, and in battle You whirl with devastating speed. Victory, victory to You, O Sri Sudarshana!',
+    },
   ],
 };
 
