@@ -5353,6 +5353,56 @@ const guruAshtakam: Stotra = {
       meaning:
         'One may have a spouse, wealth, sons, grandsons, and all else — home, relatives, everything that is born of this world — but if the mind is not attached to the lotus feet of the Guru, then what? What? What? What?',
     },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'षडङ्गादिवेदो मुखे शास्त्रविद्या\nकवित्वादि गद्यं सुपद्यं करोति।\nमनश्चेन्न लग्नं गुरोरङ्घ्रिपद्मे\nततः किं ततः किं ततः किं ततः किम्॥',
+      transliteration:
+        'ṣaḍaṅgādi-vedo mukhe śāstra-vidyā\nkavitvādi gadyaṁ su-padyaṁ karoti |\nmanaś-cen-na lagnaṁ guror-aṅghri-padme\ntataḥ kiṁ tataḥ kiṁ tataḥ kiṁ tataḥ kim ||',
+      meaning:
+        'One may have the Vedas with their six limbs on the tip of one\'s tongue, mastery of scriptures and sciences, and the ability to compose fine prose and poetry — but if the mind is not attached to the lotus feet of the Guru, then what? What? What? What?',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'विदेशेषु मान्यः स्वदेशेषु धन्यः\nसदाचारवृत्तेषु मत्तो न चान्यः।\nमनश्चेन्न लग्नं गुरोरङ्घ्रिपद्मे\nततः किं ततः किं ततः किं ततः किम्॥',
+      transliteration:
+        'videśeṣu mānyaḥ svadeśeṣu dhanyaḥ\nsadācāra-vṛtteṣu matto na cānyaḥ |\nmanaś-cen-na lagnaṁ guror-aṅghri-padme\ntataḥ kiṁ tataḥ kiṁ tataḥ kiṁ tataḥ kim ||',
+      meaning:
+        'One may be honored in foreign lands and fortunate in one\'s own country, unsurpassed in righteous conduct and virtuous behavior — but if the mind is not attached to the lotus feet of the Guru, then what? What? What? What?',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'क्षमामण्डले भूपभूपालवृन्दैः\nसदा सेवितं यस्य पादारविन्दम्।\nमनश्चेन्न लग्नं गुरोरङ्घ्रिपद्मे\nततः किं ततः किं ततः किं ततः किम्॥',
+      transliteration:
+        'kṣamā-maṇḍale bhūpa-bhūpāla-vṛndaiḥ\nsadā sevitaṁ yasya pādāravindam |\nmanaś-cen-na lagnaṁ guror-aṅghri-padme\ntataḥ kiṁ tataḥ kiṁ tataḥ kiṁ tataḥ kim ||',
+      meaning:
+        'One whose lotus feet are always served by hosts of kings and emperors across the earth — but if the mind is not attached to the lotus feet of the Guru, then what? What? What? What?',
+    },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'यशो मे गतं दिक्षु दानप्रतापा-\nज्जगद्वस्तु सर्वं करे यत्प्रसादात्।\nमनश्चेन्न लग्नं गुरोरङ्घ्रिपद्मे\nततः किं ततः किं ततः किं ततः किम्॥',
+      transliteration:
+        'yaśo me gataṁ dikṣu dāna-pratāpāj-\njagad-vastu sarvaṁ kare yat-prasādāt |\nmanaś-cen-na lagnaṁ guror-aṅghri-padme\ntataḥ kiṁ tataḥ kiṁ tataḥ kiṁ tataḥ kim ||',
+      meaning:
+        'One whose fame has spread in all directions through the glory of charity, by whose grace all the wealth of the world rests in one\'s hand — but if the mind is not attached to the lotus feet of the Guru, then what? What? What? What?',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'न भोगे न योगे न वा वाजिराजौ\nन कान्तामुखे नैव वित्तेषु चित्तम्।\nमनश्चेन्न लग्नं गुरोरङ्घ्रिपद्मे\nततः किं ततः किं ततः किं ततः किम्॥',
+      transliteration:
+        'na bhoge na yoge na vā vāji-rājau\nna kāntā-mukhe naiva vitteṣu cittam |\nmanaś-cen-na lagnaṁ guror-aṅghri-padme\ntataḥ kiṁ tataḥ kiṁ tataḥ kiṁ tataḥ kim ||',
+      meaning:
+        'The mind finds no delight in pleasures, nor in yoga, nor in horses and royal steeds, nor in the face of the beloved, nor in wealth — but if the mind is not attached to the lotus feet of the Guru, then what? What? What? What?',
+    },
   ],
 };
 
