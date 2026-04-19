@@ -5017,6 +5017,56 @@ const argalaStotram: Stotra = {
       meaning:
         'O Goddess who slew Raktabija and destroyed Chanda and Munda! Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'शुम्भस्यैव निशुम्भस्य धूम्राक्षस्य च मर्दिनि ।\nरूपं देहि जयं देहि यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'śumbhasyaiva niśumbhasya dhūmrākṣasya ca mardini |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'O crusher of Shumbha, Nishumbha, and Dhumraksha! Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'वन्दिताङ्घ्रियुगे देवि सर्वसौभाग्यदायिनि ।\nरूपं देहि जयं देहि यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'vanditāṅghri-yuge devi sarva-saubhāgya-dāyini |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'O Goddess whose twin feet are worshipped, who bestows all good fortune! Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'अचिन्त्यरूपचरिते सर्वशत्रुविनाशिनि ।\nरूपं देहि जयं देहि यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'acintya-rūpa-carite sarva-śatru-vināśini |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'O Goddess of inconceivable form and deeds, destroyer of all enemies! Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Verse 9',
+      sanskrit:
+        'नतेभ्यः सर्वदा भक्त्या चण्डिके दुरितापहे ।\nरूपं देहि जयं देहि यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'natebhyaḥ sarvadā bhaktyā caṇḍike duritāpahe |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'O Chandika, remover of afflictions, to those who bow before You always with devotion! Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
+    {
+      id: 10,
+      verseLabel: 'Verse 10',
+      sanskrit:
+        'स्तुवद्भ्यो भक्तिपूर्वं त्वां चण्डिके व्याधिनाशिनि ।\nरूपं देहि जयं देहि यशो देहि द्विषो जहि ॥',
+      transliteration:
+        'stuvadbhyo bhakti-pūrvaṁ tvāṁ caṇḍike vyādhi-nāśini |\nrūpaṁ dehi jayaṁ dehi yaśo dehi dviṣo jahi ||',
+      meaning:
+        'O Chandika, destroyer of disease, to those who praise You with devotion! Grant me beauty, grant me victory, grant me fame, and destroy my enemies.',
+    },
   ],
 };
 
