@@ -282,6 +282,30 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
         </>
       );
 
+    case 'kalabhairava-ashtakam':
+      return (
+        <>
+          <circle cx="16" cy="10" r="4" {...s} strokeWidth="1.4" />
+          <path d="M12 10 L10 8" {...s} strokeWidth="1" />
+          <path d="M20 10 L22 8" {...s} strokeWidth="1" />
+          <circle cx="14.5" cy="9.5" r="0.6" {...s} strokeWidth="0.8" />
+          <circle cx="17.5" cy="9.5" r="0.6" {...s} strokeWidth="0.8" />
+          <path d="M16 14 L16 20" {...s} strokeWidth="1.4" />
+          <path d="M12 17 L20 17" {...s} strokeWidth="1" />
+          <path d="M14 22 Q16 26 18 22" {...s} strokeWidth="1.2" />
+        </>
+      );
+
+    case 'nirvana-shatakam':
+      return (
+        <>
+          <circle cx="16" cy="16" r="8" {...s} strokeWidth="1" />
+          <circle cx="16" cy="16" r="5.5" {...s} strokeWidth="0.8" />
+          <circle cx="16" cy="16" r="3" {...s} strokeWidth="0.8" />
+          <circle cx="16" cy="16" r="1" {...s} strokeWidth="1" />
+        </>
+      );
+
     default:
       return <circle cx="16" cy="16" r="8" {...s} strokeWidth="1.5" />;
   }
