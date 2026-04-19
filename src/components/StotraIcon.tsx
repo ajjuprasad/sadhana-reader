@@ -349,6 +349,42 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
         </>
       );
 
+    case 'damodarashtakam':
+      return (
+        <>
+          <circle cx="16" cy="13" r="5" {...s} strokeWidth="1.3" />
+          <path d="M11 18 C11 22 13 26 16 28 C19 26 21 22 21 18" {...s} strokeWidth="1.2" />
+          <path d="M12 15 C9 16 7 14 8 12" {...s} strokeWidth="1" />
+          <path d="M20 15 C23 16 25 14 24 12" {...s} strokeWidth="1" />
+          <path d="M13 19 Q16 22 19 19" {...s} strokeWidth="0.9" />
+          <path d="M14 6 C14 4 16 3 16 5 C16 3 18 4 18 6" {...s} strokeWidth="0.9" fill="currentColor" opacity="0.4" />
+        </>
+      );
+
+    case 'guru-ashtakam':
+      return (
+        <>
+          <circle cx="16" cy="10" r="4" {...s} strokeWidth="1.2" />
+          <path d="M10 18 L16 15 L22 18" {...s} strokeWidth="1.3" />
+          <path d="M10 18 L10 26 L22 26 L22 18" {...s} strokeWidth="1.3" />
+          <line x1="16" y1="15" x2="16" y2="26" {...s} strokeWidth="0.9" />
+          <path d="M14 7 L16 4 L18 7" {...s} strokeWidth="0.8" fill="currentColor" opacity="0.3" />
+        </>
+      );
+
+    case 'dakshinamurthy-stotram':
+      return (
+        <>
+          <circle cx="16" cy="9" r="4.5" {...s} strokeWidth="1.2" />
+          <path d="M12 14 L16 13 L20 14 L20 22 L12 22Z" {...s} strokeWidth="1.2" />
+          <path d="M12 22 L10 28 M20 22 L22 28" {...s} strokeWidth="1.1" />
+          <path d="M20 17 L24 15" {...s} strokeWidth="1" />
+          <path d="M20 19 L25 19" {...s} strokeWidth="1" />
+          <circle cx="8" cy="26" r="1.5" {...s} strokeWidth="0.8" />
+          <path d="M16 5 C15.5 3.5 16 2.5 16.5 3.5 C17 2.5 16.5 3.5 16 5" {...s} strokeWidth="0.7" fill="currentColor" opacity="0.4" />
+        </>
+      );
+
     default:
       return <circle cx="16" cy="16" r="8" {...s} strokeWidth="1.5" />;
   }
