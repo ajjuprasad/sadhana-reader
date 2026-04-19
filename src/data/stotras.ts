@@ -4746,6 +4746,74 @@ const nirvanaShatakam: Stotra = {
   ],
 };
 
+const sudarshanaAshtakam: Stotra = {
+  id: 'sudarshana-ashtakam',
+  title: 'Sudarshana Ashtakam',
+  subtitle: 'सुदर्शनाष्टकम्',
+  deity: 'Vishnu',
+  description:
+    'Eight verses by Vedanta Desika (Swami Desikan) glorifying Lord Sudarshana, the divine discus of Lord Vishnu. Each verse builds with rhythmic compound words and culminates in the victorious refrain "Jaya Jaya Sri Sudarshana."',
+  benefits: [
+    'Invokes the protective power of Lord Sudarshana against all obstacles',
+    'Removes negative energies and grants divine protection',
+    'Bestows courage, clarity, and spiritual victory',
+  ],
+  estimatedMinutes: 3,
+  icon: 'sudarshana-ashtakam',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'प्रतिभटश्रेणिभीषण वरगुणस्तोमभूषण\nजनिभयस्थानतारण जगदवस्थानकारण ।\nनिखिलदुष्कर्मकर्शन निगमसद्धर्मदर्शन\nजय जय श्रीसुदर्शन जय जय श्रीसुदर्शन ॥',
+      transliteration:
+        'pratibhaṭa-śreṇi-bhīṣaṇa vara-guṇa-stoma-bhūṣaṇa\njani-bhaya-sthāna-tāraṇa jagad-avasthāna-kāraṇa |\nnikhila-duṣkarma-karśana nigama-saddharma-darśana\njaya jaya śrī-sudarśana jaya jaya śrī-sudarśana ||',
+      meaning:
+        'O Lord Sudarshana, You terrify the ranks of adversaries and are adorned with a multitude of noble qualities. You rescue beings from the fear of birth and are the cause that sustains the universe. You destroy all evil deeds and reveal the true dharma of the Vedas. Victory, victory to You, O Sri Sudarshana!',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'शुभजगद्रूपमण्डन सुरगणत्रासखण्डन\nशतमखब्रह्मवन्दित शतपथब्रह्मनन्दित ।\nप्रथितविद्वत्सपक्षित भजदहिर्बुध्न्यलक्षित\nजय जय श्रीसुदर्शन जय जय श्रीसुदर्शन ॥',
+      transliteration:
+        'śubha-jagad-rūpa-maṇḍana sura-gaṇa-trāsa-khaṇḍana\nśatamakha-brahma-vandita śatapatha-brahma-nandita |\nprathita-vidvat-sapakṣita bhajad-ahirbudhnya-lakṣita\njaya jaya śrī-sudarśana jaya jaya śrī-sudarśana ||',
+      meaning:
+        'You adorn the auspicious world with beauty and shatter the fears of the celestials. You are worshipped by Indra and Brahma, and celebrated in the Shatapataha Brahmana. You side with the learned and are perceived by the devoted Ahirbudhnya. Victory, victory to You, O Sri Sudarshana!',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'निजपदप्रीतसद्गण निरुपधिस्फीतषड्गुण\nनिगमनिर्व्यूढवैभव निजपरव्यूहवैभव ।\nहरिहयद्वेषिदारण हरपुरप्लोषकारण\nजय जय श्रीसुदर्शन जय जय श्रीसुदर्शन ॥',
+      transliteration:
+        'nija-pada-prīta-sad-gaṇa nirupadhi-sphīta-ṣaḍ-guṇa\nnigama-nirvyūḍha-vaibhava nija-para-vyūha-vaibhava |\nhari-haya-dveṣi-dāraṇa hara-pura-ploṣa-kāraṇa\njaya jaya śrī-sudarśana jaya jaya śrī-sudarśana ||',
+      meaning:
+        'The virtuous who love Your feet are delighted; You possess the six divine qualities unconditionally. Your glory is established by the Vedas, and You shine in the supreme Vyuha emanation. You destroyed the enemy of Indra and caused the burning of Tripura. Victory, victory to You, O Sri Sudarshana!',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'स्फुटतटिज्जालपिञ्जर प्रथुतरज्वालपञ्जर\nपरिगतप्रत्नविग्रह परिमितप्रज्ञदुर्ग्रह ।\nप्रहरणग्राममण्डित परिजनत्राणपण्डित\nजय जय श्रीसुदर्शन जय जय श्रीसुदर्शन ॥',
+      transliteration:
+        'sphuṭa-taṭij-jāla-piñjara prathu-tara-jvāla-pañjara\nparigata-pratna-vigraha parimita-prajña-durgraha |\npraharaṇa-grāma-maṇḍita parijana-trāṇa-paṇḍita\njaya jaya śrī-sudarśana jaya jaya śrī-sudarśana ||',
+      meaning:
+        'You blaze golden with a web of lightning and are caged in towering flames. You assume an ancient transcendent form, incomprehensible to finite intellects. You are adorned with an arsenal of weapons and are expert in protecting Your devotees. Victory, victory to You, O Sri Sudarshana!',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'भुवननेत्रस्त्रयीमय सवनतेजस्त्रयीमय\nनिरवधिस्वादुचिन्मय निखिलशक्ते जगन्मय ।\nअमितविश्वक्रियामय शमितविश्वग्भयामय\nजय जय श्रीसुदर्शन जय जय श्रीसुदर्शन ॥',
+      transliteration:
+        'bhuvana-netra-strayī-maya savana-tejas-trayī-maya\nniravadhi-svādu-cin-maya nikhila-śakte jagan-maya |\namita-viśva-kriyā-maya śamita-viśvag-bhayā-maya\njaya jaya śrī-sudarśana jaya jaya śrī-sudarśana ||',
+      meaning:
+        'You are the eye of the world, embodiment of the three Vedas, and radiant with sacrificial splendor. You are limitless, sweet consciousness itself, all-powerful and pervading the universe. You are the infinite cosmic activity and the pacifier of all worldly fears. Victory, victory to You, O Sri Sudarshana!',
+    },
+  ],
+};
+
 export const stotras: Stotra[] = [
   achyutashtakam,
   annapoornaAshtakam,
@@ -4768,6 +4836,7 @@ export const stotras: Stotra[] = [
   saraswatiStotram,
   shivaAshtottara,
   subrahmanyaBhujangam,
+  sudarshanaAshtakam,
   venkateswaraSuprabhatam,
   vishnuSahasranamam,
 ];

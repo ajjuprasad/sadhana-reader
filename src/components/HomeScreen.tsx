@@ -12,9 +12,9 @@ import { useTranslation } from '../i18n/useTranslation';
 const sacredEase = [0.76, 0, 0.24, 1] as const;
 
 const recentItems = [
+  { id: 'sudarshana-ashtakam', title: 'Sudarshana Ashtakam', timestamp: '2026-04-19T20:00:00Z', desc: '8 verses by Vedanta Desika glorifying Lord Sudarshana, the divine discus of Lord Vishnu.' },
   { id: 'nirvana-shatakam', title: 'Nirvana Shatakam', timestamp: '2026-04-19T18:00:00Z', desc: '6 profound verses by Adi Shankaracharya declaring the nature of the Self as pure consciousness-bliss.' },
   { id: 'kalabhairava-ashtakam', title: 'Kalabhairava Ashtakam', timestamp: '2026-04-19T16:00:00Z', desc: '8 verses by Adi Shankaracharya praising Lord Kalabhairava, the fierce lord of time who presides over Kashi.' },
-  { id: 'annapoorna-ashtakam', title: 'Annapoorna Ashtakam', timestamp: '2026-04-19T12:00:00Z', desc: '9 verses by Adi Shankaracharya seeking alms of wisdom from Goddess Annapurna, sovereign of Kashi.' },
 ];
 
 function formatLocalTime(iso: string): string {

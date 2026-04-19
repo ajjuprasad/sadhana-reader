@@ -306,6 +306,24 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
         </>
       );
 
+    case 'sudarshana-ashtakam':
+      return (
+        <>
+          <circle cx="16" cy="16" r="7" {...s} strokeWidth="1.2" />
+          <circle cx="16" cy="16" r="3.5" {...s} strokeWidth="1" />
+          <circle cx="16" cy="16" r="1.2" stroke="none" fill="currentColor" />
+          {/* Flame points */}
+          <path d="M16 4 L17.2 8.5 L14.8 8.5Z" fill="currentColor" />
+          <path d="M16 28 L17.2 23.5 L14.8 23.5Z" fill="currentColor" />
+          <path d="M4 16 L8.5 14.8 L8.5 17.2Z" fill="currentColor" />
+          <path d="M28 16 L23.5 14.8 L23.5 17.2Z" fill="currentColor" />
+          <path d="M7.5 7.5 L10.8 10 L9.3 11.5Z" fill="currentColor" />
+          <path d="M24.5 24.5 L21.2 22 L22.7 20.5Z" fill="currentColor" />
+          <path d="M24.5 7.5 L22 10.8 L20.5 9.3Z" fill="currentColor" />
+          <path d="M7.5 24.5 L10 21.2 L11.5 22.7Z" fill="currentColor" />
+        </>
+      );
+
     default:
       return <circle cx="16" cy="16" r="8" {...s} strokeWidth="1.5" />;
   }
