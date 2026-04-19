@@ -4909,6 +4909,46 @@ const bilvashtakam: Stotra = {
       meaning:
         'Observing a fast on Monday, remaining without food for Lord Maheshwara, and performing offerings at night — all this equals the offering of one bilva leaf to Shiva.',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'रामलिङ्गप्रतिष्ठा च वैवाहिककृतं तथा ।\nतडागानिच सन्धानं एकबिल्वं शिवार्पणम् ॥',
+      transliteration:
+        'rāma-liṅga-pratiṣṭhā ca vaivāhika-kṛtaṁ tathā |\ntaḍāgāni ca sandhānaṁ eka-bilvaṁ śivārpaṇam ||',
+      meaning:
+        'The merit of consecrating a Rama Linga, performing marriages, and constructing reservoirs — all this equals the offering of one bilva leaf to Shiva.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'अखण्डबिल्वपत्रं च आयुतं शिवपूजनम् ।\nकृतं नाम सहस्रेण एकबिल्वं शिवार्पणम् ॥',
+      transliteration:
+        'akhaṇḍa-bilva-patraṁ ca āyutaṁ śiva-pūjanam |\nkṛtaṁ nāma sahasreṇa eka-bilvaṁ śivārpaṇam ||',
+      meaning:
+        'Offering unbroken bilva leaves ten thousand times and chanting Shiva\'s thousand names — all this equals the offering of one bilva leaf to Shiva.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'उमया सह देवेशं वाहनं नन्दिशेखरम् ।\nमुक्तिं च शाश्वतीं प्राप्य एकबिल्वं शिवार्पणम् ॥',
+      transliteration:
+        'umayā saha deveśaṁ vāhanaṁ nandi-śekharam |\nmuktiṁ ca śāśvatīṁ prāpya eka-bilvaṁ śivārpaṇam ||',
+      meaning:
+        'Beholding the Lord of the gods together with Uma, with Nandi as his vehicle, one attains eternal liberation — by offering one bilva leaf to Shiva.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Phala Shruti',
+      sanskrit:
+        'बिल्वाष्टकमिदं पुण्यं यः पठेच्छिवसन्निधौ ।\nशिवलोकमवाप्नोति एकबिल्वं शिवार्पणम् ॥',
+      transliteration:
+        'bilvāṣṭakam-idaṁ puṇyaṁ yaḥ paṭhec-chiva-sannidhau |\nśiva-lokam-avāpnoti eka-bilvaṁ śivārpaṇam ||',
+      meaning:
+        'Whoever recites this sacred Bilvashtakam in the presence of Lord Shiva attains Shiva Loka — by the offering of one bilva leaf to Shiva.',
+    },
   ],
 };
 
