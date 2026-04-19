@@ -324,6 +324,31 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
         </>
       );
 
+    case 'bilvashtakam':
+      // Bilva (bael) leaf — three-lobed sacred leaf offered to Shiva
+      return (
+        <>
+          <path d="M16 6 C14 10 10 14 10 19 C10 23 12.5 25 16 25 C19.5 25 22 23 22 19 C22 14 18 10 16 6Z" {...s} strokeWidth="1.3" />
+          <line x1="16" y1="8" x2="16" y2="25" {...s} strokeWidth="0.9" />
+          <path d="M16 13 C13 11 10 13 10 16" {...s} strokeWidth="0.8" />
+          <path d="M16 13 C19 11 22 13 22 16" {...s} strokeWidth="0.8" />
+          <line x1="16" y1="25" x2="16" y2="29" {...s} strokeWidth="1.1" />
+        </>
+      );
+
+    case 'argala-stotram':
+      // Trishul with shakti flame — Durga's power
+      return (
+        <>
+          <line x1="16" y1="8" x2="16" y2="29" {...s} strokeWidth="1.8" />
+          <path d="M16 8 C16 5 13 3 11 5" {...s} strokeWidth="1.3" />
+          <path d="M16 8 C16 5 19 3 21 5" {...s} strokeWidth="1.3" />
+          <path d="M16 3 L16 8" {...s} strokeWidth="1.3" />
+          <path d="M13 26 L19 26" {...s} strokeWidth="1.2" />
+          <path d="M16 3 C15 1.5 16 0.5 16.5 1 C17 0 16 -0.5 16 1" {...s} strokeWidth="0.8" fill="currentColor" opacity="0.5" />
+        </>
+      );
+
     default:
       return <circle cx="16" cy="16" r="8" {...s} strokeWidth="1.5" />;
   }
