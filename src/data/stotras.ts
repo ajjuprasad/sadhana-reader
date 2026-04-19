@@ -4668,6 +4668,74 @@ const kalabhairavaAshtakam: Stotra = {
   ],
 };
 
+const nirvanaShatakam: Stotra = {
+  id: 'nirvana-shatakam',
+  title: 'Nirvana Shatakam',
+  subtitle: 'निर्वाणषट्कम्',
+  deity: 'Shiva',
+  description:
+    'Six profound verses by Adi Shankaracharya declaring the nature of the Self as pure consciousness-bliss, negating all limited identifications. Also known as Atma Shatakam.',
+  benefits: [
+    'Reveals the true nature of the Self beyond body, mind, and ego',
+    'Cultivates Advaitic self-inquiry and detachment',
+    'Brings deep inner peace through the realization "I am Shiva"',
+  ],
+  estimatedMinutes: 2,
+  icon: 'nirvana-shatakam',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'मनोबुद्ध्यहङ्कारचित्तानि नाहं\nन च श्रोत्रजिह्वे न च घ्राणनेत्रे ।\nन च व्योमभूमिर्न तेजो न वायुः\nचिदानन्दरूपः शिवोऽहं शिवोऽहम् ॥',
+      transliteration:
+        'mano-buddhyahaṅkāra-cittāni nāhaṁ\nna ca śrotra-jihve na ca ghrāṇa-netre |\nna ca vyoma-bhūmir-na tejo na vāyuḥ\ncidānanda-rūpaḥ śivo\'haṁ śivo\'ham ||',
+      meaning:
+        'I am not the mind, intellect, ego, or memory. I am not the ears or tongue, nor the nose or eyes. I am not the sky, earth, fire, or air. I am the form of consciousness-bliss — I am Shiva, I am Shiva.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'न च प्राणसंज्ञो न वै पञ्चवायुः\nन वा सप्तधातुर्न वा पञ्चकोशः ।\nन वाक्पाणिपादं न चोपस्थपायु\nचिदानन्दरूपः शिवोऽहं शिवोऽहम् ॥',
+      transliteration:
+        'na ca prāṇa-saṁjño na vai pañca-vāyuḥ\nna vā sapta-dhātur-na vā pañca-kośaḥ |\nna vāk-pāṇi-pādaṁ na copastha-pāyu\ncidānanda-rūpaḥ śivo\'haṁ śivo\'ham ||',
+      meaning:
+        'I am not the vital breath, nor the five airs. I am not the seven bodily tissues, nor the five sheaths. I am not speech, hands, or feet, nor the organs of excretion or procreation. I am the form of consciousness-bliss — I am Shiva, I am Shiva.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'न मे द्वेषरागौ न मे लोभमोहौ\nमदो नैव मे नैव मात्सर्यभावः ।\nन धर्मो न चार्थो न कामो न मोक्षः\nचिदानन्दरूपः शिवोऽहं शिवोऽहम् ॥',
+      transliteration:
+        'na me dveṣa-rāgau na me lobha-mohau\nmado naiva me naiva mātsarya-bhāvaḥ |\nna dharmo na cārtho na kāmo na mokṣaḥ\ncidānanda-rūpaḥ śivo\'haṁ śivo\'ham ||',
+      meaning:
+        'I have neither aversion nor attachment, neither greed nor delusion. I have no pride, no envy. I have no dharma, no wealth, no desire, no liberation. I am the form of consciousness-bliss — I am Shiva, I am Shiva.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'न पुण्यं न पापं न सौख्यं न दुःखं\nन मन्त्रो न तीर्थं न वेदा न यज्ञाः ।\nअहं भोजनं नैव भोज्यं न भोक्ता\nचिदानन्दरूपः शिवोऽहं शिवोऽहम् ॥',
+      transliteration:
+        'na puṇyaṁ na pāpaṁ na saukhyaṁ na duḥkhaṁ\nna mantro na tīrthaṁ na vedā na yajñāḥ |\nahaṁ bhojanaṁ naiva bhojyaṁ na bhoktā\ncidānanda-rūpaḥ śivo\'haṁ śivo\'ham ||',
+      meaning:
+        'I have no merit or sin, no pleasure or pain. I am not mantras, pilgrimages, Vedas, or rituals. I am neither the food, nor the act of eating, nor the eater. I am the form of consciousness-bliss — I am Shiva, I am Shiva.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'न मे मृत्युशङ्का न मे जातिभेदः\nपिता नैव मे नैव माता न जन्म ।\nन बन्धुर्न मित्रं गुरुर्नैव शिष्यः\nचिदानन्दरूपः शिवोऽहं शिवोऽहम् ॥',
+      transliteration:
+        'na me mṛtyu-śaṅkā na me jāti-bhedaḥ\npitā naiva me naiva mātā na janma |\nna bandhur-na mitraṁ gurur-naiva śiṣyaḥ\ncidānanda-rūpaḥ śivo\'haṁ śivo\'ham ||',
+      meaning:
+        'I have no fear of death, no distinction of caste. I have no father, no mother, no birth. I have no relative, no friend, no guru, no disciple. I am the form of consciousness-bliss — I am Shiva, I am Shiva.',
+    },
+  ],
+};
+
 export const stotras: Stotra[] = [
   achyutashtakam,
   annapoornaAshtakam,
@@ -4682,6 +4750,7 @@ export const stotras: Stotra[] = [
   madhurashtakam,
   mahishasuraMardiniStotram,
   narasimhaKaravalambaStotram,
+  nirvanaShatakam,
   ramRakshaStotra,
   shivaTandavaStotram,
   mahalakshmiAshtakam,
@@ -4704,11 +4773,6 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'lalitha-sahasranamam',
     title: 'Lalitha Sahasranamam',
     deity: 'Lalita Tripurasundari',
-  },
-  {
-    id: 'nirvana-shatakam',
-    title: 'Nirvana Shatakam',
-    deity: 'Shiva',
   },
   {
     id: 'shiva-mahimna-stotram',
