@@ -6212,6 +6212,74 @@ const narayanaKavacham: Stotra = {
   ],
 };
 
+const shivaMahimnaStotram: Stotra = {
+  id: 'shiva-mahimna-stotram',
+  title: 'Shiva Mahimna Stotram',
+  subtitle: 'शिवमहिम्नस्तोत्रम्',
+  deity: 'Shiva',
+  description:
+    'A celebrated hymn of 43 verses by the gandharva Pushpadanta, praising the boundless glory of Lord Shiva. Composed in repentance after Pushpadanta unknowingly trespassed on sacred flowers, this stotra is revered as one of the finest expressions of devotion to Shiva.',
+  benefits: [
+    'Bestows deep devotion and direct experience of Shiva\'s grace',
+    'Removes sins and grants spiritual purification',
+    'Brings peace, wisdom, and liberation',
+  ],
+  estimatedMinutes: 15,
+  icon: 'shiva-mahimna-stotram',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'महिम्नः पारं ते परमविदुषो यद्यसदृशी\nस्तुतिर्ब्रह्मादीनामपि तदवसन्नास्त्वयि गिरः ।\nअथाऽवाच्यः सर्वः स्वमतिपरिणामावधि गृणन्\nममाप्येष स्तोत्रे हर निरपवादः परिकरः ॥',
+      transliteration:
+        'mahimnaḥ pāraṁ te parama-viduṣo yady-asadṛśī\nstutir-brahmādīnām-api tad-avasannāstvayi giraḥ |\nathā\'vācyaḥ sarvaḥ svamati-pariṇāmāvadhi gṛṇan\nmamāpyeṣa stotre hara nirapavādaḥ parikaraḥ ||',
+      meaning:
+        'O Hara, if even the praise of Brahma and other gods falls short of Your glory, which is beyond the reach of the greatest scholars — yet everyone who praises You according to their understanding is blameless. So too is my attempt at this hymn.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'अतीतः पन्थानं तव च महिमा वाङ्मनसयोः\nअतद्व्यावृत्त्या यं चकितमभिधत्ते श्रुतिरपि ।\nस कस्य स्तोतव्यः कतिविधगुणः कस्य विषयः\nपदे त्वर्वाचीने पतति न मनः कस्य न वचः ॥',
+      transliteration:
+        'atītaḥ panthānaṁ tava ca mahimā vāṅmanasayoḥ\natad-vyāvṛttyā yaṁ cakitam-abhidhatte śrutir-api |\nsa kasya stotavyaḥ katividha-guṇaḥ kasya viṣayaḥ\npade tvarvācīne patati na manaḥ kasya na vacaḥ ||',
+      meaning:
+        'Your glory transcends the paths of speech and mind. Even the Vedas describe You only by negation — "not this, not this." Who can adequately praise You? Of how many qualities? Yet whose mind and speech does not fall at Your feet in devotion?',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'मधुस्फीता वाचः परमममृतं निर्मितवतः\nस्तव ब्रह्मन्किं वागपि सुरगुरोर्विस्मयपदम् ।\nमम त्वेतां वाणीं गुणकथनपुण्येन भवतः\nपुनामीत्यर्थेऽस्मिन् पुरमथन बुद्धिर्व्यवसिता ॥',
+      transliteration:
+        'madhu-sphītā vācaḥ paramam-amṛtaṁ nirmitavataḥ\nstava brahman kiṁ vāgapi suraguror-vismayapadam |\nmama tvetāṁ vāṇīṁ guṇa-kathana-puṇyena bhavataḥ\npunāmīty-arthe \'smin puramathana buddhir-vyavasitā ||',
+      meaning:
+        'O Brahman, for You who created honey-sweet speech and supreme nectar — is even the speech of the guru of gods a matter of wonder? O destroyer of Tripura, my resolve is this: by narrating Your virtues, I shall purify my own speech.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'तवैश्वर्यं यत्तज्जगदुदयरक्षाप्रलयकृत्\nत्रयीवस्तु व्यस्तं तिसृषु गुणभिन्नासु तनुषु ।\nअभव्यानामस्मिन् वरद रमणीयामरमणीं\nविहन्तुं व्याक्रोशीं विदधत इहैके जडधियः ॥',
+      transliteration:
+        'tavaiśvaryaṁ yat-taj-jagad-udaya-rakṣā-pralaya-kṛt\ntrayī-vastu vyastaṁ tisṛṣu guṇa-bhinnāsu tanuṣu |\nabhavyānām-asmin varada ramaṇīyām-aramaṇīṁ\nvihantuṁ vyākrośīṁ vidadhata ihaike jaḍadhiyaḥ ||',
+      meaning:
+        'O bestower of boons, Your sovereignty — which creates, preserves, and dissolves the universe, distributed among Your three forms distinguished by the gunas — is the very subject of the Vedas. Yet some dull-witted ones try to deny this delightful truth.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'किमीहः किंकायः स खलु किमुपायस्त्रिभुवनं\nकिमाधारो धाता सृजति किमुपादान इति च ।\nअतर्क्यैश्वर्ये त्वय्यनवसरदुःस्थो हतधियः\nकुतर्कोऽयं कांश्चित्मुखरयति मोहाय जगतः ॥',
+      transliteration:
+        'kim-īhaḥ kiṁ-kāyaḥ sa khalu kim-upāyas-tribhuvanaṁ\nkim-ādhāro dhātā sṛjati kim-upādāna iti ca |\natarkyaiśvarye tvayy-anavasara-duḥstho hatadhiyaḥ\nkutarko \'yaṁ kāṁścit-mukharayati mohāya jagataḥ ||',
+      meaning:
+        'What is His purpose? What is His form? What is His means? What supports the Creator as He creates the three worlds? What is His material cause? — Such futile arguments by the deluded only confuse the world, for Your glory is beyond all reasoning.',
+    },
+  ],
+};
+
 const dakshinamurthyStotram: Stotra = {
   id: 'dakshinamurthy-stotram',
   title: 'Dakshinamurthy Stotram',
@@ -6358,6 +6426,7 @@ export const stotras: Stotra[] = [
   ramRakshaStotra,
   sankataNashanaGaneshaStotram,
   saraswatiStotram,
+  shivaMahimnaStotram,
   shivaPanchakshara,
   shivaTandavaStotram,
   shivaAshtottara,
@@ -6380,11 +6449,6 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'lalitha-sahasranamam',
     title: 'Lalitha Sahasranamam',
     deity: 'Lalita Tripurasundari',
-  },
-  {
-    id: 'shiva-mahimna-stotram',
-    title: 'Shiva Mahimna Stotram',
-    deity: 'Shiva',
   },
   {
     id: 'shri-rudram-namakam',
