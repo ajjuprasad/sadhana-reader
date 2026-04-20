@@ -5,6 +5,7 @@ import HomeScreen from './components/HomeScreen';
 import StotraDetail from './components/StotraDetail';
 import ReaderScreen from './components/ReaderScreen';
 import ProfileScreen from './components/ProfileScreen';
+import CalendarPage from './components/CalendarPage';
 import MandalaBackground from './components/MandalaBackground';
 import { useSettings } from './hooks/useSettings';
 import { LanguageProvider } from './i18n/LanguageContext';
@@ -45,6 +46,7 @@ export default function App() {
             <Route path="/" element={<HomeScreen />} />
             <Route path="/stotra/:stotraId" element={<StotraDetail />} />
             <Route path="/read/:stotraId" element={<ReaderScreen settingsState={settingsState} />} />
+            <Route path="/panchanga" element={<CalendarPage />} />
             <Route path="/profile" element={<ProfileScreen settingsState={settingsState} />} />
           </Routes>
         </div>
