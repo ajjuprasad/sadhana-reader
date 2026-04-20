@@ -2,19 +2,23 @@ import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { stotras } from '../data/stotras';
+import { stories } from '../data/stories';
 import { useFavorites } from '../hooks/useFavorites';
 import StotraCard from './StotraCard';
+import StoryCard from './StoryCard';
 
 export default function FavoritesPage() {
   const navigate = useNavigate();
   const { favoriteIds } = useFavorites();
   const favoriteStotras = stotras.filter((s) => favoriteIds.includes(s.id));
+  const favoriteStories = stories.filter((s) => favoriteIds.includes(s.id));
+  const hasAny = favoriteStotras.length > 0 || favoriteStories.length > 0;
 
   return (
     <div className="relative min-h-screen pb-8">
       <Helmet>
         <title>My Favorites | Sadhana Reader</title>
-        <meta name="description" content="Your favorite stotras on Sadhana Reader." />
+        <meta name="description" content="Your favorite stotras and stories on Sadhana Reader." />
       </Helmet>
 
       <div className="sticky top-0 z-30" style={{ backgroundColor: 'var(--color-bg)' }}>
@@ -37,22 +41,68 @@ export default function FavoritesPage() {
       </div>
 
       <div className="max-w-3xl mx-auto px-4 mt-4">
-        {favoriteStotras.length > 0 ? (
-          <motion.div
-            className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.3 }}
-          >
-            {favoriteStotras.map((stotra, index) => (
-              <StotraCard
-                key={stotra.id}
-                stotra={stotra}
-                index={index}
-                onClick={() => navigate(`/stotra/${stotra.id}`)}
-              />
-            ))}
-          </motion.div>
+        {hasAny ? (
+          <>
+            {favoriteStotras.length > 0 && (
+              <>
+                <div className="flex items-center justify-center gap-2 mb-5">
+                  <div className="h-px w-12" style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }} />
+                  <h2
+                    className="font-hind font-semibold uppercase"
+                    style={{ fontSize: '0.625rem', color: 'var(--color-accent-primary)', letterSpacing: '0.18em' }}
+                  >
+                    Stotras ({favoriteStotras.length})
+                  </h2>
+                  <div className="h-px w-12" style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }} />
+                </div>
+                <motion.div
+                  className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  {favoriteStotras.map((stotra, index) => (
+                    <StotraCard
+                      key={stotra.id}
+                      stotra={stotra}
+                      index={index}
+                      onClick={() => navigate(`/stotra/${stotra.id}`)}
+                    />
+                  ))}
+                </motion.div>
+              </>
+            )}
+
+            {favoriteStories.length > 0 && (
+              <div className={favoriteStotras.length > 0 ? 'mt-10' : ''}>
+                <div className="flex items-center justify-center gap-2 mb-5">
+                  <div className="h-px w-12" style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }} />
+                  <h2
+                    className="font-hind font-semibold uppercase"
+                    style={{ fontSize: '0.625rem', color: 'var(--color-accent-primary)', letterSpacing: '0.18em' }}
+                  >
+                    Stories ({favoriteStories.length})
+                  </h2>
+                  <div className="h-px w-12" style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }} />
+                </div>
+                <motion.div
+                  className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  {favoriteStories.map((story, index) => (
+                    <StoryCard
+                      key={story.id}
+                      story={story}
+                      index={index}
+                      onClick={() => navigate(`/story/${story.id}`)}
+                    />
+                  ))}
+                </motion.div>
+              </div>
+            )}
+          </>
         ) : (
           <motion.div
             className="text-center py-20"
@@ -67,7 +117,7 @@ export default function FavoritesPage() {
               No favorites yet
             </p>
             <p className="font-body text-sm" style={{ color: 'var(--color-text-muted)' }}>
-              Tap the heart icon on any stotra to add it here.
+              Tap the heart icon on any stotra or story to add it here.
             </p>
           </motion.div>
         )}
