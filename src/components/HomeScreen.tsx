@@ -752,9 +752,6 @@ export default function HomeScreen() {
         <div className="h-px w-full mb-6" style={{ backgroundColor: 'var(--color-border, rgba(0,0,0,0.06))' }} />
         <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">
           {[
-            { label: 'All Stotras', path: '/stotras' },
-            { label: 'Favorites', path: '/favorites' },
-            { label: 'Coming Soon', path: '/coming-soon' },
             { label: 'Pañchāṅga 2026', path: '/panchanga' },
             { label: 'About', path: '/about' },
           ].map((link) => (
