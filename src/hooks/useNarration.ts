@@ -22,6 +22,12 @@ const RATE_MAP: Record<NarrationSpeed, string> = {
   fast: '+5%',
 };
 
+const FALLBACK_RATE: Record<NarrationSpeed, number> = {
+  slow: 0.75,
+  normal: 0.85,
+  fast: 1.0,
+};
+
 function pitchToSsml(pitch: number): string {
   const pct = Math.round((pitch - 1) * 100);
   return pct >= 0 ? `+${pct}Hz` : `${pct}Hz`;
@@ -42,7 +48,9 @@ export function useNarration(options: NarrationOptions) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const pauseTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const audioCacheRef = useRef<Map<number, string>>(new Map());
-  const useFallbackRef = useRef(false);
+  const useEdgeRef = useRef(true);
+  const optionsRef = useRef(options);
+  optionsRef.current = options;
 
   const clearAudioCache = useCallback(() => {
     audioCacheRef.current.forEach((url) => URL.revokeObjectURL(url));
@@ -74,110 +82,109 @@ export function useNarration(options: NarrationOptions) {
     };
   }, [clearAudioCache]);
 
-  const prefetchNext = useCallback((index: number) => {
-    const next = index + 1;
-    if (next >= segmentsRef.current.length) return;
-    if (audioCacheRef.current.has(next)) return;
+  const getPauseMs = (index: number) => {
+    if (index === 0) return 1500;
+    if (index === segmentsRef.current.length - 2) return 1200;
+    return 800;
+  };
 
-    const voice = VOICES[options.voiceGender];
-    synthesize(segmentsRef.current[next], {
-      voice,
-      rate: RATE_MAP[options.speed],
-      pitch: pitchToSsml(options.pitch),
-    }).then((blob) => {
-      if (activeRef.current) {
-        audioCacheRef.current.set(next, URL.createObjectURL(blob));
-      }
-    }).catch(() => {});
-  }, [options.voiceGender, options.speed, options.pitch]);
-
-  const speakWithFallback = useCallback((index: number) => {
+  const playFallback = useCallback((index: number) => {
     if (!activeRef.current) return;
     if (index >= segmentsRef.current.length) {
       activeRef.current = false;
-      setState((s) => ({ ...s, isPlaying: false, isPaused: false, currentIndex: segmentsRef.current.length - 1 }));
+      setState((s) => ({ ...s, isPlaying: false, isPaused: false }));
       return;
     }
 
+    useEdgeRef.current = false;
     indexRef.current = index;
     setState((s) => ({ ...s, currentIndex: index, isPlaying: true, isPaused: false }));
 
     const utterance = new SpeechSynthesisUtterance(segmentsRef.current[index]);
     const voices = speechSynthesis.getVoices();
     const english = voices.filter((v) => v.lang.startsWith('en'));
-    if (english.length > 0) utterance.voice = english[0];
-    utterance.rate = options.speed === 'slow' ? 0.75 : options.speed === 'fast' ? 1.0 : 0.85;
-    utterance.pitch = options.pitch;
+    const indian = english.filter((v) => v.lang === 'en-IN' || v.name.toLowerCase().includes('india'));
+    const neural = english.filter((v) => {
+      const n = v.name.toLowerCase();
+      return n.includes('natural') || n.includes('neural') || n.includes('enhanced');
+    });
+    const preferred = indian.length > 0 ? indian : neural.length > 0 ? neural : english;
+    if (preferred.length > 0) utterance.voice = preferred[0];
+
+    const opts = optionsRef.current;
+    utterance.rate = FALLBACK_RATE[opts.speed];
+    utterance.pitch = opts.pitch;
 
     utterance.onend = () => {
       if (!activeRef.current) return;
-      const pauseMs = index === 0 ? 1500 : index === segmentsRef.current.length - 2 ? 1200 : 800;
-      pauseTimerRef.current = setTimeout(() => speakWithFallback(index + 1), pauseMs);
+      pauseTimerRef.current = setTimeout(() => playFallback(index + 1), getPauseMs(index));
+    };
+    utterance.onerror = () => {
+      if (!activeRef.current) return;
+      pauseTimerRef.current = setTimeout(() => playFallback(index + 1), 300);
     };
 
     speechSynthesis.speak(utterance);
-  }, [options.speed, options.pitch]);
+  }, []);
 
-  const speakSegment = useCallback((index: number) => {
+  const playEdge = useCallback((index: number) => {
     if (!activeRef.current) return;
     if (index >= segmentsRef.current.length) {
       activeRef.current = false;
-      setState((s) => ({ ...s, isPlaying: false, isPaused: false, currentIndex: segmentsRef.current.length - 1 }));
-      return;
-    }
-
-    if (useFallbackRef.current) {
-      speakWithFallback(index);
+      setState((s) => ({ ...s, isPlaying: false, isPaused: false }));
       return;
     }
 
     indexRef.current = index;
     setState((s) => ({ ...s, currentIndex: index, isPlaying: true, isPaused: false }));
 
-    const playAudio = (url: string) => {
+    const doPlay = (url: string) => {
       const audio = new Audio(url);
       audioRef.current = audio;
-
       audio.onended = () => {
         if (!activeRef.current) return;
-        const pauseMs = index === 0 ? 1500 : index === segmentsRef.current.length - 2 ? 1200 : 800;
-        pauseTimerRef.current = setTimeout(() => speakSegment(index + 1), pauseMs);
+        pauseTimerRef.current = setTimeout(() => playEdge(index + 1), getPauseMs(index));
       };
+      audio.onerror = () => playFallback(index);
+      audio.play().catch(() => playFallback(index));
 
-      audio.onerror = () => {
-        if (!activeRef.current) return;
-        speakSegment(index + 1);
-      };
-
-      audio.play().catch(() => {
-        if (activeRef.current) speakSegment(index + 1);
-      });
-
-      prefetchNext(index);
+      // Prefetch next segment
+      const next = index + 1;
+      if (next < segmentsRef.current.length && !audioCacheRef.current.has(next)) {
+        const opts = optionsRef.current;
+        synthesize(segmentsRef.current[next], {
+          voice: VOICES[opts.voiceGender],
+          rate: RATE_MAP[opts.speed],
+          pitch: pitchToSsml(opts.pitch),
+        }).then((blob) => {
+          if (activeRef.current) {
+            audioCacheRef.current.set(next, URL.createObjectURL(blob));
+          }
+        }).catch(() => {});
+      }
     };
 
     const cached = audioCacheRef.current.get(index);
     if (cached) {
-      playAudio(cached);
+      doPlay(cached);
       return;
     }
 
-    const voice = VOICES[options.voiceGender];
+    const opts = optionsRef.current;
     synthesize(segmentsRef.current[index], {
-      voice,
-      rate: RATE_MAP[options.speed],
-      pitch: pitchToSsml(options.pitch),
+      voice: VOICES[opts.voiceGender],
+      rate: RATE_MAP[opts.speed],
+      pitch: pitchToSsml(opts.pitch),
     }).then((blob) => {
       if (!activeRef.current) return;
       const url = URL.createObjectURL(blob);
       audioCacheRef.current.set(index, url);
-      playAudio(url);
+      doPlay(url);
     }).catch(() => {
       if (!activeRef.current) return;
-      useFallbackRef.current = true;
-      speakWithFallback(index);
+      playFallback(index);
     });
-  }, [options.voiceGender, options.speed, options.pitch, prefetchNext, speakWithFallback]);
+  }, [playFallback]);
 
   const start = useCallback((title: string, paragraphs: string[], moral: string) => {
     if (audioRef.current) {
@@ -187,14 +194,15 @@ export function useNarration(options: NarrationOptions) {
     speechSynthesis.cancel();
     if (pauseTimerRef.current) clearTimeout(pauseTimerRef.current);
     clearAudioCache();
-    useFallbackRef.current = false;
+    useEdgeRef.current = true;
 
-    const greeting = `Hello! Let me tell you a wonderful story called "${title}". Are you ready? Here we go!`;
+    const greeting = `Hello! Let me tell you a wonderful story called ${title}. Are you ready? Here we go!`;
     const closing = `And that's the end of our story! Remember: ${moral}`;
     const segments = [greeting, ...paragraphs, closing];
 
     segmentsRef.current = segments;
     activeRef.current = true;
+    indexRef.current = 0;
     setState({
       isActive: true,
       isPlaying: true,
@@ -203,12 +211,12 @@ export function useNarration(options: NarrationOptions) {
       totalSegments: segments.length,
     });
 
-    speakSegment(0);
-  }, [speakSegment, clearAudioCache]);
+    playEdge(0);
+  }, [playEdge, clearAudioCache]);
 
   const pause = useCallback(() => {
     if (pauseTimerRef.current) clearTimeout(pauseTimerRef.current);
-    if (useFallbackRef.current) {
+    if (!useEdgeRef.current) {
       speechSynthesis.pause();
     } else if (audioRef.current) {
       audioRef.current.pause();
@@ -217,19 +225,19 @@ export function useNarration(options: NarrationOptions) {
   }, []);
 
   const resume = useCallback(() => {
-    if (useFallbackRef.current) {
+    if (!useEdgeRef.current) {
       if (speechSynthesis.paused) {
         speechSynthesis.resume();
       } else {
-        speakWithFallback(indexRef.current);
+        playFallback(indexRef.current);
       }
     } else if (audioRef.current && audioRef.current.src) {
       audioRef.current.play().catch(() => {});
     } else {
-      speakSegment(indexRef.current);
+      playEdge(indexRef.current);
     }
     setState((s) => ({ ...s, isPlaying: true, isPaused: false }));
-  }, [speakSegment, speakWithFallback]);
+  }, [playEdge, playFallback]);
 
   const stop = useCallback(() => {
     cleanup();
