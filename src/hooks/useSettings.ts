@@ -1,12 +1,17 @@
 import { useState, useEffect, useCallback } from 'react';
 
 export type Language = 'en' | 'hi' | 'kn' | 'te' | 'ta' | 'ml';
+export type NarrationVoiceGender = 'female' | 'male';
+export type NarrationSpeed = 'slow' | 'normal' | 'fast';
 
 export interface Settings {
   fontSize: number;
   deepamMode: boolean;
   hideSanskrit: boolean;
   language: Language;
+  narrationVoice: NarrationVoiceGender;
+  narrationSpeed: NarrationSpeed;
+  narrationPitch: number;
 }
 
 const STORAGE_KEY = 'sadhana-reader-settings';
@@ -16,6 +21,9 @@ const defaultSettings: Settings = {
   deepamMode: false,
   hideSanskrit: false,
   language: 'en',
+  narrationVoice: 'female',
+  narrationSpeed: 'normal',
+  narrationPitch: 1.0,
 };
 
 function loadSettings(): Settings {
