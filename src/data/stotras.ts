@@ -6945,6 +6945,56 @@ const shriRudramNamakam: Stotra = {
       meaning:
         'Salutations to the drum and to the one who beats it. Salutations to the bold and to the one who touches gently. Salutations to the messenger and to the one who is sent forth.',
     },
+    {
+      id: 36,
+      verseLabel: 'Anuvaka 6.2',
+      sanskrit:
+        'नमो निषङ्गिणे चेषुधिमते च\nनमस्तीक्ष्णेषवे चायुधिने च\nनमः स्वायुधाय च सुधन्वने च',
+      transliteration:
+        'namo niṣaṅgiṇe ceṣudhimate ca\nnamastīkṣṇeṣave cāyudhine ca\nnamaḥ svāyudhāya ca sudhanvane ca',
+      meaning:
+        'Salutations to the one with a quiver and to the one with arrows. Salutations to the one with sharp arrows and to the one armed with weapons. Salutations to the one with excellent weapons and to the one with a good bow.',
+    },
+    {
+      id: 37,
+      verseLabel: 'Anuvaka 6.3',
+      sanskrit:
+        'नमः स्रुत्याय च पथ्याय च\nनमः काट्याय च नीप्याय च\nनमः सूद्याय च सरस्याय च',
+      transliteration:
+        'namaḥ srutyāya ca pathyāya ca\nnamaḥ kāṭyāya ca nīpyāya ca\nnamaḥ sūdyāya ca sarasyāya ca',
+      meaning:
+        'Salutations to the one in the stream and on the path. Salutations to the one in the marsh and in the low-lying waters. Salutations to the one in the pool and in the lake.',
+    },
+    {
+      id: 38,
+      verseLabel: 'Anuvaka 7.2',
+      sanskrit:
+        'नमो नाद्याय च वैशन्ताय च\nनमः कूप्याय चावट्याय च\nनमो वर्ष्याय चावर्ष्याय च',
+      transliteration:
+        'namo nādyāya ca vaiśantāya ca\nnamaḥ kūpyāya cāvaṭyāya ca\nnamo varṣyāya cāvarṣyāya ca',
+      meaning:
+        'Salutations to the one in the rivers and in the ponds. Salutations to the one in the wells and in the pits. Salutations to the one in the rain and in the rainless.',
+    },
+    {
+      id: 39,
+      verseLabel: 'Anuvaka 7.3',
+      sanskrit:
+        'नमो मेघ्याय च विद्युत्याय च\nनमो ईध्रियाय चातप्याय च\nनमो वात्याय च रेष्मियाय च',
+      transliteration:
+        'namo meghyāya ca vidyutyāya ca\nnamo īdhriyāya cātapyāya ca\nnamo vātyāya ca reṣmiyāya ca',
+      meaning:
+        'Salutations to the one in the clouds and in the lightning. Salutations to the one in the clear sky and in the sunshine. Salutations to the one in the wind and in the storm.',
+    },
+    {
+      id: 40,
+      verseLabel: 'Anuvaka 7.4',
+      sanskrit:
+        'नमो वास्तव्याय च वास्तुपाय च\nनमः सोमाय च रुद्राय च\nनमस्ताम्राय चारुणाय च',
+      transliteration:
+        'namo vāstavyāya ca vāstupāya ca\nnamaḥ somāya ca rudrāya ca\nnamastāmrāya cāruṇāya ca',
+      meaning:
+        'Salutations to the one who dwells in houses and to the guardian of the homestead. Salutations to Soma and to Rudra. Salutations to the copper-hued and to the dawn-colored one.',
+    },
   ],
 };
 
