@@ -6795,6 +6795,56 @@ const shriRudramNamakam: Stotra = {
       meaning:
         'Unstring Your bow, loosen the string from both ends. And the arrows in Your hand, O blessed one, cast them away.',
     },
+    {
+      id: 21,
+      verseLabel: 'Anuvaka 1.10',
+      sanskrit:
+        'अवतत्य धनुस्त्वं सहस्राक्ष शतेषुधे ।\nनिशीर्य शल्यानां मुखा शिवो नः सुमना भव ॥',
+      transliteration:
+        'avatatya dhanus-tvaṁ sahasrākṣa śateṣudhe |\nniśīrya śalyānāṁ mukhā śivo naḥ sumanā bhava ||',
+      meaning:
+        'Having unstrung Your bow, O thousand-eyed one with a hundred quivers — blunt the points of Your arrows and be gracious and benevolent to us.',
+    },
+    {
+      id: 22,
+      verseLabel: 'Anuvaka 1.11',
+      sanskrit:
+        'विज्यं धनुः कपर्दिनो विशल्यो बाणवाँ उत ।\nअनेशन्नस्यैषव आभुरस्य निषङ्गथिः ॥',
+      transliteration:
+        'vijyaṁ dhanuḥ kapardino viśalyo bāṇavāṁ uta |\naneśann-asyaiṣava ābhurasya niṣaṅgathiḥ ||',
+      meaning:
+        'May the bow of the matted-haired one be unstrung, His arrows pointless. May His missiles lose their power and His quiver become empty.',
+    },
+    {
+      id: 23,
+      verseLabel: 'Anuvaka 2.2',
+      sanskrit:
+        'नमो हरिकेशायोपवीतिने पुष्टानां पतये नमो नमो\nभवस्य हेत्यै जगतां पतये नमो नमः ॥',
+      transliteration:
+        'namo harikeśāyopavītine puṣṭānāṁ pataye namo namo\nbhavasya hetyai jagatāṁ pataye namo namaḥ ||',
+      meaning:
+        'Salutations to the green-haired one who wears the sacred thread, the lord of the well-nourished. Salutations to the weapon of Bhava, the lord of the worlds.',
+    },
+    {
+      id: 24,
+      verseLabel: 'Anuvaka 2.3',
+      sanskrit:
+        'नमो रुद्रायाततविने क्षेत्राणां पतये नमो नमः\nसूतायाहन्त्याय वनानां पतये नमो नमः ॥',
+      transliteration:
+        'namo rudrāyātatavine kṣetrāṇāṁ pataye namo namo\nsūtāyāhantyāya vanānāṁ pataye namo namaḥ ||',
+      meaning:
+        'Salutations to Rudra who strings His bow, the lord of the fields. Salutations to the charioteer who strikes, the lord of the forests.',
+    },
+    {
+      id: 25,
+      verseLabel: 'Anuvaka 2.4',
+      sanskrit:
+        'नमो रोहिताय स्थपतये वृक्षाणां पतये नमो नमो\nमन्त्रिणे वाणिजाय कक्षाणां पतये नमो नमः ॥',
+      transliteration:
+        'namo rohitāya sthapataye vṛkṣāṇāṁ pataye namo namo\nmantriṇe vāṇijāya kakṣāṇāṁ pataye namo namaḥ ||',
+      meaning:
+        'Salutations to the red one, the architect, the lord of the trees. Salutations to the counselor and merchant, the lord of the thickets.',
+    },
   ],
 };
 
