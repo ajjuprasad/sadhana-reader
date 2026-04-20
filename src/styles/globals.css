@@ -48,17 +48,6 @@ body {
   overflow-x: hidden;
 }
 
-@media (min-width: 640px) {
-  :root {
-    --app-shell-shadow: 0 0 40px rgba(0, 0, 0, 0.06);
-  }
-  body {
-    background-color: #F5F0E0;
-  }
-  [data-theme='deepam'] body {
-    background-color: #0F0B04;
-  }
-}
 
 #root {
   min-height: 100vh;
