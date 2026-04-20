@@ -6212,6 +6212,324 @@ const narayanaKavacham: Stotra = {
   ],
 };
 
+const shivaMahimnaStotram: Stotra = {
+  id: 'shiva-mahimna-stotram',
+  title: 'Shiva Mahimna Stotram',
+  subtitle: 'शिवमहिम्नस्तोत्रम्',
+  deity: 'Shiva',
+  description:
+    'A celebrated hymn of 43 verses by the gandharva Pushpadanta, praising the boundless glory of Lord Shiva. Composed in repentance after Pushpadanta unknowingly trespassed on sacred flowers, this stotra is revered as one of the finest expressions of devotion to Shiva.',
+  benefits: [
+    'Bestows deep devotion and direct experience of Shiva\'s grace',
+    'Removes sins and grants spiritual purification',
+    'Brings peace, wisdom, and liberation',
+  ],
+  estimatedMinutes: 15,
+  icon: 'shiva-mahimna-stotram',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'महिम्नः पारं ते परमविदुषो यद्यसदृशी\nस्तुतिर्ब्रह्मादीनामपि तदवसन्नास्त्वयि गिरः ।\nअथाऽवाच्यः सर्वः स्वमतिपरिणामावधि गृणन्\nममाप्येष स्तोत्रे हर निरपवादः परिकरः ॥',
+      transliteration:
+        'mahimnaḥ pāraṁ te parama-viduṣo yady-asadṛśī\nstutir-brahmādīnām-api tad-avasannāstvayi giraḥ |\nathā\'vācyaḥ sarvaḥ svamati-pariṇāmāvadhi gṛṇan\nmamāpyeṣa stotre hara nirapavādaḥ parikaraḥ ||',
+      meaning:
+        'O Hara, if even the praise of Brahma and other gods falls short of Your glory, which is beyond the reach of the greatest scholars — yet everyone who praises You according to their understanding is blameless. So too is my attempt at this hymn.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'अतीतः पन्थानं तव च महिमा वाङ्मनसयोः\nअतद्व्यावृत्त्या यं चकितमभिधत्ते श्रुतिरपि ।\nस कस्य स्तोतव्यः कतिविधगुणः कस्य विषयः\nपदे त्वर्वाचीने पतति न मनः कस्य न वचः ॥',
+      transliteration:
+        'atītaḥ panthānaṁ tava ca mahimā vāṅmanasayoḥ\natad-vyāvṛttyā yaṁ cakitam-abhidhatte śrutir-api |\nsa kasya stotavyaḥ katividha-guṇaḥ kasya viṣayaḥ\npade tvarvācīne patati na manaḥ kasya na vacaḥ ||',
+      meaning:
+        'Your glory transcends the paths of speech and mind. Even the Vedas describe You only by negation — "not this, not this." Who can adequately praise You? Of how many qualities? Yet whose mind and speech does not fall at Your feet in devotion?',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'मधुस्फीता वाचः परमममृतं निर्मितवतः\nस्तव ब्रह्मन्किं वागपि सुरगुरोर्विस्मयपदम् ।\nमम त्वेतां वाणीं गुणकथनपुण्येन भवतः\nपुनामीत्यर्थेऽस्मिन् पुरमथन बुद्धिर्व्यवसिता ॥',
+      transliteration:
+        'madhu-sphītā vācaḥ paramam-amṛtaṁ nirmitavataḥ\nstava brahman kiṁ vāgapi suraguror-vismayapadam |\nmama tvetāṁ vāṇīṁ guṇa-kathana-puṇyena bhavataḥ\npunāmīty-arthe \'smin puramathana buddhir-vyavasitā ||',
+      meaning:
+        'O Brahman, for You who created honey-sweet speech and supreme nectar — is even the speech of the guru of gods a matter of wonder? O destroyer of Tripura, my resolve is this: by narrating Your virtues, I shall purify my own speech.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'तवैश्वर्यं यत्तज्जगदुदयरक्षाप्रलयकृत्\nत्रयीवस्तु व्यस्तं तिसृषु गुणभिन्नासु तनुषु ।\nअभव्यानामस्मिन् वरद रमणीयामरमणीं\nविहन्तुं व्याक्रोशीं विदधत इहैके जडधियः ॥',
+      transliteration:
+        'tavaiśvaryaṁ yat-taj-jagad-udaya-rakṣā-pralaya-kṛt\ntrayī-vastu vyastaṁ tisṛṣu guṇa-bhinnāsu tanuṣu |\nabhavyānām-asmin varada ramaṇīyām-aramaṇīṁ\nvihantuṁ vyākrośīṁ vidadhata ihaike jaḍadhiyaḥ ||',
+      meaning:
+        'O bestower of boons, Your sovereignty — which creates, preserves, and dissolves the universe, distributed among Your three forms distinguished by the gunas — is the very subject of the Vedas. Yet some dull-witted ones try to deny this delightful truth.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'किमीहः किंकायः स खलु किमुपायस्त्रिभुवनं\nकिमाधारो धाता सृजति किमुपादान इति च ।\nअतर्क्यैश्वर्ये त्वय्यनवसरदुःस्थो हतधियः\nकुतर्कोऽयं कांश्चित्मुखरयति मोहाय जगतः ॥',
+      transliteration:
+        'kim-īhaḥ kiṁ-kāyaḥ sa khalu kim-upāyas-tribhuvanaṁ\nkim-ādhāro dhātā sṛjati kim-upādāna iti ca |\natarkyaiśvarye tvayy-anavasara-duḥstho hatadhiyaḥ\nkutarko \'yaṁ kāṁścit-mukharayati mohāya jagataḥ ||',
+      meaning:
+        'What is His purpose? What is His form? What is His means? What supports the Creator as He creates the three worlds? What is His material cause? — Such futile arguments by the deluded only confuse the world, for Your glory is beyond all reasoning.',
+    },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'अजन्मानो लोकाः किमवयववन्तोऽपि जगतां\nअधिष्ठातारं किं भवविधिरनादृत्य भवति ।\nअनीशो वा कुर्याद्भुवनजनने कः परिकरो\nयतो मन्दास्त्वां प्रत्यमरवर संशेरत इमे ॥',
+      transliteration:
+        'ajanmāno lokāḥ kim-avayavavanto \'pi jagatāṁ\nadhiṣṭhātāraṁ kiṁ bhava-vidhir-anādṛtya bhavati |\nanīśo vā kuryād-bhuvana-janane kaḥ parikaro\nyato mandās-tvāṁ pratyamara-vara saṁśerata ime ||',
+      meaning:
+        'Are the worlds unborn? Are they composed of parts? Can the process of creation proceed without a presiding Lord? Can a powerless being create the universe? — O best of immortals, it is about You that the dull-witted harbor such doubts.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'त्रयी साङ्ख्यं योगः पशुपतिमतं वैष्णवमिति\nप्रभिन्ने प्रस्थाने परमिदमदः पथ्यमिति च ।\nरुचीनां वैचित्र्यादृजुकुटिलनानापथजुषां\nनृणामेको गम्यस्त्वमसि पयसामर्णव इव ॥',
+      transliteration:
+        'trayī sāṅkhyaṁ yogaḥ paśupati-mataṁ vaiṣṇavam-iti\nprabhinnē prasthāne param-idam-adaḥ pathyam-iti ca |\nrucīnāṁ vaicitryād-ṛju-kuṭila-nānā-patha-juṣāṁ\nnṛṇām-eko gamyas-tvam-asi payasām-arṇava iva ||',
+      meaning:
+        'The Vedas, Sankhya, Yoga, Shaiva, Vaishnava — these different paths each claim "this alone is supreme." But just as rivers flowing by various straight and winding courses all reach the ocean, so You alone are the one destination for all people of diverse preferences.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'महोक्षः खट्वाङ्गं परशुरजिनं भस्म फणिनः\nकपालं चेतीयत्तव वरद तन्त्रोपकरणम् ।\nसुरास्तां तामृद्धिं दधति तु भवद्भूप्रणिहितां\nन हि स्वात्मारामं विषयमृगतृष्णा भ्रमयति ॥',
+      transliteration:
+        'mahokṣaḥ khaṭvāṅgaṁ paraśur-ajinaṁ bhasma phaṇinaḥ\nkapālaṁ cetīyat-tava varada tantropakaraṇam |\nsurāstāṁ tām-ṛddhiṁ dadhati tu bhavad-bhūpraṇihitāṁ\nna hi svātmārāmaṁ viṣaya-mṛga-tṛṣṇā bhramayati ||',
+      meaning:
+        'O bestower of boons, Your ritual implements are a great bull, a skull-staff, an axe, a tiger skin, ashes, serpents, and a skull bowl. The gods hold their lordly possessions only at Your behest. The mirage of worldly desires does not delude one who delights in the Self.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Verse 9',
+      sanskrit:
+        'ध्रुवं कश्चित्सर्वं सकलमपरस्त्वध्रुवमिदं\nपरो ध्रौव्याध्रौव्ये जगति गदति व्यस्तविषये ।\nसमस्तेऽप्येतस्मिन् पुरमथन तैर्विस्मित इव\nस्तुवन् जिह्रेमि त्वां न खलु ननु धृष्टा मुखरता ॥',
+      transliteration:
+        'dhruvaṁ kaścit-sarvaṁ sakalam-aparas-tv-adhruvam-idaṁ\nparo dhrauvy-ādhrauvy-e jagati gadati vyasta-viṣaye |\nsamaste \'py-etasmin puramathana tair-vismita iva\nstuvan jihremi tvāṁ na khalu nanu dhṛṣṭā mukharatā ||',
+      meaning:
+        'Some say everything is eternal; others say all is transient; still others speak of both permanence and impermanence in different aspects. O destroyer of the three cities, seeing all these learned ones perplexed, I venture to praise You — is not bold speech better than silence?',
+    },
+    {
+      id: 10,
+      verseLabel: 'Verse 10',
+      sanskrit:
+        'तवैश्वर्यं यत्नाद्यदुपरि विरिञ्चिर्हरिरधः\nपरिच्छेत्तुं यातावनलमनलस्कन्धवपुषः ।\nततो भक्तिश्रद्धाभरगुरुगृणद्भ्यां गिरिश यत्\nस्वयं तस्थे ताभ्यां तव किमनुवृत्तिर्न फलति ॥',
+      transliteration:
+        'tavaiśvaryaṁ yatnād-yad-upari viriñcir-harir-adhaḥ\nparicchettuṁ yātāv-analam-anala-skandha-vapuṣaḥ |\ntato bhakti-śraddhā-bhara-guru-gṛṇadbhyāṁ giriśa yat\nsvayaṁ tasthe tābhyāṁ tava kim-anuvṛttir-na phalati ||',
+      meaning:
+        'O Lord of the mountains, when Brahma flew upward and Vishnu dug downward to find the ends of Your column of fire, they could not. Then You, pleased by their devotion and faith, revealed Yourself to them. Does not sincere devotion to You always bear fruit?',
+    },
+    {
+      id: 11,
+      verseLabel: 'Verse 11',
+      sanskrit:
+        'अयत्नादापाद्य त्रिभुवनमवैरव्यतिकरं\nदशास्यो यद्बाहूनभृत रणकण्डूपरवशान् ।\nशिरःपद्मश्रेणीरचितचरणाम्भोरुहबलेः\nस्थिरायास्त्वद्भक्तेस्त्रिपुरहर विस्फूर्जितमिदम् ॥',
+      transliteration:
+        'ayatnād-āpādya tribhuvanam-avairavyatikaraṁ\ndaśāsyo yad-bāhūn-abhṛta raṇa-kaṇḍū-paravaśān |\nśiraḥ-padma-śreṇī-racita-caraṇāmbhoruha-baleḥ\nsthirāyās-tvad-bhaktes-tripurahara visphūrjitam-idam ||',
+      meaning:
+        'O destroyer of Tripura, Ravana, the ten-headed, who effortlessly brought the three worlds under his sway and whose arms itched for battle — even he offered lotuses of his heads at Your lotus feet. This is the power of steadfast devotion to You.',
+    },
+    {
+      id: 12,
+      verseLabel: 'Verse 12',
+      sanskrit:
+        'अमुष्य त्वत्सेवासमधिगतसारं भुजवनं\nबलात्कैलासेऽपि त्वदधिवसतौ विक्रमयतः ।\nअलभ्यापातालेऽप्यलसचलितांगुष्ठशिरसि\nप्रतिष्ठा त्वय्यासीद्ध्रुवमुपचितो मुह्यति खलः ॥',
+      transliteration:
+        'amuṣya tvat-sevā-samadhigata-sāraṁ bhujavanaṁ\nbalāt-kailāse \'pi tvad-adhivasatau vikramayataḥ |\nalabhyā-pātāle \'py-alasa-calitāṅguṣṭha-śirasi\npratiṣṭhā tvayy-āsīd-dhruvam-upacito muhyati khalaḥ ||',
+      meaning:
+        'That same Ravana, whose forest of arms gained strength from worshipping You, when he forcefully tried to uproot Your Kailasa abode — by the mere lazy movement of Your toe, he could find no ground even in the netherworld. Indeed, the wicked become deluded when puffed with pride.',
+    },
+    {
+      id: 13,
+      verseLabel: 'Verse 13',
+      sanskrit:
+        'यदृद्धिं सुत्राम्णो वरद परमोच्चैरपि सतीं\nअधश्चक्रे बाणः परिजनविधेयत्रिभुवनः ।\nन तच्चित्रं तस्मिन् वरिवसितरि त्वच्चरणयोः\nन कस्याप्युन्नत्यै भवति शिरसस्त्वय्यवनतिः ॥',
+      transliteration:
+        'yad-ṛddhiṁ sutrāmṇo varada paramoccair-api satīṁ\nadhaś-cakre bāṇaḥ parijana-vidheya-tribhuvanaḥ |\nna tac-citraṁ tasmin varivasi-tari tvac-caraṇayoḥ\nna kasyāpy-unnatyai bhavati śirasas-tvayy-avanatiḥ ||',
+      meaning:
+        'O bestower of boons, it is no wonder that Banasura, who worshipped Your feet, made the glory of even Indra bow low, keeping the three worlds at his command. For bowing one\'s head to You never fails to bring elevation.',
+    },
+    {
+      id: 14,
+      verseLabel: 'Verse 14',
+      sanskrit:
+        'अकाण्डब्रह्माण्डक्षयचकितदेवासुरकृपा\nविधेयस्यासीद्यस्त्रिनयनविषं संहृतवतः ।\nस कल्माषः कण्ठे तव न कुरुते न श्रियमहो\nविकारोऽपि श्लाघ्यो भुवनभयभङ्गव्यसनिनः ॥',
+      transliteration:
+        'akāṇḍa-brahmāṇḍa-kṣaya-cakita-devāsura-kṛpā\nvidheyasyāsīd-yas-trinayana-viṣaṁ saṁhṛtavataḥ |\nsa kalmāṣaḥ kaṇṭhe tava na kurute na śriyam-aho\nvikāro \'pi ślāghyo bhuvana-bhaya-bhaṅga-vyasaninaḥ ||',
+      meaning:
+        'When the universe faced sudden destruction and gods and demons trembled, You, the three-eyed one, mercifully swallowed the poison. That dark stain on Your throat only adds to Your beauty — even a blemish is praiseworthy in one addicted to removing the fears of the world.',
+    },
+    {
+      id: 15,
+      verseLabel: 'Verse 15',
+      sanskrit:
+        'असिद्धार्था नैव क्वचिदपि सदेवासुरनरे\nनिवर्तन्ते नित्यं जगति जयिनो यस्य विशिखाः ।\nस पश्यन्नीश त्वामितरसुरसाधारणमभूत्\nस्मरः स्मर्तव्यात्मा न हि वशिषु पथ्यः परिभवः ॥',
+      transliteration:
+        'asiddhārthā naiva kvacid-api sadevāsura-nare\nnivartante nityaṁ jagati jayino yasya viśikhāḥ |\nsa paśyann-īśa tvām-itara-sura-sādhāraṇam-abhūt\nsmaraḥ smartavyātmā na hi vaśiṣu pathyaḥ paribhavaḥ ||',
+      meaning:
+        'O Lord, Kamadeva, whose arrows never fail and who always conquers in the world of gods, demons, and men — he treated You as an ordinary god and was burned to ashes. Insult is never good for those who have mastered their senses.',
+    },
+    {
+      id: 16,
+      verseLabel: 'Verse 16',
+      sanskrit:
+        'मही पादाघाताद्व्रजति सहसा संशयपदं\nपदं विष्णोर्भ्राम्यद्भुजपरिघरुग्णग्रहगणम् ।\nमुहुर्द्यौर्दौस्थ्यं यात्यनिभृतजटाताडिततटा\nजगद्रक्षायै त्वं नटसि ननु वामैव विभुता ॥',
+      transliteration:
+        'mahī pādāghātād-vrajati sahasā saṁśaya-padaṁ\npadaṁ viṣṇor-bhrāmyad-bhuja-parigha-rugṇa-graha-gaṇam |\nmuhur-dyaur-dausthyaṁ yāty-anibhṛta-jaṭā-tāḍita-taṭā\njagad-rakṣāyai tvaṁ naṭasi nanu vāmaiva vibhutā ||',
+      meaning:
+        'When You dance the Tandava, the earth trembles under Your footsteps, the heavens are disturbed by Your whirling matted locks, and the planets are shattered by Your swinging arms. Yet this fierce dance is for the protection of the world — indeed, Your power works in wondrous ways.',
+    },
+    {
+      id: 17,
+      verseLabel: 'Verse 17',
+      sanskrit:
+        'वियद्व्यापी तारागणगुणितफेनोद्गमरुचिः\nप्रवाहो वारां यः पृषतलघुदृष्टः शिरसि ते ।\nजगद्द्वीपाकारं जलधिवलयं तेन कृतमि-\nत्यनेनैवोन्नेयं धृतमहिम दिव्यं तव वपुः ॥',
+      transliteration:
+        'viyad-vyāpī tārā-gaṇa-guṇita-phenodgama-ruciḥ\npravāho vārāṁ yaḥ pṛṣata-laghu-dṛṣṭaḥ śirasi te |\njagad-dvīpākāraṁ jaladhi-valayaṁ tena kṛtam-i-\nty-anenaivonneyaṁ dhṛta-mahima divyaṁ tava vapuḥ ||',
+      meaning:
+        'The Ganga, whose stream spans the sky adorned with stars like foam, appears as a mere droplet on Your head. This river encircles the earth-island like an ocean belt — by this alone can one infer the divine magnitude of Your form.',
+    },
+    {
+      id: 18,
+      verseLabel: 'Verse 18',
+      sanskrit:
+        'रथः क्षोणी यन्ता शतधृतिरगेन्द्रो धनुरथो\nरथाङ्गे चन्द्रार्कौ रथचरणपाणिः शर इति ।\nदिधक्षोस्ते कोऽयं त्रिपुरतृणमाडम्बरविधिः\nविधेयैः क्रीडन्त्यो न खलु परतन्त्राः प्रभुधियः ॥',
+      transliteration:
+        'rathaḥ kṣoṇī yantā śatadhṛtir-agendro dhanur-atho\nrathāṅge candrārkau ratha-caraṇa-pāṇiḥ śara iti |\ndidhakṣos-te ko \'yaṁ tripura-tṛṇam-āḍambara-vidhiḥ\nvidheyaiḥ krīḍantyo na khalu paratantrāḥ prabhu-dhiyaḥ ||',
+      meaning:
+        'The earth as chariot, Brahma as charioteer, Mount Meru as bow, sun and moon as wheels, Vishnu as arrow — all this grand preparation just to burn the straw-like Tripura? The intentions of a master are not bound by the instruments — He simply plays with His creation.',
+    },
+    {
+      id: 19,
+      verseLabel: 'Verse 19',
+      sanskrit:
+        'हरिस्ते साहस्रं कमलबलिमाधाय पदयोः\nयदेकोने तस्मिन्निजमुदहरन्नेत्रकमलम् ।\nगतो भक्त्युद्रेकः परिणतिमसौ चक्रवपुषा\nत्रयाणां रक्षायै त्रिपुरहर जागर्ति जगताम् ॥',
+      transliteration:
+        'haris-te sāhasraṁ kamala-balim-ādhāya padayoḥ\nyad-ekone tasmin-nija-mudaharan-netra-kamalam |\ngato bhakty-udrekaḥ pariṇatim-asau cakra-vapuṣā\ntrayāṇāṁ rakṣāyai tripurahara jāgarti jagatām ||',
+      meaning:
+        'O destroyer of Tripura, when Vishnu offered a thousand lotuses at Your feet and found one missing, He plucked out His own lotus-eye to complete the offering. That excess of devotion was transformed — You gave Him the Sudarshana Chakra, which now guards the three worlds.',
+    },
+    {
+      id: 20,
+      verseLabel: 'Verse 20',
+      sanskrit:
+        'क्रतौ सुप्ते जाग्रत्त्वमसि फलयोगे क्रतुमतां\nक्व कर्म प्रध्वस्तं फलति पुरुषाराधनमृते ।\nअतस्त्वां सम्प्रेक्ष्य क्रतुषु फलदानप्रतिभुवं\nश्रुतौ श्रद्धां बध्वा दृढपरिकरः कर्मसु जनः ॥',
+      transliteration:
+        'kratau supte jāgrat-tvam-asi phala-yoge kratumataṁ\nkva karma pradhvastaṁ phalati puruṣārādhanam-ṛte |\natas-tvāṁ samprekṣya kratuṣu phala-dāna-pratibhuvaṁ\nśrutau śraddhāṁ badhvā dṛḍha-parikaraḥ karmasu janaḥ ||',
+      meaning:
+        'When rituals are completed, You alone remain awake to grant their fruit. Without the worship of the Supreme Being, how can mere action bear fruit? Knowing You as the guarantor of the fruits of sacrifice, people bind their faith in the Vedas and undertake rituals with determination.',
+    },
+    {
+      id: 21,
+      verseLabel: 'Verse 21',
+      sanskrit:
+        'क्रियादक्षो दक्षः क्रतुपतिरधीशस्तनुभृता-\nमृषीणामार्त्विज्यं शरणद सदस्याः सुरगणाः ।\nक्रतुभ्रंशस्त्वत्तः क्रतुफलविधानव्यसनिनो\nध्रुवं कर्तुः श्रद्धाविधुरमभिचाराय हि मखाः ॥',
+      transliteration:
+        'kriyā-dakṣo dakṣaḥ kratu-patir-adhīśas-tanubhṛtām\nṛṣīṇām-ārtvijyaṁ śaraṇada sadasyāḥ sura-gaṇāḥ |\nkratu-bhraṁśas-tvattaḥ kratu-phala-vidhāna-vyasanino\ndhruvaṁ kartuḥ śraddhā-vidhuram-abhicārāya hi makhāḥ ||',
+      meaning:
+        'O giver of refuge, though Daksha was skilled in rituals and lord of sacrifice, the sages were priests and the gods were the assembly — still the sacrifice failed because of You. For one who is obsessed with the fruits of sacrifice but lacks devotion, the ritual itself becomes a curse.',
+    },
+    {
+      id: 22,
+      verseLabel: 'Verse 22',
+      sanskrit:
+        'प्रजानाथं नाथ प्रसभमभिकं स्वां दुहितरं\nगतं रोहिद्भूतां रिरमयिषुमृष्यस्य वपुषा ।\nधनुष्पाणेर्यातं दिवमपि सपत्राकृतममुं\nत्रसन्तं तेऽद्यापि त्यजति न मृगव्याधरभसः ॥',
+      transliteration:
+        'prajā-nāthaṁ nātha prasabham-abhikaṁ svāṁ duhitaraṁ\ngataṁ rohid-bhūtāṁ riramayiṣum-ṛṣyasya vapuṣā |\ndhanuṣ-pāṇer-yātaṁ divam-api sapatrākṛtam-amuṁ\ntrasantaṁ te \'dyāpi tyajati na mṛga-vyādha-rabhasaḥ ||',
+      meaning:
+        'O Lord, when the lord of creation, assuming the form of a deer, pursued his own daughter who had become a doe — You, bow in hand, chased him even to the heavens. That fierce hunter\'s zeal has not left You even today, O Mrigavyadha.',
+    },
+    {
+      id: 23,
+      verseLabel: 'Verse 23',
+      sanskrit:
+        'स्वलावण्याशंसा धृतधनुषमह्नाय तृणवत्\nपुरः प्लुष्टं दृष्ट्वा पुरमथन पुष्पायुधमपि ।\nयदि स्त्रैणं देवि यमनिरतदेहार्धघटनात्\nअवैति त्वामद्धा बत वरद मुग्धा युवतयः ॥',
+      transliteration:
+        'svalāvaṇyāśaṁsā dhṛta-dhanuṣam-ahnāya tṛṇavat\npuraḥ pluṣṭaṁ dṛṣṭvā puramathana puṣpāyudham-api |\nyadi straiṇaṁ devi yam-anirata-dehārdha-ghaṭanāt\navaiti tvām-addhā bata varada mugdhā yuvatayaḥ ||',
+      meaning:
+        'O destroyer of Tripura, having burned Kamadeva to ashes like straw — if young women still think You are susceptible to feminine charm because You gave half Your body to the Goddess, then alas, how naive they are, O bestower of boons!',
+    },
+    {
+      id: 24,
+      verseLabel: 'Verse 24',
+      sanskrit:
+        'श्मशानेष्वाक्रीडा स्मरहर पिशाचाः सहचराः\nचिताभस्मालेपः स्रगपि नृकरोटीपरिकरः ।\nअमङ्गल्यं शीलं तव भवतु नामैवमखिलं\nतथापि स्मर्तॄणां वरद परमं मङ्गलमसि ॥',
+      transliteration:
+        'śmaśāneṣv-ākrīḍā smarahara piśācāḥ sahacarāḥ\ncitā-bhasmālepaḥ sragapi nṛkaroṭī-parikaraḥ |\namaṅgalyaṁ śīlaṁ tava bhavatu nāmaivam-akhilaṁ\ntathāpi smartṝṇāṁ varada paramaṁ maṅgalam-asi ||',
+      meaning:
+        'O destroyer of Kama, Your playground is the cremation ground, Your companions are ghosts, Your body is smeared with funeral ash, Your garland is of skulls. All this may seem inauspicious — yet for those who remember You, O bestower of boons, You are the supreme auspiciousness.',
+    },
+    {
+      id: 25,
+      verseLabel: 'Verse 25',
+      sanskrit:
+        'मनः प्रत्यक्चित्ते सविधमविधायात्तमरुतः\nप्रहृष्यद्रोमाणः प्रमदसलिलोत्सङ्गितदृशः ।\nयदालोक्याह्लादं ह्रद इव निमज्ज्यामृतमये\nदधत्यन्तस्तत्त्वं किमपि यमिनस्तत्किल भवान् ॥',
+      transliteration:
+        'manaḥ pratyak-citte savidham-avidhāyātta-marutaḥ\nprahṛṣyad-romāṇaḥ pramada-salilotsaṅgita-dṛśaḥ |\nyad-ālokyāhlādaṁ hrada iva nimajjyāmṛta-maye\ndadhatyantas-tattvaṁ kim-api yaminas-tat-kila bhavān ||',
+      meaning:
+        'The yogis who turn the mind inward, control the breath, feel the hair standing on end in ecstasy, and eyes brimming with tears of joy — that ineffable truth they experience within, plunging into a pool of nectar-like bliss, that indeed is You.',
+    },
+    {
+      id: 26,
+      verseLabel: 'Verse 26',
+      sanskrit:
+        'त्वमर्कस्त्वं सोमस्त्वमसि पवनस्त्वं हुतवहः\nत्वमापस्त्वं व्योम त्वमु धरणिरात्मा त्वमिति च ।\nपरिच्छिन्नामेवं त्वयि परिणता बिभ्रति गिरं\nन विद्मस्तत्तत्त्वं वयमिह तु यत्त्वं न भवसि ॥',
+      transliteration:
+        'tvam-arkas-tvaṁ somas-tvam-asi pavanas-tvaṁ hutavahaḥ\ntvam-āpas-tvaṁ vyoma tvam-u dharaṇir-ātmā tvam-iti ca |\nparicchinnām-evaṁ tvayi pariṇatā bibhrati giraṁ\nna vidmas-tat-tattvaṁ vayam-iha tu yat-tvaṁ na bhavasi ||',
+      meaning:
+        'You are the sun, the moon, the wind, the fire, the waters, the sky, the earth, and the Self — thus do people describe You in limited terms. But we do not know of anything that You are NOT.',
+    },
+    {
+      id: 27,
+      verseLabel: 'Verse 27',
+      sanskrit:
+        'त्रयीं तिस्रो वृत्तीस्त्रिभुवनमथो त्रीनपि सुरान्\nअकाराद्यैर्वर्णैस्त्रिभिरभिदधत्तीर्णविकृति ।\nतुरीयं ते धाम ध्वनिभिरवरुन्धानमणुभिः\nसमस्तं व्यस्तं त्वां शरणद गृणात्योमिति पदम् ॥',
+      transliteration:
+        'trayīṁ tisro vṛttīs-tribhuvanam-atho trīn-api surān\nakārādyair-varṇais-tribhir-abhidadhat-tīrṇa-vikṛti |\nturīyaṁ te dhāma dhvanibhir-avarundhānam-aṇubhiḥ\nsamastaṁ vyastaṁ tvāṁ śaraṇada gṛṇātyom-iti padam ||',
+      meaning:
+        'O giver of refuge, the sacred syllable Om — with its three letters A, U, M — denotes the three Vedas, the three states of consciousness, the three worlds, and the three gods. Its subtle resonance beyond the letters is Your fourth state, the Turiya. Om thus proclaims You in both wholeness and parts.',
+    },
+    {
+      id: 28,
+      verseLabel: 'Verse 28',
+      sanskrit:
+        'भवः शर्वो रुद्रः पशुपतिरथोग्रः सहमहान्\nतथा भीमेशानाविति यदभिधानाष्टकमिदम् ।\nअमुष्मिन्प्रत्येकं प्रविचरति देव श्रुतिरपि\nप्रियायास्मैधाम्ने प्रविहितनमस्योऽस्मि भवते ॥',
+      transliteration:
+        'bhavaḥ śarvo rudraḥ paśupatir-athograḥ saha-mahān\ntathā bhīmeśānāv-iti yad-abhidhānāṣṭakam-idam |\namuṣmin pratyekaṁ pravicarati deva śrutir-api\npriyāyāsmai dhāmne pravihita-namasyo \'smi bhavate ||',
+      meaning:
+        'Bhava, Sharva, Rudra, Pashupati, Ugra, Mahadeva, Bhima, and Ishana — these are Your eight names. The Vedas elaborate on each of these. I bow to You, the beloved Supreme abode.',
+    },
+    {
+      id: 29,
+      verseLabel: 'Verse 29',
+      sanskrit:
+        'नमो नेदिष्ठाय प्रियदव दविष्ठाय च नमो\nनमः क्षोदिष्ठाय स्मरहर महिष्ठाय च नमः ।\nनमो वर्षिष्ठाय त्रिनयन यविष्ठाय च नमो\nनमः सर्वस्मै ते तदिदमितिशर्वाय च नमः ॥',
+      transliteration:
+        'namo nediṣṭhāya priyadava daviṣṭhāya ca namo\nnamaḥ kṣodiṣṭhāya smarahara mahiṣṭhāya ca namaḥ |\nnamo varṣiṣṭhāya trinayana yaviṣṭhāya ca namo\nnamaḥ sarvasmai te tad-idam-iti-śarvāya ca namaḥ ||',
+      meaning:
+        'Salutations to the nearest and the farthest, to the smallest and the greatest, to the eldest and the youngest. Salutations to You who are everything, and salutations to Sharva who is "this and that."',
+    },
+    {
+      id: 30,
+      verseLabel: 'Verse 30',
+      sanskrit:
+        'बहलरजसे विश्वोत्पत्तौ भवाय नमो नमः\nप्रबलतमसे तत्संहारे हराय नमो नमः ।\nजनसुखकृते सत्त्वोद्रिक्तौ मृडाय नमो नमः\nप्रमहसि पदे निस्त्रैगुण्ये शिवाय नमो नमः ॥',
+      transliteration:
+        'bahala-rajase viśvotpattau bhavāya namo namaḥ\nprabala-tamase tat-saṁhāre harāya namo namaḥ |\njana-sukha-kṛte sattvod-riktau mṛḍāya namo namaḥ\npramahasi pade nistraiguṇye śivāya namo namaḥ ||',
+      meaning:
+        'Salutations to Bhava, abounding in Rajas at the creation of the universe. Salutations to Hara, predominant in Tamas at its dissolution. Salutations to Mrida, established in Sattva for the happiness of beings. And salutations to Shiva, who transcends the three Gunas in the supreme state.',
+    },
+  ],
+};
+
 const dakshinamurthyStotram: Stotra = {
   id: 'dakshinamurthy-stotram',
   title: 'Dakshinamurthy Stotram',
@@ -6358,6 +6676,7 @@ export const stotras: Stotra[] = [
   ramRakshaStotra,
   sankataNashanaGaneshaStotram,
   saraswatiStotram,
+  shivaMahimnaStotram,
   shivaPanchakshara,
   shivaTandavaStotram,
   shivaAshtottara,
@@ -6380,11 +6699,6 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'lalitha-sahasranamam',
     title: 'Lalitha Sahasranamam',
     deity: 'Lalita Tripurasundari',
-  },
-  {
-    id: 'shiva-mahimna-stotram',
-    title: 'Shiva Mahimna Stotram',
-    deity: 'Shiva',
   },
   {
     id: 'shri-rudram-namakam',

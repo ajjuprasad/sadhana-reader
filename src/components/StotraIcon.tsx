@@ -185,6 +185,7 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
       );
 
     case 'shiva-ashtottara':
+    case 'shiva-mahimna-stotram':
       // Damaru (Shiva's drum)
       return (
         <>
