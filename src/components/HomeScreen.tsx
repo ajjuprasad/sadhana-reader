@@ -694,10 +694,6 @@ export default function HomeScreen() {
       </section>
       )}
 
-      {/* Coming soon — hidden when filtering */}
-      {!isFiltering && comingSoonStotras.length > 0 && (
-        <ComingSoonSection />
-      )}
 
       {/* Footer nav */}
       <motion.footer
