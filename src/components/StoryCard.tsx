@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import type { Story } from '../data/stories';
+import FavoriteButton from './FavoriteButton';
 
 interface StoryCardProps {
   story: Story;
@@ -32,6 +33,12 @@ export default function StoryCard({ story, index, onClick }: StoryCardProps) {
       onClick={onClick}
       aria-label={`Read ${story.title}`}
     >
+      <FavoriteButton
+        stotraId={story.id}
+        size={18}
+        className="absolute top-1 right-1 z-10"
+      />
+
       <div className="p-5 sm:p-6 flex flex-col h-full">
         {/* Book icon */}
         <div
