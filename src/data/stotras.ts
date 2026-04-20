@@ -5612,6 +5612,74 @@ const pandurangashtakam: Stotra = {
   ],
 };
 
+const sankataNashanaGaneshaStotram: Stotra = {
+  id: 'sankata-nashana-ganesha-stotram',
+  title: 'Sankata Nashana Ganesha Stotram',
+  subtitle: 'सङ्कटनाशनगणेशस्तोत्रम्',
+  deity: 'Ganesha',
+  description:
+    'Eight verses from the Narada Purana praising Lord Ganesha as the remover of all obstacles and difficulties. This hymn invokes Ganesha\'s grace for the attainment of longevity, prosperity, wisdom, and fulfillment of desires.',
+  benefits: [
+    'Removes obstacles, difficulties, and dangers from life',
+    'Bestows longevity, prosperity, and fulfillment of desires',
+    'Grants wisdom and spiritual progress',
+  ],
+  estimatedMinutes: 3,
+  icon: 'sankata-nashana-ganesha-stotram',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'प्रणम्य शिरसा देवं गौरीपुत्रं विनायकम् ।\nभक्तावासं स्मरेन्नित्यमायुष्कामार्थसिद्धये ॥',
+      transliteration:
+        'praṇamya śirasā devaṁ gaurī-putraṁ vināyakam |\nbhaktāvāsaṁ smaren-nityam-āyuṣ-kāmārtha-siddhaye ||',
+      meaning:
+        'Bowing my head to the Lord, the son of Gauri, Vinayaka — the refuge of his devotees — I meditate on him always for the attainment of longevity, desires, and wealth.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'प्रथमं वक्रतुण्डं च एकदन्तं द्वितीयकम् ।\nतृतीयं कृष्णपिङ्गाक्षं गजवक्त्रं चतुर्थकम् ॥',
+      transliteration:
+        'prathamaṁ vakra-tuṇḍaṁ ca eka-dantaṁ dvitīyakam |\ntṛtīyaṁ kṛṣṇa-piṅgākṣaṁ gaja-vaktraṁ caturthakam ||',
+      meaning:
+        'First I remember Vakratunda (curved trunk), second Ekadanta (single tusk), third Krishnapingaksha (dark-tawny eyed), and fourth Gajavaktra (elephant-faced).',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'लम्बोदरं पञ्चमं च षष्ठं विकटमेव च ।\nसप्तमं विघ्नराजेन्द्रं धूम्रवर्णं तथाष्टमम् ॥',
+      transliteration:
+        'lambodaraṁ pañcamaṁ ca ṣaṣṭhaṁ vikaṭam-eva ca |\nsaptamaṁ vighna-rājendraṁ dhūmra-varṇaṁ tathāṣṭamam ||',
+      meaning:
+        'Fifth I remember Lambodara (large-bellied), sixth Vikata (the unusual), seventh Vighnarajendra (king of obstacles), and eighth Dhumravarna (smoke-colored).',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'नवमं भालचन्द्रं च दशमं तु विनायकम् ।\nएकादशं गणपतिं द्वादशं तु गजाननम् ॥',
+      transliteration:
+        'navamaṁ bhāla-candraṁ ca daśamaṁ tu vināyakam |\nekādaśaṁ gaṇapatiṁ dvādaśaṁ tu gajānanam ||',
+      meaning:
+        'Ninth I remember Bhalachandra (moon on forehead), tenth Vinayaka, eleventh Ganapati (lord of the ganas), and twelfth Gajanana (elephant-faced).',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'द्वादशैतानि नामानि त्रिसन्ध्यं यः पठेन्नरः ।\nन च विघ्नभयं तस्य सर्वसिद्धिकरं प्रभो ॥',
+      transliteration:
+        'dvādaśaitāni nāmāni tri-sandhyaṁ yaḥ paṭhen-naraḥ |\nna ca vighna-bhayaṁ tasya sarva-siddhi-karaṁ prabho ||',
+      meaning:
+        'Whoever recites these twelve names at the three junctions of the day (dawn, noon, dusk) — for them there is no fear of obstacles, and all accomplishments are granted, O Lord.',
+    },
+  ],
+};
+
 const dakshinamurthyStotram: Stotra = {
   id: 'dakshinamurthy-stotram',
   title: 'Dakshinamurthy Stotram',
@@ -5753,6 +5821,7 @@ export const stotras: Stotra[] = [
   nirvanaShatakam,
   pandurangashtakam,
   ramRakshaStotra,
+  sankataNashanaGaneshaStotram,
   saraswatiStotram,
   shivaPanchakshara,
   shivaTandavaStotram,
@@ -5790,11 +5859,6 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'narayana-kavacham',
     title: 'Narayana Kavacham',
     deity: 'Vishnu',
-  },
-  {
-    id: 'sankata-nashana-ganesha-stotram',
-    title: 'Sankata Nashana Ganesha Stotram',
-    deity: 'Ganesha',
   },
   {
     id: 'shiva-mahimna-stotram',

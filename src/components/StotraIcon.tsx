@@ -14,6 +14,7 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
       );
 
     case 'ganesha-pancharatnam':
+    case 'sankata-nashana-ganesha-stotram':
       // Ganesha — refined face with ornamental ears, crown, curved trunk
       return (
         <>
