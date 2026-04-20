@@ -6527,6 +6527,224 @@ const shivaMahimnaStotram: Stotra = {
       meaning:
         'Salutations to Bhava, abounding in Rajas at the creation of the universe. Salutations to Hara, predominant in Tamas at its dissolution. Salutations to Mrida, established in Sattva for the happiness of beings. And salutations to Shiva, who transcends the three Gunas in the supreme state.',
     },
+    {
+      id: 31,
+      verseLabel: 'Verse 31',
+      sanskrit:
+        'कृशपरिणति चेतः क्लेशवश्यं क्व चेदं\nक्व च तव गुणसीमोल्लङ्घिनी शश्वदृद्धिः ।\nइति चकितममन्दीकृत्य मां भक्तिराधाद्\nवरद चरणयोस्ते वाक्यपुष्पोपहारम् ॥',
+      transliteration:
+        'kṛśa-pariṇati cetaḥ kleśa-vaśyaṁ kva cedaṁ\nkva ca tava guṇa-sīmollaṅghinī śaśvad-ṛddhiḥ |\niti cakitam-amandī-kṛtya māṁ bhaktir-ādhād\nvarada caraṇayos-te vākya-puṣpopahaaram ||',
+      meaning:
+        'O bestower of boons, how meager is my intellect, subject to afflictions — and how boundless is Your ever-growing glory that transcends all limits! Yet devotion, emboldening my timid self, has placed this offering of word-flowers at Your feet.',
+    },
+    {
+      id: 32,
+      verseLabel: 'Verse 32',
+      sanskrit:
+        'असितगिरिसमं स्यात्कज्जलं सिन्धुपात्रे\nसुरतरुवरशाखा लेखनी पत्रमुर्वी ।\nलिखति यदि गृहीत्वा शारदा सर्वकालं\nतदपि तव गुणानामीश पारं न याति ॥',
+      transliteration:
+        'asita-giri-samaṁ syāt-kajjalaṁ sindhu-pātre\nsura-taru-vara-śākhā lekhanī patram-urvī |\nlikhati yadi gṛhītvā śāradā sarva-kālaṁ\ntad-api tava guṇānām-īśa pāraṁ na yāti ||',
+      meaning:
+        'O Lord, if the dark mountain were the ink, the ocean the inkpot, the branch of the wish-fulfilling tree the pen, and the earth the writing surface — even if Goddess Saraswati wrote for all eternity, she could not reach the end of Your glories.',
+    },
+    {
+      id: 33,
+      verseLabel: 'Verse 33',
+      sanskrit:
+        'असुरसुरमुनीन्द्रैरर्चितस्येन्दुमौलेः\nग्रथितगुणमहिम्नो निर्गुणस्येश्वरस्य ।\nसकलगणवरिष्ठः पुष्पदन्ताभिधानः\nरुचिरमलघुवृत्तैः स्तोत्रमेतच्चकार ॥',
+      transliteration:
+        'asura-sura-munīndrair-arcitasyendu-mauleḥ\ngrathita-guṇa-mahimno nirguṇasyeśvarasya |\nsakala-gaṇa-variṣṭhaḥ puṣpadantābhidhānaḥ\nruciram-alaghu-vṛttaiḥ stotram-etac-cakāra ||',
+      meaning:
+        'Pushpadanta, the foremost among the gandharvas, composed this hymn in beautiful, exalted verses — in praise of the moon-crested Lord worshipped by demons, gods, and great sages, whose glory is woven of qualities yet who is beyond all qualities.',
+    },
+    {
+      id: 34,
+      verseLabel: 'Verse 34',
+      sanskrit:
+        'अहरहरनवद्यं धूर्जटेः स्तोत्रमेतत्\nपठति परमभक्त्या शुद्धचित्तः पुमान्यः ।\nस भवति शिवलोके रुद्रतुल्यस्तथाऽत्र\nप्रचुरतरधनायुः पुत्रवान्कीर्तिमांश्च ॥',
+      transliteration:
+        'ahar-ahar-anavadyaṁ dhūrjaṭeḥ stotram-etat\npaṭhati parama-bhaktyā śuddha-cittaḥ pumān-yaḥ |\nsa bhavati śiva-loke rudra-tulyas-tathā \'tra\npracura-tara-dhanāyuḥ putra-vān-kīrtimāṁś-ca ||',
+      meaning:
+        'Whoever recites this flawless hymn of the matted-haired Lord daily with supreme devotion and a pure mind — they become equal to Rudra in Shiva\'s realm, and here on earth gain abundant wealth, long life, children, and fame.',
+    },
+    {
+      id: 35,
+      verseLabel: 'Verse 35',
+      sanskrit:
+        'महेशान्नापरो देवो महिम्नो नापरा स्तुतिः ।\nअघोरान्नापरो मन्त्रो नास्ति तत्त्वं गुरोः परम् ॥',
+      transliteration:
+        'maheśān-nāparo devo mahimno nāparā stutiḥ |\naghorān-nāparo mantro nāsti tattvaṁ guroḥ param ||',
+      meaning:
+        'There is no god higher than Mahesha, no hymn higher than the Mahimna Stotram, no mantra higher than the Aghora, and no truth higher than the Guru.',
+    },
+  ],
+};
+
+const shriRudramNamakam: Stotra = {
+  id: 'shri-rudram-namakam',
+  title: 'Shri Rudram (Namakam)',
+  subtitle: 'श्रीरुद्रप्रश्नः — नमकम्',
+  deity: 'Shiva',
+  description:
+    'The Namakam is the first part of the Sri Rudram from the Krishna Yajurveda (Taittiriya Samhita 4.5-4.7). Consisting of 11 anuvakas, it is the most ancient and sacred Vedic hymn to Lord Rudra, offering salutations (namas) to His countless forms and aspects throughout creation.',
+  benefits: [
+    'Purifies body, mind, and environment through sacred Vedic vibrations',
+    'Bestows protection, prosperity, and universal harmony',
+    'Grants longevity, destroys sins, and leads to spiritual liberation',
+  ],
+  estimatedMinutes: 20,
+  icon: 'shri-rudram-namakam',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Anuvaka 1.1',
+      sanskrit:
+        'ॐ नमो भगवते रुद्राय ।\nनमस्ते रुद्र मन्यव उतोत इषवे नमः ।\nनमस्ते अस्तु धन्वने बाहुभ्यामुत ते नमः ॥',
+      transliteration:
+        'oṁ namo bhagavate rudrāya |\nnamaste rudra manyava utota iṣave namaḥ |\nnamaste astu dhanvane bāhubhyām-uta te namaḥ ||',
+      meaning:
+        'Om, salutations to Lord Rudra. Salutations to Your wrath and to Your arrows. Salutations to Your bow and to Your mighty arms.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Anuvaka 1.2',
+      sanskrit:
+        'या ते रुद्र शिवा तनूरघोराऽपापकाशिनी ।\nतया नस्तनुवा शन्तमया गिरिशन्ताभिचाकशीहि ॥',
+      transliteration:
+        'yā te rudra śivā tanūr-aghorā \'pāpakāśinī |\ntayā nas-tanuvā śantamayā giriśantābhicākaśīhi ||',
+      meaning:
+        'O Rudra, that form of Yours which is auspicious, not terrible, and which reveals no sin — with that most peaceful form, O dweller of mountains, reveal Yourself to us.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Anuvaka 1.3',
+      sanskrit:
+        'यामिषुं गिरिशन्त हस्ते बिभर्ष्यस्तवे ।\nशिवां गिरित्र तां कुरु मा हिंसीः पुरुषं जगत् ॥',
+      transliteration:
+        'yām-iṣuṁ giriśanta haste bibharṣy-astave |\nśivāṁ giritra tāṁ kuru mā hiṁsīḥ puruṣaṁ jagat ||',
+      meaning:
+        'O dweller of mountains, that arrow which You hold in Your hand to shoot — make it auspicious, O protector of the mountains. Do not harm any person or any being.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Anuvaka 1.4',
+      sanskrit:
+        'शिवेन वचसा त्वा गिरिशाच्छा वदामसि ।\nयथा नः सर्वमिज्जगदयक्ष्मं सुमना असत् ॥',
+      transliteration:
+        'śivena vacasā tvā giriśācchā vadāmasi |\nyathā naḥ sarvam-ij-jagad-ayakṣmaṁ sumanā asat ||',
+      meaning:
+        'O dweller of mountains, we address You with auspicious words, so that the whole world may be free from disease and well-disposed toward us.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Anuvaka 2.1',
+      sanskrit:
+        'नमो हिरण्यबाहवे सेनान्ये दिशां च पतये नमो नमो\nवृक्षेभ्यो हरिकेशेभ्यः पशूनां पतये नमो नमः ॥',
+      transliteration:
+        'namo hiraṇya-bāhave senānye diśāṁ ca pataye namo namo\nvṛkṣebhyo harikeśebhyaḥ paśūnāṁ pataye namo namaḥ ||',
+      meaning:
+        'Salutations to the golden-armed one, the leader of hosts, the lord of the directions. Salutations to the trees with green foliage, to the lord of all creatures.',
+    },
+    {
+      id: 6,
+      verseLabel: 'Anuvaka 2.2',
+      sanskrit:
+        'सस्पिञ्जराय त्विषीमते पथीनां पतये नमो नमो\nबभ्लुशाय विव्याधिनेऽन्नानां पतये नमो नमः ॥',
+      transliteration:
+        'saspiñjarāya tviṣīmate pathīnāṁ pataye namo namo\nbabhluśāya vivyādhine \'nnānāṁ pataye namo namaḥ ||',
+      meaning:
+        'Salutations to the tawny, radiant lord of the paths. Salutations to the brown-hued one who pierces, the lord of all food.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Anuvaka 3.1',
+      sanskrit:
+        'नमो भवाय च रुद्राय च\nनमः शर्वाय च पशुपतये च\nनमो नीलग्रीवाय च शितिकण्ठाय च ॥',
+      transliteration:
+        'namo bhavāya ca rudrāya ca\nnamaḥ śarvāya ca paśupataye ca\nnamo nīlagrīvāya ca śitikaṇṭhāya ca ||',
+      meaning:
+        'Salutations to Bhava (existence) and to Rudra (the howler). Salutations to Sharva (the archer) and to Pashupati (lord of creatures). Salutations to the blue-necked and the white-throated one.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Anuvaka 3.2',
+      sanskrit:
+        'नमः कपर्दिने च व्युप्तकेशाय च\nनमः सहस्राक्षाय च शतधन्वने च\nनमो गिरिशाय च शिपिविष्टाय च ॥',
+      transliteration:
+        'namaḥ kapardine ca vyupta-keśāya ca\nnamaḥ sahasrākṣāya ca śata-dhanvane ca\nnamo giriśāya ca śipiviṣṭāya ca ||',
+      meaning:
+        'Salutations to the matted-haired and the shaven-headed. Salutations to the thousand-eyed and the hundred-bowed. Salutations to the mountain-dweller and the all-pervading one.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Anuvaka 4.1',
+      sanskrit:
+        'नमो भवस्य हेत्यै जगतां पतये नमो नमो\nरुद्रायाततविने क्षेत्राणां पतये नमो नमः ॥',
+      transliteration:
+        'namo bhavasya hetyai jagatāṁ pataye namo namo\nrudrāyātatavine kṣetrāṇāṁ pataye namo namaḥ ||',
+      meaning:
+        'Salutations to the weapon of Bhava, the lord of the worlds. Salutations to Rudra who strings his bow, the lord of the fields.',
+    },
+    {
+      id: 10,
+      verseLabel: 'Anuvaka 5.1',
+      sanskrit:
+        'नमो भवाय च रुद्राय च\nनमः शर्वाय च पशुपतये च\nनम ईशानाय च भगवते च ॥',
+      transliteration:
+        'namo bhavāya ca rudrāya ca\nnamaḥ śarvāya ca paśupataye ca\nnama īśānāya ca bhagavate ca ||',
+      meaning:
+        'Salutations to Bhava and Rudra. Salutations to Sharva and Pashupati. Salutations to Ishana (the ruler) and to Bhagavan (the glorious one).',
+    },
+    {
+      id: 11,
+      verseLabel: 'Anuvaka 6.1',
+      sanskrit:
+        'नमो अग्रेवधाय च दूरेवधाय च\nनमो हन्त्रे च हनीयसे च\nनमो वृक्षेभ्यो हरिकेशेभ्यो नमस्ताराय ॥',
+      transliteration:
+        'namo agrevādhāya ca dūrevādhāya ca\nnamo hantre ca hanīyase ca\nnamo vṛkṣebhyo harikeśebhyo namastārāya ||',
+      meaning:
+        'Salutations to the one who strikes from near and from afar. Salutations to the slayer and to the most destructive. Salutations to the green-haired trees and to the savior.',
+    },
+    {
+      id: 12,
+      verseLabel: 'Anuvaka 7.1',
+      sanskrit:
+        'नमो दुन्दुभ्याय च आहनन्याय च\nनमो धृष्णवे च प्रमृशाय च\nनमो नषदे च सुषदे च ॥',
+      transliteration:
+        'namo dundubhyāya ca āhananyāya ca\nnamo dhṛṣṇave ca pramṛśāya ca\nnamo naṣade ca suṣade ca ||',
+      meaning:
+        'Salutations to the drum and to the drummer. Salutations to the bold one and to the one who touches gently. Salutations to the one seated well and the one comfortably seated.',
+    },
+    {
+      id: 13,
+      verseLabel: 'Anuvaka 8.1',
+      sanskrit:
+        'नमः सोमाय च रुद्राय च\nनमस्ताम्राय चारुणाय च\nनमः शङ्गाय च पशुपतये च ॥',
+      transliteration:
+        'namaḥ somāya ca rudrāya ca\nnamastāmrāya cāruṇāya ca\nnamaḥ śaṅgāya ca paśupataye ca ||',
+      meaning:
+        'Salutations to Soma and to Rudra. Salutations to the copper-hued and the dawn-colored one. Salutations to the beneficent one and to Pashupati.',
+    },
+    {
+      id: 14,
+      verseLabel: 'Anuvaka 9.1',
+      sanskrit:
+        'नमः शम्भवाय च मयोभवाय च\nनमः शंकराय च मयस्कराय च\nनमः शिवाय च शिवतराय च ॥',
+      transliteration:
+        'namaḥ śambhavāya ca mayobhavāya ca\nnamaḥ śaṁkarāya ca mayaskarāya ca\nnamaḥ śivāya ca śivatarāya ca ||',
+      meaning:
+        'Salutations to Shambhu (the source of bliss) and to the source of happiness. Salutations to Shankara (the auspicious doer) and to the creator of joy. Salutations to Shiva (the auspicious one) and to the most auspicious.',
+    },
+    {
+      id: 15,
+      verseLabel: 'Anuvaka 11.1',
+      sanskrit:
+        'सहस्राणि सहस्रशो ये रुद्रा अधि भूम्याम् ।\nतेषां सहस्रयोजनेऽवधन्वानि तन्मसि ॥\nत्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम् ।\nउर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय माऽमृतात् ॥',
+      transliteration:
+        'sahasrāṇi sahasraśo ye rudrā adhi bhūmyām |\nteṣāṁ sahasra-yojane \'vadhanvāni tanmasi ||\ntryambakaṁ yajāmahe sugandhiṁ puṣṭi-vardhanam |\nurvārukam-iva bandhanān-mṛtyor-mukṣīya mā \'mṛtāt ||',
+      meaning:
+        'The thousands of Rudras who exist on this earth — may we keep their bows unstrung a thousand leagues away. We worship the three-eyed one, the fragrant increaser of prosperity. As a cucumber is freed from its stalk, may we be liberated from death, not from immortality.',
+    },
   ],
 };
 
@@ -6678,6 +6896,7 @@ export const stotras: Stotra[] = [
   saraswatiStotram,
   shivaMahimnaStotram,
   shivaPanchakshara,
+  shriRudramNamakam,
   shivaTandavaStotram,
   shivaAshtottara,
   siddhaKunjikaStotram,
@@ -6699,10 +6918,5 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'lalitha-sahasranamam',
     title: 'Lalitha Sahasranamam',
     deity: 'Lalita Tripurasundari',
-  },
-  {
-    id: 'shri-rudram-namakam',
-    title: 'Shri Rudram (Namakam)',
-    deity: 'Shiva',
   },
 ];
