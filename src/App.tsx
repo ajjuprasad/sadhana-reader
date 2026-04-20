@@ -6,6 +6,10 @@ import StotraDetail from './components/StotraDetail';
 import ReaderScreen from './components/ReaderScreen';
 import ProfileScreen from './components/ProfileScreen';
 import CalendarPage from './components/CalendarPage';
+import AllStotrasPage from './components/AllStotrasPage';
+import FavoritesPage from './components/FavoritesPage';
+import ComingSoonPage from './components/ComingSoonPage';
+import AboutPage from './components/AboutPage';
 import MandalaBackground from './components/MandalaBackground';
 import { useSettings } from './hooks/useSettings';
 import { LanguageProvider } from './i18n/LanguageContext';
@@ -46,7 +50,11 @@ export default function App() {
             <Route path="/" element={<HomeScreen />} />
             <Route path="/stotra/:stotraId" element={<StotraDetail />} />
             <Route path="/read/:stotraId" element={<ReaderScreen settingsState={settingsState} />} />
+            <Route path="/stotras" element={<AllStotrasPage />} />
+            <Route path="/favorites" element={<FavoritesPage />} />
+            <Route path="/coming-soon" element={<ComingSoonPage />} />
             <Route path="/panchanga" element={<CalendarPage />} />
+            <Route path="/about" element={<AboutPage />} />
             <Route path="/profile" element={<ProfileScreen settingsState={settingsState} />} />
           </Routes>
         </div>
