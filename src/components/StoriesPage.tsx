@@ -29,7 +29,28 @@ export default function StoriesPage() {
           <h1 className="font-display font-bold text-sm" style={{ color: 'var(--color-text-primary)' }}>
             Stories for Kids
           </h1>
-          <div style={{ width: 42 }} />
+          <button
+            onClick={() => {
+              const url = `${window.location.origin}/stories`;
+              const text = 'Stories for Kids on Sādhanā Reader — tales of courage, kindness & wisdom from Hindu mythology for children';
+              if (navigator.share) {
+                navigator.share({ title: 'Stories for Kids', text, url }).catch(() => {});
+              } else {
+                window.open(`https://wa.me/?text=${encodeURIComponent(`${text}\n${url}`)}`, '_blank');
+              }
+            }}
+            className="p-2 hover:opacity-70 transition-opacity"
+            style={{ color: 'var(--color-text-primary)' }}
+            aria-label="Share Stories for Kids"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="18" cy="5" r="3" />
+              <circle cx="6" cy="12" r="3" />
+              <circle cx="18" cy="19" r="3" />
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+            </svg>
+          </button>
         </div>
       </div>
 
