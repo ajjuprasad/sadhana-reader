@@ -14,9 +14,11 @@ import { useTranslation } from '../i18n/useTranslation';
 const sacredEase = [0.76, 0, 0.24, 1] as const;
 
 const recentItems = [
-  { id: 'dakshinamurthy-stotram', title: 'Dakshinamurthy Stotram', timestamp: '2026-04-19T23:00:00Z', desc: '10 verses by Adi Shankaracharya revealing the Advaita truth through the south-facing form of Shiva, the supreme Guru.' },
-  { id: 'guru-ashtakam', title: 'Guru Ashtakam', timestamp: '2026-04-19T22:30:00Z', desc: '8 verses by Adi Shankaracharya on the supreme importance of the Guru — all attainments are in vain without devotion to the Guru\'s lotus feet.' },
-  { id: 'damodarashtakam', title: 'Damodarashtakam', timestamp: '2026-04-19T22:00:00Z', desc: '8 verses by Satyavrata Muni from the Padma Purana, celebrating baby Krishna bound by Mother Yashoda\'s love.' },
+  { id: 'shri-rudram-namakam', title: 'Shri Rudram (Namakam)', timestamp: '2026-04-20T12:00:00Z', desc: '55 verses from the Krishna Yajurveda — the most ancient Vedic hymn to Lord Rudra, with all 11 anuvakas of sacred "namo" salutations.' },
+  { id: 'shiva-mahimna-stotram', title: 'Shiva Mahimna Stotram', timestamp: '2026-04-20T11:00:00Z', desc: '35 verses by Pushpadanta extolling the infinite greatness of Lord Shiva — His cosmic dance, transcendence, and boundless compassion.' },
+  { id: 'narayana-kavacham', title: 'Narayana Kavacham', timestamp: '2026-04-20T10:30:00Z', desc: 'A powerful protective armor from the Bhagavata Purana invoking Lord Vishnu\'s divine weapons and forms to shield the devotee.' },
+  { id: 'siddha-kunjika-stotram', title: 'Siddha Kunjika Stotram', timestamp: '2026-04-20T10:00:00Z', desc: 'The "master key" stotra from the Rudra Yamala Tantra — reciting this alone bestows the fruit of the entire Devi Mahatmyam.' },
+  { id: 'indrakshi-stotram', title: 'Indrakshi Stotram', timestamp: '2026-04-20T09:30:00Z', desc: 'A hymn to Goddess Indrakshi (Durga) from the Skanda Purana, invoking her protection and grace through her thousand-eyed form.' },
 ];
 
 function formatLocalTime(iso: string): string {
