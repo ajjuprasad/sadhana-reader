@@ -374,6 +374,17 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
         </>
       );
 
+    case 'dasharatha-shani-stotram':
+      // Saturn with ring — Lord Shani's planetary symbol
+      return (
+        <>
+          <circle cx="16" cy="14" r="6" {...s} strokeWidth="1.5" />
+          <ellipse cx="16" cy="14" rx="10" ry="3" {...s} strokeWidth="1.2" />
+          <line x1="16" y1="20" x2="16" y2="28" {...s} strokeWidth="1.5" />
+          <line x1="13" y1="25" x2="19" y2="25" {...s} strokeWidth="1.2" />
+        </>
+      );
+
     case 'pandurangashtakam':
       // Brick (Vit) — Vitthal's iconic standing-on-brick pose
       return (

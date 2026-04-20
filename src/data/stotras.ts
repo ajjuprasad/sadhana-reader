@@ -5710,6 +5710,74 @@ const sankataNashanaGaneshaStotram: Stotra = {
   ],
 };
 
+const dasharathaShaniStotram: Stotra = {
+  id: 'dasharatha-shani-stotram',
+  title: 'Dasharatha Shani Stotram',
+  subtitle: 'दशरथकृतशनिस्तोत्रम्',
+  deity: 'Shani',
+  description:
+    'A hymn composed by King Dasharatha, father of Lord Rama, to appease Lord Shani (Saturn). According to tradition, Dasharatha composed this when Shani threatened to enter the Rohini nakshatra, which would bring great calamity.',
+  benefits: [
+    'Mitigates the malefic effects of Saturn (Shani Dosha)',
+    'Brings relief during Sade-Sati and Shani Dasha periods',
+    'Bestows protection, peace, and removal of suffering',
+  ],
+  estimatedMinutes: 3,
+  icon: 'dasharatha-shani-stotram',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'नमः कृष्णाय नीलाय शितिकण्ठनिभाय च ।\nनमः कालाग्निरूपाय कृतान्ताय च वै नमः ॥',
+      transliteration:
+        'namaḥ kṛṣṇāya nīlāya śitikaṇṭha-nibhāya ca |\nnamaḥ kālāgni-rūpāya kṛtāntāya ca vai namaḥ ||',
+      meaning:
+        'Salutations to the dark one, the blue one, who resembles Lord Shiva (the blue-throated). Salutations to the one who is the fire of time, to the finisher of all.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'नमो निर्मांसदेहाय दीर्घश्मश्रुजटाय च ।\nनमो विशालनेत्राय शुष्कोदरभयानक ॥',
+      transliteration:
+        'namo nirmāṁsa-dehāya dīrgha-śmaśru-jaṭāya ca |\nnamo viśāla-netrāya śuṣkodara-bhayānaka ||',
+      meaning:
+        'Salutations to the one with a fleshless body, with long beard and matted locks. Salutations to the large-eyed, fearsome one with a sunken belly.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'नमः पुष्कलगात्राय स्थूलरोम्णेऽथ वै नमः ।\nनमो दीर्घाय शुष्काय कालदंष्ट्र नमोऽस्तु ते ॥',
+      transliteration:
+        'namaḥ puṣkala-gātrāya sthūla-romṇe \'tha vai namaḥ |\nnamo dīrghāya śuṣkāya kāla-daṁṣṭra namo \'stu te ||',
+      meaning:
+        'Salutations to the one with a robust body and coarse hair. Salutations to the tall and gaunt one — O possessor of the fangs of time, salutations to you.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'नमोऽस्तु घोररूपाय दुर्निरीक्ष्याय वै नमः ।\nनमो घोराय रौद्राय भीषणाय करालिने ॥',
+      transliteration:
+        'namo \'stu ghora-rūpāya durnirīkṣyāya vai namaḥ |\nnamo ghorāya raudrāya bhīṣaṇāya karāline ||',
+      meaning:
+        'Salutations to the one of terrifying form, who is difficult to behold. Salutations to the fierce, wrathful, dreadful, and formidable one.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'नमस्ते सर्वभक्षाय वलीमुखनमोऽस्तु ते ।\nसूर्यपुत्र नमस्तेऽस्तु भास्करे भयदाय च ॥',
+      transliteration:
+        'namaste sarva-bhakṣāya valī-mukha namo \'stu te |\nsūrya-putra namaste \'stu bhāskare bhaya-dāya ca ||',
+      meaning:
+        'Salutations to the all-consuming one, to the wrinkle-faced one. O son of Surya, salutations to you, to the luminous one who inspires awe.',
+    },
+  ],
+};
+
 const dakshinamurthyStotram: Stotra = {
   id: 'dakshinamurthy-stotram',
   title: 'Dakshinamurthy Stotram',
@@ -5838,6 +5906,7 @@ export const stotras: Stotra[] = [
   bilvashtakam,
   dakshinamurthyStotram,
   damodarashtakam,
+  dasharathaShaniStotram,
   ganeshaPancharatnam,
   guruAshtakam,
   hanumanChalisa,
@@ -5870,11 +5939,6 @@ export interface ComingSoonStotra {
 }
 
 export const comingSoonStotras: ComingSoonStotra[] = [
-  {
-    id: 'dasharatha-shani-stotram',
-    title: 'Dasharatha Shani Stotram',
-    deity: 'Shani',
-  },
   {
     id: 'indrakshi-stotram',
     title: 'Indrakshi Stotram',
