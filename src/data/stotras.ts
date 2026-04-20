@@ -6745,6 +6745,56 @@ const shriRudramNamakam: Stotra = {
       meaning:
         'The thousands of Rudras who exist on this earth — may we keep their bows unstrung a thousand leagues away. We worship the three-eyed one, the fragrant increaser of prosperity. As a cucumber is freed from its stalk, may we be liberated from death, not from immortality.',
     },
+    {
+      id: 16,
+      verseLabel: 'Anuvaka 1.5',
+      sanskrit:
+        'अध्यवोचदधिवक्ता प्रथमो दैव्यो भिषक् ।\nअहींश्च सर्वान्जम्भयन्त्सर्वाश्च यातुधान्यः ॥',
+      transliteration:
+        'adhyavocad-adhivaktā prathamo daivyo bhiṣak |\nahīṁś-ca sarvān-jambhayant-sarvāś-ca yātudhānyaḥ ||',
+      meaning:
+        'He who is the first divine physician has spoken in our favor. May He crush all serpents and destroy all evil spirits.',
+    },
+    {
+      id: 17,
+      verseLabel: 'Anuvaka 1.6',
+      sanskrit:
+        'असौ यस्ताम्रो अरुण उत बभ्रुः सुमङ्गलः ।\nये चेमाँ रुद्रा अभितो दिक्षु श्रिताः सहस्रशोऽवैषां हेड ईमहे ॥',
+      transliteration:
+        'asau yas-tāmro aruṇa uta babhruḥ sumaṅgalaḥ |\nye cemāṁ rudrā abhito dikṣu śritāḥ sahasraśo \'vaiṣāṁ heḍa īmahe ||',
+      meaning:
+        'He who is coppery, ruddy, brown, and most auspicious — and the thousands of Rudras stationed in all directions around us — we propitiate the anger of all of them.',
+    },
+    {
+      id: 18,
+      verseLabel: 'Anuvaka 1.7',
+      sanskrit:
+        'असौ योऽवसर्पति नीलग्रीवो विलोहितः ।\nउतैनं गोपा अदृशन्नदृशन्नुदहार्यः ॥',
+      transliteration:
+        'asau yo \'vasarpati nīlagrīvo vilohitaḥ |\nutainaṁ gopā adṛśann-adṛśann-udahāryaḥ ||',
+      meaning:
+        'He who glides about, blue-necked and red-bodied — the cowherds see Him, the water-bearers see Him. May He be gracious to us.',
+    },
+    {
+      id: 19,
+      verseLabel: 'Anuvaka 1.8',
+      sanskrit:
+        'नमो अस्तु नीलग्रीवाय सहस्राक्षाय मीढुषे ।\nअथो ये अस्य सत्वानोऽहं तेभ्योऽकरं नमः ॥',
+      transliteration:
+        'namo astu nīlagrīvāya sahasrākṣāya mīḍhuṣe |\natho ye asya satvāno \'haṁ tebhyo \'karaṁ namaḥ ||',
+      meaning:
+        'Salutations to the blue-necked, thousand-eyed, generous one. And to all His attendants, I offer my salutations.',
+    },
+    {
+      id: 20,
+      verseLabel: 'Anuvaka 1.9',
+      sanskrit:
+        'प्रमुञ्च धन्वनस्त्वमुभयोरार्त्नियोर्ज्याम् ।\nयाश्च ते हस्त इषवः परा ता भगवो वप ॥',
+      transliteration:
+        'pramuñca dhanvanas-tvam-ubhayor-ārtniyur-jyām |\nyāś-ca te hasta iṣavaḥ parā tā bhagavo vapa ||',
+      meaning:
+        'Unstring Your bow, loosen the string from both ends. And the arrows in Your hand, O blessed one, cast them away.',
+    },
   ],
 };
 
