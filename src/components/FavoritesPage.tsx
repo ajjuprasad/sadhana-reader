@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
@@ -7,9 +8,12 @@ import { useFavorites } from '../hooks/useFavorites';
 import StotraCard from './StotraCard';
 import StoryCard from './StoryCard';
 
+type Tab = 'stotras' | 'stories';
+
 export default function FavoritesPage() {
   const navigate = useNavigate();
   const { favoriteIds } = useFavorites();
+  const [activeTab, setActiveTab] = useState<Tab>('stotras');
   const favoriteStotras = stotras.filter((s) => favoriteIds.includes(s.id));
   const favoriteStories = stories.filter((s) => favoriteIds.includes(s.id));
   const hasAny = favoriteStotras.length > 0 || favoriteStories.length > 0;
@@ -38,24 +42,43 @@ export default function FavoritesPage() {
           </h1>
           <div style={{ width: 42 }} />
         </div>
+
+        {/* Tab pills */}
+        {hasAny && (
+          <div className="flex justify-center gap-2 px-4 pb-3">
+            <button
+              onClick={() => setActiveTab('stotras')}
+              className="font-hind font-medium text-xs px-4 py-1.5 rounded-full transition-all duration-200"
+              style={{
+                backgroundColor: activeTab === 'stotras' ? 'var(--color-accent-primary)' : 'var(--color-bg-card)',
+                color: activeTab === 'stotras' ? '#fff' : 'var(--color-text-secondary)',
+                border: activeTab === 'stotras' ? '1px solid transparent' : '1px solid rgba(0,0,0,0.06)',
+              }}
+            >
+              Stotras ({favoriteStotras.length})
+            </button>
+            <button
+              onClick={() => setActiveTab('stories')}
+              className="font-hind font-medium text-xs px-4 py-1.5 rounded-full transition-all duration-200"
+              style={{
+                backgroundColor: activeTab === 'stories' ? 'var(--color-accent-primary)' : 'var(--color-bg-card)',
+                color: activeTab === 'stories' ? '#fff' : 'var(--color-text-secondary)',
+                border: activeTab === 'stories' ? '1px solid transparent' : '1px solid rgba(0,0,0,0.06)',
+              }}
+            >
+              Stories ({favoriteStories.length})
+            </button>
+          </div>
+        )}
       </div>
 
       <div className="max-w-3xl mx-auto px-4 mt-4">
         {hasAny ? (
           <>
-            {favoriteStotras.length > 0 && (
-              <>
-                <div className="flex items-center justify-center gap-2 mb-5">
-                  <div className="h-px w-12" style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }} />
-                  <h2
-                    className="font-hind font-semibold uppercase"
-                    style={{ fontSize: '0.625rem', color: 'var(--color-accent-primary)', letterSpacing: '0.18em' }}
-                  >
-                    Stotras ({favoriteStotras.length})
-                  </h2>
-                  <div className="h-px w-12" style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }} />
-                </div>
+            {activeTab === 'stotras' && (
+              favoriteStotras.length > 0 ? (
                 <motion.div
+                  key="stotras"
                   className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -70,22 +93,24 @@ export default function FavoritesPage() {
                     />
                   ))}
                 </motion.div>
-              </>
+              ) : (
+                <motion.div
+                  className="text-center py-16"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <p className="font-body text-sm" style={{ color: 'var(--color-text-muted)' }}>
+                    No favorite stotras yet. Tap the heart icon on any stotra to save it here.
+                  </p>
+                </motion.div>
+              )
             )}
 
-            {favoriteStories.length > 0 && (
-              <div className={favoriteStotras.length > 0 ? 'mt-10' : ''}>
-                <div className="flex items-center justify-center gap-2 mb-5">
-                  <div className="h-px w-12" style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }} />
-                  <h2
-                    className="font-hind font-semibold uppercase"
-                    style={{ fontSize: '0.625rem', color: 'var(--color-accent-primary)', letterSpacing: '0.18em' }}
-                  >
-                    Stories ({favoriteStories.length})
-                  </h2>
-                  <div className="h-px w-12" style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }} />
-                </div>
+            {activeTab === 'stories' && (
+              favoriteStories.length > 0 ? (
                 <motion.div
+                  key="stories"
                   className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -100,7 +125,18 @@ export default function FavoritesPage() {
                     />
                   ))}
                 </motion.div>
-              </div>
+              ) : (
+                <motion.div
+                  className="text-center py-16"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <p className="font-body text-sm" style={{ color: 'var(--color-text-muted)' }}>
+                    No favorite stories yet. Tap the heart icon on any story to save it here.
+                  </p>
+                </motion.div>
+              )
             )}
           </>
         ) : (
