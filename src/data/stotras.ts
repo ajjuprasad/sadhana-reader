@@ -5579,6 +5579,36 @@ const pandurangashtakam: Stotra = {
       meaning:
         'The unborn one who is the life of Rukmini, the supreme abode, the one absolute liberation, the fourth state of consciousness — gracious, the remover of the distress of those who surrender, the God of gods, I worship that Panduranga, the embodiment of the Supreme Brahman.',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'श्रीराधाचकोरामृतं कृष्णचन्द्रं\nनवानन्दनृत्यं परं ब्रह्मसन्दम् ।\nरसालिङ्गनोत्कण्ठितोद्भूतहासं\nपरब्रह्मलिङ्गं भजे पाण्डुरङ्गम् ॥',
+      transliteration:
+        'śrī-rādhā-cakorāmṛtaṁ kṛṣṇa-candraṁ\nnavānanda-nṛtyaṁ paraṁ brahma-sandam |\nrasāliṅganotkaṇṭhitod-bhūta-hāsaṁ\npara-brahma-liṅgaṁ bhaje pāṇḍuraṅgam ||',
+      meaning:
+        'The moon-like Krishna who is the nectar for the chakora bird that is Radha, who dances in ever-new bliss, the supreme essence of Brahman — whose smile arises from the eagerness for the embrace of divine love, I worship that Panduranga, the embodiment of the Supreme Brahman.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'सदा ब्रह्मभूतं चिदानन्दरूपं\nगुणातीतमानन्दकन्दं स्वभक्तम् ।\nसदा सर्वभूतेषु सन्तं वसन्तं\nपरब्रह्मलिङ्गं भजे पाण्डुरङ्गम् ॥',
+      transliteration:
+        'sadā brahma-bhūtaṁ cid-ānanda-rūpaṁ\nguṇātītam-ānanda-kandaṁ sva-bhaktam |\nsadā sarva-bhūteṣu santaṁ vasantaṁ\npara-brahma-liṅgaṁ bhaje pāṇḍuraṅgam ||',
+      meaning:
+        'Ever established as Brahman, of the form of consciousness-bliss, beyond the gunas, the root of bliss, devoted to His devotees — ever present and dwelling in all beings, I worship that Panduranga, the embodiment of the Supreme Brahman.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'इदं पाण्डुरङ्गाष्टकं यः पठेत\nमनोवाञ्छितं तत्फलं लब्धमेव ।\nगतो योगिनां लक्ष्यमन्तस्त्रिणेत्रं\nपरब्रह्मलिङ्गं भजे पाण्डुरङ्गम् ॥',
+      transliteration:
+        'idaṁ pāṇḍuraṅgāṣṭakaṁ yaḥ paṭheta\nmano-vāñchitaṁ tat-phalaṁ labdham-eva |\ngato yogināṁ lakṣyam-antas-triṇetraṁ\npara-brahma-liṅgaṁ bhaje pāṇḍuraṅgam ||',
+      meaning:
+        'Whoever recites this Pandurangashtakam obtains the fruit of their heart\'s desire. Having reached the goal of yogis — the three-eyed one within — I worship that Panduranga, the embodiment of the Supreme Brahman.',
+    },
   ],
 };
 
