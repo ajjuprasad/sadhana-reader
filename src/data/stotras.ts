@@ -6427,6 +6427,56 @@ const shivaMahimnaStotram: Stotra = {
       meaning:
         'When rituals are completed, You alone remain awake to grant their fruit. Without the worship of the Supreme Being, how can mere action bear fruit? Knowing You as the guarantor of the fruits of sacrifice, people bind their faith in the Vedas and undertake rituals with determination.',
     },
+    {
+      id: 21,
+      verseLabel: 'Verse 21',
+      sanskrit:
+        'क्रियादक्षो दक्षः क्रतुपतिरधीशस्तनुभृता-\nमृषीणामार्त्विज्यं शरणद सदस्याः सुरगणाः ।\nक्रतुभ्रंशस्त्वत्तः क्रतुफलविधानव्यसनिनो\nध्रुवं कर्तुः श्रद्धाविधुरमभिचाराय हि मखाः ॥',
+      transliteration:
+        'kriyā-dakṣo dakṣaḥ kratu-patir-adhīśas-tanubhṛtām\nṛṣīṇām-ārtvijyaṁ śaraṇada sadasyāḥ sura-gaṇāḥ |\nkratu-bhraṁśas-tvattaḥ kratu-phala-vidhāna-vyasanino\ndhruvaṁ kartuḥ śraddhā-vidhuram-abhicārāya hi makhāḥ ||',
+      meaning:
+        'O giver of refuge, though Daksha was skilled in rituals and lord of sacrifice, the sages were priests and the gods were the assembly — still the sacrifice failed because of You. For one who is obsessed with the fruits of sacrifice but lacks devotion, the ritual itself becomes a curse.',
+    },
+    {
+      id: 22,
+      verseLabel: 'Verse 22',
+      sanskrit:
+        'प्रजानाथं नाथ प्रसभमभिकं स्वां दुहितरं\nगतं रोहिद्भूतां रिरमयिषुमृष्यस्य वपुषा ।\nधनुष्पाणेर्यातं दिवमपि सपत्राकृतममुं\nत्रसन्तं तेऽद्यापि त्यजति न मृगव्याधरभसः ॥',
+      transliteration:
+        'prajā-nāthaṁ nātha prasabham-abhikaṁ svāṁ duhitaraṁ\ngataṁ rohid-bhūtāṁ riramayiṣum-ṛṣyasya vapuṣā |\ndhanuṣ-pāṇer-yātaṁ divam-api sapatrākṛtam-amuṁ\ntrasantaṁ te \'dyāpi tyajati na mṛga-vyādha-rabhasaḥ ||',
+      meaning:
+        'O Lord, when the lord of creation, assuming the form of a deer, pursued his own daughter who had become a doe — You, bow in hand, chased him even to the heavens. That fierce hunter\'s zeal has not left You even today, O Mrigavyadha.',
+    },
+    {
+      id: 23,
+      verseLabel: 'Verse 23',
+      sanskrit:
+        'स्वलावण्याशंसा धृतधनुषमह्नाय तृणवत्\nपुरः प्लुष्टं दृष्ट्वा पुरमथन पुष्पायुधमपि ।\nयदि स्त्रैणं देवि यमनिरतदेहार्धघटनात्\nअवैति त्वामद्धा बत वरद मुग्धा युवतयः ॥',
+      transliteration:
+        'svalāvaṇyāśaṁsā dhṛta-dhanuṣam-ahnāya tṛṇavat\npuraḥ pluṣṭaṁ dṛṣṭvā puramathana puṣpāyudham-api |\nyadi straiṇaṁ devi yam-anirata-dehārdha-ghaṭanāt\navaiti tvām-addhā bata varada mugdhā yuvatayaḥ ||',
+      meaning:
+        'O destroyer of Tripura, having burned Kamadeva to ashes like straw — if young women still think You are susceptible to feminine charm because You gave half Your body to the Goddess, then alas, how naive they are, O bestower of boons!',
+    },
+    {
+      id: 24,
+      verseLabel: 'Verse 24',
+      sanskrit:
+        'श्मशानेष्वाक्रीडा स्मरहर पिशाचाः सहचराः\nचिताभस्मालेपः स्रगपि नृकरोटीपरिकरः ।\nअमङ्गल्यं शीलं तव भवतु नामैवमखिलं\nतथापि स्मर्तॄणां वरद परमं मङ्गलमसि ॥',
+      transliteration:
+        'śmaśāneṣv-ākrīḍā smarahara piśācāḥ sahacarāḥ\ncitā-bhasmālepaḥ sragapi nṛkaroṭī-parikaraḥ |\namaṅgalyaṁ śīlaṁ tava bhavatu nāmaivam-akhilaṁ\ntathāpi smartṝṇāṁ varada paramaṁ maṅgalam-asi ||',
+      meaning:
+        'O destroyer of Kama, Your playground is the cremation ground, Your companions are ghosts, Your body is smeared with funeral ash, Your garland is of skulls. All this may seem inauspicious — yet for those who remember You, O bestower of boons, You are the supreme auspiciousness.',
+    },
+    {
+      id: 25,
+      verseLabel: 'Verse 25',
+      sanskrit:
+        'मनः प्रत्यक्चित्ते सविधमविधायात्तमरुतः\nप्रहृष्यद्रोमाणः प्रमदसलिलोत्सङ्गितदृशः ।\nयदालोक्याह्लादं ह्रद इव निमज्ज्यामृतमये\nदधत्यन्तस्तत्त्वं किमपि यमिनस्तत्किल भवान् ॥',
+      transliteration:
+        'manaḥ pratyak-citte savidham-avidhāyātta-marutaḥ\nprahṛṣyad-romāṇaḥ pramada-salilotsaṅgita-dṛśaḥ |\nyad-ālokyāhlādaṁ hrada iva nimajjyāmṛta-maye\ndadhatyantas-tattvaṁ kim-api yaminas-tat-kila bhavān ||',
+      meaning:
+        'The yogis who turn the mind inward, control the breath, feel the hair standing on end in ecstasy, and eyes brimming with tears of joy — that ineffable truth they experience within, plunging into a pool of nectar-like bliss, that indeed is You.',
+    },
   ],
 };
 
