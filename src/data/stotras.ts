@@ -5818,6 +5818,74 @@ const dasharathaShaniStotram: Stotra = {
   ],
 };
 
+const siddhaKunjikaStotram: Stotra = {
+  id: 'siddha-kunjika-stotram',
+  title: 'Siddha Kunjika Stotram',
+  subtitle: 'सिद्धकुञ्जिकास्तोत्रम्',
+  deity: 'Durga',
+  description:
+    'A powerful hymn from the Rudrayamala Tantra containing the essence of the Durga Saptashati. Lord Shiva teaches this to Parvati, declaring that recitation of this alone bestows the complete fruit of the seven hundred verses of the Devi Mahatmya.',
+  benefits: [
+    'Bestows the complete fruit of reciting the Durga Saptashati',
+    'Destroys all enemies and removes all diseases',
+    'Grants wealth, prosperity, and spiritual liberation',
+  ],
+  estimatedMinutes: 5,
+  icon: 'siddha-kunjika-stotram',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'शिव उवाच —\nशृणु देवि प्रवक्ष्यामि कुञ्जिकास्तोत्रमुत्तमम् ।\nयेन मन्त्रप्रभावेण चण्डीजापः शुभो भवेत् ॥',
+      transliteration:
+        'śiva uvāca —\nśṛṇu devi pravakṣyāmi kuñjikā-stotram-uttamam |\nyena mantra-prabhāveṇa caṇḍī-jāpaḥ śubho bhavet ||',
+      meaning:
+        'Lord Shiva said: Listen, O Devi, I shall tell you the supreme Kunjika Stotram, by the power of whose mantra the recitation of the Chandi becomes auspicious and fruitful.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'न कवचं नार्गलास्तोत्रं कीलकं न रहस्यकम् ।\nन सूक्तं नापि ध्यानं च न न्यासो न च वार्चनम् ॥',
+      transliteration:
+        'na kavacaṁ nārgalā-stotraṁ kīlakaṁ na rahasyakam |\nna sūktaṁ nāpi dhyānaṁ ca na nyāso na ca vārcanam ||',
+      meaning:
+        'Neither the Kavacham, nor the Argala Stotram, nor the Kilakam, nor the secret text, nor the Sukta, nor meditation, nor Nyasa, nor any worship ritual is needed.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'कुञ्जिकापाठमात्रेण दुर्गापाठफलं लभेत् ।\nअति गुह्यतरं देवि देवानामपि दुर्लभम् ॥',
+      transliteration:
+        'kuñjikā-pāṭha-mātreṇa durgā-pāṭha-phalaṁ labhet |\nati guhyataraṁ devi devānām-api durlabham ||',
+      meaning:
+        'By merely reciting the Kunjika, one obtains the fruit of the entire Durga Saptashati. This is supremely secret, O Devi, rare even for the gods.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'गोपनीयं प्रयत्नेन स्वयोनिरिव पार्वति ।\nमारणं मोहनं वश्यं स्तम्भनोच्चाटनादिकम् ॥',
+      transliteration:
+        'gopanīyaṁ prayatnena sva-yonir-iva pārvati |\nmāraṇaṁ mohanaṁ vaśyaṁ stambhanoccāṭanādikam ||',
+      meaning:
+        'This is to be kept secret with great effort, O Parvati, as one would guard one\'s own origin. It grants powers of subduing, attracting, paralyzing, and all such accomplishments.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'पाठमात्रेण संसिद्ध्येत् कुञ्जिकास्तोत्रमुत्तमम् ।\nॐ ऐं ह्रीं क्लीं चामुण्डायै विच्चे ।\nॐ ग्लौं हुं क्लीं जूं सः ज्वालय ज्वालय ज्वल ज्वल प्रज्वल प्रज्वल ॥',
+      transliteration:
+        'pāṭha-mātreṇa saṁsiddhyet kuñjikā-stotram-uttamam |\noṁ aiṁ hrīṁ klīṁ cāmuṇḍāyai vicce |\noṁ glauṁ huṁ klīṁ jūṁ saḥ jvālaya jvālaya jvala jvala prajvala prajvala ||',
+      meaning:
+        'By mere recitation, this supreme Kunjika Stotram becomes accomplished. Om Aim Hrim Klim Chamundayai Vichche. Om Glaum Hum Klim Jum Sah — blaze, blaze, flame, flame, ignite, ignite!',
+    },
+  ],
+};
+
 const dakshinamurthyStotram: Stotra = {
   id: 'dakshinamurthy-stotram',
   title: 'Dakshinamurthy Stotram',
@@ -5965,6 +6033,7 @@ export const stotras: Stotra[] = [
   shivaPanchakshara,
   shivaTandavaStotram,
   shivaAshtottara,
+  siddhaKunjikaStotram,
   subrahmanyaBhujangam,
   subramanyaAshtakam,
   sudarshanaAshtakam,
@@ -6003,10 +6072,5 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'shri-rudram-namakam',
     title: 'Shri Rudram (Namakam)',
     deity: 'Shiva',
-  },
-  {
-    id: 'siddha-kunjika-stotram',
-    title: 'Siddha Kunjika Stotram',
-    deity: 'Durga',
   },
 ];

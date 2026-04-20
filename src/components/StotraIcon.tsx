@@ -210,6 +210,7 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
       );
 
     case 'mahishasura-mardini-stotram':
+    case 'siddha-kunjika-stotram':
       // Trishul with crescent — Durga's weapon
       return (
         <>
