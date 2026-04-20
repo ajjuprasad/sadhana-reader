@@ -101,25 +101,29 @@ export default function HomeScreen() {
 
   const isFiltering = searchQuery.length > 0 || selectedDeity !== null;
   const searchSentinelRef = useRef<HTMLDivElement>(null);
-  const stickyHeaderRef = useRef<HTMLDivElement>(null);
+  const appBarRef = useRef<HTMLDivElement>(null);
+  const [appBarHeight, setAppBarHeight] = useState(44);
   const [isStuck, setIsStuck] = useState(false);
   const [chipsExpanded, setChipsExpanded] = useState(false);
 
   useEffect(() => {
-    const sentinel = searchSentinelRef.current;
-    const header = stickyHeaderRef.current;
-    if (!sentinel || !header) return;
-    const h = header.getBoundingClientRect().height;
+    const bar = appBarRef.current;
+    if (bar) setAppBarHeight(bar.getBoundingClientRect().height);
+  }, []);
+
+  useEffect(() => {
+    const el = searchSentinelRef.current;
+    if (!el) return;
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsStuck(!entry.isIntersecting);
         if (entry.isIntersecting) setChipsExpanded(false);
       },
-      { threshold: 0, rootMargin: `-${Math.ceil(h)}px 0px 0px 0px` },
+      { threshold: 0, rootMargin: `-${appBarHeight}px 0px 0px 0px` },
     );
-    observer.observe(sentinel);
+    observer.observe(el);
     return () => observer.disconnect();
-  }, []);
+  }, [appBarHeight]);
 
   const filteredStotras = useMemo(() => {
     const q = searchQuery.toLowerCase();
@@ -151,16 +155,12 @@ export default function HomeScreen() {
         <meta name="description" content="Read and contemplate Hindu stotras including Hanuman Chalisa, Bhaja Govindam, Vishnu Sahasranamam, and more. A beautiful, ad-free digital sanctum for daily practice." />
         <link rel="canonical" href="https://sadhanareader.org/" />
       </Helmet>
-      {/* Combined sticky header: app bar + search */}
+      {/* Sticky app bar */}
       <div
-        ref={stickyHeaderRef}
-        className="sticky top-0 z-30 transition-shadow duration-200"
-        style={{
-          backgroundColor: 'var(--color-bg)',
-          boxShadow: isStuck ? '0 2px 8px rgba(0,0,0,0.06)' : 'none',
-        }}
+        ref={appBarRef}
+        className="sticky top-0 z-30 flex items-center justify-between px-4 py-2"
+        style={{ backgroundColor: 'var(--color-bg)' }}
       >
-      <div className="flex items-center justify-between px-4 py-2">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="flex items-center gap-1.5 transition-opacity duration-300"
@@ -214,8 +214,53 @@ export default function HomeScreen() {
         </div>
       </div>
 
-      {/* Search bar */}
-      <div className="px-4 pb-2">
+    <div className="px-4 pb-8 sm:pb-12">
+
+      {/* Header */}
+      <motion.header
+        ref={headerRef}
+        className="text-center mb-10 sm:mb-14 mt-6 sm:mt-8"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: sacredEase as unknown as number[] }}
+      >
+        <div
+          className="text-5xl mb-3 select-none"
+          style={{ color: 'var(--color-accent-primary)' }}
+          aria-hidden="true"
+        >
+          ॐ
+        </div>
+        <h1
+          className="font-display font-black text-3xl sm:text-4xl tracking-tight mb-2"
+          style={{ color: 'var(--color-text-primary)' }}
+        >
+          {t('home.title')}
+        </h1>
+        <p
+          className="font-body text-sm mt-2 italic"
+          style={{ color: 'var(--color-text-muted)' }}
+        >
+          {t('home.subtitle')}
+        </p>
+      </motion.header>
+
+      {/* Sentinel — triggers isStuck when scrolled behind app bar */}
+      <div ref={searchSentinelRef} className="h-0" />
+
+      {/* Search & Filter — sticks below app bar on scroll */}
+      <div
+        className="sticky z-20 -mx-4 transition-shadow duration-200"
+        style={{
+          top: `${appBarHeight}px`,
+          backgroundColor: 'var(--color-bg)',
+          boxShadow: isStuck ? '0 2px 8px rgba(0,0,0,0.06)' : 'none',
+          paddingTop: isStuck ? '8px' : '0',
+          paddingBottom: isStuck ? '8px' : '12px',
+          paddingLeft: '16px',
+          paddingRight: '16px',
+        }}
+      >
         <div className="max-w-3xl mx-auto">
           <div className="relative">
             <svg
@@ -250,6 +295,17 @@ export default function HomeScreen() {
               onFocus={(e) => {
                 e.currentTarget.style.borderColor = 'var(--color-accent-primary)';
                 e.currentTarget.style.boxShadow = 'inset 0 0 0 1px var(--color-accent-primary)';
+                if (!isStuck) {
+                  setTimeout(() => {
+                    const sentinel = searchSentinelRef.current;
+                    const bar = appBarRef.current;
+                    if (sentinel && bar) {
+                      const barH = bar.getBoundingClientRect().height;
+                      const top = sentinel.getBoundingClientRect().top + window.scrollY - barH;
+                      window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+                    }
+                  }, 100);
+                }
               }}
               onBlur={(e) => {
                 e.currentTarget.style.borderColor = 'transparent';
@@ -327,41 +383,6 @@ export default function HomeScreen() {
           )}
         </div>
       </div>
-      </div>
-
-    <div className="px-4 pb-8 sm:pb-12">
-
-      {/* Header */}
-      <motion.header
-        ref={headerRef}
-        className="text-center mb-10 sm:mb-14 mt-6 sm:mt-8"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: sacredEase as unknown as number[] }}
-      >
-        <div
-          className="text-5xl mb-3 select-none"
-          style={{ color: 'var(--color-accent-primary)' }}
-          aria-hidden="true"
-        >
-          ॐ
-        </div>
-        <h1
-          className="font-display font-black text-3xl sm:text-4xl tracking-tight mb-2"
-          style={{ color: 'var(--color-text-primary)' }}
-        >
-          {t('home.title')}
-        </h1>
-        <p
-          className="font-body text-sm mt-2 italic"
-          style={{ color: 'var(--color-text-muted)' }}
-        >
-          {t('home.subtitle')}
-        </p>
-      </motion.header>
-
-      {/* Sentinel — triggers isStuck when scrolled behind sticky header */}
-      <div ref={searchSentinelRef} className="h-0" />
 
       {/* Favorites — hidden when filtering */}
       {!isFiltering && favoriteStotras.length > 0 && (
