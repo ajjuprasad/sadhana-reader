@@ -373,6 +373,18 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
         </>
       );
 
+    case 'pandurangashtakam':
+      // Brick (Vit) — Vitthal's iconic standing-on-brick pose
+      return (
+        <>
+          <rect x="6" y="22" width="20" height="6" rx="1" {...s} strokeWidth="1.5" />
+          <line x1="16" y1="22" x2="16" y2="14" {...s} strokeWidth="1.8" />
+          <circle cx="16" cy="10.5" r="3.5" {...s} strokeWidth="1.3" />
+          <path d="M12 16 L8 18" {...s} strokeWidth="1.2" />
+          <path d="M20 16 L24 18" {...s} strokeWidth="1.2" />
+        </>
+      );
+
     case 'dakshinamurthy-stotram':
       return (
         <>

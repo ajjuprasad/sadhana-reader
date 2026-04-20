@@ -5514,6 +5514,74 @@ const guruAshtakam: Stotra = {
   ],
 };
 
+const pandurangashtakam: Stotra = {
+  id: 'pandurangashtakam',
+  title: 'Pandurangashtakam',
+  subtitle: 'पाण्डुरङ्गाष्टकम्',
+  deity: 'Vishnu',
+  description:
+    'Eight verses by Adi Shankaracharya glorifying Lord Panduranga (Vitthal), the beloved deity of Pandharpur standing on a brick on the banks of the Bhima river. Each verse culminates in the refrain "I worship Panduranga, the embodiment of the Supreme Brahman."',
+  benefits: [
+    'Bestows devotion and surrender to Lord Vitthal-Panduranga',
+    'Purifies the mind and removes sins of past lives',
+    'Grants liberation and a place in the abode of Vishnu',
+  ],
+  estimatedMinutes: 3,
+  icon: 'pandurangashtakam',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'महायोगपीठे तटे भीमरथ्याः\nवरं पुण्डरीकाय दातुं मुनीन्द्रैः ।\nसमागत्य तिष्ठन्तमानन्दकन्दं\nपरब्रह्मलिङ्गं भजे पाण्डुरङ्गम् ॥',
+      transliteration:
+        'mahā-yoga-pīṭhe taṭe bhīma-rathyāḥ\nvaraṁ puṇḍarīkāya dātuṁ munīndraiḥ |\nsamāgatya tiṣṭhantam-ānanda-kandaṁ\npara-brahma-liṅgaṁ bhaje pāṇḍuraṅgam ||',
+      meaning:
+        'On the great seat of yoga, on the banks of the Bhima river, having come with the great sages to grant a boon to Pundalik — He stands there, the root of bliss. I worship that Panduranga, the embodiment of the Supreme Brahman.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'तडिद्वाससं नीलमेघावभासं\nरमामन्दिरं सुन्दरं चित्प्रकाशम् ।\nवरं त्विष्टिकायां समन्यस्तपादं\nपरब्रह्मलिङ्गं भजे पाण्डुरङ्गम् ॥',
+      transliteration:
+        'taḍid-vāsasaṁ nīla-meghāvabhāsaṁ\nramā-mandiraṁ sundaraṁ cit-prakāśam |\nvaraṁ tviṣṭikāyāṁ samanyasta-pādaṁ\npara-brahma-liṅgaṁ bhaje pāṇḍuraṅgam ||',
+      meaning:
+        'Clad in garments bright as lightning, radiant as a blue cloud, the abode of Lakshmi, beautiful, the light of pure consciousness — with His feet placed on the brick, I worship that Panduranga, the embodiment of the Supreme Brahman.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'प्रमाणं भवाब्धेरिदं मामकानां\nनितम्बः कराभ्यामसौ संगृहीतः ।\nइतीवोरुकट्यां विनिन्यस्तहस्तं\nपरब्रह्मलिङ्गं भजे पाण्डुरङ्गम् ॥',
+      transliteration:
+        'pramāṇaṁ bhavābdher-idaṁ māmakānāṁ\nnitambaḥ karābhyām-asau saṁgṛhītaḥ |\nitīvorukāṭyāṁ vininyasta-hastaṁ\npara-brahma-liṅgaṁ bhaje pāṇḍuraṅgam ||',
+      meaning:
+        'As if declaring "the measure of this ocean of worldly existence for My devotees is only up to My waist, which I hold with both hands" — with His hands placed on His waist, I worship that Panduranga, the embodiment of the Supreme Brahman.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'विभुं वेणुनादं चरन्तं दुरन्तं\nस्वयं लीलया गोपवेषं दधानम् ।\nगवां बृन्दकानन्ददं चारुहासं\nपरब्रह्मलिङ्गं भजे पाण्डुरङ्गम् ॥',
+      transliteration:
+        'vibhuṁ veṇu-nādaṁ carantaṁ durantaṁ\nsvayaṁ līlayā gopa-veṣaṁ dadhānam |\ngavāṁ bṛnda-kānandam caruhasaṁ\npara-brahma-liṅgaṁ bhaje pāṇḍuraṅgam ||',
+      meaning:
+        'The all-pervading Lord who plays the flute, who roams freely, boundless, who playfully dons the garb of a cowherd — who delights the herds of cows with His charming smile, I worship that Panduranga, the embodiment of the Supreme Brahman.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'अजं रुक्मिणीप्राणसञ्जीवनं तं\nपरं धाम कैवल्यमेकं तुरीयम् ।\nप्रसन्नं प्रपन्नार्तिहं देवदेवं\nपरब्रह्मलिङ्गं भजे पाण्डुरङ्गम् ॥',
+      transliteration:
+        'ajaṁ rukmiṇī-prāṇa-sañjīvanaṁ taṁ\nparaṁ dhāma kaivalyam-ekaṁ turīyam |\nprasannaṁ prapannārti-haṁ deva-devaṁ\npara-brahma-liṅgaṁ bhaje pāṇḍuraṅgam ||',
+      meaning:
+        'The unborn one who is the life of Rukmini, the supreme abode, the one absolute liberation, the fourth state of consciousness — gracious, the remover of the distress of those who surrender, the God of gods, I worship that Panduranga, the embodiment of the Supreme Brahman.',
+    },
+  ],
+};
+
 const dakshinamurthyStotram: Stotra = {
   id: 'dakshinamurthy-stotram',
   title: 'Dakshinamurthy Stotram',
@@ -5653,6 +5721,7 @@ export const stotras: Stotra[] = [
   mahishasuraMardiniStotram,
   narasimhaKaravalambaStotram,
   nirvanaShatakam,
+  pandurangashtakam,
   ramRakshaStotra,
   saraswatiStotram,
   shivaPanchakshara,
@@ -5690,11 +5759,6 @@ export const comingSoonStotras: ComingSoonStotra[] = [
   {
     id: 'narayana-kavacham',
     title: 'Narayana Kavacham',
-    deity: 'Vishnu',
-  },
-  {
-    id: 'pandurangashtakam',
-    title: 'Pandurangashtakam',
     deity: 'Vishnu',
   },
   {
