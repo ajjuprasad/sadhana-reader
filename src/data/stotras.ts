@@ -6277,6 +6277,56 @@ const shivaMahimnaStotram: Stotra = {
       meaning:
         'What is His purpose? What is His form? What is His means? What supports the Creator as He creates the three worlds? What is His material cause? — Such futile arguments by the deluded only confuse the world, for Your glory is beyond all reasoning.',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'अजन्मानो लोकाः किमवयववन्तोऽपि जगतां\nअधिष्ठातारं किं भवविधिरनादृत्य भवति ।\nअनीशो वा कुर्याद्भुवनजनने कः परिकरो\nयतो मन्दास्त्वां प्रत्यमरवर संशेरत इमे ॥',
+      transliteration:
+        'ajanmāno lokāḥ kim-avayavavanto \'pi jagatāṁ\nadhiṣṭhātāraṁ kiṁ bhava-vidhir-anādṛtya bhavati |\nanīśo vā kuryād-bhuvana-janane kaḥ parikaro\nyato mandās-tvāṁ pratyamara-vara saṁśerata ime ||',
+      meaning:
+        'Are the worlds unborn? Are they composed of parts? Can the process of creation proceed without a presiding Lord? Can a powerless being create the universe? — O best of immortals, it is about You that the dull-witted harbor such doubts.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'त्रयी साङ्ख्यं योगः पशुपतिमतं वैष्णवमिति\nप्रभिन्ने प्रस्थाने परमिदमदः पथ्यमिति च ।\nरुचीनां वैचित्र्यादृजुकुटिलनानापथजुषां\nनृणामेको गम्यस्त्वमसि पयसामर्णव इव ॥',
+      transliteration:
+        'trayī sāṅkhyaṁ yogaḥ paśupati-mataṁ vaiṣṇavam-iti\nprabhinnē prasthāne param-idam-adaḥ pathyam-iti ca |\nrucīnāṁ vaicitryād-ṛju-kuṭila-nānā-patha-juṣāṁ\nnṛṇām-eko gamyas-tvam-asi payasām-arṇava iva ||',
+      meaning:
+        'The Vedas, Sankhya, Yoga, Shaiva, Vaishnava — these different paths each claim "this alone is supreme." But just as rivers flowing by various straight and winding courses all reach the ocean, so You alone are the one destination for all people of diverse preferences.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'महोक्षः खट्वाङ्गं परशुरजिनं भस्म फणिनः\nकपालं चेतीयत्तव वरद तन्त्रोपकरणम् ।\nसुरास्तां तामृद्धिं दधति तु भवद्भूप्रणिहितां\nन हि स्वात्मारामं विषयमृगतृष्णा भ्रमयति ॥',
+      transliteration:
+        'mahokṣaḥ khaṭvāṅgaṁ paraśur-ajinaṁ bhasma phaṇinaḥ\nkapālaṁ cetīyat-tava varada tantropakaraṇam |\nsurāstāṁ tām-ṛddhiṁ dadhati tu bhavad-bhūpraṇihitāṁ\nna hi svātmārāmaṁ viṣaya-mṛga-tṛṣṇā bhramayati ||',
+      meaning:
+        'O bestower of boons, Your ritual implements are a great bull, a skull-staff, an axe, a tiger skin, ashes, serpents, and a skull bowl. The gods hold their lordly possessions only at Your behest. The mirage of worldly desires does not delude one who delights in the Self.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Verse 9',
+      sanskrit:
+        'ध्रुवं कश्चित्सर्वं सकलमपरस्त्वध्रुवमिदं\nपरो ध्रौव्याध्रौव्ये जगति गदति व्यस्तविषये ।\nसमस्तेऽप्येतस्मिन् पुरमथन तैर्विस्मित इव\nस्तुवन् जिह्रेमि त्वां न खलु ननु धृष्टा मुखरता ॥',
+      transliteration:
+        'dhruvaṁ kaścit-sarvaṁ sakalam-aparas-tv-adhruvam-idaṁ\nparo dhrauvy-ādhrauvy-e jagati gadati vyasta-viṣaye |\nsamaste \'py-etasmin puramathana tair-vismita iva\nstuvan jihremi tvāṁ na khalu nanu dhṛṣṭā mukharatā ||',
+      meaning:
+        'Some say everything is eternal; others say all is transient; still others speak of both permanence and impermanence in different aspects. O destroyer of the three cities, seeing all these learned ones perplexed, I venture to praise You — is not bold speech better than silence?',
+    },
+    {
+      id: 10,
+      verseLabel: 'Verse 10',
+      sanskrit:
+        'तवैश्वर्यं यत्नाद्यदुपरि विरिञ्चिर्हरिरधः\nपरिच्छेत्तुं यातावनलमनलस्कन्धवपुषः ।\nततो भक्तिश्रद्धाभरगुरुगृणद्भ्यां गिरिश यत्\nस्वयं तस्थे ताभ्यां तव किमनुवृत्तिर्न फलति ॥',
+      transliteration:
+        'tavaiśvaryaṁ yatnād-yad-upari viriñcir-harir-adhaḥ\nparicchettuṁ yātāv-analam-anala-skandha-vapuṣaḥ |\ntato bhakti-śraddhā-bhara-guru-gṛṇadbhyāṁ giriśa yat\nsvayaṁ tasthe tābhyāṁ tava kim-anuvṛttir-na phalati ||',
+      meaning:
+        'O Lord of the mountains, when Brahma flew upward and Vishnu dug downward to find the ends of Your column of fire, they could not. Then You, pleased by their devotion and faith, revealed Yourself to them. Does not sincere devotion to You always bear fruit?',
+    },
   ],
 };
 
