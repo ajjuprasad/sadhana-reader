@@ -142,11 +142,11 @@ export default function HomeScreen() {
     if (!el) return;
     const observer = new IntersectionObserver(
       ([entry]) => setHeaderHidden(!entry.isIntersecting),
-      { threshold: 0 },
+      { threshold: 0, rootMargin: `-${appBarHeight}px 0px 0px 0px` },
     );
     observer.observe(el);
     return () => observer.disconnect();
-  }, []);
+  }, [appBarHeight]);
 
   return (
     <div className="relative min-h-screen">
