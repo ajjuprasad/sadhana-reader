@@ -6995,6 +6995,56 @@ const shriRudramNamakam: Stotra = {
       meaning:
         'Salutations to the one who dwells in houses and to the guardian of the homestead. Salutations to Soma and to Rudra. Salutations to the copper-hued and to the dawn-colored one.',
     },
+    {
+      id: 41,
+      verseLabel: 'Anuvaka 8.2',
+      sanskrit:
+        'नमः शङ्गाय च पशुपतये च\nनम उग्राय च भीमाय च\nनमो अग्रेवधाय च दूरेवधाय च',
+      transliteration:
+        'namaḥ śaṅgāya ca paśupataye ca\nnama ugrāya ca bhīmāya ca\nnamo agrevādhāya ca dūrevādhāya ca',
+      meaning:
+        'Salutations to the beneficent and to the lord of creatures. Salutations to the fierce and to the terrible. Salutations to the one who slays from the front and to the one who slays from afar.',
+    },
+    {
+      id: 42,
+      verseLabel: 'Anuvaka 8.3',
+      sanskrit:
+        'नमो हन्त्रे च हनीयसे च\nनमो वृक्षेभ्यो हरिकेशेभ्यो\nनमस्ताराय नमः शम्भवाय च मयोभवाय च',
+      transliteration:
+        'namo hantre ca hanīyase ca\nnamo vṛkṣebhyo harikeśebhyo\nnamastārāya namaḥ śambhavāya ca mayobhavāya ca',
+      meaning:
+        'Salutations to the slayer and to the more destructive one. Salutations to the green-haired trees. Salutations to the deliverer, to Shambhu the source of bliss, and to the source of happiness.',
+    },
+    {
+      id: 43,
+      verseLabel: 'Anuvaka 9.2',
+      sanskrit:
+        'नमः शंकराय च मयस्कराय च\nनमः शिवाय च शिवतराय च\nनमस्तीर्थ्याय च कूल्याय च',
+      transliteration:
+        'namaḥ śaṁkarāya ca mayaskarāya ca\nnamaḥ śivāya ca śivatarāya ca\nnamastīrthyāya ca kūlyāya ca',
+      meaning:
+        'Salutations to Shankara (the doer of good) and to the creator of bliss. Salutations to Shiva (the auspicious) and to the most auspicious. Salutations to the one at the sacred fords and on the riverbanks.',
+    },
+    {
+      id: 44,
+      verseLabel: 'Anuvaka 9.3',
+      sanskrit:
+        'नमः पार्याय चावार्याय च\nनमः प्रतरणाय चोत्तरणाय च\nनमो अतार्याय चालाद्याय च',
+      transliteration:
+        'namaḥ pāryāya cāvāryāya ca\nnamaḥ prataraṇāya cottaraṇāya ca\nnamo atāryāya cālādyāya ca',
+      meaning:
+        'Salutations to the one on the far bank and the near bank. Salutations to the one who ferries across and lifts up. Salutations to the one beyond crossing and to the one in the wetlands.',
+    },
+    {
+      id: 45,
+      verseLabel: 'Anuvaka 9.4',
+      sanskrit:
+        'नमः शष्प्याय च फेन्याय च\nनमः सिकत्याय च प्रवाह्याय च',
+      transliteration:
+        'namaḥ śaṣpyāya ca phenyāya ca\nnamaḥ sikatyāya ca pravāhyāya ca',
+      meaning:
+        'Salutations to the one in the young grass and in the foam. Salutations to the one in the sand and in the flowing stream.',
+    },
   ],
 };
 
