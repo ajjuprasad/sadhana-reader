@@ -6745,6 +6745,406 @@ const shriRudramNamakam: Stotra = {
       meaning:
         'The thousands of Rudras who exist on this earth — may we keep their bows unstrung a thousand leagues away. We worship the three-eyed one, the fragrant increaser of prosperity. As a cucumber is freed from its stalk, may we be liberated from death, not from immortality.',
     },
+    {
+      id: 16,
+      verseLabel: 'Anuvaka 1.5',
+      sanskrit:
+        'अध्यवोचदधिवक्ता प्रथमो दैव्यो भिषक् ।\nअहींश्च सर्वान्जम्भयन्त्सर्वाश्च यातुधान्यः ॥',
+      transliteration:
+        'adhyavocad-adhivaktā prathamo daivyo bhiṣak |\nahīṁś-ca sarvān-jambhayant-sarvāś-ca yātudhānyaḥ ||',
+      meaning:
+        'He who is the first divine physician has spoken in our favor. May He crush all serpents and destroy all evil spirits.',
+    },
+    {
+      id: 17,
+      verseLabel: 'Anuvaka 1.6',
+      sanskrit:
+        'असौ यस्ताम्रो अरुण उत बभ्रुः सुमङ्गलः ।\nये चेमाँ रुद्रा अभितो दिक्षु श्रिताः सहस्रशोऽवैषां हेड ईमहे ॥',
+      transliteration:
+        'asau yas-tāmro aruṇa uta babhruḥ sumaṅgalaḥ |\nye cemāṁ rudrā abhito dikṣu śritāḥ sahasraśo \'vaiṣāṁ heḍa īmahe ||',
+      meaning:
+        'He who is coppery, ruddy, brown, and most auspicious — and the thousands of Rudras stationed in all directions around us — we propitiate the anger of all of them.',
+    },
+    {
+      id: 18,
+      verseLabel: 'Anuvaka 1.7',
+      sanskrit:
+        'असौ योऽवसर्पति नीलग्रीवो विलोहितः ।\nउतैनं गोपा अदृशन्नदृशन्नुदहार्यः ॥',
+      transliteration:
+        'asau yo \'vasarpati nīlagrīvo vilohitaḥ |\nutainaṁ gopā adṛśann-adṛśann-udahāryaḥ ||',
+      meaning:
+        'He who glides about, blue-necked and red-bodied — the cowherds see Him, the water-bearers see Him. May He be gracious to us.',
+    },
+    {
+      id: 19,
+      verseLabel: 'Anuvaka 1.8',
+      sanskrit:
+        'नमो अस्तु नीलग्रीवाय सहस्राक्षाय मीढुषे ।\nअथो ये अस्य सत्वानोऽहं तेभ्योऽकरं नमः ॥',
+      transliteration:
+        'namo astu nīlagrīvāya sahasrākṣāya mīḍhuṣe |\natho ye asya satvāno \'haṁ tebhyo \'karaṁ namaḥ ||',
+      meaning:
+        'Salutations to the blue-necked, thousand-eyed, generous one. And to all His attendants, I offer my salutations.',
+    },
+    {
+      id: 20,
+      verseLabel: 'Anuvaka 1.9',
+      sanskrit:
+        'प्रमुञ्च धन्वनस्त्वमुभयोरार्त्नियोर्ज्याम् ।\nयाश्च ते हस्त इषवः परा ता भगवो वप ॥',
+      transliteration:
+        'pramuñca dhanvanas-tvam-ubhayor-ārtniyur-jyām |\nyāś-ca te hasta iṣavaḥ parā tā bhagavo vapa ||',
+      meaning:
+        'Unstring Your bow, loosen the string from both ends. And the arrows in Your hand, O blessed one, cast them away.',
+    },
+    {
+      id: 21,
+      verseLabel: 'Anuvaka 1.10',
+      sanskrit:
+        'अवतत्य धनुस्त्वं सहस्राक्ष शतेषुधे ।\nनिशीर्य शल्यानां मुखा शिवो नः सुमना भव ॥',
+      transliteration:
+        'avatatya dhanus-tvaṁ sahasrākṣa śateṣudhe |\nniśīrya śalyānāṁ mukhā śivo naḥ sumanā bhava ||',
+      meaning:
+        'Having unstrung Your bow, O thousand-eyed one with a hundred quivers — blunt the points of Your arrows and be gracious and benevolent to us.',
+    },
+    {
+      id: 22,
+      verseLabel: 'Anuvaka 1.11',
+      sanskrit:
+        'विज्यं धनुः कपर्दिनो विशल्यो बाणवाँ उत ।\nअनेशन्नस्यैषव आभुरस्य निषङ्गथिः ॥',
+      transliteration:
+        'vijyaṁ dhanuḥ kapardino viśalyo bāṇavāṁ uta |\naneśann-asyaiṣava ābhurasya niṣaṅgathiḥ ||',
+      meaning:
+        'May the bow of the matted-haired one be unstrung, His arrows pointless. May His missiles lose their power and His quiver become empty.',
+    },
+    {
+      id: 23,
+      verseLabel: 'Anuvaka 2.2',
+      sanskrit:
+        'नमो हरिकेशायोपवीतिने पुष्टानां पतये नमो नमो\nभवस्य हेत्यै जगतां पतये नमो नमः ॥',
+      transliteration:
+        'namo harikeśāyopavītine puṣṭānāṁ pataye namo namo\nbhavasya hetyai jagatāṁ pataye namo namaḥ ||',
+      meaning:
+        'Salutations to the green-haired one who wears the sacred thread, the lord of the well-nourished. Salutations to the weapon of Bhava, the lord of the worlds.',
+    },
+    {
+      id: 24,
+      verseLabel: 'Anuvaka 2.3',
+      sanskrit:
+        'नमो रुद्रायाततविने क्षेत्राणां पतये नमो नमः\nसूतायाहन्त्याय वनानां पतये नमो नमः ॥',
+      transliteration:
+        'namo rudrāyātatavine kṣetrāṇāṁ pataye namo namo\nsūtāyāhantyāya vanānāṁ pataye namo namaḥ ||',
+      meaning:
+        'Salutations to Rudra who strings His bow, the lord of the fields. Salutations to the charioteer who strikes, the lord of the forests.',
+    },
+    {
+      id: 25,
+      verseLabel: 'Anuvaka 2.4',
+      sanskrit:
+        'नमो रोहिताय स्थपतये वृक्षाणां पतये नमो नमो\nमन्त्रिणे वाणिजाय कक्षाणां पतये नमो नमः ॥',
+      transliteration:
+        'namo rohitāya sthapataye vṛkṣāṇāṁ pataye namo namo\nmantriṇe vāṇijāya kakṣāṇāṁ pataye namo namaḥ ||',
+      meaning:
+        'Salutations to the red one, the architect, the lord of the trees. Salutations to the counselor and merchant, the lord of the thickets.',
+    },
+    {
+      id: 26,
+      verseLabel: 'Anuvaka 3.3',
+      sanskrit:
+        'नमो मिढुष्टमाय चेषुमते च\nनमो ह्रस्वाय च वामनाय च',
+      transliteration:
+        'namo miḍhuṣṭamāya ceṣumate ca\nnamo hrasvāya ca vāmanāya ca',
+      meaning:
+        'Salutations to the most bountiful and to the one armed with arrows. Salutations to the short one and to the dwarf.',
+    },
+    {
+      id: 27,
+      verseLabel: 'Anuvaka 3.4',
+      sanskrit:
+        'नमो बृहते च वर्षीयसे च\nनमो वृद्धाय च संवृद्ध्वने च',
+      transliteration:
+        'namo bṛhate ca varṣīyase ca\nnamo vṛddhāya ca saṁvṛddhvane ca',
+      meaning:
+        'Salutations to the great and to the greater. Salutations to the aged and to the one who grows mightily.',
+    },
+    {
+      id: 28,
+      verseLabel: 'Anuvaka 3.5',
+      sanskrit:
+        'नमो अग्रियाय च प्रथमाय च\nनम आशवे चाजिराय च',
+      transliteration:
+        'namo agriyāya ca prathamāya ca\nnama āśave cājirāya ca',
+      meaning:
+        'Salutations to the foremost and to the first. Salutations to the swift and to the fleet-footed.',
+    },
+    {
+      id: 29,
+      verseLabel: 'Anuvaka 3.6',
+      sanskrit:
+        'नम ऊर्म्याय चावस्वन्याय च\nनमः स्रोतस्याय च द्वीप्याय च',
+      transliteration:
+        'nama ūrmyāya cāvasvanyāya ca\nnamaḥ srotasyāya ca dvīpyāya ca',
+      meaning:
+        'Salutations to the one in the waves and in the still waters. Salutations to the one in the currents and on the islands.',
+    },
+    {
+      id: 30,
+      verseLabel: 'Anuvaka 4.2',
+      sanskrit:
+        'नमो ज्येष्ठाय च कनिष्ठाय च\nनमः पूर्वजाय चापरजाय च',
+      transliteration:
+        'namo jyeṣṭhāya ca kaniṣṭhāya ca\nnamaḥ pūrvajāya cāparajāya ca',
+      meaning:
+        'Salutations to the eldest and to the youngest. Salutations to the first-born and to the last-born.',
+    },
+    {
+      id: 31,
+      verseLabel: 'Anuvaka 4.3',
+      sanskrit:
+        'नमो मध्यमाय चापगल्भाय च\nनमो जघन्याय च बुध्नियाय च',
+      transliteration:
+        'namo madhyamāya cāpagalbhāya ca\nnamo jaghanyāya ca budhniyāya ca',
+      meaning:
+        'Salutations to the middlemost and to the youthful. Salutations to the hindmost and to the one at the base.',
+    },
+    {
+      id: 32,
+      verseLabel: 'Anuvaka 4.4',
+      sanskrit:
+        'नमः सोभ्याय च प्रतिसर्याय च\nनमो याम्याय च क्षेम्याय च',
+      transliteration:
+        'namaḥ sobhyāya ca pratisaryāya ca\nnamo yāmyāya ca kṣemyāya ca',
+      meaning:
+        'Salutations to the one in the assembly hall and to the one in the courtyard. Salutations to the one who controls and to the one who protects.',
+    },
+    {
+      id: 33,
+      verseLabel: 'Anuvaka 4.5',
+      sanskrit:
+        'नम उर्वर्याय च खल्याय च\nनमः श्लोक्याय चावसान्याय च',
+      transliteration:
+        'nama urvaryāya ca khalyāya ca\nnamaḥ ślokyāya cāvasānyāya ca',
+      meaning:
+        'Salutations to the one in the fertile land and in the threshing floor. Salutations to the famous and to the one who brings conclusion.',
+    },
+    {
+      id: 34,
+      verseLabel: 'Anuvaka 5.2',
+      sanskrit:
+        'नमो ज्येष्ठाय च कनिष्ठाय च\nनमः पूर्वजाय चापरजाय च\nनमो मध्यमाय चापगल्भाय च',
+      transliteration:
+        'namo jyeṣṭhāya ca kaniṣṭhāya ca\nnamaḥ pūrvajāya cāparajāya ca\nnamo madhyamāya cāpagalbhāya ca',
+      meaning:
+        'Salutations to the eldest and youngest, to the first-born and last-born, to the middlemost and the youthful — honoring Rudra in every stage of life.',
+    },
+    {
+      id: 35,
+      verseLabel: 'Anuvaka 5.3',
+      sanskrit:
+        'नमो दुन्दुभ्याय चाहनन्याय च\nनमो धृष्णवे च प्रमृशाय च\nनमो दूताय च प्रहिताय च',
+      transliteration:
+        'namo dundubhyāya cāhananyāya ca\nnamo dhṛṣṇave ca pramṛśāya ca\nnamo dūtāya ca prahitāya ca',
+      meaning:
+        'Salutations to the drum and to the one who beats it. Salutations to the bold and to the one who touches gently. Salutations to the messenger and to the one who is sent forth.',
+    },
+    {
+      id: 36,
+      verseLabel: 'Anuvaka 6.2',
+      sanskrit:
+        'नमो निषङ्गिणे चेषुधिमते च\nनमस्तीक्ष्णेषवे चायुधिने च\nनमः स्वायुधाय च सुधन्वने च',
+      transliteration:
+        'namo niṣaṅgiṇe ceṣudhimate ca\nnamastīkṣṇeṣave cāyudhine ca\nnamaḥ svāyudhāya ca sudhanvane ca',
+      meaning:
+        'Salutations to the one with a quiver and to the one with arrows. Salutations to the one with sharp arrows and to the one armed with weapons. Salutations to the one with excellent weapons and to the one with a good bow.',
+    },
+    {
+      id: 37,
+      verseLabel: 'Anuvaka 6.3',
+      sanskrit:
+        'नमः स्रुत्याय च पथ्याय च\nनमः काट्याय च नीप्याय च\nनमः सूद्याय च सरस्याय च',
+      transliteration:
+        'namaḥ srutyāya ca pathyāya ca\nnamaḥ kāṭyāya ca nīpyāya ca\nnamaḥ sūdyāya ca sarasyāya ca',
+      meaning:
+        'Salutations to the one in the stream and on the path. Salutations to the one in the marsh and in the low-lying waters. Salutations to the one in the pool and in the lake.',
+    },
+    {
+      id: 38,
+      verseLabel: 'Anuvaka 7.2',
+      sanskrit:
+        'नमो नाद्याय च वैशन्ताय च\nनमः कूप्याय चावट्याय च\nनमो वर्ष्याय चावर्ष्याय च',
+      transliteration:
+        'namo nādyāya ca vaiśantāya ca\nnamaḥ kūpyāya cāvaṭyāya ca\nnamo varṣyāya cāvarṣyāya ca',
+      meaning:
+        'Salutations to the one in the rivers and in the ponds. Salutations to the one in the wells and in the pits. Salutations to the one in the rain and in the rainless.',
+    },
+    {
+      id: 39,
+      verseLabel: 'Anuvaka 7.3',
+      sanskrit:
+        'नमो मेघ्याय च विद्युत्याय च\nनमो ईध्रियाय चातप्याय च\nनमो वात्याय च रेष्मियाय च',
+      transliteration:
+        'namo meghyāya ca vidyutyāya ca\nnamo īdhriyāya cātapyāya ca\nnamo vātyāya ca reṣmiyāya ca',
+      meaning:
+        'Salutations to the one in the clouds and in the lightning. Salutations to the one in the clear sky and in the sunshine. Salutations to the one in the wind and in the storm.',
+    },
+    {
+      id: 40,
+      verseLabel: 'Anuvaka 7.4',
+      sanskrit:
+        'नमो वास्तव्याय च वास्तुपाय च\nनमः सोमाय च रुद्राय च\nनमस्ताम्राय चारुणाय च',
+      transliteration:
+        'namo vāstavyāya ca vāstupāya ca\nnamaḥ somāya ca rudrāya ca\nnamastāmrāya cāruṇāya ca',
+      meaning:
+        'Salutations to the one who dwells in houses and to the guardian of the homestead. Salutations to Soma and to Rudra. Salutations to the copper-hued and to the dawn-colored one.',
+    },
+    {
+      id: 41,
+      verseLabel: 'Anuvaka 8.2',
+      sanskrit:
+        'नमः शङ्गाय च पशुपतये च\nनम उग्राय च भीमाय च\nनमो अग्रेवधाय च दूरेवधाय च',
+      transliteration:
+        'namaḥ śaṅgāya ca paśupataye ca\nnama ugrāya ca bhīmāya ca\nnamo agrevādhāya ca dūrevādhāya ca',
+      meaning:
+        'Salutations to the beneficent and to the lord of creatures. Salutations to the fierce and to the terrible. Salutations to the one who slays from the front and to the one who slays from afar.',
+    },
+    {
+      id: 42,
+      verseLabel: 'Anuvaka 8.3',
+      sanskrit:
+        'नमो हन्त्रे च हनीयसे च\nनमो वृक्षेभ्यो हरिकेशेभ्यो\nनमस्ताराय नमः शम्भवाय च मयोभवाय च',
+      transliteration:
+        'namo hantre ca hanīyase ca\nnamo vṛkṣebhyo harikeśebhyo\nnamastārāya namaḥ śambhavāya ca mayobhavāya ca',
+      meaning:
+        'Salutations to the slayer and to the more destructive one. Salutations to the green-haired trees. Salutations to the deliverer, to Shambhu the source of bliss, and to the source of happiness.',
+    },
+    {
+      id: 43,
+      verseLabel: 'Anuvaka 9.2',
+      sanskrit:
+        'नमः शंकराय च मयस्कराय च\nनमः शिवाय च शिवतराय च\nनमस्तीर्थ्याय च कूल्याय च',
+      transliteration:
+        'namaḥ śaṁkarāya ca mayaskarāya ca\nnamaḥ śivāya ca śivatarāya ca\nnamastīrthyāya ca kūlyāya ca',
+      meaning:
+        'Salutations to Shankara (the doer of good) and to the creator of bliss. Salutations to Shiva (the auspicious) and to the most auspicious. Salutations to the one at the sacred fords and on the riverbanks.',
+    },
+    {
+      id: 44,
+      verseLabel: 'Anuvaka 9.3',
+      sanskrit:
+        'नमः पार्याय चावार्याय च\nनमः प्रतरणाय चोत्तरणाय च\nनमो अतार्याय चालाद्याय च',
+      transliteration:
+        'namaḥ pāryāya cāvāryāya ca\nnamaḥ prataraṇāya cottaraṇāya ca\nnamo atāryāya cālādyāya ca',
+      meaning:
+        'Salutations to the one on the far bank and the near bank. Salutations to the one who ferries across and lifts up. Salutations to the one beyond crossing and to the one in the wetlands.',
+    },
+    {
+      id: 45,
+      verseLabel: 'Anuvaka 9.4',
+      sanskrit:
+        'नमः शष्प्याय च फेन्याय च\nनमः सिकत्याय च प्रवाह्याय च',
+      transliteration:
+        'namaḥ śaṣpyāya ca phenyāya ca\nnamaḥ sikatyāya ca pravāhyāya ca',
+      meaning:
+        'Salutations to the one in the young grass and in the foam. Salutations to the one in the sand and in the flowing stream.',
+    },
+    {
+      id: 46,
+      verseLabel: 'Anuvaka 10.1',
+      sanskrit:
+        'नमो इरिण्याय च प्रपथ्याय च\nनमः किंशिलाय च क्षयणाय च\nनमः कपर्दिने च पुलस्तये च',
+      transliteration:
+        'namo iriṇyāya ca prapathyāya ca\nnamaḥ kiṁśilāya ca kṣayaṇāya ca\nnamaḥ kapardine ca pulastaye ca',
+      meaning:
+        'Salutations to the one in the barren lands and on the highways. Salutations to the one in the gravel and in the dwelling. Salutations to the matted-haired one and to the sage Pulastya.',
+    },
+    {
+      id: 47,
+      verseLabel: 'Anuvaka 10.2',
+      sanskrit:
+        'नमो गोष्ठ्याय च गृह्याय च\nनमस्तल्प्याय च गेह्याय च\nनमः काट्याय च गह्वरेष्ठाय च',
+      transliteration:
+        'namo goṣṭhyāya ca gṛhyāya ca\nnamastalplyāya ca gehyāya ca\nnamaḥ kāṭyāya ca gahvareṣṭhāya ca',
+      meaning:
+        'Salutations to the one in the cowshed and in the house. Salutations to the one on the couch and in the home. Salutations to the one in the thorny bushes and in the deep caverns.',
+    },
+    {
+      id: 48,
+      verseLabel: 'Anuvaka 10.3',
+      sanskrit:
+        'नमो हृदय्याय च निवेष्प्याय च\nनमः पांसव्याय च रजस्याय च\nनमः शुष्क्याय च हरित्याय च',
+      transliteration:
+        'namo hṛdayyāya ca niveṣpyāya ca\nnamaḥ pāṁsavyāya ca rajasyāya ca\nnamaḥ śuṣkyāya ca harityāya ca',
+      meaning:
+        'Salutations to the one in the lake and in the moisture. Salutations to the one in the dust and in the mist. Salutations to the one in the dry and in the green.',
+    },
+    {
+      id: 49,
+      verseLabel: 'Anuvaka 11.2',
+      sanskrit:
+        'असौ योऽवसर्पति नीलग्रीवो विलोहितः ।\nउतैनं गोपा अदृशन्नदृशन्नुदहार्यः ।\nउतैनं विश्वा भूतानि स दृष्टो मृडयाति नः ॥',
+      transliteration:
+        'asau yo \'vasarpati nīlagrīvo vilohitaḥ |\nutainaṁ gopā adṛśann-adṛśann-udahāryaḥ |\nutainaṁ viśvā bhūtāni sa dṛṣṭo mṛḍayāti naḥ ||',
+      meaning:
+        'He who glides across the sky, blue-necked and red-bodied — the cowherds have seen Him, the water-bearers have seen Him, and all beings see Him. Having been seen, may He be gracious to us.',
+    },
+    {
+      id: 50,
+      verseLabel: 'Anuvaka 11.3',
+      sanskrit:
+        'नमो अस्तु नीलग्रीवाय सहस्राक्षाय मीढुषे ।\nअथो ये अस्य सत्वानोऽहं तेभ्योऽकरं नमः ॥\nप्रमुञ्च धन्वनस्त्वमुभयोरार्त्नियोर्ज्याम् ।\nयाश्च ते हस्त इषवः परा ता भगवो वप ॥',
+      transliteration:
+        'namo astu nīlagrīvāya sahasrākṣāya mīḍhuṣe |\natho ye asya satvāno \'haṁ tebhyo \'karaṁ namaḥ ||\npramuñca dhanvanas-tvam-ubhayor-ārtniyur-jyām |\nyāś-ca te hasta iṣavaḥ parā tā bhagavo vapa ||',
+      meaning:
+        'Salutations to the blue-necked, thousand-eyed, bountiful one. To His attendants I offer my salutations. Unstring Your bow from both ends; and the arrows in Your hand, O blessed one, cast them away.',
+    },
+    {
+      id: 51,
+      verseLabel: 'Anuvaka 11.4',
+      sanskrit:
+        'अवतत्य धनुस्त्वं सहस्राक्ष शतेषुधे ।\nनिशीर्य शल्यानां मुखा शिवो नः सुमना भव ॥',
+      transliteration:
+        'avatatya dhanus-tvaṁ sahasrākṣa śateṣudhe |\nniśīrya śalyānāṁ mukhā śivo naḥ sumanā bhava ||',
+      meaning:
+        'Having unstrung Your bow, O thousand-eyed one with a hundred quivers — blunt the edges of Your arrows and be gracious and kind-hearted to us.',
+    },
+    {
+      id: 52,
+      verseLabel: 'Anuvaka 11.5',
+      sanskrit:
+        'विज्यं धनुः कपर्दिनो विशल्यो बाणवाँ उत ।\nअनेशन्नस्यैषव आभुरस्य निषङ्गथिः ॥',
+      transliteration:
+        'vijyaṁ dhanuḥ kapardino viśalyo bāṇavāṁ uta |\naneśann-asyaiṣava ābhurasya niṣaṅgathiḥ ||',
+      meaning:
+        'Unstrung is the bow of the matted-haired one, pointless His arrows. His missiles have lost their force and His quiver is powerless.',
+    },
+    {
+      id: 53,
+      verseLabel: 'Anuvaka 11.6',
+      sanskrit:
+        'या ते हेतिर्मीढुष्टम हस्ते बभूव ते धनुः ।\nतयाऽस्मान् विश्वतस्त्वमयक्ष्मया परिब्भुज ॥',
+      transliteration:
+        'yā te hetir-mīḍhuṣṭama haste babhūva te dhanuḥ |\ntayā \'smān viśvatas-tvam-ayakṣmayā paribbhuja ||',
+      meaning:
+        'O most bountiful one, whatever weapon is in Your hand and whatever bow You hold — with that protect us on all sides from disease.',
+    },
+    {
+      id: 54,
+      verseLabel: 'Anuvaka 11.7',
+      sanskrit:
+        'नमस्ते अस्त्वायुधायानातताय धृष्णवे ।\nउभाभ्यामुत ते नमो बाहुभ्यां तव धन्वने ॥',
+      transliteration:
+        'namaste astvāyudhāyānātatāya dhṛṣṇave |\nubhābhyām-uta te namo bāhubhyāṁ tava dhanvane ||',
+      meaning:
+        'Salutations to Your weapon that is unstrung and to You who are bold. Salutations to both Your arms and to Your bow.',
+    },
+    {
+      id: 55,
+      verseLabel: 'Anuvaka 11.8',
+      sanskrit:
+        'परि ते धन्वनो हेतिरस्मान् वृणक्तु विश्वतः ।\nअथो य इषुधिस्तवारे अस्मन्निधेहि तम् ॥\nत्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम् ।\nउर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय माऽमृतात् ॥',
+      transliteration:
+        'pari te dhanvano hetir-asmān vṛṇaktu viśvataḥ |\natho ya iṣudhis-tavāre asman-nidhehi tam ||\ntryambakaṁ yajāmahe sugandhiṁ puṣṭi-vardhanam |\nurvārukam-iva bandhanān-mṛtyor-mukṣīya mā \'mṛtāt ||',
+      meaning:
+        'May the arrow of Your bow spare us on all sides. Place Your quiver far away from us. We worship the three-eyed Lord, the fragrant one who nourishes all. As a cucumber is freed from its stem, may we be liberated from death, not from immortality.',
+    },
   ],
 };
 
