@@ -5976,6 +5976,74 @@ const siddhaKunjikaStotram: Stotra = {
   ],
 };
 
+const indrakshiStotram: Stotra = {
+  id: 'indrakshi-stotram',
+  title: 'Indrakshi Stotram',
+  subtitle: 'इन्द्राक्षीस्तोत्रम्',
+  deity: 'Durga',
+  description:
+    'A sacred hymn to Goddess Indrakshi, a powerful form of Durga, transmitted through the lineage of Narayana to Narada to Indra. Contains divine names and attributes of the Goddess in the Anushtup metre, prescribed as a remedy for all diseases and calamities.',
+  benefits: [
+    'Cures all diseases and bestows perfect health',
+    'Provides divine protection and removes all obstacles',
+    'Grants longevity, happiness, and spiritual liberation',
+  ],
+  estimatedMinutes: 5,
+  icon: 'indrakshi-stotram',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'इन्द्राक्षी नाम सा देवी देवतैः समुदाहृता ।\nगौरी शाकम्भरी देवी दुर्गानामीति विश्रुता ॥',
+      transliteration:
+        'indrākṣī nāma sā devī devataiḥ samudāhṛtā |\ngaurī śākambharī devī durgā-nāmīti viśrutā ||',
+      meaning:
+        'She is called Goddess Indrakshi by the gods. She is known as Gauri, Shakambhari, and by the celebrated name Durga.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'नित्यानन्दा निराहारा निष्कलायै नमो नमः ।\nकात्यायन्यै च विद्महे कन्यकुमार्यै धीमहि ॥',
+      transliteration:
+        'nityānandā nirāhārā niṣkalāyai namo namaḥ |\nkātyāyanyai ca vidmahe kanyakumāryai dhīmahi ||',
+      meaning:
+        'Salutations to the eternally blissful one, who needs no sustenance, who is without parts. We meditate upon Katyayani, we contemplate the virgin Goddess.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'तन्नो दुर्गा प्रचोदयात् ।\nइन्द्राक्षीं द्विभुजां देवीं पीतवस्त्रद्वयान्विताम् ॥',
+      transliteration:
+        'tanno durgā pracodayāt |\nindrākṣīṁ dvibhujāṁ devīṁ pītavastra-dvayānvitām ||',
+      meaning:
+        'May Durga inspire and guide us. I meditate upon Indrakshi, the two-armed Goddess adorned in yellow garments.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'वामहस्तेन पद्मं च दक्षिणेन सुदर्शनम् ।\nइन्द्राक्षीं सहवक्त्रां च त्रिनेत्रां च चतुर्भुजाम् ॥',
+      transliteration:
+        'vāma-hastena padmaṁ ca dakṣiṇena sudarśanam |\nindrākṣīṁ saha-vaktrāṁ ca tri-netrāṁ ca caturbhujām ||',
+      meaning:
+        'With a lotus in her left hand and the Sudarshana discus in her right — I meditate upon Indrakshi with her beautiful face, three eyes, and four arms.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'देवीं पूजयते भक्त्या हवनं वा करोति यः ।\nतस्य रोगाः प्रणश्यन्ति ये च स्युः परमदारुणाः ॥',
+      transliteration:
+        'devīṁ pūjayate bhaktyā havanaṁ vā karoti yaḥ |\ntasya rogāḥ praṇaśyanti ye ca syuḥ parama-dāruṇāḥ ||',
+      meaning:
+        'Whoever worships the Goddess with devotion or performs the fire ritual — all their diseases, even the most terrible ones, are completely destroyed.',
+    },
+  ],
+};
+
 const dakshinamurthyStotram: Stotra = {
   id: 'dakshinamurthy-stotram',
   title: 'Dakshinamurthy Stotram',
@@ -6108,6 +6176,7 @@ export const stotras: Stotra[] = [
   ganeshaPancharatnam,
   guruAshtakam,
   hanumanChalisa,
+  indrakshiStotram,
   kalabhairavaAshtakam,
   kanikadharaStotram,
   lingashtakam,
@@ -6138,11 +6207,6 @@ export interface ComingSoonStotra {
 }
 
 export const comingSoonStotras: ComingSoonStotra[] = [
-  {
-    id: 'indrakshi-stotram',
-    title: 'Indrakshi Stotram',
-    deity: 'Durga',
-  },
   {
     id: 'lalitha-sahasranamam',
     title: 'Lalitha Sahasranamam',
