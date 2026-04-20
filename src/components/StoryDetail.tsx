@@ -1,40 +1,30 @@
 import { useRef, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { stories } from '../data/stories';
 import FavoriteButton from './FavoriteButton';
-import NarrationPlayer from './NarrationPlayer';
-import { useNarration } from '../hooks/useNarration';
-import { useSettings } from '../hooks/useSettings';
+import { useNarrationContext } from '../contexts/NarrationContext';
 
 export default function StoryDetail() {
   const { storyId } = useParams<{ storyId: string }>();
   const navigate = useNavigate();
-  const { settings } = useSettings();
+  const narration = useNarrationContext();
   const story = stories.find((s) => s.id === storyId);
-
-  const narration = useNarration({
-    voiceGender: settings.narrationVoice,
-    speed: settings.narrationSpeed,
-    pitch: settings.narrationPitch,
-  });
 
   const paragraphRefs = useRef<(HTMLParagraphElement | null)[]>([]);
 
+  const isNaratingThis = narration.isActive && narration.storyId === storyId;
+
   useEffect(() => {
-    if (narration.isActive && narration.currentIndex > 0 && narration.currentIndex < narration.totalSegments - 1) {
+    if (isNaratingThis && narration.currentIndex > 0 && narration.currentIndex < narration.totalSegments - 1) {
       const paraIdx = narration.currentIndex - 1;
       const el = paragraphRefs.current[paraIdx];
       if (el) {
         el.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
     }
-  }, [narration.currentIndex, narration.isActive, narration.totalSegments]);
-
-  useEffect(() => {
-    return () => narration.stop();
-  }, [storyId]);
+  }, [narration.currentIndex, isNaratingThis, narration.totalSegments]);
 
   if (!story) {
     return (
@@ -60,10 +50,10 @@ export default function StoryDetail() {
   };
 
   const handleStartNarration = () => {
-    narration.start(story.title, story.paragraphs, story.moral);
+    narration.startStory(story.id, story.title, story.paragraphs, story.moral);
   };
 
-  const activeParagraphIndex = narration.isActive && narration.currentIndex > 0 && narration.currentIndex < narration.totalSegments - 1
+  const activeParagraphIndex = isNaratingThis && narration.currentIndex > 0 && narration.currentIndex < narration.totalSegments - 1
     ? narration.currentIndex - 1
     : -1;
 
@@ -78,7 +68,7 @@ export default function StoryDetail() {
       <div className="sticky top-0 z-30" style={{ backgroundColor: 'var(--color-bg)' }}>
         <div className="flex items-center justify-between px-4 py-3">
           <button
-            onClick={() => { narration.stop(); navigate('/stories'); }}
+            onClick={() => navigate('/stories')}
             className="flex items-center gap-1 text-sm font-hind transition-opacity hover:opacity-70"
             style={{ color: 'var(--color-accent-primary)' }}
           >
@@ -169,7 +159,7 @@ export default function StoryDetail() {
         </div>
 
         {/* Listen button */}
-        {!narration.isActive && (
+        {!isNaratingThis && (
           <motion.button
             onClick={handleStartNarration}
             className="w-full flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-2xl font-hind font-medium text-sm transition-transform active:scale-[0.97] mb-6"
@@ -222,7 +212,7 @@ export default function StoryDetail() {
                 backgroundColor: activeParagraphIndex === i ? 'rgba(255,153,51,0.1)' : 'transparent',
                 padding: activeParagraphIndex === i ? '12px 16px' : '0 16px',
                 borderLeft: activeParagraphIndex === i ? '3px solid var(--color-accent-primary)' : '3px solid transparent',
-                opacity: narration.isActive && activeParagraphIndex >= 0 && activeParagraphIndex !== i ? 0.5 : 1,
+                opacity: isNaratingThis && activeParagraphIndex >= 0 && activeParagraphIndex !== i ? 0.5 : 1,
               }}
             >
               {paragraph}
@@ -256,7 +246,6 @@ export default function StoryDetail() {
           return (
             <button
               onClick={() => {
-                narration.stop();
                 navigate(`/story/${nextStory.id}`);
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
@@ -284,21 +273,6 @@ export default function StoryDetail() {
           );
         })()}
       </motion.div>
-
-      {/* Floating narration player */}
-      <AnimatePresence>
-        {narration.isActive && (
-          <NarrationPlayer
-            isPlaying={narration.isPlaying}
-            isPaused={narration.isPaused}
-            currentIndex={narration.currentIndex}
-            totalSegments={narration.totalSegments}
-            onPause={narration.pause}
-            onResume={narration.resume}
-            onStop={narration.stop}
-          />
-        )}
-      </AnimatePresence>
     </div>
   );
 }
