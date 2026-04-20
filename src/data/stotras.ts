@@ -6845,6 +6845,56 @@ const shriRudramNamakam: Stotra = {
       meaning:
         'Salutations to the red one, the architect, the lord of the trees. Salutations to the counselor and merchant, the lord of the thickets.',
     },
+    {
+      id: 26,
+      verseLabel: 'Anuvaka 3.3',
+      sanskrit:
+        'नमो मिढुष्टमाय चेषुमते च\nनमो ह्रस्वाय च वामनाय च',
+      transliteration:
+        'namo miḍhuṣṭamāya ceṣumate ca\nnamo hrasvāya ca vāmanāya ca',
+      meaning:
+        'Salutations to the most bountiful and to the one armed with arrows. Salutations to the short one and to the dwarf.',
+    },
+    {
+      id: 27,
+      verseLabel: 'Anuvaka 3.4',
+      sanskrit:
+        'नमो बृहते च वर्षीयसे च\nनमो वृद्धाय च संवृद्ध्वने च',
+      transliteration:
+        'namo bṛhate ca varṣīyase ca\nnamo vṛddhāya ca saṁvṛddhvane ca',
+      meaning:
+        'Salutations to the great and to the greater. Salutations to the aged and to the one who grows mightily.',
+    },
+    {
+      id: 28,
+      verseLabel: 'Anuvaka 3.5',
+      sanskrit:
+        'नमो अग्रियाय च प्रथमाय च\nनम आशवे चाजिराय च',
+      transliteration:
+        'namo agriyāya ca prathamāya ca\nnama āśave cājirāya ca',
+      meaning:
+        'Salutations to the foremost and to the first. Salutations to the swift and to the fleet-footed.',
+    },
+    {
+      id: 29,
+      verseLabel: 'Anuvaka 3.6',
+      sanskrit:
+        'नम ऊर्म्याय चावस्वन्याय च\nनमः स्रोतस्याय च द्वीप्याय च',
+      transliteration:
+        'nama ūrmyāya cāvasvanyāya ca\nnamaḥ srotasyāya ca dvīpyāya ca',
+      meaning:
+        'Salutations to the one in the waves and in the still waters. Salutations to the one in the currents and on the islands.',
+    },
+    {
+      id: 30,
+      verseLabel: 'Anuvaka 4.2',
+      sanskrit:
+        'नमो ज्येष्ठाय च कनिष्ठाय च\nनमः पूर्वजाय चापरजाय च',
+      transliteration:
+        'namo jyeṣṭhāya ca kaniṣṭhāya ca\nnamaḥ pūrvajāya cāparajāya ca',
+      meaning:
+        'Salutations to the eldest and to the youngest. Salutations to the first-born and to the last-born.',
+    },
   ],
 };
 
