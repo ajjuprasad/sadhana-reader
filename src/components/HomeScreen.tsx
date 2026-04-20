@@ -288,13 +288,11 @@ export default function HomeScreen() {
               onFocus={(e) => {
                 e.currentTarget.style.borderColor = 'var(--color-accent-primary)';
                 e.currentTarget.style.boxShadow = '0 0 0 2px rgba(255,153,51,0.15)';
-                setTimeout(() => {
-                  const sentinel = searchSentinelRef.current;
-                  if (sentinel) {
-                    const top = sentinel.getBoundingClientRect().top + window.scrollY - 44;
-                    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
-                  }
-                }, 100);
+                if (!isStuck) {
+                  setTimeout(() => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }, 100);
+                }
               }}
               onBlur={(e) => {
                 e.currentTarget.style.borderColor = 'transparent';
