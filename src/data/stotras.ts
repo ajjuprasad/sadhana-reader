@@ -6159,6 +6159,56 @@ const narayanaKavacham: Stotra = {
       meaning:
         'May Janardana protect me in the east, may the invincible Ajita protect me in the southeast, may Hayagriva protect me in the south, may the Lord of beings protect me in the southwest.',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'प्रतीच्यां पातु श्रीपतिः ।\nवायव्यां पातु विश्वात्मा ।\nउदीच्यां पातु यज्ञभुक् ।\nऐशान्यां पातु धर्मविभुः ॥',
+      transliteration:
+        'pratīcyāṁ pātu śrīpatiḥ |\nvāyavyāṁ pātu viśvātmā |\nudīcyāṁ pātu yajñabhuk |\naiśānyāṁ pātu dharmavibhuḥ ||',
+      meaning:
+        'May the Lord of Lakshmi protect me in the west, may the Soul of the Universe protect me in the northwest, may the enjoyer of sacrifices protect me in the north, may the all-pervading Lord of Dharma protect me in the northeast.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'ऊर्ध्वं पातु त्रिविक्रमः ।\nअधः पातु वामनः ।\nमत्स्यः पातु जलेष्वन्तर्यामी ।\nस्थले कूर्मो मां पातु सर्वतः ॥',
+      transliteration:
+        'ūrdhvaṁ pātu trivikramaḥ |\nadhaḥ pātu vāmanaḥ |\nmatsyaḥ pātu jaleṣv-antaryāmī |\nsthale kūrmo māṁ pātu sarvataḥ ||',
+      meaning:
+        'May Trivikrama protect me above, may Vamana protect me below. May the Fish incarnation protect me in waters as the Indweller. May the Tortoise incarnation protect me on land from all sides.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'अटव्यामपि नारसिंहः पातु ।\nमार्गे वामनको मणिः ।\nस्वप्ने चावतु गोविन्दो ।\nप्रमत्तं पातु माधवः ॥',
+      transliteration:
+        'aṭavyām-api nārasiṁhaḥ pātu |\nmārge vāmanako maṇiḥ |\nsvapne cāvatu govindo |\npramattaṁ pātu mādhavaḥ ||',
+      meaning:
+        'May Narasimha protect me in the forest. May the jewel-like Vamana protect me on the road. May Govinda protect me in sleep. May Madhava protect me when I am careless.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Verse 9',
+      sanskrit:
+        'इष्टापूर्तस्य रक्षां कुर्यात् हृषीकेशः ।\nधनधान्यादिरक्षां कुर्यात् श्रीधरः ।\nपुत्रपौत्रान् रक्षतु भगवान् माधवः ।\nगोषु रक्षतु गोविन्दः ॥',
+      transliteration:
+        'iṣṭāpūrtasya rakṣāṁ kuryāt hṛṣīkeśaḥ |\ndhana-dhānyādi-rakṣāṁ kuryāt śrīdharaḥ |\nputra-pautrān rakṣatu bhagavān mādhavaḥ |\ngoṣu rakṣatu govindaḥ ||',
+      meaning:
+        'May Hrishikesha protect the merit of my rituals. May Shridhara protect my wealth and grains. May Lord Madhava protect my children and grandchildren. May Govinda protect my cattle.',
+    },
+    {
+      id: 10,
+      verseLabel: 'Verse 10',
+      sanskrit:
+        'विद्यां रक्षतु केशवः ।\nधर्मं रक्षतु धर्मपालनः ।\nवैकुण्ठः सर्वतो रक्षेत् ।\nइति नारायणकवचम् ॥',
+      transliteration:
+        'vidyāṁ rakṣatu keśavaḥ |\ndharmaṁ rakṣatu dharma-pālanaḥ |\nvaikuṇṭhaḥ sarvato rakṣet |\niti nārāyaṇa-kavacam ||',
+      meaning:
+        'May Keshava protect my learning. May the upholder of Dharma protect my righteousness. May the Lord of Vaikuntha protect me from all sides. Thus ends the Narayana Kavacham.',
+    },
   ],
 };
 
