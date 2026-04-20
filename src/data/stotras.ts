@@ -4811,6 +4811,36 @@ const subramanyaAshtakam: Stotra = {
       meaning:
         'O god of gods, known in the midst of the chariot circle! O one who holds a firm bow, presiding over the city of Indra\'s throne! O one who slew the demon Sura and is praised by crores of gods! O Lord of Valli, grant me the support of Your hand.',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'हीराद्रिरत्नमणियुक्तकिरीटहार-\nकेयूरकुण्डललसत्कवचाभिरामम् ।\nहे वीर तारकजयामरबृन्दवन्द्य\nवल्लीसनाथ मम देहि करावलम्बम् ॥',
+      transliteration:
+        'hīrādri-ratna-maṇi-yukta-kirīṭa-hāra-\nkeyūra-kuṇḍala-lasat-kavacābhirāmam |\nhe vīra tāraka-jayāmara-bṛnda-vandya\nvallī-sanātha mama dehi karāvalambam ||',
+      meaning:
+        'O one resplendent with crown, necklace, armlets, earrings, and shining armor set with diamonds and precious gems! O valiant hero who conquered the demon Taraka, worshipped by hosts of immortal gods! O Lord of Valli, grant me the support of Your hand.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'पञ्चाक्षरादिमनुमन्त्रितगाङ्गतोयैः\nपञ्चामृतैः प्रमुदितेन्द्रमुखैर्मुनीन्द्रैः ।\nपट्टाभिषिक्तहरियुक्तपरासनाथ\nवल्लीसनाथ मम देहि करावलम्बम् ॥',
+      transliteration:
+        'pañcākṣarādi-manu-mantrita-gāṅga-toyaiḥ\npañcāmṛtaiḥ pramudita-indra-mukhair-munīndraiḥ |\npaṭṭābhiṣikta-hari-yukta-parāsa-nātha\nvallī-sanātha mama dehi karāvalambam ||',
+      meaning:
+        'O one ceremonially anointed by jubilant Indra and foremost sages with Ganga water sanctified by the Panchakshara and other mantras, and bathed with the five nectars! O supreme lord united with Hari! O Lord of Valli, grant me the support of Your hand.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'श्रीकार्तिकेय करुणामृतपूर्णदृष्ट्या\nकामादिरोगकलुषीकृतदुष्टचित्तम् ।\nसिक्त्वा तु मामवकलाधरकान्तिकान्त्या\nवल्लीसनाथ मम देहि करावलम्बम् ॥',
+      transliteration:
+        'śrī-kārtikēya karuṇāmṛta-pūrṇa-dṛṣṭyā\nkāmādi-roga-kaluṣī-kṛta-duṣṭa-cittam |\nsiktvā tu mām-ava-kalādhara-kānti-kāntyā\nvallī-sanātha mama dehi karāvalambam ||',
+      meaning:
+        'O Sri Kartikeya, with Your glance full of the nectar of compassion, drench and purify my wicked mind defiled by the diseases of lust and other passions! O one who shines with the radiance of the moon! O Lord of Valli, grant me the support of Your hand.',
+    },
   ],
 };
 
