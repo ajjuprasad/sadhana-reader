@@ -6645,6 +6645,56 @@ const shriRudramNamakam: Stotra = {
       meaning:
         'Salutations to the golden-armed one, the leader of hosts, the lord of the directions. Salutations to the trees with green foliage, to the lord of all creatures.',
     },
+    {
+      id: 6,
+      verseLabel: 'Anuvaka 2.2',
+      sanskrit:
+        'सस्पिञ्जराय त्विषीमते पथीनां पतये नमो नमो\nबभ्लुशाय विव्याधिनेऽन्नानां पतये नमो नमः ॥',
+      transliteration:
+        'saspiñjarāya tviṣīmate pathīnāṁ pataye namo namo\nbabhluśāya vivyādhine \'nnānāṁ pataye namo namaḥ ||',
+      meaning:
+        'Salutations to the tawny, radiant lord of the paths. Salutations to the brown-hued one who pierces, the lord of all food.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Anuvaka 3.1',
+      sanskrit:
+        'नमो भवाय च रुद्राय च\nनमः शर्वाय च पशुपतये च\nनमो नीलग्रीवाय च शितिकण्ठाय च ॥',
+      transliteration:
+        'namo bhavāya ca rudrāya ca\nnamaḥ śarvāya ca paśupataye ca\nnamo nīlagrīvāya ca śitikaṇṭhāya ca ||',
+      meaning:
+        'Salutations to Bhava (existence) and to Rudra (the howler). Salutations to Sharva (the archer) and to Pashupati (lord of creatures). Salutations to the blue-necked and the white-throated one.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Anuvaka 3.2',
+      sanskrit:
+        'नमः कपर्दिने च व्युप्तकेशाय च\nनमः सहस्राक्षाय च शतधन्वने च\nनमो गिरिशाय च शिपिविष्टाय च ॥',
+      transliteration:
+        'namaḥ kapardine ca vyupta-keśāya ca\nnamaḥ sahasrākṣāya ca śata-dhanvane ca\nnamo giriśāya ca śipiviṣṭāya ca ||',
+      meaning:
+        'Salutations to the matted-haired and the shaven-headed. Salutations to the thousand-eyed and the hundred-bowed. Salutations to the mountain-dweller and the all-pervading one.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Anuvaka 4.1',
+      sanskrit:
+        'नमो भवस्य हेत्यै जगतां पतये नमो नमो\nरुद्रायाततविने क्षेत्राणां पतये नमो नमः ॥',
+      transliteration:
+        'namo bhavasya hetyai jagatāṁ pataye namo namo\nrudrāyātatavine kṣetrāṇāṁ pataye namo namaḥ ||',
+      meaning:
+        'Salutations to the weapon of Bhava, the lord of the worlds. Salutations to Rudra who strings his bow, the lord of the fields.',
+    },
+    {
+      id: 10,
+      verseLabel: 'Anuvaka 5.1',
+      sanskrit:
+        'नमो भवाय च रुद्राय च\nनमः शर्वाय च पशुपतये च\nनम ईशानाय च भगवते च ॥',
+      transliteration:
+        'namo bhavāya ca rudrāya ca\nnamaḥ śarvāya ca paśupataye ca\nnama īśānāya ca bhagavate ca ||',
+      meaning:
+        'Salutations to Bhava and Rudra. Salutations to Sharva and Pashupati. Salutations to Ishana (the ruler) and to Bhagavan (the glorious one).',
+    },
   ],
 };
 
