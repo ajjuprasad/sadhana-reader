@@ -6327,6 +6327,56 @@ const shivaMahimnaStotram: Stotra = {
       meaning:
         'O Lord of the mountains, when Brahma flew upward and Vishnu dug downward to find the ends of Your column of fire, they could not. Then You, pleased by their devotion and faith, revealed Yourself to them. Does not sincere devotion to You always bear fruit?',
     },
+    {
+      id: 11,
+      verseLabel: 'Verse 11',
+      sanskrit:
+        'अयत्नादापाद्य त्रिभुवनमवैरव्यतिकरं\nदशास्यो यद्बाहूनभृत रणकण्डूपरवशान् ।\nशिरःपद्मश्रेणीरचितचरणाम्भोरुहबलेः\nस्थिरायास्त्वद्भक्तेस्त्रिपुरहर विस्फूर्जितमिदम् ॥',
+      transliteration:
+        'ayatnād-āpādya tribhuvanam-avairavyatikaraṁ\ndaśāsyo yad-bāhūn-abhṛta raṇa-kaṇḍū-paravaśān |\nśiraḥ-padma-śreṇī-racita-caraṇāmbhoruha-baleḥ\nsthirāyās-tvad-bhaktes-tripurahara visphūrjitam-idam ||',
+      meaning:
+        'O destroyer of Tripura, Ravana, the ten-headed, who effortlessly brought the three worlds under his sway and whose arms itched for battle — even he offered lotuses of his heads at Your lotus feet. This is the power of steadfast devotion to You.',
+    },
+    {
+      id: 12,
+      verseLabel: 'Verse 12',
+      sanskrit:
+        'अमुष्य त्वत्सेवासमधिगतसारं भुजवनं\nबलात्कैलासेऽपि त्वदधिवसतौ विक्रमयतः ।\nअलभ्यापातालेऽप्यलसचलितांगुष्ठशिरसि\nप्रतिष्ठा त्वय्यासीद्ध्रुवमुपचितो मुह्यति खलः ॥',
+      transliteration:
+        'amuṣya tvat-sevā-samadhigata-sāraṁ bhujavanaṁ\nbalāt-kailāse \'pi tvad-adhivasatau vikramayataḥ |\nalabhyā-pātāle \'py-alasa-calitāṅguṣṭha-śirasi\npratiṣṭhā tvayy-āsīd-dhruvam-upacito muhyati khalaḥ ||',
+      meaning:
+        'That same Ravana, whose forest of arms gained strength from worshipping You, when he forcefully tried to uproot Your Kailasa abode — by the mere lazy movement of Your toe, he could find no ground even in the netherworld. Indeed, the wicked become deluded when puffed with pride.',
+    },
+    {
+      id: 13,
+      verseLabel: 'Verse 13',
+      sanskrit:
+        'यदृद्धिं सुत्राम्णो वरद परमोच्चैरपि सतीं\nअधश्चक्रे बाणः परिजनविधेयत्रिभुवनः ।\nन तच्चित्रं तस्मिन् वरिवसितरि त्वच्चरणयोः\nन कस्याप्युन्नत्यै भवति शिरसस्त्वय्यवनतिः ॥',
+      transliteration:
+        'yad-ṛddhiṁ sutrāmṇo varada paramoccair-api satīṁ\nadhaś-cakre bāṇaḥ parijana-vidheya-tribhuvanaḥ |\nna tac-citraṁ tasmin varivasi-tari tvac-caraṇayoḥ\nna kasyāpy-unnatyai bhavati śirasas-tvayy-avanatiḥ ||',
+      meaning:
+        'O bestower of boons, it is no wonder that Banasura, who worshipped Your feet, made the glory of even Indra bow low, keeping the three worlds at his command. For bowing one\'s head to You never fails to bring elevation.',
+    },
+    {
+      id: 14,
+      verseLabel: 'Verse 14',
+      sanskrit:
+        'अकाण्डब्रह्माण्डक्षयचकितदेवासुरकृपा\nविधेयस्यासीद्यस्त्रिनयनविषं संहृतवतः ।\nस कल्माषः कण्ठे तव न कुरुते न श्रियमहो\nविकारोऽपि श्लाघ्यो भुवनभयभङ्गव्यसनिनः ॥',
+      transliteration:
+        'akāṇḍa-brahmāṇḍa-kṣaya-cakita-devāsura-kṛpā\nvidheyasyāsīd-yas-trinayana-viṣaṁ saṁhṛtavataḥ |\nsa kalmāṣaḥ kaṇṭhe tava na kurute na śriyam-aho\nvikāro \'pi ślāghyo bhuvana-bhaya-bhaṅga-vyasaninaḥ ||',
+      meaning:
+        'When the universe faced sudden destruction and gods and demons trembled, You, the three-eyed one, mercifully swallowed the poison. That dark stain on Your throat only adds to Your beauty — even a blemish is praiseworthy in one addicted to removing the fears of the world.',
+    },
+    {
+      id: 15,
+      verseLabel: 'Verse 15',
+      sanskrit:
+        'असिद्धार्था नैव क्वचिदपि सदेवासुरनरे\nनिवर्तन्ते नित्यं जगति जयिनो यस्य विशिखाः ।\nस पश्यन्नीश त्वामितरसुरसाधारणमभूत्\nस्मरः स्मर्तव्यात्मा न हि वशिषु पथ्यः परिभवः ॥',
+      transliteration:
+        'asiddhārthā naiva kvacid-api sadevāsura-nare\nnivartante nityaṁ jagati jayino yasya viśikhāḥ |\nsa paśyann-īśa tvām-itara-sura-sādhāraṇam-abhūt\nsmaraḥ smartavyātmā na hi vaśiṣu pathyaḥ paribhavaḥ ||',
+      meaning:
+        'O Lord, Kamadeva, whose arrows never fail and who always conquers in the world of gods, demons, and men — he treated You as an ordinary god and was burned to ashes. Insult is never good for those who have mastered their senses.',
+    },
   ],
 };
 
