@@ -753,7 +753,7 @@ export default function HomeScreen() {
         <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">
           {[
             { label: 'Pañchāṅga 2026', path: '/panchanga' },
-            { label: 'About', path: '/about' },
+            { label: 'About Sadhana Reader', path: '/about' },
           ].map((link) => (
             <button
               key={link.path}
