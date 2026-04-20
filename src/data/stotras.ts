@@ -5775,6 +5775,46 @@ const dasharathaShaniStotram: Stotra = {
       meaning:
         'Salutations to the all-consuming one, to the wrinkle-faced one. O son of Surya, salutations to you, to the luminous one who inspires awe.',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'अधो दृष्टे नमस्तेऽस्तु संवर्तक नमोऽस्तु ते ।\nनमो मन्दगते तुभ्यं निस्त्रिंशाय नमोऽस्तु ते ॥',
+      transliteration:
+        'adho dṛṣṭe namaste \'stu saṁvartaka namo \'stu te |\nnamo manda-gate tubhyaṁ nistriṁśāya namo \'stu te ||',
+      meaning:
+        'Salutations to the downward-gazing one, to the destroyer of the universe. Salutations to the slow-moving one, to the sword-bearing one.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'तपसा दग्धदेहाय नित्यं योगरताय च ।\nनमो नित्यं क्षुधार्ताय अतृप्ताय च वै नमः ॥',
+      transliteration:
+        'tapasā dagdha-dehāya nityaṁ yoga-ratāya ca |\nnamo nityaṁ kṣudhārtāya atṛptāya ca vai namaḥ ||',
+      meaning:
+        'Salutations to the one whose body is scorched by austerity, who is ever engaged in yoga. Salutations to the perpetually hungry and never-satiated one.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'ज्ञानचक्षुर्नमस्तेऽस्तु कश्यपात्मज सूनवे ।\nतुष्टो ददासि वै राज्यं रुष्टो हरसि तत्क्षणात् ॥',
+      transliteration:
+        'jñāna-cakṣur-namaste \'stu kaśyapātmaja-sūnave |\ntuṣṭo dadāsi vai rājyaṁ ruṣṭo harasi tat-kṣaṇāt ||',
+      meaning:
+        'Salutations to the one with the eye of wisdom, O grandson of Kashyapa. When pleased, you bestow kingdoms; when angered, you snatch them away in an instant.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Verse 9',
+      sanskrit:
+        'देवासुरमनुष्याश्च सिद्धविद्याधरोरगाः ।\nत्वया विलोकिताः सर्वे नाशं यान्ति समूलतः ॥',
+      transliteration:
+        'devāsura-manuṣyāś-ca siddha-vidyādhara-uragāḥ |\ntvayā vilokitāḥ sarve nāśaṁ yānti samūlataḥ ||',
+      meaning:
+        'Gods, demons, humans, siddhas, vidyadharas, and serpents — all those upon whom you cast your gaze are destroyed completely.',
+    },
   ],
 };
 
