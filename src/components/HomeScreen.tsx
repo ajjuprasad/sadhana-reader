@@ -237,28 +237,50 @@ export default function HomeScreen() {
         style={{ backgroundColor: 'var(--color-bg)' }}
       >
         <div className="flex items-center justify-between px-4 py-2">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex items-center gap-1.5 transition-opacity duration-300"
-            style={{ opacity: (isStuck || searchFocused) ? 1 : 0, pointerEvents: (isStuck || searchFocused) ? 'auto' : 'none' }}
-          >
-            <span
-              className="text-xl select-none"
-              style={{ color: 'var(--color-accent-primary)' }}
-              aria-hidden="true"
-            >
-              ॐ
-            </span>
-            <span
-              className="font-display font-bold text-base"
-              style={{ color: 'var(--color-text-primary)' }}
-            >
-              {t('home.title')}
-            </span>
-          </button>
-
-          <div className="flex items-center gap-0.5">
+          <div className="flex items-center gap-1">
             <HamburgerMenu />
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="flex items-center gap-1.5 transition-opacity duration-300"
+              style={{ opacity: (isStuck || searchFocused) ? 1 : 0, pointerEvents: (isStuck || searchFocused) ? 'auto' : 'none' }}
+            >
+              <span
+                className="text-xl select-none"
+                style={{ color: 'var(--color-accent-primary)' }}
+                aria-hidden="true"
+              >
+                ॐ
+              </span>
+              <span
+                className="font-display font-bold text-base"
+                style={{ color: 'var(--color-text-primary)' }}
+              >
+                {t('home.title')}
+              </span>
+            </button>
+          </div>
+
+          <div className="flex items-center gap-1">
+            <a
+              href={(() => {
+                const message = t('home.shareMessage', { url: window.location.origin });
+                return `https://wa.me/?text=${encodeURIComponent(message)}`;
+              })()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 hover:opacity-70 transition-opacity"
+              style={{ color: 'var(--color-text-primary)' }}
+              aria-label="Share Sādhanā Reader on WhatsApp"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="18" cy="5" r="3" />
+                <circle cx="6" cy="12" r="3" />
+                <circle cx="18" cy="19" r="3" />
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+              </svg>
+            </a>
+            <ProfileButton />
           </div>
         </div>
 
