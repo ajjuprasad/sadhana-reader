@@ -10,6 +10,8 @@ import AllStotrasPage from './components/AllStotrasPage';
 import FavoritesPage from './components/FavoritesPage';
 import ComingSoonPage from './components/ComingSoonPage';
 import AboutPage from './components/AboutPage';
+import StoriesPage from './components/StoriesPage';
+import StoryDetail from './components/StoryDetail';
 import MandalaBackground from './components/MandalaBackground';
 import { useSettings } from './hooks/useSettings';
 import { LanguageProvider } from './i18n/LanguageContext';
@@ -54,6 +56,8 @@ export default function App() {
             <Route path="/favorites" element={<FavoritesPage />} />
             <Route path="/coming-soon" element={<ComingSoonPage />} />
             <Route path="/panchanga" element={<CalendarPage />} />
+            <Route path="/stories" element={<StoriesPage />} />
+            <Route path="/story/:storyId" element={<StoryDetail />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/profile" element={<ProfileScreen settingsState={settingsState} />} />
           </Routes>

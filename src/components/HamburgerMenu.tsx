@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const menuItems = [
   { label: 'All Stotras', path: '/stotras', icon: 'grid' },
+  { label: 'Stories for Kids', path: '/stories', icon: 'book', isNew: true },
   { label: 'My Favorites', path: '/favorites', icon: 'heart' },
   { label: 'Coming Soon', path: '/coming-soon', icon: 'clock' },
   { label: 'Pañchāṅga 2026', path: '/panchanga', icon: 'calendar' },
@@ -21,6 +22,8 @@ function MenuIcon({ icon }: { icon: string }) {
       return <svg {...props}><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>;
     case 'calendar':
       return <svg {...props}><rect x="3" y="4" width="18" height="18" rx="2" ry="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" /></svg>;
+    case 'book':
+      return <svg {...props}><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>;
     case 'info':
       return <svg {...props}><circle cx="12" cy="12" r="10" /><line x1="12" y1="16" x2="12" y2="12" /><line x1="12" y1="8" x2="12.01" y2="8" /></svg>;
     default:
@@ -115,6 +118,19 @@ export default function HamburgerMenu() {
                     <span className="font-hind font-medium text-sm" style={{ color: 'var(--color-text-primary)' }}>
                       {item.label}
                     </span>
+                    {'isNew' in item && item.isNew && (
+                      <span
+                        className="font-label font-semibold uppercase px-1.5 py-0.5 rounded-full"
+                        style={{
+                          fontSize: '0.5rem',
+                          letterSpacing: '0.08em',
+                          backgroundColor: 'var(--color-accent-primary)',
+                          color: '#fff',
+                        }}
+                      >
+                        NEW
+                      </span>
+                    )}
                   </motion.button>
                 ))}
               </nav>

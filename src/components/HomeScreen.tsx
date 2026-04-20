@@ -553,6 +553,54 @@ export default function HomeScreen() {
         </motion.section>
       )}
 
+      {/* Stories for Kids banner — hidden when filtering */}
+      {!isFiltering && (
+        <motion.section
+          className="max-w-3xl mx-auto mt-4 px-4"
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-40px' }}
+          transition={{ duration: 0.5 }}
+        >
+          <button
+            onClick={() => navigate('/stories')}
+            className="w-full flex items-center gap-4 px-5 py-4 rounded-2xl text-left transition-transform active:scale-[0.98]"
+            style={{
+              backgroundColor: 'var(--color-accent-primary-bg, rgba(255, 153, 51, 0.06))',
+              border: '1px solid rgba(255, 153, 51, 0.2)',
+            }}
+          >
+            <span className="text-2xl select-none" style={{ color: 'var(--color-accent-primary)' }}>
+              📖
+            </span>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-2">
+                <p className="font-display font-bold text-sm" style={{ color: 'var(--color-text-primary)' }}>
+                  Stories for Kids
+                </p>
+                <span
+                  className="font-label font-semibold uppercase px-1.5 py-0.5 rounded-full"
+                  style={{
+                    fontSize: '0.5rem',
+                    letterSpacing: '0.08em',
+                    backgroundColor: 'var(--color-accent-primary)',
+                    color: '#fff',
+                  }}
+                >
+                  NEW
+                </span>
+              </div>
+              <p className="font-hind text-xs mt-0.5" style={{ color: 'var(--color-text-secondary)' }}>
+                Tales of courage & wisdom from Hindu mythology
+              </p>
+            </div>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: 'var(--color-accent-primary)', opacity: 0.6 }}>
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </button>
+        </motion.section>
+      )}
+
       {/* Recently added — hidden when filtering */}
       {!isFiltering && (
       <section className="max-w-3xl mx-auto mt-12 sm:mt-16">
