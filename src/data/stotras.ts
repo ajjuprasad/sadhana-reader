@@ -5818,6 +5818,400 @@ const dasharathaShaniStotram: Stotra = {
   ],
 };
 
+const siddhaKunjikaStotram: Stotra = {
+  id: 'siddha-kunjika-stotram',
+  title: 'Siddha Kunjika Stotram',
+  subtitle: 'सिद्धकुञ्जिकास्तोत्रम्',
+  deity: 'Durga',
+  description:
+    'A powerful hymn from the Rudrayamala Tantra containing the essence of the Durga Saptashati. Lord Shiva teaches this to Parvati, declaring that recitation of this alone bestows the complete fruit of the seven hundred verses of the Devi Mahatmya.',
+  benefits: [
+    'Bestows the complete fruit of reciting the Durga Saptashati',
+    'Destroys all enemies and removes all diseases',
+    'Grants wealth, prosperity, and spiritual liberation',
+  ],
+  estimatedMinutes: 5,
+  icon: 'siddha-kunjika-stotram',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'शिव उवाच —\nशृणु देवि प्रवक्ष्यामि कुञ्जिकास्तोत्रमुत्तमम् ।\nयेन मन्त्रप्रभावेण चण्डीजापः शुभो भवेत् ॥',
+      transliteration:
+        'śiva uvāca —\nśṛṇu devi pravakṣyāmi kuñjikā-stotram-uttamam |\nyena mantra-prabhāveṇa caṇḍī-jāpaḥ śubho bhavet ||',
+      meaning:
+        'Lord Shiva said: Listen, O Devi, I shall tell you the supreme Kunjika Stotram, by the power of whose mantra the recitation of the Chandi becomes auspicious and fruitful.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'न कवचं नार्गलास्तोत्रं कीलकं न रहस्यकम् ।\nन सूक्तं नापि ध्यानं च न न्यासो न च वार्चनम् ॥',
+      transliteration:
+        'na kavacaṁ nārgalā-stotraṁ kīlakaṁ na rahasyakam |\nna sūktaṁ nāpi dhyānaṁ ca na nyāso na ca vārcanam ||',
+      meaning:
+        'Neither the Kavacham, nor the Argala Stotram, nor the Kilakam, nor the secret text, nor the Sukta, nor meditation, nor Nyasa, nor any worship ritual is needed.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'कुञ्जिकापाठमात्रेण दुर्गापाठफलं लभेत् ।\nअति गुह्यतरं देवि देवानामपि दुर्लभम् ॥',
+      transliteration:
+        'kuñjikā-pāṭha-mātreṇa durgā-pāṭha-phalaṁ labhet |\nati guhyataraṁ devi devānām-api durlabham ||',
+      meaning:
+        'By merely reciting the Kunjika, one obtains the fruit of the entire Durga Saptashati. This is supremely secret, O Devi, rare even for the gods.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'गोपनीयं प्रयत्नेन स्वयोनिरिव पार्वति ।\nमारणं मोहनं वश्यं स्तम्भनोच्चाटनादिकम् ॥',
+      transliteration:
+        'gopanīyaṁ prayatnena sva-yonir-iva pārvati |\nmāraṇaṁ mohanaṁ vaśyaṁ stambhanoccāṭanādikam ||',
+      meaning:
+        'This is to be kept secret with great effort, O Parvati, as one would guard one\'s own origin. It grants powers of subduing, attracting, paralyzing, and all such accomplishments.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'पाठमात्रेण संसिद्ध्येत् कुञ्जिकास्तोत्रमुत्तमम् ।\nॐ ऐं ह्रीं क्लीं चामुण्डायै विच्चे ।\nॐ ग्लौं हुं क्लीं जूं सः ज्वालय ज्वालय ज्वल ज्वल प्रज्वल प्रज्वल ॥',
+      transliteration:
+        'pāṭha-mātreṇa saṁsiddhyet kuñjikā-stotram-uttamam |\noṁ aiṁ hrīṁ klīṁ cāmuṇḍāyai vicce |\noṁ glauṁ huṁ klīṁ jūṁ saḥ jvālaya jvālaya jvala jvala prajvala prajvala ||',
+      meaning:
+        'By mere recitation, this supreme Kunjika Stotram becomes accomplished. Om Aim Hrim Klim Chamundayai Vichche. Om Glaum Hum Klim Jum Sah — blaze, blaze, flame, flame, ignite, ignite!',
+    },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'ऐं ह्रीं क्लीं चामुण्डायै विच्चे ज्वल हं सं लं क्षं फट् स्वाहा ।\nइति मन्त्रं समुच्चार्य सप्तशतीं पठेत् ॥',
+      transliteration:
+        'aiṁ hrīṁ klīṁ cāmuṇḍāyai vicce jvala haṁ saṁ laṁ kṣaṁ phaṭ svāhā |\niti mantraṁ samuccārya saptaśatīṁ paṭhet ||',
+      meaning:
+        'Aim Hrim Klim Chamundayai Vichche — Blaze! Ham Sam Lam Ksham Phat Svaha! Having uttered this mantra, one should recite the Saptashati.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'ॐ ऐं ह्रीं क्लीं चामुण्डायै विच्चे ।\nनमस्ते रुद्ररूपिण्यै नमस्ते मधुमर्दिनि ।\nनमः कैटभनाशिन्यै नमस्ते महिषार्दिनि ॥',
+      transliteration:
+        'oṁ aiṁ hrīṁ klīṁ cāmuṇḍāyai vicce |\nnamaste rudra-rūpiṇyai namaste madhu-mardini |\nnamaḥ kaiṭabha-nāśinyai namaste mahiṣārdini ||',
+      meaning:
+        'Om Aim Hrim Klim Chamundayai Vichche! Salutations to the one of Rudra\'s form, to the slayer of Madhu! Salutations to the destroyer of Kaitabha, to the crusher of Mahishasura!',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'नमस्ते शुम्भहन्त्र्यै च निशुम्भासुरघातिनि ।\nजाग्रतं हि महादेवि जपं सिद्धं कुरुष्व मे ॥',
+      transliteration:
+        'namaste śumbha-hantryai ca niśumbhāsura-ghātini |\njāgrataṁ hi mahādevi japaṁ siddhaṁ kuruṣva me ||',
+      meaning:
+        'Salutations to the slayer of Shumbha and the destroyer of the demon Nishumbha! O great Goddess, be awakened and make my recitation fruitful!',
+    },
+    {
+      id: 9,
+      verseLabel: 'Verse 9',
+      sanskrit:
+        'ऐङ्कारी सृष्टिरूपायै ह्रींकारी प्रतिपालिका ।\nक्लींकारी कामरूपिण्यै बीजरूपे नमोऽस्तु ते ॥',
+      transliteration:
+        'aiṅkārī sṛṣṭi-rūpāyai hrīṁkārī pratipālikā |\nklīṁkārī kāma-rūpiṇyai bīja-rūpe namo \'stu te ||',
+      meaning:
+        'She whose form is the syllable Aim is the creator, she of the syllable Hrim is the protector, she of the syllable Klim is the fulfiller of desires — salutations to you, O embodiment of the seed syllables!',
+    },
+    {
+      id: 10,
+      verseLabel: 'Verse 10',
+      sanskrit:
+        'चामुण्डा चण्डघाती च यैकारी वरदायिनी ।\nविच्चे चाभयदा नित्यं नमस्ते मन्त्ररूपिणि ॥',
+      transliteration:
+        'cāmuṇḍā caṇḍa-ghātī ca yaikārī vara-dāyinī |\nvicce cābhaya-dā nityaṁ namaste mantra-rūpiṇi ||',
+      meaning:
+        'Chamunda, the slayer of Chanda, the giver of boons through the syllable Ya, and the giver of fearlessness through the syllable Vichche — salutations to you, O embodiment of the mantra!',
+    },
+    {
+      id: 11,
+      verseLabel: 'Verse 11',
+      sanskrit:
+        'धां धीं धूं धूर्जटेः पत्नी वां वीं वूं वागधीश्वरी ।\nक्रां क्रीं क्रूं कालिका देवि शां शीं शूं मे शुभं कुरु ॥',
+      transliteration:
+        'dhāṁ dhīṁ dhūṁ dhūrjaṭeḥ patnī vāṁ vīṁ vūṁ vāgadhīśvarī |\nkrāṁ krīṁ krūṁ kālikā devi śāṁ śīṁ śūṁ me śubhaṁ kuru ||',
+      meaning:
+        'Dham Dhim Dhum — O consort of Shiva! Vam Vim Vum — O sovereign of speech! Kram Krim Krum — O Goddess Kalika! Sham Shim Shum — bestow auspiciousness upon me!',
+    },
+    {
+      id: 12,
+      verseLabel: 'Verse 12',
+      sanskrit:
+        'हुं हुं हुंकाररूपिण्यै जं जं जं जम्भनादिनि ।\nभ्रां भ्रीं भ्रूं भैरवी भद्रे भवान्यै ते नमो नमः ॥',
+      transliteration:
+        'huṁ huṁ huṁkāra-rūpiṇyai jaṁ jaṁ jaṁ jambhanādini |\nbhrāṁ bhrīṁ bhrūṁ bhairavī bhadre bhavānyai te namo namaḥ ||',
+      meaning:
+        'Hum Hum — O one whose form is the Humkara! Jam Jam Jam — O one who paralyzes! Bhram Bhrim Bhrum — O Bhairavi, O auspicious one, O Bhavani — salutations to you again and again!',
+    },
+    {
+      id: 13,
+      verseLabel: 'Verse 13',
+      sanskrit:
+        'अं कं चं टं तं पं यं शं वीं दुं ऐं वीं हं क्षं ।\nधिजाग्रं धिजाग्रं त्रोटय त्रोटय दीप्तं कुरु कुरु स्वाहा ॥',
+      transliteration:
+        'aṁ kaṁ caṁ ṭaṁ taṁ paṁ yaṁ śaṁ vīṁ duṁ aiṁ vīṁ haṁ kṣaṁ |\ndhijāgraṁ dhijāgraṁ troṭaya troṭaya dīptaṁ kuru kuru svāhā ||',
+      meaning:
+        'Through the seed syllables of the alphabet — awaken, awaken! Break asunder, break asunder! Make it radiant, make it radiant! Svaha!',
+    },
+    {
+      id: 14,
+      verseLabel: 'Verse 14',
+      sanskrit:
+        'पां पीं पूं पार्वती पूर्णा खां खीं खूं खेचरी तथा ।\nसां सीं सूं सप्तशती देव्या मन्त्रसिद्धिं कुरुष्व मे ॥',
+      transliteration:
+        'pāṁ pīṁ pūṁ pārvatī pūrṇā khāṁ khīṁ khūṁ khecarī tathā |\nsāṁ sīṁ sūṁ saptaśatī devyā mantra-siddhiṁ kuruṣva me ||',
+      meaning:
+        'Pam Pim Pum — O complete Parvati! Kham Khim Khum — O Khechari who moves through the sky! Sam Sim Sum — O Goddess of the Saptashati, grant me mantra accomplishment!',
+    },
+  ],
+};
+
+const indrakshiStotram: Stotra = {
+  id: 'indrakshi-stotram',
+  title: 'Indrakshi Stotram',
+  subtitle: 'इन्द्राक्षीस्तोत्रम्',
+  deity: 'Durga',
+  description:
+    'A sacred hymn to Goddess Indrakshi, a powerful form of Durga, transmitted through the lineage of Narayana to Narada to Indra. Contains divine names and attributes of the Goddess in the Anushtup metre, prescribed as a remedy for all diseases and calamities.',
+  benefits: [
+    'Cures all diseases and bestows perfect health',
+    'Provides divine protection and removes all obstacles',
+    'Grants longevity, happiness, and spiritual liberation',
+  ],
+  estimatedMinutes: 5,
+  icon: 'indrakshi-stotram',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'इन्द्राक्षी नाम सा देवी देवतैः समुदाहृता ।\nगौरी शाकम्भरी देवी दुर्गानामीति विश्रुता ॥',
+      transliteration:
+        'indrākṣī nāma sā devī devataiḥ samudāhṛtā |\ngaurī śākambharī devī durgā-nāmīti viśrutā ||',
+      meaning:
+        'She is called Goddess Indrakshi by the gods. She is known as Gauri, Shakambhari, and by the celebrated name Durga.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'नित्यानन्दा निराहारा निष्कलायै नमो नमः ।\nकात्यायन्यै च विद्महे कन्यकुमार्यै धीमहि ॥',
+      transliteration:
+        'nityānandā nirāhārā niṣkalāyai namo namaḥ |\nkātyāyanyai ca vidmahe kanyakumāryai dhīmahi ||',
+      meaning:
+        'Salutations to the eternally blissful one, who needs no sustenance, who is without parts. We meditate upon Katyayani, we contemplate the virgin Goddess.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'तन्नो दुर्गा प्रचोदयात् ।\nइन्द्राक्षीं द्विभुजां देवीं पीतवस्त्रद्वयान्विताम् ॥',
+      transliteration:
+        'tanno durgā pracodayāt |\nindrākṣīṁ dvibhujāṁ devīṁ pītavastra-dvayānvitām ||',
+      meaning:
+        'May Durga inspire and guide us. I meditate upon Indrakshi, the two-armed Goddess adorned in yellow garments.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'वामहस्तेन पद्मं च दक्षिणेन सुदर्शनम् ।\nइन्द्राक्षीं सहवक्त्रां च त्रिनेत्रां च चतुर्भुजाम् ॥',
+      transliteration:
+        'vāma-hastena padmaṁ ca dakṣiṇena sudarśanam |\nindrākṣīṁ saha-vaktrāṁ ca tri-netrāṁ ca caturbhujām ||',
+      meaning:
+        'With a lotus in her left hand and the Sudarshana discus in her right — I meditate upon Indrakshi with her beautiful face, three eyes, and four arms.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'देवीं पूजयते भक्त्या हवनं वा करोति यः ।\nतस्य रोगाः प्रणश्यन्ति ये च स्युः परमदारुणाः ॥',
+      transliteration:
+        'devīṁ pūjayate bhaktyā havanaṁ vā karoti yaḥ |\ntasya rogāḥ praṇaśyanti ye ca syuḥ parama-dāruṇāḥ ||',
+      meaning:
+        'Whoever worships the Goddess with devotion or performs the fire ritual — all their diseases, even the most terrible ones, are completely destroyed.',
+    },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'इति ते कथितं देवि अन्यत्किमपि ब्रूहि मे ।\nमन्त्रौषधिमयं वापि जिह्वाचालनमात्रतः ॥',
+      transliteration:
+        'iti te kathitaṁ devi anyat-kimapi brūhi me |\nmantrauṣadhi-mayaṁ vāpi jihvā-cālana-mātrataḥ ||',
+      meaning:
+        'Thus has it been told to you, O Devi. Ask me whatever else you wish. By the mere movement of the tongue chanting this mantra-medicine...',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'महामारीं महोत्पातं महाज्वरमहारुजम् ।\nस्मरणादेव तत्सर्वमाशु नश्यत्यसंशयम् ॥',
+      transliteration:
+        'mahā-mārīṁ mahotpātaṁ mahā-jvara-mahārujam |\nsmaraṇād-eva tat-sarvam-āśu naśyaty-asaṁśayam ||',
+      meaning:
+        'Great plagues, great calamities, terrible fevers, and grievous diseases — by merely remembering this stotra, all these are quickly destroyed without doubt.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'ब्रह्मा च शङ्करश्चैव विष्णुश्च विबुधेश्वराः ।\nमुनयो मनवश्चैव इन्द्राक्षीं मुनयो विदुः ॥',
+      transliteration:
+        'brahmā ca śaṅkaraś-caiva viṣṇuś-ca vibudheśvarāḥ |\nmunayo manavaś-caiva indrākṣīṁ munayo viduḥ ||',
+      meaning:
+        'Brahma, Shankara, Vishnu, and the lords of the wise — the great sages and Manus all know Indrakshi well.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Verse 9',
+      sanskrit:
+        'इन्द्राक्षीं शतवारं वा सहस्रं वा पठेन्नरः ।\nसर्वे रोगाः प्रणश्यन्ति सत्यं सत्यं वदाम्यहम् ॥',
+      transliteration:
+        'indrākṣīṁ śata-vāraṁ vā sahasraṁ vā paṭhen-naraḥ |\nsarve rogāḥ praṇaśyanti satyaṁ satyaṁ vadāmy-aham ||',
+      meaning:
+        'One who recites the Indrakshi Stotram a hundred or a thousand times — all diseases are destroyed. Truly, truly, I declare this.',
+    },
+    {
+      id: 10,
+      verseLabel: 'Verse 10',
+      sanskrit:
+        'स्तवराजमिदं देवि सर्वरोगनिवारणम् ।\nमया ते कथितं गौरि सर्वमन्त्रमयं शुभम् ॥',
+      transliteration:
+        'stava-rājam-idaṁ devi sarva-roga-nivāraṇam |\nmayā te kathitaṁ gauri sarva-mantra-mayaṁ śubham ||',
+      meaning:
+        'This king of hymns, O Devi, removes all diseases. I have told you, O Gauri, this auspicious prayer that is the essence of all mantras.',
+    },
+  ],
+};
+
+const narayanaKavacham: Stotra = {
+  id: 'narayana-kavacham',
+  title: 'Narayana Kavacham',
+  subtitle: 'नारायणकवचम्',
+  deity: 'Vishnu',
+  description:
+    'A divine armor prayer from the Srimad Bhagavatam (Canto 6, Chapter 8), given by Vishvarupa to Indra. This kavacham invokes Lord Narayana and His various forms for protection of every part of the body and in all directions.',
+  benefits: [
+    'Provides complete divine protection like an impenetrable armor',
+    'Removes fear and grants courage in all situations',
+    'Bestows spiritual strength and devotion to Lord Vishnu',
+  ],
+  estimatedMinutes: 8,
+  icon: 'narayana-kavacham',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'अङ्गान्यस्तानि सर्वाणि शिरश्चैव ललाटकम् ।\nनारायणमयं वर्म सन्नह्येद्भय आगते ॥',
+      transliteration:
+        'aṅgāny-astāni sarvāṇi śiraś-caiva lalāṭakam |\nnārāyaṇa-mayaṁ varma sannahyed-bhaya āgate ||',
+      meaning:
+        'When fear approaches, one should don the armor of Narayana which protects all limbs, the head, and the forehead.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'ॐ नमो नारायणायेति मन्त्रमर्मात्मरक्षणम् ।\nनयेन्मातृकान्यादौ न्यसेदङ्गेषु कल्पयन् ॥',
+      transliteration:
+        'oṁ namo nārāyaṇāyeti mantram-armātma-rakṣaṇam |\nnayen-mātṛkāny-ādau nyased-aṅgeṣu kalpayan ||',
+      meaning:
+        'The mantra "Om Namo Narayanaya" is the self-protecting armor. One should first assign the seed letters to the limbs of the body.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'ॐ नमो भगवते वासुदेवाय ।\nॐ ॐ पादयोः पातु ।\nनं नं जानुनोः पातु ।\nमो मो ऊर्वोः पातु ।',
+      transliteration:
+        'oṁ namo bhagavate vāsudevāya |\noṁ oṁ pādayoḥ pātu |\nnaṁ naṁ jānunoḥ pātu |\nmo mo ūrvoḥ pātu |',
+      meaning:
+        'Om Namo Bhagavate Vasudevaya. May "Om" protect the feet, may "Na" protect the knees, may "Mo" protect the thighs.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'नां नां नाभौ तु पातु मे ।\nरां रां हृदि पातु मे ।\nयं यं मुखं पातु मे ।\nणां णां शिरसि पातु मे ॥',
+      transliteration:
+        'nāṁ nāṁ nābhau tu pātu me |\nrāṁ rāṁ hṛdi pātu me |\nyaṁ yaṁ mukhaṁ pātu me |\nṇāṁ ṇāṁ śirasi pātu me ||',
+      meaning:
+        'May "Na" protect my navel, may "Ra" protect my heart, may "Ya" protect my face, may "Na" protect my head.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'प्राच्यां पातु जनार्दनः ।\nआग्नेय्यामजितः पातु ।\nदक्षिणे हयग्रीवः पातु ।\nनैरृत्यां भूतनायकः ॥',
+      transliteration:
+        'prācyāṁ pātu janārdanaḥ |\nāgnēyyām-ajitaḥ pātu |\ndakṣiṇe hayagrīvaḥ pātu |\nnairṛtyāṁ bhūta-nāyakaḥ ||',
+      meaning:
+        'May Janardana protect me in the east, may the invincible Ajita protect me in the southeast, may Hayagriva protect me in the south, may the Lord of beings protect me in the southwest.',
+    },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'प्रतीच्यां पातु श्रीपतिः ।\nवायव्यां पातु विश्वात्मा ।\nउदीच्यां पातु यज्ञभुक् ।\nऐशान्यां पातु धर्मविभुः ॥',
+      transliteration:
+        'pratīcyāṁ pātu śrīpatiḥ |\nvāyavyāṁ pātu viśvātmā |\nudīcyāṁ pātu yajñabhuk |\naiśānyāṁ pātu dharmavibhuḥ ||',
+      meaning:
+        'May the Lord of Lakshmi protect me in the west, may the Soul of the Universe protect me in the northwest, may the enjoyer of sacrifices protect me in the north, may the all-pervading Lord of Dharma protect me in the northeast.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'ऊर्ध्वं पातु त्रिविक्रमः ।\nअधः पातु वामनः ।\nमत्स्यः पातु जलेष्वन्तर्यामी ।\nस्थले कूर्मो मां पातु सर्वतः ॥',
+      transliteration:
+        'ūrdhvaṁ pātu trivikramaḥ |\nadhaḥ pātu vāmanaḥ |\nmatsyaḥ pātu jaleṣv-antaryāmī |\nsthale kūrmo māṁ pātu sarvataḥ ||',
+      meaning:
+        'May Trivikrama protect me above, may Vamana protect me below. May the Fish incarnation protect me in waters as the Indweller. May the Tortoise incarnation protect me on land from all sides.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'अटव्यामपि नारसिंहः पातु ।\nमार्गे वामनको मणिः ।\nस्वप्ने चावतु गोविन्दो ।\nप्रमत्तं पातु माधवः ॥',
+      transliteration:
+        'aṭavyām-api nārasiṁhaḥ pātu |\nmārge vāmanako maṇiḥ |\nsvapne cāvatu govindo |\npramattaṁ pātu mādhavaḥ ||',
+      meaning:
+        'May Narasimha protect me in the forest. May the jewel-like Vamana protect me on the road. May Govinda protect me in sleep. May Madhava protect me when I am careless.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Verse 9',
+      sanskrit:
+        'इष्टापूर्तस्य रक्षां कुर्यात् हृषीकेशः ।\nधनधान्यादिरक्षां कुर्यात् श्रीधरः ।\nपुत्रपौत्रान् रक्षतु भगवान् माधवः ।\nगोषु रक्षतु गोविन्दः ॥',
+      transliteration:
+        'iṣṭāpūrtasya rakṣāṁ kuryāt hṛṣīkeśaḥ |\ndhana-dhānyādi-rakṣāṁ kuryāt śrīdharaḥ |\nputra-pautrān rakṣatu bhagavān mādhavaḥ |\ngoṣu rakṣatu govindaḥ ||',
+      meaning:
+        'May Hrishikesha protect the merit of my rituals. May Shridhara protect my wealth and grains. May Lord Madhava protect my children and grandchildren. May Govinda protect my cattle.',
+    },
+    {
+      id: 10,
+      verseLabel: 'Verse 10',
+      sanskrit:
+        'विद्यां रक्षतु केशवः ।\nधर्मं रक्षतु धर्मपालनः ।\nवैकुण्ठः सर्वतो रक्षेत् ।\nइति नारायणकवचम् ॥',
+      transliteration:
+        'vidyāṁ rakṣatu keśavaḥ |\ndharmaṁ rakṣatu dharma-pālanaḥ |\nvaikuṇṭhaḥ sarvato rakṣet |\niti nārāyaṇa-kavacam ||',
+      meaning:
+        'May Keshava protect my learning. May the upholder of Dharma protect my righteousness. May the Lord of Vaikuntha protect me from all sides. Thus ends the Narayana Kavacham.',
+    },
+  ],
+};
+
 const dakshinamurthyStotram: Stotra = {
   id: 'dakshinamurthy-stotram',
   title: 'Dakshinamurthy Stotram',
@@ -5950,6 +6344,7 @@ export const stotras: Stotra[] = [
   ganeshaPancharatnam,
   guruAshtakam,
   hanumanChalisa,
+  indrakshiStotram,
   kalabhairavaAshtakam,
   kanikadharaStotram,
   lingashtakam,
@@ -5957,6 +6352,7 @@ export const stotras: Stotra[] = [
   mahalakshmiAshtakam,
   mahishasuraMardiniStotram,
   narasimhaKaravalambaStotram,
+  narayanaKavacham,
   nirvanaShatakam,
   pandurangashtakam,
   ramRakshaStotra,
@@ -5965,6 +6361,7 @@ export const stotras: Stotra[] = [
   shivaPanchakshara,
   shivaTandavaStotram,
   shivaAshtottara,
+  siddhaKunjikaStotram,
   subrahmanyaBhujangam,
   subramanyaAshtakam,
   sudarshanaAshtakam,
@@ -5980,19 +6377,9 @@ export interface ComingSoonStotra {
 
 export const comingSoonStotras: ComingSoonStotra[] = [
   {
-    id: 'indrakshi-stotram',
-    title: 'Indrakshi Stotram',
-    deity: 'Durga',
-  },
-  {
     id: 'lalitha-sahasranamam',
     title: 'Lalitha Sahasranamam',
     deity: 'Lalita Tripurasundari',
-  },
-  {
-    id: 'narayana-kavacham',
-    title: 'Narayana Kavacham',
-    deity: 'Vishnu',
   },
   {
     id: 'shiva-mahimna-stotram',
@@ -6003,10 +6390,5 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'shri-rudram-namakam',
     title: 'Shri Rudram (Namakam)',
     deity: 'Shiva',
-  },
-  {
-    id: 'siddha-kunjika-stotram',
-    title: 'Siddha Kunjika Stotram',
-    deity: 'Durga',
   },
 ];
