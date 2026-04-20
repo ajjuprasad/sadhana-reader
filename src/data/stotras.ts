@@ -6094,6 +6094,74 @@ const indrakshiStotram: Stotra = {
   ],
 };
 
+const narayanaKavacham: Stotra = {
+  id: 'narayana-kavacham',
+  title: 'Narayana Kavacham',
+  subtitle: 'नारायणकवचम्',
+  deity: 'Vishnu',
+  description:
+    'A divine armor prayer from the Srimad Bhagavatam (Canto 6, Chapter 8), given by Vishvarupa to Indra. This kavacham invokes Lord Narayana and His various forms for protection of every part of the body and in all directions.',
+  benefits: [
+    'Provides complete divine protection like an impenetrable armor',
+    'Removes fear and grants courage in all situations',
+    'Bestows spiritual strength and devotion to Lord Vishnu',
+  ],
+  estimatedMinutes: 8,
+  icon: 'narayana-kavacham',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'अङ्गान्यस्तानि सर्वाणि शिरश्चैव ललाटकम् ।\nनारायणमयं वर्म सन्नह्येद्भय आगते ॥',
+      transliteration:
+        'aṅgāny-astāni sarvāṇi śiraś-caiva lalāṭakam |\nnārāyaṇa-mayaṁ varma sannahyed-bhaya āgate ||',
+      meaning:
+        'When fear approaches, one should don the armor of Narayana which protects all limbs, the head, and the forehead.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'ॐ नमो नारायणायेति मन्त्रमर्मात्मरक्षणम् ।\nनयेन्मातृकान्यादौ न्यसेदङ्गेषु कल्पयन् ॥',
+      transliteration:
+        'oṁ namo nārāyaṇāyeti mantram-armātma-rakṣaṇam |\nnayen-mātṛkāny-ādau nyased-aṅgeṣu kalpayan ||',
+      meaning:
+        'The mantra "Om Namo Narayanaya" is the self-protecting armor. One should first assign the seed letters to the limbs of the body.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'ॐ नमो भगवते वासुदेवाय ।\nॐ ॐ पादयोः पातु ।\nनं नं जानुनोः पातु ।\nमो मो ऊर्वोः पातु ।',
+      transliteration:
+        'oṁ namo bhagavate vāsudevāya |\noṁ oṁ pādayoḥ pātu |\nnaṁ naṁ jānunoḥ pātu |\nmo mo ūrvoḥ pātu |',
+      meaning:
+        'Om Namo Bhagavate Vasudevaya. May "Om" protect the feet, may "Na" protect the knees, may "Mo" protect the thighs.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'नां नां नाभौ तु पातु मे ।\nरां रां हृदि पातु मे ।\nयं यं मुखं पातु मे ।\nणां णां शिरसि पातु मे ॥',
+      transliteration:
+        'nāṁ nāṁ nābhau tu pātu me |\nrāṁ rāṁ hṛdi pātu me |\nyaṁ yaṁ mukhaṁ pātu me |\nṇāṁ ṇāṁ śirasi pātu me ||',
+      meaning:
+        'May "Na" protect my navel, may "Ra" protect my heart, may "Ya" protect my face, may "Na" protect my head.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'प्राच्यां पातु जनार्दनः ।\nआग्नेय्यामजितः पातु ।\nदक्षिणे हयग्रीवः पातु ।\nनैरृत्यां भूतनायकः ॥',
+      transliteration:
+        'prācyāṁ pātu janārdanaḥ |\nāgnēyyām-ajitaḥ pātu |\ndakṣiṇe hayagrīvaḥ pātu |\nnairṛtyāṁ bhūta-nāyakaḥ ||',
+      meaning:
+        'May Janardana protect me in the east, may the invincible Ajita protect me in the southeast, may Hayagriva protect me in the south, may the Lord of beings protect me in the southwest.',
+    },
+  ],
+};
+
 const dakshinamurthyStotram: Stotra = {
   id: 'dakshinamurthy-stotram',
   title: 'Dakshinamurthy Stotram',
@@ -6234,6 +6302,7 @@ export const stotras: Stotra[] = [
   mahalakshmiAshtakam,
   mahishasuraMardiniStotram,
   narasimhaKaravalambaStotram,
+  narayanaKavacham,
   nirvanaShatakam,
   pandurangashtakam,
   ramRakshaStotra,
@@ -6261,11 +6330,6 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'lalitha-sahasranamam',
     title: 'Lalitha Sahasranamam',
     deity: 'Lalita Tripurasundari',
-  },
-  {
-    id: 'narayana-kavacham',
-    title: 'Narayana Kavacham',
-    deity: 'Vishnu',
   },
   {
     id: 'shiva-mahimna-stotram',

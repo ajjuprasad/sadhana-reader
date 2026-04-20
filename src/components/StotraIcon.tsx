@@ -95,6 +95,16 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
         </>
       );
 
+    case 'narayana-kavacham':
+      // Shield — divine armor of Narayana
+      return (
+        <>
+          <path d="M16 3 Q6 6 6 14 Q6 24 16 29 Q26 24 26 14 Q26 6 16 3Z" {...s} strokeWidth="1.6" />
+          <path d="M16 8 Q10 10 10 15 Q10 22 16 25 Q22 22 22 15 Q22 10 16 8Z" {...s} strokeWidth="1.1" />
+          <circle cx="16" cy="16" r="2" {...s} strokeWidth="1" />
+        </>
+      );
+
     case 'vishnu-sahasranamam':
       // Vishnu's Sudarshana Chakra (discus)
       return (
