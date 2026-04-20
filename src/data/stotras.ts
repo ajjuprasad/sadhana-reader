@@ -6477,6 +6477,56 @@ const shivaMahimnaStotram: Stotra = {
       meaning:
         'The yogis who turn the mind inward, control the breath, feel the hair standing on end in ecstasy, and eyes brimming with tears of joy — that ineffable truth they experience within, plunging into a pool of nectar-like bliss, that indeed is You.',
     },
+    {
+      id: 26,
+      verseLabel: 'Verse 26',
+      sanskrit:
+        'त्वमर्कस्त्वं सोमस्त्वमसि पवनस्त्वं हुतवहः\nत्वमापस्त्वं व्योम त्वमु धरणिरात्मा त्वमिति च ।\nपरिच्छिन्नामेवं त्वयि परिणता बिभ्रति गिरं\nन विद्मस्तत्तत्त्वं वयमिह तु यत्त्वं न भवसि ॥',
+      transliteration:
+        'tvam-arkas-tvaṁ somas-tvam-asi pavanas-tvaṁ hutavahaḥ\ntvam-āpas-tvaṁ vyoma tvam-u dharaṇir-ātmā tvam-iti ca |\nparicchinnām-evaṁ tvayi pariṇatā bibhrati giraṁ\nna vidmas-tat-tattvaṁ vayam-iha tu yat-tvaṁ na bhavasi ||',
+      meaning:
+        'You are the sun, the moon, the wind, the fire, the waters, the sky, the earth, and the Self — thus do people describe You in limited terms. But we do not know of anything that You are NOT.',
+    },
+    {
+      id: 27,
+      verseLabel: 'Verse 27',
+      sanskrit:
+        'त्रयीं तिस्रो वृत्तीस्त्रिभुवनमथो त्रीनपि सुरान्\nअकाराद्यैर्वर्णैस्त्रिभिरभिदधत्तीर्णविकृति ।\nतुरीयं ते धाम ध्वनिभिरवरुन्धानमणुभिः\nसमस्तं व्यस्तं त्वां शरणद गृणात्योमिति पदम् ॥',
+      transliteration:
+        'trayīṁ tisro vṛttīs-tribhuvanam-atho trīn-api surān\nakārādyair-varṇais-tribhir-abhidadhat-tīrṇa-vikṛti |\nturīyaṁ te dhāma dhvanibhir-avarundhānam-aṇubhiḥ\nsamastaṁ vyastaṁ tvāṁ śaraṇada gṛṇātyom-iti padam ||',
+      meaning:
+        'O giver of refuge, the sacred syllable Om — with its three letters A, U, M — denotes the three Vedas, the three states of consciousness, the three worlds, and the three gods. Its subtle resonance beyond the letters is Your fourth state, the Turiya. Om thus proclaims You in both wholeness and parts.',
+    },
+    {
+      id: 28,
+      verseLabel: 'Verse 28',
+      sanskrit:
+        'भवः शर्वो रुद्रः पशुपतिरथोग्रः सहमहान्\nतथा भीमेशानाविति यदभिधानाष्टकमिदम् ।\nअमुष्मिन्प्रत्येकं प्रविचरति देव श्रुतिरपि\nप्रियायास्मैधाम्ने प्रविहितनमस्योऽस्मि भवते ॥',
+      transliteration:
+        'bhavaḥ śarvo rudraḥ paśupatir-athograḥ saha-mahān\ntathā bhīmeśānāv-iti yad-abhidhānāṣṭakam-idam |\namuṣmin pratyekaṁ pravicarati deva śrutir-api\npriyāyāsmai dhāmne pravihita-namasyo \'smi bhavate ||',
+      meaning:
+        'Bhava, Sharva, Rudra, Pashupati, Ugra, Mahadeva, Bhima, and Ishana — these are Your eight names. The Vedas elaborate on each of these. I bow to You, the beloved Supreme abode.',
+    },
+    {
+      id: 29,
+      verseLabel: 'Verse 29',
+      sanskrit:
+        'नमो नेदिष्ठाय प्रियदव दविष्ठाय च नमो\nनमः क्षोदिष्ठाय स्मरहर महिष्ठाय च नमः ।\nनमो वर्षिष्ठाय त्रिनयन यविष्ठाय च नमो\nनमः सर्वस्मै ते तदिदमितिशर्वाय च नमः ॥',
+      transliteration:
+        'namo nediṣṭhāya priyadava daviṣṭhāya ca namo\nnamaḥ kṣodiṣṭhāya smarahara mahiṣṭhāya ca namaḥ |\nnamo varṣiṣṭhāya trinayana yaviṣṭhāya ca namo\nnamaḥ sarvasmai te tad-idam-iti-śarvāya ca namaḥ ||',
+      meaning:
+        'Salutations to the nearest and the farthest, to the smallest and the greatest, to the eldest and the youngest. Salutations to You who are everything, and salutations to Sharva who is "this and that."',
+    },
+    {
+      id: 30,
+      verseLabel: 'Verse 30',
+      sanskrit:
+        'बहलरजसे विश्वोत्पत्तौ भवाय नमो नमः\nप्रबलतमसे तत्संहारे हराय नमो नमः ।\nजनसुखकृते सत्त्वोद्रिक्तौ मृडाय नमो नमः\nप्रमहसि पदे निस्त्रैगुण्ये शिवाय नमो नमः ॥',
+      transliteration:
+        'bahala-rajase viśvotpattau bhavāya namo namaḥ\nprabala-tamase tat-saṁhāre harāya namo namaḥ |\njana-sukha-kṛte sattvod-riktau mṛḍāya namo namaḥ\npramahasi pade nistraiguṇye śivāya namo namaḥ ||',
+      meaning:
+        'Salutations to Bhava, abounding in Rajas at the creation of the universe. Salutations to Hara, predominant in Tamas at its dissolution. Salutations to Mrida, established in Sattva for the happiness of beings. And salutations to Shiva, who transcends the three Gunas in the supreme state.',
+    },
   ],
 };
 
