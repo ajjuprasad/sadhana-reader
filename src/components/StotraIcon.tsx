@@ -162,6 +162,7 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
       );
 
     case 'subrahmanya-bhujangam':
+    case 'subramanya-ashtakam':
       // Vel (divine lance) — Lord Murugan's iconic weapon
       return (
         <>

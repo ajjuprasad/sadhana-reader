@@ -136,6 +136,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sadhanareader.org/stotra/subramanya-ashtakam</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://sadhanareader.org/stotra/sudarshana-ashtakam</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

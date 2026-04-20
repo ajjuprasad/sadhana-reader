@@ -4746,6 +4746,104 @@ const nirvanaShatakam: Stotra = {
   ],
 };
 
+const subramanyaAshtakam: Stotra = {
+  id: 'subramanya-ashtakam',
+  title: 'Subramanya Ashtakam',
+  subtitle: 'सुब्रह्मण्याष्टकम्',
+  deity: 'Subramanya',
+  description:
+    'Eight verses in praise of Lord Subramanya (Kartikeya/Murugan), the divine son of Shiva and Parvati. Attributed to Adi Shankaracharya, this hymn extols the glory, beauty, and grace of the six-faced deity who commands the celestial armies.',
+  benefits: [
+    'Removes obstacles and grants courage and confidence',
+    'Bestows protection from negativity and enemies',
+    'Blesses devotees with wisdom, health, and spiritual progress',
+  ],
+  estimatedMinutes: 3,
+  icon: 'subramanya-ashtakam',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'हे स्वामिनाथ करुणाकर दीनबन्धो\nश्रीपार्वतीशमुखपङ्कजपद्मबन्धो ।\nश्रीशादिदेवगणपूजितपादपद्म\nवल्लीसनाथ मम देहि करावलम्बम् ॥',
+      transliteration:
+        'he svāminātha karuṇākara dīnabandho\nśrī-pārvatīśa-mukha-paṅkaja-padma-bandho |\nśrīśādi-deva-gaṇa-pūjita-pāda-padma\nvallī-sanātha mama dehi karāvalambam ||',
+      meaning:
+        'O Lord Swaminatha, ocean of compassion, friend of the destitute! O one born from the lotus face of Lord Shiva and Parvati! O one whose lotus feet are worshipped by Vishnu and all gods! O Lord of Valli, grant me the support of Your hand.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'देवादिदेवनुत देवगणाधिनाथ\nदेवेन्द्रवन्द्य मृदुपङ्कजमञ्जुपाद ।\nदेवर्षिनारदमुनीन्द्रसुगीतकीर्ते\nवल्लीसनाथ मम देहि करावलम्बम् ॥',
+      transliteration:
+        'devādi-deva-nuta deva-gaṇādhinātha\ndevendra-vandya mṛdu-paṅkaja-mañju-pāda |\ndevarṣi-nārada-munīndra-sugīta-kīrte\nvallī-sanātha mama dehi karāvalambam ||',
+      meaning:
+        'O Lord praised by the god of gods, chief of the celestial hosts! O one whose soft lotus feet are revered by Indra! O one whose glory is sung by the divine sage Narada and great munis! O Lord of Valli, grant me the support of Your hand.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'नित्यान्नदान निरताखिलरोगहारिन्\nतस्मात्प्रदान परिपूरितभक्तकाम ।\nश्रुत्यागमप्रणववाच्यनिजस्वरूप\nवल्लीसनाथ मम देहि करावलम्बम् ॥',
+      transliteration:
+        'nityānnadāna niratākhila-roga-hārin\ntasmātpradāna paripūrita-bhakta-kāma |\nśrutyāgama-praṇava-vācya-nija-svarūpa\nvallī-sanātha mama dehi karāvalambam ||',
+      meaning:
+        'O one ever engaged in giving food, destroyer of all diseases! O one who fulfills the desires of devotees through Your gifts! O one whose true nature is expressed by the Pranava of the Vedas and Agamas! O Lord of Valli, grant me the support of Your hand.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'क्रौञ्चासुरेन्द्र परिखण्डन शक्तिशूल\nपाशाङ्कुशध्वज कृपाकर कामदायिन् ।\nदेवादिदेवनुत देवगणोत्तमश्रीर्-\nवल्लीसनाथ मम देहि करावलम्बम् ॥',
+      transliteration:
+        'krauñcāsurendra parikhaṇḍana śakti-śūla-\npāśāṅkuśa-dhvaja kṛpākara kāmadāyin |\ndevādi-deva-nuta deva-gaṇottama-śrīr-\nvallī-sanātha mama dehi karāvalambam ||',
+      meaning:
+        'O destroyer of the demon Krauncha, wielder of the Shakti lance, trident, noose, goad, and flag! O compassionate one, fulfiller of desires! O glorious one praised by gods and foremost among divine hosts! O Lord of Valli, grant me the support of Your hand.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'देवादिदेव रथमण्डल मध्यवेद्य\nदेवेन्द्रपीठनगरं दृढचापहस्त ।\nशूरं निहत्य सुरकोटिभिरीड्यमान\nवल्लीसनाथ मम देहि करावलम्बम् ॥',
+      transliteration:
+        'devādi-deva ratha-maṇḍala madhya-vedya\ndevendra-pīṭha-nagaraṁ dṛḍha-cāpa-hasta |\nśūraṁ nihatya sura-koṭibhir-īḍyamāna\nvallī-sanātha mama dehi karāvalambam ||',
+      meaning:
+        'O god of gods, known in the midst of the chariot circle! O one who holds a firm bow, presiding over the city of Indra\'s throne! O one who slew the demon Sura and is praised by crores of gods! O Lord of Valli, grant me the support of Your hand.',
+    },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'हीराद्रिरत्नमणियुक्तकिरीटहार-\nकेयूरकुण्डललसत्कवचाभिरामम् ।\nहे वीर तारकजयामरबृन्दवन्द्य\nवल्लीसनाथ मम देहि करावलम्बम् ॥',
+      transliteration:
+        'hīrādri-ratna-maṇi-yukta-kirīṭa-hāra-\nkeyūra-kuṇḍala-lasat-kavacābhirāmam |\nhe vīra tāraka-jayāmara-bṛnda-vandya\nvallī-sanātha mama dehi karāvalambam ||',
+      meaning:
+        'O one resplendent with crown, necklace, armlets, earrings, and shining armor set with diamonds and precious gems! O valiant hero who conquered the demon Taraka, worshipped by hosts of immortal gods! O Lord of Valli, grant me the support of Your hand.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'पञ्चाक्षरादिमनुमन्त्रितगाङ्गतोयैः\nपञ्चामृतैः प्रमुदितेन्द्रमुखैर्मुनीन्द्रैः ।\nपट्टाभिषिक्तहरियुक्तपरासनाथ\nवल्लीसनाथ मम देहि करावलम्बम् ॥',
+      transliteration:
+        'pañcākṣarādi-manu-mantrita-gāṅga-toyaiḥ\npañcāmṛtaiḥ pramudita-indra-mukhair-munīndraiḥ |\npaṭṭābhiṣikta-hari-yukta-parāsa-nātha\nvallī-sanātha mama dehi karāvalambam ||',
+      meaning:
+        'O one ceremonially anointed by jubilant Indra and foremost sages with Ganga water sanctified by the Panchakshara and other mantras, and bathed with the five nectars! O supreme lord united with Hari! O Lord of Valli, grant me the support of Your hand.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'श्रीकार्तिकेय करुणामृतपूर्णदृष्ट्या\nकामादिरोगकलुषीकृतदुष्टचित्तम् ।\nसिक्त्वा तु मामवकलाधरकान्तिकान्त्या\nवल्लीसनाथ मम देहि करावलम्बम् ॥',
+      transliteration:
+        'śrī-kārtikēya karuṇāmṛta-pūrṇa-dṛṣṭyā\nkāmādi-roga-kaluṣī-kṛta-duṣṭa-cittam |\nsiktvā tu mām-ava-kalādhara-kānti-kāntyā\nvallī-sanātha mama dehi karāvalambam ||',
+      meaning:
+        'O Sri Kartikeya, with Your glance full of the nectar of compassion, drench and purify my wicked mind defiled by the diseases of lust and other passions! O one who shines with the radiance of the moon! O Lord of Valli, grant me the support of Your hand.',
+    },
+  ],
+};
+
 const sudarshanaAshtakam: Stotra = {
   id: 'sudarshana-ashtakam',
   title: 'Sudarshana Ashtakam',
@@ -5561,6 +5659,7 @@ export const stotras: Stotra[] = [
   shivaTandavaStotram,
   shivaAshtottara,
   subrahmanyaBhujangam,
+  subramanyaAshtakam,
   sudarshanaAshtakam,
   venkateswaraSuprabhatam,
   vishnuSahasranamam,
@@ -5617,10 +5716,5 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'siddha-kunjika-stotram',
     title: 'Siddha Kunjika Stotram',
     deity: 'Durga',
-  },
-  {
-    id: 'subramanya-ashtakam',
-    title: 'Subramanya Ashtakam',
-    deity: 'Subramanya',
   },
 ];
