@@ -5514,6 +5514,310 @@ const guruAshtakam: Stotra = {
   ],
 };
 
+const pandurangashtakam: Stotra = {
+  id: 'pandurangashtakam',
+  title: 'Pandurangashtakam',
+  subtitle: 'पाण्डुरङ्गाष्टकम्',
+  deity: 'Vishnu',
+  description:
+    'Eight verses by Adi Shankaracharya glorifying Lord Panduranga (Vitthal), the beloved deity of Pandharpur standing on a brick on the banks of the Bhima river. Each verse culminates in the refrain "I worship Panduranga, the embodiment of the Supreme Brahman."',
+  benefits: [
+    'Bestows devotion and surrender to Lord Vitthal-Panduranga',
+    'Purifies the mind and removes sins of past lives',
+    'Grants liberation and a place in the abode of Vishnu',
+  ],
+  estimatedMinutes: 3,
+  icon: 'pandurangashtakam',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'महायोगपीठे तटे भीमरथ्याः\nवरं पुण्डरीकाय दातुं मुनीन्द्रैः ।\nसमागत्य तिष्ठन्तमानन्दकन्दं\nपरब्रह्मलिङ्गं भजे पाण्डुरङ्गम् ॥',
+      transliteration:
+        'mahā-yoga-pīṭhe taṭe bhīma-rathyāḥ\nvaraṁ puṇḍarīkāya dātuṁ munīndraiḥ |\nsamāgatya tiṣṭhantam-ānanda-kandaṁ\npara-brahma-liṅgaṁ bhaje pāṇḍuraṅgam ||',
+      meaning:
+        'On the great seat of yoga, on the banks of the Bhima river, having come with the great sages to grant a boon to Pundalik — He stands there, the root of bliss. I worship that Panduranga, the embodiment of the Supreme Brahman.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'तडिद्वाससं नीलमेघावभासं\nरमामन्दिरं सुन्दरं चित्प्रकाशम् ।\nवरं त्विष्टिकायां समन्यस्तपादं\nपरब्रह्मलिङ्गं भजे पाण्डुरङ्गम् ॥',
+      transliteration:
+        'taḍid-vāsasaṁ nīla-meghāvabhāsaṁ\nramā-mandiraṁ sundaraṁ cit-prakāśam |\nvaraṁ tviṣṭikāyāṁ samanyasta-pādaṁ\npara-brahma-liṅgaṁ bhaje pāṇḍuraṅgam ||',
+      meaning:
+        'Clad in garments bright as lightning, radiant as a blue cloud, the abode of Lakshmi, beautiful, the light of pure consciousness — with His feet placed on the brick, I worship that Panduranga, the embodiment of the Supreme Brahman.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'प्रमाणं भवाब्धेरिदं मामकानां\nनितम्बः कराभ्यामसौ संगृहीतः ।\nइतीवोरुकट्यां विनिन्यस्तहस्तं\nपरब्रह्मलिङ्गं भजे पाण्डुरङ्गम् ॥',
+      transliteration:
+        'pramāṇaṁ bhavābdher-idaṁ māmakānāṁ\nnitambaḥ karābhyām-asau saṁgṛhītaḥ |\nitīvorukāṭyāṁ vininyasta-hastaṁ\npara-brahma-liṅgaṁ bhaje pāṇḍuraṅgam ||',
+      meaning:
+        'As if declaring "the measure of this ocean of worldly existence for My devotees is only up to My waist, which I hold with both hands" — with His hands placed on His waist, I worship that Panduranga, the embodiment of the Supreme Brahman.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'विभुं वेणुनादं चरन्तं दुरन्तं\nस्वयं लीलया गोपवेषं दधानम् ।\nगवां बृन्दकानन्ददं चारुहासं\nपरब्रह्मलिङ्गं भजे पाण्डुरङ्गम् ॥',
+      transliteration:
+        'vibhuṁ veṇu-nādaṁ carantaṁ durantaṁ\nsvayaṁ līlayā gopa-veṣaṁ dadhānam |\ngavāṁ bṛnda-kānandam caruhasaṁ\npara-brahma-liṅgaṁ bhaje pāṇḍuraṅgam ||',
+      meaning:
+        'The all-pervading Lord who plays the flute, who roams freely, boundless, who playfully dons the garb of a cowherd — who delights the herds of cows with His charming smile, I worship that Panduranga, the embodiment of the Supreme Brahman.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'अजं रुक्मिणीप्राणसञ्जीवनं तं\nपरं धाम कैवल्यमेकं तुरीयम् ।\nप्रसन्नं प्रपन्नार्तिहं देवदेवं\nपरब्रह्मलिङ्गं भजे पाण्डुरङ्गम् ॥',
+      transliteration:
+        'ajaṁ rukmiṇī-prāṇa-sañjīvanaṁ taṁ\nparaṁ dhāma kaivalyam-ekaṁ turīyam |\nprasannaṁ prapannārti-haṁ deva-devaṁ\npara-brahma-liṅgaṁ bhaje pāṇḍuraṅgam ||',
+      meaning:
+        'The unborn one who is the life of Rukmini, the supreme abode, the one absolute liberation, the fourth state of consciousness — gracious, the remover of the distress of those who surrender, the God of gods, I worship that Panduranga, the embodiment of the Supreme Brahman.',
+    },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'श्रीराधाचकोरामृतं कृष्णचन्द्रं\nनवानन्दनृत्यं परं ब्रह्मसन्दम् ।\nरसालिङ्गनोत्कण्ठितोद्भूतहासं\nपरब्रह्मलिङ्गं भजे पाण्डुरङ्गम् ॥',
+      transliteration:
+        'śrī-rādhā-cakorāmṛtaṁ kṛṣṇa-candraṁ\nnavānanda-nṛtyaṁ paraṁ brahma-sandam |\nrasāliṅganotkaṇṭhitod-bhūta-hāsaṁ\npara-brahma-liṅgaṁ bhaje pāṇḍuraṅgam ||',
+      meaning:
+        'The moon-like Krishna who is the nectar for the chakora bird that is Radha, who dances in ever-new bliss, the supreme essence of Brahman — whose smile arises from the eagerness for the embrace of divine love, I worship that Panduranga, the embodiment of the Supreme Brahman.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'सदा ब्रह्मभूतं चिदानन्दरूपं\nगुणातीतमानन्दकन्दं स्वभक्तम् ।\nसदा सर्वभूतेषु सन्तं वसन्तं\nपरब्रह्मलिङ्गं भजे पाण्डुरङ्गम् ॥',
+      transliteration:
+        'sadā brahma-bhūtaṁ cid-ānanda-rūpaṁ\nguṇātītam-ānanda-kandaṁ sva-bhaktam |\nsadā sarva-bhūteṣu santaṁ vasantaṁ\npara-brahma-liṅgaṁ bhaje pāṇḍuraṅgam ||',
+      meaning:
+        'Ever established as Brahman, of the form of consciousness-bliss, beyond the gunas, the root of bliss, devoted to His devotees — ever present and dwelling in all beings, I worship that Panduranga, the embodiment of the Supreme Brahman.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'इदं पाण्डुरङ्गाष्टकं यः पठेत\nमनोवाञ्छितं तत्फलं लब्धमेव ।\nगतो योगिनां लक्ष्यमन्तस्त्रिणेत्रं\nपरब्रह्मलिङ्गं भजे पाण्डुरङ्गम् ॥',
+      transliteration:
+        'idaṁ pāṇḍuraṅgāṣṭakaṁ yaḥ paṭheta\nmano-vāñchitaṁ tat-phalaṁ labdham-eva |\ngato yogināṁ lakṣyam-antas-triṇetraṁ\npara-brahma-liṅgaṁ bhaje pāṇḍuraṅgam ||',
+      meaning:
+        'Whoever recites this Pandurangashtakam obtains the fruit of their heart\'s desire. Having reached the goal of yogis — the three-eyed one within — I worship that Panduranga, the embodiment of the Supreme Brahman.',
+    },
+  ],
+};
+
+const sankataNashanaGaneshaStotram: Stotra = {
+  id: 'sankata-nashana-ganesha-stotram',
+  title: 'Sankata Nashana Ganesha Stotram',
+  subtitle: 'सङ्कटनाशनगणेशस्तोत्रम्',
+  deity: 'Ganesha',
+  description:
+    'Eight verses from the Narada Purana praising Lord Ganesha as the remover of all obstacles and difficulties. This hymn invokes Ganesha\'s grace for the attainment of longevity, prosperity, wisdom, and fulfillment of desires.',
+  benefits: [
+    'Removes obstacles, difficulties, and dangers from life',
+    'Bestows longevity, prosperity, and fulfillment of desires',
+    'Grants wisdom and spiritual progress',
+  ],
+  estimatedMinutes: 3,
+  icon: 'sankata-nashana-ganesha-stotram',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'प्रणम्य शिरसा देवं गौरीपुत्रं विनायकम् ।\nभक्तावासं स्मरेन्नित्यमायुष्कामार्थसिद्धये ॥',
+      transliteration:
+        'praṇamya śirasā devaṁ gaurī-putraṁ vināyakam |\nbhaktāvāsaṁ smaren-nityam-āyuṣ-kāmārtha-siddhaye ||',
+      meaning:
+        'Bowing my head to the Lord, the son of Gauri, Vinayaka — the refuge of his devotees — I meditate on him always for the attainment of longevity, desires, and wealth.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'प्रथमं वक्रतुण्डं च एकदन्तं द्वितीयकम् ।\nतृतीयं कृष्णपिङ्गाक्षं गजवक्त्रं चतुर्थकम् ॥',
+      transliteration:
+        'prathamaṁ vakra-tuṇḍaṁ ca eka-dantaṁ dvitīyakam |\ntṛtīyaṁ kṛṣṇa-piṅgākṣaṁ gaja-vaktraṁ caturthakam ||',
+      meaning:
+        'First I remember Vakratunda (curved trunk), second Ekadanta (single tusk), third Krishnapingaksha (dark-tawny eyed), and fourth Gajavaktra (elephant-faced).',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'लम्बोदरं पञ्चमं च षष्ठं विकटमेव च ।\nसप्तमं विघ्नराजेन्द्रं धूम्रवर्णं तथाष्टमम् ॥',
+      transliteration:
+        'lambodaraṁ pañcamaṁ ca ṣaṣṭhaṁ vikaṭam-eva ca |\nsaptamaṁ vighna-rājendraṁ dhūmra-varṇaṁ tathāṣṭamam ||',
+      meaning:
+        'Fifth I remember Lambodara (large-bellied), sixth Vikata (the unusual), seventh Vighnarajendra (king of obstacles), and eighth Dhumravarna (smoke-colored).',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'नवमं भालचन्द्रं च दशमं तु विनायकम् ।\nएकादशं गणपतिं द्वादशं तु गजाननम् ॥',
+      transliteration:
+        'navamaṁ bhāla-candraṁ ca daśamaṁ tu vināyakam |\nekādaśaṁ gaṇapatiṁ dvādaśaṁ tu gajānanam ||',
+      meaning:
+        'Ninth I remember Bhalachandra (moon on forehead), tenth Vinayaka, eleventh Ganapati (lord of the ganas), and twelfth Gajanana (elephant-faced).',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'द्वादशैतानि नामानि त्रिसन्ध्यं यः पठेन्नरः ।\nन च विघ्नभयं तस्य सर्वसिद्धिकरं प्रभो ॥',
+      transliteration:
+        'dvādaśaitāni nāmāni tri-sandhyaṁ yaḥ paṭhen-naraḥ |\nna ca vighna-bhayaṁ tasya sarva-siddhi-karaṁ prabho ||',
+      meaning:
+        'Whoever recites these twelve names at the three junctions of the day (dawn, noon, dusk) — for them there is no fear of obstacles, and all accomplishments are granted, O Lord.',
+    },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'विद्यार्थी लभते विद्यां धनार्थी लभते धनम् ।\nपुत्रार्थी लभते पुत्रान्मोक्षार्थी लभते गतिम् ॥',
+      transliteration:
+        'vidyārthī labhate vidyāṁ dhanārthī labhate dhanam |\nputrārthī labhate putrān-mokṣārthī labhate gatim ||',
+      meaning:
+        'The seeker of knowledge attains knowledge, the seeker of wealth attains wealth, the seeker of children attains children, and the seeker of liberation attains the supreme goal.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'जपेद्गणपतिस्तोत्रं षड्भिर्मासैः फलं लभेत् ।\nसंवत्सरेण सिद्धिं च लभते नात्र संशयः ॥',
+      transliteration:
+        'japed-gaṇapati-stotraṁ ṣaḍbhir-māsaiḥ phalaṁ labhet |\nsaṁvatsareṇa siddhiṁ ca labhate nātra saṁśayaḥ ||',
+      meaning:
+        'One who recites this Ganapati Stotra gains results within six months, and within a year attains complete spiritual perfection — there is no doubt about this.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'अष्टभ्यो ब्राह्मणेभ्यश्च लिखित्वा यः समर्पयेत् ।\nतस्य विद्या भवेत्सर्वा गणेशस्य प्रसादतः ॥',
+      transliteration:
+        'aṣṭabhyo brāhmaṇebhyaś-ca likhitvā yaḥ samarpayēt |\ntasya vidyā bhavet-sarvā gaṇeśasya prasādataḥ ||',
+      meaning:
+        'One who writes this stotra and offers it to eight learned ones — all knowledge becomes theirs by the grace of Lord Ganesha.',
+    },
+  ],
+};
+
+const dasharathaShaniStotram: Stotra = {
+  id: 'dasharatha-shani-stotram',
+  title: 'Dasharatha Shani Stotram',
+  subtitle: 'दशरथकृतशनिस्तोत्रम्',
+  deity: 'Shani',
+  description:
+    'A hymn composed by King Dasharatha, father of Lord Rama, to appease Lord Shani (Saturn). According to tradition, Dasharatha composed this when Shani threatened to enter the Rohini nakshatra, which would bring great calamity.',
+  benefits: [
+    'Mitigates the malefic effects of Saturn (Shani Dosha)',
+    'Brings relief during Sade-Sati and Shani Dasha periods',
+    'Bestows protection, peace, and removal of suffering',
+  ],
+  estimatedMinutes: 3,
+  icon: 'dasharatha-shani-stotram',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Verse 1',
+      sanskrit:
+        'नमः कृष्णाय नीलाय शितिकण्ठनिभाय च ।\nनमः कालाग्निरूपाय कृतान्ताय च वै नमः ॥',
+      transliteration:
+        'namaḥ kṛṣṇāya nīlāya śitikaṇṭha-nibhāya ca |\nnamaḥ kālāgni-rūpāya kṛtāntāya ca vai namaḥ ||',
+      meaning:
+        'Salutations to the dark one, the blue one, who resembles Lord Shiva (the blue-throated). Salutations to the one who is the fire of time, to the finisher of all.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Verse 2',
+      sanskrit:
+        'नमो निर्मांसदेहाय दीर्घश्मश्रुजटाय च ।\nनमो विशालनेत्राय शुष्कोदरभयानक ॥',
+      transliteration:
+        'namo nirmāṁsa-dehāya dīrgha-śmaśru-jaṭāya ca |\nnamo viśāla-netrāya śuṣkodara-bhayānaka ||',
+      meaning:
+        'Salutations to the one with a fleshless body, with long beard and matted locks. Salutations to the large-eyed, fearsome one with a sunken belly.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Verse 3',
+      sanskrit:
+        'नमः पुष्कलगात्राय स्थूलरोम्णेऽथ वै नमः ।\nनमो दीर्घाय शुष्काय कालदंष्ट्र नमोऽस्तु ते ॥',
+      transliteration:
+        'namaḥ puṣkala-gātrāya sthūla-romṇe \'tha vai namaḥ |\nnamo dīrghāya śuṣkāya kāla-daṁṣṭra namo \'stu te ||',
+      meaning:
+        'Salutations to the one with a robust body and coarse hair. Salutations to the tall and gaunt one — O possessor of the fangs of time, salutations to you.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Verse 4',
+      sanskrit:
+        'नमोऽस्तु घोररूपाय दुर्निरीक्ष्याय वै नमः ।\nनमो घोराय रौद्राय भीषणाय करालिने ॥',
+      transliteration:
+        'namo \'stu ghora-rūpāya durnirīkṣyāya vai namaḥ |\nnamo ghorāya raudrāya bhīṣaṇāya karāline ||',
+      meaning:
+        'Salutations to the one of terrifying form, who is difficult to behold. Salutations to the fierce, wrathful, dreadful, and formidable one.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Verse 5',
+      sanskrit:
+        'नमस्ते सर्वभक्षाय वलीमुखनमोऽस्तु ते ।\nसूर्यपुत्र नमस्तेऽस्तु भास्करे भयदाय च ॥',
+      transliteration:
+        'namaste sarva-bhakṣāya valī-mukha namo \'stu te |\nsūrya-putra namaste \'stu bhāskare bhaya-dāya ca ||',
+      meaning:
+        'Salutations to the all-consuming one, to the wrinkle-faced one. O son of Surya, salutations to you, to the luminous one who inspires awe.',
+    },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'अधो दृष्टे नमस्तेऽस्तु संवर्तक नमोऽस्तु ते ।\nनमो मन्दगते तुभ्यं निस्त्रिंशाय नमोऽस्तु ते ॥',
+      transliteration:
+        'adho dṛṣṭe namaste \'stu saṁvartaka namo \'stu te |\nnamo manda-gate tubhyaṁ nistriṁśāya namo \'stu te ||',
+      meaning:
+        'Salutations to the downward-gazing one, to the destroyer of the universe. Salutations to the slow-moving one, to the sword-bearing one.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'तपसा दग्धदेहाय नित्यं योगरताय च ।\nनमो नित्यं क्षुधार्ताय अतृप्ताय च वै नमः ॥',
+      transliteration:
+        'tapasā dagdha-dehāya nityaṁ yoga-ratāya ca |\nnamo nityaṁ kṣudhārtāya atṛptāya ca vai namaḥ ||',
+      meaning:
+        'Salutations to the one whose body is scorched by austerity, who is ever engaged in yoga. Salutations to the perpetually hungry and never-satiated one.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'ज्ञानचक्षुर्नमस्तेऽस्तु कश्यपात्मज सूनवे ।\nतुष्टो ददासि वै राज्यं रुष्टो हरसि तत्क्षणात् ॥',
+      transliteration:
+        'jñāna-cakṣur-namaste \'stu kaśyapātmaja-sūnave |\ntuṣṭo dadāsi vai rājyaṁ ruṣṭo harasi tat-kṣaṇāt ||',
+      meaning:
+        'Salutations to the one with the eye of wisdom, O grandson of Kashyapa. When pleased, you bestow kingdoms; when angered, you snatch them away in an instant.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Verse 9',
+      sanskrit:
+        'देवासुरमनुष्याश्च सिद्धविद्याधरोरगाः ।\nत्वया विलोकिताः सर्वे नाशं यान्ति समूलतः ॥',
+      transliteration:
+        'devāsura-manuṣyāś-ca siddha-vidyādhara-uragāḥ |\ntvayā vilokitāḥ sarve nāśaṁ yānti samūlataḥ ||',
+      meaning:
+        'Gods, demons, humans, siddhas, vidyadharas, and serpents — all those upon whom you cast your gaze are destroyed completely.',
+    },
+  ],
+};
+
 const dakshinamurthyStotram: Stotra = {
   id: 'dakshinamurthy-stotram',
   title: 'Dakshinamurthy Stotram',
@@ -5642,6 +5946,7 @@ export const stotras: Stotra[] = [
   bilvashtakam,
   dakshinamurthyStotram,
   damodarashtakam,
+  dasharathaShaniStotram,
   ganeshaPancharatnam,
   guruAshtakam,
   hanumanChalisa,
@@ -5653,7 +5958,9 @@ export const stotras: Stotra[] = [
   mahishasuraMardiniStotram,
   narasimhaKaravalambaStotram,
   nirvanaShatakam,
+  pandurangashtakam,
   ramRakshaStotra,
+  sankataNashanaGaneshaStotram,
   saraswatiStotram,
   shivaPanchakshara,
   shivaTandavaStotram,
@@ -5673,11 +5980,6 @@ export interface ComingSoonStotra {
 
 export const comingSoonStotras: ComingSoonStotra[] = [
   {
-    id: 'dasharatha-shani-stotram',
-    title: 'Dasharatha Shani Stotram',
-    deity: 'Shani',
-  },
-  {
     id: 'indrakshi-stotram',
     title: 'Indrakshi Stotram',
     deity: 'Durga',
@@ -5691,16 +5993,6 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'narayana-kavacham',
     title: 'Narayana Kavacham',
     deity: 'Vishnu',
-  },
-  {
-    id: 'pandurangashtakam',
-    title: 'Pandurangashtakam',
-    deity: 'Vishnu',
-  },
-  {
-    id: 'sankata-nashana-ganesha-stotram',
-    title: 'Sankata Nashana Ganesha Stotram',
-    deity: 'Ganesha',
   },
   {
     id: 'shiva-mahimna-stotram',

@@ -14,6 +14,7 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
       );
 
     case 'ganesha-pancharatnam':
+    case 'sankata-nashana-ganesha-stotram':
       // Ganesha — refined face with ornamental ears, crown, curved trunk
       return (
         <>
@@ -370,6 +371,29 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
           <path d="M10 18 L10 26 L22 26 L22 18" {...s} strokeWidth="1.3" />
           <line x1="16" y1="15" x2="16" y2="26" {...s} strokeWidth="0.9" />
           <path d="M14 7 L16 4 L18 7" {...s} strokeWidth="0.8" fill="currentColor" opacity="0.3" />
+        </>
+      );
+
+    case 'dasharatha-shani-stotram':
+      // Saturn with ring — Lord Shani's planetary symbol
+      return (
+        <>
+          <circle cx="16" cy="14" r="6" {...s} strokeWidth="1.5" />
+          <ellipse cx="16" cy="14" rx="10" ry="3" {...s} strokeWidth="1.2" />
+          <line x1="16" y1="20" x2="16" y2="28" {...s} strokeWidth="1.5" />
+          <line x1="13" y1="25" x2="19" y2="25" {...s} strokeWidth="1.2" />
+        </>
+      );
+
+    case 'pandurangashtakam':
+      // Brick (Vit) — Vitthal's iconic standing-on-brick pose
+      return (
+        <>
+          <rect x="6" y="22" width="20" height="6" rx="1" {...s} strokeWidth="1.5" />
+          <line x1="16" y1="22" x2="16" y2="14" {...s} strokeWidth="1.8" />
+          <circle cx="16" cy="10.5" r="3.5" {...s} strokeWidth="1.3" />
+          <path d="M12 16 L8 18" {...s} strokeWidth="1.2" />
+          <path d="M20 16 L24 18" {...s} strokeWidth="1.2" />
         </>
       );
 
