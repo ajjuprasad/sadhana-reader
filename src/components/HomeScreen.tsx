@@ -88,6 +88,81 @@ function RecentList({ navigate }: { navigate: (path: string) => void }) {
   );
 }
 
+const COMING_SOON_INITIAL = 6;
+
+function ComingSoonSection() {
+  const [showAll, setShowAll] = useState(false);
+  const { t } = useTranslation();
+  const visible = showAll ? comingSoonStotras : comingSoonStotras.slice(0, COMING_SOON_INITIAL);
+  const hasMore = comingSoonStotras.length > COMING_SOON_INITIAL;
+
+  return (
+    <section className="max-w-3xl mx-auto mt-12 sm:mt-16">
+      <motion.div
+        className="flex items-center justify-center gap-2 mb-5 sm:mb-6"
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-50px' }}
+        transition={{ duration: 0.5, ease: sacredEase as unknown as number[] }}
+      >
+        <div
+          className="h-px w-12"
+          style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
+        />
+        <h2
+          className="font-hind font-semibold uppercase"
+          style={{
+            fontSize: '0.625rem',
+            color: 'var(--color-accent-primary)',
+            letterSpacing: '0.18em',
+          }}
+        >
+          {t('home.comingSoon')} ({comingSoonStotras.length})
+        </h2>
+        <div
+          className="h-px w-12"
+          style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
+        />
+      </motion.div>
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5">
+        <AnimatePresence initial={false}>
+          {visible.map((stotra, index) => (
+            <motion.div
+              key={stotra.id}
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: index >= COMING_SOON_INITIAL ? (index - COMING_SOON_INITIAL) * 0.04 : 0 }}
+            >
+              <ComingSoonCard stotra={stotra} index={index} />
+            </motion.div>
+          ))}
+        </AnimatePresence>
+      </div>
+
+      {hasMore && !showAll && (
+        <motion.button
+          onClick={() => setShowAll(true)}
+          className="mx-auto mt-5 flex items-center gap-2 px-5 py-2.5 rounded-full font-hind text-xs font-medium tracking-wide transition-colors"
+          style={{
+            color: 'var(--color-accent-primary)',
+            backgroundColor: 'var(--color-accent-primary-bg, rgba(255, 153, 51, 0.08))',
+            border: '1px solid var(--color-accent-primary)',
+            opacity: 0.85,
+          }}
+          whileHover={{ opacity: 1, scale: 1.02 }}
+          whileTap={{ scale: 0.97 }}
+        >
+          Show all {comingSoonStotras.length} upcoming
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </motion.button>
+      )}
+    </section>
+  );
+}
+
 export default function HomeScreen() {
   const navigate = useNavigate();
   const { t } = useTranslation();
@@ -612,44 +687,7 @@ export default function HomeScreen() {
 
       {/* Coming soon — hidden when filtering */}
       {!isFiltering && comingSoonStotras.length > 0 && (
-        <section className="max-w-3xl mx-auto mt-12 sm:mt-16">
-          <motion.div
-            className="flex items-center justify-center gap-2 mb-5 sm:mb-6"
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-50px' }}
-            transition={{ duration: 0.5, ease: sacredEase as unknown as number[] }}
-          >
-            <div
-              className="h-px w-12"
-              style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
-            />
-            <h2
-              className="font-hind font-semibold uppercase"
-              style={{
-                fontSize: '0.625rem',
-                color: 'var(--color-accent-primary)',
-                letterSpacing: '0.18em',
-              }}
-            >
-              {t('home.comingSoon')} ({comingSoonStotras.length})
-            </h2>
-            <div
-              className="h-px w-12"
-              style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
-            />
-          </motion.div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5">
-            {comingSoonStotras.map((stotra, index) => (
-              <ComingSoonCard
-                key={stotra.id}
-                stotra={stotra}
-                index={index}
-              />
-            ))}
-          </div>
-        </section>
+        <ComingSoonSection />
       )}
 
       {/* Footer */}
