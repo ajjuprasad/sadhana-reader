@@ -5883,6 +5883,56 @@ const siddhaKunjikaStotram: Stotra = {
       meaning:
         'By mere recitation, this supreme Kunjika Stotram becomes accomplished. Om Aim Hrim Klim Chamundayai Vichche. Om Glaum Hum Klim Jum Sah — blaze, blaze, flame, flame, ignite, ignite!',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'ऐं ह्रीं क्लीं चामुण्डायै विच्चे ज्वल हं सं लं क्षं फट् स्वाहा ।\nइति मन्त्रं समुच्चार्य सप्तशतीं पठेत् ॥',
+      transliteration:
+        'aiṁ hrīṁ klīṁ cāmuṇḍāyai vicce jvala haṁ saṁ laṁ kṣaṁ phaṭ svāhā |\niti mantraṁ samuccārya saptaśatīṁ paṭhet ||',
+      meaning:
+        'Aim Hrim Klim Chamundayai Vichche — Blaze! Ham Sam Lam Ksham Phat Svaha! Having uttered this mantra, one should recite the Saptashati.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'ॐ ऐं ह्रीं क्लीं चामुण्डायै विच्चे ।\nनमस्ते रुद्ररूपिण्यै नमस्ते मधुमर्दिनि ।\nनमः कैटभनाशिन्यै नमस्ते महिषार्दिनि ॥',
+      transliteration:
+        'oṁ aiṁ hrīṁ klīṁ cāmuṇḍāyai vicce |\nnamaste rudra-rūpiṇyai namaste madhu-mardini |\nnamaḥ kaiṭabha-nāśinyai namaste mahiṣārdini ||',
+      meaning:
+        'Om Aim Hrim Klim Chamundayai Vichche! Salutations to the one of Rudra\'s form, to the slayer of Madhu! Salutations to the destroyer of Kaitabha, to the crusher of Mahishasura!',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'नमस्ते शुम्भहन्त्र्यै च निशुम्भासुरघातिनि ।\nजाग्रतं हि महादेवि जपं सिद्धं कुरुष्व मे ॥',
+      transliteration:
+        'namaste śumbha-hantryai ca niśumbhāsura-ghātini |\njāgrataṁ hi mahādevi japaṁ siddhaṁ kuruṣva me ||',
+      meaning:
+        'Salutations to the slayer of Shumbha and the destroyer of the demon Nishumbha! O great Goddess, be awakened and make my recitation fruitful!',
+    },
+    {
+      id: 9,
+      verseLabel: 'Verse 9',
+      sanskrit:
+        'ऐङ्कारी सृष्टिरूपायै ह्रींकारी प्रतिपालिका ।\nक्लींकारी कामरूपिण्यै बीजरूपे नमोऽस्तु ते ॥',
+      transliteration:
+        'aiṅkārī sṛṣṭi-rūpāyai hrīṁkārī pratipālikā |\nklīṁkārī kāma-rūpiṇyai bīja-rūpe namo \'stu te ||',
+      meaning:
+        'She whose form is the syllable Aim is the creator, she of the syllable Hrim is the protector, she of the syllable Klim is the fulfiller of desires — salutations to you, O embodiment of the seed syllables!',
+    },
+    {
+      id: 10,
+      verseLabel: 'Verse 10',
+      sanskrit:
+        'चामुण्डा चण्डघाती च यैकारी वरदायिनी ।\nविच्चे चाभयदा नित्यं नमस्ते मन्त्ररूपिणि ॥',
+      transliteration:
+        'cāmuṇḍā caṇḍa-ghātī ca yaikārī vara-dāyinī |\nvicce cābhaya-dā nityaṁ namaste mantra-rūpiṇi ||',
+      meaning:
+        'Chamunda, the slayer of Chanda, the giver of boons through the syllable Ya, and the giver of fearlessness through the syllable Vichche — salutations to you, O embodiment of the mantra!',
+    },
   ],
 };
 
