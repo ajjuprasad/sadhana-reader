@@ -742,50 +742,37 @@ export default function HomeScreen() {
         <ComingSoonSection />
       )}
 
-      {/* Footer */}
+      {/* Footer nav */}
       <motion.footer
-        className="text-center mt-12 sm:mt-16 pb-6"
+        className="max-w-3xl mx-auto mt-12 sm:mt-16 pb-8 px-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.8, duration: 0.5 }}
       >
+        <div className="h-px w-full mb-6" style={{ backgroundColor: 'var(--color-border, rgba(0,0,0,0.06))' }} />
+        <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+          {[
+            { label: 'All Stotras', path: '/stotras' },
+            { label: 'Favorites', path: '/favorites' },
+            { label: 'Coming Soon', path: '/coming-soon' },
+            { label: 'Pañchāṅga 2026', path: '/panchanga' },
+            { label: 'About', path: '/about' },
+          ].map((link) => (
+            <button
+              key={link.path}
+              onClick={() => navigate(link.path)}
+              className="font-hind text-xs font-medium hover:opacity-70 transition-opacity"
+              style={{ color: 'var(--color-accent-primary)' }}
+            >
+              {link.label}
+            </button>
+          ))}
+        </nav>
         <p
-          className="font-hind text-xs mb-3"
+          className="font-hind text-[0.6rem] text-center mt-4"
           style={{ color: 'var(--color-text-muted)' }}
         >
-          {t('home.designedBy')}{' '}
-          <a
-            href="https://www.linkedin.com/in/ajjuprasad"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:opacity-80 transition-opacity"
-            style={{ color: 'var(--color-accent-primary)' }}
-          >
-            Ajay Prasad
-          </a>
-        </p>
-        <p
-          className="font-hind text-xs"
-          style={{ color: 'var(--color-text-muted)' }}
-        >
-          {t('home.feedbackVia')}{' '}
-          <a
-            href="https://wa.me/919513097770?text=Hi%20Ajay%2C%20I%20have%20feedback%20on%20Sadhana%20Reader%3A%20"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:opacity-80 transition-opacity"
-            style={{ color: 'var(--color-accent-primary)' }}
-          >
-            {t('common.whatsapp')}
-          </a>
-          {' · '}
-          <a
-            href="mailto:ajaiprasad@gmail.com?subject=Sadhana%20Reader%20Feedback"
-            className="underline hover:opacity-80 transition-opacity"
-            style={{ color: 'var(--color-accent-primary)' }}
-          >
-            {t('common.email')}
-          </a>
+          Open source · Built with devotion
         </p>
       </motion.footer>
 
