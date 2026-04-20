@@ -142,19 +142,7 @@ export default function HomeScreen() {
     });
   }, [searchQuery, selectedDeity]);
 
-  const headerRef = useRef<HTMLDivElement>(null);
-  const [headerHidden, setHeaderHidden] = useState(false);
 
-  useEffect(() => {
-    const el = headerRef.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => setHeaderHidden(!entry.isIntersecting),
-      { threshold: 0, rootMargin: `-${appBarHeight}px 0px 0px 0px` },
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [appBarHeight]);
 
   return (
     <div className="relative min-h-screen">
@@ -173,7 +161,7 @@ export default function HomeScreen() {
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="flex items-center gap-1.5 transition-opacity duration-300"
-            style={{ opacity: (headerHidden || searchFocused) ? 1 : 0, pointerEvents: (headerHidden || searchFocused) ? 'auto' : 'none' }}
+            style={{ opacity: (isStuck || searchFocused) ? 1 : 0, pointerEvents: (isStuck || searchFocused) ? 'auto' : 'none' }}
           >
             <span
               className="text-xl select-none"
@@ -351,7 +339,6 @@ export default function HomeScreen() {
       {/* Header — hidden when search is active */}
       {!searchFocused && (
       <motion.header
-        ref={headerRef}
         className="text-center mb-10 sm:mb-14 mt-6 sm:mt-8"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
