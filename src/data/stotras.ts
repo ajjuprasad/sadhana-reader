@@ -6895,6 +6895,56 @@ const shriRudramNamakam: Stotra = {
       meaning:
         'Salutations to the eldest and to the youngest. Salutations to the first-born and to the last-born.',
     },
+    {
+      id: 31,
+      verseLabel: 'Anuvaka 4.3',
+      sanskrit:
+        'नमो मध्यमाय चापगल्भाय च\nनमो जघन्याय च बुध्नियाय च',
+      transliteration:
+        'namo madhyamāya cāpagalbhāya ca\nnamo jaghanyāya ca budhniyāya ca',
+      meaning:
+        'Salutations to the middlemost and to the youthful. Salutations to the hindmost and to the one at the base.',
+    },
+    {
+      id: 32,
+      verseLabel: 'Anuvaka 4.4',
+      sanskrit:
+        'नमः सोभ्याय च प्रतिसर्याय च\nनमो याम्याय च क्षेम्याय च',
+      transliteration:
+        'namaḥ sobhyāya ca pratisaryāya ca\nnamo yāmyāya ca kṣemyāya ca',
+      meaning:
+        'Salutations to the one in the assembly hall and to the one in the courtyard. Salutations to the one who controls and to the one who protects.',
+    },
+    {
+      id: 33,
+      verseLabel: 'Anuvaka 4.5',
+      sanskrit:
+        'नम उर्वर्याय च खल्याय च\nनमः श्लोक्याय चावसान्याय च',
+      transliteration:
+        'nama urvaryāya ca khalyāya ca\nnamaḥ ślokyāya cāvasānyāya ca',
+      meaning:
+        'Salutations to the one in the fertile land and in the threshing floor. Salutations to the famous and to the one who brings conclusion.',
+    },
+    {
+      id: 34,
+      verseLabel: 'Anuvaka 5.2',
+      sanskrit:
+        'नमो ज्येष्ठाय च कनिष्ठाय च\nनमः पूर्वजाय चापरजाय च\nनमो मध्यमाय चापगल्भाय च',
+      transliteration:
+        'namo jyeṣṭhāya ca kaniṣṭhāya ca\nnamaḥ pūrvajāya cāparajāya ca\nnamo madhyamāya cāpagalbhāya ca',
+      meaning:
+        'Salutations to the eldest and youngest, to the first-born and last-born, to the middlemost and the youthful — honoring Rudra in every stage of life.',
+    },
+    {
+      id: 35,
+      verseLabel: 'Anuvaka 5.3',
+      sanskrit:
+        'नमो दुन्दुभ्याय चाहनन्याय च\nनमो धृष्णवे च प्रमृशाय च\nनमो दूताय च प्रहिताय च',
+      transliteration:
+        'namo dundubhyāya cāhananyāya ca\nnamo dhṛṣṇave ca pramṛśāya ca\nnamo dūtāya ca prahitāya ca',
+      meaning:
+        'Salutations to the drum and to the one who beats it. Salutations to the bold and to the one who touches gently. Salutations to the messenger and to the one who is sent forth.',
+    },
   ],
 };
 
