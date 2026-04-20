@@ -51,6 +51,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sadhanareader.org/stotra/dasharatha-shani-stotram</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://sadhanareader.org/stotra/ganesha-pancharatnam</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -64,6 +69,11 @@
     <loc>https://sadhanareader.org/stotra/hanuman-chalisa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sadhanareader.org/stotra/indrakshi-stotram</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sadhanareader.org/stotra/kalabhairava-ashtakam</loc>
@@ -101,7 +111,17 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sadhanareader.org/stotra/narayana-kavacham</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://sadhanareader.org/stotra/nirvana-shatakam</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sadhanareader.org/stotra/pandurangashtakam</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -116,7 +136,17 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sadhanareader.org/stotra/sankata-nashana-ganesha-stotram</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://sadhanareader.org/stotra/shiva-ashtottara</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sadhanareader.org/stotra/shiva-mahimna-stotram</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -127,6 +157,16 @@
   </url>
   <url>
     <loc>https://sadhanareader.org/stotra/shiva-tandava-stotram</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sadhanareader.org/stotra/shri-rudram-namakam</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sadhanareader.org/stotra/siddha-kunjika-stotram</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
