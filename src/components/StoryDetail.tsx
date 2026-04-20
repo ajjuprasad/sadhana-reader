@@ -68,7 +68,7 @@ export default function StoryDetail() {
     : -1;
 
   return (
-    <div className="relative min-h-screen pb-12">
+    <div className="relative min-h-screen" style={{ paddingBottom: narration.isActive ? '100px' : '48px' }}>
       <Helmet>
         <title>{story.title} | Stories for Kids | Sadhana Reader</title>
         <meta name="description" content={`${story.subtitle} — A story from ${story.source} for kids aged ${story.ageRange}.`} />
@@ -190,21 +190,6 @@ export default function StoryDetail() {
           </motion.button>
         )}
 
-        {/* Narration player */}
-        <AnimatePresence>
-          {narration.isActive && (
-            <NarrationPlayer
-              isPlaying={narration.isPlaying}
-              isPaused={narration.isPaused}
-              currentIndex={narration.currentIndex}
-              totalSegments={narration.totalSegments}
-              onPause={narration.pause}
-              onResume={narration.resume}
-              onStop={narration.stop}
-            />
-          )}
-        </AnimatePresence>
-
         {/* Characters */}
         <div className="mb-6 text-center">
           <p
@@ -299,6 +284,21 @@ export default function StoryDetail() {
           );
         })()}
       </motion.div>
+
+      {/* Floating narration player */}
+      <AnimatePresence>
+        {narration.isActive && (
+          <NarrationPlayer
+            isPlaying={narration.isPlaying}
+            isPaused={narration.isPaused}
+            currentIndex={narration.currentIndex}
+            totalSegments={narration.totalSegments}
+            onPause={narration.pause}
+            onResume={narration.resume}
+            onStop={narration.stop}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 }

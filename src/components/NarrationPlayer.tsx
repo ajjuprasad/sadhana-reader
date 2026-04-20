@@ -34,31 +34,34 @@ export default function NarrationPlayer({
 
   return (
     <motion.div
-      className="rounded-2xl p-4 mb-6"
+      className="fixed bottom-0 left-0 right-0 z-40 px-4 pb-[env(safe-area-inset-bottom,8px)] pt-3"
       style={{
-        backgroundColor: 'rgba(255,153,51,0.08)',
-        border: '1px solid rgba(255,153,51,0.2)',
+        backgroundColor: 'var(--color-bg)',
+        borderTop: '1px solid rgba(255,153,51,0.2)',
+        boxShadow: '0 -4px 20px rgba(0,0,0,0.08)',
+        backdropFilter: 'blur(12px)',
+        WebkitBackdropFilter: 'blur(12px)',
       }}
-      initial={{ opacity: 0, y: -12 }}
+      initial={{ opacity: 0, y: 60 }}
       animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -12 }}
-      transition={{ duration: 0.3 }}
+      exit={{ opacity: 0, y: 60 }}
+      transition={{ duration: 0.3, ease: 'easeOut' }}
     >
-      <div className="flex items-center gap-3">
+      <div className="max-w-2xl mx-auto flex items-center gap-3">
         {/* Play/Pause button */}
         <button
           onClick={isPlaying ? onPause : onResume}
-          className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full transition-transform active:scale-90"
+          className="flex-shrink-0 w-11 h-11 flex items-center justify-center rounded-full transition-transform active:scale-90"
           style={{ backgroundColor: 'var(--color-accent-primary)' }}
           aria-label={isPlaying ? 'Pause narration' : 'Resume narration'}
         >
           {isPlaying ? (
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff">
               <rect x="6" y="4" width="4" height="16" rx="1" />
               <rect x="14" y="4" width="4" height="16" rx="1" />
             </svg>
           ) : (
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff">
               <polygon points="6,4 20,12 6,20" />
             </svg>
           )}
@@ -66,7 +69,7 @@ export default function NarrationPlayer({
 
         {/* Progress info */}
         <div className="flex-1 min-w-0">
-          <div className="flex items-center justify-between mb-1.5">
+          <div className="flex items-center justify-between mb-1">
             <span
               className="font-hind font-medium text-xs"
               style={{ color: 'var(--color-text-primary)' }}
