@@ -6695,6 +6695,56 @@ const shriRudramNamakam: Stotra = {
       meaning:
         'Salutations to Bhava and Rudra. Salutations to Sharva and Pashupati. Salutations to Ishana (the ruler) and to Bhagavan (the glorious one).',
     },
+    {
+      id: 11,
+      verseLabel: 'Anuvaka 6.1',
+      sanskrit:
+        'नमो अग्रेवधाय च दूरेवधाय च\nनमो हन्त्रे च हनीयसे च\nनमो वृक्षेभ्यो हरिकेशेभ्यो नमस्ताराय ॥',
+      transliteration:
+        'namo agrevādhāya ca dūrevādhāya ca\nnamo hantre ca hanīyase ca\nnamo vṛkṣebhyo harikeśebhyo namastārāya ||',
+      meaning:
+        'Salutations to the one who strikes from near and from afar. Salutations to the slayer and to the most destructive. Salutations to the green-haired trees and to the savior.',
+    },
+    {
+      id: 12,
+      verseLabel: 'Anuvaka 7.1',
+      sanskrit:
+        'नमो दुन्दुभ्याय च आहनन्याय च\nनमो धृष्णवे च प्रमृशाय च\nनमो नषदे च सुषदे च ॥',
+      transliteration:
+        'namo dundubhyāya ca āhananyāya ca\nnamo dhṛṣṇave ca pramṛśāya ca\nnamo naṣade ca suṣade ca ||',
+      meaning:
+        'Salutations to the drum and to the drummer. Salutations to the bold one and to the one who touches gently. Salutations to the one seated well and the one comfortably seated.',
+    },
+    {
+      id: 13,
+      verseLabel: 'Anuvaka 8.1',
+      sanskrit:
+        'नमः सोमाय च रुद्राय च\nनमस्ताम्राय चारुणाय च\nनमः शङ्गाय च पशुपतये च ॥',
+      transliteration:
+        'namaḥ somāya ca rudrāya ca\nnamastāmrāya cāruṇāya ca\nnamaḥ śaṅgāya ca paśupataye ca ||',
+      meaning:
+        'Salutations to Soma and to Rudra. Salutations to the copper-hued and the dawn-colored one. Salutations to the beneficent one and to Pashupati.',
+    },
+    {
+      id: 14,
+      verseLabel: 'Anuvaka 9.1',
+      sanskrit:
+        'नमः शम्भवाय च मयोभवाय च\nनमः शंकराय च मयस्कराय च\nनमः शिवाय च शिवतराय च ॥',
+      transliteration:
+        'namaḥ śambhavāya ca mayobhavāya ca\nnamaḥ śaṁkarāya ca mayaskarāya ca\nnamaḥ śivāya ca śivatarāya ca ||',
+      meaning:
+        'Salutations to Shambhu (the source of bliss) and to the source of happiness. Salutations to Shankara (the auspicious doer) and to the creator of joy. Salutations to Shiva (the auspicious one) and to the most auspicious.',
+    },
+    {
+      id: 15,
+      verseLabel: 'Anuvaka 11.1',
+      sanskrit:
+        'सहस्राणि सहस्रशो ये रुद्रा अधि भूम्याम् ।\nतेषां सहस्रयोजनेऽवधन्वानि तन्मसि ॥\nत्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम् ।\nउर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय माऽमृतात् ॥',
+      transliteration:
+        'sahasrāṇi sahasraśo ye rudrā adhi bhūmyām |\nteṣāṁ sahasra-yojane \'vadhanvāni tanmasi ||\ntryambakaṁ yajāmahe sugandhiṁ puṣṭi-vardhanam |\nurvārukam-iva bandhanān-mṛtyor-mukṣīya mā \'mṛtāt ||',
+      meaning:
+        'The thousands of Rudras who exist on this earth — may we keep their bows unstrung a thousand leagues away. We worship the three-eyed one, the fragrant increaser of prosperity. As a cucumber is freed from its stalk, may we be liberated from death, not from immortality.',
+    },
   ],
 };
 
