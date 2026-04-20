@@ -5677,6 +5677,36 @@ const sankataNashanaGaneshaStotram: Stotra = {
       meaning:
         'Whoever recites these twelve names at the three junctions of the day (dawn, noon, dusk) — for them there is no fear of obstacles, and all accomplishments are granted, O Lord.',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'विद्यार्थी लभते विद्यां धनार्थी लभते धनम् ।\nपुत्रार्थी लभते पुत्रान्मोक्षार्थी लभते गतिम् ॥',
+      transliteration:
+        'vidyārthī labhate vidyāṁ dhanārthī labhate dhanam |\nputrārthī labhate putrān-mokṣārthī labhate gatim ||',
+      meaning:
+        'The seeker of knowledge attains knowledge, the seeker of wealth attains wealth, the seeker of children attains children, and the seeker of liberation attains the supreme goal.',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'जपेद्गणपतिस्तोत्रं षड्भिर्मासैः फलं लभेत् ।\nसंवत्सरेण सिद्धिं च लभते नात्र संशयः ॥',
+      transliteration:
+        'japed-gaṇapati-stotraṁ ṣaḍbhir-māsaiḥ phalaṁ labhet |\nsaṁvatsareṇa siddhiṁ ca labhate nātra saṁśayaḥ ||',
+      meaning:
+        'One who recites this Ganapati Stotra gains results within six months, and within a year attains complete spiritual perfection — there is no doubt about this.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'अष्टभ्यो ब्राह्मणेभ्यश्च लिखित्वा यः समर्पयेत् ।\nतस्य विद्या भवेत्सर्वा गणेशस्य प्रसादतः ॥',
+      transliteration:
+        'aṣṭabhyo brāhmaṇebhyaś-ca likhitvā yaḥ samarpayēt |\ntasya vidyā bhavet-sarvā gaṇeśasya prasādataḥ ||',
+      meaning:
+        'One who writes this stotra and offers it to eight learned ones — all knowledge becomes theirs by the grace of Lord Ganesha.',
+    },
   ],
 };
 
