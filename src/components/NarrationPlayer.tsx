@@ -31,7 +31,7 @@ export default function NarrationPlayer({
   } else if (currentIndex >= totalSegments - 1) {
     label = 'Wrapping up';
   } else {
-    label = `Paragraph ${storyIndex} of ${storyTotal}`;
+    label = `Paragraph ${storyIndex + 1} of ${storyTotal}`;
   }
 
   return (
@@ -71,11 +71,11 @@ export default function NarrationPlayer({
 
         {/* Progress info */}
         <div className="flex-1 min-w-0">
-          <div className="flex items-center justify-between mb-1">
+          <div className="flex items-center justify-between mb-0.5">
             <div className="min-w-0 flex-1">
               {storyTitle && (
                 <p
-                  className="font-display font-bold text-xs truncate"
+                  className="font-display font-bold text-xs truncate leading-tight"
                   style={{ color: 'var(--color-text-primary)' }}
                 >
                   {storyTitle}
@@ -88,12 +88,6 @@ export default function NarrationPlayer({
                 {label}
               </span>
             </div>
-            <span
-              className="font-hind text-xs flex-shrink-0 ml-2"
-              style={{ color: 'var(--color-text-muted)' }}
-            >
-              {isPaused ? 'Paused' : 'Listening'}
-            </span>
           </div>
           {/* Progress bar */}
           <div
