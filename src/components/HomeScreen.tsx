@@ -348,7 +348,8 @@ export default function HomeScreen() {
 
     <div className="px-4 pb-8 sm:pb-12">
 
-      {/* Header */}
+      {/* Header — hidden when search is active */}
+      {!searchFocused && (
       <motion.header
         ref={headerRef}
         className="text-center mb-10 sm:mb-14 mt-6 sm:mt-8"
@@ -376,6 +377,7 @@ export default function HomeScreen() {
           {t('home.subtitle')}
         </p>
       </motion.header>
+      )}
 
       {/* Sentinel — triggers isStuck when scrolled behind app bar */}
       <div ref={searchSentinelRef} className="h-0" />
