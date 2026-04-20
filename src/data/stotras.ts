@@ -6527,6 +6527,56 @@ const shivaMahimnaStotram: Stotra = {
       meaning:
         'Salutations to Bhava, abounding in Rajas at the creation of the universe. Salutations to Hara, predominant in Tamas at its dissolution. Salutations to Mrida, established in Sattva for the happiness of beings. And salutations to Shiva, who transcends the three Gunas in the supreme state.',
     },
+    {
+      id: 31,
+      verseLabel: 'Verse 31',
+      sanskrit:
+        'कृशपरिणति चेतः क्लेशवश्यं क्व चेदं\nक्व च तव गुणसीमोल्लङ्घिनी शश्वदृद्धिः ।\nइति चकितममन्दीकृत्य मां भक्तिराधाद्\nवरद चरणयोस्ते वाक्यपुष्पोपहारम् ॥',
+      transliteration:
+        'kṛśa-pariṇati cetaḥ kleśa-vaśyaṁ kva cedaṁ\nkva ca tava guṇa-sīmollaṅghinī śaśvad-ṛddhiḥ |\niti cakitam-amandī-kṛtya māṁ bhaktir-ādhād\nvarada caraṇayos-te vākya-puṣpopahaaram ||',
+      meaning:
+        'O bestower of boons, how meager is my intellect, subject to afflictions — and how boundless is Your ever-growing glory that transcends all limits! Yet devotion, emboldening my timid self, has placed this offering of word-flowers at Your feet.',
+    },
+    {
+      id: 32,
+      verseLabel: 'Verse 32',
+      sanskrit:
+        'असितगिरिसमं स्यात्कज्जलं सिन्धुपात्रे\nसुरतरुवरशाखा लेखनी पत्रमुर्वी ।\nलिखति यदि गृहीत्वा शारदा सर्वकालं\nतदपि तव गुणानामीश पारं न याति ॥',
+      transliteration:
+        'asita-giri-samaṁ syāt-kajjalaṁ sindhu-pātre\nsura-taru-vara-śākhā lekhanī patram-urvī |\nlikhati yadi gṛhītvā śāradā sarva-kālaṁ\ntad-api tava guṇānām-īśa pāraṁ na yāti ||',
+      meaning:
+        'O Lord, if the dark mountain were the ink, the ocean the inkpot, the branch of the wish-fulfilling tree the pen, and the earth the writing surface — even if Goddess Saraswati wrote for all eternity, she could not reach the end of Your glories.',
+    },
+    {
+      id: 33,
+      verseLabel: 'Verse 33',
+      sanskrit:
+        'असुरसुरमुनीन्द्रैरर्चितस्येन्दुमौलेः\nग्रथितगुणमहिम्नो निर्गुणस्येश्वरस्य ।\nसकलगणवरिष्ठः पुष्पदन्ताभिधानः\nरुचिरमलघुवृत्तैः स्तोत्रमेतच्चकार ॥',
+      transliteration:
+        'asura-sura-munīndrair-arcitasyendu-mauleḥ\ngrathita-guṇa-mahimno nirguṇasyeśvarasya |\nsakala-gaṇa-variṣṭhaḥ puṣpadantābhidhānaḥ\nruciram-alaghu-vṛttaiḥ stotram-etac-cakāra ||',
+      meaning:
+        'Pushpadanta, the foremost among the gandharvas, composed this hymn in beautiful, exalted verses — in praise of the moon-crested Lord worshipped by demons, gods, and great sages, whose glory is woven of qualities yet who is beyond all qualities.',
+    },
+    {
+      id: 34,
+      verseLabel: 'Verse 34',
+      sanskrit:
+        'अहरहरनवद्यं धूर्जटेः स्तोत्रमेतत्\nपठति परमभक्त्या शुद्धचित्तः पुमान्यः ।\nस भवति शिवलोके रुद्रतुल्यस्तथाऽत्र\nप्रचुरतरधनायुः पुत्रवान्कीर्तिमांश्च ॥',
+      transliteration:
+        'ahar-ahar-anavadyaṁ dhūrjaṭeḥ stotram-etat\npaṭhati parama-bhaktyā śuddha-cittaḥ pumān-yaḥ |\nsa bhavati śiva-loke rudra-tulyas-tathā \'tra\npracura-tara-dhanāyuḥ putra-vān-kīrtimāṁś-ca ||',
+      meaning:
+        'Whoever recites this flawless hymn of the matted-haired Lord daily with supreme devotion and a pure mind — they become equal to Rudra in Shiva\'s realm, and here on earth gain abundant wealth, long life, children, and fame.',
+    },
+    {
+      id: 35,
+      verseLabel: 'Verse 35',
+      sanskrit:
+        'महेशान्नापरो देवो महिम्नो नापरा स्तुतिः ।\nअघोरान्नापरो मन्त्रो नास्ति तत्त्वं गुरोः परम् ॥',
+      transliteration:
+        'maheśān-nāparo devo mahimno nāparā stutiḥ |\naghorān-nāparo mantro nāsti tattvaṁ guroḥ param ||',
+      meaning:
+        'There is no god higher than Mahesha, no hymn higher than the Mahimna Stotram, no mantra higher than the Aghora, and no truth higher than the Guru.',
+    },
   ],
 };
 
