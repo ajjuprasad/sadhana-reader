@@ -6041,6 +6041,56 @@ const indrakshiStotram: Stotra = {
       meaning:
         'Whoever worships the Goddess with devotion or performs the fire ritual — all their diseases, even the most terrible ones, are completely destroyed.',
     },
+    {
+      id: 6,
+      verseLabel: 'Verse 6',
+      sanskrit:
+        'इति ते कथितं देवि अन्यत्किमपि ब्रूहि मे ।\nमन्त्रौषधिमयं वापि जिह्वाचालनमात्रतः ॥',
+      transliteration:
+        'iti te kathitaṁ devi anyat-kimapi brūhi me |\nmantrauṣadhi-mayaṁ vāpi jihvā-cālana-mātrataḥ ||',
+      meaning:
+        'Thus has it been told to you, O Devi. Ask me whatever else you wish. By the mere movement of the tongue chanting this mantra-medicine...',
+    },
+    {
+      id: 7,
+      verseLabel: 'Verse 7',
+      sanskrit:
+        'महामारीं महोत्पातं महाज्वरमहारुजम् ।\nस्मरणादेव तत्सर्वमाशु नश्यत्यसंशयम् ॥',
+      transliteration:
+        'mahā-mārīṁ mahotpātaṁ mahā-jvara-mahārujam |\nsmaraṇād-eva tat-sarvam-āśu naśyaty-asaṁśayam ||',
+      meaning:
+        'Great plagues, great calamities, terrible fevers, and grievous diseases — by merely remembering this stotra, all these are quickly destroyed without doubt.',
+    },
+    {
+      id: 8,
+      verseLabel: 'Verse 8',
+      sanskrit:
+        'ब्रह्मा च शङ्करश्चैव विष्णुश्च विबुधेश्वराः ।\nमुनयो मनवश्चैव इन्द्राक्षीं मुनयो विदुः ॥',
+      transliteration:
+        'brahmā ca śaṅkaraś-caiva viṣṇuś-ca vibudheśvarāḥ |\nmunayo manavaś-caiva indrākṣīṁ munayo viduḥ ||',
+      meaning:
+        'Brahma, Shankara, Vishnu, and the lords of the wise — the great sages and Manus all know Indrakshi well.',
+    },
+    {
+      id: 9,
+      verseLabel: 'Verse 9',
+      sanskrit:
+        'इन्द्राक्षीं शतवारं वा सहस्रं वा पठेन्नरः ।\nसर्वे रोगाः प्रणश्यन्ति सत्यं सत्यं वदाम्यहम् ॥',
+      transliteration:
+        'indrākṣīṁ śata-vāraṁ vā sahasraṁ vā paṭhen-naraḥ |\nsarve rogāḥ praṇaśyanti satyaṁ satyaṁ vadāmy-aham ||',
+      meaning:
+        'One who recites the Indrakshi Stotram a hundred or a thousand times — all diseases are destroyed. Truly, truly, I declare this.',
+    },
+    {
+      id: 10,
+      verseLabel: 'Verse 10',
+      sanskrit:
+        'स्तवराजमिदं देवि सर्वरोगनिवारणम् ।\nमया ते कथितं गौरि सर्वमन्त्रमयं शुभम् ॥',
+      transliteration:
+        'stava-rājam-idaṁ devi sarva-roga-nivāraṇam |\nmayā te kathitaṁ gauri sarva-mantra-mayaṁ śubham ||',
+      meaning:
+        'This king of hymns, O Devi, removes all diseases. I have told you, O Gauri, this auspicious prayer that is the essence of all mantras.',
+    },
   ],
 };
 
