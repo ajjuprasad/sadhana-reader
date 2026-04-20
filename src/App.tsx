@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
+import { AnimatePresence } from 'framer-motion';
 import HomeScreen from './components/HomeScreen';
 import StotraDetail from './components/StotraDetail';
 import ReaderScreen from './components/ReaderScreen';
@@ -13,9 +14,11 @@ import AboutPage from './components/AboutPage';
 import StoriesPage from './components/StoriesPage';
 import StoryDetail from './components/StoryDetail';
 import MandalaBackground from './components/MandalaBackground';
+import NarrationPlayer from './components/NarrationPlayer';
 import { useSettings } from './hooks/useSettings';
 import { LanguageProvider } from './i18n/LanguageContext';
 import { AuthProvider } from './contexts/AuthContext';
+import { NarrationProvider, useNarrationContext } from './contexts/NarrationContext';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -23,6 +26,26 @@ function ScrollToTop() {
     window.scrollTo(0, 0);
   }, [pathname]);
   return null;
+}
+
+function GlobalNarrationPlayer() {
+  const narration = useNarrationContext();
+  return (
+    <AnimatePresence>
+      {narration.isActive && (
+        <NarrationPlayer
+          isPlaying={narration.isPlaying}
+          isPaused={narration.isPaused}
+          currentIndex={narration.currentIndex}
+          totalSegments={narration.totalSegments}
+          storyTitle={narration.storyTitle}
+          onPause={narration.pause}
+          onResume={narration.resume}
+          onStop={narration.stop}
+        />
+      )}
+    </AnimatePresence>
+  );
 }
 
 export default function App() {
@@ -45,6 +68,7 @@ export default function App() {
       <HelmetProvider>
       <AuthProvider>
       <BrowserRouter>
+        <NarrationProvider>
         <ScrollToTop />
         <MandalaBackground />
         <div className="relative z-10 max-w-4xl mx-auto min-h-screen">
@@ -62,6 +86,8 @@ export default function App() {
             <Route path="/profile" element={<ProfileScreen settingsState={settingsState} />} />
           </Routes>
         </div>
+        <GlobalNarrationPlayer />
+        </NarrationProvider>
       </BrowserRouter>
       </AuthProvider>
       </HelmetProvider>

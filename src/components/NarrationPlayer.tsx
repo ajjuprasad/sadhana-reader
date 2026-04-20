@@ -5,6 +5,7 @@ interface NarrationPlayerProps {
   isPaused: boolean;
   currentIndex: number;
   totalSegments: number;
+  storyTitle?: string | null;
   onPause: () => void;
   onResume: () => void;
   onStop: () => void;
@@ -15,6 +16,7 @@ export default function NarrationPlayer({
   isPaused,
   currentIndex,
   totalSegments,
+  storyTitle,
   onPause,
   onResume,
   onStop,
@@ -34,7 +36,7 @@ export default function NarrationPlayer({
 
   return (
     <motion.div
-      className="fixed bottom-0 left-0 right-0 z-40 px-4 pb-[env(safe-area-inset-bottom,8px)] pt-3"
+      className="fixed bottom-0 left-0 right-0 z-40 px-4 pb-[max(env(safe-area-inset-bottom,12px),12px)] pt-3"
       style={{
         backgroundColor: 'var(--color-bg)',
         borderTop: '1px solid rgba(255,153,51,0.2)',
@@ -70,14 +72,24 @@ export default function NarrationPlayer({
         {/* Progress info */}
         <div className="flex-1 min-w-0">
           <div className="flex items-center justify-between mb-1">
+            <div className="min-w-0 flex-1">
+              {storyTitle && (
+                <p
+                  className="font-display font-bold text-xs truncate"
+                  style={{ color: 'var(--color-text-primary)' }}
+                >
+                  {storyTitle}
+                </p>
+              )}
+              <span
+                className="font-hind text-[0.65rem]"
+                style={{ color: 'var(--color-text-muted)' }}
+              >
+                {label}
+              </span>
+            </div>
             <span
-              className="font-hind font-medium text-xs"
-              style={{ color: 'var(--color-text-primary)' }}
-            >
-              {label}
-            </span>
-            <span
-              className="font-hind text-xs"
+              className="font-hind text-xs flex-shrink-0 ml-2"
               style={{ color: 'var(--color-text-muted)' }}
             >
               {isPaused ? 'Paused' : 'Listening'}
