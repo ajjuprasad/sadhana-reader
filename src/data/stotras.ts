@@ -5933,6 +5933,46 @@ const siddhaKunjikaStotram: Stotra = {
       meaning:
         'Chamunda, the slayer of Chanda, the giver of boons through the syllable Ya, and the giver of fearlessness through the syllable Vichche — salutations to you, O embodiment of the mantra!',
     },
+    {
+      id: 11,
+      verseLabel: 'Verse 11',
+      sanskrit:
+        'धां धीं धूं धूर्जटेः पत्नी वां वीं वूं वागधीश्वरी ।\nक्रां क्रीं क्रूं कालिका देवि शां शीं शूं मे शुभं कुरु ॥',
+      transliteration:
+        'dhāṁ dhīṁ dhūṁ dhūrjaṭeḥ patnī vāṁ vīṁ vūṁ vāgadhīśvarī |\nkrāṁ krīṁ krūṁ kālikā devi śāṁ śīṁ śūṁ me śubhaṁ kuru ||',
+      meaning:
+        'Dham Dhim Dhum — O consort of Shiva! Vam Vim Vum — O sovereign of speech! Kram Krim Krum — O Goddess Kalika! Sham Shim Shum — bestow auspiciousness upon me!',
+    },
+    {
+      id: 12,
+      verseLabel: 'Verse 12',
+      sanskrit:
+        'हुं हुं हुंकाररूपिण्यै जं जं जं जम्भनादिनि ।\nभ्रां भ्रीं भ्रूं भैरवी भद्रे भवान्यै ते नमो नमः ॥',
+      transliteration:
+        'huṁ huṁ huṁkāra-rūpiṇyai jaṁ jaṁ jaṁ jambhanādini |\nbhrāṁ bhrīṁ bhrūṁ bhairavī bhadre bhavānyai te namo namaḥ ||',
+      meaning:
+        'Hum Hum — O one whose form is the Humkara! Jam Jam Jam — O one who paralyzes! Bhram Bhrim Bhrum — O Bhairavi, O auspicious one, O Bhavani — salutations to you again and again!',
+    },
+    {
+      id: 13,
+      verseLabel: 'Verse 13',
+      sanskrit:
+        'अं कं चं टं तं पं यं शं वीं दुं ऐं वीं हं क्षं ।\nधिजाग्रं धिजाग्रं त्रोटय त्रोटय दीप्तं कुरु कुरु स्वाहा ॥',
+      transliteration:
+        'aṁ kaṁ caṁ ṭaṁ taṁ paṁ yaṁ śaṁ vīṁ duṁ aiṁ vīṁ haṁ kṣaṁ |\ndhijāgraṁ dhijāgraṁ troṭaya troṭaya dīptaṁ kuru kuru svāhā ||',
+      meaning:
+        'Through the seed syllables of the alphabet — awaken, awaken! Break asunder, break asunder! Make it radiant, make it radiant! Svaha!',
+    },
+    {
+      id: 14,
+      verseLabel: 'Verse 14',
+      sanskrit:
+        'पां पीं पूं पार्वती पूर्णा खां खीं खूं खेचरी तथा ।\nसां सीं सूं सप्तशती देव्या मन्त्रसिद्धिं कुरुष्व मे ॥',
+      transliteration:
+        'pāṁ pīṁ pūṁ pārvatī pūrṇā khāṁ khīṁ khūṁ khecarī tathā |\nsāṁ sīṁ sūṁ saptaśatī devyā mantra-siddhiṁ kuruṣva me ||',
+      meaning:
+        'Pam Pim Pum — O complete Parvati! Kham Khim Khum — O Khechari who moves through the sky! Sam Sim Sum — O Goddess of the Saptashati, grant me mantra accomplishment!',
+    },
   ],
 };
 
