@@ -100,6 +100,9 @@ export default function HomeScreen() {
   );
 
   const isFiltering = searchQuery.length > 0 || selectedDeity !== null;
+  const [searchFocused, setSearchFocused] = useState(false);
+  const searchSectionRef = useRef<HTMLDivElement>(null);
+  const searchSticky = searchFocused || isFiltering;
 
   const filteredStotras = useMemo(() => {
     const q = searchQuery.toLowerCase();
@@ -221,14 +224,18 @@ export default function HomeScreen() {
       </motion.header>
 
       {/* Search & Filter */}
-      <div className="max-w-3xl mx-auto mb-8 sm:mb-10">
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2, ease: sacredEase as unknown as number[] }}
-        >
+      <div
+        ref={searchSectionRef}
+        className="sticky z-20 px-4 pb-3 pt-2 -mx-4 transition-shadow duration-200"
+        style={{
+          top: '44px',
+          backgroundColor: 'var(--color-bg)',
+          boxShadow: searchSticky ? '0 2px 8px rgba(0,0,0,0.06)' : 'none',
+        }}
+      >
+        <div className="max-w-3xl mx-auto">
           {/* Search bar */}
-          <div className="relative mb-3">
+          <div className="relative mb-2.5">
             <svg
               width="16"
               height="16"
@@ -249,15 +256,29 @@ export default function HomeScreen() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder={t('home.searchPlaceholder')}
-              className="w-full pl-10 pr-9 py-2.5 rounded-xl font-body text-sm outline-none transition-shadow duration-200"
+              className="w-full pl-10 pr-9 py-2.5 rounded-xl font-body outline-none transition-shadow duration-200"
               style={{
+                fontSize: '16px',
                 backgroundColor: 'var(--color-bg-card)',
                 color: 'var(--color-text-primary)',
                 border: '1px solid transparent',
                 boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
               }}
-              onFocus={(e) => { e.currentTarget.style.borderColor = 'var(--color-accent-primary)'; e.currentTarget.style.boxShadow = '0 0 0 2px rgba(255,153,51,0.15)'; }}
-              onBlur={(e) => { e.currentTarget.style.borderColor = 'transparent'; e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.04)'; }}
+              onFocus={(e) => {
+                setSearchFocused(true);
+                e.currentTarget.style.borderColor = 'var(--color-accent-primary)';
+                e.currentTarget.style.boxShadow = '0 0 0 2px rgba(255,153,51,0.15)';
+                const el = searchSectionRef.current;
+                if (el) {
+                  const top = el.getBoundingClientRect().top + window.scrollY - 44;
+                  window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+                }
+              }}
+              onBlur={(e) => {
+                setSearchFocused(false);
+                e.currentTarget.style.borderColor = 'transparent';
+                e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.04)';
+              }}
             />
             {searchQuery && (
               <button
@@ -302,7 +323,7 @@ export default function HomeScreen() {
               </button>
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
 
       {/* Favorites — hidden when filtering */}
