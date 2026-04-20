@@ -7095,6 +7095,56 @@ const shriRudramNamakam: Stotra = {
       meaning:
         'Salutations to the blue-necked, thousand-eyed, bountiful one. To His attendants I offer my salutations. Unstring Your bow from both ends; and the arrows in Your hand, O blessed one, cast them away.',
     },
+    {
+      id: 51,
+      verseLabel: 'Anuvaka 11.4',
+      sanskrit:
+        'अवतत्य धनुस्त्वं सहस्राक्ष शतेषुधे ।\nनिशीर्य शल्यानां मुखा शिवो नः सुमना भव ॥',
+      transliteration:
+        'avatatya dhanus-tvaṁ sahasrākṣa śateṣudhe |\nniśīrya śalyānāṁ mukhā śivo naḥ sumanā bhava ||',
+      meaning:
+        'Having unstrung Your bow, O thousand-eyed one with a hundred quivers — blunt the edges of Your arrows and be gracious and kind-hearted to us.',
+    },
+    {
+      id: 52,
+      verseLabel: 'Anuvaka 11.5',
+      sanskrit:
+        'विज्यं धनुः कपर्दिनो विशल्यो बाणवाँ उत ।\nअनेशन्नस्यैषव आभुरस्य निषङ्गथिः ॥',
+      transliteration:
+        'vijyaṁ dhanuḥ kapardino viśalyo bāṇavāṁ uta |\naneśann-asyaiṣava ābhurasya niṣaṅgathiḥ ||',
+      meaning:
+        'Unstrung is the bow of the matted-haired one, pointless His arrows. His missiles have lost their force and His quiver is powerless.',
+    },
+    {
+      id: 53,
+      verseLabel: 'Anuvaka 11.6',
+      sanskrit:
+        'या ते हेतिर्मीढुष्टम हस्ते बभूव ते धनुः ।\nतयाऽस्मान् विश्वतस्त्वमयक्ष्मया परिब्भुज ॥',
+      transliteration:
+        'yā te hetir-mīḍhuṣṭama haste babhūva te dhanuḥ |\ntayā \'smān viśvatas-tvam-ayakṣmayā paribbhuja ||',
+      meaning:
+        'O most bountiful one, whatever weapon is in Your hand and whatever bow You hold — with that protect us on all sides from disease.',
+    },
+    {
+      id: 54,
+      verseLabel: 'Anuvaka 11.7',
+      sanskrit:
+        'नमस्ते अस्त्वायुधायानातताय धृष्णवे ।\nउभाभ्यामुत ते नमो बाहुभ्यां तव धन्वने ॥',
+      transliteration:
+        'namaste astvāyudhāyānātatāya dhṛṣṇave |\nubhābhyām-uta te namo bāhubhyāṁ tava dhanvane ||',
+      meaning:
+        'Salutations to Your weapon that is unstrung and to You who are bold. Salutations to both Your arms and to Your bow.',
+    },
+    {
+      id: 55,
+      verseLabel: 'Anuvaka 11.8',
+      sanskrit:
+        'परि ते धन्वनो हेतिरस्मान् वृणक्तु विश्वतः ।\nअथो य इषुधिस्तवारे अस्मन्निधेहि तम् ॥\nत्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम् ।\nउर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय माऽमृतात् ॥',
+      transliteration:
+        'pari te dhanvano hetir-asmān vṛṇaktu viśvataḥ |\natho ya iṣudhis-tavāre asman-nidhehi tam ||\ntryambakaṁ yajāmahe sugandhiṁ puṣṭi-vardhanam |\nurvārukam-iva bandhanān-mṛtyor-mukṣīya mā \'mṛtāt ||',
+      meaning:
+        'May the arrow of Your bow spare us on all sides. Place Your quiver far away from us. We worship the three-eyed Lord, the fragrant one who nourishes all. As a cucumber is freed from its stem, may we be liberated from death, not from immortality.',
+    },
   ],
 };
 
