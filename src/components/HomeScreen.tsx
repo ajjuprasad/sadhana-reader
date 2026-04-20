@@ -184,6 +184,7 @@ export default function HomeScreen() {
   const [isStuck, setIsStuck] = useState(false);
   const [chipsExpanded, setChipsExpanded] = useState(false);
   const [searchFocused, setSearchFocused] = useState(false);
+  const [showAllStotras, setShowAllStotras] = useState(false);
   const searchInputRef = useRef<HTMLInputElement>(null);
 
   const activateSearch = useCallback(() => {
@@ -609,7 +610,7 @@ export default function HomeScreen() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
             >
-              {filteredStotras.map((stotra, index) => (
+              {(isFiltering || showAllStotras ? filteredStotras : filteredStotras.slice(0, 18)).map((stotra, index) => (
                 <StotraCard
                   key={stotra.id}
                   stotra={stotra}
@@ -649,6 +650,26 @@ export default function HomeScreen() {
             </motion.div>
           )}
         </AnimatePresence>
+
+        {!isFiltering && !showAllStotras && filteredStotras.length > 18 && (
+          <motion.button
+            onClick={() => setShowAllStotras(true)}
+            className="mx-auto mt-6 flex items-center gap-2 px-5 py-2.5 rounded-full font-hind text-xs font-medium tracking-wide transition-colors"
+            style={{
+              color: 'var(--color-accent-primary)',
+              backgroundColor: 'var(--color-accent-primary-bg, rgba(255, 153, 51, 0.08))',
+              border: '1px solid var(--color-accent-primary)',
+              opacity: 0.85,
+            }}
+            whileHover={{ opacity: 1, scale: 1.02 }}
+            whileTap={{ scale: 0.97 }}
+          >
+            Show all {filteredStotras.length} stotras
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </motion.button>
+        )}
       </section>
 
       {/* Recently added — hidden when filtering */}
