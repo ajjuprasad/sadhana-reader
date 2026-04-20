@@ -6377,6 +6377,56 @@ const shivaMahimnaStotram: Stotra = {
       meaning:
         'O Lord, Kamadeva, whose arrows never fail and who always conquers in the world of gods, demons, and men — he treated You as an ordinary god and was burned to ashes. Insult is never good for those who have mastered their senses.',
     },
+    {
+      id: 16,
+      verseLabel: 'Verse 16',
+      sanskrit:
+        'मही पादाघाताद्व्रजति सहसा संशयपदं\nपदं विष्णोर्भ्राम्यद्भुजपरिघरुग्णग्रहगणम् ।\nमुहुर्द्यौर्दौस्थ्यं यात्यनिभृतजटाताडिततटा\nजगद्रक्षायै त्वं नटसि ननु वामैव विभुता ॥',
+      transliteration:
+        'mahī pādāghātād-vrajati sahasā saṁśaya-padaṁ\npadaṁ viṣṇor-bhrāmyad-bhuja-parigha-rugṇa-graha-gaṇam |\nmuhur-dyaur-dausthyaṁ yāty-anibhṛta-jaṭā-tāḍita-taṭā\njagad-rakṣāyai tvaṁ naṭasi nanu vāmaiva vibhutā ||',
+      meaning:
+        'When You dance the Tandava, the earth trembles under Your footsteps, the heavens are disturbed by Your whirling matted locks, and the planets are shattered by Your swinging arms. Yet this fierce dance is for the protection of the world — indeed, Your power works in wondrous ways.',
+    },
+    {
+      id: 17,
+      verseLabel: 'Verse 17',
+      sanskrit:
+        'वियद्व्यापी तारागणगुणितफेनोद्गमरुचिः\nप्रवाहो वारां यः पृषतलघुदृष्टः शिरसि ते ।\nजगद्द्वीपाकारं जलधिवलयं तेन कृतमि-\nत्यनेनैवोन्नेयं धृतमहिम दिव्यं तव वपुः ॥',
+      transliteration:
+        'viyad-vyāpī tārā-gaṇa-guṇita-phenodgama-ruciḥ\npravāho vārāṁ yaḥ pṛṣata-laghu-dṛṣṭaḥ śirasi te |\njagad-dvīpākāraṁ jaladhi-valayaṁ tena kṛtam-i-\nty-anenaivonneyaṁ dhṛta-mahima divyaṁ tava vapuḥ ||',
+      meaning:
+        'The Ganga, whose stream spans the sky adorned with stars like foam, appears as a mere droplet on Your head. This river encircles the earth-island like an ocean belt — by this alone can one infer the divine magnitude of Your form.',
+    },
+    {
+      id: 18,
+      verseLabel: 'Verse 18',
+      sanskrit:
+        'रथः क्षोणी यन्ता शतधृतिरगेन्द्रो धनुरथो\nरथाङ्गे चन्द्रार्कौ रथचरणपाणिः शर इति ।\nदिधक्षोस्ते कोऽयं त्रिपुरतृणमाडम्बरविधिः\nविधेयैः क्रीडन्त्यो न खलु परतन्त्राः प्रभुधियः ॥',
+      transliteration:
+        'rathaḥ kṣoṇī yantā śatadhṛtir-agendro dhanur-atho\nrathāṅge candrārkau ratha-caraṇa-pāṇiḥ śara iti |\ndidhakṣos-te ko \'yaṁ tripura-tṛṇam-āḍambara-vidhiḥ\nvidheyaiḥ krīḍantyo na khalu paratantrāḥ prabhu-dhiyaḥ ||',
+      meaning:
+        'The earth as chariot, Brahma as charioteer, Mount Meru as bow, sun and moon as wheels, Vishnu as arrow — all this grand preparation just to burn the straw-like Tripura? The intentions of a master are not bound by the instruments — He simply plays with His creation.',
+    },
+    {
+      id: 19,
+      verseLabel: 'Verse 19',
+      sanskrit:
+        'हरिस्ते साहस्रं कमलबलिमाधाय पदयोः\nयदेकोने तस्मिन्निजमुदहरन्नेत्रकमलम् ।\nगतो भक्त्युद्रेकः परिणतिमसौ चक्रवपुषा\nत्रयाणां रक्षायै त्रिपुरहर जागर्ति जगताम् ॥',
+      transliteration:
+        'haris-te sāhasraṁ kamala-balim-ādhāya padayoḥ\nyad-ekone tasmin-nija-mudaharan-netra-kamalam |\ngato bhakty-udrekaḥ pariṇatim-asau cakra-vapuṣā\ntrayāṇāṁ rakṣāyai tripurahara jāgarti jagatām ||',
+      meaning:
+        'O destroyer of Tripura, when Vishnu offered a thousand lotuses at Your feet and found one missing, He plucked out His own lotus-eye to complete the offering. That excess of devotion was transformed — You gave Him the Sudarshana Chakra, which now guards the three worlds.',
+    },
+    {
+      id: 20,
+      verseLabel: 'Verse 20',
+      sanskrit:
+        'क्रतौ सुप्ते जाग्रत्त्वमसि फलयोगे क्रतुमतां\nक्व कर्म प्रध्वस्तं फलति पुरुषाराधनमृते ।\nअतस्त्वां सम्प्रेक्ष्य क्रतुषु फलदानप्रतिभुवं\nश्रुतौ श्रद्धां बध्वा दृढपरिकरः कर्मसु जनः ॥',
+      transliteration:
+        'kratau supte jāgrat-tvam-asi phala-yoge kratumataṁ\nkva karma pradhvastaṁ phalati puruṣārādhanam-ṛte |\natas-tvāṁ samprekṣya kratuṣu phala-dāna-pratibhuvaṁ\nśrutau śraddhāṁ badhvā dṛḍha-parikaraḥ karmasu janaḥ ||',
+      meaning:
+        'When rituals are completed, You alone remain awake to grant their fruit. Without the worship of the Supreme Being, how can mere action bear fruit? Knowing You as the guarantor of the fruits of sacrifice, people bind their faith in the Vedas and undertake rituals with determination.',
+    },
   ],
 };
 
