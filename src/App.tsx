@@ -45,7 +45,7 @@ export default function App() {
       <BrowserRouter>
         <ScrollToTop />
         <MandalaBackground />
-        <div className="relative z-10">
+        <div className="relative z-10 max-w-lg mx-auto min-h-screen" style={{ boxShadow: 'var(--app-shell-shadow, none)', backgroundColor: 'var(--color-bg)' }}>
           <Routes>
             <Route path="/" element={<HomeScreen />} />
             <Route path="/stotra/:stotraId" element={<StotraDetail />} />
