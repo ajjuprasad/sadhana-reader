@@ -276,7 +276,7 @@ export default function HomeScreen() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder={t('home.searchPlaceholder')}
-              className="w-full pl-10 py-2.5 rounded-xl font-body outline-none transition-shadow duration-200"
+              className="w-full pl-10 py-2.5 rounded-xl font-hind outline-none transition-shadow duration-200"
               style={{
                 fontSize: '16px',
                 paddingRight: isStuck ? '70px' : '36px',
