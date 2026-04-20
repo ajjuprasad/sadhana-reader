@@ -250,7 +250,9 @@ export default function CalendarPage() {
 
         {/* Category filters */}
         <div className="flex flex-wrap gap-1.5 mt-3 mb-4 justify-center">
-          {(Object.keys(CATEGORY_CONFIG) as EventCategory[]).map((cat) => {
+          {(Object.keys(CATEGORY_CONFIG) as EventCategory[]).filter(
+            (cat) => calendarEvents2026.some((e) => e.category === cat),
+          ).map((cat) => {
             const cfg = CATEGORY_CONFIG[cat];
             const isActive = selectedCategories.has(cat);
             return (
