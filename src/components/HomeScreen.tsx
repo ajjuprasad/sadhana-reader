@@ -105,6 +105,8 @@ export default function HomeScreen() {
   const [appBarHeight, setAppBarHeight] = useState(44);
   const [isStuck, setIsStuck] = useState(false);
   const [chipsExpanded, setChipsExpanded] = useState(false);
+  const [searchFocused, setSearchFocused] = useState(false);
+  const dockScrollY = useRef(0);
 
   useEffect(() => {
     const bar = appBarRef.current;
@@ -124,6 +126,17 @@ export default function HomeScreen() {
     observer.observe(el);
     return () => observer.disconnect();
   }, [appBarHeight]);
+
+  useEffect(() => {
+    if (!searchFocused) return;
+    const handleScroll = () => {
+      if (window.scrollY < dockScrollY.current) {
+        window.scrollTo(0, dockScrollY.current);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [searchFocused]);
 
   const filteredStotras = useMemo(() => {
     const q = searchQuery.toLowerCase();
@@ -164,7 +177,7 @@ export default function HomeScreen() {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="flex items-center gap-1.5 transition-opacity duration-300"
-          style={{ opacity: headerHidden ? 1 : 0, pointerEvents: headerHidden ? 'auto' : 'none' }}
+          style={{ opacity: (headerHidden || searchFocused) ? 1 : 0, pointerEvents: (headerHidden || searchFocused) ? 'auto' : 'none' }}
         >
           <span
             className="text-xl select-none"
@@ -295,21 +308,22 @@ export default function HomeScreen() {
               onFocus={(e) => {
                 e.currentTarget.style.borderColor = 'var(--color-accent-primary)';
                 e.currentTarget.style.boxShadow = 'inset 0 0 0 1px var(--color-accent-primary)';
-                if (!isStuck) {
-                  setTimeout(() => {
-                    const sentinel = searchSentinelRef.current;
-                    const bar = appBarRef.current;
-                    if (sentinel && bar) {
-                      const barH = bar.getBoundingClientRect().height;
-                      const top = sentinel.getBoundingClientRect().top + window.scrollY - barH;
-                      window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
-                    }
-                  }, 100);
+                const sentinel = searchSentinelRef.current;
+                const bar = appBarRef.current;
+                if (sentinel && bar) {
+                  const barH = bar.getBoundingClientRect().height;
+                  const dockY = Math.max(0, sentinel.getBoundingClientRect().top + window.scrollY - barH);
+                  dockScrollY.current = dockY;
+                  if (!isStuck) {
+                    window.scrollTo({ top: dockY, behavior: 'smooth' });
+                  }
                 }
+                setSearchFocused(true);
               }}
               onBlur={(e) => {
                 e.currentTarget.style.borderColor = 'transparent';
                 e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.04)';
+                setSearchFocused(false);
               }}
             />
             <div className="absolute right-2.5 top-1/2 -translate-y-1/2 flex items-center gap-1">
