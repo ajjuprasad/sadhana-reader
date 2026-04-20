@@ -1,7 +1,7 @@
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useMemo, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { stotras, comingSoonStotras } from '../data/stotras';
 import StotraCard from './StotraCard';
 import ComingSoonCard from './ComingSoonCard';
@@ -91,6 +91,25 @@ export default function HomeScreen() {
   const { user } = useAuth();
   const { favoriteIds } = useFavorites();
   const favoriteStotras = user ? stotras.filter((s) => favoriteIds.includes(s.id)) : [];
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedDeity, setSelectedDeity] = useState<string | null>(null);
+
+  const deities = useMemo(
+    () => Array.from(new Set(stotras.map((s) => s.deity))).sort(),
+    [],
+  );
+
+  const isFiltering = searchQuery.length > 0 || selectedDeity !== null;
+
+  const filteredStotras = useMemo(() => {
+    const q = searchQuery.toLowerCase();
+    return stotras.filter((s) => {
+      if (selectedDeity && s.deity !== selectedDeity) return false;
+      if (q && !s.title.toLowerCase().includes(q) && !s.deity.toLowerCase().includes(q) && !s.description.toLowerCase().includes(q)) return false;
+      return true;
+    });
+  }, [searchQuery, selectedDeity]);
+
   const headerRef = useRef<HTMLDivElement>(null);
   const [headerHidden, setHeaderHidden] = useState(false);
 
@@ -201,8 +220,93 @@ export default function HomeScreen() {
         </p>
       </motion.header>
 
-      {/* Favorites */}
-      {favoriteStotras.length > 0 && (
+      {/* Search & Filter */}
+      <div className="max-w-3xl mx-auto mb-8 sm:mb-10">
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2, ease: sacredEase as unknown as number[] }}
+        >
+          {/* Search bar */}
+          <div className="relative mb-3">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none"
+              style={{ color: 'var(--color-text-muted)' }}
+            >
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder={t('home.searchPlaceholder')}
+              className="w-full pl-10 pr-9 py-2.5 rounded-xl font-body text-sm outline-none transition-shadow duration-200"
+              style={{
+                backgroundColor: 'var(--color-bg-card)',
+                color: 'var(--color-text-primary)',
+                border: '1px solid transparent',
+                boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
+              }}
+              onFocus={(e) => { e.currentTarget.style.borderColor = 'var(--color-accent-primary)'; e.currentTarget.style.boxShadow = '0 0 0 2px rgba(255,153,51,0.15)'; }}
+              onBlur={(e) => { e.currentTarget.style.borderColor = 'transparent'; e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.04)'; }}
+            />
+            {searchQuery && (
+              <button
+                onClick={() => setSearchQuery('')}
+                className="absolute right-3 top-1/2 -translate-y-1/2 p-0.5 rounded-full hover:opacity-70"
+                style={{ color: 'var(--color-text-muted)' }}
+                aria-label="Clear search"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </button>
+            )}
+          </div>
+
+          {/* Deity filter chips */}
+          <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hide">
+            <button
+              onClick={() => setSelectedDeity(null)}
+              className="flex-shrink-0 font-hind font-medium text-xs px-3.5 py-1.5 rounded-full transition-all duration-200"
+              style={{
+                backgroundColor: selectedDeity === null ? 'var(--color-accent-primary)' : 'var(--color-bg-card)',
+                color: selectedDeity === null ? '#fff' : 'var(--color-text-secondary)',
+                border: selectedDeity === null ? '1px solid transparent' : '1px solid rgba(0,0,0,0.06)',
+              }}
+            >
+              {t('home.allDeities')}
+            </button>
+            {deities.map((deity) => (
+              <button
+                key={deity}
+                onClick={() => setSelectedDeity(selectedDeity === deity ? null : deity)}
+                className="flex-shrink-0 font-hind font-medium text-xs px-3.5 py-1.5 rounded-full transition-all duration-200"
+                style={{
+                  backgroundColor: selectedDeity === deity ? 'var(--color-accent-primary)' : 'var(--color-bg-card)',
+                  color: selectedDeity === deity ? '#fff' : 'var(--color-text-secondary)',
+                  border: selectedDeity === deity ? '1px solid transparent' : '1px solid rgba(0,0,0,0.06)',
+                }}
+              >
+                {deity}
+              </button>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Favorites — hidden when filtering */}
+      {!isFiltering && favoriteStotras.length > 0 && (
         <section className="max-w-3xl mx-auto mb-12 sm:mb-16">
           <motion.div
             className="flex items-center justify-center gap-2 mb-5 sm:mb-6"
@@ -244,48 +348,91 @@ export default function HomeScreen() {
         </section>
       )}
 
-      {/* All Stotras */}
+      {/* Stotras — filtered or all */}
       <section className="max-w-3xl mx-auto">
-        <motion.div
-          className="flex items-center justify-center gap-2 mb-5 sm:mb-6"
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-50px' }}
-          transition={{ duration: 0.5, ease: sacredEase as unknown as number[] }}
-        >
-          <div
-            className="h-px w-12"
-            style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
-          />
-          <h2
-            className="font-hind font-semibold uppercase"
-            style={{
-              fontSize: '0.625rem',
-              color: 'var(--color-accent-primary)',
-              letterSpacing: '0.18em',
-            }}
+        {!isFiltering && (
+          <motion.div
+            className="flex items-center justify-center gap-2 mb-5 sm:mb-6"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-50px' }}
+            transition={{ duration: 0.5, ease: sacredEase as unknown as number[] }}
           >
-            {t('home.allStotras')} ({stotras.length})
-          </h2>
-          <div
-            className="h-px w-12"
-            style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
-          />
-        </motion.div>
+            <div
+              className="h-px w-12"
+              style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
+            />
+            <h2
+              className="font-hind font-semibold uppercase"
+              style={{
+                fontSize: '0.625rem',
+                color: 'var(--color-accent-primary)',
+                letterSpacing: '0.18em',
+              }}
+            >
+              {t('home.allStotras')} ({stotras.length})
+            </h2>
+            <div
+              className="h-px w-12"
+              style={{ backgroundColor: 'var(--color-accent-primary)', opacity: 0.3 }}
+            />
+          </motion.div>
+        )}
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5">
-        {stotras.map((stotra, index) => (
-          <StotraCard
-            key={stotra.id}
-            stotra={stotra}
-            index={index}
-            onClick={() => navigate(`/stotra/${stotra.id}`)}
-          />
-        ))}
-      </div>
+        <AnimatePresence mode="wait">
+          {filteredStotras.length > 0 ? (
+            <motion.div
+              key={`grid-${selectedDeity}-${searchQuery}`}
+              className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-5"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+            >
+              {filteredStotras.map((stotra, index) => (
+                <StotraCard
+                  key={stotra.id}
+                  stotra={stotra}
+                  index={index}
+                  onClick={() => navigate(`/stotra/${stotra.id}`)}
+                />
+              ))}
+            </motion.div>
+          ) : (
+            <motion.div
+              key="empty"
+              className="text-center py-16"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div
+                className="text-4xl mb-3 select-none"
+                style={{ color: 'var(--color-accent-primary)', opacity: 0.4 }}
+                aria-hidden="true"
+              >
+                ॐ
+              </div>
+              <p
+                className="font-display font-semibold text-base mb-1"
+                style={{ color: 'var(--color-text-primary)' }}
+              >
+                {t('home.noResults')}
+              </p>
+              <p
+                className="font-body text-sm"
+                style={{ color: 'var(--color-text-muted)' }}
+              >
+                {t('home.noResultsHint')}
+              </p>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </section>
 
-      {/* Recently added */}
+      {/* Recently added — hidden when filtering */}
+      {!isFiltering && (
       <section className="max-w-3xl mx-auto mt-12 sm:mt-16">
         <motion.div
           className="flex items-center justify-center gap-2 mb-5 sm:mb-6"
@@ -316,9 +463,10 @@ export default function HomeScreen() {
 
         <RecentList navigate={navigate} />
       </section>
+      )}
 
-      {/* Coming soon */}
-      {comingSoonStotras.length > 0 && (
+      {/* Coming soon — hidden when filtering */}
+      {!isFiltering && comingSoonStotras.length > 0 && (
         <section className="max-w-3xl mx-auto mt-12 sm:mt-16">
           <motion.div
             className="flex items-center justify-center gap-2 mb-5 sm:mb-6"
