@@ -7315,8 +7315,108 @@ export interface ComingSoonStotra {
 
 export const comingSoonStotras: ComingSoonStotra[] = [
   {
+    id: 'bhavani-ashtakam',
+    title: 'Bhavani Ashtakam',
+    deity: 'Parvati',
+  },
+  {
+    id: 'durga-kavacham',
+    title: 'Durga Kavacham',
+    deity: 'Durga',
+  },
+  {
+    id: 'durga-suktam',
+    title: 'Durga Suktam',
+    deity: 'Durga',
+  },
+  {
+    id: 'ganga-stotram',
+    title: 'Ganga Stotram',
+    deity: 'Ganga',
+  },
+  {
+    id: 'hanuman-bahuk',
+    title: 'Hanuman Bahuk',
+    deity: 'Hanuman',
+  },
+  {
+    id: 'kamakshi-stotram',
+    title: 'Kamakshi Stotram',
+    deity: 'Kamakshi',
+  },
+  {
+    id: 'krishnashtakam',
+    title: 'Krishnashtakam',
+    deity: 'Krishna',
+  },
+  {
     id: 'lalitha-sahasranamam',
     title: 'Lalitha Sahasranamam',
     deity: 'Lalita Tripurasundari',
+  },
+  {
+    id: 'maha-mrityunjaya-stotram',
+    title: 'Maha Mrityunjaya Stotram',
+    deity: 'Shiva',
+  },
+  {
+    id: 'margabandhu-stotram',
+    title: 'Margabandhu Stotram',
+    deity: 'Shiva',
+  },
+  {
+    id: 'meenakshi-pancharatnam',
+    title: 'Meenakshi Pancharatnam',
+    deity: 'Meenakshi',
+  },
+  {
+    id: 'navagraha-stotram',
+    title: 'Navagraha Stotram',
+    deity: 'Navagraha',
+  },
+  {
+    id: 'purusha-suktam',
+    title: 'Purusha Suktam',
+    deity: 'Vishnu',
+  },
+  {
+    id: 'rajarajeshwari-ashtakam',
+    title: 'Rajarajeshwari Ashtakam',
+    deity: 'Rajarajeshwari',
+  },
+  {
+    id: 'ram-ashtakam',
+    title: 'Ram Ashtakam',
+    deity: 'Rama',
+  },
+  {
+    id: 'shiva-aparadha-kshamapana-stotram',
+    title: 'Shiva Aparadha Kshamapana Stotram',
+    deity: 'Shiva',
+  },
+  {
+    id: 'shri-rudram-chamakam',
+    title: 'Shri Rudram (Chamakam)',
+    deity: 'Shiva',
+  },
+  {
+    id: 'shyamala-dandakam',
+    title: 'Shyamala Dandakam',
+    deity: 'Matangi',
+  },
+  {
+    id: 'sri-suktam',
+    title: 'Sri Suktam',
+    deity: 'Lakshmi',
+  },
+  {
+    id: 'totakashtakam',
+    title: 'Totakashtakam',
+    deity: 'Shankaracharya',
+  },
+  {
+    id: 'vaidyanatha-ashtakam',
+    title: 'Vaidyanatha Ashtakam',
+    deity: 'Shiva',
   },
 ];
