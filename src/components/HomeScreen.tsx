@@ -106,7 +106,7 @@ export default function HomeScreen() {
   const [isStuck, setIsStuck] = useState(false);
   const [chipsExpanded, setChipsExpanded] = useState(false);
   const [searchFocused, setSearchFocused] = useState(false);
-  const dockScrollY = useRef(0);
+  const searchContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const bar = appBarRef.current;
@@ -126,17 +126,6 @@ export default function HomeScreen() {
     observer.observe(el);
     return () => observer.disconnect();
   }, [appBarHeight]);
-
-  useEffect(() => {
-    if (!searchFocused) return;
-    const handleScroll = () => {
-      if (window.scrollY < dockScrollY.current) {
-        window.scrollTo(0, dockScrollY.current);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [searchFocused]);
 
   const filteredStotras = useMemo(() => {
     const q = searchQuery.toLowerCase();
@@ -263,9 +252,11 @@ export default function HomeScreen() {
 
       {/* Search & Filter — sticks below app bar on scroll */}
       <div
+        ref={searchContainerRef}
         className="sticky z-20 -mx-4 transition-shadow duration-200"
         style={{
           top: `${appBarHeight}px`,
+          scrollMarginTop: `${appBarHeight}px`,
           backgroundColor: 'var(--color-bg)',
           boxShadow: isStuck ? '0 2px 8px rgba(0,0,0,0.06)' : 'none',
           paddingTop: isStuck ? '8px' : '0',
@@ -308,17 +299,10 @@ export default function HomeScreen() {
               onFocus={(e) => {
                 e.currentTarget.style.borderColor = 'var(--color-accent-primary)';
                 e.currentTarget.style.boxShadow = 'inset 0 0 0 1px var(--color-accent-primary)';
-                const sentinel = searchSentinelRef.current;
-                const bar = appBarRef.current;
-                if (sentinel && bar) {
-                  const barH = bar.getBoundingClientRect().height;
-                  const dockY = Math.max(0, sentinel.getBoundingClientRect().top + window.scrollY - barH);
-                  dockScrollY.current = dockY;
-                  if (!isStuck) {
-                    window.scrollTo({ top: dockY, behavior: 'smooth' });
-                  }
-                }
                 setSearchFocused(true);
+                if (!isStuck) {
+                  searchContainerRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
               }}
               onBlur={(e) => {
                 e.currentTarget.style.borderColor = 'transparent';
