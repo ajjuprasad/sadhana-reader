@@ -6580,6 +6580,74 @@ const shivaMahimnaStotram: Stotra = {
   ],
 };
 
+const shriRudramNamakam: Stotra = {
+  id: 'shri-rudram-namakam',
+  title: 'Shri Rudram (Namakam)',
+  subtitle: 'श्रीरुद्रप्रश्नः — नमकम्',
+  deity: 'Shiva',
+  description:
+    'The Namakam is the first part of the Sri Rudram from the Krishna Yajurveda (Taittiriya Samhita 4.5-4.7). Consisting of 11 anuvakas, it is the most ancient and sacred Vedic hymn to Lord Rudra, offering salutations (namas) to His countless forms and aspects throughout creation.',
+  benefits: [
+    'Purifies body, mind, and environment through sacred Vedic vibrations',
+    'Bestows protection, prosperity, and universal harmony',
+    'Grants longevity, destroys sins, and leads to spiritual liberation',
+  ],
+  estimatedMinutes: 20,
+  icon: 'shri-rudram-namakam',
+  verses: [
+    {
+      id: 1,
+      verseLabel: 'Anuvaka 1.1',
+      sanskrit:
+        'ॐ नमो भगवते रुद्राय ।\nनमस्ते रुद्र मन्यव उतोत इषवे नमः ।\nनमस्ते अस्तु धन्वने बाहुभ्यामुत ते नमः ॥',
+      transliteration:
+        'oṁ namo bhagavate rudrāya |\nnamaste rudra manyava utota iṣave namaḥ |\nnamaste astu dhanvane bāhubhyām-uta te namaḥ ||',
+      meaning:
+        'Om, salutations to Lord Rudra. Salutations to Your wrath and to Your arrows. Salutations to Your bow and to Your mighty arms.',
+    },
+    {
+      id: 2,
+      verseLabel: 'Anuvaka 1.2',
+      sanskrit:
+        'या ते रुद्र शिवा तनूरघोराऽपापकाशिनी ।\nतया नस्तनुवा शन्तमया गिरिशन्ताभिचाकशीहि ॥',
+      transliteration:
+        'yā te rudra śivā tanūr-aghorā \'pāpakāśinī |\ntayā nas-tanuvā śantamayā giriśantābhicākaśīhi ||',
+      meaning:
+        'O Rudra, that form of Yours which is auspicious, not terrible, and which reveals no sin — with that most peaceful form, O dweller of mountains, reveal Yourself to us.',
+    },
+    {
+      id: 3,
+      verseLabel: 'Anuvaka 1.3',
+      sanskrit:
+        'यामिषुं गिरिशन्त हस्ते बिभर्ष्यस्तवे ।\nशिवां गिरित्र तां कुरु मा हिंसीः पुरुषं जगत् ॥',
+      transliteration:
+        'yām-iṣuṁ giriśanta haste bibharṣy-astave |\nśivāṁ giritra tāṁ kuru mā hiṁsīḥ puruṣaṁ jagat ||',
+      meaning:
+        'O dweller of mountains, that arrow which You hold in Your hand to shoot — make it auspicious, O protector of the mountains. Do not harm any person or any being.',
+    },
+    {
+      id: 4,
+      verseLabel: 'Anuvaka 1.4',
+      sanskrit:
+        'शिवेन वचसा त्वा गिरिशाच्छा वदामसि ।\nयथा नः सर्वमिज्जगदयक्ष्मं सुमना असत् ॥',
+      transliteration:
+        'śivena vacasā tvā giriśācchā vadāmasi |\nyathā naḥ sarvam-ij-jagad-ayakṣmaṁ sumanā asat ||',
+      meaning:
+        'O dweller of mountains, we address You with auspicious words, so that the whole world may be free from disease and well-disposed toward us.',
+    },
+    {
+      id: 5,
+      verseLabel: 'Anuvaka 2.1',
+      sanskrit:
+        'नमो हिरण्यबाहवे सेनान्ये दिशां च पतये नमो नमो\nवृक्षेभ्यो हरिकेशेभ्यः पशूनां पतये नमो नमः ॥',
+      transliteration:
+        'namo hiraṇya-bāhave senānye diśāṁ ca pataye namo namo\nvṛkṣebhyo harikeśebhyaḥ paśūnāṁ pataye namo namaḥ ||',
+      meaning:
+        'Salutations to the golden-armed one, the leader of hosts, the lord of the directions. Salutations to the trees with green foliage, to the lord of all creatures.',
+    },
+  ],
+};
+
 const dakshinamurthyStotram: Stotra = {
   id: 'dakshinamurthy-stotram',
   title: 'Dakshinamurthy Stotram',
@@ -6728,6 +6796,7 @@ export const stotras: Stotra[] = [
   saraswatiStotram,
   shivaMahimnaStotram,
   shivaPanchakshara,
+  shriRudramNamakam,
   shivaTandavaStotram,
   shivaAshtottara,
   siddhaKunjikaStotram,
@@ -6749,10 +6818,5 @@ export const comingSoonStotras: ComingSoonStotra[] = [
     id: 'lalitha-sahasranamam',
     title: 'Lalitha Sahasranamam',
     deity: 'Lalita Tripurasundari',
-  },
-  {
-    id: 'shri-rudram-namakam',
-    title: 'Shri Rudram (Namakam)',
-    deity: 'Shiva',
   },
 ];

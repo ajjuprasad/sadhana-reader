@@ -70,6 +70,7 @@ export default function StotraIcon({ stotraId }: { stotraId: string }) {
       );
 
     case 'lingashtakam':
+    case 'shri-rudram-namakam':
       // Shiva Lingam on yoni base
       return (
         <>
