@@ -7045,6 +7045,56 @@ const shriRudramNamakam: Stotra = {
       meaning:
         'Salutations to the one in the young grass and in the foam. Salutations to the one in the sand and in the flowing stream.',
     },
+    {
+      id: 46,
+      verseLabel: 'Anuvaka 10.1',
+      sanskrit:
+        'नमो इरिण्याय च प्रपथ्याय च\nनमः किंशिलाय च क्षयणाय च\nनमः कपर्दिने च पुलस्तये च',
+      transliteration:
+        'namo iriṇyāya ca prapathyāya ca\nnamaḥ kiṁśilāya ca kṣayaṇāya ca\nnamaḥ kapardine ca pulastaye ca',
+      meaning:
+        'Salutations to the one in the barren lands and on the highways. Salutations to the one in the gravel and in the dwelling. Salutations to the matted-haired one and to the sage Pulastya.',
+    },
+    {
+      id: 47,
+      verseLabel: 'Anuvaka 10.2',
+      sanskrit:
+        'नमो गोष्ठ्याय च गृह्याय च\nनमस्तल्प्याय च गेह्याय च\nनमः काट्याय च गह्वरेष्ठाय च',
+      transliteration:
+        'namo goṣṭhyāya ca gṛhyāya ca\nnamastalplyāya ca gehyāya ca\nnamaḥ kāṭyāya ca gahvareṣṭhāya ca',
+      meaning:
+        'Salutations to the one in the cowshed and in the house. Salutations to the one on the couch and in the home. Salutations to the one in the thorny bushes and in the deep caverns.',
+    },
+    {
+      id: 48,
+      verseLabel: 'Anuvaka 10.3',
+      sanskrit:
+        'नमो हृदय्याय च निवेष्प्याय च\nनमः पांसव्याय च रजस्याय च\nनमः शुष्क्याय च हरित्याय च',
+      transliteration:
+        'namo hṛdayyāya ca niveṣpyāya ca\nnamaḥ pāṁsavyāya ca rajasyāya ca\nnamaḥ śuṣkyāya ca harityāya ca',
+      meaning:
+        'Salutations to the one in the lake and in the moisture. Salutations to the one in the dust and in the mist. Salutations to the one in the dry and in the green.',
+    },
+    {
+      id: 49,
+      verseLabel: 'Anuvaka 11.2',
+      sanskrit:
+        'असौ योऽवसर्पति नीलग्रीवो विलोहितः ।\nउतैनं गोपा अदृशन्नदृशन्नुदहार्यः ।\nउतैनं विश्वा भूतानि स दृष्टो मृडयाति नः ॥',
+      transliteration:
+        'asau yo \'vasarpati nīlagrīvo vilohitaḥ |\nutainaṁ gopā adṛśann-adṛśann-udahāryaḥ |\nutainaṁ viśvā bhūtāni sa dṛṣṭo mṛḍayāti naḥ ||',
+      meaning:
+        'He who glides across the sky, blue-necked and red-bodied — the cowherds have seen Him, the water-bearers have seen Him, and all beings see Him. Having been seen, may He be gracious to us.',
+    },
+    {
+      id: 50,
+      verseLabel: 'Anuvaka 11.3',
+      sanskrit:
+        'नमो अस्तु नीलग्रीवाय सहस्राक्षाय मीढुषे ।\nअथो ये अस्य सत्वानोऽहं तेभ्योऽकरं नमः ॥\nप्रमुञ्च धन्वनस्त्वमुभयोरार्त्नियोर्ज्याम् ।\nयाश्च ते हस्त इषवः परा ता भगवो वप ॥',
+      transliteration:
+        'namo astu nīlagrīvāya sahasrākṣāya mīḍhuṣe |\natho ye asya satvāno \'haṁ tebhyo \'karaṁ namaḥ ||\npramuñca dhanvanas-tvam-ubhayor-ārtniyur-jyām |\nyāś-ca te hasta iṣavaḥ parā tā bhagavo vapa ||',
+      meaning:
+        'Salutations to the blue-necked, thousand-eyed, bountiful one. To His attendants I offer my salutations. Unstring Your bow from both ends; and the arrows in Your hand, O blessed one, cast them away.',
+    },
   ],
 };
 
