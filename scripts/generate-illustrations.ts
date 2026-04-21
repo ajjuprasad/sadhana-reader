@@ -16,7 +16,10 @@ if (!API_KEY) {
   process.exit(1);
 }
 
-const MODELS_TO_TRY = (process.env.GEMINI_MODEL || 'gemini-2.0-flash-preview-image-generation,gemini-2.5-flash-image').split(',').map(s => s.trim());
+const MODELS_TO_TRY = (
+  process.env.GEMINI_MODEL ||
+  'gemini-2.0-flash-preview-image-generation,gemini-2.5-flash-image'
+).split(',').map(s => s.trim());
 
 function apiUrl(model: string) {
   return `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${API_KEY}`;
@@ -27,84 +30,79 @@ interface ScenePrompt {
   prompt: string;
 }
 
-const ISKCON_STYLE = [
-  'ISKCON BBT devotional painting style.',
-  'Rich, luminous, realistic painting with divine golden atmosphere.',
-  'Vivid saturated colors with warm golden divine light and soft celestial glow.',
-  'Highly detailed, inspired by Bhaktivedanta Book Trust illustrations.',
-  'No text, words, numbers, or letters anywhere in the image.',
-  'Square composition, centered subject.',
+// ─── Master Style Block (appended to every prompt) ───
+const STYLE = [
+  'In the style of Bhaktivedanta Book Trust (BBT) classical realism.',
+  'Luminous, transcendental oil painting with soft Renaissance-style chiaroscuro lighting.',
+  'Vibrant, saturated colors: deep ultramarine, saffron, and emerald.',
+  'Characters have idealized, serene features and soft skin textures.',
+  'Extremely ornate, highly detailed gold jewelry and flowing, translucent silk garments with intricate gold borders.',
+  'The atmosphere is ethereal, divine, and immersive.',
+  'No text, words, numbers, letters, or watermarks anywhere in the image.',
+  'Square composition.',
 ].join(' ');
 
-const BAL_KRISHNA = [
-  'Baby Lord Krishna as a divine chubby toddler with beautiful blue-tinted skin,',
-  'large lotus-shaped eyes full of mischief and divine love,',
-  'curly black hair adorned with a single peacock feather,',
-  'wearing a small yellow silk dhoti (pitambara),',
-  'gold anklets with tiny bells, gold bracelets, and a gold waist chain,',
-  'a subtle divine golden aura radiating around him.',
-].join(' ');
+// ─── Character Identity Specs (25-word anchors, used verbatim every time) ───
+const KRISHNA =
+  'Baby Lord Krishna: deep blue-black skin, peacock feather crown in curly black hair, yellow silk dhoti, large lotus almond eyes, mischievous divine smile, gold anklets bracelets waist-chain, celestial golden aura.';
 
-const YASHODA = [
-  'Mother Yashoda, a beautiful Indian woman with warm brown complexion,',
-  'wearing a rich saffron-orange silk sari with gold border,',
-  'gold jewelry including earrings and bangles,',
-  'dark hair in a bun decorated with jasmine flowers,',
-  'loving maternal expression.',
-].join(' ');
+const YASHODA =
+  'Mother Yashoda: warm brown complexion, ornate saffron silk sari with gold border, gold nose ring earrings bangles, jasmine flowers in dark hair bun, loving maternal gaze.';
 
-const FRUIT_SELLER = [
-  'A kind middle-aged Indian woman fruit seller with warm brown complexion,',
-  'wearing a simple white cotton sari with a red border,',
-  'hair tied back in a bun,',
-  'large wicker basket of colorful fruits,',
-  'gentle motherly expression, barefoot.',
-].join(' ');
+const FRUIT_SELLER =
+  'The Fruit Seller: middle-aged Indian woman, simple white cotton sari with red border, warm brown skin, kind weathered face, large wicker fruit basket on head, barefoot, gentle smile.';
 
+// ─── Story Scene Prompts ───
 const STORIES: Record<string, ScenePrompt[]> = {
   'krishna-and-fruit-seller': [
     {
+      filename: 'scene-0-title.png',
+      prompt: `${KRISHNA} ${FRUIT_SELLER} A majestic title composition. Baby Krishna stands in a sunlit Vrindavan marketplace, one tiny blue-black hand reaching up toward a ripe golden mango held by the kneeling fruit seller. Their eyes meet — his full of divine mischief, hers full of tender love. Behind them, the ancient village of Vrindavan glows in golden morning light: sandstone temples with ornate spires, sacred Tulsi plants, a glimpse of the Yamuna river, peacocks perched on rooftops. Scattered rose petals on the ground. A single beam of divine golden light falls on Krishna from above. ${STYLE}`,
+    },
+    {
       filename: 'scene-1.png',
-      prompt: `${ISKCON_STYLE} ${FRUIT_SELLER} She walks gracefully through a beautiful morning street in the ancient village of Vrindavan, carrying a large basket of colorful ripe fruits balanced on her head. The street has simple clay houses with tulsi plants, lush green trees, cows resting nearby. Warm golden morning sunlight bathes the scene. She calls out to sell her fruits. A serene Vrindavan village atmosphere.`,
+      prompt: `${FRUIT_SELLER} She walks gracefully through a beautiful morning street in the ancient village of Vrindavan, a large wicker basket of colorful ripe fruits balanced perfectly on her head — golden mangoes, yellow bananas, red berries, green guavas. She calls out warmly. The lane has clay and sandstone houses with carved wooden doors, Tulsi plants in courtyards, cows resting under banyan trees, morning dew on flowers. Warm golden sunlight streams through the scene, casting long soft shadows. A serene, inviting Vrindavan morning. ${STYLE}`,
     },
     {
       filename: 'scene-2.png',
-      prompt: `${ISKCON_STYLE} ${BAL_KRISHNA} He tugs excitedly at the sari of ${YASHODA} They are inside their home in Vrindavan. Little Krishna points eagerly toward the door, having heard the fruit seller's voice outside. Yashoda looks down at him with an amused, loving smile. Warm interior with earthen walls, oil lamps, and saffron-gold light. Traditional Vrindavan home setting.`,
+      prompt: `${KRISHNA} ${YASHODA} Inside their home in Vrindavan. Little Krishna tugs excitedly at the edge of Yashoda's saffron sari, pointing eagerly toward the open doorway with his other tiny blue-black hand. His lotus eyes are wide with desire, hearing the fruit seller's distant call from outside. Yashoda looks down at him with an amused, tender smile. The interior has warm earthen walls, brass oil lamps flickering, copper pots, a butter churn, flower garlands on the threshold. Soft saffron-gold light from the doorway. ${STYLE}`,
     },
     {
       filename: 'scene-3.png',
-      prompt: `${ISKCON_STYLE} ${YASHODA} She kneels lovingly and places a handful of rice grains into the tiny cupped hands of ${BAL_KRISHNA} He looks up at her with big eager lotus eyes, excited to go trade for fruits. A warm indoor scene in their Vrindavan home with earthen walls, brass pots, and soft golden light from a window.`,
+      prompt: `${YASHODA} ${KRISHNA} Yashoda kneels lovingly on the floor and carefully places a handful of white rice grains into the tiny cupped blue-black hands of baby Krishna. His large lotus eyes look up at her with eager anticipation, barely able to contain his excitement. A clay rice pot sits nearby. The warm interior of their Vrindavan home: earthen walls, a window with golden light streaming in, brass vessels, a garland of marigolds above the door. An intimate, tender moment between mother and child. ${STYLE}`,
     },
     {
       filename: 'scene-4.png',
-      prompt: `${ISKCON_STYLE} ${BAL_KRISHNA} He runs eagerly through a sunny lane of Vrindavan toward the fruit seller in the distance. His tiny hands are almost open and rice grains are spilling and falling through his small fingers as he runs. His gold anklet bells jingle. Sunlight streams through the scene. Vrindavan village lane with clay houses and greenery. A joyful, playful moment.`,
+      prompt: `${KRISHNA} He runs eagerly out through the sunlit lane of Vrindavan, his tiny blue-black feet pattering on the dusty path, gold anklet bells jingling. His small cupped hands are coming apart and white rice grains are visibly spilling and scattering through his tiny fingers as he runs. His peacock feather bobs in the breeze. He looks ahead with determined, joyful urgency. The Vrindavan lane stretches ahead with clay houses and dappled tree shadows. Warm, dynamic golden light. ${STYLE}`,
     },
     {
       filename: 'scene-5.png',
-      prompt: `${ISKCON_STYLE} ${BAL_KRISHNA} He stands before ${FRUIT_SELLER} looking up at her with his big beautiful divine lotus eyes, an innocent sweet expression. He holds out his small open blue-tinted palm with just a few tiny grains of rice. The fruit seller kneels down to his level and looks at him with a melting warm smile, her heart moved by his innocence. Her basket of ripe mangoes, bananas and berries sits beside her. Warm golden light, Vrindavan village marketplace.`,
+      prompt: `${KRISHNA} ${FRUIT_SELLER} The fruit seller has knelt down to Krishna's level in the Vrindavan marketplace. She gazes at him with her heart visibly melting — eyes glistening, a tender awed smile. Krishna stands before her looking up with his enormous divine lotus eyes, an innocent sweet expression on his blue-black face. He holds out his small open blue-black palm with just three or four tiny white grains of rice. Her basket of ripe mangoes, bananas and berries sits on the ground beside her. Warm golden afternoon light. ${STYLE}`,
     },
     {
       filename: 'scene-6.png',
-      prompt: `${ISKCON_STYLE} ${FRUIT_SELLER} She generously fills the arms of ${BAL_KRISHNA} with the best colorful fruits from her basket: ripe golden mangoes, yellow bananas, and red berries. She has a warm joyful smile, happy to give. Krishna's eyes are wide with delight as he receives the overflowing fruits. Golden divine light radiates from Krishna. A beautiful moment of selfless giving. Vrindavan marketplace setting.`,
+      prompt: `${FRUIT_SELLER} ${KRISHNA} The fruit seller generously and joyfully fills the small arms of baby Krishna with the finest fruits from her basket: plump golden mangoes, ripe yellow bananas, and glistening red berries. She leans forward with a broad, selfless smile. Krishna's divine lotus eyes are wide with pure delight as colorful fruits overflow his tiny blue-black arms. A subtle divine golden radiance emanates from Krishna, bathing the fruit seller in warm light. A sacred moment of selfless giving. Vrindavan marketplace. ${STYLE}`,
     },
     {
       filename: 'scene-7.png',
-      prompt: `${ISKCON_STYLE} ${BAL_KRISHNA} He runs joyfully back through the sunny village lane of Vrindavan, his small arms overflowing with colorful mangoes, bananas, and berries. He is laughing with pure childlike divine delight, his peacock feather bobbing, his anklet bells ringing. Golden sunlight streaming through the scene. Vibrant fruits in warm oranges, yellows and reds. A feeling of pure divine joy and childhood happiness.`,
+      prompt: `${KRISHNA} He runs joyfully back through the sunny Vrindavan village lane toward home, his small blue-black arms overflowing with colorful golden mangoes, yellow bananas, and red berries. He is laughing with pure divine childlike delight, mouth open in joy. His peacock feather bounces, his yellow dhoti flutters, his gold anklet bells ring. Golden sunlight streams dramatically through the trees behind him. The colors are vivid and warm: oranges, yellows, reds, and gold. Pure divine joy radiating from the scene. ${STYLE}`,
     },
     {
       filename: 'scene-8.png',
-      prompt: `${ISKCON_STYLE} ${FRUIT_SELLER} She stands in her simple home, looking down into her wicker basket with an expression of pure wonder, amazement, and tears of joy. The basket overflows with sparkling jewels, rubies, emeralds, gold coins, and precious gemstones where fruits used to be. Brilliant magical warm golden light radiates upward from the basket, illuminating her face with divine radiance. Rich saffron and gold tones throughout. A miracle of divine grace.`,
+      prompt: `${FRUIT_SELLER} She stands in her simple home, both hands on the rim of her wicker basket, looking down into it with an expression of utter astonishment — mouth open, eyes wide, overwhelmed with wonder and tears of joy. The basket overflows with brilliant sparkling jewels: rubies, emeralds, sapphires, diamonds, gold coins, and precious gemstones, where her fruits used to be. Brilliant miraculous golden-white light radiates powerfully upward from the basket of jewels, illuminating her face and the entire room with divine radiance. ${STYLE}`,
     },
     {
       filename: 'scene-9.png',
-      prompt: `${ISKCON_STYLE} ${FRUIT_SELLER} She stands outside at golden hour, looking up at a warm glowing sunset sky with folded hands in prayer and a serene, grateful smile of divine understanding on her face. Soft saffron and gold light fills the entire scene. Vrindavan village in the background with temples. A sense of divine grace, gratitude, and deep spiritual contentment. The sky glows magnificently with warm oranges and golds. Subtle divine light all around.`,
+      prompt: `${FRUIT_SELLER} She stands outside her home at golden hour, hands folded in prayer (namaste), looking up at a magnificent warm sunset sky with a serene, grateful smile of deep spiritual understanding on her face. Tears of gratitude on her cheeks. The sky blazes with divine saffron, gold, amber, and rose. Behind her, the silhouette of Vrindavan temples and the Yamuna river. A subtle celestial glow surrounds her. A feeling of profound divine grace, surrender, and spiritual fulfillment. ${STYLE}`,
     },
     {
       filename: 'scene-10.png',
-      prompt: `${ISKCON_STYLE} A beautiful panoramic view of Vrindavan village at golden sunset. In the center, a gentle divine vision of ${BAL_KRISHNA} playing his small flute, surrounded by a brilliant golden celestial aura, floating above the village like a blessing. Below, the peaceful village with temples, the Yamuna river, cows, and green trees. The entire scene radiates divine love and warmth. A feeling that giving with love brings divine blessings. Luminous, transcendent atmosphere.`,
+      prompt: `${KRISHNA} ${FRUIT_SELLER} A transcendent closing composition. In the foreground, the fruit seller sits peacefully with her empty basket, a serene knowing smile, her face glowing with inner divine light. In the luminous background above, a celestial vision of baby Krishna playing a small flute, seated on a lotus flower, surrounded by a magnificent golden celestial aura and soft divine clouds. The entire scene is bathed in warm golden-rose light. Vrindavan village below with temples along the Yamuna. The message: giving with love brings the greatest blessing. Deeply spiritual and immersive atmosphere. ${STYLE}`,
     },
   ],
 };
+
+// ─── Generation Logic ───
 
 async function fileExists(p: string): Promise<boolean> {
   try {
@@ -147,10 +145,14 @@ async function generateImageWithModel(prompt: string, model: string): Promise<Im
   const parts = data?.candidates?.[0]?.content?.parts;
   if (!parts) throw new Error('No content in response');
 
-  const imagePart = parts.find((p: { inlineData?: { data: string; mimeType?: string } }) => p.inlineData?.data);
+  const imagePart = parts.find(
+    (p: { inlineData?: { data: string; mimeType?: string } }) => p.inlineData?.data
+  );
   if (!imagePart) {
     const textPart = parts.find((p: { text?: string }) => p.text);
-    throw new Error(`No image returned. Model said: ${textPart?.text?.slice(0, 200) || 'nothing'}`);
+    throw new Error(
+      `No image returned. Model said: ${textPart?.text?.slice(0, 200) || 'nothing'}`
+    );
   }
 
   return {
@@ -171,7 +173,9 @@ async function generateImage(prompt: string): Promise<ImageResult> {
 
         if (isRetryable && attempt < MAX_RETRIES) {
           const delay = RETRY_DELAYS[attempt];
-          console.log(`  ${status} error, retrying in ${delay / 1000}s (attempt ${attempt + 1}/${MAX_RETRIES})...`);
+          console.log(
+            `  ${status} error, retrying in ${delay / 1000}s (attempt ${attempt + 1}/${MAX_RETRIES})...`
+          );
           await new Promise((r) => setTimeout(r, delay));
           continue;
         }
@@ -199,7 +203,9 @@ async function main() {
     process.exit(1);
   }
 
-  console.log(`Generating illustrations for ${storyIds.length} stor${storyIds.length === 1 ? 'y' : 'ies'}`);
+  console.log(
+    `Generating illustrations for ${storyIds.length} stor${storyIds.length === 1 ? 'y' : 'ies'}`
+  );
   console.log(`Models: ${MODELS_TO_TRY.join(' → ')}`);
   console.log(`Output: ${OUTPUT_DIR}`);
   console.log('');
