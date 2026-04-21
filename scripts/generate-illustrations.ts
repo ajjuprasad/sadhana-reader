@@ -261,6 +261,64 @@ const STORIES: Record<string, ScenePrompt[]> = {
       },
     ];
   })(),
+
+  'dhruva-and-the-star': (() => {
+    const DHRUVA = 'Prince Dhruva: a very small five-year-old boy with warm brown skin, large determined innocent eyes, simple white dhoti, bare-chested, a single gold chain, short black hair, expression of fierce determination beyond his years.';
+    const SUNITI = 'Queen Suniti: a gentle beautiful Indian woman with warm brown complexion, simple elegant white sari with silver border, minimal jewelry, kind sorrowful doe eyes, long dark hair partly loose, a loving devoted mother.';
+    const SURUCHI = 'Queen Suruchi: a haughty beautiful woman with sharp features, elaborate ornate red silk sari with heavy gold embroidery, heavy gold jewelry and tall jeweled crown, cold arrogant expression, dismissive posture.';
+    const KING = 'King Uttanapada: a middle-aged king with warm brown skin, ornate golden crown, rich blue silk garments, gold jewelry, seated on a grand throne, conflicted guilty expression.';
+    const VISHNU_D = 'Lord Vishnu: magnificent four-armed deity with luminous deep blue skin, serene compassionate smile, golden crown, yellow silk pitambara, Sudarshana chakra conch lotus and mace, standing on a golden lotus, brilliant blinding divine radiance filling the sky.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${DHRUVA} A majestic title composition. Little Dhruva sits in deep meditation in a dark dense forest, cross-legged on a rock. Above him in the night sky, the brilliant Pole Star blazes with extraordinary golden-white light, connected to him by a beam of divine radiance. The forest around him glows with supernatural light. Stars fill the sky. The contrast between the tiny boy and the cosmic star. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${DHRUVA} ${SUNITI} They live in a modest chamber of the royal palace, far from the main halls. Suniti sits on a simple bed, little Dhruva on her lap. Their room is humble but clean, with a single oil lamp. Through a window, the grand main palace glows with lights and festivities they are excluded from. A poignant scene of love amid neglect. Warm intimate lamplight. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${DHRUVA} Little Dhruva runs eagerly with open arms toward the grand golden throne where ${KING} sits with Dhruva's stepbrother on his lap. The throne room is magnificent with tall pillars, rich tapestries. Dhruva's face is full of innocent hope and love. His small bare feet patter on the marble floor. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${SURUCHI} She stands blocking little ${DHRUVA} with one hand raised, looking down at him with cold disdain and a cruel smirk. Dhruva looks up at her, small and hurt, his eyes filling with pain. ${KING} watches from the throne behind, looking away with guilt. The grand palace throne room with towering golden pillars. Harsh contrasting light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${DHRUVA} ${SUNITI} Dhruva runs to his mother crying, burying his face in her lap. Suniti embraces him tightly, her own eyes glistening with tears, stroking his hair. She speaks to him gently, pointing upward toward the sky through their window where stars are visible. Their humble chamber, warm lamplight, a deeply emotional intimate scene of a mother comforting her child. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${DHRUVA} The tiny five-year-old boy walks alone into a deep dark forest. He looks back one last time at the palace on the distant hill, then faces forward into the towering ancient trees with determination. His small figure is dwarfed by the massive forest. Moonlight filters through the canopy. A brave, powerful moment — a tiny child choosing an impossible path. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${DHRUVA} He sits cross-legged on a flat rock in the deep forest, eyes closed, hands folded, deep in intense meditation. Time passes: vines have grown around the rock, his hair has grown longer, leaves have piled around him. Animals — deer, rabbits, birds — sit peacefully around him, drawn to his spiritual power. Ethereal golden light emanates from him. Ancient forest, shafts of light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `A cosmic scene: the earth trembles and shakes from the immense spiritual power of ${DHRUVA}'s meditation. Celestial gods in golden chariots peer down through parting clouds, astonished. Waves of golden spiritual energy pulse outward from the tiny boy meditating in the forest below. The sky cracks with divine light. The gods exchange amazed glances. Dramatic supernatural scene. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${VISHNU_D} He appears in magnificent glory before ${DHRUVA} in the forest. The entire forest is bathed in blinding divine golden-white radiance. Vishnu stands on a golden lotus, all four arms visible, smiling with infinite compassion. Dhruva opens his eyes and sees the divine form — his expression transforms from determination to pure overwhelming awe and love. Tears stream down his face. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${DHRUVA} He kneels before ${VISHNU_D} with folded hands, tears of joy on his face, looking up with absolute devotion. He speaks humbly, his expression showing that he has found something far greater than what he originally sought. Vishnu reaches down with one gentle blue hand toward the boy's head in blessing. Intense divine golden light surrounds them both. Forest clearing. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `A cosmic transformation scene: ${VISHNU_D} raises both hands and ${DHRUVA} begins to float upward, surrounded by brilliant starlight. His small body glows and transforms into a blazing bright star — the Pole Star. He ascends through the night sky past other stars and constellations, becoming the brightest, most steadfast light in the heavens. Magnificent cosmic night sky. ${STYLE}`,
+      },
+      {
+        filename: 'scene-11.png',
+        prompt: `A transcendent closing composition. A beautiful clear night sky filled with thousands of stars. In the center, the Pole Star — Dhruva's star — blazes brightest of all with a warm golden-white glow. Below, a peaceful Indian village at night with families pointing up at the star. A faint divine vision of little ${DHRUVA} meditating within the star's glow. The message: determination and devotion can achieve the impossible. Deeply spiritual cosmic atmosphere. ${STYLE}`,
+      },
+    ];
+  })(),
 };
 
 // ─── Generation Logic ───
