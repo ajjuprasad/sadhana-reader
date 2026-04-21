@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-// 6 stories: krishna, ganesha, squirrel, prahlada, dhruva, hanuman
+// 8 stories: krishna-fruit-seller, ganesha, squirrel, prahlada, dhruva, hanuman, krishna-govardhan, monkey-crocodile
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -374,6 +374,125 @@ const STORIES: Record<string, ScenePrompt[]> = {
       {
         filename: 'scene-11.png',
         prompt: `A transcendent closing composition. ${BABY_HANUMAN} grown slightly, sits proudly on a mountain peak, chin slightly crooked from the thunderbolt, flexing his tiny arms showing incredible divine strength. Golden divine power radiates from him. Behind him, the sun he tried to eat glows in a brilliant sky. Below, the vast world stretches out. A faint celestial vision of the adult Hanuman — mighty, powerful, devotional — appears in the golden clouds above. The message: courage and curiosity lead to greatness. ${STYLE}`,
+      },
+    ];
+  })(),
+
+  'krishna-lifts-govardhan': (() => {
+    const KRISHNA_G = 'Baby Lord Krishna: deep blue-black skin, peacock feather crown in curly black hair, yellow silk dhoti, large lotus almond eyes, mischievous divine smile, gold anklets bracelets waist-chain, celestial golden aura.';
+    const INDRA_G = 'Lord Indra: king of the gods, muscular golden-skinned deity, elaborate golden crown and armor, riding magnificent white elephant Airavata, wielding thunderbolt Vajra, proud imperious expression, storm clouds swirling around him.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${KRISHNA_G} A majestic title composition. Baby Krishna stands fearlessly, lifting the enormous green Govardhan Hill high above his head on just one little finger of his left hand. Beneath the mountain, grateful villagers, cows, and peacocks shelter from a raging storm. Dark thunderclouds and torrential rain surround the hill, but underneath is warm golden light and safety. Krishna's face shows calm divine power and a gentle smile. The contrast between the tiny blue-black boy and the massive mountain is dramatic and awe-inspiring. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `A festive scene in the ancient village of Vrindavan. Villagers busily prepare a grand celebration to honor Indra, the rain god. Women carry brass platters piled with fruits, sweets, and flowers. Men build a decorated altar. Clay lamps line the streets. Colorful rangoli patterns on the ground. Banners and garlands of marigolds. Children run excitedly. Vrindavan with sandstone houses, sacred Tulsi plants, cows resting under banyan trees. Warm golden afternoon light. A joyful community atmosphere. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${KRISHNA_G} Little Krishna stands among village elders in a Vrindavan courtyard, looking up at them with curious questioning eyes, one tiny blue-black hand raised in inquiry. The elders — men in white dhotis and women in colorful saris — gesture toward the sky, explaining about Indra. Behind them, preparations for the Indra puja continue. Warm golden light. Krishna's expression is thoughtfully skeptical. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${KRISHNA_G} Krishna stands on a small mound, speaking passionately to gathered villagers, his tiny blue-black hand pointing toward the lush green Govardhan Hill visible in the background. The hill is beautiful — green with streams, grazing cows, shade trees, and wildflowers. The villagers listen with growing interest. Bright, hopeful golden light illuminates the scene. Krishna's expression is wise and animated beyond his years. Vrindavan landscape. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${KRISHNA_G} A joyful celebration at the base of Govardhan Hill. Villagers of Vrindavan cook delicious food in large pots, sing and dance, offer flowers and fruits to the hill. Krishna dances joyfully among them. Colorful rangoli, garlands draped on rocks, brass lamps lit along the hill's base. Cows decorated with paint and flowers. Music, drums, and flutes. The green hill rises majestically behind them. Warm saffron sunset light. Pure festive joy. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${INDRA_G} High above in the celestial realm among dark thunderclouds, Lord Indra sits atop his white elephant Airavata, his face contorted with furious rage. He raises the thunderbolt Vajra and commands massive, menacing dark storm clouds to gather. The clouds have angry faces within them. Below, the tiny village of Vrindavan is visible far below. Lightning crackles. A dramatic, foreboding atmosphere of divine wrath. Dark sky with blue-purple storm energy. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `A catastrophic storm over Vrindavan. The sky is pitch black. Torrential rain pours in sheets. Lightning splits the sky. The Yamuna river floods its banks, water rushing through village streets. Villagers huddle together in terror — mothers clutching children, old men struggling against wind, cows bellowing in fear. Uprooted trees. Crumbling mud walls. A terrifying scene of nature's fury. Dark tones with flashes of blue-white lightning. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${KRISHNA_G} Desperate villagers — drenched, frightened, shivering — crowd around little Krishna in the pouring rain, hands folded, begging for help. Women hold babies above the rising floodwaters. Old men lean on sticks. Children cry. Krishna stands calmly at the center, his celestial golden aura glowing warmly despite the dark storm. His expression is serene and reassuring. Dramatic contrast between chaos and divine calm. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${KRISHNA_G} THE ICONIC MOMENT. Baby Krishna bends down and lifts the entire enormous green Govardhan Hill high into the air on just the little finger of his left hand. His expression is calm, effortless, with a gentle divine smile. The mountain is massive — trees, waterfalls, rocks, animals visible on it. His tiny blue-black body glows with immense divine golden power. The villagers gasp in astonishment. Rain pours from the dark sky. A breathtaking display of divine power. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${KRISHNA_G} View from underneath the lifted Govardhan Hill. Krishna holds the mountain up effortlessly on one finger. Below the sheltering hill, villagers stream in with their cows, goats, dogs, and belongings. It is warm and dry underneath — golden lamplight, relieved smiling faces. Outside the mountain's shelter, rain pours in dark curtains. The contrast between the warm dry sanctuary and the raging storm outside. A feeling of divine protection. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `${KRISHNA_G} Seven days have passed. Krishna stands absolutely still, the colossal Govardhan Hill balanced on his one little finger, unwavering. His expression is serene and tireless. Under the hill, village life continues — families eat, children play, cows rest, oil lamps glow. Outside, the relentless storm still rages. Krishna's golden aura is steady and warm. Atmospheric contrast: warm gold inside, cold dark blue-grey outside. ${STYLE}`,
+      },
+      {
+        filename: 'scene-11.png',
+        prompt: `${INDRA_G} ${KRISHNA_G} The storm has cleared. Lord Indra descends from the sky, stepping off his white elephant Airavata. He kneels humbly before little Krishna, his crown lowered, hands folded in reverent namaste, his face full of remorse and awe. Krishna looks down at him with gentle, forgiving eyes. Golden sunlight breaks through parting clouds. Vrindavan villagers watch in wonder. A moment of divine humility. ${STYLE}`,
+      },
+      {
+        filename: 'scene-12.png',
+        prompt: `A transcendent closing composition. ${KRISHNA_G} gently places the enormous Govardhan Hill back down. Brilliant golden sunlight floods the scene. A rainbow arcs across the clear blue sky. Vrindavan villagers cheer, dance, and throw flowers in celebration. Cows graze peacefully. Peacocks dance. The lush green Govardhan Hill settles into its place. Krishna stands at center, golden aura blazing, divine smile. The message: a true leader protects everyone. Joy, relief, and divine grace. ${STYLE}`,
+      },
+    ];
+  })(),
+
+  'monkey-and-crocodile': (() => {
+    const MONKEY_MC = 'A clever young monkey with golden-brown fur, bright intelligent expressive eyes, lean agile build, long curling tail, animated lively face, sitting in a large jamun tree laden with purple fruits by a sparkling river.';
+    const CROCODILE_MC = 'A large river crocodile with dark green scaly skin, long broad snout, short stubby legs, yellow-green eyes, sometimes looking guilty and conflicted, massive powerful tail, half-submerged in the river.';
+    const CROC_WIFE = 'The crocodile wife: a slightly smaller crocodile with darker olive-green scales, sharper narrower snout, cunning sly eyes, manipulative expression, resting on a muddy riverbank.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${MONKEY_MC} ${CROCODILE_MC} A majestic title composition. The monkey sits high in a magnificent spreading jamun tree laden with ripe purple fruits, one paw offering a fruit downward. Below, the crocodile floats in the sparkling blue river, looking up with a friendly smile. Lush tropical riverbank with green ferns, lotus flowers on the water, golden afternoon sunlight filtering through the tree canopy. A feeling of friendship and trust. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${MONKEY_MC} He sits happily on a thick branch of a magnificent large jamun tree by a wide sparkling river. The tree is heavy with clusters of ripe purple jamun fruits. The monkey eats contentedly, juice staining his paws. Lush green riverbank with ferns and wildflowers. Butterflies flutter. Birds sing nearby. Golden morning light sparkles on the water. A scene of perfect contentment and abundance. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${MONKEY_MC} ${CROCODILE_MC} The crocodile rests in the shade of the jamun tree by the river's edge. The monkey hangs from a branch above, cheerfully tossing down ripe purple jamun fruits to the crocodile. The crocodile looks up with mouth open, catching a fruit. Splashes of purple juice. The river sparkles in warm sunlight. A friendly first meeting between two unlikely friends. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${MONKEY_MC} ${CROCODILE_MC} The monkey sits on a low branch hanging over the water while the crocodile floats nearby. Between them, a pile of purple jamun fruits. They appear to be talking and laughing together like old friends. Warm, relaxed, intimate — two unlikely friends enjoying each other's company. Golden afternoon light, sparkling river, lush greenery. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${CROC_WIFE} ${CROCODILE_MC} On a muddy riverbank at their den, the crocodile's wife speaks to the crocodile with a wicked scheming expression, leaning close. Her sharp eyes glint with cunning. The crocodile looks shocked and horrified, recoiling. Between them, some jamun fruits the crocodile brought home. The mood is dark and sinister. Shadows, darker lighting, the river in the background. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${CROCODILE_MC} He floats alone in the river at dusk, his expression deeply conflicted and sad. His yellow-green eyes show guilt and sorrow. Above him, the jamun tree is visible on the distant bank with the tiny silhouette of the monkey. The sky is streaked with melancholic orange and purple. The water reflects the troubled sky. A crocodile torn between loyalty to a friend and pressure from his wife. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${MONKEY_MC} ${CROCODILE_MC} The crocodile floats beside the riverbank with a forced smile, inviting the monkey for a ride. The monkey cheerfully and trustingly leaps onto the crocodile's broad scaly back, tail high with excitement. The river stretches wide ahead. Warm golden light. The monkey's complete trust contrasts with the crocodile's hidden guilt. A moment of innocent friendship about to be betrayed. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${MONKEY_MC} ${CROCODILE_MC} In the middle of the wide deep river, the crocodile starts to sink beneath the water. The monkey clings to the crocodile's back, eyes wide with alarm, water rising around him. The riverbanks are far away on either side. Dark blue-green water, deeper and more threatening. The monkey's fur is getting wet. A moment of sudden danger and dawning realization. Dramatic lighting. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${MONKEY_MC} ${CROCODILE_MC} Close-up emotional scene in the middle of the vast river. The crocodile confesses, his yellow-green eyes full of guilt and shame. The monkey sits on his back, face showing terror and shock, eyes wide, mouth open. Water laps around them. Deep blue tones. An emotional, dramatic moment of betrayal revealed. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${MONKEY_MC} ${CROCODILE_MC} The monkey's expression shifts from fear to clever cunning. He sits calmly on the crocodile's back, one paw raised casually, his eyes bright with a shrewd idea. He speaks smoothly. The crocodile listens with wide, gullible eyes. In the background, the jamun tree is visible on the distant bank. A dramatic shift — the clever trickster at work. Golden light on the water. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `${MONKEY_MC} ${CROCODILE_MC} The crocodile has swum back to the tree. The monkey leaps explosively off the crocodile's back — a dynamic mid-air jump — and grabs the highest branch of the jamun tree. His tail streams behind him, his expression is triumphant relief. The crocodile looks up from the water in stunned realization. Splash of water. Dynamic action scene. Bright golden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-11.png',
+        prompt: `${MONKEY_MC} He sits safely on the highest branch of the jamun tree, looking down with a mix of sadness and wisdom. ${CROCODILE_MC} floats below in the water, looking up with deep regret, his eyes sorrowful. The distance between them symbolizes the broken friendship. Purple jamun fruits hang between them untouched. Golden sunset light. A bittersweet, poignant moment. ${STYLE}`,
+      },
+      {
+        filename: 'scene-12.png',
+        prompt: `A transcendent closing composition. ${CROCODILE_MC} floats away alone down the wide river into the sunset, his silhouette growing small against the golden-orange water. Behind, the magnificent jamun tree stands tall on the bank with ${MONKEY_MC} sitting in it, now a distant figure. The sky blazes with sunset colors — saffron, rose, and gold. The message: a real friend is worth more than anything. Lonely, reflective, deeply atmospheric. ${STYLE}`,
       },
     ];
   })(),
