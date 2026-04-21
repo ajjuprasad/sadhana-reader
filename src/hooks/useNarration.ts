@@ -56,8 +56,8 @@ export function useNarration(options: NarrationOptions) {
   const cleanup = useCallback(() => {
     if (audioRef.current) {
       audioRef.current.pause();
-      audioRef.current.src = '';
-      audioRef.current = null;
+      audioRef.current.removeAttribute('src');
+      audioRef.current.load();
     }
     if (pauseTimerRef.current) clearTimeout(pauseTimerRef.current);
     speechSynthesis.cancel();
@@ -69,7 +69,7 @@ export function useNarration(options: NarrationOptions) {
     return () => {
       if (audioRef.current) {
         audioRef.current.pause();
-        audioRef.current.src = '';
+        audioRef.current.removeAttribute('src');
       }
       if (pauseTimerRef.current) clearTimeout(pauseTimerRef.current);
       speechSynthesis.cancel();
@@ -147,9 +147,8 @@ export function useNarration(options: NarrationOptions) {
     indexRef.current = index;
     setState((s) => ({ ...s, currentIndex: index, isPlaying: true, isPaused: false }));
 
+    const audio = audioRef.current!;
     const url = narrationUrl(storyId, optionsRef.current.voiceGender, segmentsRef.current[index].filename);
-    const audio = new Audio(url);
-    audioRef.current = audio;
 
     audio.onended = () => {
       if (!activeRef.current) return;
@@ -158,10 +157,10 @@ export function useNarration(options: NarrationOptions) {
 
     audio.onerror = () => {
       if (!activeRef.current) return;
-      // Missing MP3 — fall back to Web Speech for the rest of the story.
       playFallback(index);
     };
 
+    audio.src = url;
     audio.play().catch(() => {
       if (!activeRef.current) return;
       playFallback(index);
@@ -171,11 +170,16 @@ export function useNarration(options: NarrationOptions) {
   const start = useCallback((storyId: string, title: string, paragraphs: string[], moral: string) => {
     if (audioRef.current) {
       audioRef.current.pause();
-      audioRef.current.src = '';
+      audioRef.current.removeAttribute('src');
     }
     speechSynthesis.cancel();
     if (pauseTimerRef.current) clearTimeout(pauseTimerRef.current);
     useStaticRef.current = true;
+
+    // Reuse or create a single Audio element to satisfy mobile autoplay policy
+    if (!audioRef.current) {
+      audioRef.current = new Audio();
+    }
 
     const segments = buildSegments(title, paragraphs, moral);
     segmentsRef.current = segments;
@@ -210,13 +214,11 @@ export function useNarration(options: NarrationOptions) {
       } else {
         playFallback(indexRef.current);
       }
-    } else if (audioRef.current && audioRef.current.src) {
+    } else if (audioRef.current) {
       audioRef.current.play().catch(() => {});
-    } else {
-      playStatic(indexRef.current);
     }
     setState((s) => ({ ...s, isPlaying: true, isPaused: false }));
-  }, [playStatic, playFallback]);
+  }, [playFallback]);
 
   const stop = useCallback(() => {
     cleanup();
