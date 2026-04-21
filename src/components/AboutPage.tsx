@@ -9,7 +9,7 @@ export default function AboutPage() {
     <div className="relative min-h-screen pb-8">
       <Helmet>
         <title>About | Sadhana Reader</title>
-        <meta name="description" content="About Sadhana Reader — a community-driven, open source digital companion for Hindu spiritual practice and cultural learning." />
+        <meta name="description" content="About Sadhana Reader — a free, open source app for daily spiritual practice, timeless stories, and cultural traditions." />
       </Helmet>
 
       <div className="sticky top-0 z-30" style={{ backgroundColor: 'var(--color-bg)' }}>
@@ -46,13 +46,13 @@ export default function AboutPage() {
             Our Mission
           </h2>
           <p className="font-body text-sm leading-relaxed mb-3" style={{ color: 'var(--color-text-secondary)' }}>
-            Sādhanā Reader exists to keep Hindu spiritual traditions alive and accessible in the modern world — for this generation and the next. In a world of noisy apps and cluttered websites, we believe sacred wisdom deserves a home that honors its spirit.
+            Sādhanā Reader is a simple, quiet space to help people stay connected to their daily practice. Stotras, stories, traditions. These are things that have been passed down for thousands of years, and they deserve a clean, respectful home in the digital world.
           </p>
           <p className="font-body text-sm leading-relaxed mb-3" style={{ color: 'var(--color-text-secondary)' }}>
-            Whether you're chanting the Hanuman Chalisa on your morning commute, reading a story from the Puranas to your child at bedtime, or checking the Hindu calendar for an upcoming festival — Sādhanā Reader is your quiet, ad-free companion for all of it.
+            The goal is to make it easy for anyone to keep up with their practice and share this wisdom with the next generation. Chant a stotra on your morning commute. Read a story to your child at bedtime. Know when a festival is coming up. All in one place, with no noise.
           </p>
           <p className="font-body text-sm leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
-            Sacred stotras with Sanskrit, transliteration, and meaning. Stories for kids that carry timeless morals with natural narration. A Hindu calendar that connects you to the rhythm of tradition. No paywalls, no ads — just the practice and you.
+            No accounts required. No paywalls. No ads. Just the practice and you.
           </p>
         </section>
 
@@ -62,10 +62,10 @@ export default function AboutPage() {
             Open Source & Community
           </h2>
           <p className="font-body text-sm leading-relaxed mb-3" style={{ color: 'var(--color-text-secondary)' }}>
-            Sādhanā Reader is fully open source. The code, the stotra data, and the design are all available on GitHub for anyone to study, improve, or adapt. We believe sacred knowledge should be freely accessible — and that extends to the tools that deliver it.
+            Sādhanā Reader is fully open source. The code, the content, and the design are all on GitHub for anyone to study, improve, or adapt.
           </p>
           <p className="font-body text-sm leading-relaxed mb-3" style={{ color: 'var(--color-text-secondary)' }}>
-            Contributions are welcome — whether you want to add a new stotra, contribute a story, correct a transliteration, improve translations, add a new language, or enhance the app experience. This is a community effort in the truest sense.
+            Want to add a stotra, contribute a story, fix a transliteration, or add a new language? You're welcome to. This is a community effort and every contribution helps.
           </p>
           <div className="flex justify-center">
           <a
@@ -101,13 +101,13 @@ export default function AboutPage() {
             />
           </div>
           <p className="font-body text-sm leading-relaxed mb-3" style={{ color: 'var(--color-text-secondary)' }}>
-            Hi, I'm Ajay Prasad. I built Sādhanā Reader as a personal project born from my own daily practice and a desire to pass these traditions on to my children. I wanted a clean, respectful app that felt like opening a sacred book rather than scrolling a cluttered website.
+            Hi, I'm Ajay Prasad. I built Sādhanā Reader because I wanted a clean, quiet app for my own daily practice. Something that felt like opening a sacred book, not scrolling a cluttered website.
           </p>
           <p className="font-body text-sm leading-relaxed mb-3" style={{ color: 'var(--color-text-secondary)' }}>
-            This entire app has been built using Claude Code — Anthropic's AI coding assistant. From the first line of code to the stotra data to the design decisions, it's been a collaboration between human intention and AI capability. It's a testament to what's possible when you pair a clear vision with modern tools.
+            The stories section started when I wanted a way to share these timeless tales with my daughter at bedtime. That grew into a collection of stories from the Puranas, Panchatantra, and other sources, each with narration so she could listen on her own too.
           </p>
           <p className="font-body text-sm leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
-            If you'd like to contribute, have feedback, or just want to say hello — I'd love to hear from you.
+            If you have feedback, want to contribute, or just want to say hello, I'd love to hear from you.
           </p>
           <div className="flex flex-wrap justify-center gap-3 mt-4">
             <a
