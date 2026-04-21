@@ -16,8 +16,11 @@ if (!API_KEY) {
   process.exit(1);
 }
 
-const MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash-image';
-const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
+const MODELS_TO_TRY = (process.env.GEMINI_MODEL || 'gemini-2.0-flash-preview-image-generation,gemini-2.5-flash-image').split(',').map(s => s.trim());
+
+function apiUrl(model: string) {
+  return `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${API_KEY}`;
+}
 
 interface ScenePrompt {
   filename: string;
@@ -71,8 +74,11 @@ async function fileExists(p: string): Promise<boolean> {
   }
 }
 
-async function generateImage(prompt: string): Promise<Buffer> {
-  const response = await fetch(API_URL, {
+const MAX_RETRIES = 3;
+const RETRY_DELAYS = [5000, 15000, 30000];
+
+async function generateImageWithModel(prompt: string, model: string): Promise<Buffer> {
+  const response = await fetch(apiUrl(model), {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -86,7 +92,9 @@ async function generateImage(prompt: string): Promise<Buffer> {
 
   if (!response.ok) {
     const body = await response.text();
-    throw new Error(`Gemini ${response.status}: ${body.slice(0, 300)}`);
+    const err = new Error(`Gemini ${response.status}: ${body.slice(0, 400)}`);
+    (err as Error & { status: number }).status = response.status;
+    throw err;
   }
 
   const data = await response.json();
@@ -102,6 +110,36 @@ async function generateImage(prompt: string): Promise<Buffer> {
   return Buffer.from(imagePart.inlineData.data, 'base64');
 }
 
+async function generateImage(prompt: string): Promise<Buffer> {
+  for (const model of MODELS_TO_TRY) {
+    console.log(`  trying model: ${model}`);
+    for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+      try {
+        return await generateImageWithModel(prompt, model);
+      } catch (err) {
+        const status = (err as Error & { status?: number }).status;
+        const isRetryable = status === 429 || status === 503 || status === 500;
+
+        if (isRetryable && attempt < MAX_RETRIES) {
+          const delay = RETRY_DELAYS[attempt];
+          console.log(`  ${status} error, retrying in ${delay / 1000}s (attempt ${attempt + 1}/${MAX_RETRIES})...`);
+          await new Promise((r) => setTimeout(r, delay));
+          continue;
+        }
+
+        if (status === 429 || status === 404) {
+          console.log(`  ${model} failed with ${status}, trying next model...`);
+          break;
+        }
+
+        throw err;
+      }
+    }
+  }
+
+  throw new Error(`All models failed: ${MODELS_TO_TRY.join(', ')}`);
+}
+
 async function main() {
   const filter = process.argv[2];
   const storyIds = filter ? [filter] : Object.keys(STORIES);
@@ -113,7 +151,7 @@ async function main() {
   }
 
   console.log(`Generating illustrations for ${storyIds.length} stor${storyIds.length === 1 ? 'y' : 'ies'}`);
-  console.log(`Model: ${MODEL}`);
+  console.log(`Models: ${MODELS_TO_TRY.join(' → ')}`);
   console.log(`Output: ${OUTPUT_DIR}`);
   console.log('');
 
@@ -132,17 +170,17 @@ async function main() {
         continue;
       }
 
-      process.stdout.write(`  ${scene.filename}... `);
+      console.log(`  ${scene.filename}...`);
       try {
         const imageData = await generateImage(scene.prompt);
         await fs.writeFile(outPath, imageData);
-        console.log(`done (${(imageData.length / 1024).toFixed(0)} KB)`);
+        console.log(`  done (${(imageData.length / 1024).toFixed(0)} KB)`);
       } catch (err) {
-        console.log(`failed: ${err instanceof Error ? err.message : err}`);
+        console.log(`  failed: ${err instanceof Error ? err.message : err}`);
         throw err;
       }
 
-      await new Promise((r) => setTimeout(r, 1000));
+      await new Promise((r) => setTimeout(r, 2000));
     }
   }
 
