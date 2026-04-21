@@ -170,16 +170,17 @@ export function useNarration(options: NarrationOptions) {
   const start = useCallback((storyId: string, title: string, paragraphs: string[], moral: string) => {
     if (audioRef.current) {
       audioRef.current.pause();
+      audioRef.current.onended = null;
+      audioRef.current.onerror = null;
       audioRef.current.removeAttribute('src');
     }
     speechSynthesis.cancel();
     if (pauseTimerRef.current) clearTimeout(pauseTimerRef.current);
     useStaticRef.current = true;
 
-    // Reuse or create a single Audio element to satisfy mobile autoplay policy
-    if (!audioRef.current) {
-      audioRef.current = new Audio();
-    }
+    // Fresh Audio element on each user tap — satisfies mobile autoplay policy
+    // and clears stale state from prior sessions
+    audioRef.current = new Audio();
 
     const segments = buildSegments(title, paragraphs, moral);
     segmentsRef.current = segments;
