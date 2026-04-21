@@ -208,6 +208,59 @@ const STORIES: Record<string, ScenePrompt[]> = {
       },
     ];
   })(),
+
+  'prahlada-and-holika': (() => {
+    const PRAHLADA = 'Young prince Prahlada: a small gentle boy of about seven, warm brown skin, large innocent devoted eyes, simple white dhoti, a thin tulsi-bead necklace, serene peaceful expression even in danger, subtle divine glow around him.';
+    const HIRANYAKASHIPU = 'Demon king Hiranyakashipu: massive towering muscular figure, fierce golden-brown complexion, wild mane of black hair, furious bulging red eyes, ornate demonic gold crown with horns, heavy gold armor and jewelry, fanged snarl, terrifying presence.';
+    const HOLIKA = 'Demoness Holika: tall imposing woman with sharp angular features, dark reddish-brown skin, black flowing hair, wearing a magical shimmering fire-proof cloak that glows faintly, dark red and black garments, cunning calculating eyes.';
+    const VISHNU = 'Lord Vishnu: magnificent four-armed deity with luminous deep blue skin, serene omniscient expression, golden crown with jewels, yellow silk pitambara, Sudarshana chakra, conch shell, lotus, and mace in four hands, standing on a lotus, blinding divine radiance.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${PRAHLADA} ${HIRANYAKASHIPU} A dramatic title composition. Young Prahlada sits calmly in meditation with folded hands amid towering orange flames, completely unharmed, his face serene and glowing with divine protection. Behind the flames, Hiranyakashipu's furious face looms large in shadow. Above Prahlada, a faint protective vision of ${VISHNU} appears in golden celestial light. The contrast between the boy's peace and the surrounding fury. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${HIRANYAKASHIPU} He sits on a massive golden demonic throne in a dark grand palace, radiating terrifying power. Armies of demons kneel before him in fear. His muscular arms grip the throne, his red eyes blaze. Dark storm clouds swirl outside. Even celestial beings cower in the shadows above. A scene of absolute tyrannical power. Dark dramatic lighting with golden torchlight. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${PRAHLADA} He sits peacefully in a quiet garden corner of the palace, eyes closed in devotion, hands folded, lips gently whispering "Om Namo Narayanaya." A soft divine golden light glows around him. Tulsi plants and flowers surround him. Birds perch nearby, drawn to his peace. In sharp contrast, the dark imposing palace walls loom behind. Serene, spiritual atmosphere. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${HIRANYAKASHIPU} He towers over ${PRAHLADA} furiously, one massive fist raised, face contorted in rage, shouting. Prahlada stands small but completely calm before his father, hands folded, a gentle smile on his face, looking up without fear. The contrast between the giant raging demon and the tiny peaceful boy. Dark throne room with torches. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${PRAHLADA} A dynamic montage scene: venomous cobras with raised hoods surround Prahlada but bow down gently before him instead of striking. In another part, Prahlada falls from a cliff but is caught by soft divine hands of light. In each trial, Prahlada remains calm with hands folded. ${HIRANYAKASHIPU} watches in frustrated disbelief from above. Dramatic supernatural lighting. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${HIRANYAKASHIPU} ${HOLIKA} They conspire together in a dark chamber of the palace. Hiranyakashipu leans close to Holika, whispering his evil plan. Holika grins wickedly, touching her magical fire-proof cloak. Between them, the flames of a nearby torch cast sinister shadows. Dark, foreboding atmosphere. Deep shadows and firelight. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${HOLIKA} ${PRAHLADA} A massive bonfire is built in the center of a town square. Holika sits in the flames wearing her magical shimmering cloak, pulling little Prahlada onto her lap. The townspeople watch in horror from the edges. The flames begin to rise around them. Prahlada's eyes are closed in peaceful prayer. The fire towers high. Dramatic orange and gold firelight against a dark sky. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${PRAHLADA} Close-up of his face amid roaring orange flames all around him. His eyes are closed, his lips move in silent prayer: "Om Namo Narayanaya." His expression is utterly serene and peaceful. A subtle divine golden shield of light forms around him, the flames parting gently. His tulsi beads glow. Despite the inferno, not a hair is singed. Pure faith and surrender. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `A dramatic supernatural moment: a powerful divine wind swirls through the fire, tearing the magical shimmering cloak from ${HOLIKA} and wrapping it protectively around ${PRAHLADA}. Holika screams in shock as flames engulf her. Prahlada sits calmly, now protected by the cloak, divine light around him. The wind is visible as golden streaks. Townspeople gasp. Intense dramatic firelight. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${PRAHLADA} He walks calmly out of the dying bonfire, completely unharmed, not a scratch or burn on him. The townspeople erupt in joyful celebration — cheering, throwing flowers, tears of relief and wonder. Prahlada's hands are still folded in gratitude. Golden divine light surrounds him like a halo. The embers glow behind him. A miraculous, triumphant moment. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `A transcendent closing composition. A great Holi bonfire burns ceremonially in the center, with people joyfully gathered around it, throwing colored powder in celebration. Above the fire, a celestial vision of ${PRAHLADA} praying peacefully and ${VISHNU} protecting him with an outstretched hand. The sky is filled with colors of Holi: pink, yellow, green, blue. The message: good always wins over evil. Joy, color, and divine grace. ${STYLE}`,
+      },
+    ];
+  })(),
 };
 
 // ─── Generation Logic ───
