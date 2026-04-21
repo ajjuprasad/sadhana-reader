@@ -712,6 +712,122 @@ const STORIES: Record<string, ScenePrompt[]> = {
       },
     ];
   })(),
+
+  'nachiketa-and-yama': (() => {
+    const NACHIKETA = 'Young Nachiketa: a brave boy of about ten, warm brown skin, bright intelligent questioning eyes, simple white dhoti, sacred thread across chest, short black hair, expression of fearless curiosity and determination.';
+    const VAJASHRAVA = 'Vajashrava: a middle-aged Brahmin priest with warm brown skin, white dhoti and upper cloth, sacred thread, grey-streaked hair in a topknot, conflicted guilty expression.';
+    const YAMA = 'Yama the Lord of Death: a dark majestic figure with deep green-black skin, riding a black buffalo, wearing dark royal robes with gold trim, tall golden crown, holding a noose pasha, stern but ultimately wise and fair face, imposing regal presence.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${NACHIKETA} ${YAMA} A majestic title composition. Young Nachiketa sits calmly at the grand dark gates of Yama's palace, cross-legged and patient. Before him, the imposing figure of Yama the Lord of Death stands with his noose, looking down at the brave boy with growing respect. The palace is dark and grand — black marble, silver torches, eternal flames. The contrast between the small brave boy and the mighty Lord of Death. Dramatic dark and golden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${VAJASHRAVA} A grand Vedic ceremony in an open-air sacrificial arena. Vajashrava sits before a sacred fire performing rituals. Around him, Brahmin priests chant. But the cows being given away are visibly old, thin, and sick — ribs showing, barely able to walk. ${NACHIKETA} watches from nearby with sharp, observant eyes, his brow furrowed with concern. Rich ceremonial setting with fire altars, flower garlands, but the gift cows are clearly inferior. Warm firelight. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${NACHIKETA} ${VAJASHRAVA} Nachiketa stands before his father, speaking boldly with one hand raised, his young face earnest and brave. He points at the sick cows. Vajashrava looks annoyed and uncomfortable, turning away. The ceremonial fire burns between them. Other priests watch the confrontation awkwardly. A brave child challenging an adult's hypocrisy. Warm flickering firelight, outdoor ceremonial setting. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${VAJASHRAVA} He snaps angrily, face red with frustration, one hand pointing dramatically. ${NACHIKETA} stands before him, small but unflinching, absorbing his father's angry words. The words "I give you to Yama!" hang in the air. Other priests gasp in shock. The sacred fire flares. A dramatic, tense moment of a father's rash words. Harsh firelight casts sharp shadows. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${NACHIKETA} The boy walks alone down a long, dark, mystical path toward Yama's grand palace in the distance. The path is lined with ethereal blue-white flames. The palace is enormous and imposing — dark black marble with silver gates, eternal torches, skulls carved in the architecture. Nachiketa is tiny against the massive dark landscape, but his stride is determined. A brave child walking toward Death itself. Eerie blue and silver moonlight. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${YAMA} He arrives at his palace on his black buffalo to find ${NACHIKETA} sitting patiently at the gate, thin and tired after three days without food or water. Yama's stern face softens with guilt and compassion. He dismounts and approaches the boy with hands open in a welcoming gesture. The dark grand palace behind them. Ethereal silver-blue and warm golden light mixing as Death meets the brave boy. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${YAMA} ${NACHIKETA} Yama sits on his dark throne, one finger raised, granting the first wish. A celestial vision appears showing Vajashrava smiling peacefully, no longer angry, welcoming his son home. Nachiketa looks at the vision with relief and love for his father. The dark throne room with silver pillars and eternal flames. Warm golden light in the vision contrasts with the cool dark palace. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${YAMA} ${NACHIKETA} Yama teaches Nachiketa about the sacred fire ceremony. A magnificent celestial sacrificial fire burns between them with supernatural blue-gold flames that form sacred geometric patterns. Yama gestures at the fire with scholarly enthusiasm. Nachiketa watches with rapt attention, absorbing every detail. The fire illuminates both their faces. Mystical, educational atmosphere. Dark palace with warm firelight. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${NACHIKETA} Close-up of the boy's face as he asks the ultimate question. His eyes burn with intense curiosity and courage. He leans forward earnestly. Behind him, ethereal visions of life and death swirl — flowers blooming and wilting, sun rising and setting, stars being born and dying. ${YAMA}'s face in the background shows surprise and wariness. The weight of the greatest question ever asked. Dramatic light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${YAMA} He tries to tempt Nachiketa with distractions. Yama conjures magnificent visions: mountains of gold coins, a glittering jeweled kingdom, herds of celestial horses, beautiful palaces, a vision of living a thousand years. The treasures swirl around ${NACHIKETA} enticingly. But the boy sits unmoved, arms crossed, shaking his head with calm determination. The temptations glow and sparkle but cannot sway him. Dark palace, golden temptations. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `${NACHIKETA} He sits firm and resolute, palms open in a gesture of sincere seeking, speaking with quiet conviction. The golden temptations around him fade and dissolve into nothing. His simple white dhoti and sacred thread glow with spiritual purity. ${YAMA} watches from his throne, his stern face breaking into a smile of deep respect and admiration. A boy choosing wisdom over wealth. ${STYLE}`,
+      },
+      {
+        filename: 'scene-11.png',
+        prompt: `${YAMA} ${NACHIKETA} A profound mystical teaching scene. Yama leans forward from his throne, speaking with great reverence, hands gesturing at a cosmic vision between them. The vision shows the eternal Atman — a luminous golden flame that cannot be extinguished, surrounded by cycles of birth and death, galaxies, and cosmic time. Nachiketa's eyes are wide with understanding, tears of revelation on his cheeks. Deep cosmic blues and eternal golden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-12.png',
+        prompt: `A transcendent closing composition. ${NACHIKETA} walks back along the mystical path, now bathed in warm golden dawn light instead of the earlier eerie darkness. He carries the light of wisdom within him — a golden glow emanates from his heart. Behind him, ${YAMA} watches from his palace gate with hands folded in respect. Above, a cosmic vision of the eternal flame (Atman) blazes in the sky. The message: curiosity and courage lead to the greatest knowledge. Deeply spiritual. ${STYLE}`,
+      },
+    ];
+  })(),
+
+  'gajendra-moksha': (() => {
+    const GAJENDRA = 'Gajendra the elephant king: a magnificent massive grey elephant with large expressive emotional eyes, ornate golden crown and jewelry on head and tusks, powerful regal build, majestic bearing.';
+    const CROC_G = 'A fearsome enormous crocodile lurking beneath lake water, dark green scales, powerful jaws clamped on the elephant leg, glowing menacing yellow eyes, massive tail.';
+    const VISHNU_G = 'Lord Vishnu: magnificent four-armed deity with luminous deep blue skin, serene compassionate expression, golden crown, yellow silk pitambara, riding the great golden eagle Garuda, Sudarshana chakra spinning in one hand, divine radiance.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${GAJENDRA} ${VISHNU_G} A majestic title composition. Gajendra stands in a lake, his trunk raised high holding a pink lotus flower toward the sky. His eyes plead upward with desperate faith. Above, Lord Vishnu swoops down on the magnificent golden eagle Garuda, the Sudarshana chakra spinning blazingly in his hand. A divine beam of golden light connects them. The lake is surrounded by lush forest. The dramatic rescue from above. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${GAJENDRA} He leads a majestic herd of elephants through a beautiful lush forest. Gajendra is the largest and most magnificent, walking at the front with regal confidence. His golden crown gleams. Smaller elephants, babies, and females follow behind. The forest is verdant with ancient trees, colorful flowers, parrots, and deer. Golden afternoon sunlight filters through the canopy. A scene of strength, leadership, and natural beauty. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${GAJENDRA} He wades joyfully into a beautiful cool lake, spraying water from his trunk in great arcs. Other elephants splash and play around him. The lake is pristine — crystal clear blue-green water, pink and white lotus flowers floating, lily pads, dragonflies. Lush green forest surrounds the lake. Golden afternoon sunlight sparkles on the water droplets. Pure joy and carefree happiness. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${GAJENDRA} ${CROC_G} A sudden shocking moment. Beneath the lake water, the enormous crocodile has clamped its massive jaws onto Gajendra's right hind leg. Gajendra trumpets in shock and pain, eyes wide, trunk raised. The water churns violently. The crocodile's glowing yellow eyes are visible beneath the roiling water. Other elephants scatter in alarm. A dramatic split between the serene surface and the danger below. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${GAJENDRA} ${CROC_G} Gajendra strains with all his enormous strength, pulling his leg from the water. His massive muscles bulge, his face contorts with effort. The crocodile holds on relentlessly beneath the churning water. The tug of war is titanic — water explodes around them. Gajendra's golden jewelry shakes. His eyes show determination and disbelief that anything could overpower him. Dramatic, dynamic, intense. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${GAJENDRA} Other elephants from his herd line up on the lake bank, trunks wrapped around Gajendra, pulling desperately to help free him. But one by one, they exhaust themselves and release their grip, turning away with sad, defeated expressions. The last elephant lets go and walks away with bowed head. Gajendra watches them leave with growing despair. The lake, the struggle continuing. Somber, emotional golden-amber light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${GAJENDRA} ${CROC_G} Time has passed. Gajendra stands exhausted in the lake, his once-proud body visibly weakened, legs trembling, head drooping. His golden jewelry is tarnished. The crocodile still holds on, relentless. The lake is empty — no other elephants remain. The surrounding forest looks dim. A once-mighty king brought to his lowest point. Despairing, lonely, fading golden light of dusk. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${GAJENDRA} A pivotal moment of spiritual awakening. With his last strength, Gajendra raises his trunk high out of the water and plucks a beautiful pink lotus flower. He holds it up toward the sky. His large eyes, once proud, now overflow with humility and sincere desperation. The lotus glows with a faint divine light in his trunk tip. The lake is still. A profound moment of surrender and faith. Warm golden-rose light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${GAJENDRA} Close-up of the elephant's face as he cries out to the heavens. His trunk holds the lotus high. Tears stream from his enormous eyes. His mouth is open in a trumpet of pure heartfelt prayer. The sound seems to ripple through the sky itself. Above, the clouds begin to part, letting through a beam of brilliant golden divine light. The most sincere prayer ever uttered. Deeply emotional, spiritual. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${VISHNU_G} THE DIVINE RESCUE. Vishnu descends from the sky at incredible speed on the magnificent golden eagle Garuda, his yellow silk robes streaming. He raises the spinning Sudarshana Chakra — a blazing golden discus of pure divine energy — and hurls it at the crocodile. The chakra cuts through the water, freeing ${GAJENDRA}'s leg instantly. An explosion of golden divine light. The lake erupts. Garuda's wings spread wide. Dramatic, dynamic, triumphant. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `${VISHNU_G} ${GAJENDRA} Vishnu stands in the shallow lake water, one gentle blue hand resting on Gajendra's bowed head in blessing. The elephant kneels before the deity, trunk touching Vishnu's feet in reverence. Vishnu's expression is infinitely compassionate. The lotus flower Gajendra offered now floats between them, glowing. The lake is calm and beautiful again. Warm divine golden light envelops both. A tender, sacred moment of grace. ${STYLE}`,
+      },
+      {
+        filename: 'scene-11.png',
+        prompt: `A transcendent closing composition. ${GAJENDRA} stands majestically in the now-peaceful lake at golden sunset, his trunk raised in grateful salute. Above, ${VISHNU_G} ascends back to the heavens on Garuda, one hand raised in blessing. The lake reflects both figures. Lotus flowers bloom everywhere. The surrounding forest glows with golden-rose light. The message: it is brave to ask for help. Deeply spiritual, triumphant, serene. ${STYLE}`,
+      },
+    ];
+  })(),
 };
 
 // ─── Generation Logic ───
