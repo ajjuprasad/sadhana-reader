@@ -17,8 +17,7 @@ if (!API_KEY) {
 }
 
 const MODELS_TO_TRY = (
-  process.env.GEMINI_MODEL ||
-  'gemini-2.0-flash-preview-image-generation,gemini-2.5-flash-image'
+  process.env.GEMINI_MODEL || 'gemini-2.5-flash-image'
 ).split(',').map(s => s.trim());
 
 function apiUrl(model: string) {
@@ -142,17 +141,29 @@ async function generateImageWithModel(prompt: string, model: string): Promise<Im
   }
 
   const data = await response.json();
-  const parts = data?.candidates?.[0]?.content?.parts;
-  if (!parts) throw new Error('No content in response');
+  const candidate = data?.candidates?.[0];
+  const finishReason = candidate?.finishReason;
+  const parts = candidate?.content?.parts;
+
+  if (!parts || parts.length === 0) {
+    const safetyRatings = JSON.stringify(candidate?.safetyRatings || data?.promptFeedback || 'unknown');
+    const err = new Error(
+      `No content in response (finishReason: ${finishReason || 'none'}, safety: ${safetyRatings.slice(0, 300)})`
+    );
+    (err as Error & { retryable: boolean }).retryable = true;
+    throw err;
+  }
 
   const imagePart = parts.find(
     (p: { inlineData?: { data: string; mimeType?: string } }) => p.inlineData?.data
   );
   if (!imagePart) {
     const textPart = parts.find((p: { text?: string }) => p.text);
-    throw new Error(
-      `No image returned. Model said: ${textPart?.text?.slice(0, 200) || 'nothing'}`
+    const err = new Error(
+      `No image in parts. Model said: ${textPart?.text?.slice(0, 200) || 'nothing'}`
     );
+    (err as Error & { retryable: boolean }).retryable = true;
+    throw err;
   }
 
   return {
@@ -169,12 +180,13 @@ async function generateImage(prompt: string): Promise<ImageResult> {
         return await generateImageWithModel(prompt, model);
       } catch (err) {
         const status = (err as Error & { status?: number }).status;
-        const isRetryable = status === 429 || status === 503 || status === 500;
+        const retryable = (err as Error & { retryable?: boolean }).retryable;
+        const isRetryable = retryable || status === 429 || status === 503 || status === 500;
 
         if (isRetryable && attempt < MAX_RETRIES) {
           const delay = RETRY_DELAYS[attempt];
           console.log(
-            `  ${status} error, retrying in ${delay / 1000}s (attempt ${attempt + 1}/${MAX_RETRIES})...`
+            `  ${status || 'content'} error, retrying in ${delay / 1000}s (attempt ${attempt + 1}/${MAX_RETRIES})...`
           );
           await new Promise((r) => setTimeout(r, delay));
           continue;
