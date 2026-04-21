@@ -39,27 +39,27 @@ const STYLE = [
 const STORIES: Record<string, ScenePrompt[]> = {
   'krishna-and-fruit-seller': [
     {
-      filename: 'scene-1.webp',
+      filename: 'scene-1.png',
       prompt: `${STYLE} A colorful morning street in an Indian village. A woman fruit seller walks gracefully with a large basket of colorful fruits balanced on her head. A little dark-skinned toddler boy with curly black hair peeks from behind his mother who wears a traditional sari, curious about the fruits. Warm golden morning sunlight. Vrindavan village with simple clay houses and greenery.`,
     },
     {
-      filename: 'scene-2.webp',
+      filename: 'scene-2.png',
       prompt: `${STYLE} A loving Indian mother in an orange sari kneeling and placing rice grains into a toddler boy's cupped hands. The boy has dark skin, curly hair, and big excited eyes. In the next moment he runs eagerly toward the door, tiny rice grains spilling through his small fingers. Warm indoor scene with earthen walls and saffron light.`,
     },
     {
-      filename: 'scene-3.webp',
+      filename: 'scene-3.png',
       prompt: `${STYLE} A tiny dark-skinned boy with curly hair stands before a kind fruit seller woman, looking up at her with big beautiful innocent eyes. He holds out his small open palm with just a few grains of rice. The fruit seller looks down at him with a melting warm smile, her basket full of ripe mangoes, bananas and berries beside her. Warm golden light, Indian village marketplace.`,
     },
     {
-      filename: 'scene-4.webp',
+      filename: 'scene-4.png',
       prompt: `${STYLE} A joyful little dark-skinned boy with curly hair runs through a sunny Indian village lane, arms overflowing with colorful mangoes, bananas, and berries. He is laughing with pure delight. Golden sunlight streaming through the scene. Vibrant fruits in warm oranges, yellows and reds. A feeling of pure childhood happiness.`,
     },
     {
-      filename: 'scene-5.webp',
+      filename: 'scene-5.png',
       prompt: `${STYLE} A woman in a sari stands in her simple home, looking into her wicker basket with an expression of wonder and amazement. The basket overflows with sparkling jewels, gold coins, and gemstones where fruits used to be. Magical warm golden light radiates upward from the basket, illuminating her face. Rich saffron and gold tones throughout.`,
     },
     {
-      filename: 'scene-6.webp',
+      filename: 'scene-6.png',
       prompt: `${STYLE} A peaceful Indian woman standing in a golden landscape, looking up at a warm sunset sky with a serene, grateful smile. Soft saffron and gold light fills the entire scene. A sense of divine grace, gratitude, and deep contentment. Gentle watercolor washes in warm tones. The sky glows with warm oranges and golds.`,
     },
   ],
@@ -77,7 +77,12 @@ async function fileExists(p: string): Promise<boolean> {
 const MAX_RETRIES = 3;
 const RETRY_DELAYS = [5000, 15000, 30000];
 
-async function generateImageWithModel(prompt: string, model: string): Promise<Buffer> {
+interface ImageResult {
+  data: Buffer;
+  mimeType: string;
+}
+
+async function generateImageWithModel(prompt: string, model: string): Promise<ImageResult> {
   const response = await fetch(apiUrl(model), {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -101,16 +106,19 @@ async function generateImageWithModel(prompt: string, model: string): Promise<Bu
   const parts = data?.candidates?.[0]?.content?.parts;
   if (!parts) throw new Error('No content in response');
 
-  const imagePart = parts.find((p: { inlineData?: { data: string } }) => p.inlineData?.data);
+  const imagePart = parts.find((p: { inlineData?: { data: string; mimeType?: string } }) => p.inlineData?.data);
   if (!imagePart) {
     const textPart = parts.find((p: { text?: string }) => p.text);
     throw new Error(`No image returned. Model said: ${textPart?.text?.slice(0, 200) || 'nothing'}`);
   }
 
-  return Buffer.from(imagePart.inlineData.data, 'base64');
+  return {
+    data: Buffer.from(imagePart.inlineData.data, 'base64'),
+    mimeType: imagePart.inlineData.mimeType || 'image/png',
+  };
 }
 
-async function generateImage(prompt: string): Promise<Buffer> {
+async function generateImage(prompt: string): Promise<ImageResult> {
   for (const model of MODELS_TO_TRY) {
     console.log(`  trying model: ${model}`);
     for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
@@ -139,6 +147,12 @@ async function generateImage(prompt: string): Promise<Buffer> {
 
   throw new Error(`All models failed: ${MODELS_TO_TRY.join(', ')}`);
 }
+
+const MIME_TO_EXT: Record<string, string> = {
+  'image/png': '.png',
+  'image/jpeg': '.jpg',
+  'image/webp': '.webp',
+};
 
 async function main() {
   const filter = process.argv[2];
@@ -172,9 +186,16 @@ async function main() {
 
       console.log(`  ${scene.filename}...`);
       try {
-        const imageData = await generateImage(scene.prompt);
-        await fs.writeFile(outPath, imageData);
-        console.log(`  done (${(imageData.length / 1024).toFixed(0)} KB)`);
+        const result = await generateImage(scene.prompt);
+        const actualExt = MIME_TO_EXT[result.mimeType] || '.png';
+        const expectedExt = path.extname(scene.filename);
+
+        if (actualExt !== expectedExt) {
+          console.log(`  note: API returned ${result.mimeType}, saving as ${expectedExt} anyway`);
+        }
+
+        await fs.writeFile(outPath, result.data);
+        console.log(`  done (${(result.data.length / 1024).toFixed(0)} KB, ${result.mimeType})`);
       } catch (err) {
         console.log(`  failed: ${err instanceof Error ? err.message : err}`);
         throw err;
