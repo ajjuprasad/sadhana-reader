@@ -71,7 +71,7 @@ export default function NarrationPlayer({
 
         {/* Progress info */}
         <div className="flex-1 min-w-0">
-          <div className="flex items-center justify-between mb-0.5">
+          <div className="flex items-center justify-between">
             <div className="min-w-0 flex-1">
               {storyTitle && (
                 <p
