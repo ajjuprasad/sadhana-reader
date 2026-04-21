@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../contexts/AuthContext';
 import type { useSettings } from '../hooks/useSettings';
-import type { Settings, Language, NarrationVoiceGender, NarrationSpeed } from '../hooks/useSettings';
+import type { Settings, Language, NarrationVoiceGender } from '../hooks/useSettings';
 import { useTranslation } from '../i18n/useTranslation';
 
 const sacredEase = [0.76, 0, 0.24, 1] as const;
@@ -577,57 +577,6 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
                   {label}
                 </button>
               ))}
-            </div>
-          </div>
-
-          {/* Speed */}
-          <div className="mb-6">
-            <label
-              className="block font-hind font-semibold text-sm mb-3"
-              style={{ color: 'var(--color-text-secondary)' }}
-            >
-              Speed
-            </label>
-            <div className="flex gap-2">
-              {([['slow', 'Slow'], ['normal', 'Normal'], ['fast', 'Fast']] as [NarrationSpeed, string][]).map(([value, label]) => (
-                <button
-                  key={value}
-                  onClick={() => update({ narrationSpeed: value })}
-                  className="px-4 py-2 rounded-full font-hind text-sm transition-all duration-200"
-                  style={{
-                    backgroundColor: draft.narrationSpeed === value ? 'var(--color-accent-primary)' : 'transparent',
-                    color: draft.narrationSpeed === value ? '#fff' : 'var(--color-text-secondary)',
-                    border: draft.narrationSpeed === value ? '1px solid var(--color-accent-primary)' : '1px solid var(--color-text-muted)',
-                    opacity: draft.narrationSpeed === value ? 1 : 0.7,
-                  }}
-                >
-                  {label}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Pitch */}
-          <div className="mb-8">
-            <label
-              className="block font-hind font-semibold text-sm mb-3"
-              style={{ color: 'var(--color-text-secondary)' }}
-            >
-              Pitch ({draft.narrationPitch.toFixed(1)})
-            </label>
-            <input
-              type="range"
-              min={0.5}
-              max={1.5}
-              step={0.1}
-              value={draft.narrationPitch}
-              onChange={(e) => update({ narrationPitch: Number(e.target.value) })}
-              className="w-full accent-saffron"
-              aria-label="Adjust narration pitch"
-            />
-            <div className="flex justify-between mt-1">
-              <span className="font-hind text-xs" style={{ color: 'var(--color-text-muted)' }}>Low</span>
-              <span className="font-hind text-xs" style={{ color: 'var(--color-text-muted)' }}>High</span>
             </div>
           </div>
 
