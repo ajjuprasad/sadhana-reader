@@ -16,7 +16,7 @@ if (!API_KEY) {
   process.exit(1);
 }
 
-const MODEL = process.env.GEMINI_MODEL || 'gemini-2.0-flash-exp';
+const MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash-image';
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
 
 interface ScenePrompt {
@@ -79,7 +79,7 @@ async function generateImage(prompt: string): Promise<Buffer> {
       contents: [{ parts: [{ text: `Generate an image: ${prompt}` }] }],
       generationConfig: {
         responseModalities: ['IMAGE'],
-        imageMimeType: 'image/webp',
+        imageConfig: { aspectRatio: '1:1' },
       },
     }),
   });
