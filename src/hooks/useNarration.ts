@@ -1,11 +1,8 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
-import { synthesize, VOICES } from '../services/edgeTts';
-import type { NarrationVoiceGender, NarrationSpeed } from './useSettings';
+import type { NarrationVoiceGender } from './useSettings';
 
 interface NarrationOptions {
   voiceGender: NarrationVoiceGender;
-  speed: NarrationSpeed;
-  pitch: number;
 }
 
 interface NarrationState {
@@ -16,21 +13,25 @@ interface NarrationState {
   totalSegments: number;
 }
 
-const RATE_MAP: Record<NarrationSpeed, string> = {
-  slow: '-20%',
-  normal: '-10%',
-  fast: '+5%',
-};
+interface Segment {
+  filename: string;
+  text: string;
+}
 
-const FALLBACK_RATE: Record<NarrationSpeed, number> = {
-  slow: 0.75,
-  normal: 0.85,
-  fast: 1.0,
-};
+function buildSegments(title: string, paragraphs: string[], moral: string): Segment[] {
+  const greeting = `Hello! Let me tell you a wonderful story called ${title}. Are you ready? Here we go!`;
+  const closing = `And that's the end of our story! Remember: ${moral}`;
+  return [
+    { filename: '0-greeting.mp3', text: greeting },
+    ...paragraphs.map((p, i) => ({ filename: `${i + 1}.mp3`, text: p })),
+    { filename: 'closing.mp3', text: closing },
+  ];
+}
 
-function pitchToSsml(pitch: number): string {
-  const pct = Math.round((pitch - 1) * 100);
-  return pct >= 0 ? `+${pct}Hz` : `${pct}Hz`;
+function narrationUrl(storyId: string, gender: NarrationVoiceGender, filename: string): string {
+  const base = import.meta.env.BASE_URL || '/';
+  const normalized = base.endsWith('/') ? base : `${base}/`;
+  return `${normalized}narration/${storyId}/${gender}/${filename}`;
 }
 
 export function useNarration(options: NarrationOptions) {
@@ -42,20 +43,15 @@ export function useNarration(options: NarrationOptions) {
     totalSegments: 0,
   });
 
-  const segmentsRef = useRef<string[]>([]);
+  const segmentsRef = useRef<Segment[]>([]);
+  const storyIdRef = useRef<string | null>(null);
   const indexRef = useRef(-1);
   const activeRef = useRef(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const pauseTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const audioCacheRef = useRef<Map<number, string>>(new Map());
-  const useEdgeRef = useRef(true);
+  const useStaticRef = useRef(true);
   const optionsRef = useRef(options);
   optionsRef.current = options;
-
-  const clearAudioCache = useCallback(() => {
-    audioCacheRef.current.forEach((url) => URL.revokeObjectURL(url));
-    audioCacheRef.current.clear();
-  }, []);
 
   const cleanup = useCallback(() => {
     if (audioRef.current) {
@@ -65,10 +61,9 @@ export function useNarration(options: NarrationOptions) {
     }
     if (pauseTimerRef.current) clearTimeout(pauseTimerRef.current);
     speechSynthesis.cancel();
-    clearAudioCache();
     activeRef.current = false;
     setState({ isActive: false, isPlaying: false, isPaused: false, currentIndex: -1, totalSegments: 0 });
-  }, [clearAudioCache]);
+  }, []);
 
   useEffect(() => {
     return () => {
@@ -78,9 +73,8 @@ export function useNarration(options: NarrationOptions) {
       }
       if (pauseTimerRef.current) clearTimeout(pauseTimerRef.current);
       speechSynthesis.cancel();
-      clearAudioCache();
     };
-  }, [clearAudioCache]);
+  }, []);
 
   const getPauseMs = (index: number) => {
     if (index === 0) return 1500;
@@ -96,12 +90,12 @@ export function useNarration(options: NarrationOptions) {
       return;
     }
 
-    useEdgeRef.current = false;
+    useStaticRef.current = false;
     indexRef.current = index;
     setState((s) => ({ ...s, currentIndex: index, isPlaying: true, isPaused: false }));
 
     const opts = optionsRef.current;
-    const utterance = new SpeechSynthesisUtterance(segmentsRef.current[index]);
+    const utterance = new SpeechSynthesisUtterance(segmentsRef.current[index].text);
     const voices = speechSynthesis.getVoices();
     const english = voices.filter((v) => v.lang.startsWith('en'));
 
@@ -122,9 +116,7 @@ export function useNarration(options: NarrationOptions) {
     }).sort((a, b) => b.score - a.score);
 
     if (scored.length > 0) utterance.voice = scored[0].voice;
-
-    utterance.rate = FALLBACK_RATE[opts.speed];
-    utterance.pitch = opts.pitch;
+    utterance.rate = 0.85;
 
     utterance.onend = () => {
       if (!activeRef.current) return;
@@ -138,7 +130,7 @@ export function useNarration(options: NarrationOptions) {
     speechSynthesis.speak(utterance);
   }, []);
 
-  const playEdge = useCallback((index: number) => {
+  const playStatic = useCallback((index: number) => {
     if (!activeRef.current) return;
     if (index >= segmentsRef.current.length) {
       activeRef.current = false;
@@ -146,72 +138,48 @@ export function useNarration(options: NarrationOptions) {
       return;
     }
 
-    indexRef.current = index;
-    setState((s) => ({ ...s, currentIndex: index, isPlaying: true, isPaused: false }));
-
-    const doPlay = (url: string) => {
-      const audio = new Audio(url);
-      audioRef.current = audio;
-      audio.onended = () => {
-        if (!activeRef.current) return;
-        pauseTimerRef.current = setTimeout(() => playEdge(index + 1), getPauseMs(index));
-      };
-      audio.onerror = () => playFallback(index);
-      audio.play().catch(() => playFallback(index));
-
-      // Prefetch next segment
-      const next = index + 1;
-      if (next < segmentsRef.current.length && !audioCacheRef.current.has(next)) {
-        const opts = optionsRef.current;
-        synthesize(segmentsRef.current[next], {
-          voice: VOICES[opts.voiceGender],
-          rate: RATE_MAP[opts.speed],
-          pitch: pitchToSsml(opts.pitch),
-        }).then((blob) => {
-          if (activeRef.current) {
-            audioCacheRef.current.set(next, URL.createObjectURL(blob));
-          }
-        }).catch(() => {});
-      }
-    };
-
-    const cached = audioCacheRef.current.get(index);
-    if (cached) {
-      doPlay(cached);
+    const storyId = storyIdRef.current;
+    if (!storyId) {
+      playFallback(index);
       return;
     }
 
-    const opts = optionsRef.current;
-    synthesize(segmentsRef.current[index], {
-      voice: VOICES[opts.voiceGender],
-      rate: RATE_MAP[opts.speed],
-      pitch: pitchToSsml(opts.pitch),
-    }).then((blob) => {
+    indexRef.current = index;
+    setState((s) => ({ ...s, currentIndex: index, isPlaying: true, isPaused: false }));
+
+    const url = narrationUrl(storyId, optionsRef.current.voiceGender, segmentsRef.current[index].filename);
+    const audio = new Audio(url);
+    audioRef.current = audio;
+
+    audio.onended = () => {
       if (!activeRef.current) return;
-      const url = URL.createObjectURL(blob);
-      audioCacheRef.current.set(index, url);
-      doPlay(url);
-    }).catch(() => {
+      pauseTimerRef.current = setTimeout(() => playStatic(index + 1), getPauseMs(index));
+    };
+
+    audio.onerror = () => {
+      if (!activeRef.current) return;
+      // Missing MP3 — fall back to Web Speech for the rest of the story.
+      playFallback(index);
+    };
+
+    audio.play().catch(() => {
       if (!activeRef.current) return;
       playFallback(index);
     });
   }, [playFallback]);
 
-  const start = useCallback((title: string, paragraphs: string[], moral: string) => {
+  const start = useCallback((storyId: string, title: string, paragraphs: string[], moral: string) => {
     if (audioRef.current) {
       audioRef.current.pause();
       audioRef.current.src = '';
     }
     speechSynthesis.cancel();
     if (pauseTimerRef.current) clearTimeout(pauseTimerRef.current);
-    clearAudioCache();
-    useEdgeRef.current = true;
+    useStaticRef.current = true;
 
-    const greeting = `Hello! Let me tell you a wonderful story called ${title}. Are you ready? Here we go!`;
-    const closing = `And that's the end of our story! Remember: ${moral}`;
-    const segments = [greeting, ...paragraphs, closing];
-
+    const segments = buildSegments(title, paragraphs, moral);
     segmentsRef.current = segments;
+    storyIdRef.current = storyId;
     activeRef.current = true;
     indexRef.current = 0;
     setState({
@@ -222,12 +190,12 @@ export function useNarration(options: NarrationOptions) {
       totalSegments: segments.length,
     });
 
-    playEdge(0);
-  }, [playEdge, clearAudioCache]);
+    playStatic(0);
+  }, [playStatic]);
 
   const pause = useCallback(() => {
     if (pauseTimerRef.current) clearTimeout(pauseTimerRef.current);
-    if (!useEdgeRef.current) {
+    if (!useStaticRef.current) {
       speechSynthesis.pause();
     } else if (audioRef.current) {
       audioRef.current.pause();
@@ -236,7 +204,7 @@ export function useNarration(options: NarrationOptions) {
   }, []);
 
   const resume = useCallback(() => {
-    if (!useEdgeRef.current) {
+    if (!useStaticRef.current) {
       if (speechSynthesis.paused) {
         speechSynthesis.resume();
       } else {
@@ -245,10 +213,10 @@ export function useNarration(options: NarrationOptions) {
     } else if (audioRef.current && audioRef.current.src) {
       audioRef.current.play().catch(() => {});
     } else {
-      playEdge(indexRef.current);
+      playStatic(indexRef.current);
     }
     setState((s) => ({ ...s, isPlaying: true, isPaused: false }));
-  }, [playEdge, playFallback]);
+  }, [playStatic, playFallback]);
 
   const stop = useCallback(() => {
     cleanup();

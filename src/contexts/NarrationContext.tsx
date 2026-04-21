@@ -22,8 +22,6 @@ export function NarrationProvider({ children }: { children: React.ReactNode }) {
   const { settings } = useSettings();
   const narration = useNarration({
     voiceGender: settings.narrationVoice,
-    speed: settings.narrationSpeed,
-    pitch: settings.narrationPitch,
   });
 
   const [storyId, setStoryId] = useState<string | null>(null);
@@ -32,7 +30,7 @@ export function NarrationProvider({ children }: { children: React.ReactNode }) {
   const startStory = useCallback((id: string, title: string, paragraphs: string[], moral: string) => {
     setStoryId(id);
     setStoryTitle(title);
-    narration.start(title, paragraphs, moral);
+    narration.start(id, title, paragraphs, moral);
   }, [narration.start]);
 
   const stop = useCallback(() => {
