@@ -828,6 +828,117 @@ const STORIES: Record<string, ScenePrompt[]> = {
       },
     ];
   })(),
+
+  'krishna-tames-kaliya': (() => {
+    const KRISHNA_K = 'Young Lord Krishna: deep blue-black skin, peacock feather crown in curly black hair, yellow silk dhoti, large lotus almond eyes, fearless divine smile, gold anklets bracelets waist-chain, celestial golden aura, slightly older than baby — about eight years old.';
+    const KALIYA = 'Kaliya the serpent: an enormous terrifying multi-hooded cobra with dark black-green scales, five or more raised hoods each with glowing red eyes, dripping deadly purple-black venom, massive coils thick as tree trunks, rising from dark poisoned water.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${KRISHNA_K} ${KALIYA} A majestic title composition. Krishna dances triumphantly atop Kaliya's multiple spread hoods in the middle of the Yamuna river. Krishna's feet move in divine rhythm, one leg raised gracefully, arms in classical dance pose. Kaliya's hoods droop under him, the serpent weakening. The river churns with supernatural energy. On the banks, villagers watch in awe. Golden divine light radiates from Krishna against the dark poisoned water. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `A beautiful idyllic scene of the Yamuna river near Vrindavan. Crystal clear blue-green water flows gently. Children splash and play on the sandy banks. Cows drink peacefully. Peacocks with full iridescent plumage dance on the shore. Women fill brass water pots. Lotus flowers dot the water. Lush green trees line both banks. Golden afternoon sunlight sparkles on the water. A perfect, peaceful Indian village riverside scene. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${KALIYA} A dramatic transformation. The once-beautiful Yamuna river has turned dark and poisonous. Kaliya's massive coils churn the now-black boiling water. Dead fish float on the surface. Birds fall from the sky above the river. Trees along the banks wilt and blacken. Purple-black venom seeps through the water. The multiple hoods of Kaliya rise menacingly from the dark depths. A scene of environmental destruction and terror. Dark, ominous lighting. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `Vrindavan villagers gathered on the distant bank of the now-poisoned Yamuna, faces full of fear and distress. Thirsty cows stand at the water's edge but refuse to drink the black water. Children hide behind their mothers. The river is dark and steaming. An old man gestures helplessly. ${KRISHNA_K} stands among the crowd, his expression calm and determined while everyone else panics. His blue-black skin and golden aura contrast with the frightened villagers. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${KRISHNA_K} A dramatic action scene. Krishna climbs a tall kadamba tree overhanging the poisoned dark Yamuna river. At the top, he ties his yellow dhoti tight, takes a deep breath, and leaps fearlessly into the black water — SPLASH! His golden aura blazes as he dives. The villagers below scream and reach out in horror. A moment of breathtaking courage. Dynamic mid-air pose, dark water below, golden light around Krishna. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `Vrindavan villagers crowd the riverbank in terror. Yashoda (Krishna's mother in saffron sari) is restrained by other women as she screams toward the river. Men reach out helplessly. Children cry. The dark poisoned river roils where Krishna disappeared. Ripples and bubbles on the black surface. The collective fear of an entire village for their beloved child. Emotional, intense, dark tones with warm faces lit by fear. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${KALIYA} ${KRISHNA_K} Beneath the dark water, the massive serpent Kaliya rises with all hoods spread in fury, wrapping his enormous coils around Krishna's small body, trying to crush him. Krishna is enveloped in the thick dark coils. Kaliya's red eyes blaze with rage. Underwater scene — dark poisoned water, the serpent's immense size dwarfing the boy. Dramatic, dangerous, the coils tightening. Faint golden glow from Krishna within the coils. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${KRISHNA_K} ${KALIYA} A supernatural moment. Krishna begins to glow with immense divine power, growing larger within Kaliya's coils. His golden aura expands explosively. The coils snap apart like breaking ropes. Krishna bursts free, now radiating blinding divine light. Kaliya recoils in shock, his red eyes wide. The river water churns and glows with golden energy. A dramatic power reveal — the tiny boy was the Supreme Lord all along. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${KRISHNA_K} ${KALIYA} THE ICONIC DANCE. Krishna leaps onto Kaliya's multiple raised hoods and begins a powerful, rhythmic divine dance — the Kaliya Nartana. His feet stamp in divine rhythm, one leg raised high, arms in classical Bharatanatyam pose. Each stamp sends golden shockwaves through Kaliya's body. The serpent's hoods droop lower and lower, weakening. The river glows golden around them. On the banks, villagers watch in amazement. Dynamic, triumphant, powerful. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${KALIYA} The serpent's wives — beautiful nagini women with human upper bodies and serpent lower bodies, wearing simple jewelry — approach ${KRISHNA_K} with folded hands, tears streaming, begging for mercy. Kaliya himself lies flat, all hoods bowed low to the ground in complete submission, eyes showing genuine remorse. Krishna stands atop the subdued serpent, his expression shifting from fierce to compassionate. The river calms. Golden-warm light returns. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `${KRISHNA_K} ${KALIYA} Krishna stands on the riverbank, one hand raised in a commanding but merciful gesture, pointing toward the distant ocean. Kaliya and his family of serpents swim away down the Yamuna toward the sea, hoods lowered, a long procession of dark serpents leaving the river. The water behind them clears — turning from black to blue-green where they have passed. Golden afternoon light. A scene of justice and mercy. ${STYLE}`,
+      },
+      {
+        filename: 'scene-11.png',
+        prompt: `A transcendent closing composition. The Yamuna river is beautiful and pristine again — crystal clear blue-green water, lotus flowers blooming, fish leaping. Children splash joyfully. Cows drink peacefully. Peacocks dance on the banks. ${KRISHNA_K} stands in the shallow water, playing his flute, golden aura blazing. The restored paradise of Vrindavan. The message: stand up to bullies to protect the ones you love. Golden sunset light, joy, and divine peace. ${STYLE}`,
+      },
+    ];
+  })(),
+
+  'eklavya-the-archer': (() => {
+    const EKLAVYA = 'Eklavya: a determined tribal boy with dark brown skin, lean muscular build, simple animal-hide clothing, a handmade bow and quiver, wild black hair tied back, intense focused eyes, barefoot, forest tribal ornaments of beads and feathers.';
+    const DRONA = 'Guru Dronacharya: an elderly but strong Brahmin warrior-teacher with grey beard, white dhoti and upper cloth, sacred thread, stern dignified face, carrying a magnificent ornate bow, standing in a royal training ground.';
+    const ARJUNA_E = 'Prince Arjuna: a handsome young prince with fair golden-brown skin, ornate blue silk garments, gold jewelry, an exquisite royal bow, confident proud bearing, the best student.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${EKLAVYA} A majestic title composition. Eklavya stands in a forest clearing, drawing his handmade bow with perfect form, eyes blazing with fierce concentration. Before him, a clay statue of Dronacharya sits on a mound decorated with wildflowers. Arrows are embedded in impossible targets all around — a leaf pinned mid-fall, a distant fruit split perfectly. The forest is his training ground. Golden morning light streams through the trees. Raw talent meets absolute dedication. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${EKLAVYA} as a young boy in a small tribal village at the edge of a great forest. Simple thatched huts, cooking fires, tribal elders. Young Eklavya sits apart, fashioning a tiny bow from a bent stick and vine string. His eyes are fixed on a distant bird with intense focus. Other tribal children play nearby. The vast forest stretches behind the village. Warm golden afternoon light. A dreamer with a single-minded goal. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${EKLAVYA} ${DRONA} Eklavya has traveled to the royal gurukul. He kneels humbly before Dronacharya in the grand training ground. Behind Drona, princes in silk garments practice archery with fine bows. Eklavya is dusty from his journey, wearing simple tribal clothes, his handmade bow beside him. He looks up with desperate hope and respect. The contrast between the tribal boy and the royal setting is stark. Warm golden training ground light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${DRONA} He shakes his head with a stern expression, one hand raised in refusal. ${EKLAVYA} stands before him, face crumbling with hurt and disappointment. Behind them, the princes glance over dismissively. Eklavya's handmade bow looks crude next to the royal weapons. His shoulders slump. But in his eyes, beneath the pain, a spark of determination remains. The royal training ground with its grandeur contrasts with his humble appearance. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${EKLAVYA} In a forest clearing, he has built a clay statue of Dronacharya — carefully shaped, decorated with forest flowers and leaves. Eklavya kneels before it in deep reverence, hands folded, head bowed. Then he stands and draws his bow, aiming at a leaf target. The clay statue watches over his practice like a silent teacher. Morning mist in the forest, dappled golden light, a sacred self-made training ground. Devotion and self-reliance. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${EKLAVYA} A dynamic montage of his relentless practice. He shoots arrows at sounds with eyes blindfolded. He practices in pouring rain, water streaming down his focused face. He shoots at falling leaves, hitting each one. He fires at tiny targets far in the distance. His arms grow strong, his aim perfect. Time passes — seasons change around him. The clay statue of Drona stands constant in the background. Years of solitary, obsessive dedication. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${EKLAVYA} A stunning display of skill. A royal hunting dog barks loudly in the forest. In a lightning-fast blur, Eklavya fires seven arrows in rapid succession — they fill the dog's open mouth perfectly, silencing it without drawing a single drop of blood. The dog stands frozen, mouth bristling with arrow shafts, completely unharmed. The precision is superhuman. Forest clearing, dramatic golden light on the incredible feat. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${ARJUNA_E} and several other richly dressed princes stand in the forest, jaws dropped in utter disbelief, staring at the silenced dog. Arjuna's face shows a mix of awe and jealous shock — he knows he cannot match this feat. The other princes whisper to each other in amazement. The dog walks back with arrows in its mouth. The forest around them. Dramatic lighting highlighting their stunned expressions. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${DRONA} ${EKLAVYA} Dronacharya stands in the forest clearing, face showing genuine amazement as he watches Eklavya demonstrate his skill. Eklavya draws his bow with perfect form. The clay statue of Drona is visible behind him. Dronacharya's eyes widen — this tribal boy has surpassed even his best royal students. His stern face cracks with reluctant admiration. Forest clearing, warm golden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${EKLAVYA} ${DRONA} Eklavya leads Dronacharya to the clay statue and bows before it. "You taught me, master." His expression is one of pure, genuine devotion and gratitude. Dronacharya stares at the clay statue of himself — decorated with flowers, surrounded by years of practice arrows embedded in targets. The realization dawns on his face. The clay statue in the forest clearing, golden light, a profound moment. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `${EKLAVYA} A montage of his legend spreading. People from different villages gather to watch him shoot — merchants, farmers, nobles, children. They point and marvel. His arrows fly impossibly far and accurate. His fame radiates outward like ripples. The forest boy has become a legend. In the center, Eklavya stands humble and focused, unchanged by fame. Golden warm light, crowds, admiration. ${STYLE}`,
+      },
+      {
+        filename: 'scene-11.png',
+        prompt: `A transcendent closing composition. ${EKLAVYA} stands in his forest clearing at golden sunrise, bow in hand, silhouetted against magnificent golden-orange light. Behind him, the clay statue of Drona is now weathered with age but still standing. Arrows embedded in impossible targets radiate outward in a pattern. The forest glows with supernatural golden light. The message: dedication is the greatest teacher. Deeply inspirational, warm, powerful atmosphere. ${STYLE}`,
+      },
+    ];
+  })(),
 };
 
 // ─── Generation Logic ───

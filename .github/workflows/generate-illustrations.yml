@@ -50,7 +50,12 @@ jobs:
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "Add generated story illustrations"
-            git push
+            # Pull any new commits that landed while generating, then push
+            for i in 1 2 3 4; do
+              git pull --rebase origin main && git push origin main && break
+              echo "Push attempt $i failed, retrying in $((i * 5))s..."
+              sleep $((i * 5))
+            done
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
           fi
 
