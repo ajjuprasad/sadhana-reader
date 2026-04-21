@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "generate-narration": "node --experimental-strip-types scripts/generate-narration.ts"
+    "generate-narration": "node --experimental-strip-types scripts/generate-narration.ts",
+    "generate-illustrations": "node --experimental-strip-types scripts/generate-illustrations.ts"
   },
   "dependencies": {
     "firebase": "^12.12.0",
