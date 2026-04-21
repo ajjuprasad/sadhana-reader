@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+// 6 stories: krishna, ganesha, squirrel, prahlada, dhruva, hanuman
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
