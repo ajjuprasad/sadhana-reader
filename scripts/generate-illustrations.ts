@@ -612,6 +612,106 @@ const STORIES: Record<string, ScenePrompt[]> = {
       },
     ];
   })(),
+
+  'ganesha-and-the-moon': (() => {
+    const GANESHA_M = 'Lord Ganesha: elephant-headed deity, plump round body with soft grey skin, large gentle intelligent eyes, small golden crown, four arms, yellow silk dhoti, ornate gold necklaces armlets anklets, a broken tusk, holding a modak sweet in one hand.';
+    const MOON_M = 'The Moon: a luminous silver-white celestial face in the night sky, handsome sharp features, arrogant mocking expression, radiating cool silver-blue moonlight, surrounded by stars.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${GANESHA_M} ${MOON_M} A dramatic title composition. Ganesha stands defiantly, one hand raised in a commanding gesture, looking up at the laughing Moon in the night sky. The Moon's face is huge and mocking. Ganesha's expression shifts between hurt and righteous anger. Scattered modak sweets on the ground around him. His little mouse sits beside him. Mount Kailash in the background under a starry sky. The tension between the two — divine confrontation. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${GANESHA_M} A magnificent birthday celebration on Mount Kailash. Gods and goddesses in brilliant silks and gold crowd the celestial hall. Mountains of golden-brown modak sweet dumplings are piled on silver platters everywhere. Garlands of flowers, glowing oil lamps, celestial musicians playing. Ganesha sits at the center of honor, beaming with joy. His parents Shiva and Parvati watch fondly from their throne. Festive, joyful, divine atmosphere. Golden warm light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${GANESHA_M} Close-up of Ganesha eating modaks with absolute bliss. His trunk curls around one modak, another hand holds two more, his fourth hand reaches for the platter. His round grey tummy grows rounder with each sweet. His eyes are half-closed in pure ecstasy. Crumbs of modak on his chin. Platters of golden-brown modaks surround him. An expression of pure, innocent, childlike gluttony and joy. Warm golden festive light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${GANESHA_M} A comedic scene. Ganesha tries to climb onto his tiny mouse mount, but his tummy is SO round and full that he topples backward — PLOP! He tumbles and rolls on the ground of Mount Kailash, modaks flying out of his pockets in all directions. His mouse looks startled. His four arms flail comically. Despite the fall, it is an endearing, lovable moment. Moonlit night on Mount Kailash. Stars and silver light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${MOON_M} The Moon's face fills the upper sky, mouth wide open in cruel, mocking laughter. Silver moonlight pours down cruelly onto ${GANESHA_M} who sits on the ground below, looking up at the Moon. The Moon's expression is exaggerated — mean-spirited, pointing, tears of laughter. Below, Ganesha is sprawled with scattered modaks. The cruelty of the mockery is palpable. Night sky, Mount Kailash, cold silver-blue light from the Moon. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${GANESHA_M} Close-up of Ganesha's face showing deep hurt. His large gentle elephant eyes glisten with tears. His trunk droops sadly. The laughter of the Moon echoes as silver light streams down. A deeply emotional, sympathetic moment — the pain of being mocked. Dark night background, Ganesha lit by cold moonlight. The vulnerability of even a god when words hurt. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${GANESHA_M} Ganesha stands tall, his hurt transforming into righteous anger. His four arms are raised in a powerful cursing gesture. Divine golden energy crackles from his hands. His eyes blaze with authority. He points at ${MOON_M} in the sky. The Moon's expression shifts from laughter to sudden terror. A powerful wave of golden divine energy shoots upward toward the Moon. Dramatic, supernatural, intense lighting — gold versus silver. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `A dramatic dark scene. The night sky is completely black — no Moon at all. The world below is in total darkness. People stumble around unable to see. Owls hoot in confusion. The ocean has no reflection. Travelers are lost. Animals are disoriented. The absence of the Moon has plunged everything into chaos. Deep blues and blacks dominate. A few scattered stars provide minimal light. An eerie, unsettling atmosphere. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${GANESHA_M} Multiple gods and goddesses kneel before Ganesha, hands folded, begging him to restore the Moon. Above them, a faint translucent ${MOON_M} appears dimly, his face full of genuine remorse and apology, tears flowing. Ganesha sits with his arms crossed, still upset but his kind heart beginning to soften. The scene balances between the plea of the gods and the apology of the Moon. Mount Kailash. Dim starlight. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${GANESHA_M} He raises one hand in a merciful gesture, his expression now wise and compassionate. Above, the Moon begins to reappear — but only as a thin crescent, not fully bright. The crescent Moon glows softly with humbled, grateful silver light. Ganesha's golden aura mingles with the returning moonlight. A lesson taught with mercy. Mount Kailash, stars returning, the first crescent moonlight touching the landscape. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `A transcendent closing composition. A beautiful night sky showing the phases of the Moon in a graceful arc — thin crescent growing to half moon, full moon, then shrinking back. Below, ${GANESHA_M} sits serenely on a lotus, one hand raised in blessing, his modak in another hand, a gentle forgiving smile. Children below point up at the moon phases in wonder. The message: words can hurt, always be kind. Silver moonlight and golden divine glow blend harmoniously. ${STYLE}`,
+      },
+    ];
+  })(),
+
+  'churning-of-the-ocean': (() => {
+    const VISHNU_CO = 'Lord Vishnu: magnificent four-armed deity with luminous deep blue skin, serene omniscient expression, golden crown with jewels, yellow silk pitambara, Sudarshana chakra conch lotus and mace in four hands, standing on a lotus, divine radiance.';
+    const SHIVA_CO = 'Lord Shiva: ash-smeared blue-white skin, matted brown dreadlocks piled high with crescent moon and Ganga, third eye on forehead, tiger skin garment, rudraksha beads, serene powerful expression, trident nearby.';
+    const DEVAS = 'The Devas: radiant celestial gods with golden-glowing skin, ornate crowns and silk garments of various colors, divine weapons and jewelry, noble handsome faces.';
+    const ASURAS = 'The Asuras: powerful muscular demons with dark reddish-brown skin, fierce expressions, heavy dark armor, horned helmets, fanged snarls, intimidating builds.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `A majestic title composition of the cosmic churning. The massive Mount Mandara rises from the churning milky ocean, wrapped by the enormous serpent Vasuki. ${DEVAS} pull one end of the serpent on the left, ${ASURAS} pull the other end on the right. Below, ${VISHNU_CO} in turtle form supports the mountain. The ocean churns with supernatural energy — golden, white, and cosmic blue. Above, celestial objects emerge from the foam. Epic, cosmic, monumental scale. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${DEVAS} The gods sit defeated and weak in their celestial realm. Their golden armor is tarnished, their divine glow is dimmed. Some sit with heads bowed, others look at their faded weapons. Their celestial palaces crumble in the background. Dark clouds gather. Below, ${ASURAS} celebrate their victories with raised weapons and arrogant laughter. The contrast between the defeated gods above and triumphant demons below. Dark, somber, dramatic light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${VISHNU_CO} He appears in magnificent glory before the assembled ${DEVAS} who look up at him with desperate hope. Vishnu stands on a golden lotus, all four arms visible, speaking with calm authority, one hand gesturing toward the vast cosmic ocean visible in the distance. The ocean stretches endlessly, mysterious and deep. A beam of golden divine light illuminates the path to the ocean. Celestial realm, dramatic light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${DEVAS} ${ASURAS} A tense meeting scene. The gods and demons face each other across a great hall, negotiating their uneasy alliance. The Devas look reluctant but determined. The Asuras look suspicious but greedy for the Amrit. Between them, a vision of the golden pot of Amrit glows enticingly. Celestial architecture with tall pillars. Dramatic lighting — golden on the Devas side, reddish on the Asuras side. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `THE EPIC CHURNING SCENE. The colossal Mount Mandara stands in the center of the vast milky ocean. The enormous serpent Vasuki is wrapped around it as a rope. ${DEVAS} pull Vasuki's tail on one side, ${ASURAS} pull his head on the other side. The mountain spins, churning the ocean into massive waves and cosmic foam. The scale is immense — tiny figures pulling against a mountain-sized churning rod. Epic, cosmic, dynamic. Ocean spray, golden and silver light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${VISHNU_CO} A cosmic transformation. The mountain begins to sink into the ocean. Below the waves, Vishnu has taken the form of Kurma — a colossal divine turtle with luminous blue skin and golden shell. The turtle rises from the depths, supporting Mount Mandara on his massive back. The mountain stabilizes. Underwater cosmic scene with supernatural blue-green light, divine golden radiance from the turtle, the mountain above. Awe-inspiring. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${SHIVA_CO} A dramatic, intense scene. From the churning ocean rises the terrible Halahala poison — a thick purple-black deadly cloud that wilts everything it touches. Everyone flees in terror. Shiva steps forward calmly and scoops up ALL the poison in his cupped hands. He drinks it. His throat turns a deep, vivid blue as Goddess Parvati presses her hands against his throat to stop the poison. His face is serene despite the agony. Purple-black poison contrasts with blue throat. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `A magnificent emergence scene. From the churning milky ocean rise wonderful treasures one after another: a luminous white magical cow (Kamadhenu), a magnificent white horse (Ucchaishravas), a blazing jewel (Kaustubha), and the radiant Goddess Lakshmi standing on a pink lotus in golden silk. Finally, Dhanvantari rises holding the golden pot of Amrit which glows with supernatural golden light. The ocean churns with white and gold. Multiple divine treasures in one grand composition. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${VISHNU_CO} disguised as Mohini — the most beautiful, enchanting woman imaginable with luminous golden-brown skin, flowing black hair, dazzling silk garments, captivating eyes. She holds the golden pot of Amrit gracefully. The ${ASURAS} are mesmerized, mouths agape, weapons dropped, completely enchanted. Meanwhile she subtly passes the Amrit to the ${DEVAS} who drink from it, golden light flowing into them. A scene of divine trickery. Warm golden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `A transcendent closing composition. The ${DEVAS} stand triumphant, their divine glow fully restored, golden and radiant, weapons shining. They raise their hands in victory. Above them, ${VISHNU_CO} in his true form blesses the scene. In the background, the milky ocean settles peacefully, Mount Mandara resting. A rainbow arcs across the sky. The message: great things happen when people work together. Cosmic, triumphant, golden divine light. ${STYLE}`,
+      },
+    ];
+  })(),
 };
 
 // ─── Generation Logic ───
