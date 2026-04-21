@@ -32,7 +32,7 @@ export default function StoriesPage() {
           <button
             onClick={() => {
               const url = `${window.location.origin}/stories`;
-              const text = 'Stories for Kids on Sādhanā Reader — tales of courage, kindness & wisdom from Hindu mythology for children';
+              const text = 'Stories for Kids on Sādhanā Reader. Beautiful tales of courage, kindness and wisdom for children, with narration.';
               if (navigator.share) {
                 navigator.share({ title: 'Stories for Kids', text, url }).catch(() => {});
               } else {

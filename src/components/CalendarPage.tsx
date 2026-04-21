@@ -186,7 +186,7 @@ export default function CalendarPage() {
             <button
               onClick={() => {
                 const url = window.location.origin + '/panchanga';
-                const text = 'Hindu Calendar 2026 — Festivals, Pūrṇimā & sacred events: ' + url;
+                const text = 'Pañchāṅga 2026 on Sādhanā Reader. Festivals, Pūrṇimā and important dates all in one place: ' + url;
                 if (navigator.share) {
                   navigator.share({ title: 'Pañchāṅga 2026', text, url }).catch(() => {});
                 } else {
