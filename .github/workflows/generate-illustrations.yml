@@ -23,6 +23,14 @@ jobs:
 
       - run: npm ci
 
+      - name: Clean old illustrations
+        run: |
+          if [ -n "${{ github.event.inputs.story_id }}" ]; then
+            rm -rf "public/illustrations/${{ github.event.inputs.story_id }}"
+          else
+            rm -rf public/illustrations/*/
+          fi
+
       - name: Generate illustrations
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
