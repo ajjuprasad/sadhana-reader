@@ -41,7 +41,7 @@ export default function StoryDetail() {
 
   const handleShare = () => {
     const url = window.location.href;
-    const text = `Read "${story.title}" — a story from ${story.source} for kids on Sādhanā Reader`;
+    const text = `Read "${story.title}" on Sādhanā Reader. A beautiful story for kids from ${story.source}`;
     const fullText = `${text}\n${url}`;
     if (navigator.share) {
       navigator.share({ title: story.title, text: fullText }).catch(() => {});
