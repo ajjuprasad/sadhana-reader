@@ -99,6 +99,63 @@ const STORIES: Record<string, ScenePrompt[]> = {
       prompt: `${KRISHNA} ${FRUIT_SELLER} A transcendent closing composition. In the foreground, the fruit seller sits peacefully with her empty basket, a serene knowing smile, her face glowing with inner divine light. In the luminous background above, a celestial vision of baby Krishna playing a small flute, seated on a lotus flower, surrounded by a magnificent golden celestial aura and soft divine clouds. The entire scene is bathed in warm golden-rose light. Vrindavan village below with temples along the Yamuna. The message: giving with love brings the greatest blessing. Deeply spiritual and immersive atmosphere. ${STYLE}`,
     },
   ],
+
+  'ganesha-race-around-world': (() => {
+    const GANESHA = 'Lord Ganesha: elephant-headed deity, plump round body with soft grey skin, large gentle intelligent eyes, small golden crown, four arms, yellow silk dhoti, ornate gold necklaces armlets anklets, a broken tusk, holding a modak sweet in one hand.';
+    const KARTIKEYA = 'Lord Kartikeya: handsome youthful warrior god, golden-brown skin, lean muscular build, red silk dhoti with gold border, ornate gold armor and jewelry, tall golden spear, riding a magnificent peacock with iridescent plumage.';
+    const SHIVA = 'Lord Shiva: ash-smeared blue-white skin, matted brown dreadlocks piled high with crescent moon and Ganga, third eye on forehead, tiger skin lower garment, rudraksha beads, serene powerful expression, trident nearby.';
+    const PARVATI = 'Goddess Parvati: radiant golden-brown skin, deep green silk sari with gold border, ornate gold crown tiara earrings necklaces, gentle lotus eyes, benevolent loving maternal smile, divine glow.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${GANESHA} ${KARTIKEYA} ${SHIVA} ${PARVATI} A majestic title composition on Mount Kailash. Ganesha and Kartikeya stand on either side of their parents Shiva and Parvati, who sit on a silver throne. Between them, a luminous golden mango floats, glowing with divine light. The snowy peaks of Mount Kailash shimmer behind them. Celestial clouds and divine golden light fill the sky. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${SHIVA} ${PARVATI} A great sage with a long white beard and saffron robes approaches Lord Shiva and Goddess Parvati on the snow-capped Mount Kailash. He holds out a magnificent glowing golden mango on a silver plate. The mango radiates divine light. The sage bows reverently. Kailash palace with silver pillars, snowy peaks behind, celestial clouds. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${GANESHA} ${KARTIKEYA} The two brothers argue over the golden mango. Ganesha gestures with his trunk raised, eyes determined. Kartikeya stands tall with his spear, chin lifted proudly. The golden mango sits on a pedestal between them, glowing. ${SHIVA} ${PARVATI} watch from their throne in the background with amused expressions. Kailash palace interior with silver pillars. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${SHIVA} He raises one hand with a wise smile, announcing the race. ${PARVATI} sits beside him, watching. ${GANESHA} and ${KARTIKEYA} listen attentively. Shiva points toward the horizon, indicating the whole world. The golden mango glows on a pedestal nearby. Mount Kailash throne room with sweeping views of earth below through celestial clouds. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${KARTIKEYA} He soars through the sky on his magnificent peacock with iridescent feathers spread wide, racing at tremendous speed. Below him, a sweeping aerial view of earth: snow-capped mountains, vast blue oceans, golden deserts, and green forests. Wind rushes past him, his red dhoti streaming behind. Dynamic, exhilarating flight. Dramatic sunset sky with blazing colors. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${GANESHA} He sits quietly on Mount Kailash, his small mouse vehicle beside him. He rests his chin thoughtfully on one hand, his intelligent eyes looking upward with a spark of inspiration forming. The golden mango is visible in the background. A contemplative, quiet moment of deep thinking. Soft golden light surrounds him. Snowy Kailash landscape. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${GANESHA} He walks lovingly around ${SHIVA} and ${PARVATI} who sit together on their silver throne. Ganesha has his hands folded in reverence as he circumambulates them, his trunk curled respectfully. His small mouse follows behind him. Soft divine light trails behind Ganesha as he walks. ${PARVATI} looks surprised and curious. Kailash throne room. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${PARVATI} She leans forward from the throne, her lotus eyes wide with surprise and curiosity, one hand raised in a questioning gesture. She looks at ${GANESHA} who has just completed walking around them. ${SHIVA} watches with a knowing half-smile. Soft golden light bathes the scene. Mount Kailash throne room interior. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${GANESHA} He stands before his parents with his trunk raised joyfully, all four arms in expressive gestures, speaking with conviction and love. A radiant smile on his face. Behind him, a glowing ethereal vision shows ${SHIVA} and ${PARVATI} as the entire world — the earth, sun, moon, and stars orbiting around them. The concept of parents as the whole world visualized. Divine golden light everywhere. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${SHIVA} ${PARVATI} Their faces beam with pure love and pride, tears of joy in Parvati's eyes. ${GANESHA} sits happily eating the golden mango with great relish, trunk curled around it. In the background, ${KARTIKEYA} has just arrived back on his peacock, dusty and exhausted, looking shocked to see Ganesha already eating the mango. Kailash throne room, golden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `${KARTIKEYA} He stands with arms spread in disbelief, looking exasperated. ${SHIVA} places a gentle hand on Kartikeya's shoulder, explaining with a wise, kind expression. ${GANESHA} watches from nearby, still holding the half-eaten golden mango, expression full of love for his brother. Mount Kailash setting, warm divine golden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-11.png',
+        prompt: `${GANESHA} A transcendent closing composition. Ganesha sits serenely on a golden lotus throne, bathed in magnificent divine light. One hand holds a modak sweet, another raised in blessing. Below him, a vision of people from across the world praying before beginning new tasks — students, artists, travelers — all with folded hands. The message: wisdom and love are greater than speed. Celestial clouds, stars, divine golden radiance. Deeply spiritual. ${STYLE}`,
+      },
+    ];
+  })(),
 };
 
 // ─── Generation Logic ───
