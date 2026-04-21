@@ -156,6 +156,58 @@ const STORIES: Record<string, ScenePrompt[]> = {
       },
     ];
   })(),
+
+  'squirrel-and-lord-rama': (() => {
+    const RAMA = 'Lord Rama: divine prince with deep blue skin, serene handsome face, tall and regal, golden crown with jewels, yellow silk dhoti and upper cloth, ornate gold jewelry, divine bow in one hand, gentle compassionate eyes, celestial golden aura.';
+    const SQUIRREL = 'A tiny brown Indian palm squirrel with big round dark eyes, small furry body, bushy tail, three faint light stripes on her back, expressive and determined.';
+    const MONKEYS = 'An army of large powerful vanara monkeys with brown and golden fur, muscular builds, wearing simple loincloths, carrying massive boulders and rocks.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${RAMA} ${SQUIRREL} A majestic title composition. Lord Rama stands tall on the shore, the vast blue ocean stretching behind him. He gently cradles the tiny squirrel in his large blue palm near his chest, looking down at her with infinite tenderness. The massive stone bridge stretches across the ocean into the distance. Golden sunset light, dramatic clouds. Monkeys working on the bridge visible below. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${RAMA} He stands on a rocky coastline gazing across the vast turbulent ocean toward the distant island of Lanka, silhouetted in dark storm clouds. His expression is determined and resolute. Beside him, Hanuman — a powerful white-furred monkey with a golden crown — stands loyally. The ocean is immense and intimidating. Dramatic sky with both golden light and dark clouds. The challenge ahead is visible. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${MONKEYS} Thousands of mighty vanara monkeys and bears work together carrying enormous boulders and rocks to the ocean's edge. They heave massive stones into the churning blue-green sea. Crash! Splash! The beginning of a great stone bridge forms across the water. Dynamic, powerful scene of collective effort. Dramatic lighting, spray of ocean water, golden afternoon sun. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${SQUIRREL} She sits on a branch of a tree overlooking the construction site below. Her big dark eyes watch the monkeys carrying giant boulders. She looks tiny compared to everything around her. Her expression shows longing — she wants to help but feels small. The massive bridge construction is visible below. Soft dappled sunlight through leaves. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${SQUIRREL} She rolls energetically in golden beach sand, her tiny furry body covered in grains of sand. Then she runs determinedly toward the bridge, her little legs moving fast, tail streaming behind. Sand grains cling to her fur. The beach, ocean, and bridge construction are visible. Warm golden light. A tiny hero in action. Dynamic, spirited movement. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${SQUIRREL} She stands at the edge of the massive stone bridge, shaking sand from her tiny body into the gaps between enormous boulders. Grains of sand fall from her fur into the cracks. She is impossibly small next to the giant rocks. The contrast between her tiny size and the massive bridge is dramatic. Ocean spray, warm golden light, determination in her eyes. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${MONKEYS} Several large, muscular monkeys point and laugh at ${SQUIRREL} who stands below them looking small and hurt. The monkeys are towering over her, some slapping their knees, mouths open in laughter. The squirrel's ears droop, her eyes look sad but still determined. The bridge construction continues behind. Afternoon light. The cruelty of mockery contrasted with innocent determination. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${SQUIRREL} She sits alone looking downcast, ears drooped, eyes glistening with sadness. But behind her, ${RAMA} approaches, walking toward her with graceful powerful strides, his divine blue skin glowing. His compassionate eyes are fixed on the tiny squirrel. A beam of divine golden light surrounds Rama. The monkeys in the background look up in surprise at Rama's approach. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${RAMA} He stands tall and majestic, one hand raised commanding silence, looking at the monkeys with gentle authority. His expression is kind but firm. He gestures toward ${SQUIRREL} at his feet. The monkeys look ashamed, heads bowed. Rama's divine aura illuminates the scene. The massive bridge and ocean behind. A moment of justice and compassion. Golden divine light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${RAMA} Close-up of his large, beautiful blue hands gently cradling ${SQUIRREL} in his palm. He strokes her tiny back softly with three fingers — and where his fingers touch, three luminous golden stripes appear on her fur, glowing with divine light. The squirrel looks up at him with pure adoration. Rama smiles tenderly. Intense divine golden radiance emanates from the touch. An intimate, sacred moment. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `A transcendent closing composition. The completed magnificent stone bridge stretches gloriously across the vast blue ocean under a blazing golden sunset. ${RAMA} stands triumphantly at one end. ${SQUIRREL} sits proudly on a stone, her three golden stripes glowing. The monkeys bow in respect around her. In the golden sky above, a celestial vision of the rescued Sita smiling. The message: even the smallest act of love makes a big difference. Deeply spiritual and immersive. ${STYLE}`,
+      },
+    ];
+  })(),
 };
 
 // ─── Generation Logic ───
