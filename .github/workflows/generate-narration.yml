@@ -25,9 +25,9 @@ jobs:
           SARVAM_API_KEY: ${{ secrets.SARVAM_API_KEY }}
         run: |
           if [ -n "${{ github.event.inputs.story_id }}" ]; then
-            npm run generate-narration -- "${{ github.event.inputs.story_id }}"
+            npx tsx scripts/generate-narration.ts "${{ github.event.inputs.story_id }}"
           else
-            npm run generate-narration
+            npx tsx scripts/generate-narration.ts
           fi
 
       - name: Commit and push MP3 files
