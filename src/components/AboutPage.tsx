@@ -94,7 +94,7 @@ export default function AboutPage() {
           </h2>
           <div className="flex justify-center mb-5">
             <img
-              src={`${import.meta.env.BASE_URL}ajay-prasad.jpg`}
+              src="https://github.com/ajjuprasad.png"
               alt="Ajay Prasad"
               className="w-24 h-24 rounded-full object-cover"
               style={{ border: '3px solid rgba(255,153,51,0.3)' }}
