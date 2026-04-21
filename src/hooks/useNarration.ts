@@ -92,7 +92,7 @@ export function useNarration(options: NarrationOptions) {
     if (!activeRef.current) return;
     if (index >= segmentsRef.current.length) {
       activeRef.current = false;
-      setState((s) => ({ ...s, isPlaying: false, isPaused: false }));
+      setState({ isActive: false, isPlaying: false, isPaused: false, currentIndex: -1, totalSegments: 0 });
       return;
     }
 
@@ -100,18 +100,29 @@ export function useNarration(options: NarrationOptions) {
     indexRef.current = index;
     setState((s) => ({ ...s, currentIndex: index, isPlaying: true, isPaused: false }));
 
+    const opts = optionsRef.current;
     const utterance = new SpeechSynthesisUtterance(segmentsRef.current[index]);
     const voices = speechSynthesis.getVoices();
     const english = voices.filter((v) => v.lang.startsWith('en'));
-    const indian = english.filter((v) => v.lang === 'en-IN' || v.name.toLowerCase().includes('india'));
-    const neural = english.filter((v) => {
-      const n = v.name.toLowerCase();
-      return n.includes('natural') || n.includes('neural') || n.includes('enhanced');
-    });
-    const preferred = indian.length > 0 ? indian : neural.length > 0 ? neural : english;
-    if (preferred.length > 0) utterance.voice = preferred[0];
 
-    const opts = optionsRef.current;
+    const FEMALE_HINTS = ['female', 'woman', 'samantha', 'karen', 'moira', 'tessa', 'fiona', 'victoria', 'zira', 'hazel', 'susan', 'linda', 'neerja'];
+    const MALE_HINTS = ['male', 'man', 'daniel', 'james', 'david', 'mark', 'alex', 'fred', 'tom', 'george', 'prabhat', 'ravi'];
+    const wantedHints = opts.voiceGender === 'female' ? FEMALE_HINTS : MALE_HINTS;
+    const unwantedHints = opts.voiceGender === 'female' ? MALE_HINTS : FEMALE_HINTS;
+
+    const scored = english.map((v) => {
+      let score = 0;
+      const n = v.name.toLowerCase();
+      if (n.includes('natural') || n.includes('neural')) score += 50;
+      if (n.includes('enhanced') || n.includes('premium')) score += 40;
+      if (v.lang === 'en-IN' || n.includes('india')) score += 20;
+      if (wantedHints.some((h) => n.includes(h))) score += 30;
+      if (unwantedHints.some((h) => n.includes(h))) score -= 30;
+      return { voice: v, score };
+    }).sort((a, b) => b.score - a.score);
+
+    if (scored.length > 0) utterance.voice = scored[0].voice;
+
     utterance.rate = FALLBACK_RATE[opts.speed];
     utterance.pitch = opts.pitch;
 
@@ -131,7 +142,7 @@ export function useNarration(options: NarrationOptions) {
     if (!activeRef.current) return;
     if (index >= segmentsRef.current.length) {
       activeRef.current = false;
-      setState((s) => ({ ...s, isPlaying: false, isPaused: false }));
+      setState({ isActive: false, isPlaying: false, isPaused: false, currentIndex: -1, totalSegments: 0 });
       return;
     }
 
