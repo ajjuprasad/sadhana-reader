@@ -7,6 +7,11 @@ on:
         description: 'Story ID (leave empty for all stories with scenes)'
         required: false
         default: ''
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/generate-illustrations.ts'
+      - 'src/data/scenes.ts'
 
 permissions:
   contents: write
@@ -14,6 +19,7 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
 
@@ -22,14 +28,6 @@ jobs:
           node-version: '22'
 
       - run: npm ci
-
-      - name: Clean old illustrations
-        run: |
-          if [ -n "${{ github.event.inputs.story_id }}" ]; then
-            rm -rf "public/illustrations/${{ github.event.inputs.story_id }}"
-          else
-            rm -rf public/illustrations/*/
-          fi
 
       - name: Generate illustrations
         env:
