@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback, useEffect } from 'react';
+import { useState, useRef, useCallback, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { storyScenes } from '../data/scenes';
 import type { Story } from '../data/stories';
@@ -25,7 +25,10 @@ function buildSegments(title: string, paragraphs: string[], moral: string) {
 
 export default function WatchMode({ story, voiceGender, onClose }: WatchModeProps) {
   const scenes = storyScenes[story.id] || [];
-  const segments = buildSegments(story.title, story.paragraphs, story.moral);
+  const segments = useMemo(
+    () => buildSegments(story.title, story.paragraphs, story.moral),
+    [story.title, story.paragraphs, story.moral]
+  );
 
   const [currentSegment, setCurrentSegment] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
@@ -34,10 +37,18 @@ export default function WatchMode({ story, voiceGender, onClose }: WatchModeProp
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const activeRef = useRef(true);
   const pauseTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const segmentRef = useRef(0);
 
   const base = import.meta.env.BASE_URL || '/';
   const norm = base.endsWith('/') ? base : `${base}/`;
+
+  const segmentsRef = useRef(segments);
+  segmentsRef.current = segments;
+
+  const voiceRef = useRef(voiceGender);
+  voiceRef.current = voiceGender;
+
+  const storyIdRef = useRef(story.id);
+  storyIdRef.current = story.id;
 
   const currentSceneIndex = scenes.findIndex(
     (s) => currentSegment >= s.segmentStart && currentSegment <= s.segmentEnd
@@ -48,29 +59,29 @@ export default function WatchMode({ story, voiceGender, onClose }: WatchModeProp
       ? `${norm}illustrations/${story.id}/${scenes[currentSceneIndex].image}`
       : '';
 
-  const audioUrl = (filename: string) =>
-    `${norm}narration/${story.id}/${voiceGender}/${filename}`;
-
   const displayText = segments.texts[currentSegment] || '';
-
-  const getPauseMs = (index: number) => {
-    if (index === 0) return 1500;
-    if (index === segments.texts.length - 2) return 1200;
-    return 800;
-  };
 
   const playSegment = useCallback(
     (index: number) => {
       if (!activeRef.current) return;
-      if (index >= segments.filenames.length) {
+      const segs = segmentsRef.current;
+
+      if (index >= segs.filenames.length) {
         setFinished(true);
         setIsPlaying(false);
         return;
       }
 
-      segmentRef.current = index;
       setCurrentSegment(index);
       setIsPlaying(true);
+
+      const getPauseMs = (i: number) => {
+        if (i === 0) return 1500;
+        if (i === segs.texts.length - 2) return 1200;
+        return 800;
+      };
+
+      const audioUrl = `${norm}narration/${storyIdRef.current}/${voiceRef.current}/${segs.filenames[index]}`;
 
       const audio = audioRef.current!;
       audio.onended = () => {
@@ -84,14 +95,14 @@ export default function WatchMode({ story, voiceGender, onClose }: WatchModeProp
         if (!activeRef.current) return;
         pauseTimerRef.current = setTimeout(() => playSegment(index + 1), 300);
       };
-      audio.src = audioUrl(segments.filenames[index]);
+      audio.src = audioUrl;
       audio.play().catch(() => {
         if (activeRef.current) {
           pauseTimerRef.current = setTimeout(() => playSegment(index + 1), 300);
         }
       });
     },
-    [segments.filenames, voiceGender, story.id]
+    [norm]
   );
 
   useEffect(() => {
