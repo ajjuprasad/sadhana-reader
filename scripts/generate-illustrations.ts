@@ -939,6 +939,119 @@ const STORIES: Record<string, ScenePrompt[]> = {
       },
     ];
   })(),
+
+  'sita-swayamvara': (() => {
+    const RAMA_SW = 'Young Lord Rama: divine prince with deep blue skin, serene handsome face, calm gentle eyes, peaceful confident smile, yellow silk dhoti and upper cloth, ornate gold jewelry, golden crown, divine bow, slender yet radiating immense inner power, celestial golden aura.';
+    const SITA = 'Princess Sita: the most beautiful and graceful Indian princess, luminous golden-brown skin, deep compassionate dark eyes, ornate red and gold silk sari, elaborate gold jewelry — necklaces tiara earrings bangles, jasmine flowers in her long dark hair, a flower garland in her hands, radiant divine glow.';
+    const JANAKA = 'King Janaka: a dignified middle-aged king with warm brown skin, ornate golden crown, rich white and gold royal garments, kind wise face with a grey-streaked beard, seated on a grand throne, looking worried then overjoyed.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${RAMA_SW} ${SITA} A majestic title composition. Rama stands tall holding the enormous broken bow of Lord Shiva in his hands, the two halves cracking apart with divine energy. Sita stands before him holding a flower garland, her eyes shining with love and admiration. The grand royal court of Mithila surrounds them — tall marble pillars, silk drapes, hundreds of astonished princes. Golden divine light blazes from Rama. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${SITA} ${JANAKA} In the magnificent palace of Mithila. Princess Sita sits beside her father King Janaka on a grand throne decorated with flowers and silk. Sita is the picture of grace and beauty. Janaka looks at her with deep fatherly love and pride. The palace is opulent — marble floors, carved pillars, golden chandeliers, flower garlands everywhere. Soft warm golden light. A loving father and his precious daughter. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `The ancient bow of Lord Shiva sits on an enormous iron cart in the center of a grand royal hall. The bow is MASSIVE — dark, ancient, covered in sacred engravings, radiating an aura of divine power. Three hundred strong men strain to push the iron cart into position, sweating and grunting. The bow dwarfs everything around it. The sheer impossible scale of the challenge. Grand palace interior, dramatic lighting on the legendary weapon. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${JANAKA} He stands on a high balcony, making a royal proclamation to a vast crowd. Below, princes from many kingdoms have arrived — in colorful armor, different styles of dress, on elephants and horses. Banners from dozens of kingdoms flutter. The atmosphere is competitive and grand. The bow of Shiva is visible in the arena behind Janaka. A grand tournament gathering. Bright festive light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `A sequence of muscular princes attempting to lift the bow and failing. One massive prince strains with veins bulging, unable to move it. Another pushes with all his might, face red, and falls backward. A third has hurt his back and is helped away by attendants. The enormous bow sits unmoved on its iron cart. The crowd watches with diminishing hope. Comic yet dramatic — mighty men humbled. Grand arena, warm light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `Angry princes shout and gesture furiously in the arena. Some throw their arms up in frustration. ${JANAKA} sits on his throne, his face creased with deep worry, one hand on his forehead. ${SITA} watches from behind a screen with anxious eyes. The bow sits immovable. The mood has turned tense and hostile. Will no one be worthy? Dramatic tense lighting in the grand court. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${RAMA_SW} He steps forward from the crowd of princes. He is not the largest — he is young, calm, and quiet. His deep blue skin glows softly. His gentle eyes survey the bow with peaceful confidence. The other muscular princes turn to look at him with skepticism. A subtle divine golden aura surrounds him. The arena falls quiet. A moment of calm before the miracle. Grand court, soft focused light on Rama. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `Several muscular princes laugh and point at ${RAMA_SW} who walks calmly toward the bow. Their expressions are mocking — arms crossed, heads tilted back in dismissive laughter. Some elbow each other. Rama remains completely unbothered, his expression serene, eyes focused ahead on the bow. The contrast between their bluster and his quiet confidence. Grand arena, dramatic lighting. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${RAMA_SW} THE ICONIC MOMENT. Rama stands before the massive bow, eyes closed in brief prayer. Then with one graceful blue hand he reaches down and lifts the enormous ancient bow as easily as picking up a flower. His face is serene, effortless. Divine golden light explodes from the bow and from Rama. The entire court gasps — mouths open, eyes wide, some falling to their knees. The impossible made effortless. Brilliant golden-white divine light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${RAMA_SW} He strings the great bow and draws it back with magnificent power. The bowstring stretches to its limit — and CRACK! The bow snaps in two with a thunderous sound. Shockwaves ripple through the arena. The sky above splits with golden lightning. Pieces of the divine bow glow with supernatural light. The entire court is stunned into silence. Rama stands calm amid the cosmic energy. Dramatic, explosive, triumphant. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `${RAMA_SW} ${SITA} The most beautiful, tender moment. Sita walks gracefully toward Rama with a joyful, loving smile, carrying a garland of white and orange flowers. She raises it and places it gently around Rama's neck. Rama bows his head slightly to receive it, a warm gentle smile on his blue face. Their eyes meet with deep recognition and love. The court erupts in celebration behind them. Flower petals rain down. Golden divine light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-11.png',
+        prompt: `A transcendent closing composition. ${RAMA_SW} and ${SITA} stand together, hands joined, garlands exchanged, bathed in brilliant divine golden light. Behind them, ${JANAKA} beams with tears of joy. The court celebrates with flowers, music, and cheering. Above, celestial beings shower blessings from golden clouds. The broken bow rests at their feet, glowing with divine energy. The message: true strength comes from a pure heart. Deeply spiritual, joyful, radiant. ${STYLE}`,
+      },
+    ];
+  })(),
+
+  'jatayu-brave-eagle': (() => {
+    const JATAYU = 'Jatayu: a very old, enormous eagle — king of birds. Grey and white weathered feathers, massive wingspan, sharp golden beak and talons, wise old eyes with fierce determination, a crown-like crest of feathers, battle-scarred but noble, radiating ancient dignity.';
+    const RAVANA = 'Ravana the demon king: terrifying figure with ten heads each with sharp features and fierce expressions, twenty muscular arms wielding weapons and shields, dark reddish-brown skin, elaborate demonic gold crown on each head, heavy dark armor, riding a magnificent golden flying chariot — the Pushpaka Vimana.';
+    const SITA_J = 'Princess Sita: beautiful Indian woman with luminous golden-brown skin, ornate red and gold sari now disheveled, dark eyes streaming with tears, jewelry scattered, reaching out desperately for help from the chariot.';
+    const RAMA_J = 'Lord Rama: divine prince with deep blue skin, golden crown, yellow silk dhoti, divine bow, gentle compassionate eyes now filled with grief, holding the dying eagle tenderly, tears on his blue cheeks.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${JATAYU} ${RAVANA} A majestic dramatic title composition. Old Jatayu attacks Ravana's golden flying chariot in mid-air, talons tearing at the chariot, wings spread enormously. Ravana turns with his ten furious heads to face the eagle. ${SITA_J} reaches out from the chariot toward Jatayu. The sky is dramatic — golden sunset against dark storm clouds. An old eagle versus the mightiest demon. Heroic, tragic, breathtaking aerial battle. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${JATAYU} He perches on a great ancient tree in the forest, looking wise and weathered. His feathers are grey with age, his wings massive but showing their years. His golden beak and talons are still sharp. Below, a serene forest cottage is visible where Rama and Sita live. Jatayu watches over them protectively. Ancient trees, peaceful forest, golden afternoon light filtering through leaves. An old guardian keeping watch. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${RAVANA} His magnificent golden flying chariot — the Pushpaka Vimana — swoops down from dark storm clouds toward the forest cottage. Ravana's ten heads snarl with cruel triumph. His twenty arms reach out to grab ${SITA_J} who screams in terror. The cottage below is small and vulnerable. Dark storm clouds roll in. The golden chariot gleams menacingly. A terrifying kidnapping from above. Dramatic dark and gold lighting. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${SITA_J} She is held in Ravana's golden chariot flying through the sky. She throws her jewelry down — gold bangles, necklaces, earrings — scattering them on the forest canopy below as clues. Her face is streaked with tears, her sari billowing in the wind. She screams for help. The forest stretches far below. Jewelry glints as it falls through the air. A desperate, heartbreaking moment. Dramatic sky. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${JATAYU} He hears Sita's cries and looks up. His old eyes lock onto the golden chariot flying overhead with Ravana's ten-headed silhouette. The eagle's expression shifts from peaceful repose to fierce determination. He sees the impossible odds — he is old, Ravana is the mightiest demon. But his eyes harden with resolve. A moment of courageous decision. Dramatic upward angle, golden light behind the chariot, determination in the eagle's ancient eyes. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${JATAYU} Close-up of the old eagle's face, eyes blazing with righteous fury and resolve. His thought is clear: "Sita needs help. I must try." He spreads his enormous old wings — massive wingspan, feathers stretched wide. Muscles strain beneath grey feathers. He launches himself upward from his perch with a mighty screech. Wind rushes past. A breathtaking moment of courage. Dynamic upward motion, golden sky. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${JATAYU} ${RAVANA} AERIAL BATTLE. Jatayu attacks the golden flying chariot with savage fury. His massive talons tear the chariot's canopy to shreds. His beak strikes at the chariot structure. He blocks the chariot's path with his enormous body. Ravana's ten heads turn in shock and rage. ${SITA_J} watches with desperate hope from inside. Wood splinters, fabric tears, golden pieces of chariot fly. Dynamic, violent, heroic aerial combat. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${JATAYU} ${RAVANA} The eagle fights ferociously. He has broken Ravana's bow — it falls in pieces. He has knocked down the charioteer. Several of Ravana's arms bleed from talon strikes. For one glorious moment, the old eagle seems to be WINNING against the ten-headed demon. Jatayu's eyes blaze with the fire of justice. The chariot tilts and drops. An incredible, triumphant moment of the underdog prevailing. Dynamic sky battle. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${RAVANA} He draws a terrible gleaming sword and slashes downward at ${JATAYU}. The blade cuts through the eagle's mighty wings. Feathers explode into the air — grey feathers scattering against the golden sky. Jatayu's expression shifts to shock and pain. He begins to fall, wings broken and useless. A heartbreaking, devastating moment. The hero falls. Dramatic dark and golden sky, feathers floating, the eagle tumbling earthward. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${RAMA_J} ${JATAYU} The most emotional scene. Rama has found the fallen eagle in the forest. He cradles the enormous dying bird tenderly in his arms, Jatayu's great head resting against Rama's chest. Jatayu whispers his last words — Ravana's direction, south. His old eyes look up at Rama with love and loyalty. Rama's blue face is streaked with tears. Broken feathers scattered around them. Soft golden light through the trees. Deeply moving. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `${RAMA_J} Rama weeps openly, holding ${JATAYU}. His divine face shows profound grief and deep respect. He speaks to the dying eagle with reverence. Other forest creatures — deer, monkeys, birds — gather silently around them in mourning. The forest itself seems to weep — dew drops on every leaf. The golden light is soft and sorrowful. A god mourning a mortal hero. Deeply poignant. ${STYLE}`,
+      },
+      {
+        filename: 'scene-11.png',
+        prompt: `A transcendent closing composition. ${RAMA_J} performs the sacred funeral rites for Jatayu with his own hands — building and lighting a ceremonial pyre. Sacred fire rises with golden-white flames. Above, the spirit of ${JATAYU} ascends majestically into the golden sky, wings restored and magnificent, young and powerful again, soaring upward toward celestial light. Below, Rama watches with folded hands and tears. The message: a true hero fights even knowing they cannot win. ${STYLE}`,
+      },
+    ];
+  })(),
 };
 
 // ─── Generation Logic ───
