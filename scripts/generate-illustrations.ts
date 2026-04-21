@@ -1052,6 +1052,751 @@ const STORIES: Record<string, ScenePrompt[]> = {
       },
     ];
   })(),
+
+  'arjuna-and-the-bird': (() => {
+    const DRONA_A = 'Guru Dronacharya: elderly but strong Brahmin warrior-teacher, grey beard, white dhoti, sacred thread, stern dignified face, carrying a magnificent bow.';
+    const ARJUNA_A = 'Young Prince Arjuna: handsome youth with fair golden-brown skin, ornate blue silk garments, gold jewelry, intense focused eyes, drawing a royal bow with perfect form.';
+    const YUDHI = 'Prince Yudhishthira: eldest Pandava, fair complexion, white royal garments, gold crown, earnest honest face, holding a bow uncertainly.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${ARJUNA_A} ${DRONA_A} A majestic title composition. Arjuna draws his bow with absolute focus, eyes locked on a tiny wooden bird high in a distant tree. His gaze is laser-sharp. Behind him, Dronacharya watches with a proud knowing smile. Other princes stand in the background, looking impressed. A forest training ground with ancient trees. Golden light illuminates the arrow's path. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${DRONA_A} A grand forest training ground. Dronacharya stands before rows of young princes — the five Pandavas and Kaurava cousins — all holding bows. Some practice archery at targets. The training ground has wooden dummies, target posts, and a weapons rack. Ancient forest surrounds them. Dronacharya raises one hand, announcing a special test. Golden morning light through the trees. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${DRONA_A} He points up at a tall tree where a small wooden bird sits on a high branch. The bird is tiny against the vast canopy. All the young princes look up, squinting. The challenge is clear — hit the bird's eye. The tree is ancient and tall with thick branches. Dappled forest light. A test of supreme focus. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${YUDHI} ${DRONA_A} Yudhishthira stands with his bow drawn, aiming upward uncertainly. His eyes dart around — he sees the tree, the sky, the leaves, the bird. His expression shows he is trying but distracted by everything around him. Dronacharya stands beside him with arms crossed, listening to his answer. Other princes watch from behind. Forest training ground. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `A sequence of different princes attempting the test and failing. A muscular Kaurava prince looks around distractedly while aiming. Another prince glances at the audience. Each one sees too much — trees, sky, wind, people. Dronacharya shakes his head and waves each one back. The wooden bird sits undisturbed on its high branch. Growing frustration among the princes. Forest setting, warm light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${ARJUNA_A} ${DRONA_A} Arjuna steps forward from the crowd of princes. He is calm and composed. He draws his bow slowly, his body perfectly still. His eyes narrow with intense concentration — the world around him seems to blur and fade. Only the distant bird remains sharp. Dronacharya watches him intently, a hint of anticipation in his eyes. The forest, other princes — everything fades into soft focus. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${ARJUNA_A} Extreme close-up of Arjuna's face and the drawn bow. His eyes are absolutely steady, locked onto a single point. Everything around him is blurred into soft golden light — no trees, no sky, no people visible. Only the bird's eye exists in his vision. His expression is one of total, unwavering concentration. The bowstring is pulled taut. A powerful visualization of complete focus. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${ARJUNA_A} The dramatic release. Arjuna's arrow flies in a golden streak straight through the wooden bird's eye! The bird spins off the branch. The arrow trail blazes with golden light. All the princes erupt in cheering — jumping, waving arms, mouths open in amazement. ${DRONA_A} smiles broadly with deep pride. Dynamic action moment, golden light, triumphant energy. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `A transcendent closing composition. ${ARJUNA_A} stands with his bow lowered, calm amid the cheering crowd. ${DRONA_A} places a hand on his shoulder with fatherly pride. Above, a celestial vision shows an eye with an arrow through it — the symbol of perfect focus. Golden divine light streams down. The message: total focus is the secret of success. Forest clearing, triumphant, deeply inspiring atmosphere. ${STYLE}`,
+      },
+    ];
+  })(),
+
+  'krishna-steals-butter': (() => {
+    const KRISHNA_B = 'Baby Lord Krishna: deep blue-black skin, peacock feather crown in curly black hair, yellow silk dhoti, large mischievous lotus eyes, cheeky divine smile, butter smeared on his face and hands, gold anklets bracelets, celestial golden aura.';
+    const YASHODA_B = 'Mother Yashoda: warm brown complexion, ornate saffron silk sari with gold border, gold nose ring earrings bangles, jasmine flowers in dark hair bun, expression alternating between mock-stern and trying not to laugh.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${KRISHNA_B} A majestic title composition. Baby Krishna sits atop a tower of his friends' shoulders, reaching into a clay pot of butter hung from the ceiling on a rope. Butter drips from his tiny blue-black fingers. His face is pure mischievous glee. His friends below giggle. A monkey reaches for falling butter. ${YASHODA_B} peeks through a doorway with mock outrage. Warm golden Vrindavan interior light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${KRISHNA_B} He sits in a Vrindavan courtyard surrounded by admiring villagers. His reputation as the naughtiest boy is evident — villagers point and laugh affectionately. A trail of tiny butter footprints leads to where he sits. His expression is pure innocent charm, big eyes wide. Vrindavan village with clay houses, cows, and Tulsi plants. Warm golden afternoon light. Charming, playful atmosphere. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${YASHODA_B} Inside her Vrindavan home, she churns butter from yogurt — a wooden churning rod in a large clay pot, rope pulled rhythmically. Thick creamy white butter forms on top. She carefully scoops it into clay pots and hangs them from the ceiling on rope shelves, high up where little hands cannot reach. Warm interior, brass lamps, earthen walls. A loving mother's morning routine. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${KRISHNA_B} He peeks around a doorway, checking that Yashoda has left. Then he whispers "Psst!" to his cowherd friends — three or four little boys with brown skin in simple dhotis. They huddle together conspiratorially, Krishna pointing up at the hanging butter pots. Mischievous grins on every face. The interior of a Vrindavan home, butter pots dangling from the ceiling. Secretive, playful golden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${KRISHNA_B} The boys form a human tower — one standing on another's shoulders, three high! Krishna climbs nimbly to the very top, reaching for the butter pot with eager blue-black hands. The tower wobbles comically. One boy's face is squished under another's foot. Krishna stretches triumphantly toward the pot. Warm golden interior light. Playful, dynamic, joyful composition. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${KRISHNA_B} Krishna and his friends sit in a circle on the floor, eating handfuls of stolen butter with absolute bliss. Butter drips down their chins. They giggle uncontrollably. Krishna feeds a handful to a small brown monkey sitting beside him. Broken pieces of the clay pot lie nearby. A joyful feast of stolen butter. Warm, golden, intimate light. Pure childlike happiness and mischief. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${YASHODA_B} Village women (gopis) in colorful saris crowd around Yashoda in her courtyard, complaining animatedly. One points at her empty butter pot. Another shows tiny butter footprints on her floor. A third gestures toward a monkey licking butter off its paws. Yashoda listens with her hand on her forehead, trying to look serious. Vrindavan courtyard, warm afternoon light. Comic, lively scene. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${YASHODA_B} ${KRISHNA_B} Yashoda confronts Krishna, hands on her hips. Krishna looks up at her with impossibly big, wide, innocent eyes — butter clearly visible on his blue-black face, lips, and fingers. He shakes his head in denial, one hand behind his back. Yashoda is trying desperately not to smile. The comedy of the obvious lie. Their Vrindavan home, warm lamplight. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${KRISHNA_B} Close-up of his adorable face — big innocent lotus eyes looking up, a smear of white butter glistening on his blue-black cheeks, nose, and chin. His little mouth forms the word "moonlight!" with a cheeky irresistible grin. His peacock feather tilts. No one could possibly be angry at this face. Warm golden light on his divine features. Pure charm and mischief. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${YASHODA_B} ${KRISHNA_B} A comedic chase scene! Yashoda runs after Krishna through the Vrindavan house with a small stick, her sari flowing, but she is laughing so hard she can barely run. Krishna dashes ahead, giggling, butter flying everywhere. Pots wobble, a cat scatters, garlands swing. Pure joyful domestic chaos. Dynamic movement, warm golden light, laughter visible in every detail. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `${YASHODA_B} ${KRISHNA_B} Yashoda has caught Krishna. But instead of scolding, she hugs him tight, kissing his buttery cheeks. Krishna melts into her embrace, his little arms around her neck. Both are laughing. Butter smears transfer from his face to her sari. An intimate, tender, loving moment between mother and child. Warm golden light, their Vrindavan home. Pure love. ${STYLE}`,
+      },
+      {
+        filename: 'scene-11.png',
+        prompt: `${KRISHNA_B} ${YASHODA_B} She holds him on her lap, wiping butter from his face with the edge of her sari, smiling. Krishna looks up at her with pure adoring love. Around them, the messy evidence of his butter theft — broken pots, footprints, a satisfied monkey. But none of it matters. Warm intimate golden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-12.png',
+        prompt: `A transcendent closing composition. ${KRISHNA_B} sits surrounded by adoring villagers, gopis, his friends, and animals. Everyone smiles at him with unconditional love. Butter pots hang above. A faint divine golden aura surrounds the entire scene. In the celestial glow above, a vision of adult Krishna playing the flute. The message: Krishna stole not butter but everyone's hearts. Love shared with laughter is the sweetest thing. Deeply warm, joyful, divine. ${STYLE}`,
+      },
+    ];
+  })(),
+
+  'lion-and-the-rabbit': (() => {
+    const LION = 'Bhasuraka the Lion: massive golden-maned lion with fierce amber eyes, powerful build, sharp fangs, arrogant regal bearing, sitting on a rock throne in the forest.';
+    const RABBIT = 'The Clever Rabbit: tiny brown rabbit with large bright intelligent eyes, soft fur, long ears, small but radiating cleverness and calm courage.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${RABBIT} ${LION} A majestic title composition. The tiny clever rabbit stands at the edge of an old deep well, looking down at the water with a knowing smile. Behind him, the fierce lion charges toward the well in a rage. The forest is lush and golden. The contrast between the tiny rabbit and the massive lion is dramatic. Dappled golden sunlight through ancient trees. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${LION} A dense, lush Indian forest. The fierce lion Bhasuraka hunts aggressively — he has cornered several terrified deer, rabbits, and birds. Multiple animals lie fallen. The lion roars triumphantly, blood on his paws. The forest animals cower in fear behind trees and bushes. Dark dramatic lighting with shafts of golden light. A reign of terror in the jungle. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `A gathering of forest animals in a moonlit clearing. Deer, rabbits, foxes, birds, monkeys, and turtles sit in a circle. An old wise deer stands at the center, speaking urgently. Expressions of fear and worry on every face. Some animals weep. The mood is somber and desperate. Ancient banyan tree overhead, silver moonlight filtering through leaves. A council of the frightened. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${LION} The forest animals approach the lion's cave as a delegation. The old deer speaks while other animals tremble behind him. The lion lounges on his rock throne, listening with an amused, arrogant expression. He considers the deal — one animal per day in exchange for stopping his rampage. The cave is dark and imposing. Golden afternoon light at the cave mouth. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `A sad procession scene. One lone animal — a small deer — walks slowly toward the lion's dark cave while the other animals watch from the forest edge with tears. The path is worn from daily use. Dark, melancholic atmosphere. Some days a bird, some days a fox, each walks alone. A heavy sense of sacrifice and sorrow. Muted golden light, emotional and somber. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${RABBIT} The tiny rabbit walks extremely slowly along a forest path, deliberately taking his time. The sun is setting — shadows grow long. His expression is thoughtful and calculating, not scared. He looks at the setting sun, timing his arrival. Other animals watch from the bushes, some crying for him, others whispering "he is so brave." Golden evening light streaking through trees. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${LION} ${RABBIT} Inside the lion's cave, Bhasuraka is FURIOUS. He towers over the tiny rabbit, roaring with rage, his mane bristling, fangs bared. The rabbit bows calmly, tiny before the enormous lion. The contrast in size is extreme. The cave trembles with the roar. The rabbit's eyes show no fear — only clever calculation. Dramatic firelight and shadow in the cave. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${RABBIT} ${LION} The rabbit tells his story, gesturing dramatically. A thought bubble or ethereal vision shows another imaginary lion — even bigger, even fiercer — grabbing a large rabbit. The real lion's eyes go wide with rage and jealousy. The rabbit acts frightened but is secretly smiling. Dramatic cave interior with golden torchlight. A brilliant deception unfolding. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${RABBIT} ${LION} The rabbit leads the furious lion through the forest to an old, deep stone well. The lion charges ahead in rage. The rabbit points at the well with one tiny paw — "He is in there, Your Majesty!" The well is ancient, covered in moss, surrounded by wild flowers. Late evening golden light. Tension and anticipation in the scene. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${LION} The lion leans over the deep well and sees his own reflection in the dark water below — a fierce lion staring back. His eyes go wide with fury. He roars at the reflection. The echo of his roar visually ripples the water. The moment before he jumps — pure dramatic tension. Dark well, dramatic lighting from above. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `${LION} The lion leaps into the deep well with a mighty splash! Water erupts upward. His claws are extended, attacking his own reflection. The well is deep and dark. This is the end of the bully. Dramatic downward perspective, water splashing, the lion falling. ${RABBIT} peeks over the well's edge with a calm, satisfied expression. Dramatic golden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-11.png',
+        prompt: `A joyful celebration scene. ${RABBIT} hops back to the forest clearing where ALL the animals are gathered. They cheer wildly — deer leap, birds fly in circles, monkeys dance, foxes howl with joy. The tiny rabbit is lifted on the shoulders of larger animals like a hero. Flowers and leaves rain down. Bright golden morning light. The smallest creature saved everyone. Triumphant, joyful atmosphere. ${STYLE}`,
+      },
+      {
+        filename: 'scene-12.png',
+        prompt: `A transcendent closing composition. ${RABBIT} sits peacefully in the center of the forest, surrounded by happy animals living in harmony. Above, a celestial vision shows a brain glowing brighter than muscles — symbolizing wisdom over strength. Golden divine light streams through the trees. The message: a clever mind can solve problems that strength alone cannot. Warm, triumphant, deeply inspiring atmosphere. ${STYLE}`,
+      },
+    ];
+  })(),
+
+  'matsya-the-great-fish': (() => {
+    const MANU = 'King Manu: wise ancient Indian king, aged but strong, grey-white beard, simple saffron robes of a sage-king, kind intelligent eyes, golden crown set aside, humble and compassionate bearing.';
+    const FISH_SMALL = 'Matsya as tiny fish: a shimmering golden fish small enough to fit in cupped hands, with one glowing divine eye, luminous golden scales.';
+    const FISH_GIANT = 'Matsya as colossal fish: an enormous golden fish bigger than a mountain, with a magnificent glowing golden horn on its head, divine light radiating from its body, Lord Vishnu in fish form.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${FISH_GIANT} ${MANU} A majestic title composition. The colossal golden Matsya fish with its glowing horn surges through a stormy ocean, pulling a massive wooden boat by a rope made from a giant serpent. Manu stands at the bow, holding on bravely. Massive waves crash around them. Lightning splits the dark sky. Golden divine light emanates from the fish. Epic, awe-inspiring scale. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${MANU} A serene riverbank at dawn. King Manu kneels by a gentle flowing river, washing his hands in the crystal water. The river is surrounded by lush forest. As he scoops water, a tiny golden fish appears in his cupped palms, shimmering and helpless. His expression is one of gentle surprise. Peaceful golden morning light reflecting off the water. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${FISH_SMALL} ${MANU} Close-up of Manu's gentle weathered hands cupping the tiny golden fish. The fish looks up at him with one pleading divine eye. Water droplets glisten. The fish seems to speak — a tiny golden aura surrounds it. Manu's face shows compassion and wonder. Soft golden riverbank light. An intimate, tender moment of mercy. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${MANU} A progression sequence. Manu carries the tiny fish home in a small clay pot. Inside his humble ashram, the fish has grown — it barely fits the pot! Water overflows. Manu looks astonished. The growing golden fish glows softly. Simple sage's dwelling with oil lamps and sacred texts. Warm amber interior light. Wonder and bewilderment. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${MANU} A comedic growing sequence. The golden fish outgrows pot after pot — shown in progression: small pot, big pot, bucket, tub, pond. In each stage the fish barely fits, water splashing everywhere. Manu runs back and forth carrying the fish. The fish keeps growing bigger and bigger, always too large for its container. Bright, warm, humorous golden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${MANU} Manu releases the now-enormous golden fish into the ocean. The fish is already massive — as big as a whale. Manu stands on the shore, looking up in awe. The fish turns in the surf, its golden scales catching the sunlight. Ocean waves crash around its massive form. It looks back at Manu with deep knowing eyes. Dramatic ocean sunset, vast scale. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `The giant golden fish rises from the ocean, speaking to Manu who stands on the shore. A prophetic vision appears in the sky above — dark storm clouds, raging floods, the world being submerged. The fish's golden horn glows as it delivers the warning. Manu's face shows shock and determination. Dramatic ocean scene, divine golden and dark storm lighting. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${MANU} Manu works frantically building an enormous wooden boat. He hammers, saws, and lifts. Around him, pairs of animals line up — two elephants, two deer, two birds, two snakes. Seven glowing sages in white carry bundles of sacred texts. Workers load sacks of seeds. The boat is massive. The sky darkens ominously in the background. Urgent, industrious golden-amber light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `Apocalyptic flood scene. The sky is black with rain. Torrential rain pours in sheets. The ocean rises, swallowing forests, mountains, and villages. Manu's great boat rises on the raging waters. Animals huddle inside. The seven sages pray. Manu looks out at the devastation with grief but resolve. Massive waves, lightning, overwhelming dark and dramatic atmosphere. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${FISH_GIANT} The colossal golden Matsya — Lord Vishnu in fish form — erupts from the churning ocean! It is bigger than a mountain, its golden horn blazing with divine light. Manu and everyone on the boat gasp in awe. The fish is magnificent, divine, cosmic in scale. Stormy ocean, but golden light breaks through the darkness around the divine fish. Breathtaking, divine revelation. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `${FISH_GIANT} ${MANU} Manu ties the great boat to Matsya's glowing golden horn using a giant serpent as rope. The serpent coils around the horn. The enormous fish pulls the boat through monstrous waves. Rain and spray fly everywhere. The boat rides the cosmic ocean like a chariot behind the divine fish. Epic movement, divine golden light cutting through the storm. ${STYLE}`,
+      },
+      {
+        filename: 'scene-11.png',
+        prompt: `A new dawn. The flood recedes, revealing fresh green earth. ${MANU} steps off the boat onto solid ground. Animals stream out in pairs. The seven sages scatter seeds that instantly sprout into forests. Birds take flight. Rivers flow clean and fresh. A rainbow arcs across the sky. In the distant ocean, the golden fish raises its horn one last time in farewell. Golden morning rebirth light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-12.png',
+        prompt: `A transcendent closing composition. ${MANU} kneels in gratitude on the new earth, hands folded in prayer. Above him, a celestial vision shows Lord Vishnu in his full divine form — four arms, holding conch, discus, mace, and lotus — emerging from the golden fish. The message: kindness to even the smallest creature can save the world. Lush new earth below, divine golden cosmos above. ${STYLE}`,
+      },
+    ];
+  })(),
+
+  'shravan-kumar': (() => {
+    const SHRAVAN = 'Shravan Kumar: young Indian boy about 14, thin but strong, simple white dhoti and shawl, bare feet calloused from walking, gentle loving face, carrying a bamboo pole with two large wicker baskets across his shoulders.';
+    const PARENTS = 'Shravan\'s parents: elderly blind Indian couple, both frail with white hair, milky sightless eyes, simple saffron clothes, sitting in wicker baskets, expressions of trust and gentle contentment.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${SHRAVAN} ${PARENTS} A majestic title composition. Shravan Kumar carries his blind elderly parents in baskets on a bamboo pole across his shoulders. He walks along a mountain path with determination and love. His parents sit peacefully in the baskets, hands folded. Behind them, a golden sunrise illuminates rolling green hills, temples in the distance. A heroic image of filial love. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${SHRAVAN} ${PARENTS} A humble village home interior. Shravan sits between his two blind parents, holding their hands. They are old and frail but smiling. The room is simple — clay walls, oil lamp, straw mats. Shravan feeds his mother from a bowl. His face radiates pure devotion. Warm golden lamplight. A portrait of unconditional love and care. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${SHRAVAN} Inside the humble home, Shravan works tirelessly — cooking over a clay stove, sweeping with a grass broom, washing clothes by hand in a pot. His blind parents sit nearby, listening to him sing while he works. He never looks tired or unhappy. Simple but loving domestic scene. Warm golden interior light through a small window. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${PARENTS} The two blind parents sit together, holding hands, speaking wistfully. Their milky eyes gaze at nothing but their faces are full of longing. A vision appears above them — holy temples, sacred rivers, pilgrimage sites glowing with golden light. They dream of visiting these places one last time. Emotional, tender. Warm amber lamplight. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${SHRAVAN} Shravan builds the special carrier — a strong bamboo pole with two large wicker baskets hanging from each end, padded with cloth for comfort. He tests it, lifts it, adjusts the balance. His face shows ingenious determination. Simple workshop area outside the village home. Tools and bamboo scattered around. Golden afternoon light. Inventive, heartwarming. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${SHRAVAN} ${PARENTS} The iconic image — Shravan places his parents in the baskets and lifts the pole onto his shoulders. His mother sits in one basket, his father in the other. They look nervous but trusting. Shravan takes his first steps on the journey. Villagers gather to watch, some wiping tears. The village road stretches ahead. Golden morning light, emotional departure. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${SHRAVAN} ${PARENTS} Shravan carries his parents through difficult terrain — steep rocky hills, his feet bleeding, sweat on his brow, the sun beating mercilessly. His parents ask if he is tired. He turns back with a bright loving smile, saying "Not at all!" even as his shoulders ache. Beautiful but harsh landscape. Dramatic golden afternoon light. Heroic endurance and love. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${SHRAVAN} ${PARENTS} Shravan describes the scenery to his blind parents. He stands at a riverbank — the river sparkles like diamonds in the sunlight. He points and describes everything with joy. His mother's face lights up imagining the scene. His father smiles and reaches out. A white temple gleams in the distance. Idyllic, warm, tender. Sparkling golden river light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${SHRAVAN} ${PARENTS} Villagers along the road gather to watch Shravan pass. Their faces show amazement and deep respect. Women offer food and water. Children point in wonder. An old man bows. Shravan accepts the kindness gratefully while his parents smile from their baskets. A village road lined with trees and simple homes. Warm community scene, golden afternoon light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${SHRAVAN} ${PARENTS} The story spreads across the land. A royal court scene where a king sits on his throne hearing about Shravan from a messenger. The king's eyes are wide with admiration. Above, a celestial vision shows Shravan carrying his parents across mountains, forests, and rivers — an epic journey of love. Grand golden royal hall and cosmic vision. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `A transcendent closing composition. ${SHRAVAN} stands tall with his parents in their baskets, silhouetted against a magnificent golden sunset. The path behind them shows the long journey — mountains, rivers, temples visited. Above, divine light forms the shape of two gentle hands cradling the whole scene. The message: the greatest strength is love for those who raised you. Deeply warm, golden, inspiring. ${STYLE}`,
+      },
+    ];
+  })(),
+
+  'durga-and-mahishasura': (() => {
+    const DURGA = 'Goddess Durga: radiant divine woman with golden-bronze skin, ten arms each holding a different weapon, ornate red and gold silk sari, magnificent gold crown and jewelry, fierce compassionate eyes, riding a majestic golden lion, blazing divine aura.';
+    const MAHISH = 'Mahishasura: shape-shifting demon in buffalo form — enormous black water buffalo with red demonic eyes, golden armor plates, smoke and fire around hooves, dark malevolent aura, terrifying and powerful.';
+    const DEVAS = 'The Devas (gods): celestial beings in white and gold robes, glowing divine auras, various divine weapons, looking defeated and desperate.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${DURGA} A majestic title composition. Goddess Durga in all her glory — ten arms wielding weapons, riding her magnificent golden lion. She charges into battle against the massive dark buffalo demon Mahishasura. Divine golden light radiates from her. Dark storm clouds behind the demon. The epic clash of good vs evil. Flowers rain from the sky. Supremely powerful and beautiful. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${MAHISH} The terrifying demon Mahishasura in his various forms — shown shifting between buffalo, lion, man, and elephant. He rampages across the heavens, dark power emanating from him. Gods flee before him. The sky cracks and burns. His arrogant laugh echoes. Dark, ominous, powerful atmosphere with red and black tones. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${MAHISH} Mahishasura sits on a stolen celestial throne in the heavens, laughing triumphantly. The palace of the gods is damaged and burning around him. Demon soldiers celebrate. The sky is dark and smoky. The demon is at the height of his arrogance. Dark dramatic lighting with hellish red glow. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${DEVAS} The gods huddle together in exile, defeated and desperate. Vishnu, Shiva, Brahma and other gods sit in a dark forest, their divine glow dimmed. They look broken and hopeless. Some hold their heads in their hands. A dark, somber atmosphere. But one ray of golden light begins to appear — the spark of an idea. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${DEVAS} The gods realize the loophole — no MAN or GOD can defeat Mahishasura, but a Goddess can! Their eyes light up with hope. They stand in a circle, raising their hands to the sky. Beams of divine energy shoot from each god — gold, blue, red, white — converging at a central point. The atmosphere shifts from dark to brilliantly golden. A pivotal moment of divine inspiration. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${DURGA} The birth of Goddess Durga! From the combined divine light of all the gods, she materializes — dazzling, radiant, with ten arms. Each god presents a weapon: Shiva's trident, Vishnu's discus, the Wind God's arrows, the Sun's bright rays. She accepts each with grace. A magnificent golden lion appears as her mount. Brilliant golden-white divine light, awe-inspiring moment of creation. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${DURGA} ${MAHISH} The nine-day battle! Durga charges on her lion into the demon army. Multiple action moments: she fights with sword, trident, bow, and discus simultaneously. Mahishasura shifts forms — buffalo, lion, elephant, warrior — but Durga matches every transformation. Dramatic battle chaos, divine golden light clashing with dark demonic energy. Epic, intense, dynamic. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${DURGA} ${MAHISH} The climactic tenth day! Durga leaps from her lion onto the massive buffalo demon. She pins Mahishasura with her foot, the demon struggling beneath her. She raises her trident high, divine light blazing. The demon's dark aura shatters. The decisive moment of victory. Supremely powerful composition. Golden divine light defeating darkness. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${DURGA} Celebration in the heavens! Flowers rain from the sky in a cascade of colors. The gods return to their celestial homes and bow before Durga with folded hands. Angels play music. The lion roars triumphantly. Durga stands serene and graceful amid the celebration, her ten arms at peace. Brilliant golden celebratory light. Joy and divine triumph. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `A transcendent closing composition. A Navratri celebration scene — a beautiful pandal (decorated tent) with a magnificent idol of Durga defeating Mahishasura. Devotees of all ages dance and celebrate for nine nights. Diyas (oil lamps) and flowers everywhere. Above, the real Goddess Durga watches with a gentle smile. The message: strength, courage, and power come in every form. Golden festive light. ${STYLE}`,
+      },
+    ];
+  })(),
+
+  'sage-and-the-mouse': (() => {
+    const SAGE = 'The Kind Sage: elderly Indian holy man with long white beard, saffron robes, prayer beads, gentle wise eyes, sitting cross-legged in a forest ashram, warm compassionate aura.';
+    const MOUSE = 'The Frightened Mouse: tiny brown mouse with huge terrified eyes, trembling whiskers, curled tail, constantly looking around in fear.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${SAGE} A majestic title composition. The sage sits in his forest ashram, surrounded by a progression of animals — a tiny mouse, a cat, a dog, and a magnificent tiger — all with the same frightened eyes. The sage looks at them with gentle wisdom. Magical golden transformation sparkles connect each animal. The message: changing your outside doesn't change your inside. Forest ashram, golden divine light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${SAGE} ${MOUSE} A peaceful forest ashram — thatched hut, sacred fire, flowering trees. A crow flies overhead and drops something. A tiny trembling mouse falls at the sage's feet. The sage cups the frightened mouse gently in his weathered hands, looking down with compassion. The mouse shivers, its tiny eyes wide with terror. Soft golden forest light. Tender rescue scene. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${SAGE} The sage holds the mouse, which cries out in fear as a cat lurks nearby. Golden magical light swirls around the sage's hands. TRANSFORMATION — the tiny mouse becomes a cat! The new cat sits where the mouse was, but its eyes still have the same frightened look. Magical golden sparkles and light beams. The sage watches with hope. Forest ashram setting. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${SAGE} Two quick transformations. A frightened cat cowers as a dog approaches — golden magic flash — it becomes a dog! But the dog trembles as a tiger's shadow falls — golden magic flash — it becomes a dog! The sage performs each transformation with a wave of his hand. Each new animal has the same terrified eyes. Magical golden sparkles. Progression of forms, same fear. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${SAGE} A magnificent Royal Bengal tiger with beautiful orange and black stripes sits in the ashram — but it cowers and trembles! Its huge body is crouched low, ears flat, tail between its legs. It has massive claws and fangs but flinches at a falling leaf. The contrast between its powerful body and its terrified expression is striking. Forest ashram, golden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `The tiger (same frightened eyes as the original mouse) hides behind a bush, peeking out in terror at the sound of a distant hunter's horn. Its massive body quakes. Shadows and rustling bushes seem like threats. Every sound makes it jump. A powerful beast paralyzed by fear. Dark forest shadows contrast with patches of golden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${SAGE} The sage sits facing the cowering tiger, shaking his head sadly. He gestures from the tiger's body to its heart. A glowing ethereal image shows the progression: mouse → cat → dog → tiger, with the same tiny frightened heart visible inside each form. The sage speaks gently. Deep wisdom in his eyes. Golden lamplight in the ashram. A profound teaching moment. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${SAGE} The sage speaks gently to the tiger. Above them, a celestial vision shows two contrasting images: a brave tiny mouse standing tall with confidence, and a cowering tiger hiding in fear. The message: courage comes from within, not from size. The sage gestures upward to the vision. Golden divine light illuminates the teaching. Forest ashram setting. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${SAGE} Golden magical light swirls — the tiger transforms BACK into the tiny brown mouse. But this time, the sage teaches the mouse. The mouse practices being brave: dodging around a sleeping cat, finding clever hiding spots, making friends with other mice who cheer it on. Montage of the mouse gaining real confidence. Warm golden forest light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${MOUSE} The mouse is now happy and confident — it stands tall (for a mouse!), chest out, bright eyes, with a group of mouse friends around it. They explore the forest together, find food, play. The mouse no longer trembles. It is small but proud and brave. Flowers and butterflies surround the happy scene. Bright, warm, joyful golden sunlight. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `A transcendent closing composition. ${SAGE} sits in meditation, a gentle smile on his face. Around him, animals of all sizes live in harmony — a brave mouse, a calm cat, a friendly dog, a peaceful tiger. Above, a celestial vision shows a glowing heart — the same size inside every creature. The message: real confidence comes from accepting who you are. Golden divine forest light. ${STYLE}`,
+      },
+    ];
+  })(),
+
+  'krishna-shows-universe': (() => {
+    const KRISHNA_U = 'Baby Lord Krishna: deep blue-black skin, peacock feather in curly black hair, yellow silk dhoti, enormous innocent lotus eyes, mischievous divine smile, mud and dirt on his face and hands, gold anklets, celestial golden aura.';
+    const YASHODA_U = 'Mother Yashoda: warm brown complexion, green silk sari with gold border, gold jewelry and nose ring, jasmine flowers in hair, alternating between stern motherly authority and awestruck wonder.';
+    const BALARAMA = 'Young Balarama: fair-skinned boy, blue clothes, Krishna\'s older brother, pointing accusingly with a mischievous tattling expression.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${KRISHNA_U} A majestic title composition. Baby Krishna opens his tiny mouth wide, and from within, the ENTIRE UNIVERSE is visible — swirling galaxies, blazing suns, spinning planets, oceans and mountains. His mother peers in, her face frozen in absolute awe. The contrast between the tiny child and the infinite cosmos inside him. Divine golden light pours from his mouth. Transcendent, cosmic, mind-bending. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${KRISHNA_U} ${BALARAMA} A beautiful Vrindavan garden. Krishna and Balarama play together — rolling in mud, chasing colorful butterflies, climbing a tree. Both boys are laughing and carefree. The garden is lush with flowers, Tulsi plants, and mango trees. Cows graze nearby. Pure childhood joy. Bright warm golden afternoon sunlight. Idyllic and charming. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${BALARAMA} ${YASHODA_U} Balarama runs into the house to tattle, pointing back toward the garden with an urgent expression. "Krishna is eating dirt!" Yashoda looks up from her cooking with alarm. Kitchen setting with clay pots, a grinding stone, spices. Balarama's face is a mix of concern and the glee of telling on his brother. Warm domestic interior light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${YASHODA_U} ${KRISHNA_U} Yashoda rushes into the garden and confronts Krishna. She towers over the tiny boy, hands on her hips, scolding. Krishna looks up at her with impossibly wide innocent eyes, shaking his head in denial. Dirt is visible on his face. He gestures "no no!" with tiny blue-black hands. A classic mother-child confrontation. Garden setting, warm golden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${KRISHNA_U} Close-up of Krishna's face — big innocent eyes looking up, shaking his head. His expression says "Who, ME?" Dirt on his cheeks and lips. Behind him, ${BALARAMA} peeks from behind a tree, arms crossed. ${YASHODA_U} points at Krishna's mouth firmly — "Open your mouth. Show me." A standoff between mother and child. Garden, warm golden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${KRISHNA_U} ${YASHODA_U} Krishna slowly opens his tiny mouth. Yashoda leans in close to look inside. Her face begins to change from stern to confused. A faint golden glow begins emanating from Krishna's open mouth. The moment just before the revelation. Intimate close-up of mother peering into child's mouth. The mundane about to become infinite. Warm golden light intensifying. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${YASHODA_U} COSMIC REVELATION. Yashoda sees the ENTIRE UNIVERSE inside Krishna's mouth — swirling galaxies, blazing suns and moons, spinning planets, vast oceans, towering mountains, rivers flowing, every animal, every tree, every flower. All of creation in infinite detail. Her face is frozen in absolute awe and terror. Divine golden cosmic light floods the scene. Mind-bending, transcendent, infinite. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${YASHODA_U} Deeper into the cosmic vision — she sees herself looking into Krishna's mouth. Recursive infinite mirrors of reality. Millions of galaxies swirl and dance. Time flows like a river — past, present, future all at once. The scale is incomprehensible — from atoms to universes. Yashoda floats in this cosmic ocean, tiny against infinity. Overwhelming divine golden-cosmic light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${YASHODA_U} Yashoda's face in extreme close-up — her eyes are enormous, tears streaming, mouth open, overwhelmed. "Who... who are you?" she whispers. The reflection of the cosmos shimmers in her wide eyes. A profound moment of divine recognition. The mortal confronting the infinite. Cosmic golden light reflecting in her tears. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${KRISHNA_U} Krishna closes his mouth and simply smiles — his sweet, innocent, buttery divine smile. The cosmic vision vanishes instantly. The garden returns to normal — birds chirp, flowers sway, butterflies flutter. Just a muddy little boy smiling at his mother. Divine maya (illusion) restored. Warm, gentle, golden afternoon garden light. Peace after infinity. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `${YASHODA_U} ${KRISHNA_U} Yashoda scoops Krishna into her arms and hugs him tightly, laughing through confused happy tears. "Just don't eat dirt, okay?" Krishna snuggles into her embrace, his peacock feather tickling her nose. A mother and her naughty boy — nothing more, nothing less. Pure love after cosmic wonder. Warm intimate golden garden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-11.png',
+        prompt: `A transcendent closing composition. ${KRISHNA_U} sits in the garden playing in the mud, carefree and giggling. But his shadow cast on the ground shows the form of Lord Vishnu — four-armed, cosmic, infinite. A butterfly lands on his finger. Above, the entire cosmos swirls faintly in the golden sky. The beautiful mystery: the whole universe lives inside a little boy who just wants to play. Golden divine twilight. ${STYLE}`,
+      },
+    ];
+  })(),
+
+  'draupadi-saree': (() => {
+    const DRAUPADI = 'Queen Draupadi: beautiful Indian queen with deep brown skin, thick black hair now disheveled, ornate but torn silk saree in royal blue and gold, gold jewelry, fierce proud eyes filled with tears, dignified even in distress.';
+    const DUSHASANA = 'Dushasana: muscular Kaurava prince, dark menacing face, gold armor, cruel sneering expression, pulling with both hands at cloth.';
+    const KRISHNA_D = 'Lord Krishna: divine blue-black skin, golden crown, yellow silk garments, four-armed cosmic form appearing in ethereal golden vision, sending endless divine cloth.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${DRAUPADI} A majestic title composition. Draupadi stands dignified in the royal court, her hands raised in prayer, eyes closed. Around her, an ENDLESS cascade of beautiful silk saree cloth flows and flows — yards and yards of shimmering fabric in blue, gold, red, and saffron. ${DUSHASANA} collapses exhausted on the floor amid piles of cloth. A divine golden light from above sends the cloth. Miraculous, powerful, divine. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${DRAUPADI} A grand royal court — the Pandavas and Draupadi in their glory. Five noble Pandava princes and beautiful Queen Draupadi sit on ornate thrones. The court is magnificent with marble pillars, silk banners, and gold. Draupadi wears a stunning royal saree and crown. Everyone is happy and prosperous. Warm golden royal splendor. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `A dramatic dice game scene. The Pandava prince Yudhishthira sits at a game board, losing badly. Across from him, a sneering Kaurava prince manipulates loaded dice. Behind the winner, Kauravas celebrate maliciously. Behind Yudhishthira, the other Pandavas and Draupadi watch in horror as everything is wagered and lost. Dark, tense atmosphere with dramatic torchlight. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${DRAUPADI} ${DUSHASANA} The terrible moment. Dushasana grabs Draupadi by her hair and drags her across the marble floor of the royal court. Her face shows shock, pain, and righteous fury. Courtiers gasp. The Pandavas sit bound and helpless, anguish on their faces. Elders look away in shame. A dark, anguished, dramatic scene. Harsh torchlight and deep shadows. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${DRAUPADI} She stands in the center of the vast royal court, looking desperately around for help. The five Pandavas sit motionless, bound by their oath, tears in their eyes. The court elders — Bhishma, Drona — look away with shame. Rows of silent courtiers do nothing. No one stands up. Draupadi is alone. Dark, isolating composition. Dramatic shadow and torchlight. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${DRAUPADI} In her darkest moment, Draupadi closes her eyes and raises both hands to the sky. Tears stream down her face. Her lips form the words "Krishna! My friend! Please help me!" A single beam of golden divine light breaks through the dark court ceiling and touches her raised hands. The moment of absolute faith. Dark surroundings, golden divine light on her. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${DRAUPADI} ${DUSHASANA} THE MIRACLE. Dushasana pulls and pulls at Draupadi's saree, but the cloth NEVER ENDS! Yards and yards of shimmering silk cascade endlessly — blue, gold, saffron, red — piling up in mountains around the court. Dushasana strains with all his might, sweat pouring. Draupadi stands still, hands raised in prayer, fully covered and dignified. Divine golden light fills the court. Gasps from every face. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${KRISHNA_D} Far away in his palace, Lord Krishna sits with eyes closed and a gentle knowing smile. Golden divine energy streams from his raised hand toward the horizon. He sends the endless cloth across the distance. Above him, a celestial vision shows the cloth flowing miraculously to Draupadi. Divine, transcendent, powerful. Golden cosmic light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${DUSHASANA} collapses in exhaustion on the court floor, surrounded by enormous piles of silk cloth. The entire court is stunned into silence — mouths open, eyes wide. ${DRAUPADI} stands triumphant, fully dignified and covered, her eyes blazing with righteous fire. The silence is deafening. Even the wicked ones know they witnessed the divine. Dark court, golden miraculous light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${DRAUPADI} She stands tall and speaks to the entire court, her voice strong and clear, one hand raised. "Remember this day." Her expression is fierce and prophetic. The court listens in shamed silence. Behind her, a celestial golden aura glows. The Pandavas watch with renewed hope. This is the turning point. Dramatic court scene, powerful golden light on Draupadi. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `A transcendent closing composition. ${DRAUPADI} stands in prayer, surrounded by the miraculous flowing cloth. Above, ${KRISHNA_D} in his cosmic four-armed form sends golden divine light. Below, the court watches in awe. The message: when the world turns against you, one sincere call from the heart can move the heavens. Divine golden light, deeply moving and powerful. ${STYLE}`,
+      },
+    ];
+  })(),
+
+  'savitri-and-satyavan': (() => {
+    const SAVITRI = 'Princess Savitri: stunningly beautiful Indian princess with deep brown skin, ornate red silk saree with heavy gold embroidery, gold crown and jewelry, but most striking are her fierce determined intelligent eyes — a woman who will not be stopped by anything.';
+    const SATYAVAN = 'Prince Satyavan: handsome young Indian prince living as a forest-dweller, simple white dhoti, muscular from woodcutting, kind gentle face, an axe over his shoulder.';
+    const YAMA_S = 'Yama the Lord of Death: towering dark-skinned deity, black and gold robes, riding a massive black buffalo, stern majestic face, carrying a glowing rope to bind souls, dark purple aura of death.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${SAVITRI} ${YAMA_S} A majestic title composition. Princess Savitri walks fearlessly behind the towering Lord of Death through a surreal misty landscape between life and death. Yama rides his black buffalo, carrying Satyavan's glowing soul on his rope. Savitri's face shows absolute determination — she will follow Death itself to save her love. Dark misty path with golden light following Savitri. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${SAVITRI} ${SATYAVAN} Princess Savitri travels through the land in a royal chariot, searching for a husband. She arrives at a forest hermitage and sees Satyavan chopping wood — his gentle smile, his kind eyes. Their eyes meet. Flowers seem to bloom around them. Love at first sight in a beautiful forest clearing. Golden romantic sunlight through ancient trees. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${SAVITRI} In a royal court, a wise old sage (Narada) delivers the terrible prophecy — he points at a celestial calendar showing one year. "Satyavan will die in exactly one year." Savitri's father looks horrified. Courtiers gasp. But Savitri's face shows not despair but iron determination. She has already decided. Dramatic court scene, dark foreboding atmosphere with golden torchlight. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${SAVITRI} ${SATYAVAN} Their forest wedding — simple but beautiful. Savitri has exchanged her royal silks for simpler forest garments. They exchange garlands under a sacred tree. A fire ceremony glows between them. Forest animals watch. Despite the prophecy, both smile with pure love and joy. Beautiful forest ashram with golden wedding fire light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${SAVITRI} ${SATYAVAN} Happy forest life — but a calendar or seasons passing shows time running out. Savitri and Satyavan laugh together, but Savitri secretly counts the days. Her eyes sometimes show deep worry when he's not looking. As the final days approach, she prays intensely by a sacred fire, fasting. Dual mood: joy and dread. Forest, shifting golden to amber light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${SATYAVAN} ${SAVITRI} ${YAMA_S} The dreaded day. Satyavan chops wood, then suddenly collapses. Savitri catches him in her arms. Behind them, the terrifying figure of Yama materializes — towering, dark, riding his black buffalo. He carries a glowing rope. He gently pulls a luminous soul from Satyavan's body. Savitri's face shows not grief but fierce resolve. Dark forest, deathly purple light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${YAMA_S} ${SAVITRI} Yama walks south through a surreal misty landscape between worlds. Dead trees, swirling mist, a dark path. He carries Satyavan's glowing soul. Behind him, Savitri follows with determined steps. Yama turns back, surprised. "Go back, Savitri. No mortal can follow me." But she keeps walking. Dark, ethereal death-realm with Savitri's golden aura persisting. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${YAMA_S} ${SAVITRI} Yama stops, impressed despite himself. He offers her boons — celestial visions appear showing her wishes being granted: a kingdom restored (a golden palace appears), sons for her father (boys playing). Savitri speaks cleverly, accepting each boon but never stopping her pursuit. The dark path, Savitri's golden determination against Death's purple realm. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${SAVITRI} ${YAMA_S} The clever final wish. Savitri smiles — a brilliant, victorious smile. "I wish for many sons of my own." Yama grants it, then his eyes widen as he realizes the trap — she cannot have sons without her husband alive! A moment of divine chess. Savitri's intelligence outshines even Death. Her golden aura blazes. Yama's stern face breaks into admiring laughter. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${YAMA_S} Yama laughs with genuine admiration and respect. He releases Satyavan's glowing soul from his rope. The luminous soul floats back along the dark path toward life. Yama bows slightly to Savitri. "You are the bravest and cleverest I have ever met." The dark realm begins to lighten with golden dawn. A victory over Death itself. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `${SAVITRI} ${SATYAVAN} In the forest, Satyavan wakes up as if from a deep sleep. Savitri holds him, tears of joy streaming. "What happened?" he asks. The forest bursts into golden morning light. Flowers bloom, birds sing, life returns. A joyful reunion. The darkness of death completely replaced by the golden light of love and life. ${STYLE}`,
+      },
+      {
+        filename: 'scene-11.png',
+        prompt: `A transcendent closing composition. ${SAVITRI} stands radiant, Satyavan beside her. Above, Yama watches from the celestial realm with respect. A vision shows their long, happy life — children, a restored kingdom, love that endures. Below, women celebrate Vat Savitri day, tying threads around a banyan tree. The message: love, courage, and a sharp mind can conquer anything, even death. Golden divine light. ${STYLE}`,
+      },
+    ];
+  })(),
+
+  'blind-men-and-elephant': (() => {
+    const ELEPHANT = 'A magnificent royal Indian elephant: huge grey body, long trunk, large flapping ears, white tusks, decorated with a colorful cloth on its back, calm and patient.';
+    const KING = 'The wise King: regal Indian king in white and gold silk robes, gold crown, kind amused face, watching the scene with gentle wisdom.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${ELEPHANT} ${KING} A majestic title composition. Six blind men stand around a huge elephant, each touching a different part — side, tusk, trunk, leg, ear, tail. Each man has a completely different expression of certainty. The elephant stands patiently. The King watches with an amused knowing smile. A golden metaphor for perspective. Bright Indian village setting, warm golden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${KING} ${ELEPHANT} An Indian village scene. The King arrives on the elephant through the village gate. Six blind men — each in different colored simple robes, each with clouded sightless eyes but expressive faces — stand excitedly. Villagers point and chatter. The elephant is huge and impressive. The King gestures invitingly. Warm golden morning light. Anticipation and excitement. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${ELEPHANT} The six blind men rush forward eagerly with outstretched hands, each reaching a different part of the elephant. They spread out around the massive animal. The elephant stands still and patient. Each man's hands find a different section. Their faces show intense concentration as they try to understand through touch alone. Warm golden village light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${ELEPHANT} The first blind man presses both palms against the elephant's massive flat side. His expression is one of absolute certainty. "A WALL!" A thought bubble shows a solid stone wall. His hands spread wide on the grey, warm, rough surface. Close-up composition showing the man dwarfed by the elephant's vast side. Warm golden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${ELEPHANT} The second blind man grips the smooth hard tusk with both hands. "A SPEAR!" His thought bubble shows a sharp spear. Nearby, the third man wraps his arms around the wriggling trunk. "A SNAKE!" His thought bubble shows a giant snake. Both men are absolutely certain. The elephant is patient. Split composition showing both discoveries. Golden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${ELEPHANT} The fourth man hugs the thick pillar-like leg. "A TREE TRUNK!" His thought bubble shows a great tree. The fifth man waves the huge floppy ear back and forth. "A FAN!" His thought bubble shows a palm-leaf fan. Both are delighted with their discoveries. The elephant flicks its ear gently. Warm golden village light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${ELEPHANT} The sixth man holds the thin swishy tail. "A ROPE!" His thought bubble shows a rope. He tugs it gently. The elephant's tail swishes. The man looks satisfied and certain. Behind him, the five other men are already turning toward each other, ready to share what they've discovered. Village setting, warm golden afternoon light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `The six blind men face each other in a heated argument. Each gestures wildly and shouts. "WALL!" "SPEAR!" "SNAKE!" "TREE!" "FAN!" "ROPE!" Their thought bubbles clash overhead. Faces are red and angry. Each is absolutely certain he is right. The elephant stands behind them, looking bewildered. A chaotic, colorful, energetic argument scene. Warm golden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${KING} The King steps forward with a kind, wise smile, hands raised to calm the arguing men. He gestures to the whole elephant. "You are ALL right — and all wrong!" Above, a celestial vision assembles the pieces: wall + spear + snake + tree + fan + rope = one complete elephant. The men's angry faces soften with realization. Golden wisdom light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `The six blind men now work together — they walk around the elephant as a group, each sharing what they felt, helping each other understand the whole. Their expressions have changed from angry certainty to humble curiosity. They smile and nod as they piece together the truth. The elephant seems to smile. Cooperative, warm, harmonious atmosphere. Golden afternoon light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `A transcendent closing composition. The six men sit together peacefully around the elephant, now friends. Above, a celestial vision shows six puzzle pieces joining to form one complete picture. The message: everyone sees the world differently, and the wisest person listens to all before deciding. ${KING} watches with a satisfied smile. Golden divine light, warm and harmonious. ${STYLE}`,
+      },
+    ];
+  })(),
+
+  'shiva-neelakantha': (() => {
+    const SHIVA = 'Lord Shiva: powerful ascetic deity, ash-smeared pale skin, matted brown hair with crescent moon and Ganga river, tiger skin around waist, rudraksha beads, third eye on forehead, serene calm expression, trident nearby.';
+    const PARVATI_S = 'Goddess Parvati: beautiful divine woman, golden skin, red silk sari with gold, gentle loving face now terrified, pressing her hands against Shiva\'s throat.';
+    const HALAHALA = 'Halahala poison: thick bubbling purple-black toxic liquid, deadly fumes rising as dark clouds, everything it touches withers and dies, terrifying and lethal.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${SHIVA} A majestic title composition. Lord Shiva drinks the deadly purple-black Halahala poison from his cupped hands. His throat glows deep blue where the poison is trapped. ${PARVATI_S} presses her hands against his throat. Above, gods and demons watch in awe. The poison's dark fumes dissolve into Shiva's calm divine aura. Heroic, sacrificial, divine. Dramatic golden and purple light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `The great churning of the cosmic ocean. Gods on one side, demons on the other, pulling a giant serpent wrapped around Mount Mandara as a churning rod. Wonderful treasures emerge from the milky ocean — a glowing jewel, a white cow, a beautiful goddess. Everyone watches with excitement and greed. Vast cosmic ocean scene, golden and blue ethereal light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${HALAHALA} HORROR. From the churning ocean, the terrible Halahala poison erupts upward like a volcanic geyser of purple-black death. Its fumes spread as dark clouds. Trees instantly wilt and die. The water boils. The ground cracks. Gods and demons scramble backward in terror. The poison threatens to destroy the entire world. Apocalyptic dark purple and black atmosphere. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${HALAHALA} The poison spreads like a dark plague across the land. Trees turn black and crumble. Rivers boil. The sky darkens. Gods and demons run in pure panic — Vishnu, Brahma, Indra, all fleeing. "Who will save us?!" Everyone looks at each other in terror. No one is brave enough. Total despair. Dark apocalyptic scene with purple-black poison fog. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${SHIVA} In the midst of chaos and panic, Lord Shiva steps forward CALMLY. He walks toward the deadly poison while everyone else runs away. His expression is completely serene. His trident glows. His third eye is half-open. He says simply: "I will." A lone figure of courage against the apocalyptic dark. Golden aura around Shiva cutting through the purple darkness. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${SHIVA} ${PARVATI_S} Parvati grabs Shiva's arm, terrified. "If you drink that, it could destroy even you!" Her face shows pure fear and love. Shiva turns to her with a gentle, loving smile. "If I don't, it will destroy everyone else." An intimate moment of love and sacrifice. Around them, chaos. Between them, calm. Contrasting golden and dark purple light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${SHIVA} ${HALAHALA} The supreme act of sacrifice. Shiva cups his hands and scoops up ALL the deadly purple-black poison. Every last drop. He raises it to his lips. Gods and demons watch from a distance, frozen in awe and terror. The poison bubbles and hisses in his hands. Shiva is calm. The entire universe holds its breath. Ultra-dramatic golden and purple lighting. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${SHIVA} ${PARVATI_S} Shiva drinks the poison in one mighty gulp. His throat immediately turns DEEP DARK BLUE — a beautiful, otherworldly blue. Parvati LUNGES forward and presses both hands tightly against his throat, trapping the poison there. Her face shows desperate love. The blue glow pulses beneath her fingers. The world watches in breathless silence. Dramatic golden and blue light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${SHIVA} Shiva sits in perfect meditation, completely peaceful despite the trapped poison. His throat glows a beautiful deep blue. He does not cry. He does not complain. Around him, the world heals — trees regrow, rivers flow clear, the sky brightens. Gods and demons kneel in gratitude. Shiva absorbs the pain silently. Serene, powerful, golden healing light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `A transcendent closing composition. ${SHIVA} sits in eternal meditation, his beautiful blue throat (Neelakantha) glowing softly. ${PARVATI_S} sits beside him lovingly. Above, a celestial vision shows all the life he saved — every creature, every river, every forest, thriving. The message: the greatest act of love is taking pain upon yourself so others don't have to. Golden divine light, deeply sacred and moving. ${STYLE}`,
+      },
+    ];
+  })(),
+
+  'thirsty-crow': (() => {
+    const CROW = 'The Clever Crow: a glossy black crow with bright intelligent eyes, sharp beak, slightly ruffled feathers from exhaustion, determined and resourceful expression.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${CROW} A majestic title composition. The clever crow perches on the rim of a tall clay pot, dropping a pebble from his beak into the water below. A pile of pebbles sits nearby. The water level is rising. Sunlight catches the splashing droplet. A parched, sun-scorched Indian landscape behind. The moment of triumph through patience and intelligence. Golden hot summer light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `A scorching Indian summer landscape. Cracked dry earth, wilted trees, shimmering heat haze. The sun beats down mercilessly. ${CROW} flies wearily across the barren sky, wings heavy, beak open in thirst. Below, dry riverbeds and withered crops. Everything is parched and desperate. Intense hot golden-white sunlight. The desperation of drought. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${CROW} The exhausted crow flies lower and lower. His wings barely flap. His throat is dry. He croaks weakly. Below, the land is dry and cracked. He has searched everywhere. He is about to give up — his eyes are half-closed, wings drooping. The heat haze shimmers. Hot, harsh, desperate golden-white light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${CROW} Hope! The crow spots a tall clay water pot on the ground near a simple Indian house. He swoops down and lands on its rim. He peers inside — there IS water at the bottom! His eyes widen with relief and excitement. The pot is tall and narrow, reddish-brown clay. A hint of sparkling water visible deep inside. Hot golden light, a moment of hope. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${CROW} The problem. The crow pushes his beak into the narrow pot, stretching desperately, but the water is too far down! He tries tilting the heavy pot — it won't budge. He tries pecking at it — too hard. Each failed attempt shown in sequence. Frustration and determination on his face. The water glimmers mockingly at the bottom. Hot golden afternoon light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${CROW} The crow sits on the rim of the pot, THINKING. His head is tilted, one eye focused intently. You can almost see the gears turning. Around him, the hot landscape. His gaze falls on small pebbles scattered on the dry ground nearby. A light bulb moment — his eyes brighten, his head snaps up. The eureka moment. Hot golden light with a spark of insight. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${CROW} The crow picks up a small pebble in his beak and drops it into the pot. PLOP! A splash. Then another pebble. PLOP! Then another. PLOP! PLOP! PLOP! Each pebble sends a tiny splash. The water level starts to rise just barely. Determined, methodical work. Close-up of beak dropping pebble, water splashing. Hot golden afternoon light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${CROW} A montage of hard work. The crow flies back and forth — picking up pebbles from the ground, flying to the pot, dropping them in. One by one. The pile of pebbles inside the pot grows. The water slowly, slowly rises. It is exhausting, repetitive work. But the crow never stops. Sweat and determination. Hot golden light, rhythmic labor. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `Small sparrows sit on a nearby fence, watching and laughing at the crow. "What a silly crow! That will take forever!" Their expressions are mocking and amused. But the crow ignores them completely, focused only on his task. He picks up another pebble. And another. Unwavering determination against mockery. Hot golden afternoon light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${CROW} TRIUMPH! The water has risen all the way to the top of the pot! The crow dips his beak in and drinks the cool, sweet water. His expression is pure bliss — eyes closed, head tilted back, savoring every drop. "Ahhhh!" Water droplets glisten on his beak. The sparrows on the fence stare in amazed silence, their mockery silenced. Golden sunset light, victorious. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `A transcendent closing composition. ${CROW} perches proudly on the pot, refreshed and strong. Around the pot, a pile of pebbles and splashed water. The sparrows now look up at him with admiration. Above, a celestial vision shows the message: patience and a clever idea can solve the impossible. Golden divine sunset light, warm and triumphant. ${STYLE}`,
+      },
+    ];
+  })(),
+
+  'hanuman-brings-mountain': (() => {
+    const HANUMAN_M = 'Lord Hanuman: mighty monkey deity with golden-orange fur, muscular powerful build, tail curling upward, devotional expression, wearing simple loincloth and gold arm bands, red tilak on forehead, radiating golden divine strength.';
+    const RAMA_M = 'Lord Rama: blue-skinned prince, green silk garments, gold crown and jewelry, noble handsome face now stricken with grief, holding his brother\'s lifeless body, tears on his divine face.';
+    const LAKSH = 'Prince Lakshmana: younger prince, unconscious, pale, lying on the battlefield, barely breathing, an ethereal dark wound from a magical weapon visible on his chest.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${HANUMAN_M} A majestic title composition. Hanuman flies through the starlit night sky carrying an ENTIRE MOUNTAIN on his palm above his head! The mountain is massive — covered with glowing herbs, trees, waterfalls. Hanuman's expression is fierce devotion. Below, the battlefields of Lanka. Stars and moon around him. The ultimate act of love and devotion. Dramatic night sky with golden divine light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `An epic battlefield scene in Lanka. Rama's army of monkeys and bears fights demon warriors. Chaos of battle — swords clashing, arrows flying, dust and smoke. The monkey warriors are brave but battered. Demon warriors in dark armor press the attack. The great battle of the Ramayana in full fury. Dramatic sunset battlefield light, fire and smoke. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${LAKSH} ${RAMA_M} The devastating moment. Lakshmana is struck by a terrible magical weapon — a dark energy bolt hits his chest. He falls to the ground, eyes rolling back. Warriors around him gasp. The magical weapon leaves an ethereal dark wound. Time seems to freeze. Dramatic battlefield, the moment of catastrophe. Dark dramatic lighting. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${RAMA_M} ${LAKSH} Rama rushes to his fallen brother and cradles him in his arms. Tears stream down Rama's blue face. "Lakshmana! Wake up! Please!" The entire army goes silent — monkeys, bears, everyone frozen in grief. Lakshmana is pale and barely breathing. A devastating scene of brotherly love. Dark, emotional battlefield lighting with golden divine tears. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `An elderly monkey doctor (Sushena) examines Lakshmana with grave concern. He looks up at Rama and speaks urgently — above his head, a vision appears of a distant snow-capped Himalayan mountain with glowing herbs. "The Sanjeevani herb — before sunrise — or it will be too late." A clock or setting moon shows time running out. Urgent, desperate, dark dramatic atmosphere. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${HANUMAN_M} Hanuman steps forward from the crowd, his face showing absolute devotion and determination. "I will go." His eyes blaze with divine fire. He closes his eyes, says "Jai Sri Ram!" His body begins to grow — larger and LARGER — muscles expanding, golden aura blazing. He crouches to leap. Everyone watches in awe. Dramatic golden divine power building. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${HANUMAN_M} LAUNCH! Hanuman leaps into the sky like a golden rocket! A shockwave ripples outward. He flies over the ocean, over forests, over plains, over rivers — all a blur below him. Faster than the wind. His golden trail blazes across the night sky like a comet. The distant Himalayas appear on the horizon. Epic cosmic flight scene, dramatic night sky, golden divine speed. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${HANUMAN_M} Hanuman lands on the great Dronagiri mountain. But THOUSANDS of herbs glow all across the mountainside — green, blue, white, gold — all looking similar! Hanuman searches frantically, picking up herbs, comparing them, confused. Time is running out — the moon sinks lower. He cannot identify the Sanjeevani. Frustration and urgency on his face. Glowing mountain at night. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${HANUMAN_M} THE INCREDIBLE MOMENT. Hanuman's eyes blaze with divine determination. "I cannot waste time!" He digs his massive hands under the ENTIRE MOUNTAIN, roots cracking, earth splitting. With a mighty roar, he LIFTS the whole mountain onto his palm! Rocks tumble, waterfalls pour, trees sway. An impossible feat of devotion. Ultra-dramatic golden divine power, cosmic scale. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${HANUMAN_M} Hanuman flies back through the starlit sky carrying the entire mountain over his head. Below, villages and cities pass. People look up in disbelief — "A mountain is flying through the sky!" Stars surround him. The mountain's glowing herbs light up the night like a flying garden of lights. Just before sunrise — the eastern horizon pinkens. Epic, breathtaking night flight. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `${HANUMAN_M} Hanuman lands with the mountain just as the first rays of sunrise appear. The doctor Sushena rushes to the mountain and finds the Sanjeevani herb — a special golden glowing plant. He crushes it and gives it to the unconscious ${LAKSH}. Everyone watches breathlessly. The herb touches Lakshmana's lips. Dawn light, golden hope. ${STYLE}`,
+      },
+      {
+        filename: 'scene-11.png',
+        prompt: `${LAKSH} ${RAMA_M} ${HANUMAN_M} Lakshmana's eyes flutter open! "What happened?" he mumbles. Rama sobs with joy and hugs his brother. Then Rama hugs Hanuman, tears of gratitude on his blue face. The entire army erupts in cheers — monkeys dance, bears roar with joy. Morning golden light floods the battlefield. Pure joy and relief. ${STYLE}`,
+      },
+      {
+        filename: 'scene-12.png',
+        prompt: `A transcendent closing composition. ${HANUMAN_M} stands heroically with the mountain still on his palm, silhouetted against a magnificent sunrise. ${RAMA_M} and ${LAKSH} (now healthy) stand below, hands folded in gratitude. Above, celestial beings shower flowers. The message: when someone you love needs help, don't worry about doing it perfectly — bring the whole mountain. Golden divine sunrise, epic and deeply inspiring. ${STYLE}`,
+      },
+    ];
+  })(),
 };
 
 // ─── Generation Logic ───
