@@ -67,6 +67,7 @@ export default function AboutPage() {
           <p className="font-body text-sm leading-relaxed mb-3" style={{ color: 'var(--color-text-secondary)' }}>
             Contributions are welcome — whether you want to add a new stotra, contribute a story, correct a transliteration, improve translations, add a new language, or enhance the app experience. This is a community effort in the truest sense.
           </p>
+          <div className="flex justify-center">
           <a
             href="https://github.com/ajjuprasad/sadhana-reader"
             target="_blank"
@@ -83,6 +84,7 @@ export default function AboutPage() {
             </svg>
             View on GitHub
           </a>
+          </div>
         </section>
 
         {/* About the Creator */}
@@ -90,6 +92,14 @@ export default function AboutPage() {
           <h2 className="font-display font-bold text-lg text-center mb-4" style={{ color: 'var(--color-text-primary)' }}>
             About the Creator
           </h2>
+          <div className="flex justify-center mb-5">
+            <img
+              src={`${import.meta.env.BASE_URL}ajay-prasad.jpg`}
+              alt="Ajay Prasad"
+              className="w-24 h-24 rounded-full object-cover"
+              style={{ border: '3px solid rgba(255,153,51,0.3)' }}
+            />
+          </div>
           <p className="font-body text-sm leading-relaxed mb-3" style={{ color: 'var(--color-text-secondary)' }}>
             Hi, I'm Ajay Prasad. I built Sādhanā Reader as a personal project born from my own daily practice and a desire to pass these traditions on to my children. I wanted a clean, respectful app that felt like opening a sacred book rather than scrolling a cluttered website.
           </p>
@@ -99,7 +109,7 @@ export default function AboutPage() {
           <p className="font-body text-sm leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
             If you'd like to contribute, have feedback, or just want to say hello — I'd love to hear from you.
           </p>
-          <div className="flex flex-wrap gap-3 mt-4">
+          <div className="flex flex-wrap justify-center gap-3 mt-4">
             <a
               href="https://www.linkedin.com/in/ajjuprasad"
               target="_blank"
