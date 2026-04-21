@@ -496,6 +496,122 @@ const STORIES: Record<string, ScenePrompt[]> = {
       },
     ];
   })(),
+
+  'sudama-gift-of-rice': (() => {
+    const KRISHNA_KING = 'Lord Krishna as King of Dwaraka: majestic young man with deep blue-black skin, ornate golden crown with peacock feather, rich yellow silk pitambara robes, elaborate gold jewelry, warm compassionate eyes, gentle knowing smile, radiant divine golden aura.';
+    const SUDAMA = 'Sudama: a thin humble Brahmin man, warm brown skin, gentle kind face, wearing a simple worn white dhoti slightly tattered, thin sacred thread across chest, bare feet, carrying a small cloth bundle, shy modest expression.';
+    const SUDAMA_WIFE = 'Sudama wife: a gentle Indian woman in a faded simple sari, kind worried eyes, warm smile, thin from poverty but dignified, long dark hair in a bun.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${KRISHNA_KING} ${SUDAMA} A majestic title composition. Krishna, resplendent as king, embraces his old friend Sudama at the grand golden gates of Dwaraka palace. Krishna is barefoot, running toward Sudama with arms open wide, tears of joy in his eyes. Sudama stands in his tattered white dhoti, overwhelmed, clutching his small cloth bundle of poha. Behind them, the magnificent golden spires and gem-studded walls of Dwaraka city gleam in golden light. The contrast between the glorious king and the humble poor man. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `Two young boys — one with blue-black skin (young Krishna) and one with brown skin (young Sudama) — sit side by side under a large tree at a forest gurukul school. They share a single leaf plate of food, laughing together. Other student boys study nearby. A bearded guru in saffron robes teaches in the background. Ancient forest school setting with thatched roof, books on bark, sacred fire. Warm golden dappled sunlight. Pure innocent childhood friendship. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `A dramatic split composition. On the left: ${KRISHNA_KING} sits on a magnificent golden throne in the dazzling palace of Dwaraka, surrounded by wealth, jewels, and attendants. On the right: ${SUDAMA} sits in a tiny crumbling mud hut, his thin children beside him, an empty cooking pot. The contrast between opulence and poverty. The two halves connected by a faint golden thread of memory. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${SUDAMA} ${SUDAMA_WIFE} Inside their tiny humble hut. Sudama's wife speaks earnestly to him, one hand on his shoulder, gesturing toward the distance with the other. Sudama sits cross-legged, looking reluctant and shy, hands in his lap. Their thin children peek from behind. A single clay lamp provides warm light. The hut has cracked walls, a leaking roof, bare necessities. Intimate, emotional, warm despite poverty. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${SUDAMA_WIFE} She carefully ties a small handful of flattened rice — poha — in a torn cloth, making a tiny bundle. Her eyes are full of love and hope. ${SUDAMA} watches, looking worried and embarrassed about the humble gift. The tiny bundle of poha sits between them, pathetically small yet precious. Their humble hut interior, warm lamplight. A touching scene of love making the best of nothing. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${SUDAMA} He walks along a dusty road toward the magnificent city of Dwaraka visible in the distance — golden spires, gem-studded walls, flags flying. Sudama is small and humble on the road, his tattered white dhoti dusty, bare feet sore, clutching his tiny cloth bundle. His expression shows awe and intimidation. Other well-dressed travelers pass him. The golden city towers ahead. Dramatic perspective showing his smallness against the grand city. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${KRISHNA_KING} ${SUDAMA} THE ICONIC MOMENT. Krishna has run barefoot from his golden throne all the way to the palace gate where Sudama stands. Krishna embraces Sudama tightly, tears of pure joy streaming down his blue-black cheeks. Sudama is overwhelmed, eyes wide, the tiny poha bundle still clutched in his hand. Palace guards and servants watch in astonishment. The grand golden gates of Dwaraka. Brilliant warm golden light. Pure love between friends reunited. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${KRISHNA_KING} ${SUDAMA} Inside the magnificent Dwaraka palace. Krishna kneels on the marble floor and lovingly washes Sudama's tired, dusty feet with water from a golden pitcher. Sudama sits on Krishna's own golden throne, looking deeply embarrassed and moved. Royal servants stand frozen in shock — the great king serving a poor man. Opulent palace interior with golden pillars, silk drapes, gem-studded walls. Warm divine golden light. A profound act of humility and love. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${KRISHNA_KING} ${SUDAMA} Krishna notices the small torn cloth bundle that Sudama is trying to hide behind his back. Krishna reaches for it with curious delight. Sudama's face flushes with deep embarrassment, trying to keep it away. His eyes show shame about the humble gift. Krishna's eyes sparkle with genuine excitement. The opulent palace setting makes the tiny bundle look even more humble. Warm golden interior light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${KRISHNA_KING} ${SUDAMA} Close-up of Krishna eating a big handful of flattened rice (poha) from the torn cloth, his blue-black face beaming with the most radiant, genuine smile of pure delight. His eyes are closed in bliss. Sudama watches in amazement, a smile breaking through his tears. Grains of poha scattered on the golden floor. The humble food in the magnificent setting. The most joyful moment. Warm golden light radiates from the scene. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `${SUDAMA} He walks away from the magnificent city of Dwaraka along a dusty road at sunset, looking back one last time. His expression shows peace and happiness from the reunion, but also a quiet sadness — he was too shy to ask for anything. The golden city of Dwaraka glows in the sunset behind him. The road ahead leads into rolling countryside. Warm melancholic sunset light — saffron, orange, rose. ${STYLE}`,
+      },
+      {
+        filename: 'scene-11.png',
+        prompt: `${SUDAMA} He arrives at his village and stops in stunned disbelief, mouth agape, eyes wide. Where his tiny crumbling hut stood, there is now a beautiful large house with a garden. His wife and children run out in new colorful clothes, smiling radiantly. Fresh food and flowers everywhere. The transformation is miraculous. Golden divine light suffuses the scene. Sudama's hand goes to his heart in overwhelming gratitude. ${STYLE}`,
+      },
+      {
+        filename: 'scene-12.png',
+        prompt: `A transcendent closing composition. ${SUDAMA} stands before his new beautiful home, looking up at a magnificent golden sky with tears of gratitude, hands folded in prayer. Above in the celestial clouds, a radiant vision of ${KRISHNA_KING} smiling warmly with hands in a blessing gesture. Below, Sudama's happy family gathers around him. The message: true friends give without being asked. Divine golden light, warm colors, deeply spiritual and emotional atmosphere. ${STYLE}`,
+      },
+    ];
+  })(),
+
+  'shabari-berries': (() => {
+    const SHABARI = 'Shabari: a very old wrinkled Indian woman with white hair in a simple bun, dark brown weathered skin, gentle devoted eyes, wearing a simple faded white cotton sari, bare feet, thin frail body but radiant inner spiritual light.';
+    const RAMA_SH = 'Lord Rama: divine prince with deep blue skin, serene handsome face, tall and regal, golden crown with jewels, yellow silk dhoti and upper cloth, ornate gold jewelry, divine bow in hand, gentle compassionate eyes, celestial golden aura.';
+    const LAKSHMANA_SH = 'Prince Lakshmana: handsome young warrior with fair golden-brown skin, green silk dhoti with gold border, gold jewelry, bow and quiver of arrows, loyal protective expression, standing beside Rama.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${SHABARI} ${RAMA_SH} A majestic title composition. Old Shabari kneels before Lord Rama, offering him a clay bowl of forest berries with both trembling hands, tears of joy streaming down her wrinkled cheeks. Rama accepts the berries with a warm, tender smile, one hand reaching for the bowl. Her tiny forest ashram is behind them, surrounded by ancient trees and wildflowers. A beam of divine golden light connects them. The contrast between the humble old woman and the divine prince. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${SHABARI} She sits alone outside her tiny thatched forest hut. The hut is simple — clay walls, leaf roof, a broom leaning outside, a water pot. The deep forest surrounds her with ancient trees, vines, and filtered green light. She has no possessions except a clay bowl and a broom. Her expression is peaceful and content despite her poverty. Birds and small animals gather near her. Quiet, meditative forest atmosphere. Soft dappled green-gold light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${SHABARI} She sits at the feet of her guru — an ancient sage with a long white beard and saffron robes — in a forest ashram. The guru points toward the horizon with a knowing smile, speaking of Rama's coming. Shabari's younger face (still brown-skinned but less wrinkled) looks up with shining eyes of hope and faith. Sacred fire burns between them. Ancient forest, twilight, ethereal spiritual atmosphere. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${SHABARI} Early morning in the forest. Shabari sweeps the ground outside her tiny hut with a handmade broom, her white sari catching the first golden rays of dawn. She has already placed fresh flowers at a small shrine. Then she walks into the forest with a clay bowl, carefully picking berries from bushes. Dew sparkles on leaves. Birds sing in the trees. A peaceful, devoted morning ritual. Warm golden dawn light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${SHABARI} Close-up of her weathered brown hands. She carefully bites into a forest berry, tasting it. Her expression concentrates — is it sweet or sour? She places a sweet one in her clay bowl and tosses a sour one away. The bowl is slowly filling with only the sweetest berries, each with a small bite mark. Forest berry bushes surround her. Warm dappled sunlight. The care and devotion in her selection process is visible. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `A time-passing composition. ${SHABARI} is shown in three overlapping stages: younger (cleaning her hut), middle-aged (collecting berries), and very old (sitting by her door watching the forest path). The forest changes subtly with seasons — green leaves, autumn gold, bare branches, spring blossoms. Through it all, she waits. Her faith never wavers. The years are visible in her aging face. Ethereal, poignant, golden-amber atmospheric light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${SHABARI} ${RAMA_SH} ${LAKSHMANA_SH} Two magnificent figures — Rama with his blue skin and golden aura, and Lakshmana beside him — emerge from the forest path toward Shabari's tiny hut. Shabari, sweeping her doorstep, looks up. Her old eyes go wide. Her broom falls from her trembling hands. Her hand goes to her heart. She recognizes Rama instantly. Golden divine light radiates from the two princes. The forest parts around them. A moment of destiny fulfilled. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `${SHABARI} ${RAMA_SH} Shabari falls at Rama's feet, overwhelmed with joy, tears pouring down her wrinkled cheeks. Her frail body trembles. She rises and runs to bring her clay bowl of carefully selected berries, hands shaking with excitement. Rama watches her with infinite tenderness and patience. The tiny humble ashram, the ancient forest, golden divine light pouring through the canopy. An old woman's lifelong dream coming true. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${LAKSHMANA_SH} Close-up of Lakshmana looking at the clay bowl of berries that Shabari is offering. He notices the bite marks on each berry and his expression shows concern and slight discomfort — raised eyebrows, a subtle grimace. He whispers to the side. The berries are clearly bitten into. ${RAMA_SH} is visible in the background, already reaching for a berry with a knowing smile. Forest ashram setting. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `${RAMA_SH} ${SHABARI} Rama sits on a simple mat in the ashram, eating the bitten berries from the clay bowl with the most beautiful, genuine expression of delight. His blue-black face radiates warmth and appreciation. He holds a berry up admiringly. Shabari watches him eat with her hands clasped together, tears of pure joy on her wrinkled face, her whole being glowing with happiness. Golden divine light fills the humble setting. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `${RAMA_SH} ${SHABARI} Rama speaks to Shabari with deep reverence, one hand over his heart. His expression is profoundly moved and sincere. Shabari listens with clasped hands, overwhelmed. The empty clay bowl of berries sits between them. The forest ashram glows with supernatural golden-amber light. Every tree, flower, and leaf seems to lean in to listen. A sacred moment of divine recognition of pure devotion. ${STYLE}`,
+      },
+      {
+        filename: 'scene-11.png',
+        prompt: `A transcendent closing composition. ${SHABARI} sits peacefully outside her tiny ashram, her face radiant with inner spiritual light, eyes closed in blissful meditation. Above her, a celestial vision of ${RAMA_SH} smiling with hands raised in blessing, golden light streaming down. The forest around her blooms with supernatural beauty — flowers opening, golden light pouring through every leaf. The message: pure love brings God to your door. Deeply spiritual, warm, ethereal atmosphere. ${STYLE}`,
+      },
+    ];
+  })(),
 };
 
 // ─── Generation Logic ───
