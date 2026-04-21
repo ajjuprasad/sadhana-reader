@@ -42,10 +42,11 @@ export default function StoryDetail() {
   const handleShare = () => {
     const url = window.location.href;
     const text = `Read "${story.title}" — a story from ${story.source} for kids on Sādhanā Reader`;
+    const fullText = `${text}\n${url}`;
     if (navigator.share) {
-      navigator.share({ title: story.title, text, url }).catch(() => {});
+      navigator.share({ title: story.title, text: fullText }).catch(() => {});
     } else {
-      window.open(`https://wa.me/?text=${encodeURIComponent(`${text}\n${url}`)}`, '_blank');
+      window.open(`https://wa.me/?text=${encodeURIComponent(fullText)}`, '_blank');
     }
   };
 
