@@ -17,13 +17,13 @@ if (!API_KEY) {
   process.exit(1);
 }
 
-// Sarvam voices trained on Indian English (bulbul:v2 model)
+// Sarvam voices trained on Indian English (bulbul:v3 model)
 const VOICES = {
   female: 'anushka',
   male: 'abhilash',
 } as const;
 
-const MODEL = 'bulbul:v2';
+const MODEL = 'bulbul:v3';
 const TARGET_LANG = 'en-IN';
 const SAMPLE_RATE = 22050;
 
