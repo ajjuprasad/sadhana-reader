@@ -319,6 +319,63 @@ const STORIES: Record<string, ScenePrompt[]> = {
       },
     ];
   })(),
+
+  'hanuman-and-the-sun': (() => {
+    const BABY_HANUMAN = 'Baby Hanuman: a tiny adorable monkey infant with soft golden-orange fur, chubby round face, big bright curious brown eyes, a small curly tail, wearing only a tiny red loincloth, impossibly strong and fearless for his size.';
+    const ANJANA = 'Mother Anjana: a beautiful celestial apsara-like woman with warm golden-brown skin, white flowing sari with gold border, gentle serene face, long dark hair, cradling or watching her baby with tender love.';
+    const SURYA = 'Surya the Sun God: a magnificent radiant deity with blazing golden skin, riding a golden chariot pulled by seven white horses, ornate golden crown and armor, hands raised in warning, the sun\'s disk blazing behind him.';
+    const INDRA = 'Lord Indra: king of the gods, regal muscular figure with pale golden skin, elaborate golden crown and armor, riding a magnificent white elephant Airavata, wielding the thunderbolt Vajra weapon crackling with blue-white lightning.';
+    return [
+      {
+        filename: 'scene-0-title.png',
+        prompt: `${BABY_HANUMAN} A majestic title composition. Baby Hanuman leaps through the sky with arms outstretched toward the blazing golden sun, which fills the upper half of the image with magnificent radiance. His tiny golden-furred body is silhouetted against the sun's brilliance. Below, green mountains and clouds stretch to the horizon. His expression is pure fearless joy. Wind rushes past. A scene of incredible courage and innocence. ${STYLE}`,
+      },
+      {
+        filename: 'scene-1.png',
+        prompt: `${BABY_HANUMAN} ${ANJANA} On a beautiful lush green mountain top, mother Anjana cradles newborn baby Hanuman. The tiny golden-furred baby is already strong, playfully trying to climb out of her arms. The mountain is surrounded by misty clouds, ancient trees, and waterfalls. The Wind God Vayu — depicted as a gentle swirling breeze with a faint divine form — watches over them. Dawn light, celestial atmosphere. ${STYLE}`,
+      },
+      {
+        filename: 'scene-2.png',
+        prompt: `${BABY_HANUMAN} He sits on a mountain ledge, tummy rumbling with hunger, looking around for food. His eyes suddenly lock onto the sky where the magnificent golden sun rises over the mountains — big, round, glowing orange-gold. His eyes go wide with wonder and desire. He licks his lips. The sun looks like a giant ripe fruit from his perspective. Beautiful dawn landscape, mist, golden-rose sky. ${STYLE}`,
+      },
+      {
+        filename: 'scene-3.png',
+        prompt: `${BABY_HANUMAN} Close-up of his adorable chubby face looking up at the sun with pure innocent greedy delight, mouth open in a big smile, reaching up with one tiny golden paw. His eyes sparkle with mischief. The sun fills the sky above like a giant golden mango. Thought bubbles or visual suggestion of him imagining the sun as a delicious fruit. Golden-orange warm light on his face. ${STYLE}`,
+      },
+      {
+        filename: 'scene-4.png',
+        prompt: `${BABY_HANUMAN} He launches himself into the sky with incredible power — WHOOOOSH! His tiny body rockets upward through the clouds, arms stretched out toward the sun above. A cool breeze (his father Vayu, the Wind God, shown as silvery swirling wind with a faint smiling divine face) accompanies him. Clouds rush past below. The sun grows larger above. Dynamic upward motion, exhilarating speed, blue sky and golden light. ${STYLE}`,
+      },
+      {
+        filename: 'scene-5.png',
+        prompt: `${SURYA} The Sun God in his blazing golden chariot looks down in complete astonishment at ${BABY_HANUMAN} who is flying rapidly toward him. Surya raises both hands in a warning gesture, his face showing shock and concern. The tiny baby monkey is closing in with arms outstretched. The sun's disk blazes behind Surya. Seven white horses pull the golden chariot. Intense golden-white radiance. ${STYLE}`,
+      },
+      {
+        filename: 'scene-6.png',
+        prompt: `${BABY_HANUMAN} He flies closer and closer to the blazing sun, his tiny arms stretched wide open, fingers reaching, mouth open in joyful anticipation, completely unafraid of the intense heat and light. He looks like he's about to grab a giant mango. The sun fills the entire background. Golden-white blazing light. His golden fur glows. Pure fearless innocent determination. ${STYLE}`,
+      },
+      {
+        filename: 'scene-7.png',
+        prompt: `Rahu — a fearsome dark shadowy demon with a severed serpentine head — approaches the sun for an eclipse, but sees ${BABY_HANUMAN} already reaching for it. Rahu recoils in terror, his eyes wide with fear, turning to flee. In the distance, ${INDRA} rides toward the scene on his white elephant Airavata, thunderbolt Vajra crackling in his hand. Dramatic cosmic sky, dark and golden contrasts. ${STYLE}`,
+      },
+      {
+        filename: 'scene-8.png',
+        prompt: `${INDRA} He hurls the thunderbolt Vajra — a blinding crackling bolt of blue-white lightning — which strikes ${BABY_HANUMAN} on his chin. The baby monkey falls backward through the sky, his little body tumbling downward through clouds. The thunderbolt's flash illuminates everything. A dramatic, shocking, powerful moment. ${BABY_HANUMAN}'s expression shifts to surprise. Intense lightning and dramatic sky. ${STYLE}`,
+      },
+      {
+        filename: 'scene-9.png',
+        prompt: `The Wind God Vayu — depicted as a powerful swirling silver-white divine figure — holds ${BABY_HANUMAN} protectively in his arms, fury on his face. All wind has stopped — trees are perfectly still, birds frozen mid-flight, people below gasping for breath. The gods panic in the sky above, approaching with apologetic gestures. An eerie, still atmosphere. No movement anywhere except Vayu's anger. ${STYLE}`,
+      },
+      {
+        filename: 'scene-10.png',
+        prompt: `A magnificent gathering of gods surrounds ${BABY_HANUMAN} who sits in Vayu's arms. Each god reaches out to bless the baby: golden divine light streams from their hands into the infant. The baby monkey glows with accumulated divine power, growing visibly stronger. Brahma, Shiva, Indra, and other gods are present, all with apologetic and generous expressions. Cosmic celestial setting, golden divine light everywhere. ${STYLE}`,
+      },
+      {
+        filename: 'scene-11.png',
+        prompt: `A transcendent closing composition. ${BABY_HANUMAN} grown slightly, sits proudly on a mountain peak, chin slightly crooked from the thunderbolt, flexing his tiny arms showing incredible divine strength. Golden divine power radiates from him. Behind him, the sun he tried to eat glows in a brilliant sky. Below, the vast world stretches out. A faint celestial vision of the adult Hanuman — mighty, powerful, devotional — appears in the golden clouds above. The message: courage and curiosity lead to greatness. ${STYLE}`,
+      },
+    ];
+  })(),
 };
 
 // ─── Generation Logic ───
