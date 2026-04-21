@@ -6,7 +6,8 @@ export interface Scene {
 
 export const storyScenes: Record<string, Scene[]> = {
   'krishna-and-fruit-seller': [
-    { image: 'scene-1.png', segmentStart: 0, segmentEnd: 1 },
+    { image: 'scene-0-title.png', segmentStart: 0, segmentEnd: 0 },
+    { image: 'scene-1.png', segmentStart: 1, segmentEnd: 1 },
     { image: 'scene-2.png', segmentStart: 2, segmentEnd: 2 },
     { image: 'scene-3.png', segmentStart: 3, segmentEnd: 3 },
     { image: 'scene-4.png', segmentStart: 4, segmentEnd: 4 },
