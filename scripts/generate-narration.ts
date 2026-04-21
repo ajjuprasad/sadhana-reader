@@ -19,8 +19,8 @@ if (!API_KEY) {
 
 // Sarvam voices trained on Indian English (bulbul:v3 model)
 const VOICES = {
-  female: 'anushka',
-  male: 'abhilash',
+  female: 'priya',
+  male: 'rohan',
 } as const;
 
 const MODEL = 'bulbul:v3';
