@@ -33,11 +33,25 @@ export default function StoryCard({ story, index, onClick }: StoryCardProps) {
       onClick={onClick}
       aria-label={`Read ${story.title}`}
     >
-      <FavoriteButton
-        stotraId={story.id}
-        size={18}
-        className="absolute top-1 right-1 z-10"
-      />
+      <div className="absolute top-1 right-1 z-10 flex items-center gap-1">
+        {story.isNew && (
+          <span
+            className="font-label font-semibold uppercase px-1.5 py-0.5 rounded-full"
+            style={{
+              fontSize: '0.5rem',
+              letterSpacing: '0.08em',
+              backgroundColor: 'var(--color-accent-primary)',
+              color: '#fff',
+            }}
+          >
+            NEW
+          </span>
+        )}
+        <FavoriteButton
+          stotraId={story.id}
+          size={18}
+        />
+      </div>
 
       <div className="p-5 sm:p-6 flex flex-col h-full">
         {/* Book icon */}
@@ -62,27 +76,12 @@ export default function StoryCard({ story, index, onClick }: StoryCardProps) {
         </div>
 
         {/* Title */}
-        <div className="flex items-start gap-1.5 mb-1">
-          <h3
-            className="font-display font-bold text-base sm:text-lg group-hover:text-saffron transition-colors duration-200 leading-snug"
-            style={{ color: 'var(--color-text-primary)' }}
-          >
-            {story.title}
-          </h3>
-          {story.isNew && (
-            <span
-              className="flex-shrink-0 mt-1 font-label font-semibold uppercase px-1.5 py-0.5 rounded-full"
-              style={{
-                fontSize: '0.5rem',
-                letterSpacing: '0.08em',
-                backgroundColor: 'var(--color-accent-primary)',
-                color: '#fff',
-              }}
-            >
-              NEW
-            </span>
-          )}
-        </div>
+        <h3
+          className="font-display font-bold text-base sm:text-lg group-hover:text-saffron transition-colors duration-200 leading-snug mb-1"
+          style={{ color: 'var(--color-text-primary)' }}
+        >
+          {story.title}
+        </h3>
 
         {/* Source & reading time */}
         <p
