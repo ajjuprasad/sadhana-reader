@@ -62,12 +62,27 @@ export default function StoryCard({ story, index, onClick }: StoryCardProps) {
         </div>
 
         {/* Title */}
-        <h3
-          className="font-display font-bold text-base sm:text-lg mb-1 group-hover:text-saffron transition-colors duration-200 leading-snug"
-          style={{ color: 'var(--color-text-primary)' }}
-        >
-          {story.title}
-        </h3>
+        <div className="flex items-start gap-1.5 mb-1">
+          <h3
+            className="font-display font-bold text-base sm:text-lg group-hover:text-saffron transition-colors duration-200 leading-snug"
+            style={{ color: 'var(--color-text-primary)' }}
+          >
+            {story.title}
+          </h3>
+          {story.isNew && (
+            <span
+              className="flex-shrink-0 mt-1 font-label font-semibold uppercase px-1.5 py-0.5 rounded-full"
+              style={{
+                fontSize: '0.5rem',
+                letterSpacing: '0.08em',
+                backgroundColor: 'var(--color-accent-primary)',
+                color: '#fff',
+              }}
+            >
+              NEW
+            </span>
+          )}
+        </div>
 
         {/* Source & reading time */}
         <p

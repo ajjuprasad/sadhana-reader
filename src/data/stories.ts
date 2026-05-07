@@ -8,6 +8,7 @@ export interface Story {
   moral: string;
   characters: string[];
   paragraphs: string[];
+  isNew?: boolean;
 }
 
 export const stories: Story[] = [
