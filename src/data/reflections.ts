@@ -1008,18 +1008,22 @@ export const reflections: Reflection[] = [
   {
     text: 'Time ripens all things. No one becomes learned or wise by chance.',
     source: 'Mahabharata, Vana Parva',
+    explanation: 'From the forest exile section of the Mahabharata, this teaching reminds us that wisdom and skill are products of patient cultivation, not accident. Just as fruit ripens only in its own season, understanding deepens only through sustained effort and lived experience. The takeaway is to trust the slow process of growth and not expect shortcuts to mastery.',
   },
   {
     text: 'What is done in anger is not well done. What is not begun with care ends in nothing. The wise man does his duty calmly, always thinking of the consequences.',
     source: 'Mahabharata, Shanti Parva',
+    explanation: 'This triple teaching from the Shanti Parva addresses three common pitfalls: acting in rage, starting carelessly, and ignoring consequences. The Mahabharata itself is full of characters who suffered because they violated these principles. In daily life, this verse counsels a simple discipline: pause before acting, plan before starting, and always consider the downstream effects of your choices.',
   },
   {
     text: 'The Earth is enjoyed by heroes — this is the unfailing truth. Be a hero. Do not try to follow in the footsteps of others.',
     source: 'Mahabharata, Shanti Parva',
+    explanation: 'This stirring verse from the Shanti Parva calls for courage and originality, declaring that the rewards of life go to those bold enough to forge their own path. It does not glorify recklessness but rather the willingness to take initiative rather than merely imitating others. The practical message is to have the courage to pursue your own dharma rather than living someone else\'s life.',
   },
   {
     text: 'He whose anger and joy are regulated, who never boasts, who is never dejected, and who can control his tongue — that person is truly great.',
     source: 'Mahabharata, Udyoga Parva',
+    explanation: 'From the Udyoga Parva, which chronicles the failed peace negotiations before the Kurukshetra war, this verse defines greatness as emotional mastery. It lists five markers of a truly great person: measured anger, tempered joy, absence of boasting, resilience against despair, and discipline in speech. Practicing even one of these qualities daily can profoundly improve your relationships and inner peace.',
   },
   {
     text: 'A man is great by deeds, not by birth.',
