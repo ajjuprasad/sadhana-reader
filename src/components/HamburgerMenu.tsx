@@ -118,19 +118,6 @@ export default function HamburgerMenu() {
                     <span className="font-hind font-medium text-sm" style={{ color: 'var(--color-text-primary)' }}>
                       {item.label}
                     </span>
-                    {'isNew' in item && item.isNew && (
-                      <span
-                        className="font-label font-semibold uppercase px-1.5 py-0.5 rounded-full"
-                        style={{
-                          fontSize: '0.5rem',
-                          letterSpacing: '0.08em',
-                          backgroundColor: 'var(--color-accent-primary)',
-                          color: '#fff',
-                        }}
-                      >
-                        NEW
-                      </span>
-                    )}
                   </motion.button>
                 ))}
               </nav>
