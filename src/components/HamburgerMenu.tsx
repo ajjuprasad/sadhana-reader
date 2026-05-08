@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const menuItems = [
   { label: 'All Stotras', path: '/stotras', icon: 'grid' },
-  { label: 'Stories for Kids', path: '/stories', icon: 'book', isNew: true },
+  { label: 'Stories for Kids', path: '/stories', icon: 'book' },
   { label: 'My Favorites', path: '/favorites', icon: 'heart' },
   { label: 'Coming Soon', path: '/coming-soon', icon: 'clock' },
   { label: 'Pañchāṅga 2026', path: '/panchanga', icon: 'calendar' },
