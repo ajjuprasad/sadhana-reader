@@ -1128,39 +1128,48 @@ export const reflections: Reflection[] = [
   {
     text: 'The control of the palate is the essential first step to the control of the mind. He who has conquered his taste has conquered all the senses.',
     source: 'Mahabharata, Shanti Parva',
+    explanation: 'The Mahabharata identifies the sense of taste as the gateway to mastering all other senses and, ultimately, the mind itself. Because eating is so frequent and instinctual, developing discipline around food creates a foundation for self-control in every area of life. The practical application is to practice mindful, moderate eating as a daily exercise in willpower that strengthens your ability to resist other temptations.',
   },
   {
     text: 'Even the smallest act of kindness done with a pure heart outweighs the grandest offering made with selfish intent.',
     source: 'Ramayana, Sundara Kanda',
+    explanation: 'From the Sundara Kanda, where Hanuman\'s selfless devotion drives the search for Sita, this teaching emphasizes that the intention behind an act matters far more than its scale. A humble gift given with love surpasses an extravagant one given for show or personal gain. In practice, focus on the sincerity of your giving rather than its size — even small gestures of genuine care make a profound impact.',
   },
   {
     text: 'Dharma protects those who protect dharma. Those who destroy dharma are themselves destroyed by dharma.',
     source: 'Mahabharata, Vana Parva',
     sanskrit: 'धर्मो रक्षति रक्षितः',
+    explanation: 'This celebrated verse embodies the Mahabharata\'s core promise: righteousness is not just a duty but a shield. Those who uphold moral and ethical principles will find themselves protected by the very order they defend. Conversely, those who undermine justice ultimately bring about their own downfall. The practical wisdom is that living ethically is not only the right thing to do but also the safest long-term strategy.',
   },
   {
     text: 'Neither the gods, nor the sages, nor the ancestors, can assure us that we shall not be tested. Only through tests does one prove one\'s worth.',
     source: 'Mahabharata, Vana Parva',
+    explanation: 'This sobering verse from the Vana Parva reminds us that no authority — divine, wise, or ancestral — can guarantee a life free from trials. Hardship is universal and unavoidable. However, the Mahabharata reframes trials as opportunities: it is precisely through being tested that character is forged and proven. When challenges arise, see them as the forge in which your true strength is revealed.',
   },
   {
     text: 'There is no friend like knowledge, no enemy like disease, no love like the love for a child, and no strength like divine strength.',
     source: 'Mahabharata, Shanti Parva',
+    explanation: 'This verse from the Shanti Parva presents four supreme comparisons that speak to universal human experience. Knowledge is the most reliable ally, disease the most dreaded adversary, parental love the deepest bond, and spiritual strength the ultimate power. The practical takeaway is to invest in learning, guard your health, cherish your family bonds, and cultivate a connection to something greater than yourself.',
   },
   {
     text: 'The truly noble person seeks to understand the feelings of others and acts with consideration. Such a person is loved by all.',
     source: 'Ramayana, Ayodhya Kanda',
+    explanation: 'From the Ayodhya Kanda, which depicts Rama\'s exemplary conduct toward everyone he meets, this verse defines nobility as empathy in action. A truly great person does not merely feel for others but actively seeks to understand their perspective and adjusts their behavior accordingly. The daily practice is simple: before acting, take a moment to consider how the other person feels, and let that understanding guide your response.',
   },
   {
     text: 'He who lives by dharma, who upholds dharma, and who is established in dharma — that person is never forsaken by dharma.',
     source: 'Ramayana, Kishkindha Kanda',
+    explanation: 'From the Kishkindha Kanda, where alliances are forged and tested, this verse offers a threefold relationship with dharma: living by it, defending it, and being rooted in it. The promise is that dharma reciprocates — it will never abandon someone who has fully committed to it. The practical encouragement is to make ethical living not just an occasional choice but the bedrock of your entire way of being.',
   },
   {
     text: 'Do today what must be done. Who knows? Tomorrow death may come. No bargain can be struck with Death and his mighty hordes.',
     source: 'Mahabharata, Udyoga Parva',
+    explanation: 'This urgent verse from the Udyoga Parva — the book of preparation before the great war — confronts us with the certainty of death and the uncertainty of its timing. No wealth, power, or cleverness can negotiate with mortality. The practical message is to act with urgency on what matters most: do not postpone important duties, reconciliations, or expressions of love, for tomorrow is never guaranteed.',
   },
   {
     text: 'Knowledge is the true organ of sight, not the eyes. Dharma is the true friend, not one\'s companion. Wisdom is the true strength, not physical power.',
     source: 'Mahabharata, Shanti Parva',
+    explanation: 'This verse from the Shanti Parva redefines three familiar concepts — sight, friendship, and strength — in spiritual terms. Physical eyes can be deceived, but knowledge reveals truth; human companions may betray you, but dharma never fails; muscles fade with age, but wisdom only grows. The practical takeaway is to invest in the inner qualities that will serve you faithfully throughout your entire life.',
   },
 
   // ── Vedas (246–270) ──
@@ -1479,78 +1488,97 @@ export const reflections: Reflection[] = [
   {
     text: 'Childhood is lost in play. Youth is lost in the beloved. Old age is lost in worry. No one is lost in the Supreme Self.',
     source: 'Adi Shankaracharya, Bhaja Govindam',
+    explanation: 'Shankaracharya traces how each stage of life is consumed by a different preoccupation — play, romance, then anxiety — leaving no room for spiritual inquiry. The punchline is devastating: despite all this busyness, nobody invests time in knowing the Supreme Self. The practical wake-up call is to carve out space for self-reflection at every age rather than perpetually postponing it.',
   },
   {
     text: 'Do not be proud of wealth, friends, or youth. Each of these can be snatched away by time in the twinkling of an eye.',
     source: 'Adi Shankaracharya, Bhaja Govindam',
+    explanation: 'Shankaracharya identifies three common sources of pride — money, social connections, and youthful vitality — and reminds us that all three are on loan from time. A market crash, a betrayal, or a health crisis can strip them away overnight. The practical lesson is to enjoy these gifts gratefully but build your sense of self on something time cannot take: inner wisdom and character.',
   },
   {
     text: 'Company of the good leads to non-attachment; non-attachment leads to freedom from delusion; freedom from delusion leads to steadiness of mind; and steadiness of mind leads to liberation.',
     source: 'Adi Shankaracharya, Bhaja Govindam',
+    explanation: 'Shankaracharya outlines a beautiful causal chain showing how liberation begins with something as simple as choosing good company. Each step naturally leads to the next: satsang loosens attachment, non-attachment clears illusion, clarity steadies the mind, and a steady mind realizes freedom. The practical first step is within anyone\'s reach — seek out wise and virtuous companions.',
   },
   {
     text: 'Where is happiness in this world? Where is the refuge? The only shelter is the lotus feet of the teacher and the path of spiritual practice.',
     source: 'Adi Shankaracharya, Guru Ashtakam',
+    explanation: 'From the Guru Ashtakam, Shankaracharya\'s hymn of devotion to the spiritual teacher, this verse expresses the Advaitic recognition that worldly happiness is unreliable and temporary. The guru represents not blind obedience but the living transmission of wisdom that books alone cannot convey. Practically, it encourages finding a genuine mentor and committing to a consistent spiritual practice as the true source of lasting refuge.',
   },
   {
     text: 'Enquire "Who am I?" This is the fundamental teaching.',
     source: 'Ramana Maharshi',
+    explanation: 'Ramana Maharshi distilled the entirety of Vedantic philosophy into this single question. Rather than studying elaborate texts, he taught that turning attention inward to discover "who is asking?" dissolves the false ego and reveals the true Self. In practice, this inquiry can be used as a meditation — whenever a thought or emotion arises, ask "To whom does this arise?" and trace it back to its source.',
   },
   {
     text: 'Happiness is your nature. It is not wrong to desire it. What is wrong is seeking it outside when it is inside.',
     source: 'Ramana Maharshi',
+    explanation: 'Ramana Maharshi validates the universal desire for happiness while redirecting our search. The problem is not wanting to be happy — that impulse is natural and correct — but looking for it in external objects, relationships, or achievements. Happiness is the default state of the Self, temporarily obscured by mental agitation. The practice is to still the mind and discover the joy that was always there.',
   },
   {
     text: 'Your own Self-realization is the greatest service you can render the world.',
     source: 'Ramana Maharshi',
+    explanation: 'Ramana Maharshi reframes the relationship between inner work and outer service. A realized person radiates peace and clarity that benefits everyone around them without deliberate effort, like a lamp that illuminates simply by being lit. The practical insight is that working on yourself is not selfish — it is the most effective way to contribute to the world, because you cannot give what you do not have.',
   },
   {
     text: 'The mind is everything. What you think, you become.',
     source: 'Ramana Maharshi',
+    explanation: 'This concise teaching points to the mind\'s creative power — our habitual thoughts shape our character, decisions, and ultimately our destiny. Ramana Maharshi taught that by observing and understanding the mind, we can change the course of our lives. The daily practice is to become aware of your thought patterns and consciously choose thoughts that align with who you want to become.',
   },
   {
     text: 'Silence is the most potent form of work. However vast and emphatic the scriptures may be, they all converge on this.',
     source: 'Ramana Maharshi',
+    explanation: 'Ramana Maharshi, who spent years in profound silence at Arunachala, taught that the deepest truths are communicated not through words but through the stillness that underlies all speech. Silence is not mere absence of sound but a vibrant, aware presence that transforms both the silent one and those around them. In practice, regularly spending time in complete silence — even a few minutes daily — can be more transformative than hours of reading or discussion.',
   },
   {
     text: 'No one succeeds without effort. Mind control is not your birthright. Those who succeed owe their success to perseverance.',
     source: 'Ramana Maharshi',
+    explanation: 'Despite his reputation as a sage of effortless being, Ramana Maharshi was clear that spiritual realization requires sustained effort and persistence. Mental mastery is earned through practice, not inherited or stumbled upon. This teaching counterbalances the misconception that enlightenment happens spontaneously — it is a reminder to show up daily for your practice without expecting overnight results.',
   },
   {
     text: 'That inner Self, as the primeval Spirit, eternal, ever effulgent, full and infinite Bliss, single, indivisible, whole and living, shines in everyone as the witnessing awareness.',
     source: 'Ramana Maharshi',
+    explanation: 'Ramana Maharshi describes the Self not as an abstract philosophical concept but as a living, luminous presence within every being. It is whole and indivisible — it cannot be fragmented by life\'s circumstances. The practical invitation is to recognize that the awareness reading these words right now is itself that eternal, blissful witness — always present, always complete.',
   },
   {
     text: 'Let come what comes, let go what goes. See what remains.',
     source: 'Ramana Maharshi',
+    explanation: 'Ramana Maharshi\'s teaching here is a practical meditation instruction disguised as a life philosophy. By allowing experiences to arise and pass without grasping or resisting, what remains is pure awareness — the unchanging Self. In daily life, this approach helps us ride the waves of fortune and misfortune with equanimity, discovering that our essential nature is untouched by passing circumstances.',
   },
   {
     text: 'An integral being knows without going, sees without looking, and accomplishes without doing.',
     source: 'Sri Aurobindo',
+    explanation: 'Sri Aurobindo describes a state of consciousness where action flows from a place of inner unity rather than effortful striving. An "integral being" — one whose mind, body, and spirit are aligned — accesses intuitive knowing and effortless effectiveness. The practical teaching is that the highest productivity comes not from frantic doing but from deep alignment with your purpose and inner nature.',
   },
   {
     text: 'The first step toward living a purposeful life is to set out with the intention of making a positive difference.',
     source: 'Sri Aurobindo',
+    explanation: 'Sri Aurobindo emphasizes that purposeful living begins not with a grand plan but with a simple intention — the sincere desire to contribute positively. This intention acts as a compass that gradually orients all your decisions and actions. The practical message is that you don\'t need to know the full path; you just need to set the right direction and take the first step.',
   },
   {
     text: 'Be grateful for every moment of life. It is a gift that cannot be returned, only treasured.',
     source: 'Sri Sri Ravi Shankar',
+    explanation: 'Sri Sri Ravi Shankar reminds us that each moment of existence is irreversible and irreplaceable — unlike material gifts, time cannot be exchanged or refunded. This teaching encourages active gratitude as a daily practice rather than a passive sentiment. When you treat each moment as precious, complaints diminish and appreciation for ordinary experiences — a conversation, a meal, a sunset — naturally deepens.',
   },
   {
     text: 'The sign of intelligence is that you are constantly wondering. Idiots are always dead sure about every damn thing they are doing in their life.',
     source: 'Sadhguru',
+    explanation: 'Sadhguru provocatively redefines intelligence not as certainty but as curiosity and openness to wonder. The truly intelligent person lives with questions, exploring life\'s mystery rather than closing it down with premature conclusions. In practice, this means cultivating a beginner\'s mind — being willing to say "I don\'t know" and approaching familiar situations with fresh eyes rather than rigid assumptions.',
   },
   {
     text: 'If you want to be free, learn to live simply and love generously. Give more, expect less.',
     source: 'Ramakrishna Paramahamsa',
+    explanation: 'Ramakrishna offers a two-part formula for inner freedom: simplicity in living and generosity in loving. Complexity creates dependence, while expectation creates disappointment — by reducing both, you naturally experience greater lightness and joy. The practical path is to regularly declutter your life and relationships, giving freely without keeping a mental ledger of what you\'re owed in return.',
   },
   {
     text: 'As long as I live, so long do I learn.',
     source: 'Ramakrishna Paramahamsa',
+    explanation: 'Despite being revered as a realized saint, Ramakrishna maintained the humility of a perpetual student. This statement dissolves the false divide between teacher and learner — even the wisest person continues to grow and discover. The practical takeaway is to never consider your education complete; approach every day, every person, and every experience as a potential teacher.',
   },
   {
     text: 'God is in all people, but all people are not in God. That is the reason why they suffer.',
     source: 'Ramakrishna Paramahamsa',
+    explanation: 'Ramakrishna makes a subtle but powerful distinction: the Divine dwells within everyone without exception, yet most people are not aware of or aligned with that divine presence within them. This disconnect — being inhabited by God without consciously living in God — is the root cause of suffering. The practical remedy is simple though not easy: turn your attention inward and consciously align your daily life with the sacred presence that already lives within you.',
   },
   {
     text: 'The winds of grace are always blowing; you just need to raise your sail.',
