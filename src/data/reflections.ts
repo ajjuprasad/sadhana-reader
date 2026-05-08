@@ -1028,82 +1028,102 @@ export const reflections: Reflection[] = [
   {
     text: 'A man is great by deeds, not by birth.',
     source: 'Mahabharata, Anushasana Parva',
+    explanation: 'This powerful declaration from the Anushasana Parva challenges the rigid social hierarchies of ancient India by asserting that character and conduct — not lineage or caste — determine a person\'s worth. It is a deeply egalitarian teaching embedded in an ancient text. The takeaway is to judge yourself and others by actions and integrity, never by background or pedigree.',
   },
   {
     text: 'Duty is the highest good, and the basis of dharma is non-injury.',
     source: 'Mahabharata, Shanti Parva',
+    explanation: 'This concise teaching from the Shanti Parva links two foundational concepts: duty (kartavya) and non-harm (ahimsa). It teaches that fulfilling your responsibilities is the highest good, but only when grounded in the principle of causing no harm. In practice, this means performing your roles in life — as parent, worker, citizen — while always ensuring your actions do not injure others.',
   },
   {
     text: 'There is no eye equal to knowledge, no austerity equal to truth, no misery equal to attachment, and no happiness equal to renunciation.',
     source: 'Mahabharata, Shanti Parva 175.35',
+    explanation: 'This verse presents four ultimate comparisons that distill core spiritual truths. Knowledge is the truest perception, truth the greatest discipline, attachment the deepest suffering, and letting go the purest joy. The practical application is to invest in understanding, practice honesty as a daily discipline, notice where attachment causes you pain, and experiment with releasing what you cling to most tightly.',
   },
   {
     text: 'Those who have nothing have nothing to fear. It is those who have everything who have everything to lose.',
     source: 'Mahabharata, Vana Parva',
+    explanation: 'From the forest exile chapters where the Pandavas live as penniless wanderers, this verse reveals a paradox of wealth: possessions bring anxiety proportional to their abundance. The more you accumulate, the more vulnerable you become to loss and fear. The daily lesson is to hold possessions lightly and find security in what cannot be taken — character, knowledge, and inner peace.',
   },
   {
     text: 'Even a great fire can be extinguished; even the fiercest storm passes. So too does great sorrow pass away with time.',
     source: 'Mahabharata, Shanti Parva',
+    explanation: 'This consoling verse from the Shanti Parva uses natural phenomena — fire and storms — to illustrate the impermanence of suffering. No matter how overwhelming grief or hardship may feel in the moment, it will pass, just as even the mightiest forces in nature eventually subside. When you are in the midst of sorrow, this teaching offers the patience to endure, knowing that time brings healing.',
   },
   {
     text: 'A friend in adversity is a real friend. One who does not desert you in times of need is a true companion.',
     source: 'Mahabharata, Udyoga Parva',
+    explanation: 'The Mahabharata, rich with stories of loyalty and betrayal, teaches here that true friendship is revealed not in prosperity but in crisis. Many companions vanish when fortune turns, but those who remain are your genuine allies. This verse encourages you to value the friends who show up during your darkest hours — and to be that kind of friend to others.',
   },
   {
     text: 'A person should not be too honest. Straight trees are cut first and honest people are victimized first.',
     source: 'Chanakya, Arthashastra',
+    explanation: 'Chanakya, the brilliant ancient Indian strategist and philosopher, offers a counterintuitive warning: naive honesty without discernment can make you vulnerable to exploitation. Like straight trees that are targeted by woodcutters, the openly virtuous may be taken advantage of by the unscrupulous. The lesson is not to be dishonest but to pair integrity with practical wisdom and awareness of the world around you.',
   },
   {
     text: 'The fragrance of flowers spreads only in the direction of the wind. But the goodness of a person spreads in all directions.',
     source: 'Chanakya, Arthashastra',
+    explanation: 'Chanakya uses a beautiful nature metaphor to illustrate that a good person\'s influence transcends all barriers. While a flower\'s scent travels only where the wind carries it, the reputation and impact of a truly virtuous person reach everywhere, without any external force needed. The takeaway is that consistent goodness creates an influence far greater and more lasting than any deliberate self-promotion.',
   },
   {
     text: 'A person should not be too simple and too straight. Go to the forest and see how the smooth and straight trees have been cut down while the crooked ones stand still.',
     source: 'Chanakya, Arthashastra',
+    explanation: 'Chanakya revisits his theme of strategic wisdom, using the forest as a classroom. The straight, smooth trees are felled first because they are most useful — and most exposed. This does not advocate crookedness but encourages developing shrewdness alongside virtue. In daily life, be good-hearted but also be discerning about whom you trust and how openly you expose yourself.',
   },
   {
     text: 'Rama, like a full-blown lotus, was beautiful and charming. He was the protector of his people and the destroyer of his enemies. He was the embodiment of dharma.',
     source: 'Valmiki Ramayana, Bala Kanda',
+    explanation: 'This description from the opening book of the Ramayana introduces Rama as the ideal human being — combining beauty, strength, compassion, and unwavering righteousness. The lotus simile suggests someone who, like the flower that blooms in muddy water, remains pure despite the world\'s imperfections. Rama\'s example inspires us to strive for a balance of gentleness and strength in our own lives.',
   },
   {
     text: 'There is no greater sin than desire, no greater fortune than contentment, no greater virtue than mercy, and no fiercer weapon than patience.',
     source: 'Ramayana, Ayodhya Kanda',
+    explanation: 'From the Ayodhya Kanda, where Rama gracefully accepts exile despite being denied his rightful throne, this verse identifies four supreme truths. Unchecked desire leads to ruin, contentment is the real wealth, mercy is the highest virtue, and patience is an invincible defense. Each of these teachings becomes a practical compass for navigating life\'s disappointments with grace and resilience.',
   },
   {
     text: 'Even the most powerful bow becomes useless if the string is too tight or too loose. So it is with life — balance is everything.',
     source: 'Ramayana',
+    explanation: 'Using the metaphor of a bow — central to the warrior culture of the epics — this teaching highlights the vital importance of balance. Too much tension leads to breaking, too little leads to ineffectiveness. Applied to daily life, this means avoiding extremes in work, rest, discipline, and indulgence, finding instead the middle ground where you function at your best.',
   },
   {
     text: 'The world is full of suffering, but it is also full of the overcoming of suffering. That is the teaching of the epics.',
     source: 'Ramayana',
+    explanation: 'This reflection captures the essential message of the Indian epics: suffering is an inescapable part of life, but so is the human capacity to transcend it. Both the Ramayana and the Mahabharata are stories of immense hardship met with courage, faith, and perseverance. The practical wisdom is to never let the reality of suffering eclipse your belief in the possibility of overcoming it.',
   },
   {
     text: 'Let not the fruit of action be your motive, and let not your attachment be to inaction. In the world, the unwavering remain unshaken by any outcome.',
     source: 'Mahabharata, Bhishma Parva',
+    explanation: 'Echoing the Bhagavad Gita\'s central teaching (which is itself part of the Mahabharata\'s Bhishma Parva), this verse warns against two traps: working only for rewards and using detachment as an excuse for laziness. The truly steadfast person acts with full engagement while remaining inwardly peaceful regardless of the result. The lesson is to commit wholly to your work while releasing your grip on outcomes.',
   },
   {
     text: 'Self-confidence, determination, courage, and hard work are the means by which every great thing in this world was accomplished.',
     source: 'Mahabharata, Vana Parva',
+    explanation: 'From the Vana Parva, where the Pandavas endure years of hardship in exile, this verse lists the four essential ingredients of achievement. Self-confidence provides the starting belief, determination sustains effort, courage faces obstacles, and hard work converts intention into reality. Together, these four qualities form a complete recipe for accomplishing anything meaningful in life.',
   },
   {
     text: 'One who is noble acts honorably even toward enemies who have wronged him. Trees do not withdraw their shade even from those who chop them.',
     source: 'Mahabharata, Vana Parva',
+    explanation: 'This verse uses the powerful image of a tree that continues to give shade even to the person cutting it down. True nobility, the Mahabharata teaches, is not conditional — it does not withdraw its goodness based on how others behave. The practical challenge is to maintain your integrity and generosity even toward those who have treated you unjustly, refusing to let their behavior define yours.',
   },
   {
     text: 'Time is the root of everything. Time creates all, and time destroys all. Time burns all creatures, and time again extinguishes that fire.',
     source: 'Mahabharata, Shanti Parva',
+    explanation: 'This meditation on time (kala) from the Shanti Parva portrays it as the supreme force in the universe — the creator and destroyer of all things. Nothing escapes its reach, yet it also contains the seeds of renewal. The practical wisdom is to respect time\'s power: use it wisely, do not take any moment for granted, and find peace in knowing that both triumphs and troubles are temporary.',
   },
   {
     text: 'Valor lies in dying for dharma. Cowardice lies in abandoning dharma for the sake of living.',
     source: 'Mahabharata, Drona Parva',
+    explanation: 'From the Drona Parva, set in the heat of the Kurukshetra battle, this verse draws a sharp line between true courage and cowardice. Real bravery is not about physical fearlessness but about upholding righteousness even at great personal cost. In daily life, this means standing by your principles when it is difficult or costly to do so, rather than compromising your values for comfort or safety.',
   },
   {
     text: 'One who speaks the truth has no need of a hundred witnesses. Truth itself is the witness.',
     source: 'Mahabharata, Shanti Parva',
+    explanation: 'This verse from the Shanti Parva affirms the self-authenticating power of truth — it needs no external validation or support. A truthful person does not require corroboration because consistency and integrity speak for themselves over time. The practical encouragement is to always tell the truth, even when no one is watching, because truth carries its own authority and eventually reveals itself.',
   },
   {
     text: 'Like a calf finding its mother among a thousand cows, one\'s karma always finds one.',
     source: 'Mahabharata, Shanti Parva',
+    explanation: 'This charming yet profound analogy from the Shanti Parva teaches that the consequences of your actions will find you no matter how far you run or how cleverly you hide. Just as a calf unerringly locates its mother in a vast herd, karma tracks its source with unfailing precision. The lesson is to act with integrity now, knowing that every action — good or bad — will eventually return to you.',
   },
   {
     text: 'The control of the palate is the essential first step to the control of the mind. He who has conquered his taste has conquered all the senses.',
@@ -1148,253 +1168,313 @@ export const reflections: Reflection[] = [
     text: 'Let noble thoughts come to us from every side.',
     source: 'Rig Veda 1.89.1',
     sanskrit: 'आ नो भद्राः क्रतवो यन्तु विश्वतः',
+    explanation: 'This famous hymn from the Rig Veda is a prayer for openness to wisdom regardless of its origin. The Vedic seers recognized that truth is not confined to one tradition or direction — noble ideas can arise from any culture, person, or experience. In daily life, this encourages intellectual humility and a willingness to learn from unexpected sources rather than clinging to a single worldview.',
   },
   {
     text: 'May all be happy. May all be free from disease. May all see good in everything. May none suffer from sorrow.',
     source: 'Rig Veda',
     sanskrit: 'सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः',
+    explanation: 'This universal blessing, often chanted at the close of Hindu prayers and yoga sessions, expresses the Vedic ideal of collective well-being over individual gain. It asks not just for personal happiness but for the welfare of all beings without exception. Reciting or reflecting on this verse daily cultivates an expansive compassion that extends your concern beyond your immediate circle to all of life.',
   },
   {
     text: 'Make me immortal in that realm where there is happiness and joy, where the desires of desire are found.',
     source: 'Rig Veda 9.113.11',
+    explanation: 'This hymn from the Soma Mandala expresses the deep Vedic longing for a transcendent state beyond death and suffering, a realm of eternal bliss. Rather than a literal heaven, it points to the aspiration for liberation (moksha) — a state where all desires are fulfilled because the soul rests in its own completeness. The practical lesson is to orient your deepest aspirations beyond fleeting pleasures toward lasting fulfillment.',
   },
   {
     text: 'Truth is one; the wise call it by many names.',
     source: 'Rig Veda 1.164.46',
     sanskrit: 'एकं सद्विप्रा बहुधा वदन्ति',
+    explanation: 'This is one of the most quoted verses in all of Hindu scripture, establishing the principle of religious pluralism at the very foundation of the Vedas. It declares that the ultimate Reality is singular, though sages describe it through different names and forms. This teaching encourages respect for diverse spiritual paths and reminds us that disagreements about labels need not divide those who seek the same truth.',
   },
   {
     text: 'There was neither existence nor non-existence then; there was neither the realm of space nor the sky which is beyond.',
     source: 'Rig Veda 10.129 (Nasadiya Sukta)',
+    explanation: 'The Nasadiya Sukta, or Hymn of Creation, is one of the oldest philosophical texts in human history, remarkable for its honest uncertainty about the origin of the universe. Rather than asserting a definitive creation story, it admits that even the gods may not know how everything began. This radical intellectual humility invites us to hold our deepest questions with wonder rather than demanding rigid answers.',
   },
   {
     text: 'O Lord, lead us from the unreal to the real, from darkness to light, from death to immortality.',
     source: 'Rig Veda / Brihadaranyaka Upanishad',
+    explanation: 'This Pavamana Mantra is one of the most beloved prayers in Hinduism, recited in rituals, meditation, and daily worship. Its three petitions move from ignorance to knowledge, darkness to illumination, and mortality to the deathless — mapping the entire spiritual journey in a single breath. As a daily practice, it serves as a powerful intention-setting prayer, reminding us to seek what is true, luminous, and enduring in every situation.',
   },
   {
     text: 'United your resolve, united your hearts. May your spirits be at one, that you may long together dwell in unity and concord.',
     source: 'Rig Veda 10.191.4',
+    explanation: 'This hymn from the Samjnana Sukta is a Vedic call for communal harmony and collective purpose. It envisions a society where people align their intentions, feelings, and minds toward a common good. In practical terms, it is a reminder that any meaningful endeavor — whether in a family, team, or community — requires not just shared goals but shared spirit and mutual understanding.',
   },
   {
     text: 'May we attain that excellent glory of the divine Sun. May he stimulate our understanding.',
     source: 'Rig Veda 3.62.10 (Gayatri Mantra)',
     sanskrit: 'ॐ भूर्भुवः स्वः तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि धियो यो नः प्रचोदयात्',
+    explanation: 'The Gayatri Mantra is considered the most sacred verse in Hinduism, chanted daily by millions at sunrise. It is a prayer to the divine light of the Sun (Savitar) to illuminate our intellect and guide our understanding. The practice of chanting it at dawn connects the seeker to the rhythm of nature and the aspiration for inner clarity.',
   },
   {
     text: 'May the wind blow sweetness, the rivers flow sweetness, and the herbs grow sweetness for the people of truth.',
     source: 'Rig Veda 1.90.6',
+    explanation: 'This Madhu Sukta (Hymn of Sweetness) envisions a world where nature itself is saturated with goodness for those who live in truth. The Vedic poets saw no separation between the natural world and spiritual life — when one lives righteously, even the elements become nourishing. Practically, this verse invites us to notice the sweetness already present in simple things like a breeze, flowing water, or a growing plant.',
   },
   {
     text: 'The one who sees all beings in the Self and the Self in all beings never turns away from it.',
     source: 'Yajur Veda',
+    explanation: 'This verse from the Yajur Veda captures the core Vedantic insight that the same divine consciousness dwells in every living being. When you truly perceive this unity, aversion and hatred become impossible because harming another would mean harming yourself. In daily life, this teaching encourages treating every person — regardless of status or familiarity — with the same reverence you would give to the sacred.',
   },
   {
     text: 'May we see with our eyes what is auspicious. May we do with our limbs what is auspicious. May we enjoy the full span of life ordained by the gods, praising them with our body and limbs steady.',
     source: 'Rig Veda, Shanti Mantra',
+    explanation: 'This Shanti Mantra (peace invocation) is traditionally chanted before Vedic study or spiritual practice to consecrate the body and senses for auspicious purposes. It asks that our physical faculties — eyes, limbs, and entire lifespan — be directed toward what is good and meaningful. The practical takeaway is to begin each day with the intention of using your body and senses for constructive, life-affirming actions.',
   },
   {
     text: 'God is one. The wise speak of it in many ways.',
     source: 'Rig Veda 1.164.46',
+    explanation: 'This is an alternate rendering of the same famous Rig Vedic verse (1.164.46), reinforcing the foundational Hindu teaching of unity underlying diversity. By using the word "God" rather than "Truth," this translation emphasizes the personal, devotional dimension of the teaching. It reminds us in daily life that when we encounter different names and forms of worship, we are witnessing different expressions of one underlying reality.',
   },
   {
     text: 'The rivers flow into the ocean without filling it, and desires flow into the wise person without disturbing the peace.',
     source: 'Atharva Veda',
+    explanation: 'This Atharva Veda metaphor compares the wise person to an ocean that receives all rivers yet remains undisturbed — boundless capacity paired with perfect equanimity. Desires, experiences, and sensory inputs flow into such a person without creating overflow or agitation. The practical lesson is to cultivate inner spaciousness: you can fully experience life without being overwhelmed by it if your sense of self is vast enough.',
   },
   {
     text: 'Heaven is not a place above the clouds. It is a state within the heart — wherever kindness dwells, there is heaven.',
     source: 'Atharva Veda',
+    explanation: 'This verse from the Atharva Veda redefines heaven not as a distant celestial realm but as an inner state accessible here and now. Wherever kindness, love, and compassion are actively present, that place becomes sacred. The practical implication is revolutionary: you do not need to wait for an afterlife to experience heaven — you can create it through the quality of your presence and your treatment of others.',
   },
   {
     text: 'May there be peace in the heavens, peace in the atmosphere, peace on earth. May the waters flow peacefully. May all the divine powers bring us peace.',
     source: 'Yajur Veda 36.17',
     sanskrit: 'ॐ द्यौः शान्तिरन्तरिक्षं शान्तिः',
+    explanation: 'This Shanti Mantra from the Yajur Veda is one of the most widely chanted peace prayers in Hinduism, systematically invoking peace across every layer of existence — from the cosmos to the earth to the waters. Its cascading structure reflects the Vedic understanding that peace must be total and interconnected to be real. Chanting or reflecting on it daily helps expand your wish for peace beyond personal concerns to encompass the entire web of life.',
   },
   {
     text: 'Let us be united; let us speak in harmony; let our minds apprehend alike. Common be our prayer. Common be our resolution. Common be our deliberations.',
     source: 'Rig Veda 10.191.2',
+    explanation: 'This Samjnana Sukta verse is a Vedic charter for democratic deliberation and communal harmony, calling for unity in speech, thought, and purpose. It was composed in an era of tribal councils and collective decision-making, reflecting a deep belief that aligned intention produces powerful results. In modern life, it is a reminder that effective collaboration requires not just agreement on outcomes but genuine harmony of intention and mutual respect in communication.',
   },
   {
     text: 'The wise, who have realized Brahman, have discovered that all the world is intertwined and interconnected.',
     source: 'Atharva Veda 12.1.12',
+    explanation: 'This Atharva Veda verse articulates an ancient ecological and spiritual insight: that all of existence is fundamentally interconnected through the underlying reality of Brahman. The wise do not merely believe this intellectually — they have realized it through direct experience. In daily life, this understanding encourages treating the natural world, other people, and even your own body as part of one sacred, interdependent whole.',
   },
   {
     text: 'All that exists is woven together, as warp and weft upon the loom.',
     source: 'Atharva Veda 10.7.42',
+    explanation: 'This beautiful textile metaphor from the Atharva Veda describes reality as a cosmic fabric where every thread depends on every other thread for the integrity of the whole. No single being or element exists in isolation — each is interwoven with all others. The practical insight is that your actions, however small, are woven into the larger pattern of existence and affect the whole fabric of life.',
   },
   {
     text: 'In the beginning there was the Absolute. The Absolute thought: "Let me become many." It created everything that exists.',
     source: 'Taittiriya Upanishad / Vedic Tradition',
+    explanation: 'This creation account from the Taittiriya Upanishad describes the universe arising from the Absolute\'s desire to become many — creation as an act of divine self-expression rather than accident or necessity. It suggests that multiplicity and diversity are not flaws but the intended flowering of a unified source. Practically, this view encourages seeing the variety of life as a celebration rather than a problem, and recognizing the sacred impulse behind all creative endeavors.',
   },
   {
     text: 'Earth is our mother, and we are all her children.',
     source: 'Atharva Veda 12.1.12',
     sanskrit: 'माता भूमिः पुत्रो अहं पृथिव्याः',
+    explanation: 'This Atharva Veda verse from the Prithvi Sukta (Hymn to the Earth) establishes one of the earliest expressions of environmental reverence in world literature. By calling the Earth our mother, it invokes a relationship of gratitude, respect, and duty toward the natural world. In daily life, this teaching calls us to treat the planet not as a resource to exploit but as a parent to honor through sustainable and grateful living.',
   },
   {
     text: 'What is here, is elsewhere. What is not here, is nowhere.',
     source: 'Vishvasara Tantra / Vedic Tradition',
+    explanation: 'This concise axiom asserts that the microcosm perfectly reflects the macrocosm — whatever truth exists in the universe can be found within your own experience, and vice versa. It demolishes the illusion that wisdom must be sought in some distant or exotic place. The practical takeaway is that self-knowledge is the key to understanding everything: look within, and you will find the same principles that govern the cosmos.',
   },
   {
     text: 'The sun does not shine there, nor the moon and the stars, nor these lightnings. Then how could this fire? Everything shines after That which shines. By Its light all this is illumined.',
     source: 'Katha Upanishad 2.2.15 / Svetasvatara Upanishad 6.14',
+    explanation: 'This celebrated Upanishadic verse points to a reality beyond all physical light — a divine consciousness that is the source of all illumination. The sun, moon, stars, and fire all derive their ability to shine from this ultimate light. In daily life, this teaching invites us to look beyond external sources of guidance and recognize the inner light of awareness that makes all perception and knowledge possible.',
   },
   {
     text: 'He who knows himself knows the universe and the gods.',
     source: 'Vedic Tradition',
+    explanation: 'This Vedic aphorism encapsulates the central teaching of the Upanishads: that self-knowledge and cosmic knowledge are one and the same. By turning inward and understanding the nature of your own consciousness, you simultaneously understand the nature of all reality. The practical message is that the most important journey you can undertake is not outward exploration but inward inquiry into who you truly are.',
   },
   {
     text: 'As the spider sends forth and draws in its thread, as plants grow upon the earth, as hair grows on the head and body, so from the Imperishable arises everything here.',
     source: 'Mundaka Upanishad 1.1.7',
+    explanation: 'The Mundaka Upanishad uses three vivid analogies — spider, plants, and hair — to explain how the universe emerges from the Imperishable (Brahman) naturally and effortlessly, without any external material. Just as a spider creates its web from its own substance, the divine creates the world from itself. This teaching helps us see creation not as something separate from its source but as an intimate self-expression, which means the sacred is present in every particle of existence.',
   },
   {
     text: 'Speech was created along with the Vedas. Speech is the friend of all. Speech is the protector of all. Speech is the life of all.',
     source: 'Atharva Veda',
+    explanation: 'This Atharva Veda verse elevates speech (Vak) to a cosmic principle, identifying it as a primordial creative force that emerged alongside sacred knowledge itself. In Vedic thought, speech is not merely a communication tool but a divine power that sustains and protects all beings. The practical lesson is to treat your words as sacred — what you say has the power to heal or harm, to create connection or destruction.',
   },
 
   // ── Swami Vivekananda (271–300) ──
   {
     text: 'Service to others is the rent you pay for your room here on earth.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda, who spent his life serving India\'s poor and spreading Vedantic philosophy worldwide, believed that selfless service (seva) was the highest expression of spirituality. This vivid metaphor reframes service not as optional charity but as a fundamental obligation of being alive. The practical takeaway is to view each day as an opportunity to justify your presence on earth through acts of kindness and contribution.',
   },
   {
     text: 'The whole secret of existence is to have no fear. Never fear what will become of you — depend on no one.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda regarded fearlessness as the bedrock of spiritual and worldly success, teaching that fear is the root cause of all weakness, suffering, and dependence. By saying "depend on no one," he does not advocate isolation but rather a self-reliance rooted in the knowledge of your own divine nature. In daily life, this means confronting challenges directly rather than seeking constant reassurance, and trusting your inner resources.',
   },
   {
     text: 'Arise, awake, and stop not until the goal is reached.',
     source: 'Swami Vivekananda',
     sanskrit: 'उत्तिष्ठत जाग्रत',
+    explanation: 'This rallying cry, originally from the Katha Upanishad, became Vivekananda\'s signature call to action for the youth of India and the world. It urges spiritual seekers and doers alike to shake off complacency and pursue their highest purpose with relentless determination. As a daily mantra, it serves as a powerful antidote to procrastination and self-doubt — a reminder that the goal, whether spiritual or worldly, demands persistent effort.',
   },
   {
     text: 'In a conflict between the heart and the brain, follow your heart.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda valued intellectual rigor but ultimately placed intuition and compassion above cold logic. He observed that the heart often perceives truths that the analytical mind cannot grasp, especially in matters of ethics and human connection. In practice, this teaching encourages us to listen to our deeper feelings when reason alone cannot resolve a dilemma — particularly when the choice is between being right and being kind.',
   },
   {
     text: 'You cannot believe in God until you believe in yourself.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda reversed the common assumption that faith in God precedes self-confidence, arguing instead that genuine spirituality requires a foundation of self-belief. If you see yourself as weak and worthless, you cannot truly trust in a divine power that dwells within you. The practical application is to build spiritual life on a foundation of healthy self-respect rather than self-negation, recognizing your own potential as evidence of the divine.',
   },
   {
     text: 'The greatest sin is to think yourself weak.',
     source: 'Swami Vivekananda',
+    explanation: 'For Vivekananda, weakness — not moral transgression — was the fundamental sin because it prevents a person from realizing their divine nature and serving others effectively. He taught that the Atman (soul) is infinite strength itself, so believing yourself weak is a denial of your deepest reality. In daily life, this means reframing self-doubt and helplessness as the primary obstacles to overcome, replacing them with the conviction that you have the inner resources to face any challenge.',
   },
   {
     text: 'All the powers in the universe are already ours. It is we who have put our hands before our eyes and cry that it is dark.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda taught that human beings do not need to acquire divine power from outside — it already exists within, hidden by ignorance and self-imposed limitations. The image of covering our own eyes and crying that it is dark perfectly captures how our suffering is often self-created. The practical lesson is to stop looking externally for what you already possess and instead work on removing the mental barriers that obscure your innate strength and wisdom.',
   },
   {
     text: 'Talk to yourself at least once in a day. Otherwise you may miss meeting an excellent person in this world.',
     source: 'Swami Vivekananda',
+    explanation: 'This characteristically witty remark from Vivekananda is both humorous and profound — it encourages the practice of self-reflection and inner dialogue as a way of accessing your own wisdom. In a world that constantly pulls attention outward, deliberately turning inward to consult your own deepest intelligence is a radical act. Practically, this could mean journaling, meditation, or simply sitting quietly to check in with yourself before the day sweeps you away.',
   },
   {
     text: 'Take up one idea. Make that one idea your life. Dream of it, think of it, live on that idea. Let the brain, muscles, nerves, every part of your body be full of that idea.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda\'s prescription for extraordinary achievement is total, single-pointed focus — not scattered effort across many goals but complete immersion in one purpose. He observed that all great accomplishments in history came from individuals who were consumed by a single vision. In daily practice, this means choosing your most important priority and giving it your undivided energy rather than diluting your power across too many pursuits.',
   },
   {
     text: 'Strength is life, weakness is death. Expansion is life, contraction is death. Love is life, hatred is death.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda uses a series of stark contrasts to define the direction of spiritual growth: toward strength, expansion, and love rather than their opposites. For him, these were not just metaphors but literal descriptions of what brings vitality or decay to individuals and societies. The practical application is to evaluate your choices by asking whether they expand or contract your life — whether they move you toward courage and love or toward fear and limitation.',
   },
   {
     text: 'We are what our thoughts have made us; so take care about what you think. Words are secondary. Thoughts live; they travel far.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda emphasized that character and destiny are shaped primarily by habitual thought patterns, not external circumstances. The added observation that thoughts "travel far" reflects the Vedantic understanding that mental energy has real effects beyond the individual thinker. In daily life, this teaching encourages mindful monitoring of your thought life — choosing constructive, empowering thoughts because they literally construct the person you are becoming.',
   },
   {
     text: 'The world is the great gymnasium where we come to make ourselves strong.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda reframes the difficulties of worldly life not as punishments or random suffering but as deliberate training for the soul\'s growth. Just as a gymnasium exists specifically to challenge and strengthen the body, life\'s hardships exist to develop inner resilience, wisdom, and compassion. This perspective transforms adversity from something to resent into something to engage with purposefully, seeing every challenge as a spiritual workout.',
   },
   {
     text: 'Each soul is potentially divine. The goal is to manifest this divinity within.',
     source: 'Swami Vivekananda',
+    explanation: 'This is the opening line of Vivekananda\'s most famous summary of Vedanta, delivered at lectures across America and Europe. It asserts that divinity is not something to be attained from outside but something already present within, waiting to be manifested through spiritual practice. The practical implication is revolutionary: every person you meet — including yourself — carries infinite potential, and the purpose of life is to uncover and express it.',
   },
   {
     text: 'The moment I have realized God sitting in the temple of every human body, the moment I stand in reverence before every human being and see God in them — that moment I am free.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda describes the moment of spiritual liberation as inseparable from seeing the divine in every person without exception. This is not abstract theology but a lived experience that transforms how you relate to others — with reverence rather than judgment, service rather than exploitation. In practice, this teaching challenges us to treat every human encounter as a meeting with the sacred, fundamentally changing how we listen, speak, and act.',
   },
   {
     text: 'Do not wait for anybody or anything. Do whatever you can, build your hope on none.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda\'s fierce independence is distilled in this directive: take initiative immediately rather than waiting for perfect conditions, permission, or support. He witnessed how dependency — on institutions, leaders, or circumstances — paralyzed individuals and entire nations. The daily application is to begin now with whatever resources you have, understanding that waiting for external readiness is often a disguise for inner hesitation.',
   },
   {
     text: 'Condemn none: if you can stretch out a helping hand, do so. If you cannot, fold your hands, bless your brothers, and let them go their own way.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda offers a practical hierarchy of compassionate response: help if you can, and if you cannot, at least refrain from judgment and offer goodwill. This teaching recognizes that we cannot fix every situation but insists that condemnation is never justified. In daily life, this means replacing the instinct to criticize others\' choices with either constructive help or, at minimum, silent blessing and non-interference.',
   },
   {
     text: 'External nature is only internal nature writ large.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda echoes the ancient Vedic principle that the outer world is a reflection of the inner world — the macrocosm mirrors the microcosm. What we perceive as external reality is shaped by our internal states of consciousness, perception, and belief. The practical insight is that changing the world begins with changing yourself: if you want to see more peace, beauty, or kindness outside, cultivate those qualities within first.',
   },
   {
     text: 'The fire that warms us can also consume us; it is not the fault of the fire.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda uses the metaphor of fire to teach that the forces of life — desire, ambition, knowledge, power — are inherently neutral. Whether they warm or destroy depends entirely on how we relate to and direct them. The practical lesson is to take responsibility for how you channel your energies rather than blaming the energies themselves: passion can fuel creation or destruction, and the choice is yours.',
   },
   {
     text: 'Feel nothing, know nothing, do nothing, have nothing, give up all to God, and say utterly, "Thy will be done." We only dream this bondage. Wake up and let it go.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda here describes the ultimate spiritual surrender — a complete letting go of ego-driven effort, knowledge, possession, and experience in favor of total trust in the divine will. The startling claim that "we only dream this bondage" echoes Advaita Vedanta\'s teaching that suffering and limitation are illusory. In practice, this encourages moments of radical release — even briefly letting go of the need to control, understand, or fix everything can bring profound relief.',
   },
   {
     text: 'Neither seek nor avoid; take what comes. It is liberty to be affected by nothing. Do not merely endure, be unattached.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda distills the Vedantic teaching of equanimity into a practical formula: do not chase after pleasant experiences or run from unpleasant ones. True freedom lies in being unaffected by either, meeting all of life with the same steady presence. The key distinction he makes between endurance and non-attachment is crucial — this is not about gritting your teeth through suffering but about a deeper acceptance that transcends both pleasure and pain.',
   },
   {
     text: 'Education is the manifestation of the perfection already in man.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda\'s definition of education radically differs from the conventional model of filling empty minds with information. He saw education as a process of drawing out (the original meaning of "educate") the innate perfection that already exists within every person. The practical implication for teachers, parents, and self-learners is to focus less on imposing knowledge from outside and more on creating conditions that allow inner wisdom and capability to emerge naturally.',
   },
   {
     text: 'Truth can be stated in a thousand different ways, yet each one can be true.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda championed the idea that truth is vast enough to accommodate countless expressions without contradiction. This reflects his deep study of world religions and philosophies, which convinced him that apparent conflicts between traditions are often differences of language rather than substance. In daily life, this teaches tolerance in disagreements — the person who sees things differently from you may be viewing the same truth from a different angle.',
   },
   {
     text: 'If money helps a man to do good to others, it is of some value; but if not, it is simply a mass of evil.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda neither glorified nor demonized wealth — he evaluated it solely by its ethical use. Money that enables service and upliftment has genuine spiritual value, while money hoarded or used selfishly becomes a source of harm. The practical lesson is to view financial resources as tools for good rather than ends in themselves, regularly asking whether your relationship with money serves or undermines your highest values.',
   },
   {
     text: 'Have faith in yourselves. Great convictions are the mothers of great deeds.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda consistently taught that self-faith is the prerequisite for all achievement, both spiritual and worldly. By calling convictions the "mothers" of great deeds, he emphasizes that action is born from belief — without deep conviction, effort lacks the energy to produce lasting results. In practice, this means nurturing your core beliefs and commitments with the understanding that the depth of your conviction determines the magnitude of what you can accomplish.',
   },
   {
     text: 'All differences in this world are of degree, and not of kind, because oneness is the secret of everything.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda draws on Vedantic philosophy to argue that the apparent differences between people, species, and even matter and spirit are variations along a single continuum rather than fundamental separations. This insight dissolves the basis for prejudice and hierarchy, since no being is essentially different from another. In daily life, this perspective encourages seeing commonality before difference and recognizing that what unites us is far deeper than what divides us.',
   },
   {
     text: 'The earth is enjoyed by heroes — be a hero. Always say, "I have no fear."',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda\'s call to heroism is both a spiritual teaching and a practical motivational charge. He believed that the fullness of life — its beauty, opportunity, and richness — is available only to those who face it with courage rather than timidity. The instruction to always declare "I have no fear" is not about suppressing fear but about cultivating a brave stance as a daily habit, knowing that fearlessness opens doors that hesitation keeps closed.',
   },
   {
     text: 'Religion is the manifestation of the divinity already in man.',
     source: 'Swami Vivekananda',
+    explanation: 'Parallel to his famous definition of education, Vivekananda defines religion not as a set of external beliefs or rituals but as the process of manifesting the divine nature already present within every human being. This definition cuts across all sectarian boundaries and makes spirituality an inherently personal, experiential journey. The practical application is to evaluate your spiritual practices by whether they help you express your highest nature rather than merely conform to external expectations.',
   },
   {
     text: 'Fill the brain with high thoughts, highest ideals, place them day and night before you, and out of that will come great work.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda prescribes a deliberate practice of mental saturation with elevated ideas as the foundation for a productive and meaningful life. By immersing yourself day and night in high ideals, you gradually reshape your subconscious patterns and naturally produce actions aligned with those ideals. In practice, this means curating your mental diet — the books you read, conversations you have, and thoughts you entertain — to consistently nourish your highest aspirations.',
   },
   {
     text: 'Do one thing at a time, and while doing it, put your whole soul into it, to the exclusion of all else.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda advocates total, undivided presence in every activity as the path to both worldly excellence and spiritual growth. In an age of multitasking and constant distraction, this teaching is more relevant than ever — scattered attention produces mediocre results and inner fragmentation. The practical discipline is to bring your complete awareness to each task, whether it is meditation, work, or conversation, giving it everything before moving to the next.',
   },
   {
     text: 'The more we come out and do good to others, the more our hearts will be purified.',
     source: 'Swami Vivekananda',
+    explanation: 'Vivekananda taught that selfless service is not just a moral duty but a powerful purification practice for the heart and mind. Each act of genuine goodness dissolves a layer of selfishness, expanding your capacity for love and compassion. The practical message is that you do not need to wait until you are "pure enough" to serve — the serving itself is what purifies you, creating a virtuous cycle of giving and growing.',
   },
 
   // ── Adi Shankaracharya & Other Saints (301–330) ──
   {
     text: 'Who is your wife? Who is your son? This world is exceedingly strange. To whom do you belong? Where do you come from? Reflect on these truths.',
     source: 'Adi Shankaracharya, Bhaja Govindam',
+    explanation: 'Adi Shankaracharya, the great 8th-century philosopher of Advaita Vedanta, composed Bhaja Govindam as a wake-up call to those lost in worldly attachments. These piercing questions are meant to shake the listener out of complacency by exposing the arbitrary and temporary nature of our closest relationships and identities. The practical takeaway is not to abandon loved ones but to hold relationships with awareness that they are gifts of this life, not permanent possessions.',
   },
   {
     text: 'The world, like a dream full of attachments and aversions, seems real until one awakens. So long as one does not know the truth, the world appears real.',
     source: 'Adi Shankaracharya, Vivekachudamani',
+    explanation: 'In his masterwork Vivekachudamani (Crest-Jewel of Discrimination), Shankaracharya compares waking life to a dream — vivid and emotionally compelling while it lasts, but ultimately recognized as insubstantial upon awakening to higher truth. This is the core Advaita teaching of maya (illusion), which does not deny the world\'s existence but reframes our relationship to it. In practice, this perspective helps loosen the grip of anxiety and attachment by reminding us that our problems, like dream events, are less solid than they appear.',
   },
   {
     text: 'Seek Govinda! Seek Govinda! Seek Govinda! When the hour of death approaches, grammar rules will not save you.',
     source: 'Adi Shankaracharya, Bhaja Govindam',
     sanskrit: 'भज गोविन्दं भज गोविन्दं भज गोविन्दं मूढमते',
+    explanation: 'The triple repetition of "Seek Govinda" (a name for Lord Krishna/Vishnu) conveys extreme urgency — Shankaracharya is pleading with the listener to stop wasting life on trivial intellectual pursuits when death could arrive at any moment. The reference to grammar rules represents all forms of dry scholarship that miss the essential point of human existence. Practically, this verse asks us to regularly check whether our daily activities serve our deepest purpose or merely keep us busy with what ultimately does not matter.',
   },
   {
     text: 'Knowledge cannot be attained without a teacher. Without knowledge, liberation is impossible.',
     source: 'Adi Shankaracharya, Vivekachudamani',
+    explanation: 'Shankaracharya emphasizes the indispensable role of a qualified teacher (guru) in the spiritual journey, a principle central to all Hindu traditions. While self-study and personal effort are necessary, the subtlety of self-knowledge requires someone who has already realized the truth to guide the seeker past the ego\'s blind spots. In daily life, this teaching encourages seeking mentorship and guidance in any serious pursuit rather than assuming you can figure everything out alone.',
   },
   {
     text: 'Duration of life is uncertain, wealth is subject to loss, youth passes quickly. Therefore, realize that the world is transient and seek the Eternal.',
     source: 'Adi Shankaracharya, Bhaja Govindam',
+    explanation: 'Shankaracharya lists three things people commonly rely on — lifespan, wealth, and youth — and shows that all three are inherently unstable and temporary. This is not meant to induce despair but to redirect energy toward what is truly permanent: spiritual realization. The practical application is to use the awareness of impermanence as motivation rather than a source of anxiety, making the most of today rather than assuming there will always be more time.',
   },
   {
     text: 'Childhood is lost in play. Youth is lost in the beloved. Old age is lost in worry. No one is lost in the Supreme Self.',
@@ -1475,246 +1555,306 @@ export const reflections: Reflection[] = [
   {
     text: 'The winds of grace are always blowing; you just need to raise your sail.',
     source: 'Ramakrishna Paramahamsa',
+    explanation: 'Ramakrishna uses the metaphor of wind and sail to convey that divine grace is not something we must earn or create — it is already present and constantly available. Our only task is to become receptive through spiritual practice, humility, and openness. In practical terms, this means cultivating a willingness to receive help, wisdom, and love rather than assuming we must do everything through sheer personal effort.',
   },
   {
     text: 'When the flower blossoms, the bee comes uninvited. Do not seek God; just become open and let grace descend.',
     source: 'Ramakrishna Paramahamsa',
+    explanation: 'Ramakrishna teaches that spiritual realization is not about frantic seeking but about inner readiness. Just as a flower does not chase the bee but naturally attracts it by blooming, a person who cultivates virtue and sincerity will naturally draw divine grace. The practical lesson is to focus on your own growth and purification rather than anxiously searching for spiritual experiences.',
   },
   {
     text: 'Travel light, live light, spread the light, be the light.',
     source: 'Yogi Bhajan',
+    explanation: 'Yogi Bhajan, the teacher who brought Kundalini Yoga to the West, distills an entire philosophy of life into four rhythmic instructions. The progression moves from simplifying your external life to embodying illumination itself. Practically, this means releasing material and emotional baggage, living with ease and joy, sharing your gifts with others, and ultimately becoming a source of inspiration rather than merely reflecting someone else\'s.',
   },
   {
     text: 'One moment of patience may ward off great disaster. One moment of impatience may ruin a whole life.',
     source: 'Traditional Proverb',
+    explanation: 'This traditional proverb highlights the disproportionate power of a single moment of restraint or rashness. Many of life\'s greatest regrets come from impulsive words spoken in anger or hasty decisions made under pressure. The practical wisdom is to build a habit of pausing before reacting — even a few seconds of deliberate breathing can be the difference between wisdom and catastrophe.',
   },
   {
     text: 'In the practice of tolerance, one\'s enemy is the best teacher.',
     source: 'Dharma Wisdom',
+    explanation: 'This teaching reframes adversaries not as obstacles but as essential training partners for developing patience and compassion. It is easy to be tolerant with those who are kind to us; the real test comes when someone opposes or hurts us. In daily life, the people who frustrate you most are precisely the ones offering you the greatest opportunity to strengthen your equanimity and deepen your character.',
   },
   {
     text: 'Where the mind is without fear and the head is held high, where knowledge is free — into that heaven of freedom, let my country awake.',
     source: 'Rabindranath Tagore, Gitanjali',
+    explanation: 'Tagore\'s iconic prayer from Gitanjali envisions a society where people live with dignity, free from the shackles of fear, ignorance, and narrow-mindedness. Though written in the context of India\'s independence movement, the aspiration is universal — it is a vision of both external freedom and inner liberation. The practical call is to cultivate fearlessness and openness in your own life as a contribution to the collective awakening.',
   },
 
   // ── Bhagavata Purana & Panchatantra (331–350) ──
   {
     text: 'Hearing about the Lord, chanting his name, remembering him, serving his feet, worshipping him, offering prayers, being his servant, being his friend, and surrendering everything — these are the nine forms of devotion.',
     source: 'Bhagavata Purana 7.5.23',
+    explanation: 'Prahlada, the child-devotee, enumerates the navavidha bhakti — nine modes of devotion — to his demon-king father Hiranyakashipu. These nine forms offer a path for every temperament, from the intellectual who prefers listening and remembering to the emotional who thrives on friendship and surrender. Practically, you do not need to master all nine; finding even one that resonates and practicing it consistently can transform your spiritual life.',
   },
   {
     text: 'Even the most learned person will act foolishly when driven by anger.',
     source: 'Panchatantra',
+    explanation: 'The Panchatantra, a collection of animal fables composed to teach princes the art of wise living, repeatedly warns that anger overrides intellect. No amount of education or sophistication can protect you once rage takes over — it hijacks rational thought entirely. The practical takeaway is to develop anger-management strategies before you need them: when you feel fury rising, step away, breathe, and respond only after the emotional storm has passed.',
   },
   {
     text: 'A wise person sees the world as a stage where everyone is playing a part. The truly wise do not get entangled in the drama.',
     source: 'Bhagavata Purana',
+    explanation: 'The Bhagavata Purana uses the theater metaphor to illustrate the concept of lila — divine play. Just as actors perform roles without losing their true identity, wise people engage with the world without confusing their social roles with their deeper Self. In practice, this means participating fully in life while maintaining an inner observer\'s perspective that prevents you from being swept away by every drama.',
   },
   {
     text: 'The bee gathers honey from different flowers without injuring the flower, and the sage gathers wisdom from different sources without diminishing any of them.',
     source: 'Bhagavata Purana / Dharma Wisdom',
+    explanation: 'This beautiful analogy from the Bhagavata Purana teaches the art of eclectic learning. A wise person draws knowledge from many traditions, teachers, and experiences without damaging or disrespecting any source. The practical lesson is intellectual humility and openness — do not cling exclusively to one school of thought, but gather insight from diverse sources while honoring each one.',
   },
   {
     text: 'Do not judge the depth of a river by its calm surface.',
     source: 'Panchatantra',
+    explanation: 'The Panchatantra uses nature imagery to warn against superficial assessment of people or situations. A quiet, unassuming person may possess tremendous depth, just as still waters can conceal powerful currents and great depth. In daily life, this reminds us to look beyond first impressions and resist the temptation to underestimate others based on their outward appearance or demeanor.',
   },
   {
     text: 'A single arrow can be easily broken, but not ten in a bundle. Unity is strength.',
     source: 'Panchatantra',
+    explanation: 'This Panchatantra teaching uses a simple physical demonstration to convey a profound social truth. Isolated individuals are vulnerable, but a united group becomes nearly unbreakable. The practical application extends to families, teams, and communities — invest in building strong bonds with those around you, because collective resilience always exceeds individual strength.',
   },
   {
     text: 'He who has a why to live can bear almost any how.',
     source: 'Hitopadesha',
+    explanation: 'The Hitopadesha, a Sanskrit collection of fables and wise counsel, echoes a truth later made famous by Viktor Frankl: purpose is the ultimate source of resilience. When you have a clear reason for living — a mission, a loved one, a calling — you can endure hardships that would otherwise seem unbearable. The practical takeaway is to clarify your purpose; it becomes your anchor in life\'s storms.',
   },
   {
     text: 'Friendship with the wicked is like a shadow on a wall — changing constantly with the movement of the sun.',
     source: 'Panchatantra',
+    explanation: 'The Panchatantra warns that relationships built with unscrupulous people are inherently unreliable — they shift with circumstances, just as a shadow changes shape throughout the day. Such friends are present in prosperity but vanish in adversity. The practical wisdom is to choose your close companions carefully, investing in relationships with people of integrity whose loyalty does not depend on what you can offer them.',
   },
   {
     text: 'Even from poison extract nectar; wash and take back gold even if it falls in filth; receive the highest knowledge from a low-born person.',
     source: 'Manu Smriti 2.239 / Panchatantra',
+    explanation: 'This verse, found in both the Manu Smriti and Panchatantra, champions a radical pragmatism about the sources of value and knowledge. Wisdom, goodness, and worth can be found anywhere, regardless of their packaging or origin. The practical lesson challenges social prejudice: never dismiss knowledge because of who delivers it, and never let the imperfect vessel prevent you from receiving what is precious within.',
   },
   {
     text: 'Knowledge is the best treasure; it cannot be stolen by thieves, divided among brothers, heavy to carry, or diminished by use. The more you give, the more it grows.',
     source: 'Panchatantra',
+    explanation: 'The Panchatantra systematically compares knowledge to material wealth and finds knowledge superior in every dimension. Unlike money or property, wisdom increases when shared and can never be confiscated. The practical implication is to prioritize learning and education above material accumulation, and to share your knowledge freely — teaching others does not diminish what you know but deepens it.',
   },
   {
     text: 'A bird in the hand is worth two in the bush. The wise seize the opportunity that is present.',
     source: 'Panchatantra',
+    explanation: 'This Panchatantra maxim, echoed in proverbs worldwide, teaches the wisdom of appreciating what you already have rather than gambling it away for uncertain prospects. The present opportunity, however modest, is real and actionable. In daily life, this means not letting the perfect become the enemy of the good — act on what is available now rather than waiting indefinitely for ideal conditions.',
   },
   {
     text: 'Even a small lamp can dispel the darkness of an entire room. Similarly, a small act of kindness can light up an entire life.',
     source: 'Panchatantra',
+    explanation: 'The Panchatantra draws a direct parallel between physical light and moral light. You do not need grand gestures or enormous resources to make a meaningful difference — a single genuine act of kindness can transform someone\'s day or even their life trajectory. The practical encouragement is to never underestimate small gestures: a smile, a kind word, or a moment of genuine attention can have outsized effects.',
   },
   {
     text: 'The one who thinks "I am small" is the biggest, and the one who thinks "I am big" is the smallest.',
     source: 'Bhagavata Purana',
+    explanation: 'The Bhagavata Purana captures the spiritual paradox that humility is true greatness while arrogance is a form of smallness. Those who recognize their limitations remain open to growth and earn the genuine respect of others. The practical lesson is that self-importance closes doors while humility opens them — the most admired leaders and teachers are almost always those who carry their wisdom lightly.',
   },
   {
     text: 'A teacher opens the door, but you must enter by yourself.',
     source: 'Hitopadesha',
+    explanation: 'The Hitopadesha emphasizes that even the greatest teacher can only show the way — the actual journey of transformation must be undertaken by the student. No amount of external guidance can substitute for personal effort and direct experience. In practice, this means taking full ownership of your learning and growth rather than passively waiting for teachers, books, or circumstances to change you.',
   },
   {
     text: 'True wealth is not measured by what you have but by what you give.',
     source: 'Bhagavata Purana',
+    explanation: 'The Bhagavata Purana redefines wealth away from accumulation and toward generosity. A person\'s real abundance is measured not by their bank balance but by their capacity and willingness to share with others. Practically, this shifts the question from \'How much can I acquire?\' to \'How much can I contribute?\' — a reorientation that paradoxically tends to increase both happiness and actual prosperity.',
   },
   {
     text: 'As a lotus flower is born in water, grows in water, and rises above water to stand and bloom in the sunlight — so too should we rise above the world of illusion.',
     source: 'Bhagavata Purana',
+    explanation: 'The lotus is one of the most powerful symbols in Indian spirituality, representing the soul\'s capacity to remain pure while living in an impure world. The Bhagavata Purana uses this image to show that spiritual growth does not require withdrawal from the world but rather a rising above its entanglements. In practice, you can be fully engaged in daily life while maintaining inner clarity and purpose, just as the lotus blooms above the murky water that nourishes it.',
   },
   {
     text: 'The devotee who sees God in all beings and all beings in God never becomes separated from God.',
     source: 'Bhagavata Purana 6.16.63',
+    explanation: 'This Bhagavata Purana verse describes the culmination of devotional practice: a non-dual vision where the boundary between the sacred and the ordinary dissolves completely. When you perceive the divine in every person and creature, separation from God becomes impossible because God is everywhere you look. The practical discipline is to practice seeing the sacred in everyday encounters — in the face of a stranger, in the beauty of nature, in moments of difficulty.',
   },
   {
     text: 'Learning is a treasure that accompanies its owner everywhere.',
     source: 'Hitopadesha',
+    explanation: 'The Hitopadesha celebrates education as the one form of wealth that is truly portable, indestructible, and universally useful. Unlike material possessions that can be lost, stolen, or left behind, knowledge and wisdom travel with you wherever you go. The practical takeaway is to invest in lifelong learning as your most reliable asset — no external circumstance can strip you of what you have genuinely understood.',
   },
   {
     text: 'Even a bad tree, if it stands by a river, will be nourished and grow. So too will a person who keeps good company become refined.',
     source: 'Hitopadesha',
+    explanation: 'The Hitopadesha uses a natural metaphor to emphasize the transformative power of environment and association. Even a person with significant shortcomings can improve dramatically when surrounded by positive influences and virtuous companions. The practical lesson is to be intentional about your social environment — seek out communities, friends, and mentors who embody the qualities you wish to develop.',
   },
   {
     text: 'One who conquers himself is greater than one who conquers a thousand men in a thousand battles.',
     source: 'Hitopadesha / Dharma Wisdom',
+    explanation: 'This teaching from the Hitopadesha and wider Dharma tradition elevates self-mastery above all external achievements. Military victories and worldly accomplishments are temporary, but victory over one\'s own impulses, fears, and ego is the most enduring and difficult conquest of all. In daily life, this means that the discipline to resist a temptation, control your temper, or overcome a bad habit is a greater achievement than any professional success.',
   },
 
   // ── General Dharma Wisdom (351–365) ──
   {
     text: 'Gratitude is not merely a virtue — it is the foundation upon which all other virtues stand.',
     source: 'Dharma Wisdom',
+    explanation: 'This Dharma wisdom teaching positions gratitude as the root virtue from which all others grow. When you are genuinely grateful, qualities like generosity, patience, and compassion arise naturally because you recognize how much you have received. The practical discipline is simple but powerful: begin each day by acknowledging three things you are grateful for, and watch how this shifts your entire orientation toward life.',
   },
   {
     text: 'Just as a candle cannot burn without fire, we cannot live without a spiritual life.',
     source: 'Dharma Wisdom',
+    explanation: 'This teaching uses a vivid analogy to argue that spirituality is not an optional add-on but an essential fuel for human existence. Just as fire is what makes a candle a candle, spiritual awareness is what makes a human life truly alive rather than merely biological. The practical invitation is to nurture your inner life — through meditation, prayer, reflection, or whatever practice resonates — as a non-negotiable part of daily living.',
   },
   {
     text: 'Simplicity, patience, and compassion — these three are your greatest treasures.',
     source: 'Dharma Wisdom',
+    explanation: 'This Dharma wisdom distills the vast ethical landscape into three essential qualities. Simplicity frees you from the burden of excess, patience gives you strength to endure difficulty, and compassion connects you meaningfully to others. In practice, cultivating these three virtues provides a reliable compass for decision-making — when in doubt, choose the simpler path, the more patient response, and the more compassionate action.',
   },
   {
     text: 'The river does not drink its own water. The tree does not eat its own fruit. The field does not consume its own harvest. They exist for the sake of others.',
     source: 'Dharma Wisdom',
+    explanation: 'This teaching draws on nature\'s most generous examples to illustrate the ideal of selfless service. Rivers, trees, and fields produce abundance that benefits everyone except themselves — and yet they thrive. The practical message is that a life oriented toward giving rather than accumulating is both more natural and more fulfilling. Consider how much of what you produce — your skills, energy, and resources — can be directed toward the benefit of others.',
   },
   {
     text: 'To give pleasure to a single heart by a single act is better than a thousand heads bowing in prayer.',
     source: 'Dharma Wisdom',
+    explanation: 'This Dharma wisdom challenges the notion that spirituality is primarily about formal worship and ritual. A genuine act of kindness that touches one person\'s heart carries more spiritual weight than mechanical devotion performed without feeling. The practical lesson is to prioritize real human connection and compassionate action over the outward appearance of religious observance.',
   },
   {
     text: 'The lotus grows in muddy water, yet it blossoms as the most beautiful flower. Be like the lotus — rise above the mud.',
     source: 'Dharma Wisdom',
+    explanation: 'The lotus metaphor appears throughout Indian spirituality as a symbol of purity emerging from impure conditions. This teaching reminds us that a difficult background, challenging circumstances, or a troubled past need not define our future. The practical encouragement is that beauty and greatness can grow from adversity — your struggles are the mud that nourishes your blossoming, not a permanent stain.',
   },
   {
     text: 'Before speaking, ask yourself: is it true, is it necessary, is it kind?',
     source: 'Dharma Wisdom',
+    explanation: 'This Dharma wisdom teaching provides a three-part filter for mindful speech, drawing on the ancient Indian emphasis on satya (truth), ahimsa (non-harm), and viveka (discernment). Many conflicts and regrets in life stem from words spoken without sufficient reflection. The practical discipline is to pause before speaking — especially in heated moments — and run your words through these three gates, letting only what passes all three into the world.',
   },
   {
     text: 'The best time to plant a tree was twenty years ago. The second best time is now.',
     source: 'Dharma Wisdom',
+    explanation: 'This Dharma wisdom teaching addresses the paralysis that comes from regret over missed opportunities. While it acknowledges that starting earlier would have been ideal, it firmly redirects attention to the present moment — the only time in which action is possible. The practical lesson is to stop lamenting what you should have done and begin now, because every future moment will benefit from the seeds you plant today.',
   },
   {
     text: 'Worry never robs tomorrow of its sorrow, it only saps today of its joy.',
     source: 'Dharma Wisdom',
+    explanation: 'This teaching exposes the futility of worry with elegant precision. Anxiety about the future does nothing to prevent future suffering — it only poisons the present with unnecessary pain. The practical wisdom is to recognize worry as a mental habit rather than a useful strategy, and to redirect that energy toward either constructive action (if something can be done) or acceptance (if it cannot).',
   },
   {
     text: 'He who controls his senses and focuses his mind is like a tortoise withdrawing into its shell — protected and at peace.',
     source: 'Dharma Wisdom',
+    explanation: 'This Dharma teaching echoes the Bhagavad Gita\'s famous tortoise analogy (2.58), where pratyahara — the withdrawal of the senses — is compared to a tortoise retracting its limbs. The shell is not a permanent retreat but a strategic protection, offering safety when the environment is hostile. In daily life, this means knowing when to disengage from stimulation — turning off your phone, stepping away from conflict, or finding silence — to restore your inner equilibrium.',
   },
   {
     text: 'When you own nothing, you fear nothing. When you expect nothing, everything is a gift.',
     source: 'Dharma Wisdom',
+    explanation: 'This teaching connects the dots between attachment, fear, and joy. The more we possess and expect, the more we fear losing; the less we cling to, the more freely and gratefully we can receive life\'s offerings. The practical application is not necessarily literal renunciation but a psychological loosening of grip — holding your possessions, relationships, and plans lightly, so that you can enjoy them without being enslaved by the fear of their loss.',
   },
   {
     text: 'Every morning we are born again. What we do today is what matters most.',
     source: 'Dharma Wisdom',
+    explanation: 'This Dharma teaching combines the spiritual concept of renewal with the practical urgency of present-moment living. Each new day is a genuine fresh start — yesterday\'s failures do not have to define today\'s efforts. The practical discipline is to treat each morning as a rebirth, releasing yesterday\'s regrets and tomorrow\'s anxieties, and pouring your full energy into making this single day meaningful.',
   },
   {
     text: 'The whole world is a garden, and each one of us is a flower in it. Together we make it beautiful.',
     source: 'Dharma Wisdom',
+    explanation: 'This Dharma wisdom uses the garden metaphor to celebrate both individual uniqueness and collective interdependence. Each flower contributes its own color, fragrance, and form — no single bloom needs to be everything. The practical lesson is to appreciate your own unique gifts without comparing yourself to others, while recognizing that the full beauty of life only emerges when diverse individuals come together in harmony.',
   },
   {
     text: 'Peace comes from within. Do not seek it without.',
     source: 'Dharma Wisdom',
+    explanation: 'This foundational Dharma teaching challenges the common assumption that peace depends on external conditions — the right job, the right relationship, the right circumstances. True peace is an inner state that persists regardless of what is happening around you. The practical discipline is to stop rearranging your outer world in pursuit of tranquility and instead invest in the inner practices — meditation, self-inquiry, acceptance — that cultivate lasting serenity.',
   },
   {
     text: 'May all beings everywhere be happy and free, and may the thoughts, words, and actions of my own life contribute in some way to that happiness and to that freedom for all.',
     source: 'Lokah Samastah Sukhino Bhavantu',
     sanskrit: 'लोकाः समस्ताः सुखिनो भवन्तु',
+    explanation: 'This is the Lokah Samastah Sukhino Bhavantu prayer, one of the most beloved mantras in Hindu and yogic traditions. It expands the practitioner\'s concern from personal welfare to the welfare of all beings everywhere, cultivating universal compassion. The practical power of this prayer lies in its second half: it connects lofty aspiration to daily conduct, reminding us that our individual thoughts, words, and actions either contribute to or detract from the world\'s happiness.',
   },
   {
     text: 'The lamp that lights itself can also light others. First transform yourself, then you can transform the world.',
     source: 'Dharma Wisdom',
+    explanation: 'This Dharma wisdom teaching establishes the proper sequence of change: inner transformation must precede outer impact. A lamp that is not lit cannot illuminate anything else. The practical lesson is that the most effective way to help the world is to begin with your own growth — heal yourself before healing others, find your own clarity before trying to guide anyone else, and embody the change you wish to see.',
   },
   {
     text: 'As rain does not break through a well-thatched roof, so desires do not break through a well-trained mind.',
     source: 'Dharma Wisdom',
+    explanation: 'This teaching, echoing a famous Dhammapada verse, uses the image of a sturdy roof to illustrate mental discipline. A well-trained mind does not suppress desires but is simply not penetrated by them — they fall away harmlessly, like rain sliding off thatch. The practical implication is that consistent mental training through meditation and self-awareness creates a natural resilience against temptation, far more effective than willpower alone.',
   },
   {
     text: 'A boat doesn\'t sink because of the water around it. It sinks because of the water that gets in it. Don\'t let what\'s happening around you get inside you.',
     source: 'Dharma Wisdom',
+    explanation: 'This vivid Dharma analogy distinguishes between external challenges and internal reactions. The world will always be turbulent — that is the water surrounding the boat. The danger lies not in the circumstances themselves but in allowing negativity, fear, and anxiety to flood your inner space. Practically, this means developing healthy boundaries and emotional resilience so that external chaos does not compromise your internal peace.',
   },
   {
     text: 'The ocean does not accept a dead body. In the same way, those who pursue truth reject all that is false.',
     source: 'Dharma Wisdom',
+    explanation: 'This Dharma teaching uses the ocean\'s natural tendency to wash dead bodies ashore as a metaphor for the truth-seeker\'s instinctive rejection of falsehood. Just as the ocean cannot hold what is lifeless, a mind aligned with truth naturally expels deception, pretense, and self-delusion. The practical lesson is that as you deepen your commitment to honesty, falsehoods become increasingly uncomfortable and are eventually shed without effort.',
   },
   {
     text: 'Where love rules, there is no will to power, and where power predominates, love is lacking. One is the shadow of the other.',
     source: 'Dharma Wisdom',
+    explanation: 'This Dharma wisdom identifies love and the desire for dominance as fundamentally incompatible forces. Where genuine love exists, the need to control or overpower others dissolves; where the hunger for power reigns, love cannot take root. The practical application is to examine your relationships and motivations — wherever you find yourself seeking control, you have likely displaced love, and restoring love requires relinquishing the grip of power.',
   },
   {
     text: 'Detachment is not that you should own nothing, but that nothing should own you.',
     source: 'Dharma Wisdom',
+    explanation: 'This widely shared Dharma teaching corrects a common misunderstanding of vairagya (non-attachment). Detachment does not require poverty or renunciation of all possessions — it requires inner freedom from being controlled by them. The practical distinction is profound: you can enjoy a comfortable life without being enslaved by it. The test is whether you could lose something without losing yourself.',
   },
   {
     text: 'Just as the body casts a shadow, so does the mind cast the shadow of all our experiences. Train the mind and the shadow changes.',
     source: 'Dharma Wisdom',
+    explanation: 'This Dharma teaching uses the shadow metaphor to illustrate how our mental state shapes our experience of reality. Just as a shadow follows and mirrors the body, our outer life reflects our inner conditioning. The practical insight is empowering: rather than trying to change every external circumstance, work on transforming your mind — through meditation, positive thinking, and self-awareness — and your experience of the world will shift accordingly.',
   },
   {
     text: 'The mountain does not laugh at the river because it is lowly, nor does the river speak ill of the mountain because it cannot move. Each has its own greatness.',
     source: 'Dharma Wisdom',
+    explanation: 'This Dharma wisdom uses two of nature\'s grandest features to teach mutual respect and the appreciation of different strengths. The mountain has height and stability; the river has flow and adaptability — neither is superior. In daily life, this teaches us to stop comparing ourselves with others and instead recognize that each person\'s unique gifts serve a distinct and valuable purpose in the larger whole.',
   },
   {
     text: 'Stillness is the altar of the spirit.',
     source: 'Paramahansa Yogananda',
+    explanation: 'Paramahansa Yogananda, the author of Autobiography of a Yogi, captures in six words the essence of contemplative practice. Just as an altar is the sacred space where offerings are made and the divine is encountered, stillness is the inner space where the spirit reveals itself. The practical teaching is that regularly creating moments of complete quiet — even brief ones — is not a luxury but a necessity for spiritual connection.',
   },
   {
     text: 'Live quietly in the moment and see the beauty of all before you. The future will take care of itself.',
     source: 'Paramahansa Yogananda',
+    explanation: 'Yogananda gently redirects our habitual forward-leaning anxiety toward the richness of the present moment. The beauty of life is always here, right now, but we miss it when our minds race ahead to tomorrow\'s worries. The practical discipline is to practice being fully present — put down the phone, stop planning, and simply observe the world around you with fresh eyes. When you do, you often discover that the future unfolds more gracefully than any plan could arrange.',
   },
   {
     text: 'The season of failure is the best time for sowing the seeds of success.',
     source: 'Paramahansa Yogananda',
+    explanation: 'Yogananda reframes failure not as an ending but as fertile ground for new beginnings. Just as farmers plant seeds in bare soil after a harvest, our lowest moments provide the humility, motivation, and clarity needed to build something better. The practical encouragement is to use setbacks as catalysts — analyze what went wrong, adjust your approach, and begin again with the wisdom that only failure can teach.',
   },
   {
     text: 'You must not let your life run in the ordinary way; do something that nobody else has done, something that will dazzle the world.',
     source: 'Paramahansa Yogananda',
+    explanation: 'Yogananda challenges the inertia of routine with a call to extraordinary living. This is not about fame or spectacle but about refusing to sleepwalk through life and instead bringing your unique creative potential to full expression. The practical application is to regularly ask yourself whether you are living by default or by design, and to summon the courage to pursue the bold ideas that stir your deepest enthusiasm.',
   },
   {
     text: 'There is a magnet in your heart that will attract true friends. That magnet is unselfishness, thinking of others first.',
     source: 'Paramahansa Yogananda',
+    explanation: 'Yogananda identifies unselfishness as the magnetic force that draws genuine human connection. Relationships built on mutual generosity and care are naturally deeper and more enduring than those built on self-interest. The practical advice is straightforward: if you want better friendships, focus less on finding the right people and more on becoming the right kind of friend — one who listens, gives, and puts others\' needs alongside their own.',
   },
   {
     text: 'The mind is like a parachute — it works best when it is open.',
     source: 'Dharma Wisdom',
+    explanation: 'This Dharma wisdom uses a playful modern analogy to champion open-mindedness. A closed parachute is useless and even dangerous; similarly, a closed mind cannot receive new ideas, adapt to changing circumstances, or grow. The practical takeaway is to cultivate intellectual humility — approach new information, different perspectives, and unfamiliar experiences with curiosity rather than defensiveness, and you will navigate life far more safely and effectively.',
   },
   {
     text: 'He who has conquered himself by the Self is a friend of himself. But the Self of the unconquered self acts as his own enemy.',
     source: 'Dharma Wisdom',
+    explanation: 'This Dharma teaching, echoing Bhagavad Gita 6.6, distinguishes between the lower self (ego, impulses) and the higher Self (awareness, wisdom). When the higher Self governs, a person becomes their own greatest ally; when the lower self dominates, they become their own worst enemy. The practical discipline is honest self-observation — notice when you are sabotaging yourself through laziness, anger, or self-deception, and invoke your higher awareness to redirect your course.',
   },
   {
     text: 'When the student is ready, the teacher appears. When the student is truly ready, the teacher disappears.',
     source: 'Dharma Wisdom',
+    explanation: 'This two-part Dharma teaching describes the full arc of spiritual education. The first half is well known: life sends us the teachers we need precisely when we are prepared to learn. The second half is more profound — when a student has fully internalized the teaching, they no longer need an external guide because the wisdom has become their own. Practically, this encourages both seeking guidance and eventually trusting your own hard-won understanding.',
   },
   {
     text: 'Do not dwell in the past, do not dream of the future. Concentrate the mind on the present moment.',
     source: 'Dharma Wisdom',
+    explanation: 'This Dharma teaching distills the essence of mindfulness practice into a single instruction. The past exists only as memory, the future only as imagination — neither is real in the way this present moment is. The practical discipline is to catch yourself whenever your mind wanders into regret or fantasy, and gently return your attention to what is happening right now, where all of life\'s richness and all of your power to act actually reside.',
   },
   {
     text: 'What lies behind us and what lies before us are tiny matters compared to what lies within us.',
     source: 'Dharma Wisdom',
+    explanation: 'This Dharma wisdom teaching shifts the locus of significance from external events to inner character. Your past accomplishments and future prospects matter far less than the quality of awareness, courage, and compassion you carry inside. The practical encouragement is to invest in developing your inner life — your values, resilience, and self-knowledge — because these inner resources determine how you experience everything that happens externally.',
   },
   {
     text: 'The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without fear for the richer experience.',
     source: 'Dharma Wisdom',
+    explanation: 'This closing Dharma teaching affirms life itself as its own purpose — not some distant goal or afterlife reward, but the full-bodied engagement with experience here and now. Fear and hesitation are the enemies of a well-lived life. The practical call to action is to say yes more often, to approach new experiences with curiosity rather than anxiety, and to remember that a life fully lived, even with its inevitable mistakes, is infinitely richer than a life spent playing it safe.',
   },
 ];
