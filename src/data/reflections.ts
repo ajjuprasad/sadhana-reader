@@ -2,6 +2,7 @@ export interface Reflection {
   text: string;
   source: string;
   sanskrit?: string;
+  explanation?: string;
 }
 
 export const reflections: Reflection[] = [
@@ -10,116 +11,144 @@ export const reflections: Reflection[] = [
     text: 'You have the right to perform your duty, but you are not entitled to the fruits of your actions.',
     source: 'Bhagavad Gita 2.47',
     sanskrit: 'कर्मण्येवाधिकारस्ते मा फलेषु कदाचन',
+    explanation: 'Krishna counsels Arjuna on the battlefield of Kurukshetra, teaching the foundational principle of Karma Yoga — selfless action. The verse reminds us that we control our effort but not the outcome, freeing us from the anxiety of results. In daily life, this means giving your best to every task while releasing attachment to whether it succeeds or fails on your terms.',
   },
   {
     text: 'The mind is restless, turbulent, strong, and unyielding. But it can be controlled through practice and detachment.',
     source: 'Bhagavad Gita 6.35',
+    explanation: 'Arjuna confesses that taming the mind feels as impossible as controlling the wind, and Krishna agrees — but offers hope. Through sustained practice (abhyasa) and non-attachment (vairagya), even the wildest mind can be steadied. This is encouragement for anyone who struggles with meditation or focus: difficulty is expected, and persistence is the remedy.',
   },
   {
     text: 'When meditation is mastered, the mind is unwavering like the flame of a candle in a windless place.',
     source: 'Bhagavad Gita 6.19',
+    explanation: 'Krishna uses the vivid image of a steady flame to describe the concentrated mind of an adept meditator. Just as a candle in a sheltered room burns without flickering, a disciplined mind rests in pure awareness without distraction. The practical lesson is that inner stillness is achievable — it simply requires removing the "winds" of sensory disturbance and mental agitation through regular practice.',
   },
   {
     text: 'Set your heart upon your work, but never on its reward.',
     source: 'Bhagavad Gita 2.47',
+    explanation: 'This is another rendering of the famous Karma Yoga teaching, distilled to its essence. Krishna emphasizes that wholehearted engagement in work itself — not the promise of reward — is the path to freedom. Practically, this shifts our motivation from external validation to intrinsic fulfillment, reducing the stress that comes from worrying about promotions, recognition, or outcomes.',
   },
   {
     text: 'There is neither this world, nor the world beyond, nor happiness for the one who doubts.',
     source: 'Bhagavad Gita 4.40',
+    explanation: 'Krishna warns that chronic, paralyzing doubt — not healthy questioning — destroys both worldly happiness and spiritual progress. A person trapped in indecision cannot commit to any path and therefore finds peace nowhere. The takeaway is not to suppress inquiry, but to choose a direction with conviction and trust in the process, rather than remaining forever on the fence.',
   },
   {
     text: 'For one who has conquered the mind, it is the best of friends; but for one who has failed to do so, the mind is the greatest enemy.',
     source: 'Bhagavad Gita 6.6',
+    explanation: 'Krishna teaches that the mind is neutral — a powerful tool that can serve or sabotage us depending on whether we have trained it. An undisciplined mind generates anxiety, craving, and self-destructive patterns, while a mastered mind becomes a source of clarity and inner strength. This encourages building mental discipline through practices like meditation, journaling, or mindful pauses before reacting.',
   },
   {
     text: 'Whatever happened, happened for the good. Whatever is happening, is happening for the good. Whatever will happen, will also happen for the good.',
     source: 'Bhagavad Gita',
+    explanation: 'This popular paraphrase captures the Gita\'s overarching message of trust in the cosmic order (dharma). Krishna reassures Arjuna that life unfolds according to a greater wisdom, even when individual events feel painful or unjust. In practice, this perspective helps us reframe setbacks as opportunities for growth and stops us from being consumed by regret about the past or dread of the future.',
   },
   {
     text: 'The wise see that there is action in the midst of inaction, and inaction in the midst of action.',
     source: 'Bhagavad Gita 4.18',
+    explanation: 'This paradox points to the difference between external activity and inner engagement. A person may appear busy yet be spiritually idle, while another may sit still yet be deeply transformed within. Krishna invites us to look beyond surface appearances and recognize that true "action" is conscious, intentional living — even quiet reflection can be more powerful than frantic busyness.',
   },
   {
     text: 'Let your concern be with action alone, never with its results. Be not motivated by the fruit of action, nor be attached to inaction.',
     source: 'Bhagavad Gita 2.47',
+    explanation: 'This fuller rendering of verse 2.47 adds a crucial second instruction: do not use detachment from results as an excuse for passivity. Krishna balances non-attachment with a call to engaged effort — we must act, but without clinging to outcomes or retreating into laziness. The practical application is to show up fully each day while accepting that results are shaped by factors beyond our control.',
   },
   {
     text: 'Knowledge is the greatest purifier. One who is perfected in yoga discovers it within, in due course of time.',
     source: 'Bhagavad Gita 4.38',
+    explanation: 'Krishna elevates self-knowledge above all external rituals or purification practices. True knowledge — understanding one\'s own nature and the nature of reality — arises naturally in a person who has cultivated inner discipline through yoga. The encouragement here is patience: spiritual clarity is not forced but revealed in its own time to those who stay committed to the path.',
   },
   {
     text: 'The soul is neither born, nor does it ever die. It is unborn, eternal, ever-existing, and primeval.',
     source: 'Bhagavad Gita 2.20',
     sanskrit: 'न जायते म्रियते वा कदाचित्',
+    explanation: 'Krishna consoles Arjuna, who is grieving over the prospect of killing his relatives in battle, by revealing the immortal nature of the soul (atman). Physical death is merely the shedding of a temporary form; the essence within is beyond time. This teaching offers comfort in the face of loss and invites us to identify less with our changing bodies and more with the enduring awareness within.',
   },
   {
     text: 'As a person puts on new garments, giving up old ones, the soul similarly accepts new material bodies, giving up the old and useless ones.',
     source: 'Bhagavad Gita 2.22',
+    explanation: 'Krishna uses the everyday metaphor of changing clothes to explain the soul\'s journey through successive bodies (reincarnation). Just as we discard worn-out clothing without grief, the soul moves on from a body that can no longer serve it. This reframing helps reduce the fear of death and aging by encouraging us to see physical change as natural transition rather than tragic loss.',
   },
   {
     text: 'Weapons cannot cut the soul, fire cannot burn it, water cannot wet it, and wind cannot dry it.',
     source: 'Bhagavad Gita 2.23',
+    explanation: 'Krishna reinforces the soul\'s indestructibility by systematically ruling out every element that could harm it. The verse uses poetic enumeration to drive home an absolute point: the true Self is beyond all physical forces. In everyday life, this can be a source of courage — our deepest identity cannot be damaged by external circumstances, failures, or hardships.',
   },
   {
     text: 'One who sees inaction in action, and action in inaction, is intelligent among men.',
     source: 'Bhagavad Gita 4.18',
+    explanation: 'This alternate rendering of 4.18 highlights the mark of a truly wise person: seeing through the illusion of doership. One who acts without ego-driven attachment is effectively "inactive" even while busy, because no karmic bondage accumulates. The practical insight is that it is not what you do but the consciousness with which you do it that determines whether an action binds or liberates you.',
   },
   {
     text: 'Reshape yourself through the power of your will. Do not let yourself be degraded by self-will.',
     source: 'Bhagavad Gita 6.5',
     sanskrit: 'उद्धरेदात्मनात्मानं नात्मानमवसादयेत्',
+    explanation: 'Krishna distinguishes between two uses of willpower: one that elevates and one that degrades. The Self must lift itself by its own effort — no one else can do this inner work — but that same will, if misdirected by ego, becomes self-destructive. The daily takeaway is radical self-responsibility: use your determination to grow and heal, but beware of stubbornness disguised as strength.',
   },
   {
     text: 'A gift is pure when it is given from the heart to the right person, at the right time, at the right place, and when we expect nothing in return.',
     source: 'Bhagavad Gita 17.20',
+    explanation: 'In chapter 17, Krishna classifies charity by the three gunas (qualities of nature). Sattvic giving — the highest form — is done with discernment and without strings attached. The verse teaches that true generosity considers context and intention, not just the act itself. In practice, this means giving thoughtfully rather than impulsively, and releasing any expectation of gratitude or reciprocation.',
   },
   {
     text: 'The peace of God is with those whose mind and soul are in harmony, who are free from desire and anger, who know their own soul.',
     source: 'Bhagavad Gita 5.26',
+    explanation: 'Krishna describes the state of a person who has achieved inner alignment — where thoughts, emotions, and deeper awareness all point in the same direction. Freedom from reactive desire and anger is not about suppression but about a settled clarity that comes from self-knowledge. The practical message is that lasting peace is an inside job: it begins with understanding yourself rather than rearranging external circumstances.',
   },
   {
     text: 'Those who eat too much or eat too little, who sleep too much or sleep too little, will not succeed in meditation.',
     source: 'Bhagavad Gita 6.16',
+    explanation: 'Krishna emphasizes the middle path long before it became associated primarily with Buddhism. Extremes in basic bodily habits — overeating, starving, oversleeping, or sleep deprivation — destabilize the mind and make meditation impossible. The practical wisdom is surprisingly modern: sustainable spiritual practice rests on a foundation of balanced physical habits, including regular meals and adequate rest.',
   },
   {
     text: 'Perform all work carefully, guided by compassion.',
     source: 'Bhagavad Gita 3.25',
+    explanation: 'In this verse, Krishna instructs the wise to act with care and empathy, holding the welfare of others in mind. While the unwise act from selfish attachment, the enlightened person works for the benefit of the whole community. The daily application is to bring mindfulness and compassion to even routine tasks, recognizing that every action ripples outward and affects others.',
   },
   {
     text: 'Through selfless service, you will always be fruitful and find the fulfillment of your desires.',
     source: 'Bhagavad Gita 3.10',
+    explanation: 'Krishna teaches that selfless service (yajna) creates a virtuous cycle: by giving without selfish motive, we align ourselves with the natural flow of abundance. Paradoxically, the less we grasp at personal gain, the more life provides what we truly need. In practice, volunteering, mentoring, or simply helping without keeping score often leads to unexpected fulfillment and deeper connections.',
   },
   {
     text: 'In any way that men love me, in that same way they find my love. For many are the paths of men, but they all in the end come to me.',
     source: 'Bhagavad Gita 4.11',
+    explanation: 'Krishna declares the radical inclusivity at the heart of the Gita: every sincere spiritual path ultimately leads to the same divine source. Whether one follows the way of devotion, knowledge, action, or meditation, the Divine meets each seeker according to their own approach. This verse encourages respect for diverse traditions and affirms that authenticity of seeking matters more than the specific form it takes.',
   },
   {
     text: 'Perform your obligatory duty, because action is indeed better than inaction.',
     source: 'Bhagavad Gita 3.8',
+    explanation: 'Krishna counters Arjuna\'s desire to withdraw from battle and renounce the world. True renunciation is not about avoiding action but about performing one\'s duty without selfish attachment. Even bodily survival requires action, so complete inaction is impossible. The lesson for daily life is clear: show up, do what needs to be done, and resist the temptation to opt out when things get difficult.',
   },
   {
     text: 'When a person responds to the joys and sorrows of others as if they were his own, he has attained the highest state of spiritual union.',
     source: 'Bhagavad Gita 6.32',
+    explanation: 'Krishna defines the pinnacle of yoga not as a supernatural feat but as deep empathy — feeling the experiences of others as your own. This verse equates spiritual realization with compassion, suggesting that the boundary between self and other dissolves in true awareness. Practically, cultivating genuine empathy in our relationships is itself a profound spiritual practice.',
   },
   {
     text: 'The power of God is with you at all times; through the activities of mind, senses, breathing, and emotions; and is constantly doing all the work using you as a mere instrument.',
     source: 'Bhagavad Gita 5.14',
+    explanation: 'Krishna reveals that the divine energy animates every function of our being — thinking, perceiving, breathing, feeling. We are instruments through which a greater intelligence operates. Recognizing this can dissolve the burden of feeling solely responsible for everything and replace it with a sense of partnership with life itself. The practical shift is from "I must do everything" to "I participate in something larger."',
   },
   {
     text: 'Sever the ignorant doubt in your heart with the sword of self-knowledge. Arise, and take action.',
     source: 'Bhagavad Gita 4.42',
+    explanation: 'This is the rousing conclusion of chapter 4, where Krishna urges Arjuna to stop wavering. The "sword of knowledge" cuts through confusion born of ignorance about one\'s true nature. Once you understand who you really are, hesitation dissolves and purposeful action follows naturally. The call to "arise and take action" is a universal wake-up call: stop overthinking, trust your understanding, and move forward.',
   },
   {
     text: 'I am the beginning, middle, and end of all beings.',
     source: 'Bhagavad Gita 10.20',
+    explanation: 'In the Vibhuti Yoga chapter, Krishna reveals his divine presence woven through every phase of existence — creation, sustenance, and dissolution. Nothing exists outside the Divine. This teaching invites us to see the sacred not just in birth and death but in the ordinary middle of life — the daily routines, the mundane moments — as equally permeated by the presence of the infinite.',
   },
   {
     text: 'From anger comes delusion; from delusion, the loss of memory; from the loss of memory, the destruction of discrimination; and from the destruction of discrimination, one perishes.',
     source: 'Bhagavad Gita 2.63',
+    explanation: 'Krishna maps out the precise chain reaction by which a single unchecked emotion can lead to total ruin. Anger clouds judgment (delusion), which makes us forget our values (loss of memory), which destroys our ability to tell right from wrong (discrimination), leading to downfall. The practical warning is to catch anger early — before it cascades — through awareness and pause, because the further down this chain you go, the harder it is to recover.',
   },
   {
     text: 'One who is not disturbed by happiness and distress and is steady in both is certainly eligible for liberation.',
     source: 'Bhagavad Gita 2.15',
+    explanation: 'Krishna teaches equanimity (samatva) as the hallmark of spiritual maturity. Rather than being tossed between elation and despair, the wise person maintains an even keel through all of life\'s fluctuations. This is not emotional numbness but a grounded stability that allows clear response instead of knee-jerk reaction. Building this steadiness — perhaps by pausing before celebrating or catastrophizing — is a daily practice of freedom.',
   },
   {
     text: 'That one is dear to me who runs not after the pleasant or away from the painful, grieves not, lusts not, but lets things come and go as they happen.',

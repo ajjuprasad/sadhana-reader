@@ -13,6 +13,7 @@ import ComingSoonPage from './components/ComingSoonPage';
 import AboutPage from './components/AboutPage';
 import StoriesPage from './components/StoriesPage';
 import StoryDetail from './components/StoryDetail';
+import ReflectionDetail from './components/ReflectionDetail';
 import MandalaBackground from './components/MandalaBackground';
 import NarrationPlayer from './components/NarrationPlayer';
 import { useSettings } from './hooks/useSettings';
@@ -82,6 +83,7 @@ export default function App() {
             <Route path="/panchanga" element={<CalendarPage />} />
             <Route path="/stories" element={<StoriesPage />} />
             <Route path="/story/:storyId" element={<StoryDetail />} />
+            <Route path="/reflection/:index" element={<ReflectionDetail />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/profile" element={<ProfileScreen settingsState={settingsState} />} />
           </Routes>

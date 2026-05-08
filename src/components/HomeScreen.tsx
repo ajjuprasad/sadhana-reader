@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { stotras } from '../data/stotras';
 import { stories } from '../data/stories';
+import { reflections } from '../data/reflections';
 import ProfileButton from './ProfileButton';
 import HamburgerMenu from './HamburgerMenu';
 import FavoriteButton from './FavoriteButton';
@@ -47,6 +48,9 @@ export default function HomeScreen() {
   const reflection = useMemo(() => getReflectionOfTheDay(today), [today]);
   const panchanga = useMemo(() => getPanchangaSnapshot(today), [today]);
   const greeting = useMemo(() => getTimeGreeting(), []);
+  const reflectionIndex = useMemo(() => {
+    return reflections.findIndex(r => r.text === reflection.text);
+  }, [reflection]);
 
   const dateStr = today.toLocaleDateString('en-IN', {
     weekday: 'long',
@@ -260,7 +264,7 @@ export default function HomeScreen() {
 
           {/* ── Reflection of the Day ── */}
           <motion.div
-            className="w-full rounded-2xl overflow-hidden mb-4"
+            className="w-full rounded-2xl overflow-hidden mb-4 group"
             style={{
               backgroundColor: 'var(--color-bg-card)',
               boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
@@ -296,6 +300,16 @@ export default function HomeScreen() {
               >
                 — {reflection.source}
               </p>
+              <button
+                onClick={() => navigate(`/reflection/${reflectionIndex}`)}
+                className="font-hind font-medium text-sm mt-4 inline-flex items-center gap-1.5 group-hover:gap-2 transition-all duration-200"
+                style={{ color: 'var(--color-accent-gold)' }}
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+                </svg>
+                Explain this
+              </button>
             </div>
           </motion.div>
 
