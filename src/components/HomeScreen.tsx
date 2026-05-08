@@ -302,13 +302,14 @@ export default function HomeScreen() {
               </p>
               <button
                 onClick={() => navigate(`/reflection/${reflectionIndex}`)}
-                className="font-hind font-medium text-sm mt-4 inline-flex items-center gap-1.5 group-hover:gap-2 transition-all duration-200"
+                className="font-hind font-medium text-sm mt-4 inline-flex items-center gap-1 group-hover:gap-2 transition-all duration-200"
                 style={{ color: 'var(--color-accent-gold)' }}
               >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
-                </svg>
                 Explain this
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
               </button>
             </div>
           </motion.div>
