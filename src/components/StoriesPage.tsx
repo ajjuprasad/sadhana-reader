@@ -29,8 +29,8 @@ export default function StoriesPage() {
         <meta name="description" content="Beautiful stories from Hindu mythology for children — tales of courage, kindness, and wisdom from the Ramayana, Bhagavata Purana, and Panchatantra." />
       </Helmet>
 
+      {/* Sticky header bar */}
       <div className="sticky top-0 z-30" style={{ backgroundColor: 'var(--color-bg)' }}>
-        {/* Header bar */}
         <div className="flex items-center justify-between px-4 py-3">
           <button
             onClick={() => navigate('/')}
@@ -68,65 +68,6 @@ export default function StoriesPage() {
             </svg>
           </button>
         </div>
-
-        {/* Search bar */}
-        <div className="px-4 pb-2">
-          <div className="max-w-3xl mx-auto">
-            <div className="relative">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none"
-                style={{ color: 'var(--color-text-muted)' }}
-              >
-                <circle cx="11" cy="11" r="8" />
-                <line x1="21" y1="21" x2="16.65" y2="16.65" />
-              </svg>
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search stories by title, source, or moral..."
-                className="w-full pl-10 py-2.5 rounded-xl font-hind outline-none transition-shadow duration-200"
-                style={{
-                  fontSize: '16px',
-                  paddingRight: '36px',
-                  backgroundColor: 'var(--color-bg-card)',
-                  color: 'var(--color-text-primary)',
-                  border: '1px solid transparent',
-                  boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
-                }}
-                onFocus={(e) => {
-                  e.currentTarget.style.borderColor = 'var(--color-accent-primary)';
-                  e.currentTarget.style.boxShadow = 'inset 0 0 0 1px var(--color-accent-primary)';
-                }}
-                onBlur={(e) => {
-                  e.currentTarget.style.borderColor = 'transparent';
-                  e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.04)';
-                }}
-              />
-              {searchQuery && (
-                <button
-                  onClick={() => setSearchQuery('')}
-                  className="absolute right-2.5 top-1/2 -translate-y-1/2 p-1 rounded-full hover:opacity-70"
-                  style={{ color: 'var(--color-text-muted)' }}
-                  aria-label="Clear search"
-                >
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-                    <line x1="18" y1="6" x2="6" y2="18" />
-                    <line x1="6" y1="6" x2="18" y2="18" />
-                  </svg>
-                </button>
-              )}
-            </div>
-          </div>
-        </div>
       </div>
 
       <div className="max-w-3xl mx-auto px-4 mt-4">
@@ -153,6 +94,63 @@ export default function StoriesPage() {
             </motion.div>
           )}
         </AnimatePresence>
+
+        {/* Search bar */}
+        <div className="mb-4">
+          <div className="relative">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none"
+              style={{ color: 'var(--color-text-muted)' }}
+            >
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search stories by title, source, or moral..."
+              className="w-full pl-10 py-2.5 rounded-xl font-hind outline-none transition-shadow duration-200"
+              style={{
+                fontSize: '16px',
+                paddingRight: '36px',
+                backgroundColor: 'var(--color-bg-card)',
+                color: 'var(--color-text-primary)',
+                border: '1px solid transparent',
+                boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
+              }}
+              onFocus={(e) => {
+                e.currentTarget.style.borderColor = 'var(--color-accent-primary)';
+                e.currentTarget.style.boxShadow = 'inset 0 0 0 1px var(--color-accent-primary)';
+              }}
+              onBlur={(e) => {
+                e.currentTarget.style.borderColor = 'transparent';
+                e.currentTarget.style.boxShadow = '0 1px 3px rgba(0,0,0,0.04)';
+              }}
+            />
+            {searchQuery && (
+              <button
+                onClick={() => setSearchQuery('')}
+                className="absolute right-2.5 top-1/2 -translate-y-1/2 p-1 rounded-full hover:opacity-70"
+                style={{ color: 'var(--color-text-muted)' }}
+                aria-label="Clear search"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </button>
+            )}
+          </div>
+        </div>
 
         {/* Story grid */}
         <AnimatePresence mode="wait">
