@@ -206,93 +206,98 @@ export default function HomeScreen() {
             />
           </motion.button>
 
-          {/* ── Story + Reflection (side by side) ── */}
-          <div className="grid grid-cols-2 gap-4 mb-4">
-            {/* Story of the Day */}
-            <motion.button
-              className="relative text-left rounded-2xl overflow-hidden group focus:outline-none focus:ring-2 focus:ring-saffron"
-              style={{
-                backgroundColor: 'var(--color-bg-card)',
-                boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
-              }}
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={tileTransition(2)}
-              whileHover={{ scale: 1.02, boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}
-              whileTap={{ scale: 0.98 }}
-              onClick={() => navigate(`/story/${story.id}`)}
-            >
-              <div className="p-4 sm:p-5 flex flex-col h-full">
-                <p
-                  className="font-label font-semibold uppercase text-[0.6rem] tracking-[0.14em] mb-2"
-                  style={{ color: 'var(--color-accent-primary)' }}
-                >
-                  Story of the Day
-                </p>
-                <h3
-                  className="font-display font-bold text-sm sm:text-base leading-snug mb-1 group-hover:text-saffron transition-colors duration-200"
-                  style={{ color: 'var(--color-text-primary)' }}
-                >
-                  {story.title}
-                </h3>
-                <p
-                  className="font-hind text-[0.6rem] uppercase tracking-wider mb-2"
-                  style={{ color: 'var(--color-text-muted)' }}
-                >
-                  {story.source}
-                </p>
-                <p
-                  className="font-body text-xs leading-relaxed line-clamp-2 flex-1"
-                  style={{ color: 'var(--color-text-secondary)' }}
-                >
-                  {story.moral}
-                </p>
-                <span
-                  className="font-hind font-medium text-xs mt-3 inline-flex items-center gap-1 group-hover:gap-1.5 transition-all duration-200"
-                  style={{ color: 'var(--color-accent-primary)' }}
-                >
-                  Read
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12" />
-                    <polyline points="12 5 19 12 12 19" />
-                  </svg>
-                </span>
-              </div>
-            </motion.button>
+          {/* ── Story of the Day ── */}
+          <motion.button
+            className="w-full text-left rounded-2xl overflow-hidden mb-4 group focus:outline-none focus:ring-2 focus:ring-saffron"
+            style={{
+              backgroundColor: 'var(--color-bg-card)',
+              boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
+            }}
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={tileTransition(2)}
+            whileHover={{ scale: 1.01, boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}
+            whileTap={{ scale: 0.99 }}
+            onClick={() => navigate(`/story/${story.id}`)}
+          >
+            <div className="p-5 sm:p-6">
+              <p
+                className="font-label font-semibold uppercase text-[0.6rem] tracking-[0.14em] mb-2"
+                style={{ color: 'var(--color-accent-primary)' }}
+              >
+                Story of the Day
+              </p>
+              <h3
+                className="font-display font-bold text-base sm:text-lg leading-snug mb-1 group-hover:text-saffron transition-colors duration-200"
+                style={{ color: 'var(--color-text-primary)' }}
+              >
+                {story.title}
+              </h3>
+              <p
+                className="font-hind text-[0.6rem] uppercase tracking-wider mb-2"
+                style={{ color: 'var(--color-text-muted)' }}
+              >
+                {story.source}
+              </p>
+              <p
+                className="font-body text-sm leading-relaxed"
+                style={{ color: 'var(--color-text-secondary)' }}
+              >
+                {story.moral}
+              </p>
+              <span
+                className="font-hind font-medium text-sm mt-3 inline-flex items-center gap-1 group-hover:gap-2 transition-all duration-200"
+                style={{ color: 'var(--color-accent-primary)' }}
+              >
+                Read
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </span>
+            </div>
+          </motion.button>
 
-            {/* Reflection of the Day */}
-            <motion.div
-              className="rounded-2xl overflow-hidden"
-              style={{
-                backgroundColor: 'var(--color-bg-card)',
-                boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
-              }}
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={tileTransition(3)}
-            >
-              <div className="p-4 sm:p-5 flex flex-col h-full">
+          {/* ── Reflection of the Day ── */}
+          <motion.div
+            className="w-full rounded-2xl overflow-hidden mb-4"
+            style={{
+              backgroundColor: 'var(--color-bg-card)',
+              boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
+            }}
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={tileTransition(3)}
+          >
+            <div className="p-5 sm:p-6">
+              <p
+                className="font-label font-semibold uppercase text-[0.6rem] tracking-[0.14em] mb-3"
+                style={{ color: 'var(--color-accent-gold)' }}
+              >
+                Reflection
+              </p>
+              <p
+                className="font-body italic text-base leading-relaxed"
+                style={{ color: 'var(--color-text-primary)' }}
+              >
+                "{reflection.text}"
+              </p>
+              {reflection.sanskrit && (
                 <p
-                  className="font-label font-semibold uppercase text-[0.6rem] tracking-[0.14em] mb-2"
-                  style={{ color: 'var(--color-accent-gold)' }}
-                >
-                  Reflection
-                </p>
-                <p
-                  className="font-body italic text-sm leading-relaxed flex-1 line-clamp-5"
-                  style={{ color: 'var(--color-text-primary)' }}
-                >
-                  "{reflection.text}"
-                </p>
-                <p
-                  className="font-hind text-[0.6rem] mt-3 uppercase tracking-wider"
+                  className="font-body text-sm mt-2"
                   style={{ color: 'var(--color-text-muted)' }}
                 >
-                  — {reflection.source}
+                  {reflection.sanskrit}
                 </p>
-              </div>
-            </motion.div>
-          </div>
+              )}
+              <p
+                className="font-hind text-xs mt-3 uppercase tracking-wider"
+                style={{ color: 'var(--color-text-muted)' }}
+              >
+                — {reflection.source}
+              </p>
+            </div>
+          </motion.div>
 
           {/* ── Panchanga Quick-View ── */}
           <motion.button
