@@ -153,68 +153,84 @@ export const reflections: Reflection[] = [
   {
     text: 'That one is dear to me who runs not after the pleasant or away from the painful, grieves not, lusts not, but lets things come and go as they happen.',
     source: 'Bhagavad Gita 12.17',
+    explanation: 'In the Bhakti Yoga chapter, Krishna describes the qualities of a devotee most dear to him. Surprisingly, it is not ritual perfection but emotional equilibrium — the ability to welcome life as it arrives without chasing pleasure or fleeing pain. This verse offers a model of graceful acceptance: engage fully with each moment without clinging to the good or resisting the difficult.',
   },
   {
     text: 'It is better to live your own destiny imperfectly than to live an imitation of somebody else\'s life with perfection.',
     source: 'Bhagavad Gita 3.35',
     sanskrit: 'श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्',
+    explanation: 'Krishna teaches the vital concept of svadharma — one\'s own unique path and calling. Following someone else\'s dharma, no matter how well executed, leads to inner conflict and inauthenticity. The verse is a powerful affirmation of individuality: your imperfect but genuine life is more valuable than a flawless imitation. In practice, this means honoring your own talents, values, and callings rather than comparing yourself to others.',
   },
   {
     text: 'The offering of wisdom is better than any material offering, for the goal of all work is spiritual wisdom.',
     source: 'Bhagavad Gita 4.33',
+    explanation: 'Krishna elevates knowledge-sharing above material charity, not to diminish generosity but to highlight the transformative power of wisdom. Material gifts provide temporary relief, but knowledge empowers a person permanently. The takeaway is to value teaching, mentoring, and sharing insight as the highest forms of service — and to remember that all worldly effort ultimately aims at deeper understanding.',
   },
   {
     text: 'The faith of each is in accordance with one\'s own nature. The person is made of faith. As a person\'s faith is, so is that person.',
     source: 'Bhagavad Gita 17.3',
+    explanation: 'Krishna reveals that our deepest beliefs literally shape who we are — faith here means not just religious belief but the fundamental convictions that drive our choices. A person\'s character is built from what they hold to be true and valuable. The practical implication is profound: examine your core beliefs carefully, because you inevitably become what you believe in most deeply.',
   },
   {
     text: 'I am the same to all beings. I favor none, and I hate none. But those who worship me with devotion are in me, and I am in them.',
     source: 'Bhagavad Gita 9.29',
+    explanation: 'Krishna affirms the impartiality of the Divine — like the sun that shines equally on all — while explaining that those who open themselves through devotion naturally experience a deeper connection. This is not divine favoritism but reciprocity: the Divine is always present, but devotion is the act of turning toward it and receiving what was always there. In daily life, this teaches that grace is available to everyone who sincerely seeks it.',
   },
   {
     text: 'The pleasure that comes from the senses appears as nectar at first, but turns to poison in the end.',
     source: 'Bhagavad Gita 18.38',
+    explanation: 'Krishna classifies happiness into three types based on the gunas. Rajasic happiness — born of sensory contact — is immediately gratifying but ultimately leads to suffering, addiction, or emptiness. Think of any indulgence that feels wonderful in the moment but leaves regret or dependence afterward. The practical wisdom is to pause before chasing quick pleasures and ask whether this choice will still feel good tomorrow.',
   },
   {
     text: 'That which appears as poison in the beginning but is like nectar in the end — that happiness is born of the clear understanding of the Self.',
     source: 'Bhagavad Gita 18.37',
+    explanation: 'The companion to verse 18.38, this describes sattvic happiness — the kind that requires discipline and often feels difficult at first (like waking up early to meditate or maintaining a challenging practice) but yields lasting joy and self-understanding. Krishna teaches that the best things in life often demand initial effort and discomfort. The takeaway: choose what nourishes you long-term over what merely feels good right now.',
   },
   {
     text: 'He who has no attachments can really love others, for his love is pure and divine.',
     source: 'Bhagavad Gita 2.64',
+    explanation: 'Krishna reveals a counterintuitive truth: detachment enhances love rather than diminishing it. When we love without possessiveness, jealousy, or the need for reciprocation, our love becomes unconditional and free. Attachment-based love is often a disguised form of need, creating suffering for both parties. Practicing non-attached love means caring deeply for others while allowing them the freedom to be themselves.',
   },
   {
     text: 'The truly wise mourn neither for the living nor for the dead.',
     source: 'Bhagavad Gita 2.11',
+    explanation: 'This is Krishna\'s opening philosophical statement to the grief-stricken Arjuna. The wise understand that the eternal Self is never truly lost, so mourning — while natural — arises from identifying with temporary forms. This does not mean suppressing grief, but rather finding a deeper perspective that sees beyond physical existence. In difficult times, it helps to remember that what truly matters in a person cannot be destroyed.',
   },
   {
     text: 'Those who possess this wisdom have equal regard for a learned scholar, a cow, an elephant, a dog, and an outcaste.',
     source: 'Bhagavad Gita 5.18',
+    explanation: 'Krishna describes the vision of a truly enlightened person who sees the same divine presence in all beings — regardless of species, social status, or perceived worth. This was a radical teaching in ancient India\'s hierarchical society, and it remains radical today. The practical challenge is to treat every person and creature you encounter with equal dignity, recognizing the same life-force in each.',
   },
   {
     text: 'I am seated in the hearts of all beings. From me come memory, knowledge, and their loss as well.',
     source: 'Bhagavad Gita 15.15',
+    explanation: 'Krishna reveals himself as the inner witness dwelling in every heart, the ultimate source of all cognitive faculties — including forgetfulness. This suggests that even forgetting serves a divine purpose, perhaps protecting us from unbearable memories or creating space for fresh understanding. The practical insight is to trust the intelligence of life: what you remember and what you forget both serve your growth.',
   },
   {
     text: 'The mind acts like an enemy for those who do not control it.',
     source: 'Bhagavad Gita 6.6',
+    explanation: 'This is the cautionary half of Krishna\'s teaching on the dual nature of the mind. Left untrained, the mind generates rumination, anxiety, and self-sabotage — becoming our own worst adversary. Unlike external enemies, the mind cannot be escaped; it must be understood and redirected. The daily practice is simple awareness: notice when your thoughts are working against you and gently steer them back toward what is constructive.',
   },
   {
     text: 'Wherever there is Krishna, the master of yoga, and Arjuna, the supreme archer, there will be prosperity, victory, happiness, and morality.',
     source: 'Bhagavad Gita 18.78',
+    explanation: 'This is the closing verse of the Gita, spoken by Sanjaya to the blind king Dhritarashtra. It summarizes the entire teaching: when divine wisdom (Krishna) is united with human effort and skill (Arjuna), all good things follow. The takeaway for daily life is that neither spiritual insight alone nor worldly competence alone is sufficient — true flourishing comes from combining inner wisdom with dedicated, skillful action.',
   },
   {
     text: 'Among thousands of people, scarcely one strives for perfection; and among those who have achieved perfection, scarcely one knows me in truth.',
     source: 'Bhagavad Gita 7.3',
+    explanation: 'Krishna honestly describes how rare genuine spiritual seeking is — and how even rarer is complete realization. Rather than discouraging us, this verse honors the courage of anyone who sincerely walks the path. If you are reading this and striving to understand yourself more deeply, you are already in a rare and precious minority. The message is to persist with humility, knowing the journey itself is the achievement.',
   },
   {
     text: 'Even a little practice of this dharma protects one from great fear.',
     source: 'Bhagavad Gita 2.40',
     sanskrit: 'स्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात्',
+    explanation: 'Krishna reassures Arjuna that no spiritual effort is ever wasted — even the smallest step on the path of dharma provides protection against life\'s deepest fears. Unlike material pursuits where partial effort may yield nothing, every moment of sincere practice accumulates. This is deeply encouraging for beginners: you do not need to be perfect or complete to benefit. Start where you are; even five minutes of daily practice matters.',
   },
   {
     text: 'Whatever you do, whatever you eat, whatever you offer in sacrifice, whatever you give away, whatever austerity you practice — do it as an offering to me.',
     source: 'Bhagavad Gita 9.27',
+    explanation: 'Krishna transforms every ordinary activity into a sacred act by asking that it be offered to the Divine. Eating, working, giving, even self-discipline — all become worship when done with conscious dedication. This teaching bridges the gap between "spiritual life" and "regular life," showing they need not be separate. Practically, it means bringing full presence and reverence to cooking dinner, doing your job, or exercising — treating it all as sacred.',
   },
   {
     text: 'The wise unify their consciousness and abandon attachment to the fruits of action, which binds one to continual rebirth. In this way, they attain a state beyond all suffering.',
