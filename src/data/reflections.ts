@@ -422,175 +422,216 @@ export const reflections: Reflection[] = [
     text: 'From the unreal, lead me to the real. From darkness, lead me to light. From death, lead me to immortality.',
     source: 'Brihadaranyaka Upanishad 1.3.28',
     sanskrit: 'असतो मा सद्गमय। तमसो मा ज्योतिर्गमय। मृत्योर्मामृतं गमय।',
+    explanation: 'This ancient prayer from the Brihadaranyaka Upanishad is one of the most beloved mantras in Hinduism. It asks for guidance from illusion to truth, from ignorance to wisdom, and from the fear of death to the realization of our eternal nature. It is often chanted at the beginning of spiritual gatherings as a reminder of life\'s highest aspiration.',
   },
   {
     text: 'As is the human body, so is the cosmic body. As is the human mind, so is the cosmic mind.',
     source: 'Aitareya Upanishad',
+    explanation: 'The Aitareya Upanishad teaches that the individual and the universe are mirrors of each other, reflecting the same underlying consciousness. This idea that the microcosm and macrocosm are one is foundational to Vedantic philosophy. Practically, it invites us to see that understanding ourselves deeply is a way of understanding the entire cosmos.',
   },
   {
     text: 'The Self is not born, nor does it die. It is not produced, and it does not produce. It is unborn, eternal, and timeless.',
     source: 'Katha Upanishad 1.2.18',
+    explanation: 'The Katha Upanishad describes the Atman (true Self) as beyond all change, birth, and death. This teaching is central to Hindu philosophy: our deepest identity is not the body or mind, which are temporary, but an eternal awareness. Reflecting on this can bring comfort during times of loss and help us identify less with what is transient.',
   },
   {
     text: 'That which is the finest essence — this whole world has that as its soul. That is truth. That is the Self. You are that.',
     source: 'Chandogya Upanishad 6.8.7',
     sanskrit: 'तत्त्वमसि',
+    explanation: 'The mahavakya (great saying) \'Tat Tvam Asi\' from the Chandogya Upanishad is one of the most important declarations in all of Vedanta. A father, Uddalaka, teaches his son Shvetaketu that the subtle essence underlying all of creation is identical with his own innermost Self. This teaching collapses the apparent separation between the individual and the divine, offering the radical insight that you already are what you seek.',
   },
   {
     text: 'He who sees all beings in his own Self, and his own Self in all beings, loses all fear.',
     source: 'Isha Upanishad 6',
+    explanation: 'The Isha Upanishad teaches that fear arises from the perception of separateness. When one recognizes that the same Self dwells in all beings, there is no \'other\' to fear or oppose. This vision of unity is not just philosophical but deeply practical — it is the basis for compassion, non-violence, and the dissolution of anxiety.',
   },
   {
     text: 'The wise who know the Self as bodiless within the bodies, as unchanging among changing things — they go beyond all sorrow.',
     source: 'Katha Upanishad 1.2.22',
+    explanation: 'The Katha Upanishad contrasts the ever-changing world of bodies and objects with the unchanging Self that witnesses it all. Those who can discern this distinction — the permanent from the impermanent — are freed from the sorrow that comes with clinging to what must pass. This teaching encourages cultivating the witness perspective in daily life.',
   },
   {
     text: 'When the five senses and the mind are still, and the reasoning intellect does not stir — that is called the highest state.',
     source: 'Katha Upanishad 2.3.10',
+    explanation: 'This verse from the Katha Upanishad describes the state of deep meditation where all mental activity ceases. It is considered the highest spiritual attainment, where the Self shines forth in its own light, undistorted by sensory experience or thought. The practical teaching here is that stillness of mind, not intellectual analysis, is the gateway to ultimate truth.',
   },
   {
     text: 'The wise man should surrender his words in his mind, his mind in the knowing self, the knowing self in the Great Self, and the Great Self in the Self of Peace.',
     source: 'Katha Upanishad 1.3.13',
+    explanation: 'This teaching from the Katha Upanishad describes a process of progressive inward withdrawal — from speech to thought, from thought to intellect, from intellect to cosmic consciousness, and finally into absolute peace. It maps out a meditation practice of dissolving each layer of experience into its subtler source. The takeaway is that peace is found not by adding something new, but by going deeper within.',
   },
   {
     text: 'As the same fire assumes different shapes when it consumes objects of different shapes, so the one Self takes the shape of every creature in whom it is present.',
     source: 'Katha Upanishad 2.2.9',
+    explanation: 'The Katha Upanishad uses the metaphor of fire to illustrate how one universal consciousness appears as the diversity of individual beings. Just as fire takes the form of whatever it burns, the Self appears differently in each body while remaining essentially the same. This teaches us to look past surface differences and recognize the shared essence in all living things.',
   },
   {
     text: 'The Self, smaller than the small, greater than the great, is hidden in the hearts of all living creatures.',
     source: 'Katha Upanishad 1.2.20',
     sanskrit: 'अणोरणीयान्महतो महीयान्',
+    explanation: 'This famous verse from the Katha Upanishad captures the paradox of the Atman — it is simultaneously the most intimate, subtle reality within each being and the infinite reality that encompasses everything. It cannot be found through external seeking because it already resides in the heart. The practical message is to turn attention inward to discover what has always been present.',
   },
   {
     text: 'The face of truth is covered with a golden disc. Unveil it, O Lord, so that I who love the truth may see it.',
     source: 'Isha Upanishad 15',
+    explanation: 'This prayer from the Isha Upanishad acknowledges that truth is often hidden behind dazzling appearances — the \'golden disc\' symbolizes worldly beauty and material allure that distract us from deeper reality. The seeker humbly asks for the veil to be lifted so that ultimate truth can be perceived directly. It reminds us that sincerity and humility, not cleverness, are what draw us toward genuine understanding.',
   },
   {
     text: 'Where there is joy there is creation. Where there is no joy there is no creation. Know the nature of joy.',
     source: 'Chandogya Upanishad 7.22',
+    explanation: 'The Chandogya Upanishad teaches that joy (ananda) is the creative force behind all existence. The universe is not born from suffering or accident but from an overflow of bliss. Understanding this reframes our relationship with creativity and purpose — when we act from genuine joy rather than anxiety or obligation, we align ourselves with the fundamental energy of creation.',
   },
   {
     text: 'This Self cannot be attained by study, nor by intellect, nor by much hearing. It is gained by the one whom the Self chooses.',
     source: 'Katha Upanishad 1.2.23',
+    explanation: 'The Katha Upanishad makes the humbling point that spiritual realization cannot be earned through intellectual effort alone. While study and learning prepare the ground, the final revelation is described as grace — the Self reveals itself to those who are sincere and surrendered. This encourages a balance between disciplined effort and humble openness in spiritual practice.',
   },
   {
     text: 'The whole universe is pervaded by the Lord. Whatever moves in this moving world, enjoy it with renunciation. Do not covet others\' wealth.',
     source: 'Isha Upanishad 1',
     sanskrit: 'ईशा वास्यमिदं सर्वं यत्किञ्च जगत्यां जगत्',
+    explanation: 'The opening verse of the Isha Upanishad sets out a vision of sacred living: everything belongs to the divine, so we should enjoy the world without grasping at it possessively. True enjoyment comes not from ownership but from appreciating things as expressions of the sacred. This teaching offers a path to contentment — use what you need, share generously, and do not envy what others have.',
   },
   {
     text: 'This vast universe is a wheel. Upon it are all creatures that are subject to birth, death, and rebirth. Round and round it turns, and never stops.',
     source: 'Svetasvatara Upanishad 1.6',
+    explanation: 'The Svetasvatara Upanishad uses the vivid image of a cosmic wheel to describe samsara — the cycle of birth, death, and rebirth that all beings undergo. The wheel turns ceaselessly, driven by karma and desire. Recognizing this pattern is the first step toward seeking liberation, which comes from stepping off the wheel through self-knowledge and detachment.',
   },
   {
     text: 'Know the Self as the lord of the chariot, the body as the chariot itself, the intellect as the charioteer, and the mind as the reins.',
     source: 'Katha Upanishad 1.3.3',
+    explanation: 'The Katha Upanishad\'s famous chariot metaphor maps the inner life onto a vivid image: the body is the vehicle, the intellect must steer wisely, and the mind must be held firmly like reins to guide the senses (the horses). When the intellect is a skilled driver and the mind is steady, the Self reaches its destination safely. This is a practical guide to self-mastery through disciplined awareness.',
   },
   {
     text: 'The eye cannot see it; the mind cannot grasp it. The deathless Self has neither caste nor race. It has neither eyes nor ears, neither hands nor feet. It is eternal and omnipresent, infinite in the great and infinite in the small.',
     source: 'Mundaka Upanishad 1.1.6',
+    explanation: 'The Mundaka Upanishad describes the Self as utterly beyond all physical attributes and social categories. It cannot be perceived by the senses or comprehended by ordinary thought. This teaching is both humbling and liberating — it tells us that our deepest identity transcends every label, limitation, and distinction that the world imposes on us.',
   },
   {
     text: 'From joy all beings have come, by joy they all live, and unto joy they all return.',
     source: 'Taittiriya Upanishad 3.6',
     sanskrit: 'आनन्दाद्ध्येव खल्विमानि भूतानि जायन्ते',
+    explanation: 'The Taittiriya Upanishad reveals that bliss (ananda) is the origin, sustenance, and destination of all existence. Life is not a journey from suffering to suffering but from joy through joy back to joy. This teaching encourages us to see happiness not as something to chase externally but as the very ground of being from which we emerge and to which we return.',
   },
   {
     text: 'As a great fish swims between the banks of a river as it likes, so does the shining Self move between the states of dreaming and waking.',
     source: 'Brihadaranyaka Upanishad 4.3.18',
+    explanation: 'The Brihadaranyaka Upanishad uses this graceful metaphor to describe how the Self moves freely between states of consciousness — waking, dreaming, and deep sleep — without being bound by any of them. Just as a fish is at home in the entire river, the Self is at home in all states of experience. This invites us to identify not with any particular mental state but with the awareness that underlies them all.',
   },
   {
     text: 'Where there is duality, as it were, there one sees another, one smells another, one hears another. But where everything has become just one\'s own Self, then who is there to see and through what?',
     source: 'Brihadaranyaka Upanishad 4.5.15',
+    explanation: 'In this profound passage, the sage Yajnavalkya teaches his wife Maitreyi that all perception depends on the illusion of separation between subject and object. In the state of ultimate realization, where only the Self exists, there is no \'other\' to perceive. This teaching points to the limits of ordinary knowledge and the transformative nature of non-dual awareness.',
   },
   {
     text: 'Brahman is the only truth, the world is appearance, and the individual soul is nothing but Brahman.',
     source: 'Adi Shankaracharya, Vivekachudamani',
     sanskrit: 'ब्रह्म सत्यं जगन्मिथ्या जीवो ब्रह्मैव नापरः',
+    explanation: 'This concise formulation by the great philosopher Adi Shankaracharya summarizes the essence of Advaita (non-dual) Vedanta in just three statements. Ultimate reality is one (Brahman), the multiplicity we see is like a mirage, and our individual self is not separate from that one reality. While philosophically dense, the practical message is freeing: you are not the small, limited self you take yourself to be.',
   },
   {
     text: 'Arise, awake, and learn by approaching the excellent ones. The wise describe that path to be as impassable as a razor\'s edge.',
     source: 'Katha Upanishad 1.3.14',
     sanskrit: 'उत्तिष्ठत जाग्रत प्राप्य वरान्निबोधत',
+    explanation: 'This stirring call from the Katha Upanishad urges the seeker to wake up from spiritual complacency and seek guidance from realized teachers. The path to self-knowledge is compared to walking on a razor\'s edge — extremely narrow and requiring total attention. It is both an encouragement to begin the journey and an honest warning about the discipline it demands.',
   },
   {
     text: 'The universe comes forth from Brahman and will return to Brahman. Truly, all is Brahman.',
     source: 'Mundaka Upanishad 2.2.12',
+    explanation: 'The Mundaka Upanishad teaches that Brahman (ultimate reality) is both the source and the substance of the entire universe. Everything that exists is a manifestation of Brahman and will dissolve back into it. This understanding removes the sense of cosmic alienation — we are not strangers in an indifferent universe but expressions of its very essence.',
   },
   {
     text: 'He who knows the bliss of Brahman, from which all words turn back and the mind cannot reach it, fears nothing whatsoever.',
     source: 'Taittiriya Upanishad 2.9',
+    explanation: 'The Taittiriya Upanishad declares that the bliss of Brahman is beyond what language can describe or the mind can conceive. One who has experienced this transcendent joy becomes utterly fearless, because they have touched something that cannot be lost or destroyed. This teaches that the deepest security comes not from external circumstances but from direct experience of the infinite.',
   },
   {
     text: 'The one who realizes that all beings are in the Self and the Self is in all beings — for such a seer, there can be no more sorrow or delusion.',
     source: 'Isha Upanishad 7',
+    explanation: 'The Isha Upanishad teaches that sorrow and confusion arise from seeing ourselves as separate from others and the world. When the unity of all existence is directly realized — not just understood intellectually — grief and delusion naturally fall away. This is an invitation to practice seeing the sacred in everyone and everything we encounter.',
   },
   {
     text: 'In the space within the heart lies the ruler of all, the lord of all, the king of all. He does not become greater by good works nor smaller by evil works.',
     source: 'Brihadaranyaka Upanishad 4.4.22',
+    explanation: 'The Brihadaranyaka Upanishad locates the supreme reality not in some distant heaven but within the cave of the heart. This inner Self is the sovereign of all experience, yet it is untouched by the dualities of good and evil, gain and loss. The teaching reminds us that our essential nature is beyond moral accounting — eternally whole and complete regardless of what we have done.',
   },
   {
     text: 'Two birds, close companions, cling to the same tree. One of them eats the sweet fruit, the other looks on without eating.',
     source: 'Mundaka Upanishad 3.1.1',
+    explanation: 'This celebrated parable from the Mundaka Upanishad describes two aspects of our being sharing one body (the tree). One bird — the ego or individual self — is busy consuming the fruits of experience, pleasant and bitter. The other bird — the true Self or witness consciousness — simply observes without attachment. Recognizing the witness within is the beginning of spiritual freedom.',
   },
   {
     text: 'He is the one God, hidden in all beings, all-pervading, the Self within all beings, watching over all works, dwelling in all beings, the witness, the perceiver.',
     source: 'Svetasvatara Upanishad 6.11',
+    explanation: 'The Svetasvatara Upanishad presents a vision of the divine that is both immanent and transcendent — God is not remote but hidden within every being as its innermost Self. This divine presence witnesses all actions without being affected by them. The practical implication is that the sacred is as close as your own awareness; you need not search far to find it.',
   },
   {
     text: 'As from a blazing fire, sparks of similar form fly forth by the thousands, so from the Imperishable, manifold beings are produced, and return to it as well.',
     source: 'Mundaka Upanishad 2.1.1',
+    explanation: 'The Mundaka Upanishad uses the image of sparks flying from a great fire to explain how the many individual beings emerge from the one Brahman. Each spark is made of the same fire, yet appears separate for a time before returning to its source. This metaphor beautifully conveys both our essential unity with the divine and the temporary nature of individual existence.',
   },
   {
     text: 'May we hear only what is good. May we see only what is good. May we, while praising the gods, enjoy the life allotted to us with strong limbs.',
     source: 'Mandukya Upanishad, Shanti Mantra',
+    explanation: 'This Shanti Mantra (peace chant) from the Mandukya Upanishad is a prayer for a life blessed with goodness in every sensory experience. It asks not for escape from the world but for the grace to encounter beauty and truth in daily life. It is a reminder that spiritual aspiration and the enjoyment of embodied life are not opposed but can harmonize.',
   },
   {
     text: 'Om. That is infinite, this is infinite. From That infinite, this infinite comes. From That infinite, this infinite removed or added, infinite remains infinite.',
     source: 'Isha Upanishad, Invocation',
     sanskrit: 'ॐ पूर्णमदः पूर्णमिदं पूर्णात्पूर्णमुदच्यते',
+    explanation: 'This invocation of the Isha Upanishad is a meditation on the nature of infinity and wholeness. It teaches that Brahman (the absolute) is infinite, and the manifest universe that emerges from it is also infinite — taking from infinity does not diminish it. This paradoxical statement transcends ordinary mathematics and points to a reality where wholeness is never lost, no matter what appears or disappears.',
   },
   {
     text: 'Meditating on the lotus of your heart, in the center is the untainted; the exquisitely pure, clear, and sorrowless; the inconceivable; the unmanifest; the infinite form of the blissful; the tranquil; the immortal — that is Brahman.',
     source: 'Kaivalya Upanishad 6',
+    explanation: 'The Kaivalya Upanishad describes a heart-centered meditation practice in which the seeker discovers Brahman — the ultimate reality — within the lotus of the heart. Each quality listed (pure, sorrowless, blissful, immortal) is an attribute of our deepest nature. This verse serves as both a guided meditation and a reminder that the infinite divine is not somewhere else but at the very center of our being.',
   },
   {
     text: 'He who dwells in the light, yet is other than the light, whom the light does not know, whose body is the light, who controls the light from within — he is the Self, the inner controller, the immortal.',
     source: 'Brihadaranyaka Upanishad 3.7.14',
+    explanation: 'The Brihadaranyaka Upanishad describes the Antaryamin — the inner controller — who dwells within every element of creation yet transcends it. Light itself does not know this Self, yet the Self is what gives light its nature. This teaching reveals that there is a conscious presence behind every phenomenon, governing from within. It encourages us to look for the deeper intelligence behind all appearances.',
   },
   {
     text: 'There is only one Supreme Being, the Absolute Reality, and it alone exists. It is the truth. It is the Self. And you are that.',
     source: 'Chandogya Upanishad 6.9.4',
+    explanation: 'The Chandogya Upanishad reinforces the central teaching of Vedanta: the ultimate reality (Brahman) and your innermost Self (Atman) are one and the same. The repetition of \'you are that\' is not abstract philosophy but a direct spiritual instruction — a pointer meant to be contemplated until the truth of it is directly realized. It is the heart of non-dual wisdom.',
   },
   {
     text: 'When all the desires that dwell in the heart are cast away, then does the mortal become immortal, then he attains Brahman here.',
     source: 'Katha Upanishad 2.3.14',
+    explanation: 'The Katha Upanishad teaches that liberation is not a posthumous event but can be realized in this very life, the moment all desires rooted in the heart are released. Desires here refer not to healthy needs but to the deep craving and attachment that keep us bound to the cycle of suffering. Freedom comes not from getting everything we want but from the falling away of compulsive wanting itself.',
   },
   {
     text: 'Like two golden birds perched on the selfsame tree, intimate friends, the ego and the Self dwell in the same body. The former eats the sweet and sour fruits of the tree, while the latter looks on in detachment.',
     source: 'Mundaka Upanishad 3.1.1',
+    explanation: 'This expanded version of the two-birds parable from the Mundaka Upanishad makes explicit the relationship between the ego (which experiences pleasure and pain) and the true Self (which witnesses without being affected). They are intimate friends sharing the same body-tree, yet their natures are entirely different. The teaching invites us to shift our identification from the bird that suffers to the bird that observes in peace.',
   },
   {
     text: 'Know that the Self is the rider, and the body is the chariot; that the intellect is the charioteer, and the mind the reins. The senses are called the horses, and the objects of the senses are their roads.',
     source: 'Katha Upanishad 1.3.3–4',
+    explanation: 'This expanded chariot allegory from the Katha Upanishad offers a complete map of the inner life. The Self is the passenger who should direct the journey; the intellect must steer wisely; the mind must hold the senses firmly, or they will run wild like uncontrolled horses. The objects of desire are the roads that can lead us astray or toward our destination. Mastery of this inner vehicle is the essence of yoga.',
   },
   {
     text: 'May we be protected together. May we be nourished together. May we work together with great vigor. May our study be brilliant and effective. May we not hate each other.',
     source: 'Taittiriya Upanishad, Shanti Mantra',
     sanskrit: 'सह नाववतु। सह नौ भुनक्तु। सह वीर्यं करवावहै।',
+    explanation: 'This beloved Shanti Mantra from the Taittiriya Upanishad is traditionally chanted by teacher and student together before beginning study. It establishes the ideal learning relationship: mutual protection, shared nourishment, collaborative effort, and freedom from resentment. It reminds us that true education is a sacred partnership and that knowledge flourishes best in an atmosphere of mutual respect and goodwill.',
   },
   {
     text: 'By knowing the Self, through hearing, reflection, and meditation, one comes to know all things.',
     source: 'Brihadaranyaka Upanishad 2.4.5',
+    explanation: 'The Brihadaranyaka Upanishad outlines the three classical stages of spiritual learning: shravana (hearing the teaching), manana (reflecting deeply on it), and nididhyasana (meditating until it becomes direct experience). When the Self is truly known, all else is known because the Self is the foundation of everything. This practical three-step method remains a cornerstone of Vedantic spiritual practice.',
   },
   {
     text: 'There is something beyond our mind which abides in silence within our mind. It is the supreme mystery beyond thought. Let one\'s mind and subtle body rest upon that and not rest on anything else.',
     source: 'Maitri Upanishad 6.19',
+    explanation: 'The Maitri Upanishad points to a reality that is present within the mind yet utterly transcends it — a silent awareness that cannot be thought about but can be rested in. This teaching is a direct meditation instruction: rather than chasing thoughts or experiences, let your attention settle into the stillness that underlies all mental activity. It is a practical guide to finding inner peace.',
   },
   {
     text: 'Truth alone triumphs, not falsehood. Through truth, the divine path is spread out.',
     source: 'Mundaka Upanishad 3.1.6',
     sanskrit: 'सत्यमेव जयते नानृतम्',
+    explanation: 'This verse from the Mundaka Upanishad has become the national motto of India (Satyameva Jayate). It affirms that truth is the ultimate victor in all affairs — falsehood may appear to succeed temporarily, but it cannot endure. The divine path to liberation is paved with truthfulness. In daily life, this is both a moral encouragement and a cosmic assurance: aligning with truth aligns us with the deepest current of reality.',
   },
 
   // ── Yoga Sutras of Patanjali (141–175) ──
@@ -598,268 +639,333 @@ export const reflections: Reflection[] = [
     text: 'Yoga is the stilling of the changing states of the mind.',
     source: 'Yoga Sutras of Patanjali 1.2',
     sanskrit: 'योगश्चित्तवृत्तिनिरोधः',
+    explanation: 'This is the foundational definition of yoga from Patanjali\'s Yoga Sutras and arguably the most important verse in the entire text. Yoga is not primarily about physical postures but about achieving a still mind — cessation of the constant mental fluctuations (vrittis) that obscure our true nature. When the mind is perfectly still, the Self is revealed as it truly is.',
   },
   {
     text: 'Practice becomes firmly grounded when continued for a long time, without interruption, and with devotion.',
     source: 'Yoga Sutras of Patanjali 1.14',
+    explanation: 'Patanjali offers a realistic and encouraging teaching about spiritual progress. There are no shortcuts — mastery requires sustained effort over a long period, consistency without gaps, and genuine enthusiasm for the practice. This applies equally to meditation, yoga, or any discipline. The key ingredients are patience, regularity, and heartfelt dedication rather than intensity alone.',
   },
   {
     text: 'Contentment brings supreme happiness.',
     source: 'Yoga Sutras of Patanjali 2.42',
     sanskrit: 'सन्तोषात् अनुत्तमः सुखलाभः',
+    explanation: 'Patanjali lists contentment (santosha) as one of the niyamas (personal observances) and declares it the direct path to the highest happiness. This deceptively simple teaching reveals that happiness is not achieved by acquiring more but by wanting less. True contentment is not passive resignation but an active appreciation of what is already present in our lives.',
   },
   {
     text: 'By cultivating friendliness toward the happy, compassion toward the suffering, delight toward the virtuous, and equanimity toward the non-virtuous, the mind retains its calm.',
     source: 'Yoga Sutras of Patanjali 1.33',
+    explanation: 'Patanjali prescribes four specific attitudes for maintaining mental peace in all social situations. Rather than envying the happy, pitying the suffering, resenting the virtuous, or judging the wicked, these four responses keep the mind balanced and clear. This is one of the most practical teachings in the Yoga Sutras and can be applied immediately in everyday interactions.',
   },
   {
     text: 'When you are inspired by some great purpose, some extraordinary project, all your thoughts break their bonds. Your mind transcends limitations.',
     source: 'Yoga Sutras of Patanjali 1.35',
+    explanation: 'This verse celebrates the transformative power of a deeply held purpose or vision. When we commit ourselves to something greater than our ordinary concerns, the usual mental limitations — doubt, distraction, fear — dissolve naturally. Patanjali recognizes that inspiration is itself a form of yogic attainment, one that frees the mind from its habitual constraints.',
   },
   {
     text: 'The restraint of the modifications of the mind is yoga. Then the seer abides in its own nature.',
     source: 'Yoga Sutras of Patanjali 1.2–3',
+    explanation: 'This pair of sutras gives both the definition and the result of yoga. When the fluctuations of the mind are stilled, the true Self (the seer) rests in its own essential nature rather than being identified with thoughts and emotions. It is a two-part promise: practice leads to stillness, and stillness reveals who you really are beneath the mental noise.',
   },
   {
     text: 'Success is nearest to those whose efforts are intense and sincere.',
     source: 'Yoga Sutras of Patanjali 1.21',
+    explanation: 'Patanjali acknowledges that progress in yoga varies among practitioners, but those who bring fierce dedication and genuine sincerity will progress most quickly. This is not about straining or forcing but about the depth of one\'s commitment and the wholehearted quality of one\'s engagement. It encourages practitioners to bring their full energy and authenticity to the path.',
   },
   {
     text: 'With the practice of concentration on a single object, the mind becomes tranquil.',
     source: 'Yoga Sutras of Patanjali 1.32',
+    explanation: 'Patanjali teaches that focusing the mind on one point — whether the breath, a mantra, or any chosen object — is the direct remedy for mental restlessness. The scattered mind, pulled in many directions, creates agitation; single-pointed attention gathers that scattered energy into calm focus. This is the basic technique underlying virtually all meditation traditions.',
   },
   {
     text: 'Ignorance is the field for the others — whether they are dormant, attenuated, interrupted, or fully active.',
     source: 'Yoga Sutras of Patanjali 2.4',
+    explanation: 'Patanjali identifies ignorance (avidya) as the root cause from which all other mental afflictions grow — like a field that nourishes weeds. Whether other afflictions like ego, attachment, aversion, and fear are currently active, weakened, dormant, or temporarily interrupted, they all depend on fundamental ignorance for their existence. Addressing ignorance at the root is more effective than fighting each affliction individually.',
   },
   {
     text: 'The causes of suffering are not seeing things as they are, the sense of "I," attachment, aversion, and clinging to life.',
     source: 'Yoga Sutras of Patanjali 2.3',
+    explanation: 'Patanjali identifies the five kleshas (afflictions) that cause all human suffering: ignorance of our true nature, ego-identification, craving for pleasure, resistance to pain, and the deep-seated fear of death. These are not moral failings but natural tendencies of the mind that can be observed and gradually released through practice. Recognizing these patterns in ourselves is the first step toward freedom from them.',
   },
   {
     text: 'Non-attachment is the mastery of consciousness whereby one is free from craving for objects seen or heard about.',
     source: 'Yoga Sutras of Patanjali 1.15',
+    explanation: 'Patanjali defines vairagya (non-attachment) not as suppression or denial but as a mastery — a mature state where the pull of external objects, whether experienced directly or merely imagined, no longer controls the mind. This freedom comes not from avoiding the world but from understanding that lasting fulfillment cannot be found in anything external. It is a liberation of desire, not a deprivation.',
   },
   {
     text: 'When disturbed by negative thoughts, cultivate the opposite mental attitude.',
     source: 'Yoga Sutras of Patanjali 2.33',
     sanskrit: 'वितर्कबाधने प्रतिपक्षभावनम्',
+    explanation: 'This sutra offers one of the most practical tools in the Yoga Sutras: pratipaksha bhavana, or the cultivation of opposite thoughts. When hatred arises, cultivate love; when fear arises, cultivate courage. This is not about denial or suppression but about actively redirecting the mind\'s energy. It is a cognitive reframing technique that yogis have used for millennia and that modern psychology has independently validated.',
   },
   {
     text: 'The study of the self leads to communion with the chosen deity.',
     source: 'Yoga Sutras of Patanjali 2.44',
+    explanation: 'Patanjali teaches that svadhyaya — self-study, which includes both the study of sacred texts and introspective self-inquiry — creates a direct connection with the divine. By studying ourselves honestly, we discover the universal within the personal. This sutra encourages both intellectual study and contemplative self-reflection as complementary paths to spiritual realization.',
   },
   {
     text: 'By self-purification, one discovers one\'s own body and senses, which then become free from contamination.',
     source: 'Yoga Sutras of Patanjali 2.40',
+    explanation: 'Patanjali teaches that the practice of shaucha (purity) — both physical cleanliness and mental clarity — leads to a transformed relationship with one\'s own body and senses. Rather than being enslaved by bodily impulses, the practitioner develops a clear, detached awareness of the body as an instrument. This is not rejection of the body but a healthy refinement of one\'s relationship with it.',
   },
   {
     text: 'Posture should be steady and comfortable. It is mastered by relaxation of effort and meditation on the infinite.',
     source: 'Yoga Sutras of Patanjali 2.46–47',
+    explanation: 'Patanjali\'s instructions for asana (posture) are surprisingly minimal — simply that it should be stable and easeful. Mastery comes not through strain but through releasing unnecessary tension and expanding awareness beyond the body. This teaching corrects the modern misconception that yoga postures are about achievement or flexibility; they are about finding a seat of alert relaxation for meditation.',
   },
   {
     text: 'Non-violence, truth, non-stealing, moderation, and non-possessiveness are the five universal great vows.',
     source: 'Yoga Sutras of Patanjali 2.30',
+    explanation: 'Patanjali lists the five yamas — ethical restraints that form the moral foundation of yoga practice. These are called \'great vows\' because they apply universally, regardless of time, place, or circumstance. They are not arbitrary rules but natural expressions of a mind that is becoming clear and compassionate. Without this ethical foundation, the deeper practices of yoga cannot bear fruit.',
   },
   {
     text: 'Purity, contentment, austerity, self-study, and surrender to God constitute the observances.',
     source: 'Yoga Sutras of Patanjali 2.32',
+    explanation: 'The five niyamas (personal observances) complement the yamas and together form the ethical framework of the eight-limbed yoga path. While the yamas govern our relationship with others, the niyamas guide our inner life — how we care for ourselves, approach learning, and relate to the divine. Together, they create the stable foundation upon which meditation and spiritual insight can develop.',
   },
   {
     text: 'Through sustained practice and the cultivation of dispassion, the mind can be stilled.',
     source: 'Yoga Sutras of Patanjali 1.12',
     sanskrit: 'अभ्यासवैराग्याभ्यां तन्निरोधः',
+    explanation: 'Patanjali identifies the two essential tools for achieving yoga: abhyasa (persistent practice) and vairagya (dispassion or non-attachment). Practice builds the strength and skill needed to focus the mind, while dispassion removes the pull of distractions. Together they work like two wings of a bird — both are necessary for the journey. This teaching applies to any discipline where mastery requires both effort and letting go.',
   },
   {
     text: 'When non-violence is established, in the yogi\'s presence all hostilities cease.',
     source: 'Yoga Sutras of Patanjali 2.35',
+    explanation: 'Patanjali describes the extraordinary power (siddhi) that arises when ahimsa (non-violence) is fully established in a person. The effect is not just internal but radiates outward — even hostile beings become peaceful in the presence of one who is truly non-violent. This teaching suggests that genuine inner peace is contagious and that transforming ourselves is the most powerful way to transform the world around us.',
   },
   {
     text: 'When one is established in truthfulness, actions and their results become subservient to that person.',
     source: 'Yoga Sutras of Patanjali 2.36',
+    explanation: 'Patanjali teaches that when satya (truthfulness) becomes absolute in a person, their words gain the power to manifest reality. Whatever they say comes true because there is no gap between their speech and the fabric of truth itself. While this sounds miraculous, it points to a practical truth: integrity and honesty create a life where our words carry real weight and our intentions align with outcomes.',
   },
   {
     text: 'When non-stealing is established, all jewels present themselves.',
     source: 'Yoga Sutras of Patanjali 2.37',
+    explanation: 'Patanjali teaches that when asteya (non-stealing) is fully established — meaning one has no desire to take what is not freely given — abundance naturally flows to that person. This paradox reveals a deep truth: grasping and scarcity thinking repel prosperity, while genuine contentment and generosity attract it. Letting go of the impulse to grasp is the surest path to receiving.',
   },
   {
     text: 'Suffering that has not yet come can be avoided. The cause of avoidable suffering is the union of the seer with the seen.',
     source: 'Yoga Sutras of Patanjali 2.16–17',
+    explanation: 'Patanjali offers the hopeful teaching that while past suffering cannot be undone, future suffering can be prevented. The cause of avoidable suffering is the confusion of the Self (the seer) with external objects and experiences (the seen). By learning to distinguish pure awareness from what it observes, we can prevent the entanglement that leads to pain. This is the core purpose of yoga practice.',
   },
   {
     text: 'The mind becomes clear and serene when the qualities of the heart are cultivated: friendliness toward the joyful, compassion toward the suffering, happiness toward the pure, and impartiality toward the impure.',
     source: 'Yoga Sutras of Patanjali 1.33',
+    explanation: 'This is another rendering of Patanjali\'s four brahmaviharas (divine attitudes) for maintaining mental equanimity. Rather than reacting unconsciously to different types of people — with jealousy, pity, resentment, or judgment — these four responses keep the heart open and the mind at peace. This teaching is a complete social yoga, offering the right inner stance for every human encounter.',
   },
   {
     text: 'Or, the mind can be calmed by concentrating on the exhaled and inhaled breath.',
     source: 'Yoga Sutras of Patanjali 1.34',
+    explanation: 'Patanjali offers breath awareness as one of the simplest and most accessible methods for calming the mind. By directing attention to the natural rhythm of breathing, the mind\'s restless fluctuations gradually subside. This technique requires no special setting or preparation and can be practiced anywhere. It remains one of the most widely used meditation methods across all contemplative traditions.',
   },
   {
     text: 'The eight limbs of yoga are restraint, observance, posture, breath control, withdrawal of the senses, concentration, meditation, and absorption.',
     source: 'Yoga Sutras of Patanjali 2.29',
+    explanation: 'This sutra outlines Patanjali\'s famous Ashtanga (eight-limbed) path, which provides a comprehensive framework for spiritual development. The limbs progress from ethical conduct (yamas and niyamas) through physical practice (asana and pranayama) to increasingly subtle inner disciplines (pratyahara, dharana, dhyana, and samadhi). Together they form an integrated system where each stage supports and depends on the others.',
   },
   {
     text: 'Yoga is the journey of the Self, through the Self, to the Self.',
     source: 'Yoga Sutras of Patanjali',
+    explanation: 'This poetic summary captures the essence of the yogic path: the traveler, the road, and the destination are all the same Self. There is nowhere to go and nothing external to acquire — yoga is the process of the Self recognizing itself. This teaching is both humbling and encouraging: everything needed for the journey is already within you.',
   },
   {
     text: 'Undisturbed calmness of mind is attained by cultivating friendliness toward the happy, compassion for the unhappy, delight in the virtuous, and indifference toward the wicked.',
     source: 'Yoga Sutras of Patanjali 1.33',
+    explanation: 'This third rendering of sutra 1.33 emphasizes that undisturbed calmness — not mere temporary relaxation — is the fruit of these four attitudes. The teaching recognizes that our peace of mind is most often disrupted by our reactions to other people. By consciously choosing the appropriate response for each situation, we protect our inner stillness while remaining fully engaged with the world.',
   },
   {
     text: 'The practice of yoga destroys the impurities of the body and mind, after which maturity of knowledge leads to discriminative wisdom.',
     source: 'Yoga Sutras of Patanjali 2.28',
+    explanation: 'Patanjali describes a natural progression: consistent yoga practice first removes the accumulated impurities (physical toxins, mental habits, emotional blockages) that cloud perception. As these clear, genuine knowledge naturally matures into viveka — the ability to discriminate between the real and the unreal, the permanent and the transient. This wisdom is the direct path to liberation.',
   },
   {
     text: 'Ishvara is a special Purusha untouched by suffering, actions, results of actions, or desires.',
     source: 'Yoga Sutras of Patanjali 1.24',
+    explanation: 'Patanjali defines Ishvara (God or the Supreme Being) as a unique consciousness that, unlike individual souls, has never been subject to the kleshas (afflictions), karma, or its results. This is not a creator God in the Western sense but a perfect model of pure consciousness — the exemplar of what every soul truly is beneath its accumulated conditioning. Devotion to Ishvara is offered as one path to liberation.',
   },
   {
     text: 'The word which expresses Ishvara is Om. One should repeat it and contemplate upon its meaning.',
     source: 'Yoga Sutras of Patanjali 1.27–28',
     sanskrit: 'तस्य वाचकः प्रणवः। तज्जपस्तदर्थभावनम्।',
+    explanation: 'Patanjali prescribes the practice of Om repetition (japa) and contemplation of its meaning as a direct path to connecting with Ishvara. Om is considered the primordial sound that contains the essence of all reality. The practice is not mechanical recitation but a meditative absorption in the sound and its significance. This is one of the simplest yet most profound practices offered in the Yoga Sutras.',
   },
   {
     text: 'From that practice, the consciousness turns inward and obstacles are overcome.',
     source: 'Yoga Sutras of Patanjali 1.29',
+    explanation: 'Patanjali teaches that the regular practice of Om repetition and contemplation has a dual effect: it naturally redirects awareness inward, away from the distractions of the external world, and it removes the obstacles that block spiritual progress. This sutra assures practitioners that the practice itself generates the conditions for its own deepening — a virtuous cycle of inner turning and obstacle removal.',
   },
   {
     text: 'Disease, dullness, doubt, carelessness, laziness, sensuality, false perception, failure to reach firm ground, and slipping from the ground gained — these are the obstacles that distract the mind.',
     source: 'Yoga Sutras of Patanjali 1.30',
+    explanation: 'Patanjali catalogues nine specific obstacles (antarayas) that every practitioner will encounter on the yogic path. They range from physical (disease) through psychological (doubt, laziness) to spiritual (false perception, backsliding). By naming them explicitly, Patanjali normalizes these difficulties — they are expected, not signs of failure. Recognizing them when they arise is the first step to overcoming them.',
   },
   {
     text: 'The practice of concentration on a single subject is the best way to prevent the obstacles and their accompaniments.',
     source: 'Yoga Sutras of Patanjali 1.32',
+    explanation: 'Patanjali prescribes single-pointed concentration (eka-tattva-abhyasa) as the master remedy for all the obstacles listed in the previous sutra. Rather than fighting each obstacle individually, steady focus on one chosen object gathers the mind\'s scattered energy and naturally prevents distractions from taking hold. This teaches that simplicity and consistency of practice are more powerful than complexity.',
   },
   {
     text: 'Samadhi is the state in which only the meaning of the object of meditation shines forth, as if devoid of the meditator\'s own form.',
     source: 'Yoga Sutras of Patanjali 3.3',
+    explanation: 'Patanjali describes samadhi — the culmination of meditation — as a state where the boundary between meditator and object dissolves. The practitioner\'s individual identity (their \'form\') becomes transparent, and only the essence of the object of meditation remains. This is not unconsciousness but the highest clarity, where knowing happens without the interference of the ego. It is the goal toward which all yoga practice leads.',
   },
   {
     text: 'Liberation comes when the purity of the intelligence equals the purity of the soul.',
     source: 'Yoga Sutras of Patanjali 3.56',
+    explanation: 'In this sutra, Patanjali describes kaivalya (liberation) as the moment when the buddhi (discriminative intelligence) becomes as pure and clear as the purusha (soul) itself. At that point, there is no longer any distortion or coloring in the mind, and the soul recognizes itself fully. This teaching tells us that liberation is not an escape from the mind but a purification of it to the point of perfect transparency.',
   },
 
   // ── Thirukkural (176–205) ──
   {
     text: 'What good is a lamp to a person who is blind? What good is scripture to a person who has no wisdom?',
     source: 'Thirukkural 395',
+    explanation: 'Thiruvalluvar, the revered Tamil poet, uses a striking analogy to stress that knowledge without understanding is useless — like light to one who cannot see. Sacred texts only transform those who approach them with a receptive, discerning mind. The practical lesson is to cultivate inner wisdom alongside external learning, because information alone does not lead to growth.',
   },
   {
     text: 'Even the ignorant can achieve knowledge if they begin with sincerity. The journey of a thousand miles begins with one step.',
     source: 'Thirukkural 391',
+    explanation: 'Thiruvalluvar encourages everyone, regardless of their starting point, that sincere effort is the gateway to learning. No one is born wise — knowledge is earned through humble, persistent study. This couplet reminds us never to be ashamed of what we do not yet know, but to begin where we are and trust the process of steady improvement.',
   },
   {
     text: 'The wound inflicted by fire heals in time, but the wound inflicted by the tongue never heals.',
     source: 'Thirukkural 129',
+    explanation: 'Thiruvalluvar, the ancient Tamil poet, highlights that physical wounds heal but hurtful words leave permanent scars on the heart. This couplet is a timeless reminder to speak with care, especially in anger. Before saying something harsh, consider that the listener may carry those words for a lifetime.',
   },
   {
     text: 'Among all possessions, the most distinguished are those of learning, for all other possessions may perish.',
     source: 'Thirukkural 400',
+    explanation: 'Thiruvalluvar ranks education as the supreme form of wealth because it can never be stolen, destroyed, or diminished by misfortune. Material riches come and go, but what you have learned stays with you and grows with use. This is a powerful motivation to invest in knowledge and skills rather than placing all your security in external possessions.',
   },
   {
     text: 'Gratitude is the fairest blossom which springs from the soul.',
     source: 'Thirukkural 101',
+    explanation: 'In the Thirukkural, gratitude is not merely good manners but a spiritual quality that beautifies the person who practices it. Thiruvalluvar teaches that remembering and honoring help received is among the highest virtues. Cultivating gratitude daily — through reflection or simple thanks — enriches your inner life and strengthens your relationships.',
   },
   {
     text: 'It is the quality of the great to help others, even when they themselves are in distress.',
     source: 'Thirukkural 220',
+    explanation: 'Thiruvalluvar defines true greatness not by status but by selflessness — the willingness to serve others even while enduring personal hardship. This couplet from the chapter on charity challenges the notion that we must be comfortable before we can give. In daily life, even a small act of kindness during your own difficult time demonstrates extraordinary character.',
   },
   {
     text: 'The wealth that does not diminish, even when given away freely, is the wealth of knowledge.',
     source: 'Thirukkural 396',
+    explanation: 'Thiruvalluvar emphasizes that unlike money or material goods, knowledge actually multiplies when shared with others. Teaching what you know does not deplete you but deepens your own understanding. This couplet encourages generosity with your expertise and learning, recognizing that intellectual wealth is the only kind that grows by giving it away.',
   },
   {
     text: 'Sweet words, free from falsehood, are more effective than all offerings and sacrifices.',
     source: 'Thirukkural 95',
+    explanation: 'Thiruvalluvar places kind and truthful speech above all religious rituals, suggesting that how we speak matters more than any ceremony. Words that are both pleasant and honest create trust and harmony far more effectively than elaborate outward gestures. The daily takeaway is simple: speak gently and truthfully, and you will do more good than any grand offering could achieve.',
   },
   {
     text: 'A home without love is like a body without a soul.',
     source: 'Thirukkural 78',
+    explanation: 'From the chapter on domestic virtue, Thiruvalluvar teaches that a household gains its true life and purpose from the love shared within it, not from its material comforts. A loveless home, however grand, is spiritually empty — like a body from which the animating spirit has departed. This encourages us to prioritize warmth, affection, and mutual care as the foundation of family life.',
   },
   {
     text: 'There is nothing too difficult for a person who has determination.',
     source: 'Thirukkural 594',
+    explanation: 'Thiruvalluvar celebrates unyielding resolve as the force that makes the impossible possible. This couplet, from the chapter on exertion, asserts that obstacles shrink before a determined will. It is a call to persist when challenges arise — not with reckless stubbornness, but with focused, patient effort that refuses to accept defeat prematurely.',
   },
   {
     text: 'The seed of virtue grows when watered by rain; the rain of good character nourishes a bountiful harvest.',
     source: 'Thirukkural 11',
+    explanation: 'From the opening chapter on the praise of rain, Thiruvalluvar draws a parallel between natural rainfall and moral character. Just as rain sustains all life on earth, a person of good character sustains and nourishes the community around them. The message is that virtue, like water, is not a luxury but a necessity — and cultivating it creates abundance for everyone.',
   },
   {
     text: 'Those who speak pleasant words to all will reap a harvest of love.',
     source: 'Thirukkural 93',
+    explanation: 'Thiruvalluvar connects the quality of our speech directly to the quality of our relationships. Words spoken with kindness and sincerity plant seeds of goodwill that grow into deep, lasting bonds. The practical wisdom here is straightforward: make a habit of speaking warmly to everyone you encounter, and love will naturally flow back to you.',
   },
   {
     text: 'A person\'s greatest ornament is modesty; humility is their most becoming garment.',
     source: 'Thirukkural 960',
+    explanation: 'Thiruvalluvar uses the metaphor of clothing and jewelry to teach that humility adorns a person more beautifully than any external finery. Modesty does not mean self-deprecation, but rather a grounded awareness that prevents arrogance. In everyday interactions, approaching others with humility opens doors, earns respect, and keeps you receptive to learning.',
   },
   {
     text: 'Patience is strength. Impulsiveness is weakness in the guise of strength.',
     source: 'Thirukkural 153',
+    explanation: 'From the chapter on forbearance, Thiruvalluvar redefines what it means to be strong. Reacting impulsively may feel powerful in the moment, but it is actually a sign of being controlled by circumstances. True strength lies in the ability to pause, absorb provocation, and respond with measured wisdom — a skill that protects both your peace and your relationships.',
   },
   {
     text: 'The world rests on the strength of one who endures insults and forgives the wrongdoer.',
     source: 'Thirukkural 151',
+    explanation: 'Thiruvalluvar elevates forgiveness to a world-sustaining virtue, teaching that society depends on those who can absorb harm without retaliating. This couplet opens the chapter on forbearance and sets the highest standard for moral courage. In practice, forgiving someone who has wronged you is not weakness but an act of strength that breaks the cycle of harm.',
   },
   {
     text: 'Virtue yields heaven\'s honor and earth\'s wealth. What is there then that is more profitable than virtue?',
     source: 'Thirukkural 31',
+    explanation: 'In the opening section on virtue, Thiruvalluvar makes a practical case for ethical living: it brings rewards both in this life and beyond. Far from being an abstract ideal, virtue is presented as the most profitable investment one can make. This reframing helps us see that doing the right thing is not a sacrifice but the surest path to lasting prosperity and respect.',
   },
   {
     text: 'Learning is a treasure that accompanies its owner everywhere.',
     source: 'Thirukkural 400',
+    explanation: 'Thiruvalluvar praises education as the only wealth that travels with you and cannot be confiscated, lost in a disaster, or divided among heirs. Unlike gold or property, learning enriches you in every situation and every land. This couplet inspires lifelong learning as the most reliable form of security and self-sufficiency.',
   },
   {
     text: 'Even an enemy will refrain from doing harm to those who never cease to do good.',
     source: 'Thirukkural 313',
+    explanation: 'Thiruvalluvar teaches that persistent goodness has a disarming power — even those who wish you ill will eventually hesitate to act against someone who consistently does right. This couplet, from the chapter on not doing evil, shows that virtue is also a form of self-protection. The practical lesson is to stay on the path of good conduct regardless of opposition, trusting that it will eventually neutralize hostility.',
   },
   {
     text: 'Those who lack kindness lack everything. Those who have kindness have everything.',
     source: 'Thirukkural 247',
+    explanation: 'Thiruvalluvar distills all virtue into a single quality: kindness. No matter how much wealth, talent, or power a person possesses, without kindness they are spiritually bankrupt. Conversely, a kind person, even with nothing else, possesses the essence of a good life. This encourages making kindness the non-negotiable core of how you treat others each day.',
   },
   {
     text: 'It is compassion, the most gracious of virtues, that moves the world.',
     source: 'Thirukkural 571',
+    explanation: 'Thiruvalluvar identifies compassion as the driving force behind all meaningful progress in society. From the chapter on kindly rule, this couplet argues that leaders and individuals alike advance the world not through power but through empathy. The takeaway is to let compassion guide your decisions — in leadership, in friendships, and in how you respond to the suffering of others.',
   },
   {
     text: 'An ounce of doing good outweighs a ton of preaching.',
     source: 'Thirukkural 260',
+    explanation: 'Thiruvalluvar values action over words, teaching that a single deed of genuine help carries more moral weight than endless lectures on virtue. This couplet challenges hypocrisy and reminds us that character is demonstrated through behavior, not speech. In daily life, focus on what you actually do for others rather than what you say about doing good.',
   },
   {
     text: 'Anger kills the cheerful look, generosity kills miserliness, truth kills falsehood, and patience kills agitation.',
     source: 'Thirukkural 309',
+    explanation: 'Thiruvalluvar presents a series of opposites to show that negative qualities are overcome by cultivating their positive counterparts. Anger destroys joy, but generosity defeats greed, truth defeats lies, and patience conquers restlessness. The practical wisdom is clear: rather than fighting negative traits directly, nurture the corresponding virtues and let them naturally displace what is harmful.',
   },
   {
     text: 'To live in the world without an awareness of the meaning of the world is like wandering about in a great library without touching the books.',
     source: 'Thirukkural 407',
+    explanation: 'Thiruvalluvar uses the beautiful image of an untouched library to describe a life lived without reflection or curiosity. The world is rich with meaning, but that meaning must be actively sought — it does not reveal itself to the indifferent. This couplet urges us to engage deeply with life, to ask questions, and to seek understanding rather than sleepwalking through our days.',
   },
   {
     text: 'Like the letter "A" standing at the head of all letters, so is the Primal Deity standing at the head of this world.',
     source: 'Thirukkural 1',
+    explanation: 'This is the very first couplet of the Thirukkural, and it sets the tone for the entire work by invoking the divine. In Tamil, the letter "A" (akaaram) begins the alphabet, just as God is the origin of all creation. Thiruvalluvar teaches that acknowledging a source greater than oneself is the foundation of wisdom and humility in all pursuits.',
   },
   {
     text: 'Food, clothing, and shelter are the fundamental needs. There is no virtue greater than providing these to those in need.',
     source: 'Thirukkural 226',
+    explanation: 'Thiruvalluvar grounds his ethics in practical compassion, arguing that meeting basic human needs is the highest form of charity. Rather than abstract philosophizing, he insists that feeding the hungry, clothing the cold, and sheltering the homeless are the most direct expressions of virtue. This couplet calls us to act on compassion in tangible, immediate ways.',
   },
   {
     text: 'He alone is wise who keeps the friendship of the good.',
     source: 'Thirukkural 441',
+    explanation: 'Thiruvalluvar measures wisdom not by intellectual achievement but by the quality of one\'s companions. Choosing to surround yourself with virtuous, trustworthy people is itself an act of intelligence. The practical advice is to be intentional about your friendships — seek out those who elevate your character, and be willing to distance yourself from those who do not.',
   },
   {
     text: 'All wealth will come to the industrious person whose efforts never flag.',
     source: 'Thirukkural 616',
+    explanation: 'From the chapter on industriousness, Thiruvalluvar promises that persistent, unflagging effort will attract all forms of prosperity. This is not a guarantee of instant results but an affirmation that steady work compounds over time. The lesson is to stay consistent in your endeavors — wealth, in its many forms, gravitates toward those who refuse to give up.',
   },
   {
     text: 'Like water taking the shape of the vessel that holds it, the character of people is shaped by the company they keep.',
     source: 'Thirukkural 452',
+    explanation: 'Thiruvalluvar uses a vivid analogy to warn that we unconsciously absorb the values and habits of those around us, just as water conforms to whatever container holds it. This couplet is a call to choose your environment deliberately. Surround yourself with people of integrity and aspiration, because their influence will shape your character whether you notice it or not.',
   },
   {
     text: 'Men of worth achieve what seems impossible to others by their immovable resolve.',
     source: 'Thirukkural 661',
+    explanation: 'From the chapter on firmness in action, Thiruvalluvar attributes extraordinary accomplishment not to luck or talent but to unwavering determination. What separates those who achieve great things from those who do not is often simply the refusal to quit. This couplet inspires you to set ambitious goals and hold to them with a resolve that does not bend under pressure.',
   },
   {
     text: 'Even enemies will bow before the person who has perfect self-control.',
     source: 'Thirukkural 124',
+    explanation: 'Thiruvalluvar teaches that mastery over oneself commands a respect so powerful that even adversaries acknowledge it. Self-control — over speech, emotions, and impulses — is the ultimate form of authority. In daily life, cultivating composure in difficult situations earns a quiet respect that no amount of aggression or argument could achieve.',
   },
 
   // ── Mahabharata & Ramayana (206–245) ──
@@ -867,30 +973,37 @@ export const reflections: Reflection[] = [
     text: 'Non-violence is the highest dharma. Non-violence is the highest self-control. Non-violence is the greatest gift.',
     source: 'Mahabharata, Anushasana Parva',
     sanskrit: 'अहिंसा परमो धर्मः',
+    explanation: 'This famous declaration from the Mahabharata places ahimsa (non-violence) at the pinnacle of all ethical conduct. Spoken during Bhishma\'s final teachings from his deathbed of arrows, it affirms that refraining from harm is not passive weakness but the highest expression of self-mastery and generosity. In practice, this extends beyond physical violence to include speech and thought — choosing not to harm in any form is the greatest gift you can offer the world.',
   },
   {
     text: 'Dharma exists for the welfare of all beings. Hence, that by which the welfare of all living beings is sustained, that is dharma.',
     source: 'Mahabharata, Shanti Parva 109.10',
+    explanation: 'From the Shanti Parva, the book of peace and governance, this verse defines dharma not as rigid religious law but as whatever sustains the well-being of all creatures. It offers a universal ethical standard: any action that genuinely promotes the welfare of living beings is righteous. This empowers you to evaluate choices not by convention alone but by their real impact on the lives they touch.',
   },
   {
     text: 'One should never do that to another which one regards as injurious to oneself. This, in brief, is the rule of dharma.',
     source: 'Mahabharata, Anushasana Parva 113.8',
+    explanation: 'This is the Mahabharata\'s version of the Golden Rule, articulated thousands of years ago. Bhishma teaches Yudhishthira that the simplest test of right action is to imagine being on the receiving end. When faced with an ethical dilemma, this verse offers an immediate, practical guide: if you would not want it done to you, do not do it to another.',
   },
   {
     text: 'This is the sum of duty: do not do to others what would cause pain if done to you.',
     source: 'Mahabharata 5.15.17',
+    explanation: 'Another powerful expression of the Golden Rule from the Udyoga Parva, this verse condenses all of ethical duty into a single principle. Its beauty lies in its simplicity — no elaborate philosophy is needed when empathy serves as your moral compass. Before any action that affects others, pause and ask yourself whether you would welcome the same treatment.',
   },
   {
     text: 'As a person acts, so does that person become. The doer of good becomes good; the doer of evil becomes evil.',
     source: 'Mahabharata, Shanti Parva',
+    explanation: 'This verse from the Shanti Parva captures the essence of karma as a character-shaping force: you are not simply punished or rewarded for your actions, but transformed by them. Every good deed strengthens your capacity for goodness, while every harmful act deepens destructive tendencies. The practical insight is that daily choices, however small, are constantly sculpting who you are becoming.',
   },
   {
     text: 'By forgiveness, the universe is held together. Forgiveness is the might of the mighty; forgiveness is sacrifice; forgiveness is the Vedas; forgiveness is the sacred text.',
     source: 'Mahabharata, Udyoga Parva 33.48',
+    explanation: 'Spoken during the negotiations before the great war, this verse elevates forgiveness to a cosmic principle — the very glue that holds the universe together. It equates forgiveness with the highest religious acts: sacrifice, scripture, and sacred knowledge. For daily life, this teaches that letting go of grudges is not a sign of defeat but the most powerful and spiritually significant act available to a strong person.',
   },
   {
     text: 'Truth is the highest dharma; charity is the highest wealth; truthfulness, the greatest austerity; and non-injury to beings, the greatest gift.',
     source: 'Mahabharata, Shanti Parva',
+    explanation: 'This verse from the Shanti Parva establishes a hierarchy of virtues, with truth and non-violence at the summit. It redefines wealth as generosity and austerity as honesty, turning conventional values on their heads. The practical message is to orient your life around these four pillars — truthfulness, charity, integrity, and harmlessness — as they form the foundation of a genuinely prosperous life.',
   },
   {
     text: 'Time ripens all things. No one becomes learned or wise by chance.',
