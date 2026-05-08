@@ -235,150 +235,186 @@ export const reflections: Reflection[] = [
   {
     text: 'The wise unify their consciousness and abandon attachment to the fruits of action, which binds one to continual rebirth. In this way, they attain a state beyond all suffering.',
     source: 'Bhagavad Gita 2.51',
+    explanation: 'Krishna connects the dots between non-attachment and liberation from the cycle of suffering (samsara). When we stop fixating on outcomes, we stop generating the karmic patterns that trap us in repetitive cycles of desire and disappointment. The practical application is noticing when you are working primarily for a reward — money, praise, status — and shifting your focus back to the quality and integrity of the work itself.',
   },
   {
     text: 'All created beings are unmanifest in their beginning, manifest in their interim state, and unmanifest again when they are annihilated. So what need is there for lamentation?',
     source: 'Bhagavad Gita 2.28',
+    explanation: 'Krishna places individual existence within the vast cycle of manifestation and dissolution. Before birth we existed in potential form; after death we return to that unmanifest state. Only the brief middle is visible. This cosmic perspective reduces the tragedy of impermanence by showing it as a natural rhythm rather than an aberration. When grieving a loss, it can help to remember that form is temporary while essence endures.',
   },
   {
     text: 'The three gates to self-destructive hell are lust, anger, and greed. Therefore, one must learn to give these up.',
     source: 'Bhagavad Gita 16.21',
+    explanation: 'Krishna identifies lust (kama), anger (krodha), and greed (lobha) as the three root poisons that lead to personal destruction. These are not external demons but internal tendencies that, when left unchecked, distort judgment and damage relationships. The practical discipline is vigilant self-observation: catch these impulses early, name them, and choose not to act on them before they escalate into harmful behavior.',
   },
   {
     text: 'When one sees eternity in things that pass away and infinity in finite things, then one has pure knowledge.',
     source: 'Bhagavad Gita 18.20',
+    explanation: 'Krishna describes sattvic knowledge — the ability to perceive the unchanging reality behind all changing forms. A flower wilts, but the life-force that animated it is eternal; a person ages, but the awareness within is timeless. This way of seeing transforms ordinary perception into spiritual vision. In daily life, practice looking past the surface of things — behind every temporary form is something permanent and infinite.',
   },
   {
     text: 'Delusion arises from anger. The mind is bewildered by delusion. Reasoning is destroyed when the mind is bewildered. One falls down when reasoning is destroyed.',
     source: 'Bhagavad Gita 2.63',
+    explanation: 'This alternate phrasing of the downward spiral from 2.63 emphasizes the sequential nature of the collapse: each stage makes the next inevitable. Like dominos falling, once anger triggers delusion, the chain is difficult to stop. The verse serves as an emotional early-warning system. When you notice even mild irritation arising, that is the best moment to intervene — before the cascade into confusion and poor decisions begins.',
   },
   {
     text: 'I give the knowledge, to those who are ever united with me and worship me with love, by which they come to me.',
     source: 'Bhagavad Gita 10.10',
+    explanation: 'Krishna promises buddhi-yoga — the yoga of divine understanding — to those who maintain loving, constant connection with the Divine. This knowledge is not intellectual learning but an intuitive clarity that guides one unerringly toward truth. The practical application is that regular devotional practice — prayer, chanting, meditation, or simply holding the Divine in awareness throughout the day — opens channels of insight that mere study cannot.',
   },
   {
     text: 'The embodied soul is eternal in existence, indestructible, and infinite.',
     source: 'Bhagavad Gita 2.18',
+    explanation: 'Krishna distills the essence of Vedantic philosophy into a single statement: the true Self (atman) within every body is eternal, cannot be destroyed, and has no limits. The body is finite; the dweller within is not. This understanding can profoundly shift how we relate to aging, illness, and death — not as the end of who we are, but as transitions within an infinite existence.',
   },
   {
     text: 'The one who offers me with devotion a leaf, a flower, a fruit, or water — that offering of love, from the striving soul, is dear to me.',
     source: 'Bhagavad Gita 9.26',
     sanskrit: 'पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति',
+    explanation: 'Krishna declares that the simplest offering — a leaf, a flower, a fruit, even water — is cherished by the Divine when given with genuine devotion. This radically democratizes worship: you do not need wealth, elaborate rituals, or special status to connect with the sacred. The practical lesson is that sincerity of heart matters infinitely more than the grandeur of the gesture. A heartfelt act of love, however small, is enough.',
   },
   {
     text: 'There has never been a time when you and I have not existed, nor will there be a time when we will cease to exist.',
     source: 'Bhagavad Gita 2.12',
+    explanation: 'Krishna begins his metaphysical teaching by asserting the eternal nature of all individual souls — not just his own divinity, but Arjuna\'s and everyone else\'s too. Existence is not a brief flicker between birth and death but an unbroken continuum stretching infinitely in both directions. This perspective can ease existential anxiety: you have always been, and you will always be, in some form.',
   },
   {
     text: 'To those who are constantly devoted and who worship me with love, I give the understanding by which they can come to me.',
     source: 'Bhagavad Gita 10.10',
+    explanation: 'In this alternate rendering of 10.10, the emphasis falls on constancy and love as prerequisites for receiving divine understanding. Krishna does not demand perfection — only steady, heartfelt devotion. The understanding that arises is not given as a reward but as a natural consequence of sustained loving attention. In practice, maintaining a daily spiritual routine, even a brief one, builds the continuity that opens doors to deeper insight.',
   },
   {
     text: 'The spirit is beyond destruction. No one can bring an end to the spirit which is everlasting.',
     source: 'Bhagavad Gita 2.17',
+    explanation: 'Krishna continues to build the case for the indestructibility of the Self (atman), providing Arjuna with the philosophical ground to act without fear. If the spirit cannot be destroyed by anyone or anything, then the grief and fear that paralyze us arise from a misunderstanding of what we truly are. Carry this reassurance into moments of vulnerability: your essential being is untouchable by external events.',
   },
   {
     text: 'Whenever dharma declines and the purpose of life is forgotten, I manifest myself on earth.',
     source: 'Bhagavad Gita 4.7',
     sanskrit: 'यदा यदा हि धर्मस्य ग्लानिर्भवति भारत',
+    explanation: 'Krishna introduces the concept of divine incarnation (avatara) — the idea that whenever the world falls into moral and spiritual darkness, the Divine takes form to restore balance. This is not just a theological claim but a pattern: in every era, wisdom teachers arise to guide humanity back on course. The practical hope is that even in the darkest times, corrective forces are always at work, and we can be part of that restoration.',
   },
   {
     text: 'The actions of a great person serve as an ideal for all the people. Whatever standard a great person sets, the whole world follows.',
     source: 'Bhagavad Gita 3.21',
+    explanation: 'Krishna explains why leaders and exemplary individuals must be especially mindful of their behavior: others look to them and follow their example, consciously or not. This principle of leadership by example applies to parents, teachers, managers, and anyone in a position of influence. The practical lesson is that your actions set a standard for those around you — live the values you wish to see in others.',
   },
   {
     text: 'Among all things I am the seed. There is no being, moving or unmoving, that can exist without me.',
     source: 'Bhagavad Gita 10.39',
+    explanation: 'Krishna identifies himself as the essential seed — the origin and sustaining principle — of every living and non-living thing in the universe. Nothing can exist independently of this divine source. The practical implication is a deeper reverence for all of creation: every plant, rock, animal, and person carries within it the same fundamental divine spark that sustains all of existence.',
   },
   {
     text: 'One who has control over the mind is tranquil in heat and cold, in pleasure and pain, and in honor and dishonor.',
     source: 'Bhagavad Gita 6.7',
+    explanation: 'Krishna describes the hallmark of mental mastery: equanimity across all dualities. Whether facing physical discomfort, emotional highs and lows, or social praise and criticism, the person with a disciplined mind remains centered. This does not mean indifference — it means not being thrown off balance. The daily practice is to notice your reactions to praise and blame equally, and cultivate a stable inner ground that weathers both.',
   },
   {
     text: 'Free from anger and selfish desire, unified in mind, those who follow the path of yoga and realize the Self are established forever in that supreme state.',
     source: 'Bhagavad Gita 5.26',
+    explanation: 'Krishna outlines the qualities of those who attain lasting liberation: freedom from reactive anger, absence of selfish craving, and a unified mind that is not pulled in contradictory directions. The word "forever" emphasizes that this state, once truly attained, is permanent — unlike temporary peace that fades when circumstances change. The path begins with small daily choices to respond rather than react, and to align actions with deeper values.',
   },
   {
     text: 'Humility, modesty, nonviolence, patience, simplicity, service of the teacher, purity, steadfastness, and self-control — these are declared as knowledge.',
     source: 'Bhagavad Gita 13.8',
+    explanation: 'Krishna redefines "knowledge" not as information or intellectual achievement but as a set of living virtues. True knowledge is embodied in how you carry yourself — with humility, patience, and self-restraint — rather than in what you can recite. This verse serves as a personal checklist: rather than asking "how much do I know?", ask "how humbly, patiently, and simply am I living?"',
   },
   {
     text: 'I am time, the great destroyer of the worlds.',
     source: 'Bhagavad Gita 11.32',
     sanskrit: 'कालोऽस्मि लोकक्षयकृत्प्रवृद्धो',
+    explanation: 'In the awe-inspiring Vishvarupa chapter, Krishna reveals his cosmic form and declares himself to be time (kala) — the ultimate force that consumes all things. This is not cruelty but the natural order: time dissolves everything to make way for renewal. Confronting this truth honestly removes the illusion that anything material is permanent and motivates us to use our limited time wisely, focusing on what truly matters.',
   },
   {
     text: 'He who is satisfied with gain which comes of its own accord, who is free from duality and does not envy, who is steady in both success and failure, is never entangled, although performing actions.',
     source: 'Bhagavad Gita 4.22',
+    explanation: 'Krishna paints a portrait of the truly free person: one who is content with what life brings unsought, who transcends the see-saw of opposites, and who works without karmic entanglement. The key phrase is "satisfied with gain which comes of its own accord" — not passivity, but a deep trust that what you need will arrive. Practically, this means doing your work excellently while remaining at peace with whatever results come, without envying others\' gains.',
   },
   {
     text: 'Abandon all varieties of dharma and simply surrender unto me. I shall deliver you from all sinful reactions. Do not fear.',
     source: 'Bhagavad Gita 18.66',
     sanskrit: 'सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज',
+    explanation: 'Known as the charama shloka (final verse of instruction), this is Krishna\'s ultimate teaching — total surrender to the Divine. After 17 chapters of various paths and practices, Krishna says that the simplest and most direct path is complete trust and self-offering. "Do not fear" are the reassuring closing words. In practice, this is an invitation to release the exhausting need to figure everything out alone and trust in a wisdom greater than your own.',
   },
   {
     text: 'The steady, calm, and devoted person, with senses controlled, attains peace. But the uncontrolled person, lacking discrimination, is lost.',
     source: 'Bhagavad Gita 2.64',
+    explanation: 'Krishna contrasts two paths: the disciplined person who attains peace through sensory self-mastery and devotion, and the undisciplined person who is swept away by impulses. "Senses controlled" does not mean rigid suppression but wise governance — choosing which stimuli to engage with and which to set aside. In daily life, this means creating healthy boundaries with technology, food, entertainment, and anything that scatters your attention.',
   },
   {
     text: 'For the soul there is never birth nor death. It has not come into being, does not come into being, and will not come into being. It is unborn, eternal, ever-existing.',
     source: 'Bhagavad Gita 2.20',
+    explanation: 'This expanded rendering of verse 2.20 covers all three tenses — past, present, and future — to emphasize the absolute timelessness of the soul. It has never not existed and can never cease to exist. The repetitive structure is intentional, hammering home an idea so contrary to everyday experience that it requires emphasis. Meditating on this truth can bring a profound calm, especially when facing mortality or major life transitions.',
   },
   {
     text: 'The Supreme Lord is situated in everyone\'s heart, and is directing the wanderings of all living entities.',
     source: 'Bhagavad Gita 18.61',
+    explanation: 'Near the end of the Gita, Krishna reveals the Paramatma — the Supreme Self dwelling within every heart, guiding each being\'s journey through existence. This is not puppet-mastery but loving guidance from within. The practical insight is that an inner compass is always available: when you feel lost or confused, turning inward through quiet reflection or meditation can reconnect you with a wisdom that knows the way.',
   },
   {
     text: 'The yogi who is satisfied in the Self, in the Self alone, who is illumined — such a person is said to be in union with the infinite.',
     source: 'Bhagavad Gita 6.18',
+    explanation: 'Krishna describes the state of a yogi who has found complete contentment within, needing nothing external for fulfillment. This "union with the infinite" (yoga) is not an otherworldly trance but a deep satisfaction rooted in self-knowledge. The practical aspiration is to gradually reduce dependence on external sources of happiness — possessions, approval, status — and discover the wellspring of contentment that already exists within.',
   },
   {
     text: 'Whatever happened in the past, it happened for the good. Whatever is happening, is happening for the good. Whatever shall happen in the future, shall happen for the good only. Do not weep for the past, do not worry for the future. Concentrate on your present life.',
     source: 'Bhagavad Gita',
+    explanation: 'This extended popular paraphrase captures the Gita\'s teachings on trust and presence. By adding the explicit instruction to focus on the present, it distills the entire text into a practical mantra. The past cannot be changed, the future cannot be controlled — only this moment is available for action. This is both a spiritual teaching and a psychological one: present-moment awareness is the antidote to regret and anxiety alike.',
   },
   {
     text: 'On this path effort is never wasted, and there is no failure. Even a little effort toward spiritual awareness will protect you from the greatest fear.',
     source: 'Bhagavad Gita 2.40',
+    explanation: 'This rendering of 2.40 emphasizes the unique nature of the spiritual path: unlike worldly ventures where partial effort can mean total loss, every moment of spiritual practice accumulates and never goes to waste. Even across lifetimes, according to Gita philosophy, spiritual progress carries forward. The practical encouragement is immense: there is literally no way to fail on this path as long as you keep taking steps, however small.',
   },
   {
     text: 'One should engage oneself in the practice of yoga with determination and faith and not be deviated from the path.',
     source: 'Bhagavad Gita 6.24',
+    explanation: 'Krishna prescribes two essential ingredients for spiritual progress: determination (sankalpa) and faith (shraddha). Without determination, practice becomes sporadic and ineffective; without faith, doubt erodes motivation. Together, they create the resilience needed to stay on course when distractions and discouragements arise. The practical advice is to commit to your practice with both grit and trust, especially on the days when it feels pointless.',
   },
   {
     text: 'There is no purifier in this world like knowledge. One who has attained purity of heart through prolonged practice of yoga finds this knowledge within, in due course.',
     source: 'Bhagavad Gita 4.38',
+    explanation: 'This alternate translation of 4.38 draws a direct line between sustained yogic practice and the emergence of purifying knowledge. The "purity of heart" is not moral perfection but a progressive clearing away of mental distortions that allows truth to be seen. The practical lesson underscores patience and consistency: deep understanding is not something you force but something that reveals itself through long, faithful practice.',
   },
   {
     text: 'The steadily devoted soul attains unadulterated peace because he offers the result of all activities to me; whereas a person who is not in union with the Divine is greedy for the fruits of labor and becomes entangled.',
     source: 'Bhagavad Gita 5.12',
+    explanation: 'Krishna contrasts two modes of living: the devoted person who offers all outcomes to the Divine and thereby attains peace, versus the self-centered person who hoards results and becomes trapped in anxiety. "Offering results" is not passive resignation but an active practice of releasing ownership over outcomes after doing your best. In daily work, this might look like completing a project wholeheartedly and then mentally handing the result over, accepting whatever follows.',
   },
   {
     text: 'As the heat of a fire reduces wood to ashes, the fire of knowledge burns to ashes all karma.',
     source: 'Bhagavad Gita 4.37',
+    explanation: 'Krishna uses a powerful metaphor: just as fire transforms wood into ash regardless of the type of wood, true self-knowledge dissolves all accumulated karma — both good and bad. This is not about erasing consequences but about transcending the cycle of cause and effect through awakened awareness. The practical hope is that genuine understanding can free you from even deeply entrenched patterns and past mistakes.',
   },
   {
     text: 'The self-controlled and devoted person who has command over the senses, who has understood truth, achieves tranquility.',
     source: 'Bhagavad Gita 4.39',
+    explanation: 'Krishna outlines a clear sequence: self-control and devotion lead to sensory mastery, which opens the door to understanding truth, which culminates in lasting tranquility. Each quality supports the next in an ascending chain. The practical message is that tranquility is not a gift of luck or temperament — it is a skill built through deliberate practice of self-discipline and sincere seeking of truth.',
   },
   {
     text: 'He from whom all beings originate and by whom all this is pervaded — worshipping him through the performance of one\'s own duty, a person attains perfection.',
     source: 'Bhagavad Gita 18.46',
+    explanation: 'Krishna unites worship and work in a single teaching: performing your own duty (svadharma) with awareness that the Divine pervades everything is itself the highest form of worship. You do not need to leave your profession or daily life to achieve spiritual perfection — you need to infuse your existing responsibilities with sacred intention. This makes every honest occupation a spiritual practice when performed with devotion and awareness.',
   },
   {
     text: 'One who neither rejoices nor grieves, neither likes nor dislikes, who has renounced both auspicious and inauspicious things — such a devotee is very dear to me.',
     source: 'Bhagavad Gita 12.17',
+    explanation: 'In the Bhakti Yoga chapter, Krishna describes the ideal devotee as one who has transcended the duality of attraction and aversion. This equanimity extends even to traditionally "good" and "bad" events — both are met with the same centered awareness. The practical challenge is to notice how quickly we label experiences as desirable or undesirable, and to practice receiving life with an open, non-judgmental presence.',
   },
   {
     text: 'The knowledge of the sacred scriptures is meaningless unless it is translated into action.',
     source: 'Bhagavad Gita 3.20',
+    explanation: 'Krishna stresses that knowledge hoarded in the intellect without being lived is sterile. The Gita itself is set on a battlefield — a place of action — precisely to make this point. Spiritual wisdom must be tested and expressed in real-world situations to have value. The practical reminder is: after reading, reflecting, or studying, ask yourself "How will I apply this today?" and then do it.',
   },
   {
     text: 'Out of compassion for them, I, dwelling in their hearts, destroy with the shining lamp of knowledge the darkness born of ignorance.',
     source: 'Bhagavad Gita 10.11',
+    explanation: 'Krishna portrays the Divine as an inner light that actively dispels the darkness of ignorance — not from outside, but from within the devotee\'s own heart. The motivation is compassion, not judgment. This verse assures us that the universe is fundamentally benevolent toward those who seek truth. In practice, when you feel confused or lost, trust that clarity is already present within you, waiting to emerge through sincere seeking.',
   },
   {
     text: 'All the senses have been disciplined by one who has achieved wisdom. Such a person is said to be of steady intelligence.',
     source: 'Bhagavad Gita 2.68',
+    explanation: 'Krishna concludes his description of the sthitaprajna — the person of steady wisdom — by noting that sensory discipline is both a sign and a result of true understanding. When wisdom dawns, the senses naturally come under control, not through force but through a shift in what captivates the mind. The practical insight is that lasting self-control is a byproduct of deeper understanding, not just willpower — pursue wisdom, and discipline follows.',
   },
 
   // ── Upanishads (81–140) ──
