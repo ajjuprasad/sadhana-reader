@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
@@ -36,6 +36,147 @@ const CATEGORY_COLORS: Record<string, { color: string; bg: string }> = {
   jayanti:   { color: '#2E7D32', bg: 'rgba(46, 125, 50, 0.10)' },
   vrata:     { color: '#AD1457', bg: 'rgba(173, 20, 87, 0.10)' },
 };
+
+interface PanchangaBasic {
+  tithi?: string;
+  tithiSanskrit?: string;
+  nakshatra?: string;
+  nakshatraSanskrit?: string;
+}
+
+function PanchangaTile({ panchanga, navigate }: { panchanga: ReturnType<typeof getPanchangaSnapshot>; navigate: ReturnType<typeof useNavigate> }) {
+  const [daily, setDaily] = useState<PanchangaBasic>({});
+
+  useEffect(() => {
+    import('../lib/panchangaEngine')
+      .then((mod) => mod.computeDailyPanchanga(new Date(), 12.9716, 77.5946))
+      .then((result) => {
+        setDaily({
+          tithi: `${result.tithi.paksha} ${result.tithi.info.name}`,
+          tithiSanskrit: result.tithi.info.sanskrit,
+          nakshatra: result.nakshatra.info.name,
+          nakshatraSanskrit: result.nakshatra.info.sanskrit,
+        });
+      })
+      .catch(() => {});
+  }, []);
+
+  return (
+    <motion.button
+      className="w-full text-left rounded-2xl overflow-hidden mb-8 group focus:outline-none focus:ring-2 focus:ring-saffron"
+      style={{
+        backgroundColor: 'var(--color-bg-card)',
+        boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
+      }}
+      initial={{ opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={tileTransition(4)}
+      whileHover={{ scale: 1.01 }}
+      whileTap={{ scale: 0.99 }}
+      onClick={() => navigate('/panchanga/today')}
+    >
+      <div className="p-5 sm:p-6">
+        <div className="flex items-center justify-between mb-3">
+          <p
+            className="font-label font-semibold uppercase text-[0.6rem] tracking-[0.14em]"
+            style={{ color: 'var(--color-accent-primary)' }}
+          >
+            Today's Pañchāṅga
+          </p>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: 'var(--color-text-muted)' }}>
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </div>
+
+        {panchanga.hinduMonth && (
+          <p
+            className="font-display font-bold text-base mb-2"
+            style={{ color: 'var(--color-text-primary)' }}
+          >
+            {panchanga.hinduMonth.name} · {panchanga.hinduMonth.sanskrit}
+            <span
+              className="font-hind font-normal text-xs ml-2"
+              style={{ color: 'var(--color-text-muted)' }}
+            >
+              {panchanga.hinduMonth.season}
+            </span>
+          </p>
+        )}
+
+        {daily.tithi && (
+          <div className="flex flex-col gap-1 mb-2">
+            <div className="flex items-center gap-2">
+              <span className="font-hind font-medium text-[0.6rem] uppercase tracking-wider w-14" style={{ color: 'var(--color-text-muted)' }}>Tithi</span>
+              <span className="font-hind text-sm" style={{ color: 'var(--color-text-primary)' }}>{daily.tithi}</span>
+              <span className="font-body text-xs" style={{ color: 'var(--color-accent-primary)', opacity: 0.8 }}>{daily.tithiSanskrit}</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="font-hind font-medium text-[0.6rem] uppercase tracking-wider w-14" style={{ color: 'var(--color-text-muted)' }}>Star</span>
+              <span className="font-hind text-sm" style={{ color: 'var(--color-text-primary)' }}>{daily.nakshatra}</span>
+              <span className="font-body text-xs" style={{ color: 'var(--color-accent-primary)', opacity: 0.8 }}>{daily.nakshatraSanskrit}</span>
+            </div>
+          </div>
+        )}
+
+        {panchanga.todayEvent && (
+          <div
+            className="flex items-center gap-2 mb-2 px-3 py-2 rounded-lg"
+            style={{
+              backgroundColor: CATEGORY_COLORS[panchanga.todayEvent.category]?.bg ?? 'rgba(255,153,51,0.08)',
+            }}
+          >
+            <span
+              className="font-label font-semibold text-[0.6rem] uppercase tracking-wider px-1.5 py-0.5 rounded"
+              style={{
+                color: CATEGORY_COLORS[panchanga.todayEvent.category]?.color ?? 'var(--color-accent-primary)',
+              }}
+            >
+              Today
+            </span>
+            <span
+              className="font-hind font-medium text-sm"
+              style={{ color: 'var(--color-text-primary)' }}
+            >
+              {panchanga.todayEvent.name}
+            </span>
+          </div>
+        )}
+
+        {panchanga.upcoming.length > 0 && (
+          <div className="flex flex-col gap-1.5">
+            {panchanga.upcoming.map((event) => (
+              <div key={event.date + event.name} className="flex items-center gap-2">
+                <span
+                  className="font-label font-semibold text-[0.55rem] uppercase tracking-wider flex-shrink-0"
+                  style={{ color: CATEGORY_COLORS[event.category]?.color ?? 'var(--color-text-muted)' }}
+                >
+                  in {event.daysUntil}d
+                </span>
+                <span
+                  className="font-hind text-xs"
+                  style={{ color: 'var(--color-text-secondary)' }}
+                >
+                  {event.name}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
+
+        <p
+          className="font-hind text-xs mt-3 flex items-center gap-1"
+          style={{ color: 'var(--color-accent-primary)' }}
+        >
+          View full pañchāṅga
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </p>
+      </div>
+    </motion.button>
+  );
+}
 
 export default function HomeScreen() {
   const navigate = useNavigate();
@@ -315,93 +456,7 @@ export default function HomeScreen() {
           </motion.div>
 
           {/* ── Panchanga Quick-View ── */}
-          <motion.button
-            className="w-full text-left rounded-2xl overflow-hidden mb-8 group focus:outline-none focus:ring-2 focus:ring-saffron"
-            style={{
-              backgroundColor: 'var(--color-bg-card)',
-              boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
-            }}
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={tileTransition(4)}
-            whileHover={{ scale: 1.01 }}
-            whileTap={{ scale: 0.99 }}
-            onClick={() => navigate('/panchanga')}
-          >
-            <div className="p-5 sm:p-6">
-              <div className="flex items-center justify-between mb-3">
-                <p
-                  className="font-label font-semibold uppercase text-[0.6rem] tracking-[0.14em]"
-                  style={{ color: 'var(--color-accent-primary)' }}
-                >
-                  Today's Pañchāṅga
-                </p>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: 'var(--color-text-muted)' }}>
-                  <polyline points="9 18 15 12 9 6" />
-                </svg>
-              </div>
-
-              {panchanga.hinduMonth && (
-                <p
-                  className="font-display font-bold text-base mb-2"
-                  style={{ color: 'var(--color-text-primary)' }}
-                >
-                  {panchanga.hinduMonth.name} · {panchanga.hinduMonth.sanskrit}
-                  <span
-                    className="font-hind font-normal text-xs ml-2"
-                    style={{ color: 'var(--color-text-muted)' }}
-                  >
-                    {panchanga.hinduMonth.season}
-                  </span>
-                </p>
-              )}
-
-              {panchanga.todayEvent && (
-                <div
-                  className="flex items-center gap-2 mb-2 px-3 py-2 rounded-lg"
-                  style={{
-                    backgroundColor: CATEGORY_COLORS[panchanga.todayEvent.category]?.bg ?? 'rgba(255,153,51,0.08)',
-                  }}
-                >
-                  <span
-                    className="font-label font-semibold text-[0.6rem] uppercase tracking-wider px-1.5 py-0.5 rounded"
-                    style={{
-                      color: CATEGORY_COLORS[panchanga.todayEvent.category]?.color ?? 'var(--color-accent-primary)',
-                    }}
-                  >
-                    Today
-                  </span>
-                  <span
-                    className="font-hind font-medium text-sm"
-                    style={{ color: 'var(--color-text-primary)' }}
-                  >
-                    {panchanga.todayEvent.name}
-                  </span>
-                </div>
-              )}
-
-              {panchanga.upcoming.length > 0 && (
-                <div className="flex flex-col gap-1.5">
-                  {panchanga.upcoming.map((event) => (
-                    <div key={event.date + event.name} className="flex items-center gap-2">
-                      <span
-                        className="font-label font-semibold text-[0.55rem] uppercase tracking-wider flex-shrink-0"
-                        style={{ color: CATEGORY_COLORS[event.category]?.color ?? 'var(--color-text-muted)' }}
-                      >
-                        in {event.daysUntil}d
-                      </span>
-                      <span
-                        className="font-hind text-xs"
-                        style={{ color: 'var(--color-text-secondary)' }}
-                      >
-                        {event.name}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          </motion.button>
+          <PanchangaTile panchanga={panchanga} navigate={navigate} />
 
           {/* ── Explore ── */}
           <motion.div

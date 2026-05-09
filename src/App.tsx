@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { AnimatePresence } from 'framer-motion';
@@ -14,6 +14,8 @@ import AboutPage from './components/AboutPage';
 import StoriesPage from './components/StoriesPage';
 import StoryDetail from './components/StoryDetail';
 import ReflectionDetail from './components/ReflectionDetail';
+
+const DailyPanchangaPage = lazy(() => import('./components/DailyPanchangaPage'));
 import MandalaBackground from './components/MandalaBackground';
 import NarrationPlayer from './components/NarrationPlayer';
 import { useSettings } from './hooks/useSettings';
@@ -81,6 +83,7 @@ export default function App() {
             <Route path="/favorites" element={<FavoritesPage />} />
             <Route path="/coming-soon" element={<ComingSoonPage />} />
             <Route path="/panchanga" element={<CalendarPage />} />
+            <Route path="/panchanga/today" element={<Suspense fallback={null}><DailyPanchangaPage /></Suspense>} />
             <Route path="/stories" element={<StoriesPage />} />
             <Route path="/story/:storyId" element={<StoryDetail />} />
             <Route path="/reflection/:index" element={<ReflectionDetail />} />
