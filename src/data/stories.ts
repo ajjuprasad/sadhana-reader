@@ -9,6 +9,8 @@ export interface Story {
   characters: string[];
   paragraphs: string[];
   isNew?: boolean;
+  premium?: boolean;
+  price?: number;
 }
 
 export const stories: Story[] = [
@@ -281,6 +283,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "When someone you love is in trouble, do whatever it takes — even if it means going above and beyond.",
     characters: ["Hanuman", "Rama", "Lakshmana", "Sushena", "The Sanjeevani Herb"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "The great battle in Lanka was raging. Rama's army of monkeys and bears was fighting the demons. It was the fiercest battle the world had ever seen.",
       "In the middle of the fighting, Lakshmana — Rama's beloved younger brother — was hit by a terrible magical weapon. He fell to the ground, unconscious, barely breathing.",
@@ -305,6 +309,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "A true hero fights for what is right, even when they know they might not win.",
     characters: ["Jatayu", "Ravana", "Sita", "Rama", "Lakshmana"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "Jatayu was a very old eagle — the king of all birds. He had been friends with Rama's father for many years. He was old, his feathers were grey, and his wings were not as strong as they used to be. But his heart was brave as ever.",
       "One day, while Rama and Lakshmana were away from their forest cottage, the demon king Ravana came in a golden flying chariot. He grabbed Sita and flew away into the sky!",
@@ -329,6 +335,8 @@ export const stories: Story[] = [
     moral: "True determination means trying again and again, no matter how many times you fail. Persistence is the mark of a great person.",
     characters: ["King Vikramaditya", "The Betaal (Ghost)", "The Sage"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "King Vikramaditya was the bravest and wisest king in all of India. People said he was afraid of nothing — not demons, not darkness, not even death.",
       "One night, a mysterious sage asked Vikram for help. \"There is a ghost called Betaal hanging from a tree in the cremation ground. Bring him to me in silence. If you speak a single word, he will fly back to his tree.\"",
@@ -353,6 +361,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "When you give with love, you always get back more than you gave.",
     characters: ["Krishna", "The Fruit Seller"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "In the little village of Vrindavan, there lived a fruit seller. Every morning, she would carry a big basket of fruits on her head and walk through the streets, calling out, \"Fruits! Fresh fruits! Come buy my lovely fruits!\"",
       "One sunny day, baby Krishna heard her voice. He loved fruits! He ran to his mother Yashoda and said, \"Amma! I want fruits! Can I have some?\"",
@@ -375,6 +385,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "Stand up to those who hurt others — but give them a chance to change their ways.",
     characters: ["Krishna", "Kaliya", "The villagers of Vrindavan"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "The Yamuna river near Vrindavan was the most beautiful river in the world. Children played on its banks, cows drank from its waters, and peacocks danced beside it.",
       "But one day, a huge, terrible serpent named Kaliya moved into the river. Kaliya had many hoods and his poison was so strong that it turned the water black and boiling hot. The fish died. The birds that flew over the river fell from the sky.",
@@ -398,6 +410,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "A true leader protects everyone and stands up to bullies, no matter how powerful they are.",
     characters: ["Krishna", "Indra", "The villagers of Vrindavan"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "In the village of Vrindavan, everyone was getting ready for a big celebration. Every year, the villagers prayed to Indra, the god of rain, and gave him lots of food and gifts so that he would send good rain for their crops.",
       "Little Krishna watched everyone working so hard. \"Why do we pray to Indra?\" he asked. The elders said, \"Because he gives us rain!\"",
@@ -422,6 +436,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "The whole universe is full of wonder — sometimes the most amazing things are hidden in the most ordinary places.",
     characters: ["Krishna", "Yashoda", "Balarama"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "Little Krishna and his big brother Balarama were playing in the garden. They were rolling in the mud, chasing butterflies, and having the best time.",
       "Balarama suddenly ran to mother Yashoda. \"Amma! Amma! Krishna is eating dirt!\" he said, pointing.",
@@ -446,6 +462,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "Sharing and love make everything sweeter — and a little mischief makes life fun!",
     characters: ["Krishna", "Yashoda", "The Gopis"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "In the village of Vrindavan, everyone knew that little Krishna was the naughtiest boy around. And what he loved most in the whole world was — BUTTER!",
       "His mother Yashoda made fresh butter every morning. She would churn the yogurt — splish, splash, splish, splash — until thick, creamy white butter formed on top. Then she would store it in clay pots, high up on a rope shelf where little hands could not reach.",
@@ -470,6 +488,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "Never be afraid to ask questions — curiosity and courage lead to the greatest knowledge.",
     characters: ["Nachiketa", "Vajashrava", "Yama"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "Once, a wise man named Vajashrava held a big ceremony where he promised to give away all his most precious things. His young son Nachiketa watched carefully.",
       "But Nachiketa noticed something wrong. His father was giving away old, sick cows that could barely walk! \"Father,\" Nachiketa said, \"you should give your best, not your worst. To whom will you give me? I am your most precious thing!\"",
@@ -494,6 +514,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "True courage comes from faith and doing what is right, even when you are scared.",
     characters: ["Prahlada", "Hiranyakashipu", "Holika", "Lord Vishnu"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "There once was a powerful demon king named Hiranyakashipu. He was so strong that even the gods were afraid of him. He wanted everyone in the world to pray only to him.",
       "But his own little son, Prahlada, was different. Prahlada loved Lord Vishnu with all his heart. He would sit quietly and say, \"Om Namo Narayanaya,\" no matter what anyone said.",
@@ -516,6 +538,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "Real strength is not about muscles — it comes from a calm mind and a pure heart.",
     characters: ["Rama", "Sita", "King Janaka", "The Princes"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "Princess Sita was the most kind and graceful princess in all the land. Her father, King Janaka, loved her very much and wanted to find the perfect husband for her.",
       "In the palace, there was an ancient bow that belonged to Lord Shiva himself. It was ENORMOUS — so heavy that it took 300 strong men just to carry it into the room on a giant iron cart.",
@@ -540,6 +564,8 @@ export const stories: Story[] = [
     moral: "Courage is not about being big or having a huge army. It is about standing up for what is right, no matter the odds.",
     characters: ["Rani Abbakka", "The Portuguese Soldiers", "The People of Ullal"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "Long ago, on the western coast of India, there was a small kingdom called Ullal. It was beautiful, with coconut trees, golden beaches, and happy people. And it had the bravest queen in all of India — Rani Abbakka.",
       "The Portuguese had come from far across the sea with big ships and powerful cannons. They wanted to capture Indian ports and control all the trade. One by one, they conquered the coastal towns.",
@@ -563,6 +589,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "True love, combined with courage and cleverness, can overcome even the greatest obstacles.",
     characters: ["Savitri", "Satyavan", "Yama"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "Princess Savitri was as brave as she was beautiful. When it was time to choose a husband, she traveled across the land and fell in love with Satyavan, a prince who lived in the forest because his father had lost his kingdom.",
       "But a wise man warned her: \"Satyavan is a wonderful man, but he is destined to die exactly one year from today.\"",
@@ -588,6 +616,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "God does not care about how rich or important you are. He only cares about the love in your heart.",
     characters: ["Shabari", "Rama", "Lakshmana"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "Deep in the forest, there lived an old woman named Shabari. She was very simple and poor. She lived in a tiny hut and had no fancy clothes or gold.",
       "But Shabari had one dream — to meet Lord Rama someday. Her teacher had told her, \"Rama will come to you one day. Just keep waiting and believing.\"",
@@ -611,6 +641,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "Taking care of your parents is one of the most beautiful things you can do.",
     characters: ["Shravan Kumar", "His Parents", "King Dasharatha"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "In a small village, there lived a boy named Shravan Kumar. He was the most caring and loving son anyone had ever seen. His parents were old and blind — they could not see anything at all.",
       "Even though life was hard, Shravan never complained. He cooked for his parents, cleaned the house, washed their clothes, and told them stories to make them smile.",
@@ -633,6 +665,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "True friends love you for who you are, not what you have. A gift given with love is the greatest gift.",
     characters: ["Krishna", "Sudama"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "Sudama and Krishna were best friends when they were little boys in school. They studied together, played together, and shared everything. Then they grew up and went their separate ways.",
       "Krishna became a great king and lived in a golden palace in the city of Dwaraka. Sudama became a poor priest who lived in a tiny hut. He barely had enough food for his family.",
@@ -658,6 +692,8 @@ export const stories: Story[] = [
     moral: "Clever thinking turns impossible demands into opportunities for wit.",
     characters: ["Tenali Raman", "King Krishnadevaraya", "The Royal Cook"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "King Krishnadevaraya loved brinjals — eggplants cooked in every possible way. One week, the royal cook prepared brinjal curry, brinjal fry, brinjal sambar, brinjal chutney, and stuffed brinjals. The king ate them all with great enthusiasm.",
       "After seven straight days of brinjal dishes, the king suddenly felt sick of them. \"I never want to see another brinjal again!\" he declared. \"Tenali, issue a royal decree — brinjals are BANNED from the kingdom!\"",
@@ -680,6 +716,8 @@ export const stories: Story[] = [
     moral: "A clever mind can outsmart even the most dangerous situations without using any force.",
     characters: ["Tenali Raman", "His Wife", "The Thieves"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "Tenali Raman was the cleverest man in the court of King Krishnadevaraya of Vijayanagara. He was famous for solving problems that no one else could — using nothing but his sharp wit.",
       "One hot summer night, Tenali Raman was lying in bed when he whispered to his wife, \"I think there are thieves outside our house. I saw shadows moving near the garden.\"",
@@ -704,6 +742,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "Everyone sees the world differently. Before arguing, try to understand someone else's point of view.",
     characters: ["The Six Blind Men", "The Elephant", "The King"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "Once, six blind men lived in a village. They had heard about elephants but had never seen one. One day, a king brought an elephant to their village. \"Now you can find out what an elephant is like!\" he said.",
       "The six blind men rushed forward excitedly. Each one touched a different part of the elephant.",
@@ -729,6 +769,8 @@ export const stories: Story[] = [
     moral: "Be proud of who you are. Pretending to be someone else may fool others for a while, but the truth always comes out.",
     characters: ["The Jackal", "The Forest Animals", "The Other Jackals"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "Once upon a time, a jackal named Chandarava lived near a village. One evening, he was so hungry that he sneaked into the village looking for food.",
       "But the village dogs spotted him! They chased him through the narrow streets, barking and snapping. Chandarava ran for his life!",
@@ -753,6 +795,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "Great things happen when people work together — even people who don't always get along.",
     characters: ["The Devas", "The Asuras", "Lord Vishnu", "Vasuki", "Mount Mandara"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "A long, long time ago, the gods — called the Devas — were feeling very weak. They had lost all their power! A grumpy sage had cursed them, and now the Asuras — the demons — were winning every battle.",
       "Lord Vishnu said, \"There is a way to get your power back. Deep in the ocean, there is a magic drink called Amrit — the nectar of immortality. Whoever drinks it will become strong forever. But to get it, you must churn the whole ocean!\"",
@@ -775,6 +819,8 @@ export const stories: Story[] = [
     moral: "Intelligence and strategy can overcome brute force.",
     characters: ["The Crow", "The Fox", "The Snake"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "A crow and her mate built their nest in a tall banyan tree near a palace. Every spring they laid eggs and looked forward to raising their chicks. But a big black cobra lived in a hollow at the base of the same tree.",
       "Every time the eggs hatched, the cobra would slither up and eat the baby chicks while the parents were away finding food. Year after year, the crows lost their children. The mother crow was heartbroken.",
@@ -796,6 +842,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "There is no shame in asking for help. When you call out sincerely, help will come.",
     characters: ["Gajendra", "The Crocodile", "Lord Vishnu"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "In a beautiful forest, there lived a mighty elephant king named Gajendra. He was the biggest and strongest elephant in the land. All the other animals looked up to him.",
       "One hot summer day, Gajendra led his herd to a cool lake. \"Ahh!\" he trumpeted happily as he waded into the water. He splashed and played, spraying water everywhere.",
@@ -820,6 +868,8 @@ export const stories: Story[] = [
     moral: "Treat every living creature with respect. Kindness to nature is never wasted — but betraying trust always has consequences.",
     characters: ["The Farmer", "The Cobra", "The Farmer's Son"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "A poor farmer noticed that a large cobra lived in an anthill at the edge of his field. Most people would have been afraid, but the farmer was respectful. \"You are also a creature of this earth,\" he said.",
       "Every day, the farmer would leave a saucer of milk near the anthill. And every morning, he would find a gold coin in the empty saucer! The cobra was rewarding his kindness.",
@@ -844,6 +894,8 @@ export const stories: Story[] = [
     moral: "Always use your own judgment. If something sounds too good to be true, it probably is.",
     characters: ["The Old Lion", "The Fox", "The Donkey"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "Deep in the forest lived an old lion who had grown too weak to hunt. His teeth were dull, his claws were blunt, and he could barely run. \"How will I eat?\" he worried.",
       "So the lion came up with a plan. He lay in his cave and spread the word that he was very sick. \"I am dying,\" he moaned. \"Please come visit me one last time.\"",
@@ -869,6 +921,8 @@ export const stories: Story[] = [
     moral: "True friends help each other in times of trouble. Together, even the smallest creatures can overcome the biggest dangers.",
     characters: ["The Deer", "The Crow", "The Mouse", "The Tortoise", "The Hunter"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "In a beautiful forest, four friends lived together — a deer, a crow, a mouse, and a tortoise. They were very different, but they loved each other dearly.",
       "Every evening, they would meet by the lake to share stories. The crow brought news from the sky. The mouse shared gossip from underground. The tortoise told wise old tales. And the deer described the meadows beyond the forest.",
@@ -894,6 +948,8 @@ export const stories: Story[] = [
     moral: "Be grateful for what you receive. Greed can turn a wonderful gift into a loss.",
     characters: ["The Mother", "The Two Daughters", "The Golden Swan"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "A poor widow lived with her two daughters in a tiny hut. They had barely enough to eat. Every day was a struggle, and the mother worried constantly about her children.",
       "One day, a beautiful swan with golden feathers landed in their yard. \"Do not be afraid,\" the swan said. \"In my past life, I was your husband. I have come back to help you.\"",
@@ -919,6 +975,8 @@ export const stories: Story[] = [
     moral: "Kindness is never wasted — it always finds its way back.",
     characters: ["Arjun", "The Elephant", "The Mahout"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "In a village at the edge of a great forest in Karnataka, a boy named Arjun helped his father collect firewood. One morning, he heard a strange sound deep in the trees — a low, pained trumpeting.",
       "Following the sound, Arjun found a young elephant sitting on the ground, holding up one foot. The elephant's eyes were wet with pain. Arjun was scared — elephants were enormous and powerful — but something about the animal's gentle eyes made him step closer.",
@@ -941,6 +999,8 @@ export const stories: Story[] = [
     moral: "Honesty is always rewarded, while dishonesty leads to loss.",
     characters: ["Ramu", "River Goddess", "Sonu"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "Near the forests of Madhya Pradesh, a poor woodcutter named Ramu earned his living by chopping wood and selling it in the market. He owned only one axe, but he kept it sharp and took good care of it.",
       "One day, while chopping a tree near the Narmada river, his axe slipped from his hands and fell into the deep water. Ramu sat on the bank and wept. Without his axe, he had no way to earn money for his family.",
@@ -962,6 +1022,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "A clever mind can solve problems that strength alone cannot.",
     characters: ["The Lion", "The Rabbit", "The Forest Animals"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "Deep in the forest, there lived a fierce lion named Bhasuraka. Every day, he would hunt and kill many animals — far more than he needed to eat. The other animals lived in constant fear.",
       "One day, all the animals held a meeting. The deer, the rabbits, the birds, the foxes — everyone came. \"We must do something!\" said the old deer. \"At this rate, there will be no animals left!\"",
@@ -986,6 +1048,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "Be kind to everyone — you never know who might save you someday.",
     characters: ["Manu", "The Fish", "Lord Vishnu"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "Long ago, a wise king named Manu was washing his hands in the river. As he scooped up water, he found a tiny little fish in his palms.",
       "\"Please don't throw me back!\" said the tiny fish. \"The big fish will eat me! Please keep me safe!\"",
@@ -1011,6 +1075,8 @@ export const stories: Story[] = [
     moral: "Never act in anger or haste. Take a moment to understand the full truth before you react.",
     characters: ["The Farmer", "The Farmer's Wife", "The Mongoose", "The Snake"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "A farmer and his wife lived in a small village with their baby son. They also had a pet mongoose — a loyal, brave little animal who loved the baby like a brother.",
       "One morning, the wife needed to go to the market. \"Watch over the baby,\" she told her husband. But the farmer also had to go to the fields. He looked at the mongoose. \"You guard the baby. I trust you.\"",
@@ -1035,6 +1101,8 @@ export const stories: Story[] = [
     moral: "Greed turns blessings into curses.",
     characters: ["Gopal", "Gopal's Wife", "The Landlord"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "In a small village near the Kaveri river, there lived a poor farmer named Gopal. He worked hard every day but barely earned enough to feed his family. One afternoon, while ploughing his field, his plough struck something hard beneath the soil.",
       "Gopal dug carefully and pulled out a large brass pot. It was old but beautiful, with strange markings around the rim. He tossed his spade inside the pot while he examined it — and gasped. When he looked inside, there were TWO spades! The pot had doubled his spade.",
@@ -1057,6 +1125,8 @@ export const stories: Story[] = [
     moral: "Those who cheat others will eventually be cheated by their own tricks.",
     characters: ["Baniya Chand", "Farmer Dharam", "The Judge"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "In the bustling market of Varanasi, a grain merchant named Chand was known for his wealth — and whispered about for his dishonesty. Farmers suspected he used rigged scales that weighed light when buying grain and heavy when selling it.",
       "A farmer named Dharam decided to test this. He brought exactly ten kilos of rice, carefully weighed at home. When Chand weighed it, his scale showed only eight kilos. \"Your rice is light, farmer,\" Chand said with a shrug. \"I'll pay for eight.\"",
@@ -1078,6 +1148,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "Stay calm in trouble and use your brain — a clever mind is the best tool you have.",
     characters: ["The Monkey", "The Crocodile", "The Crocodile's Wife"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "Once upon a time, a monkey lived in a big jamun tree by the side of a river. The tree was full of sweet, purple fruits, and the monkey was very happy.",
       "One day, a crocodile swam up to the tree and rested in the shade. The monkey, who was very friendly, threw some jamun fruits down to him. \"Here, try these! They are delicious!\"",
@@ -1103,6 +1175,8 @@ export const stories: Story[] = [
     moral: "When you find yourself in trouble, don't panic. A calm mind and a clever idea can get you out of any situation.",
     characters: ["The Monkey", "The Crocodile", "The Crocodile's Wife"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "A monkey lived in a big jamun tree by the river. Every day, he ate the sweet purple fruits and was very happy. One day, a crocodile swam up to the tree.",
       "\"Those fruits look delicious! Could I have some?\" asked the crocodile. The monkey, who was generous and friendly, tossed down a handful of jamuns. \"Of course! Have as many as you like!\"",
@@ -1128,6 +1202,8 @@ export const stories: Story[] = [
     moral: "Confidence can take you further than skill. Sometimes you just need to believe in yourself — even if it starts by accident.",
     characters: ["The Potter", "The King", "The Enemy Army"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "In a small village, there lived a simple potter who made clay pots. He was kind but quite ordinary — not strong, not brave, not clever. Just a regular man who made pots.",
       "One night, the potter had too much toddy. Stumbling home in the dark, he tripped and fell into a ditch! He smashed his head against a rock and got a huge, impressive scar across his forehead.",
@@ -1152,6 +1228,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "Changing how you look on the outside does not change who you are inside. Be proud of yourself.",
     characters: ["The Sage", "The Mouse"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "A kind old sage lived in a forest ashram. One day, a tiny mouse fell from the claws of a crow right at his feet. The sage picked up the trembling mouse and took care of it.",
       "But the little mouse was always scared. \"The cat will eat me!\" it squeaked. So the kind sage used his magical powers and turned the mouse into a cat. Problem solved!",
@@ -1175,6 +1253,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "Every effort counts, no matter how small you are.",
     characters: ["Rama", "The Squirrel", "Hanuman", "The Monkeys"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "A long, long time ago, Lord Rama needed to build a huge bridge across the ocean to reach the island of Lanka. His wife Sita had been taken there by the demon king Ravana, and Rama wanted to bring her back.",
       "Thousands of strong monkeys and bears came to help. They were big and powerful! They picked up giant rocks and boulders and carried them to the sea. Crash! Splash! The rocks made a path across the water.",
@@ -1198,6 +1278,8 @@ export const stories: Story[] = [
     moral: "Alertness and quick thinking can save you from danger.",
     characters: ["The Fox", "The Lion"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "Deep in the Vindhya forests, an old lion was growing too slow to hunt. His joints ached, his eyes were dim, and the deer always outran him. Day after day he went hungry, and he grew desperate.",
       "One day, he discovered a large cave. \"This must be some animal's home,\" he thought. \"I'll hide inside and wait. When the animal returns, I'll have an easy meal.\" He crept inside and waited in the darkness.",
@@ -1220,6 +1302,8 @@ export const stories: Story[] = [
     readingTime: 2,
     moral: "Don't give up when things are hard. Think carefully, try small steps, and you will find a way.",
     characters: ["The Crow"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "It was the hottest day of summer. The sun beat down on the dry, cracked earth. A thirsty crow flew over the land, searching desperately for water.",
       "He had been flying for hours. His wings were tired. His throat was burning. \"Water... I need water...\" he croaked weakly.",
@@ -1244,6 +1328,8 @@ export const stories: Story[] = [
     moral: "Holding on to anger and resentment only hurts you. The wisest people know when to let things go.",
     characters: ["The Elder Monk", "The Young Monk"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "Two monks were walking through the forest on a long journey. They had taken a vow never to touch any woman. The elder monk was calm and wise. The younger monk was strict and serious.",
       "They came to a river crossing. There, a young woman stood crying. \"Please help me! The water is too deep, and I cannot cross. I will drown!\"",
@@ -1267,6 +1353,8 @@ export const stories: Story[] = [
     moral: "Wisdom has no age — a sharp mind can solve what experience cannot.",
     characters: ["Vidya", "King Vikramaditya", "Minister Bhanu"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "Minister Bhanu served King Vikramaditya faithfully for thirty years. When Bhanu fell ill and could no longer attend court, the king was troubled. \"Who will give me wise counsel now?\" he asked.",
       "\"My daughter Vidya,\" Bhanu replied from his bed. \"She is only twelve, but she has read every book in my library and can solve any riddle.\" The king laughed. Surely a child could not replace his wisest minister.",
@@ -1288,6 +1376,8 @@ export const stories: Story[] = [
     readingTime: 3,
     moral: "A truly great person takes on hardship so that others can be safe and happy.",
     characters: ["Shiva", "Parvati", "The Devas", "The Asuras"],
+    premium: true,
+    price: 9,
     paragraphs: [
       "During the great churning of the ocean, many wonderful things came out — a magical cow, a beautiful goddess, a glowing jewel. Everyone was excited, waiting for the Amrit — the nectar of immortality.",
       "But suddenly, something terrible rose from the water. A thick, purple-black poison called Halahala bubbled up from the depths. It was so deadly that its fumes alone could destroy the whole world!",
@@ -1311,6 +1401,8 @@ export const stories: Story[] = [
     moral: "Courage and determination know no gender.",
     characters: ["Manikarnika (Manu)", "Nana Sahib", "Tatya Tope", "Moropant"],
     isNew: true,
+    premium: true,
+    price: 9,
     paragraphs: [
       "In the town of Bithoor, near the holy Ganga, lived a spirited girl named Manikarnika — everyone called her Manu. Her father Moropant served at the court of Peshwa Baji Rao II, so Manu grew up running through palace corridors alongside the Peshwa's adopted son, Nana Sahib.",
       "While other girls her age played with dolls, Manu demanded to learn horse riding. \"Girls don't ride horses,\" the stable master said. Manu looked at him steadily. \"Why not?\" He had no good answer, so he taught her.",

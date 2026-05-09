@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
@@ -5,7 +6,10 @@ import { stotras } from '../data/stotras';
 import StotraIcon from './StotraIcon';
 import ProfileButton from './ProfileButton';
 import FavoriteButton from './FavoriteButton';
+import PremiumBadge from './PremiumBadge';
+import PurchaseModal from './PurchaseModal';
 import { useReadCount } from '../hooks/useReadCounts';
+import { useContentAccess } from '../hooks/useContentAccess';
 import { useTranslation } from '../i18n/useTranslation';
 
 const sacredEase = [0.76, 0, 0.24, 1] as const;
@@ -16,6 +20,9 @@ export default function StotraDetail() {
   const stotra = stotras.find((s) => s.id === stotraId);
   const readCount = useReadCount(stotraId);
   const { t } = useTranslation();
+  const { canAccess } = useContentAccess();
+  const [showPurchase, setShowPurchase] = useState(false);
+  const hasAccess = stotra ? canAccess(stotra.id, stotra.premium) : true;
 
   if (!stotra) {
     return (
@@ -161,6 +168,13 @@ export default function StotraDetail() {
             {stotra.subtitle}
           </p>
 
+          {/* Premium badge */}
+          {stotra.premium && (
+            <div className="mb-3">
+              <PremiumBadge price={stotra.price} />
+            </div>
+          )}
+
           {/* Details row */}
           <div className="flex items-center justify-center gap-4 mb-5">
             <span
@@ -250,15 +264,37 @@ export default function StotraDetail() {
           )}
 
           {/* Start button */}
-          <motion.button
-            className="font-hind font-semibold text-base px-8 py-3 rounded-full text-white shadow-lg"
-            style={{ backgroundColor: 'var(--color-accent-primary)' }}
-            whileHover={{ scale: 1.05, boxShadow: '0 8px 30px rgba(255,153,51,0.3)' }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => navigate(`/read/${stotra.id}`)}
-          >
-            {t('detail.beginReading')}
-          </motion.button>
+          {hasAccess ? (
+            <motion.button
+              className="font-hind font-semibold text-base px-8 py-3 rounded-full text-white shadow-lg"
+              style={{ backgroundColor: 'var(--color-accent-primary)' }}
+              whileHover={{ scale: 1.05, boxShadow: '0 8px 30px rgba(255,153,51,0.3)' }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => navigate(`/read/${stotra.id}`)}
+            >
+              {t('detail.beginReading')}
+            </motion.button>
+          ) : (
+            <motion.button
+              className="font-hind font-semibold text-base px-8 py-3 rounded-full text-white shadow-lg"
+              style={{ backgroundColor: 'var(--color-accent-primary)' }}
+              whileHover={{ scale: 1.05, boxShadow: '0 8px 30px rgba(255,153,51,0.3)' }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => setShowPurchase(true)}
+            >
+              Unlock for ₹{stotra.price ?? 29}
+            </motion.button>
+          )}
+
+          <PurchaseModal
+            open={showPurchase}
+            contentId={stotra.id}
+            contentType="stotra"
+            title={stotra.title}
+            price={stotra.price ?? 29}
+            onClose={() => setShowPurchase(false)}
+            onSuccess={() => {}}
+          />
 
           {/* Share on WhatsApp (secondary) */}
           <div className="mt-4 flex justify-center">
