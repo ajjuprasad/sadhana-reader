@@ -1,4 +1,5 @@
 import { getFunctions, httpsCallable } from 'firebase/functions';
+import { app } from './firebase';
 
 declare global {
   interface Window {
@@ -58,7 +59,7 @@ export async function startPurchase(options: {
 }): Promise<{ success: boolean; contentId?: string }> {
   await loadRazorpayScript();
 
-  const functions = getFunctions();
+  const functions = getFunctions(app);
   const createOrderFn = httpsCallable<
     { contentId: string; contentType: string; amount: number },
     { orderId: string; amount: number; currency: string; keyId: string }

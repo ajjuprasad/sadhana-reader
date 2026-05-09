@@ -52,9 +52,9 @@ jobs:
         run: |
           echo -n "${{ secrets.RAZORPAY_KEY_ID }}" | firebase functions:secrets:set RAZORPAY_KEY_ID --data-file - --force
           echo -n "${{ secrets.RAZORPAY_KEY_SECRET }}" | firebase functions:secrets:set RAZORPAY_KEY_SECRET --data-file - --force
-          if [ -n "${{ secrets.RAZORPAY_WEBHOOK_SECRET }}" ]; then
-            echo -n "${{ secrets.RAZORPAY_WEBHOOK_SECRET }}" | firebase functions:secrets:set RAZORPAY_WEBHOOK_SECRET --data-file - --force
-          fi
+          echo -n "${WEBHOOK_SECRET:-placeholder}" | firebase functions:secrets:set RAZORPAY_WEBHOOK_SECRET --data-file - --force
+        env:
+          WEBHOOK_SECRET: ${{ secrets.RAZORPAY_WEBHOOK_SECRET }}
 
       - name: Deploy Cloud Functions
         run: firebase deploy --only functions --force
