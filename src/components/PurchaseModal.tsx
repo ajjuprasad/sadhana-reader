@@ -39,8 +39,9 @@ export default function PurchaseModal({ open, contentId, contentType, title, pri
         onSuccess();
         onClose();
       }
-    } catch {
-      setError('Payment failed. Please try again.');
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : String(err);
+      setError(msg);
     } finally {
       setPurchasing(false);
     }
@@ -67,8 +68,9 @@ export default function PurchaseModal({ open, contentId, contentType, title, pri
         onSuccess();
         onClose();
       }
-    } catch {
-      setError('Payment failed. Please try again.');
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : String(err);
+      setError(msg);
     } finally {
       setPurchasing(false);
     }
