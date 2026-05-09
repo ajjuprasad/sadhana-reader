@@ -33,6 +33,8 @@ const hanumanChalisa: Stotra = {
   ],
   estimatedMinutes: 15,
   icon: 'M16 4 L16 14 M13 8 L19 8 M12 28 L16 18 L20 28 Z M8 28 L24 28',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -351,6 +353,8 @@ const ganeshaPancharatnam: Stotra = {
   ],
   estimatedMinutes: 5,
   icon: 'M16 4 Q12 4 10 8 Q8 12 10 16 L14 16 L14 28 L18 28 L18 16 L22 16 Q24 12 22 8 Q20 4 16 4 M10 16 Q8 20 6 24 M22 16 Q24 20 26 24',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -403,6 +407,8 @@ const shivaPanchakshara: Stotra = {
   ],
   estimatedMinutes: 4,
   icon: 'M16 4 L16 28 M8 4 Q8 12 16 16 M24 4 Q24 12 16 16 M12 28 L20 28',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -455,6 +461,8 @@ const mahalakshmiAshtakam: Stotra = {
   ],
   estimatedMinutes: 6,
   icon: 'M16 8 Q12 8 10 12 Q8 16 12 20 Q14 22 16 22 Q18 22 20 20 Q24 16 22 12 Q20 8 16 8 M16 22 L16 28 M10 12 Q6 10 4 12 M22 12 Q26 10 28 12',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -535,6 +543,8 @@ const lingashtakam: Stotra = {
   ],
   estimatedMinutes: 5,
   icon: 'M16 6 C11 6 8 10 8 16 C8 22 11 26 16 26 C21 26 24 22 24 16 C24 10 21 6 16 6 M8 26 L24 26 M6 28 L26 28',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -608,6 +618,8 @@ const madhurashtakam: Stotra = {
   ],
   estimatedMinutes: 5,
   icon: 'M6 16 L26 16 M10 12 L10 20 M16 10 L16 22 M22 12 L22 20 M6 16 Q4 10 8 6 M26 16 Q28 22 24 26',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -681,6 +693,8 @@ const shivaAshtottara: Stotra = {
   ],
   estimatedMinutes: 10,
   icon: 'M8 5 L24 5 L16 16 Z M8 27 L24 27 L16 16 Z',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -796,6 +810,8 @@ const vishnuSahasranamam: Stotra = {
   ],
   estimatedMinutes: 40,
   icon: 'M16 6 L16 26 M6 16 L26 16 M8.9 8.9 L23.1 23.1 M23.1 8.9 L8.9 23.1',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -1584,6 +1600,8 @@ const venkateswaraSuprabhatam: Stotra = {
   ],
   estimatedMinutes: 8,
   icon: '',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -2548,6 +2566,8 @@ const subrahmanyaBhujangam: Stotra = {
   ],
   estimatedMinutes: 12,
   icon: '',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -2895,6 +2915,8 @@ const saraswatiStotram: Stotra = {
   ],
   estimatedMinutes: 8,
   icon: 'M9 24 Q4 24 4 20 Q4 16 9 16 Q14 16 14 20 Q14 24 9 24 M13.5 21.5 L26 6.5 M11 20 L24 5',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -3122,6 +3144,8 @@ const kanikadharaStotram: Stotra = {
   ],
   estimatedMinutes: 8,
   icon: 'M8 19 L8 22 M24 19 L24 22 M16 22 Q8 22 8 19 Q8 16 16 16 Q24 16 24 19 Q24 22 16 22 M10 10 Q10 7.5 12.5 7.5 M16 7 Q16 4.5 18.5 4.5 M22 11 Q22 8.5 24.5 8.5',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -3360,6 +3384,8 @@ const ramRakshaStotra: Stotra = {
   ],
   estimatedMinutes: 15,
   icon: 'bow',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -3758,6 +3784,8 @@ const mahishasuraMardiniStotram: Stotra = {
   ],
   estimatedMinutes: 12,
   icon: 'trishul',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -4182,6 +4210,8 @@ const narasimhaKaravalambaStotram: Stotra = {
   ],
   estimatedMinutes: 6,
   icon: 'pillar',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -4300,6 +4330,8 @@ const shivaTandavaStotram: Stotra = {
   ],
   estimatedMinutes: 6,
   icon: 'shiva-tandava-stotram',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -4586,6 +4618,8 @@ const kalabhairavaAshtakam: Stotra = {
   ],
   estimatedMinutes: 3,
   icon: 'kalabhairava-ashtakam',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -4684,6 +4718,8 @@ const nirvanaShatakam: Stotra = {
   ],
   estimatedMinutes: 2,
   icon: 'nirvana-shatakam',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -4762,6 +4798,8 @@ const subramanyaAshtakam: Stotra = {
   ],
   estimatedMinutes: 3,
   icon: 'subramanya-ashtakam',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -4860,6 +4898,8 @@ const sudarshanaAshtakam: Stotra = {
   ],
   estimatedMinutes: 3,
   icon: 'sudarshana-ashtakam',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -5334,6 +5374,8 @@ const damodarashtakam: Stotra = {
   ],
   estimatedMinutes: 4,
   icon: 'M16 4 L16 14 M13 8 L19 8',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -5432,6 +5474,8 @@ const guruAshtakam: Stotra = {
   ],
   estimatedMinutes: 4,
   icon: 'M16 4 L16 14 M13 8 L19 8',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -5530,6 +5574,8 @@ const pandurangashtakam: Stotra = {
   ],
   estimatedMinutes: 3,
   icon: 'pandurangashtakam',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -5628,6 +5674,8 @@ const sankataNashanaGaneshaStotram: Stotra = {
   ],
   estimatedMinutes: 3,
   icon: 'sankata-nashana-ganesha-stotram',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -5726,6 +5774,8 @@ const dasharathaShaniStotram: Stotra = {
   ],
   estimatedMinutes: 3,
   icon: 'dasharatha-shani-stotram',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -5834,6 +5884,8 @@ const siddhaKunjikaStotram: Stotra = {
   ],
   estimatedMinutes: 5,
   icon: 'siddha-kunjika-stotram',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -5992,6 +6044,8 @@ const indrakshiStotram: Stotra = {
   ],
   estimatedMinutes: 5,
   icon: 'indrakshi-stotram',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -6110,6 +6164,8 @@ const narayanaKavacham: Stotra = {
   ],
   estimatedMinutes: 8,
   icon: 'narayana-kavacham',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -6228,6 +6284,8 @@ const shivaMahimnaStotram: Stotra = {
   ],
   estimatedMinutes: 15,
   icon: 'shiva-mahimna-stotram',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
@@ -6596,6 +6654,8 @@ const shriRudramNamakam: Stotra = {
   ],
   estimatedMinutes: 20,
   icon: 'shri-rudram-namakam',
+  premium: true,
+  price: 9,
   verses: [
     {
       id: 1,
