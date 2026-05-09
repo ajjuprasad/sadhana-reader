@@ -23,41 +23,56 @@ export const createOrder = onCall(
       throw new HttpsError("invalid-argument", "Missing or invalid parameters");
     }
 
-    const razorpay = new Razorpay({
-      key_id: razorpayKeyId.value(),
-      key_secret: razorpayKeySecret.value(),
-    });
+    const keyId = razorpayKeyId.value();
+    const keySecret = razorpayKeySecret.value();
+    if (!keyId || !keySecret) {
+      throw new HttpsError("failed-precondition", "Razorpay credentials not configured");
+    }
 
-    const order = await razorpay.orders.create({
-      amount: amount * 100, // Razorpay expects paise
-      currency: "INR",
-      receipt: `${contentType}_${contentId}_${Date.now()}`,
-      notes: {
-        userId: request.auth.uid,
-        contentId,
-        contentType,
-      },
-    });
-
-    await admin
-      .firestore()
-      .collection("orders")
-      .doc(order.id)
-      .set({
-        userId: request.auth.uid,
-        contentId,
-        contentType,
-        amount,
-        razorpayOrderId: order.id,
-        status: "created",
-        createdAt: admin.firestore.FieldValue.serverTimestamp(),
+    let order;
+    try {
+      const razorpay = new Razorpay({ key_id: keyId, key_secret: keySecret });
+      order = await razorpay.orders.create({
+        amount: amount * 100, // Razorpay expects paise
+        currency: "INR",
+        receipt: `${contentType}_${contentId}_${Date.now()}`,
+        notes: {
+          userId: request.auth.uid,
+          contentId,
+          contentType,
+        },
       });
+    } catch (err) {
+      console.error("Razorpay order creation failed", err);
+      const msg = err instanceof Error ? err.message : String(err);
+      throw new HttpsError("internal", `Razorpay: ${msg}`);
+    }
+
+    try {
+      await admin
+        .firestore()
+        .collection("orders")
+        .doc(order.id)
+        .set({
+          userId: request.auth.uid,
+          contentId,
+          contentType,
+          amount,
+          razorpayOrderId: order.id,
+          status: "created",
+          createdAt: admin.firestore.FieldValue.serverTimestamp(),
+        });
+    } catch (err) {
+      console.error("Firestore order write failed", err);
+      const msg = err instanceof Error ? err.message : String(err);
+      throw new HttpsError("internal", `Firestore: ${msg}`);
+    }
 
     return {
       orderId: order.id,
       amount: order.amount,
       currency: order.currency,
-      keyId: razorpayKeyId.value(),
+      keyId,
     };
   }
 );
