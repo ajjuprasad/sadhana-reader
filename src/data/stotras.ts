@@ -16,6 +16,8 @@ export interface Stotra {
   estimatedMinutes: number;
   icon: string;
   verses: Verse[];
+  premium?: boolean;
+  price?: number;
 }
 
 const hanumanChalisa: Stotra = {

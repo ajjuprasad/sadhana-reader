@@ -9,6 +9,8 @@ export interface Story {
   characters: string[];
   paragraphs: string[];
   isNew?: boolean;
+  premium?: boolean;
+  price?: number;
 }
 
 export const stories: Story[] = [

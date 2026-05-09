@@ -5,8 +5,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { stories } from '../data/stories';
 import { storyScenes } from '../data/scenes';
 import FavoriteButton from './FavoriteButton';
+import PremiumBadge from './PremiumBadge';
+import PurchaseModal from './PurchaseModal';
 import { useNarrationContext } from '../contexts/NarrationContext';
 import { useSettings } from '../hooks/useSettings';
+import { useContentAccess } from '../hooks/useContentAccess';
 import WatchMode from './WatchMode';
 
 export default function StoryDetail() {
@@ -16,6 +19,9 @@ export default function StoryDetail() {
   const { settings } = useSettings();
   const story = stories.find((s) => s.id === storyId);
   const [watchMode, setWatchMode] = useState(false);
+  const [showPurchase, setShowPurchase] = useState(false);
+  const { canAccess } = useContentAccess();
+  const hasAccess = story ? canAccess(story.id, story.premium) : true;
 
   const hasScenes = storyId ? !!storyScenes[storyId] : false;
   const paragraphRefs = useRef<(HTMLParagraphElement | null)[]>([]);
@@ -229,7 +235,7 @@ export default function StoryDetail() {
 
         {/* Story content with highlighting */}
         <div className="space-y-4">
-          {story.paragraphs.map((paragraph, i) => (
+          {(hasAccess ? story.paragraphs : story.paragraphs.slice(0, 2)).map((paragraph, i) => (
             <p
               key={i}
               ref={(el) => { paragraphRefs.current[i] = el; }}
@@ -245,7 +251,39 @@ export default function StoryDetail() {
               {paragraph}
             </p>
           ))}
+
+          {!hasAccess && story.premium && (
+            <div className="relative pt-4">
+              <div
+                className="absolute top-0 left-0 right-0 h-16 pointer-events-none"
+                style={{ background: 'linear-gradient(to bottom, var(--color-bg), transparent)' }}
+              />
+              <div className="text-center py-8">
+                <PremiumBadge price={story.price} />
+                <p className="font-hind text-sm mt-3 mb-4" style={{ color: 'var(--color-text-secondary)' }}>
+                  Unlock the full story
+                </p>
+                <button
+                  onClick={() => setShowPurchase(true)}
+                  className="font-hind font-semibold text-sm px-6 py-2.5 rounded-full text-white"
+                  style={{ backgroundColor: 'var(--color-accent-primary)' }}
+                >
+                  Buy for ₹{story.price ?? 29}
+                </button>
+              </div>
+            </div>
+          )}
         </div>
+
+        <PurchaseModal
+          open={showPurchase}
+          contentId={story.id}
+          contentType="story"
+          title={story.title}
+          price={story.price ?? 29}
+          onClose={() => setShowPurchase(false)}
+          onSuccess={() => {}}
+        />
 
         {/* Moral */}
         <div
