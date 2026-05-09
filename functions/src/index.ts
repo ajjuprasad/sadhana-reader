@@ -4,4 +4,6 @@ admin.initializeApp();
 
 export { createOrder } from "./createOrder";
 export { verifyPayment } from "./verifyPayment";
-export { razorpayWebhook } from "./webhook";
+
+// Webhook requires RAZORPAY_WEBHOOK_SECRET — only export when ready
+// export { razorpayWebhook } from "./webhook";
