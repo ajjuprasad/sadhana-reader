@@ -35,13 +35,6 @@ jobs:
       - name: Set up Google Cloud SDK
         uses: google-github-actions/setup-gcloud@v2
 
-      - name: Enable required APIs
-        run: |
-          gcloud services enable secretmanager.googleapis.com --project=${{ secrets.VITE_FIREBASE_PROJECT_ID }}
-          gcloud services enable cloudfunctions.googleapis.com --project=${{ secrets.VITE_FIREBASE_PROJECT_ID }}
-          gcloud services enable cloudbuild.googleapis.com --project=${{ secrets.VITE_FIREBASE_PROJECT_ID }}
-          gcloud services enable artifactregistry.googleapis.com --project=${{ secrets.VITE_FIREBASE_PROJECT_ID }}
-
       - name: Set up Firebase CLI
         run: npm install -g firebase-tools
 
