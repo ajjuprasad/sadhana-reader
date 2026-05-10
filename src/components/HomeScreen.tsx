@@ -121,29 +121,6 @@ function PanchangaTile({ panchanga, navigate }: { panchanga: ReturnType<typeof g
           </p>
         </div>
 
-        {panchanga.hinduMonth && (
-          <div className="mb-4">
-            <p
-              className="font-display font-semibold text-base leading-tight"
-              style={{ color: 'var(--color-text-primary)' }}
-            >
-              {panchanga.hinduMonth.name}
-              <span
-                className="font-body font-normal ml-1.5"
-                style={{ color: 'var(--color-accent-primary)', opacity: 0.85 }}
-              >
-                {panchanga.hinduMonth.sanskrit}
-              </span>
-            </p>
-            <p
-              className="font-hind text-xs mt-0.5"
-              style={{ color: 'var(--color-text-muted)' }}
-            >
-              {panchanga.hinduMonth.season}
-            </p>
-          </div>
-        )}
-
         {daily.tithi && (
           <div className="grid grid-cols-2 gap-4 mb-4">
             <div>
@@ -420,9 +397,9 @@ export default function HomeScreen() {
           >
             <DeityMandala
               deity={stotra.deity}
-              size={260}
+              size={160}
               className="absolute pointer-events-none select-none"
-              style={{ top: -60, right: -60, opacity: 0.55 }}
+              style={{ top: -24, right: -24, opacity: 0.65 }}
             />
             <FavoriteButton
               stotraId={stotra.id}
