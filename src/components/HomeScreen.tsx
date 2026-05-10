@@ -7,11 +7,9 @@ import { stories } from '../data/stories';
 import { reflections } from '../data/reflections';
 import ProfileButton from './ProfileButton';
 import HamburgerMenu from './HamburgerMenu';
-import FavoriteButton from './FavoriteButton';
-import SunriseIcon from './illustrations/SunriseIcon';
-import SunsetIcon from './illustrations/SunsetIcon';
 import DeityMandala from './illustrations/DeityMandala';
 import { useTranslation } from '../i18n/useTranslation';
+import { useAuth } from '../contexts/AuthContext';
 import { useSettings } from '../hooks/useSettings';
 import {
   getStotraOfTheDay,
@@ -168,39 +166,33 @@ function PanchangaTile({ panchanga, navigate }: { panchanga: ReturnType<typeof g
 
         {daily.sunrise && daily.sunset && (
           <div className="grid grid-cols-2 gap-4 mb-4">
-            <div className="flex items-center gap-3">
-              <SunriseIcon size={40} />
-              <div>
-                <p
-                  className="font-label font-semibold uppercase text-[0.55rem] tracking-[0.14em] mb-1"
-                  style={{ color: 'var(--color-text-muted)' }}
-                >
-                  Sunrise
-                </p>
-                <p
-                  className="font-display font-semibold text-sm leading-tight"
-                  style={{ color: 'var(--color-text-primary)' }}
-                >
-                  {daily.sunrise}
-                </p>
-              </div>
+            <div>
+              <p
+                className="font-label font-semibold uppercase text-[0.55rem] tracking-[0.14em] mb-1"
+                style={{ color: 'var(--color-text-muted)' }}
+              >
+                Sunrise
+              </p>
+              <p
+                className="font-display font-semibold text-sm leading-tight"
+                style={{ color: 'var(--color-text-primary)' }}
+              >
+                {daily.sunrise}
+              </p>
             </div>
-            <div className="flex items-center gap-3">
-              <SunsetIcon size={40} />
-              <div>
-                <p
-                  className="font-label font-semibold uppercase text-[0.55rem] tracking-[0.14em] mb-1"
-                  style={{ color: 'var(--color-text-muted)' }}
-                >
-                  Sunset
-                </p>
-                <p
-                  className="font-display font-semibold text-sm leading-tight"
-                  style={{ color: 'var(--color-text-primary)' }}
-                >
-                  {daily.sunset}
-                </p>
-              </div>
+            <div>
+              <p
+                className="font-label font-semibold uppercase text-[0.55rem] tracking-[0.14em] mb-1"
+                style={{ color: 'var(--color-text-muted)' }}
+              >
+                Sunset
+              </p>
+              <p
+                className="font-display font-semibold text-sm leading-tight"
+                style={{ color: 'var(--color-text-primary)' }}
+              >
+                {daily.sunset}
+              </p>
             </div>
           </div>
         )}
@@ -269,6 +261,7 @@ export default function HomeScreen() {
   const navigate = useNavigate();
   const { t } = useTranslation();
   const { settings } = useSettings();
+  const { user } = useAuth();
 
   const today = useMemo(() => new Date(), []);
 
@@ -279,7 +272,11 @@ export default function HomeScreen() {
     () => getPanchangaSnapshot(today, settings.panchangaSystem),
     [today, settings.panchangaSystem],
   );
-  const greeting = useMemo(() => getTimeGreeting(), []);
+  const firstName = user?.displayName?.trim().split(/\s+/)[0];
+  const greeting = useMemo(() => {
+    const base = getTimeGreeting();
+    return firstName ? `${base}, ${firstName}` : base;
+  }, [firstName]);
   const reflectionIndex = useMemo(() => {
     return reflections.findIndex(r => r.text === reflection.text);
   }, [reflection]);
@@ -401,11 +398,6 @@ export default function HomeScreen() {
               className="absolute pointer-events-none select-none"
               style={{ top: -24, right: -24, opacity: 0.65 }}
             />
-            <FavoriteButton
-              stotraId={stotra.id}
-              size={20}
-              className="absolute top-3 right-3 z-10"
-            />
             <div className="relative p-5 sm:p-7">
               <p
                 className="font-label font-semibold uppercase text-[0.6rem] tracking-[0.14em] mb-3"
@@ -491,7 +483,7 @@ export default function HomeScreen() {
                 className="font-hind font-medium text-sm mt-3 inline-flex items-center gap-1 group-hover:gap-2 transition-all duration-200"
                 style={{ color: 'var(--color-accent-primary)' }}
               >
-                Read
+                Read now
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12" />
                   <polyline points="12 5 19 12 12 19" />
@@ -501,8 +493,8 @@ export default function HomeScreen() {
           </motion.button>
 
           {/* ── Reflection of the Day ── */}
-          <motion.div
-            className="w-full rounded-2xl overflow-hidden mb-4 group"
+          <motion.button
+            className="w-full text-left rounded-2xl overflow-hidden mb-4 group focus:outline-none focus:ring-2 focus:ring-saffron"
             style={{
               backgroundColor: 'var(--color-bg-card)',
               boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
@@ -510,6 +502,9 @@ export default function HomeScreen() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={tileTransition(3)}
+            whileHover={{ scale: 1.01, boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}
+            whileTap={{ scale: 0.99 }}
+            onClick={() => navigate(`/reflection/${reflectionIndex}`)}
           >
             <div className="p-5 sm:p-6">
               <p
@@ -538,8 +533,7 @@ export default function HomeScreen() {
               >
                 — {reflection.source}
               </p>
-              <button
-                onClick={() => navigate(`/reflection/${reflectionIndex}`)}
+              <span
                 className="font-hind font-medium text-sm mt-4 inline-flex items-center gap-1 group-hover:gap-2 transition-all duration-200"
                 style={{ color: 'var(--color-accent-gold)' }}
               >
@@ -548,9 +542,9 @@ export default function HomeScreen() {
                   <line x1="5" y1="12" x2="19" y2="12" />
                   <polyline points="12 5 19 12 12 19" />
                 </svg>
-              </button>
+              </span>
             </div>
-          </motion.div>
+          </motion.button>
 
           {/* ── Panchanga Quick-View ── */}
           <PanchangaTile panchanga={panchanga} navigate={navigate} />
