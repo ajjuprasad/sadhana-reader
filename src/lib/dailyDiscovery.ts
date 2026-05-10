@@ -2,6 +2,26 @@ import { stotras, type Stotra } from '../data/stotras';
 import { stories, type Story } from '../data/stories';
 import { reflections, type Reflection } from '../data/reflections';
 import { calendarEvents2026, hinduMonths2026, type CalendarEvent, type HinduMonth } from '../data/calendar2026';
+import type { PanchangaSystem } from '../hooks/useSettings';
+
+// The hinduMonths2026 table uses Purnimanta boundaries (each entry ends at
+// that month's Purnima). In Amanta convention, the month name shifts back
+// by one during the Krishna paksha portion of a Purnimanta entry — which
+// is approximately the first 15 days of the entry's date range.
+export function resolveHinduMonth(
+  date: Date,
+  system: PanchangaSystem = 'purnimanta',
+): HinduMonth | null {
+  const key = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+  const idx = hinduMonths2026.findIndex((m) => key >= m.startDate && key <= m.endDate);
+  if (idx === -1) return null;
+  if (system === 'amanta' && idx > 0) {
+    const start = new Date(hinduMonths2026[idx].startDate + 'T00:00:00');
+    const dayInMonth = Math.floor((date.getTime() - start.getTime()) / 86_400_000) + 1;
+    if (dayInMonth <= 15) return hinduMonths2026[idx - 1];
+  }
+  return hinduMonths2026[idx];
+}
 
 const VARA_DEITIES: Record<number, string[]> = {
   0: ['Surya'],
@@ -77,10 +97,13 @@ export interface PanchangaSnapshot {
   varaName: string;
 }
 
-export function getPanchangaSnapshot(date: Date): PanchangaSnapshot {
+export function getPanchangaSnapshot(
+  date: Date,
+  system: PanchangaSystem = 'purnimanta',
+): PanchangaSnapshot {
   const key = todayKey(date);
 
-  const hinduMonth = hinduMonths2026.find((m) => key >= m.startDate && key <= m.endDate) ?? null;
+  const hinduMonth = resolveHinduMonth(date, system);
   const todayEvent = getTodayEvent(date);
 
   const upcoming: Array<CalendarEvent & { daysUntil: number }> = [];

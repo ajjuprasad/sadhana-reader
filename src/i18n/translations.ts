@@ -53,6 +53,10 @@ const en: TranslationDict = {
   'settings.hideSanskrit': 'Hide Sanskrit Verses',
   'settings.hideSanskritDesc': 'Shows only transliteration and meaning',
   'settings.language': 'Language',
+  'settings.panchangaSystem': 'Pañchāṅga System',
+  'settings.panchangaSystemDesc': 'Lunar month convention. Amanta is common in South India, Maharashtra, Gujarat. Purnimanta is common in North India.',
+  'settings.amanta': 'Amanta',
+  'settings.purnimanta': 'Purnimanta',
   'settings.save': 'Save',
 };
 

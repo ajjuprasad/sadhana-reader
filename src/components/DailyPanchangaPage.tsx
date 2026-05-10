@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { usePanchanga } from '../hooks/usePanchanga';
 import { useLocation } from '../hooks/useLocation';
+import { useSettings } from '../hooks/useSettings';
 import { calendarEvents2026, hinduMonths2026 } from '../data/calendar2026';
 import type { CalendarEvent, EventCategory } from '../data/calendar2026';
 import LocationSelector from './LocationSelector';
@@ -105,6 +106,7 @@ export default function DailyPanchangaPage() {
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const { location, setLocation, requestBrowserLocation } = useLocation();
+  const { settings } = useSettings();
   const [locationOpen, setLocationOpen] = useState(false);
 
   const selectedDate = useMemo(() => {
@@ -127,8 +129,20 @@ export default function DailyPanchangaPage() {
 
   const hinduMonth = useMemo(() => {
     const key = toDateKey(selectedDate);
-    return hinduMonths2026.find((m) => key >= m.startDate && key <= m.endDate);
-  }, [selectedDate]);
+    const idx = hinduMonths2026.findIndex((m) => key >= m.startDate && key <= m.endDate);
+    if (idx === -1) return undefined;
+    // Underlying table uses Purnimanta boundaries (month ends at full moon).
+    // In Amanta, the month name shifts back by one during Krishna paksha
+    // (the days between this month's Purnima and next Amavasya).
+    if (
+      settings.panchangaSystem === 'amanta' &&
+      panchanga?.tithi.paksha === 'Krishna' &&
+      idx > 0
+    ) {
+      return hinduMonths2026[idx - 1];
+    }
+    return hinduMonths2026[idx];
+  }, [selectedDate, settings.panchangaSystem, panchanga?.tithi.paksha]);
 
   const navigateDay = (offset: number) => {
     const next = new Date(selectedDate);
