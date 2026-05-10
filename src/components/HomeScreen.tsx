@@ -62,6 +62,11 @@ function PanchangaTile({ panchanga, navigate }: { panchanga: ReturnType<typeof g
       .catch(() => {});
   }, []);
 
+  const today = new Date();
+  const weekday = today.toLocaleDateString('en-IN', { weekday: 'long' });
+  const monthDay = today.toLocaleDateString('en-IN', { month: 'short', day: 'numeric' });
+  const varaShort = panchanga.varaName.split('·')[0].trim();
+
   return (
     <motion.button
       className="w-full text-left rounded-2xl overflow-hidden mb-8 group focus:outline-none focus:ring-2 focus:ring-saffron"
@@ -77,7 +82,7 @@ function PanchangaTile({ panchanga, navigate }: { panchanga: ReturnType<typeof g
       onClick={() => navigate('/panchanga/today')}
     >
       <div className="p-5 sm:p-6">
-        <div className="flex items-center justify-between mb-3">
+        <div className="flex items-center justify-between mb-4">
           <p
             className="font-label font-semibold uppercase text-[0.6rem] tracking-[0.14em]"
             style={{ color: 'var(--color-accent-primary)' }}
@@ -89,32 +94,86 @@ function PanchangaTile({ panchanga, navigate }: { panchanga: ReturnType<typeof g
           </svg>
         </div>
 
-        {panchanga.hinduMonth && (
+        {/* Date hero */}
+        <div className="mb-4">
           <p
-            className="font-display font-bold text-base mb-2"
+            className="font-display font-bold text-lg leading-tight"
             style={{ color: 'var(--color-text-primary)' }}
           >
-            {panchanga.hinduMonth.name} · {panchanga.hinduMonth.sanskrit}
-            <span
-              className="font-hind font-normal text-xs ml-2"
+            {weekday} · {monthDay}
+          </p>
+          <p
+            className="font-hind text-xs mt-0.5"
+            style={{ color: 'var(--color-text-muted)' }}
+          >
+            {varaShort}
+          </p>
+        </div>
+
+        {panchanga.hinduMonth && (
+          <div className="mb-4">
+            <p
+              className="font-display font-semibold text-base leading-tight"
+              style={{ color: 'var(--color-text-primary)' }}
+            >
+              {panchanga.hinduMonth.name}
+              <span
+                className="font-body font-normal ml-1.5"
+                style={{ color: 'var(--color-accent-primary)', opacity: 0.85 }}
+              >
+                {panchanga.hinduMonth.sanskrit}
+              </span>
+            </p>
+            <p
+              className="font-hind text-xs mt-0.5"
               style={{ color: 'var(--color-text-muted)' }}
             >
               {panchanga.hinduMonth.season}
-            </span>
-          </p>
+            </p>
+          </div>
         )}
 
         {daily.tithi && (
-          <div className="flex flex-col gap-1 mb-2">
-            <div className="flex items-center gap-2">
-              <span className="font-hind font-medium text-[0.6rem] uppercase tracking-wider w-14" style={{ color: 'var(--color-text-muted)' }}>Tithi</span>
-              <span className="font-hind text-sm" style={{ color: 'var(--color-text-primary)' }}>{daily.tithi}</span>
-              <span className="font-body text-xs" style={{ color: 'var(--color-accent-primary)', opacity: 0.8 }}>{daily.tithiSanskrit}</span>
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <div>
+              <p
+                className="font-label font-semibold uppercase text-[0.55rem] tracking-[0.14em] mb-1"
+                style={{ color: 'var(--color-text-muted)' }}
+              >
+                Tithi
+              </p>
+              <p
+                className="font-display font-semibold text-sm leading-tight"
+                style={{ color: 'var(--color-text-primary)' }}
+              >
+                {daily.tithi}
+              </p>
+              <p
+                className="font-body text-xs mt-0.5"
+                style={{ color: 'var(--color-accent-primary)', opacity: 0.8 }}
+              >
+                {daily.tithiSanskrit}
+              </p>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="font-hind font-medium text-[0.6rem] uppercase tracking-wider w-14" style={{ color: 'var(--color-text-muted)' }}>Star</span>
-              <span className="font-hind text-sm" style={{ color: 'var(--color-text-primary)' }}>{daily.nakshatra}</span>
-              <span className="font-body text-xs" style={{ color: 'var(--color-accent-primary)', opacity: 0.8 }}>{daily.nakshatraSanskrit}</span>
+            <div>
+              <p
+                className="font-label font-semibold uppercase text-[0.55rem] tracking-[0.14em] mb-1"
+                style={{ color: 'var(--color-text-muted)' }}
+              >
+                Nakṣatra
+              </p>
+              <p
+                className="font-display font-semibold text-sm leading-tight"
+                style={{ color: 'var(--color-text-primary)' }}
+              >
+                {daily.nakshatra}
+              </p>
+              <p
+                className="font-body text-xs mt-0.5"
+                style={{ color: 'var(--color-accent-primary)', opacity: 0.8 }}
+              >
+                {daily.nakshatraSanskrit}
+              </p>
             </div>
           </div>
         )}
@@ -168,7 +227,7 @@ function PanchangaTile({ panchanga, navigate }: { panchanga: ReturnType<typeof g
           className="font-hind text-xs mt-3 flex items-center gap-1"
           style={{ color: 'var(--color-accent-primary)' }}
         >
-          View full pañchāṅga
+          View details
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <line x1="5" y1="12" x2="19" y2="12" />
             <polyline points="12 5 19 12 12 19" />
