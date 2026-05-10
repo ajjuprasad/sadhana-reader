@@ -8,6 +8,9 @@ import { reflections } from '../data/reflections';
 import ProfileButton from './ProfileButton';
 import HamburgerMenu from './HamburgerMenu';
 import FavoriteButton from './FavoriteButton';
+import SunriseIcon from './illustrations/SunriseIcon';
+import SunsetIcon from './illustrations/SunsetIcon';
+import DeityMandala from './illustrations/DeityMandala';
 import { useTranslation } from '../i18n/useTranslation';
 import { useSettings } from '../hooks/useSettings';
 import {
@@ -43,6 +46,12 @@ interface PanchangaBasic {
   tithiSanskrit?: string;
   nakshatra?: string;
   nakshatraSanskrit?: string;
+  sunrise?: string;
+  sunset?: string;
+}
+
+function formatClockTime(d: Date): string {
+  return d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
 }
 
 function PanchangaTile({ panchanga, navigate }: { panchanga: ReturnType<typeof getPanchangaSnapshot>; navigate: ReturnType<typeof useNavigate> }) {
@@ -57,6 +66,8 @@ function PanchangaTile({ panchanga, navigate }: { panchanga: ReturnType<typeof g
           tithiSanskrit: result.tithi.info.sanskrit,
           nakshatra: result.nakshatra.info.name,
           nakshatraSanskrit: result.nakshatra.info.sanskrit,
+          sunrise: formatClockTime(result.sunrise),
+          sunset: formatClockTime(result.sunset),
         });
       })
       .catch(() => {});
@@ -174,6 +185,45 @@ function PanchangaTile({ panchanga, navigate }: { panchanga: ReturnType<typeof g
               >
                 {daily.nakshatraSanskrit}
               </p>
+            </div>
+          </div>
+        )}
+
+        {daily.sunrise && daily.sunset && (
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <div className="flex items-center gap-3">
+              <SunriseIcon size={40} />
+              <div>
+                <p
+                  className="font-label font-semibold uppercase text-[0.55rem] tracking-[0.14em] mb-1"
+                  style={{ color: 'var(--color-text-muted)' }}
+                >
+                  Sunrise
+                </p>
+                <p
+                  className="font-display font-semibold text-sm leading-tight"
+                  style={{ color: 'var(--color-text-primary)' }}
+                >
+                  {daily.sunrise}
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <SunsetIcon size={40} />
+              <div>
+                <p
+                  className="font-label font-semibold uppercase text-[0.55rem] tracking-[0.14em] mb-1"
+                  style={{ color: 'var(--color-text-muted)' }}
+                >
+                  Sunset
+                </p>
+                <p
+                  className="font-display font-semibold text-sm leading-tight"
+                  style={{ color: 'var(--color-text-primary)' }}
+                >
+                  {daily.sunset}
+                </p>
+              </div>
             </div>
           </div>
         )}
@@ -335,8 +385,8 @@ export default function HomeScreen() {
             transition={tileTransition(0)}
           >
             <h1
-              className="font-display font-bold text-2xl sm:text-3xl tracking-tight"
-              style={{ color: 'var(--color-text-primary)' }}
+              className="font-body italic text-lg sm:text-xl"
+              style={{ color: 'var(--color-text-secondary)' }}
             >
               {greeting}
             </h1>
@@ -368,12 +418,18 @@ export default function HomeScreen() {
             whileTap={{ scale: 0.99 }}
             onClick={() => navigate(`/stotra/${stotra.id}`)}
           >
+            <DeityMandala
+              deity={stotra.deity}
+              size={260}
+              className="absolute pointer-events-none select-none"
+              style={{ top: -60, right: -60, opacity: 0.55 }}
+            />
             <FavoriteButton
               stotraId={stotra.id}
               size={20}
               className="absolute top-3 right-3 z-10"
             />
-            <div className="p-5 sm:p-7">
+            <div className="relative p-5 sm:p-7">
               <p
                 className="font-label font-semibold uppercase text-[0.6rem] tracking-[0.14em] mb-3"
                 style={{ color: 'var(--color-accent-primary)' }}
