@@ -47,7 +47,7 @@ function Skeleton() {
 function PanchangaRow({ label, value, sanskrit, index }: { label: string; value: string; sanskrit: string; index: number }) {
   return (
     <motion.div
-      className="flex items-start justify-between py-3"
+      className="flex items-center justify-between py-3"
       style={{ borderBottom: '1px solid var(--color-border, rgba(0,0,0,0.06))' }}
       initial={{ opacity: 0, x: -8 }}
       animate={{ opacity: 1, x: 0 }}
@@ -312,33 +312,39 @@ export default function DailyPanchangaPage() {
                 </p>
                 <PanchangaRow
                   label="Tithi"
-                  value={`${panchanga.tithi.paksha} ${panchanga.tithi.info.name}`}
+                  value={panchanga.tithi.info.name}
                   sanskrit={panchanga.tithi.info.sanskrit}
                   index={0}
+                />
+                <PanchangaRow
+                  label="Pakṣa"
+                  value={panchanga.tithi.paksha === 'Shukla' ? 'Shukla (waxing)' : 'Krishna (waning)'}
+                  sanskrit={panchanga.tithi.paksha === 'Shukla' ? 'शुक्ल' : 'कृष्ण'}
+                  index={1}
                 />
                 <PanchangaRow
                   label="Nakṣatra"
                   value={panchanga.nakshatra.info.name}
                   sanskrit={panchanga.nakshatra.info.sanskrit}
-                  index={1}
+                  index={2}
                 />
                 <PanchangaRow
                   label="Yoga"
                   value={panchanga.yoga.info.name}
                   sanskrit={panchanga.yoga.info.sanskrit}
-                  index={2}
+                  index={3}
                 />
                 <PanchangaRow
                   label="Karaṇa"
                   value={panchanga.karana.info.name}
                   sanskrit={panchanga.karana.info.sanskrit}
-                  index={3}
+                  index={4}
                 />
                 <PanchangaRow
                   label="Vāra"
                   value={`${panchanga.vara.name} (${panchanga.vara.planet})`}
                   sanskrit={panchanga.vara.sanskrit}
-                  index={4}
+                  index={5}
                 />
               </div>
             </motion.div>
