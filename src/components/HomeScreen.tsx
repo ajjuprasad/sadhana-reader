@@ -9,6 +9,7 @@ import ProfileButton from './ProfileButton';
 import HamburgerMenu from './HamburgerMenu';
 import FavoriteButton from './FavoriteButton';
 import { useTranslation } from '../i18n/useTranslation';
+import { useSettings } from '../hooks/useSettings';
 import {
   getStotraOfTheDay,
   getStoryOfTheDay,
@@ -181,13 +182,17 @@ function PanchangaTile({ panchanga, navigate }: { panchanga: ReturnType<typeof g
 export default function HomeScreen() {
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const { settings } = useSettings();
 
   const today = useMemo(() => new Date(), []);
 
   const stotra = useMemo(() => getStotraOfTheDay(today), [today]);
   const story = useMemo(() => getStoryOfTheDay(today), [today]);
   const reflection = useMemo(() => getReflectionOfTheDay(today), [today]);
-  const panchanga = useMemo(() => getPanchangaSnapshot(today), [today]);
+  const panchanga = useMemo(
+    () => getPanchangaSnapshot(today, settings.panchangaSystem),
+    [today, settings.panchangaSystem],
+  );
   const greeting = useMemo(() => getTimeGreeting(), []);
   const reflectionIndex = useMemo(() => {
     return reflections.findIndex(r => r.text === reflection.text);
