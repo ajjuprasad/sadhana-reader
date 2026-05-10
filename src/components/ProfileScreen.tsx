@@ -535,6 +535,48 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
             </div>
           </div>
 
+          {/* Pañchāṅga month system */}
+          <div className="py-3 mb-8">
+            <label
+              className="block font-hind font-semibold text-sm mb-1"
+              style={{ color: 'var(--color-text-secondary)' }}
+            >
+              {t('settings.panchangaSystem')}
+            </label>
+            <p
+              className="font-hind text-xs mb-3"
+              style={{ color: 'var(--color-text-muted)' }}
+            >
+              {t('settings.panchangaSystemDesc')}
+            </p>
+            <div className="flex gap-2">
+              {(['amanta', 'purnimanta'] as const).map((system) => (
+                <button
+                  key={system}
+                  onClick={() => update({ panchangaSystem: system })}
+                  className="flex-1 px-4 py-2 rounded-full font-hind text-sm transition-all duration-200"
+                  style={{
+                    backgroundColor:
+                      draft.panchangaSystem === system
+                        ? 'var(--color-accent-primary)'
+                        : 'transparent',
+                    color:
+                      draft.panchangaSystem === system
+                        ? '#fff'
+                        : 'var(--color-text-secondary)',
+                    border:
+                      draft.panchangaSystem === system
+                        ? '1px solid var(--color-accent-primary)'
+                        : '1px solid var(--color-text-muted)',
+                    opacity: draft.panchangaSystem === system ? 1 : 0.7,
+                  }}
+                >
+                  {t(`settings.${system}`)}
+                </button>
+              ))}
+            </div>
+          </div>
+
           {/* Divider */}
           <div
             className="h-px mb-6"
