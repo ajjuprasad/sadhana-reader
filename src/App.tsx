@@ -16,6 +16,7 @@ import StoryDetail from './components/StoryDetail';
 import ReflectionDetail from './components/ReflectionDetail';
 
 const DailyPanchangaPage = lazy(() => import('./components/DailyPanchangaPage'));
+const AdminDashboard = lazy(() => import('./components/AdminDashboard'));
 import MandalaBackground from './components/MandalaBackground';
 import NarrationPlayer from './components/NarrationPlayer';
 import { useSettings } from './hooks/useSettings';
@@ -89,6 +90,7 @@ export default function App() {
             <Route path="/reflection/:index" element={<ReflectionDetail />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/profile" element={<ProfileScreen settingsState={settingsState} />} />
+            <Route path="/admin" element={<Suspense fallback={null}><AdminDashboard /></Suspense>} />
           </Routes>
         </div>
         <GlobalNarrationPlayer />

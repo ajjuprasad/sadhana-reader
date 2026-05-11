@@ -9,6 +9,7 @@ import {
   type AuthError,
 } from 'firebase/auth';
 import { auth, googleProvider } from '../lib/firebase';
+import { recordSignIn, recordAppOpen } from '../lib/userTracking';
 
 interface AuthContextType {
   user: User | null;
@@ -29,17 +30,30 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getRedirectResult(auth).catch(() => {});
+    getRedirectResult(auth)
+      .then((res) => {
+        if (res?.user) recordSignIn(res.user).catch(() => {});
+      })
+      .catch(() => {});
+    let lastUid: string | null = null;
     const unsubscribe = onAuthStateChanged(auth, (u) => {
       setUser(u);
       setLoading(false);
+      if (u && u.uid !== lastUid) {
+        lastUid = u.uid;
+        recordAppOpen(u).catch(() => {});
+      } else if (!u) {
+        lastUid = null;
+        recordAppOpen(null).catch(() => {});
+      }
     });
     return unsubscribe;
   }, []);
 
   const signIn = useCallback(async () => {
     try {
-      await signInWithPopup(auth, googleProvider);
+      const result = await signInWithPopup(auth, googleProvider);
+      if (result.user) recordSignIn(result.user).catch(() => {});
     } catch (err) {
       const code = (err as AuthError).code;
       if (code === 'auth/popup-blocked' || code === 'auth/popup-closed-by-browser') {

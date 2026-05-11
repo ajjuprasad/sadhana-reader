@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../contexts/AuthContext';
+import { usePushNotifications } from '../hooks/usePushNotifications';
 import type { useSettings } from '../hooks/useSettings';
 import type { Settings, Language, NarrationVoiceGender } from '../hooks/useSettings';
 import { useTranslation } from '../i18n/useTranslation';
@@ -622,7 +623,74 @@ export default function ProfileScreen({ settingsState }: ProfileScreenProps) {
             </div>
           </div>
 
+          {/* Daily reminders */}
+          <DailyRemindersToggle />
+
         </motion.div>
+      </div>
+    </div>
+  );
+}
+
+function DailyRemindersToggle() {
+  const { permission, busy, error, subscribe, unsubscribe } = usePushNotifications();
+  const enabled = permission === 'granted';
+  const unsupported = permission === 'unsupported';
+  const denied = permission === 'denied';
+  return (
+    <div className="mt-8">
+      <h2
+        className="font-hind font-semibold uppercase mb-3"
+        style={{
+          fontSize: '0.625rem',
+          color: 'var(--color-accent-primary)',
+          letterSpacing: '0.18em',
+        }}
+      >
+        Daily Reminders
+      </h2>
+      <div className="flex items-start justify-between gap-3 py-3">
+        <div className="flex-1">
+          <p
+            className="font-hind font-semibold text-sm"
+            style={{ color: 'var(--color-text-primary)' }}
+          >
+            Browser notifications
+          </p>
+          <p
+            className="font-hind text-xs mt-0.5"
+            style={{ color: 'var(--color-text-muted)' }}
+          >
+            One gentle reminder a day with today&rsquo;s stotra, festival, or ekadasi.
+            Works best when installed to your home screen.
+          </p>
+          {error && (
+            <p className="font-hind text-xs mt-2 text-red-500">{error}</p>
+          )}
+          {denied && (
+            <p className="font-hind text-xs mt-2" style={{ color: 'var(--color-text-muted)' }}>
+              You&rsquo;ve blocked notifications for this site. Enable them in your browser settings to turn this on.
+            </p>
+          )}
+          {unsupported && (
+            <p className="font-hind text-xs mt-2" style={{ color: 'var(--color-text-muted)' }}>
+              Notifications aren&rsquo;t supported in this browser.
+            </p>
+          )}
+        </div>
+        <button
+          onClick={() => (enabled ? unsubscribe() : subscribe())}
+          disabled={busy || unsupported || denied}
+          className="font-hind font-medium text-sm px-4 py-2 rounded-full flex-shrink-0"
+          style={{
+            backgroundColor: enabled ? 'var(--color-accent-primary)' : 'transparent',
+            color: enabled ? 'white' : 'var(--color-accent-primary)',
+            border: '1px solid var(--color-accent-primary)',
+            opacity: busy || unsupported || denied ? 0.5 : 1,
+          }}
+        >
+          {busy ? '…' : enabled ? 'On' : 'Turn on'}
+        </button>
       </div>
     </div>
   );
