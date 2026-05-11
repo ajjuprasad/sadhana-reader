@@ -77,12 +77,44 @@ export default function AdminDashboard() {
   const [nextCursor, setNextCursor] = useState<number | null>(null);
   const [hasMore, setHasMore] = useState(false);
 
+  const BOOTSTRAP_EMAIL = 'ajaiprasad@gmail.com';
+  const canBootstrap = !isAdmin && user?.email === BOOTSTRAP_EMAIL;
+  const [claiming, setClaiming] = useState(false);
+  const [claimError, setClaimError] = useState<string | null>(null);
+
   useEffect(() => {
     if (authLoading || adminLoading) return;
-    if (!user || !isAdmin) {
+    if (!user) {
+      navigate('/', { replace: true });
+      return;
+    }
+    // Allow the bootstrap email to stay on the page so they can self-grant
+    // admin. All other non-admins get bounced home.
+    if (!isAdmin && user.email !== BOOTSTRAP_EMAIL) {
       navigate('/', { replace: true });
     }
   }, [authLoading, adminLoading, user, isAdmin, navigate]);
+
+  const claimAdmin = async () => {
+    if (!user) return;
+    setClaiming(true);
+    setClaimError(null);
+    try {
+      const functions = getFunctions(app);
+      const fn = httpsCallable<{ uid: string; admin: boolean }, { ok: boolean }>(
+        functions,
+        'setAdmin',
+      );
+      await fn({ uid: user.uid, admin: true });
+      // Force token refresh so the new claim takes effect without sign-out.
+      await user.getIdToken(true);
+      // Reload so useIsAdmin re-reads the fresh token.
+      window.location.reload();
+    } catch (err) {
+      setClaimError(err instanceof Error ? err.message : String(err));
+      setClaiming(false);
+    }
+  };
 
   const load = async (cursor: number | null) => {
     setLoading(true);
@@ -119,7 +151,7 @@ export default function AdminDashboard() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isAdmin, adminLoading]);
 
-  if (authLoading || adminLoading || !user || !isAdmin) {
+  if (authLoading || adminLoading || !user) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <p className="font-hind text-sm" style={{ color: 'var(--color-text-muted)' }}>
@@ -127,6 +159,51 @@ export default function AdminDashboard() {
         </p>
       </div>
     );
+  }
+
+  if (canBootstrap) {
+    return (
+      <div className="min-h-screen flex items-center justify-center px-4">
+        <div
+          className="max-w-sm w-full rounded-2xl p-6 text-center"
+          style={{
+            backgroundColor: 'var(--color-bg-card)',
+            boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
+          }}
+        >
+          <h1
+            className="font-display font-bold text-lg mb-2"
+            style={{ color: 'var(--color-text-primary)' }}
+          >
+            Claim admin access
+          </h1>
+          <p
+            className="font-hind text-sm mb-5"
+            style={{ color: 'var(--color-text-muted)' }}
+          >
+            You&rsquo;re signed in as <strong>{user.email}</strong>. Tap below to grant yourself admin and open the dashboard.
+          </p>
+          {claimError && (
+            <p className="font-hind text-xs text-red-500 mb-3">{claimError}</p>
+          )}
+          <button
+            onClick={claimAdmin}
+            disabled={claiming}
+            className="w-full font-hind font-medium text-sm px-5 py-3 rounded-full text-white"
+            style={{
+              backgroundColor: 'var(--color-accent-primary)',
+              opacity: claiming ? 0.5 : 1,
+            }}
+          >
+            {claiming ? 'Granting…' : 'Grant admin'}
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (!isAdmin) {
+    return null;
   }
 
   return (
