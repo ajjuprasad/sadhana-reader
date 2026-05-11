@@ -1,4 +1,5 @@
 import { onCall, HttpsError } from "firebase-functions/v2/https";
+import { logger } from "firebase-functions/v2";
 import * as admin from "firebase-admin";
 
 // The single bootstrap email allowed to self-grant admin without an
@@ -24,12 +25,31 @@ export const setAdmin = onCall(async (request) => {
     callerEmail === BOOTSTRAP_EMAIL && uid === callerUid && makeAdmin === true;
 
   if (!callerIsAdmin && !isBootstrap) {
-    throw new HttpsError("permission-denied", "Admin only");
+    throw new HttpsError(
+      "permission-denied",
+      `Admin only (caller=${callerEmail ?? "anon"}, isBootstrap=${isBootstrap})`,
+    );
   }
 
-  const target = await admin.auth().getUser(uid);
+  let target;
+  try {
+    target = await admin.auth().getUser(uid);
+  } catch (err) {
+    logger.error("setAdmin: getUser failed", err);
+    const msg = err instanceof Error ? err.message : String(err);
+    throw new HttpsError("internal", `getUser: ${msg}`);
+  }
+
   const claims = { ...(target.customClaims ?? {}), admin: makeAdmin };
   if (!makeAdmin) delete (claims as { admin?: boolean }).admin;
-  await admin.auth().setCustomUserClaims(uid, claims);
+
+  try {
+    await admin.auth().setCustomUserClaims(uid, claims);
+  } catch (err) {
+    logger.error("setAdmin: setCustomUserClaims failed", err);
+    const msg = err instanceof Error ? err.message : String(err);
+    throw new HttpsError("internal", `setCustomUserClaims: ${msg}`);
+  }
+
   return { ok: true, uid, admin: makeAdmin };
 });
