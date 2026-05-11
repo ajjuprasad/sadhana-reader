@@ -2,7 +2,7 @@ import { useState, useRef, useMemo, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
-import { calendarEvents2026, hinduMonths2026 } from '../data/calendar2026';
+import { allCalendarEvents2026, hinduMonths2026 } from '../data/calendar2026';
 import type { CalendarEvent, EventCategory } from '../data/calendar2026';
 import ProfileButton from './ProfileButton';
 
@@ -117,7 +117,7 @@ export default function CalendarPage() {
 
   const eventsForMonth = useMemo(() => {
     const monthStr = String(selectedMonth + 1).padStart(2, '0');
-    return calendarEvents2026.filter((e) => e.date.startsWith(`2026-${monthStr}`));
+    return allCalendarEvents2026.filter((e) => e.date.startsWith(`2026-${monthStr}`));
   }, [selectedMonth]);
 
   const filteredEvents = useMemo(() => {
@@ -148,7 +148,7 @@ export default function CalendarPage() {
 
   const upcomingEvent = useMemo(() => {
     const today = now.toISOString().slice(0, 10);
-    return calendarEvents2026.find(
+    return allCalendarEvents2026.find(
       (e) => e.date >= today && (e.category === 'festival' || e.category === 'jayanti'),
     );
   }, []);
@@ -292,7 +292,7 @@ export default function CalendarPage() {
         {/* Category filters */}
         <div className="flex flex-wrap gap-1.5 mt-3 mb-4 justify-center">
           {(Object.keys(CATEGORY_CONFIG) as EventCategory[]).filter(
-            (cat) => calendarEvents2026.some((e) => e.category === cat),
+            (cat) => allCalendarEvents2026.some((e) => e.category === cat),
           ).map((cat) => {
             const cfg = CATEGORY_CONFIG[cat];
             const isActive = selectedCategories.has(cat);

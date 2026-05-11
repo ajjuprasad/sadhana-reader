@@ -1,7 +1,7 @@
 import { stotras, type Stotra } from '../data/stotras';
 import { stories, type Story } from '../data/stories';
 import { reflections, type Reflection } from '../data/reflections';
-import { calendarEvents2026, hinduMonths2026, type CalendarEvent, type HinduMonth } from '../data/calendar2026';
+import { allCalendarEvents2026, hinduMonths2026, type CalendarEvent, type HinduMonth } from '../data/calendar2026';
 import type { PanchangaSystem } from '../hooks/useSettings';
 
 // The hinduMonths2026 table uses Purnimanta boundaries (each entry ends at
@@ -56,7 +56,7 @@ function todayKey(date: Date): string {
 
 function getTodayEvent(date: Date): CalendarEvent | undefined {
   const key = todayKey(date);
-  return calendarEvents2026.find((e) => e.date === key);
+  return allCalendarEvents2026.find((e) => e.date === key);
 }
 
 export function getStotraOfTheDay(date: Date): Stotra {
@@ -107,7 +107,7 @@ export function getPanchangaSnapshot(
   const todayEvent = getTodayEvent(date);
 
   const upcoming: Array<CalendarEvent & { daysUntil: number }> = [];
-  for (const event of calendarEvents2026) {
+  for (const event of allCalendarEvents2026) {
     if (event.date <= key) continue;
     const eventDate = new Date(event.date + 'T00:00:00');
     const diff = Math.ceil((eventDate.getTime() - date.getTime()) / 86400000);
