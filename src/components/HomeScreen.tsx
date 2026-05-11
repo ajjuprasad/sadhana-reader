@@ -242,16 +242,16 @@ function PanchangaTile({ panchanga, navigate }: { panchanga: ReturnType<typeof g
           </div>
         )}
 
-        <p
-          className="font-hind text-xs mt-3 flex items-center gap-1"
+        <span
+          className="font-hind font-medium text-sm mt-3 inline-flex items-center gap-1 group-hover:gap-2 transition-all duration-200"
           style={{ color: 'var(--color-accent-primary)' }}
         >
           View details
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <line x1="5" y1="12" x2="19" y2="12" />
             <polyline points="12 5 19 12 12 19" />
           </svg>
-        </p>
+        </span>
       </div>
     </motion.button>
   );
@@ -535,7 +535,7 @@ export default function HomeScreen() {
               </p>
               <span
                 className="font-hind font-medium text-sm mt-4 inline-flex items-center gap-1 group-hover:gap-2 transition-all duration-200"
-                style={{ color: 'var(--color-accent-gold)' }}
+                style={{ color: 'var(--color-accent-primary)' }}
               >
                 Explain this
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -607,6 +607,29 @@ export default function HomeScreen() {
                   {stories.length} stories
                 </p>
               </button>
+
+              <button
+                onClick={() => navigate('/panchanga')}
+                className="col-span-2 rounded-2xl p-4 sm:p-5 text-left group hover:scale-[1.02] active:scale-[0.98] transition-transform duration-200"
+                style={{
+                  backgroundColor: 'var(--color-bg-card)',
+                  boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
+                }}
+              >
+                <span className="text-2xl select-none block mb-2">🗓️</span>
+                <h3
+                  className="font-display font-bold text-sm mb-0.5 group-hover:text-saffron transition-colors duration-200"
+                  style={{ color: 'var(--color-text-primary)' }}
+                >
+                  Pañchāṅga 2026
+                </h3>
+                <p
+                  className="font-hind text-xs"
+                  style={{ color: 'var(--color-text-muted)' }}
+                >
+                  Full calendar — festivals, ekādaśīs, pūrṇimās, sankrāntis
+                </p>
+              </button>
             </div>
           </motion.div>
 
@@ -618,13 +641,6 @@ export default function HomeScreen() {
             />
             <div className="flex flex-col items-center gap-3 text-center">
               <div className="flex gap-4">
-                <button
-                  onClick={() => navigate('/panchanga')}
-                  className="font-hind text-xs hover:opacity-70 transition-opacity"
-                  style={{ color: 'var(--color-text-muted)' }}
-                >
-                  Pañchāṅga 2026
-                </button>
                 <button
                   onClick={() => navigate('/about')}
                   className="font-hind text-xs hover:opacity-70 transition-opacity"
