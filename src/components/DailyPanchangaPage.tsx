@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { usePanchanga } from '../hooks/usePanchanga';
 import { useLocation } from '../hooks/useLocation';
 import { useSettings } from '../hooks/useSettings';
-import { calendarEvents2026, hinduMonths2026 } from '../data/calendar2026';
+import { allCalendarEvents2026, hinduMonths2026 } from '../data/calendar2026';
 import type { CalendarEvent, EventCategory } from '../data/calendar2026';
 import LocationSelector from './LocationSelector';
 import ProfileButton from './ProfileButton';
@@ -124,7 +124,7 @@ export default function DailyPanchangaPage() {
 
   const todayEvent: CalendarEvent | undefined = useMemo(() => {
     const key = toDateKey(selectedDate);
-    return calendarEvents2026.find((e) => e.date === key);
+    return allCalendarEvents2026.find((e) => e.date === key);
   }, [selectedDate]);
 
   const hinduMonth = useMemo(() => {
