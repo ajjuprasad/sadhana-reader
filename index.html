@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon-180.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Sādhanā" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta name="theme-color" content="#FFF8E1" />
+    <meta
+      name="description"
+      content="Sadhana Reader — a digital sanctum for reading and contemplating Hindu stotras including the Hanuman Chalisa, Bhaja Govindam, Shri Rudram, Shiva Mahimna Stotram, Subrahmanya Bhujangam, Subramanya Ashtakam, Narayana Kavacham, Pandurangashtakam, Saraswati Stotram, Kanakadhara Stotram, Ganesha Pancharatnam, Siddha Kunjika Stotram, and 25+ more sacred texts."
+    />
+    <meta property="og:title" content="Sadhana Reader" />
+    <meta
+      property="og:description"
+      content="A digital sanctum for reading Hindu stotras."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sadhanareader.org" />
+    <meta property="og:image" content="https://sadhanareader.org/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sadhana Reader" />
+    <meta name="twitter:description" content="A digital sanctum for reading Hindu stotras." />
+    <meta name="twitter:image" content="https://sadhanareader.org/og-image.png" />
+    <link rel="canonical" href="https://sadhanareader.org/" />
+    <title>Sadhana Reader — A Digital Sanctum for Hindu Stotras</title>
+    <script type="module" crossorigin src="/assets/index-BTQHO2ex.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DgrA8I9N.css">
+  </head>
+  <body>
+    <!-- Splash screen — visible instantly, fades out when React mounts -->
+    <div id="splash" style="
+      position: fixed; inset: 0; z-index: 9999;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      background: #FFF8E1;
+      transition: opacity 0.6s ease, visibility 0.6s ease;
+    ">
+      <div style="
+        font-size: 3.5rem; line-height: 1; color: #FF9933;
+        animation: splash-breathe 2.4s ease-in-out infinite;
+      ">ॐ</div>
+    </div>
+    <style>
+      @keyframes splash-breathe {
+        0%, 100% { transform: scale(1); opacity: 0.85; }
+        50% { transform: scale(1.08); opacity: 1; }
+      }
+      #splash.hide {
+        opacity: 0;
+        visibility: hidden;
+      }
+    </style>
+    <script>
+      // Respect saved Deepam (dark) mode for splash
+      try {
+        var s = JSON.parse(localStorage.getItem('sadhana-reader-settings') || '{}');
+        if (s.deepamMode) {
+          var el = document.getElementById('splash');
+          if (el) {
+            el.style.background = '#1A1208';
+            el.children[0].style.color = '#FFB300';
+            el.children[1].style.color = '#8D6E63';
+          }
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute('content', '#1A1208');
+        }
+      } catch(e) {}
+    </script>
+    <script>
+      // GitHub Pages SPA support: restore path from 404.html redirect query param
+      (function(l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&');
+          }).join('?');
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      }(window.location));
+    </script>
+
+    <div id="root"></div>
+  </body>
+</html>

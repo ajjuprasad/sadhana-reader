@@ -1,0 +1,1 @@
+self.__SADHANA_FIREBASE_CONFIG__ = {"apiKey":"AIzaSyA-S85aWj91qsy24WzRDCDNG7erNx5rTLg","authDomain":"sadhana-reader.firebaseapp.com","projectId":"sadhana-reader","storageBucket":"sadhana-reader.firebasestorage.app","messagingSenderId":"40145015446","appId":"1:40145015446:web:c38226b8b0014c4a4fe8b7"};
