@@ -168,13 +168,6 @@ export default function StotraDetail() {
             {stotra.subtitle}
           </p>
 
-          {/* Premium badge */}
-          {stotra.premium && (
-            <div className="mb-3">
-              <PremiumBadge price={stotra.price} />
-            </div>
-          )}
-
           {/* Details row */}
           <div className="flex items-center justify-center gap-4 mb-5">
             <span

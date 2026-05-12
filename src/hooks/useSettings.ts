@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 
 export type Language = 'en' | 'hi' | 'kn' | 'te' | 'ta' | 'ml';
 export type NarrationVoiceGender = 'female' | 'male';
+export type PanchangaSystem = 'amanta' | 'purnimanta';
 
 export interface Settings {
   fontSize: number;
@@ -9,6 +10,7 @@ export interface Settings {
   hideSanskrit: boolean;
   language: Language;
   narrationVoice: NarrationVoiceGender;
+  panchangaSystem: PanchangaSystem;
 }
 
 const STORAGE_KEY = 'sadhana-reader-settings';
@@ -19,6 +21,7 @@ const defaultSettings: Settings = {
   hideSanskrit: false,
   language: 'en',
   narrationVoice: 'female',
+  panchangaSystem: 'purnimanta',
 };
 
 function loadSettings(): Settings {

@@ -1,3 +1,5 @@
+import { ekadasi2026 } from './ekadasi2026';
+
 export type EventCategory =
   | 'festival'
   | 'ekadasi'
@@ -274,3 +276,18 @@ export const calendarEvents2026: CalendarEvent[] = [
   },
   // ─── December 2026 ───
 ];
+
+// Computed Ekadasi entries from drik-siddhānta calculation (ISKCON GCal
+// method). See scripts/generate-ekadasi.mjs for the source.
+const ekadasiEvents: CalendarEvent[] = ekadasi2026.map((e) => ({
+  date: e.date,
+  name: `${e.name} Ekādaśī`,
+  sanskrit: `${e.sanskrit} एकादशी`,
+  category: 'ekadasi',
+  description: `${e.paksha} pakṣa Ekādaśī of ${e.month} — a sacred fast day for Vaiṣṇavas, devoted to Lord Viṣṇu.`,
+}));
+
+export const allCalendarEvents2026: CalendarEvent[] = [
+  ...calendarEvents2026,
+  ...ekadasiEvents,
+].sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));

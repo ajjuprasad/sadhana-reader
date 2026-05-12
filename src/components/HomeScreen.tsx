@@ -7,8 +7,10 @@ import { stories } from '../data/stories';
 import { reflections } from '../data/reflections';
 import ProfileButton from './ProfileButton';
 import HamburgerMenu from './HamburgerMenu';
-import FavoriteButton from './FavoriteButton';
+import DeityMandala from './illustrations/DeityMandala';
 import { useTranslation } from '../i18n/useTranslation';
+import { useAuth } from '../contexts/AuthContext';
+import { useSettings } from '../hooks/useSettings';
 import {
   getStotraOfTheDay,
   getStoryOfTheDay,
@@ -42,6 +44,12 @@ interface PanchangaBasic {
   tithiSanskrit?: string;
   nakshatra?: string;
   nakshatraSanskrit?: string;
+  sunrise?: string;
+  sunset?: string;
+}
+
+function formatClockTime(d: Date): string {
+  return d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
 }
 
 function PanchangaTile({ panchanga, navigate }: { panchanga: ReturnType<typeof getPanchangaSnapshot>; navigate: ReturnType<typeof useNavigate> }) {
@@ -56,10 +64,17 @@ function PanchangaTile({ panchanga, navigate }: { panchanga: ReturnType<typeof g
           tithiSanskrit: result.tithi.info.sanskrit,
           nakshatra: result.nakshatra.info.name,
           nakshatraSanskrit: result.nakshatra.info.sanskrit,
+          sunrise: formatClockTime(result.sunrise),
+          sunset: formatClockTime(result.sunset),
         });
       })
       .catch(() => {});
   }, []);
+
+  const today = new Date();
+  const weekday = today.toLocaleDateString('en-IN', { weekday: 'long' });
+  const monthDay = today.toLocaleDateString('en-IN', { month: 'short', day: 'numeric' });
+  const varaShort = panchanga.varaName.split('·')[0].trim();
 
   return (
     <motion.button
@@ -76,7 +91,7 @@ function PanchangaTile({ panchanga, navigate }: { panchanga: ReturnType<typeof g
       onClick={() => navigate('/panchanga/today')}
     >
       <div className="p-5 sm:p-6">
-        <div className="flex items-center justify-between mb-3">
+        <div className="flex items-center justify-between mb-4">
           <p
             className="font-label font-semibold uppercase text-[0.6rem] tracking-[0.14em]"
             style={{ color: 'var(--color-accent-primary)' }}
@@ -88,32 +103,96 @@ function PanchangaTile({ panchanga, navigate }: { panchanga: ReturnType<typeof g
           </svg>
         </div>
 
-        {panchanga.hinduMonth && (
+        {/* Date hero */}
+        <div className="mb-4">
           <p
-            className="font-display font-bold text-base mb-2"
+            className="font-display font-bold text-lg leading-tight"
             style={{ color: 'var(--color-text-primary)' }}
           >
-            {panchanga.hinduMonth.name} · {panchanga.hinduMonth.sanskrit}
-            <span
-              className="font-hind font-normal text-xs ml-2"
-              style={{ color: 'var(--color-text-muted)' }}
-            >
-              {panchanga.hinduMonth.season}
-            </span>
+            {weekday} · {monthDay}
           </p>
-        )}
+          <p
+            className="font-hind text-xs mt-0.5"
+            style={{ color: 'var(--color-text-muted)' }}
+          >
+            {varaShort}
+          </p>
+        </div>
 
         {daily.tithi && (
-          <div className="flex flex-col gap-1 mb-2">
-            <div className="flex items-center gap-2">
-              <span className="font-hind font-medium text-[0.6rem] uppercase tracking-wider w-14" style={{ color: 'var(--color-text-muted)' }}>Tithi</span>
-              <span className="font-hind text-sm" style={{ color: 'var(--color-text-primary)' }}>{daily.tithi}</span>
-              <span className="font-body text-xs" style={{ color: 'var(--color-accent-primary)', opacity: 0.8 }}>{daily.tithiSanskrit}</span>
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <div>
+              <p
+                className="font-label font-semibold uppercase text-[0.55rem] tracking-[0.14em] mb-1"
+                style={{ color: 'var(--color-text-muted)' }}
+              >
+                Tithi
+              </p>
+              <p
+                className="font-display font-semibold text-sm leading-tight"
+                style={{ color: 'var(--color-text-primary)' }}
+              >
+                {daily.tithi}
+              </p>
+              <p
+                className="font-body text-xs mt-0.5"
+                style={{ color: 'var(--color-accent-primary)', opacity: 0.8 }}
+              >
+                {daily.tithiSanskrit}
+              </p>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="font-hind font-medium text-[0.6rem] uppercase tracking-wider w-14" style={{ color: 'var(--color-text-muted)' }}>Star</span>
-              <span className="font-hind text-sm" style={{ color: 'var(--color-text-primary)' }}>{daily.nakshatra}</span>
-              <span className="font-body text-xs" style={{ color: 'var(--color-accent-primary)', opacity: 0.8 }}>{daily.nakshatraSanskrit}</span>
+            <div>
+              <p
+                className="font-label font-semibold uppercase text-[0.55rem] tracking-[0.14em] mb-1"
+                style={{ color: 'var(--color-text-muted)' }}
+              >
+                Nakṣatra
+              </p>
+              <p
+                className="font-display font-semibold text-sm leading-tight"
+                style={{ color: 'var(--color-text-primary)' }}
+              >
+                {daily.nakshatra}
+              </p>
+              <p
+                className="font-body text-xs mt-0.5"
+                style={{ color: 'var(--color-accent-primary)', opacity: 0.8 }}
+              >
+                {daily.nakshatraSanskrit}
+              </p>
+            </div>
+          </div>
+        )}
+
+        {daily.sunrise && daily.sunset && (
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <div>
+              <p
+                className="font-label font-semibold uppercase text-[0.55rem] tracking-[0.14em] mb-1"
+                style={{ color: 'var(--color-text-muted)' }}
+              >
+                Sunrise
+              </p>
+              <p
+                className="font-display font-semibold text-sm leading-tight"
+                style={{ color: 'var(--color-text-primary)' }}
+              >
+                {daily.sunrise}
+              </p>
+            </div>
+            <div>
+              <p
+                className="font-label font-semibold uppercase text-[0.55rem] tracking-[0.14em] mb-1"
+                style={{ color: 'var(--color-text-muted)' }}
+              >
+                Sunset
+              </p>
+              <p
+                className="font-display font-semibold text-sm leading-tight"
+                style={{ color: 'var(--color-text-primary)' }}
+              >
+                {daily.sunset}
+              </p>
             </div>
           </div>
         )}
@@ -163,16 +242,16 @@ function PanchangaTile({ panchanga, navigate }: { panchanga: ReturnType<typeof g
           </div>
         )}
 
-        <p
-          className="font-hind text-xs mt-3 flex items-center gap-1"
+        <span
+          className="font-hind font-medium text-sm mt-3 inline-flex items-center gap-1 group-hover:gap-2 transition-all duration-200"
           style={{ color: 'var(--color-accent-primary)' }}
         >
-          View full pañchāṅga
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+          View details
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <line x1="5" y1="12" x2="19" y2="12" />
             <polyline points="12 5 19 12 12 19" />
           </svg>
-        </p>
+        </span>
       </div>
     </motion.button>
   );
@@ -181,14 +260,23 @@ function PanchangaTile({ panchanga, navigate }: { panchanga: ReturnType<typeof g
 export default function HomeScreen() {
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const { settings } = useSettings();
+  const { user } = useAuth();
 
   const today = useMemo(() => new Date(), []);
 
   const stotra = useMemo(() => getStotraOfTheDay(today), [today]);
   const story = useMemo(() => getStoryOfTheDay(today), [today]);
   const reflection = useMemo(() => getReflectionOfTheDay(today), [today]);
-  const panchanga = useMemo(() => getPanchangaSnapshot(today), [today]);
-  const greeting = useMemo(() => getTimeGreeting(), []);
+  const panchanga = useMemo(
+    () => getPanchangaSnapshot(today, settings.panchangaSystem),
+    [today, settings.panchangaSystem],
+  );
+  const firstName = user?.displayName?.trim().split(/\s+/)[0];
+  const greeting = useMemo(() => {
+    const base = getTimeGreeting();
+    return firstName ? `${base}, ${firstName}` : base;
+  }, [firstName]);
   const reflectionIndex = useMemo(() => {
     return reflections.findIndex(r => r.text === reflection.text);
   }, [reflection]);
@@ -271,8 +359,8 @@ export default function HomeScreen() {
             transition={tileTransition(0)}
           >
             <h1
-              className="font-display font-bold text-2xl sm:text-3xl tracking-tight"
-              style={{ color: 'var(--color-text-primary)' }}
+              className="font-body italic text-lg sm:text-xl"
+              style={{ color: 'var(--color-text-secondary)' }}
             >
               {greeting}
             </h1>
@@ -304,12 +392,13 @@ export default function HomeScreen() {
             whileTap={{ scale: 0.99 }}
             onClick={() => navigate(`/stotra/${stotra.id}`)}
           >
-            <FavoriteButton
-              stotraId={stotra.id}
-              size={20}
-              className="absolute top-3 right-3 z-10"
+            <DeityMandala
+              deity={stotra.deity}
+              size={160}
+              className="absolute pointer-events-none select-none"
+              style={{ top: -24, right: -24, opacity: 0.65 }}
             />
-            <div className="p-5 sm:p-7">
+            <div className="relative p-5 sm:p-7">
               <p
                 className="font-label font-semibold uppercase text-[0.6rem] tracking-[0.14em] mb-3"
                 style={{ color: 'var(--color-accent-primary)' }}
@@ -394,7 +483,7 @@ export default function HomeScreen() {
                 className="font-hind font-medium text-sm mt-3 inline-flex items-center gap-1 group-hover:gap-2 transition-all duration-200"
                 style={{ color: 'var(--color-accent-primary)' }}
               >
-                Read
+                Read now
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12" />
                   <polyline points="12 5 19 12 12 19" />
@@ -404,8 +493,8 @@ export default function HomeScreen() {
           </motion.button>
 
           {/* ── Reflection of the Day ── */}
-          <motion.div
-            className="w-full rounded-2xl overflow-hidden mb-4 group"
+          <motion.button
+            className="w-full text-left rounded-2xl overflow-hidden mb-4 group focus:outline-none focus:ring-2 focus:ring-saffron"
             style={{
               backgroundColor: 'var(--color-bg-card)',
               boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
@@ -413,6 +502,9 @@ export default function HomeScreen() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={tileTransition(3)}
+            whileHover={{ scale: 1.01, boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}
+            whileTap={{ scale: 0.99 }}
+            onClick={() => navigate(`/reflection/${reflectionIndex}`)}
           >
             <div className="p-5 sm:p-6">
               <p
@@ -441,19 +533,18 @@ export default function HomeScreen() {
               >
                 — {reflection.source}
               </p>
-              <button
-                onClick={() => navigate(`/reflection/${reflectionIndex}`)}
+              <span
                 className="font-hind font-medium text-sm mt-4 inline-flex items-center gap-1 group-hover:gap-2 transition-all duration-200"
-                style={{ color: 'var(--color-accent-gold)' }}
+                style={{ color: 'var(--color-accent-primary)' }}
               >
                 Explain this
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12" />
                   <polyline points="12 5 19 12 12 19" />
                 </svg>
-              </button>
+              </span>
             </div>
-          </motion.div>
+          </motion.button>
 
           {/* ── Panchanga Quick-View ── */}
           <PanchangaTile panchanga={panchanga} navigate={navigate} />
@@ -516,6 +607,29 @@ export default function HomeScreen() {
                   {stories.length} stories
                 </p>
               </button>
+
+              <button
+                onClick={() => navigate('/panchanga')}
+                className="col-span-2 rounded-2xl p-4 sm:p-5 text-left group hover:scale-[1.02] active:scale-[0.98] transition-transform duration-200"
+                style={{
+                  backgroundColor: 'var(--color-bg-card)',
+                  boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
+                }}
+              >
+                <span className="text-2xl select-none block mb-2">🗓️</span>
+                <h3
+                  className="font-display font-bold text-sm mb-0.5 group-hover:text-saffron transition-colors duration-200"
+                  style={{ color: 'var(--color-text-primary)' }}
+                >
+                  Pañchāṅga 2026
+                </h3>
+                <p
+                  className="font-hind text-xs"
+                  style={{ color: 'var(--color-text-muted)' }}
+                >
+                  Full calendar — festivals, ekādaśīs, pūrṇimās, sankrāntis
+                </p>
+              </button>
             </div>
           </motion.div>
 
@@ -527,13 +641,6 @@ export default function HomeScreen() {
             />
             <div className="flex flex-col items-center gap-3 text-center">
               <div className="flex gap-4">
-                <button
-                  onClick={() => navigate('/panchanga')}
-                  className="font-hind text-xs hover:opacity-70 transition-opacity"
-                  style={{ color: 'var(--color-text-muted)' }}
-                >
-                  Pañchāṅga 2026
-                </button>
                 <button
                   onClick={() => navigate('/about')}
                   className="font-hind text-xs hover:opacity-70 transition-opacity"

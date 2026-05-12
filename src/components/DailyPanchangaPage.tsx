@@ -4,7 +4,8 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { usePanchanga } from '../hooks/usePanchanga';
 import { useLocation } from '../hooks/useLocation';
-import { calendarEvents2026, hinduMonths2026 } from '../data/calendar2026';
+import { useSettings } from '../hooks/useSettings';
+import { allCalendarEvents2026, hinduMonths2026 } from '../data/calendar2026';
 import type { CalendarEvent, EventCategory } from '../data/calendar2026';
 import LocationSelector from './LocationSelector';
 import ProfileButton from './ProfileButton';
@@ -46,7 +47,7 @@ function Skeleton() {
 function PanchangaRow({ label, value, sanskrit, index }: { label: string; value: string; sanskrit: string; index: number }) {
   return (
     <motion.div
-      className="flex items-start justify-between py-3"
+      className="flex items-center justify-between py-3"
       style={{ borderBottom: '1px solid var(--color-border, rgba(0,0,0,0.06))' }}
       initial={{ opacity: 0, x: -8 }}
       animate={{ opacity: 1, x: 0 }}
@@ -105,6 +106,7 @@ export default function DailyPanchangaPage() {
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const { location, setLocation, requestBrowserLocation } = useLocation();
+  const { settings } = useSettings();
   const [locationOpen, setLocationOpen] = useState(false);
 
   const selectedDate = useMemo(() => {
@@ -122,13 +124,25 @@ export default function DailyPanchangaPage() {
 
   const todayEvent: CalendarEvent | undefined = useMemo(() => {
     const key = toDateKey(selectedDate);
-    return calendarEvents2026.find((e) => e.date === key);
+    return allCalendarEvents2026.find((e) => e.date === key);
   }, [selectedDate]);
 
   const hinduMonth = useMemo(() => {
     const key = toDateKey(selectedDate);
-    return hinduMonths2026.find((m) => key >= m.startDate && key <= m.endDate);
-  }, [selectedDate]);
+    const idx = hinduMonths2026.findIndex((m) => key >= m.startDate && key <= m.endDate);
+    if (idx === -1) return undefined;
+    // Underlying table uses Purnimanta boundaries (month ends at full moon).
+    // In Amanta, the month name shifts back by one during Krishna paksha
+    // (the days between this month's Purnima and next Amavasya).
+    if (
+      settings.panchangaSystem === 'amanta' &&
+      panchanga?.tithi.paksha === 'Krishna' &&
+      idx > 0
+    ) {
+      return hinduMonths2026[idx - 1];
+    }
+    return hinduMonths2026[idx];
+  }, [selectedDate, settings.panchangaSystem, panchanga?.tithi.paksha]);
 
   const navigateDay = (offset: number) => {
     const next = new Date(selectedDate);
@@ -298,33 +312,39 @@ export default function DailyPanchangaPage() {
                 </p>
                 <PanchangaRow
                   label="Tithi"
-                  value={`${panchanga.tithi.paksha} ${panchanga.tithi.info.name}`}
+                  value={panchanga.tithi.info.name}
                   sanskrit={panchanga.tithi.info.sanskrit}
                   index={0}
+                />
+                <PanchangaRow
+                  label="Pakṣa"
+                  value={panchanga.tithi.paksha === 'Shukla' ? 'Shukla (waxing)' : 'Krishna (waning)'}
+                  sanskrit={panchanga.tithi.paksha === 'Shukla' ? 'शुक्ल' : 'कृष्ण'}
+                  index={1}
                 />
                 <PanchangaRow
                   label="Nakṣatra"
                   value={panchanga.nakshatra.info.name}
                   sanskrit={panchanga.nakshatra.info.sanskrit}
-                  index={1}
+                  index={2}
                 />
                 <PanchangaRow
                   label="Yoga"
                   value={panchanga.yoga.info.name}
                   sanskrit={panchanga.yoga.info.sanskrit}
-                  index={2}
+                  index={3}
                 />
                 <PanchangaRow
                   label="Karaṇa"
                   value={panchanga.karana.info.name}
                   sanskrit={panchanga.karana.info.sanskrit}
-                  index={3}
+                  index={4}
                 />
                 <PanchangaRow
                   label="Vāra"
                   value={`${panchanga.vara.name} (${panchanga.vara.planet})`}
                   sanskrit={panchanga.vara.sanskrit}
-                  index={4}
+                  index={5}
                 />
               </div>
             </motion.div>
